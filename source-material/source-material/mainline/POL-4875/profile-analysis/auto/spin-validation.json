@@ -1,0 +1,48 @@
+{
+  "views": [
+    {
+      "label": "img01",
+      "classification": "side-oblique",
+      "source": "../../spin/img01.jpg",
+      "overlay": "spin-top-surface/img01-top-surface-overlay.jpg"
+    },
+    {
+      "label": "img02",
+      "classification": "side-oblique",
+      "source": "../../spin/img02.jpg",
+      "overlay": "spin-top-surface/img02-top-surface-overlay.jpg"
+    },
+    {
+      "label": "img11",
+      "classification": "front-oblique",
+      "source": "../../spin/img11.jpg",
+      "overlay": "spin-top-surface/img11-top-surface-overlay.jpg"
+    },
+    {
+      "label": "img23",
+      "classification": "front",
+      "source": "../../spin/img23.jpg",
+      "overlay": "spin-top-surface/img23-top-surface-overlay.jpg"
+    },
+    {
+      "label": "img34",
+      "classification": "rear-oblique",
+      "source": "../../spin/img34.jpg",
+      "overlay": "spin-top-surface/img34-top-surface-overlay.jpg"
+    },
+    {
+      "label": "img44",
+      "classification": "rear-oblique",
+      "source": "../../spin/img44.jpg",
+      "overlay": "spin-top-surface/img44-top-surface-overlay.jpg"
+    },
+    {
+      "label": "img45",
+      "classification": "rear-oblique",
+      "source": "../../spin/img45.jpg",
+      "overlay": "spin-top-surface/img45-top-surface-overlay.jpg"
+    }
+  ],
+  "method": "deterministic LAB k-means top-surface experiment",
+  "status": "validation-only"
+}

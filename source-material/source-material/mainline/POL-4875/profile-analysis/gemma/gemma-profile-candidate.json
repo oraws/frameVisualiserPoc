@@ -1,0 +1,150 @@
+{
+  "supplier": "Mainline",
+  "sku": "POL-4875",
+  "method": "local-vision-model-proposal",
+  "model": "gemma4:26b",
+  "widthMm": 97,
+  "depthMm": 49,
+  "rebateMm": 16,
+  "innerEdge": "left",
+  "confidence": 0.85,
+  "points": [
+    [
+      0.0,
+      22.05
+    ],
+    [
+      4.85,
+      22.05
+    ],
+    [
+      9.7,
+      19.6
+    ],
+    [
+      14.55,
+      14.7
+    ],
+    [
+      19.4,
+      9.8
+    ],
+    [
+      29.1,
+      19.6
+    ],
+    [
+      38.8,
+      34.3
+    ],
+    [
+      48.5,
+      49.0
+    ],
+    [
+      58.2,
+      34.3
+    ],
+    [
+      67.9,
+      14.7
+    ],
+    [
+      77.6,
+      24.5
+    ],
+    [
+      87.3,
+      41.65
+    ],
+    [
+      92.15,
+      29.4
+    ],
+    [
+      97.0,
+      24.5
+    ]
+  ],
+  "normalizedPoints": [
+    {
+      "u": 0.0,
+      "z": 0.45,
+      "type": "smooth"
+    },
+    {
+      "u": 0.05,
+      "z": 0.45,
+      "type": "smooth"
+    },
+    {
+      "u": 0.1,
+      "z": 0.4,
+      "type": "smooth"
+    },
+    {
+      "u": 0.15,
+      "z": 0.3,
+      "type": "smooth"
+    },
+    {
+      "u": 0.2,
+      "z": 0.2,
+      "type": "smooth"
+    },
+    {
+      "u": 0.3,
+      "z": 0.4,
+      "type": "smooth"
+    },
+    {
+      "u": 0.4,
+      "z": 0.7,
+      "type": "smooth"
+    },
+    {
+      "u": 0.5,
+      "z": 1.0,
+      "type": "smooth"
+    },
+    {
+      "u": 0.6,
+      "z": 0.7,
+      "type": "smooth"
+    },
+    {
+      "u": 0.7,
+      "z": 0.3,
+      "type": "smooth"
+    },
+    {
+      "u": 0.8,
+      "z": 0.5,
+      "type": "smooth"
+    },
+    {
+      "u": 0.9,
+      "z": 0.85,
+      "type": "smooth"
+    },
+    {
+      "u": 0.95,
+      "z": 0.6,
+      "type": "smooth"
+    },
+    {
+      "u": 1.0,
+      "z": 0.5,
+      "type": "smooth"
+    }
+  ],
+  "notes": [],
+  "inferenceSeconds": 138.658325583,
+  "status": "awaiting-human-review",
+  "rendererIntegrated": false,
+  "provenance": {
+    "sourceImage": "/Users/stephenorawe/Work/frame-visualizer-poc/source-material/source-material/mainline/POL-4875/profile-analysis/native/profile-native.jpeg",
+    "promptFilename": "gemma-request.json",
+    "rawResponseFilename": "gemma-raw-response.json"
+  }
+}

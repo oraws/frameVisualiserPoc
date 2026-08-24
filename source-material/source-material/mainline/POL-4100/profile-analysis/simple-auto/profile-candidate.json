@@ -1,0 +1,50 @@
+{
+  "supplier": "Mainline",
+  "sku": "POL-4100",
+  "name": "Brushed Black 41mm Polcore Moulding",
+  "productUrl": "https://mainlinemouldings.com/brushed-black-41mm-polcore-moulding/?searchuuid=58e99621-bebd-4bdc-b882-d9ee484572ec&search_query=pol4100",
+  "method": "spin-front-two-level-silhouette",
+  "sourceFrame": "img23",
+  "widthMm": 41.0,
+  "depthMm": 13.0,
+  "rebateMm": 9.0,
+  "points": [
+    [
+      0.0,
+      4.0
+    ],
+    [
+      4.871,
+      4.0
+    ],
+    [
+      7.307,
+      13.0
+    ],
+    [
+      41.0,
+      13.0
+    ]
+  ],
+  "confidence": 0.8549,
+  "innerEdge": "left",
+  "calibration": {
+    "widthPixelStart": 29.0,
+    "widthPixelEnd": 130.0,
+    "depthPixelTop": 10.885057471264368,
+    "backingBaselinePixel": 41.90967142691281
+  },
+  "scores": {
+    "twoLevelResidualPixels": 0.529,
+    "levelSeparationPixels": 21.479,
+    "transitionCount": 2
+  },
+  "autoRouteEligible": true,
+  "status": "awaiting-review",
+  "rendererIntegrated": false,
+  "limitations": [
+    "Suitable only for simple two-level profiles",
+    "Uses 157x255 supplier spin imagery",
+    "Requires human approval before renderer integration"
+  ]
+}

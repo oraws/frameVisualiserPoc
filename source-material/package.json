@@ -9,6 +9,14 @@
     "preview": "astro preview",
     "asset:prepare": "node tools/asset-generator/index.mjs",
     "spin:mainline": "node tools/mainline-spin-importer/index.mjs",
+    "analyse:mainline-profile": "python3 tools/mainline-profile-analyser/analyse.py",
+    "parse:mainline-spec": "python3 tools/mainline-profile-analyser/mainline_spec_parser.py",
+    "extract:mainline-profile": "python3 tools/mainline-profile-analyser/extract_auto_profile.py",
+    "extract:mainline-simple-profile": "python3 tools/mainline-profile-analyser/extract_simple_spin_profile.py",
+    "review:mainline-profiles": "node tools/mainline-profile-analyser/build_review_index.mjs",
+    "extract:mainline-gemma-profile": "python3 tools/mainline-profile-analyser/extract_gemma_profile.py",
+    "build:mainline-trace-editors": "node tools/mainline-profile-analyser/build_manual_trace_editors.mjs",
+    "test:profile-pipeline": "python3 tools/mainline-profile-analyser/test_profile_pipeline.py",
     "test:geometry": "node tools/test-profile-geometry.mjs"
   },
   "dependencies": {

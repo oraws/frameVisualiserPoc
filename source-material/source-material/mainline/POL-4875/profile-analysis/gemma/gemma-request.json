@@ -1,0 +1,78 @@
+{
+  "model": "gemma4:26b",
+  "stream": false,
+  "format": {
+    "type": "object",
+    "properties": {
+      "innerEdge": {
+        "type": "string",
+        "enum": [
+          "left",
+          "right"
+        ]
+      },
+      "confidence": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "points": {
+        "type": "array",
+        "minItems": 12,
+        "maxItems": 30,
+        "items": {
+          "type": "object",
+          "properties": {
+            "u": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "z": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "hard",
+                "smooth"
+              ]
+            }
+          },
+          "required": [
+            "u",
+            "z",
+            "type"
+          ]
+        }
+      },
+      "notes": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "innerEdge",
+      "confidence",
+      "points",
+      "notes"
+    ]
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 4875
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "This is the native supplier profile photograph for a picture-frame moulding.\n\nIdentify only the MACRO 2D CROSS-SECTION: the physical upper boundary that determines how far the surface rises above the backing plane as one moves across the face. Do not follow ornamental leaves, dots, engraved patterns, highlights, shadows, colour changes, printed dimension lines or text.\n\nKnown dimensions:\n- total face width = 97 mm\n- maximum depth = 49 mm\n- rebate = 16 mm\n\nReturn 12-30 normalized control points describing large-scale lips, steps, flat sections, concave curves and convex curves. u must increase monotonically from 0 at the inner/artwork edge to 1 at the outer edge. z=0 is the backing/reference plane and z=1 is the maximum 49 mm height. Include u=0 and u=1 endpoints. Use hard only for a genuine corner/step and smooth for a curve.\n\nIf the photograph is ambiguous, lower confidence and describe the ambiguity in notes. Do not pretend decorative relief is macro geometry. Return JSON only.",
+      "images": [
+        "<base64 image omitted>"
+      ]
+    }
+  ]
+}

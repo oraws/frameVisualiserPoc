@@ -1,0 +1,26 @@
+{
+  "status": "experimental-unapproved",
+  "source": "Verona_Spec_Sheet.pdf embedded POL-4875 finish/profile image",
+  "sourceImage": "spec-profile-reference.jpg",
+  "coordinateSystem": {
+    "u": "millimetres outward from the probable inner/rebate edge",
+    "z": "millimetres toward the viewer above an estimated backing baseline"
+  },
+  "knownWidthMm": 97,
+  "knownDepthMm": 49,
+  "estimatedSourceBaselineY": 205,
+  "sourceTracePixelsLeftToRight": [[0,198],[12,187],[29,183],[40,159],[52,146],[64,142],[76,151],[91,168],[108,173],[120,160],[134,151],[146,164],[158,176],[171,180],[184,180],[195,177],[207,176],[220,166],[232,169],[242,183]],
+  "candidateProfileInnerToOuterMm": [[0,17.1],[4,28],[8.8,30.3],[14,22.6],[18.8,21.8],[23.3,19.4],[28.5,19.4],[33.7,22.6],[38.5,31.9],[43.3,42],[48.8,35],[53.7,24.9],[60.5,28.8],[66.6,42],[71.3,49],[76.2,45.9],[81,35.8],[85.3,17.1],[92.2,14],[97,5.4]],
+  "confidence": {
+    "sourceTrace": "medium",
+    "innerOuterOrientation": "low",
+    "baseline": "low",
+    "widthScale": "high",
+    "depthScale": "medium"
+  },
+  "warnings": [
+    "The embedded image composites the dark profile silhouette over a decorative face photograph.",
+    "The probable inner/rebate edge is inferred from the white cut-out at the right of the source image.",
+    "Do not install this candidate in the renderer until orientation and baseline are visually confirmed."
+  ]
+}

@@ -6,6 +6,7 @@ export const MM_TO_WORLD = 0.0025;
 /** Sweeps a u/z moulding profile around an opening as four independently UV-mapped mitred sides. */
 export function createProfileFrameGeometry(openingWidthMm:number, openingHeightMm:number, profile:ProfilePoint[]) {
   const positions:number[]=[]; const indices:number[]=[];
+  const profileWidth=Math.max(...profile.map(([u])=>u),1);
   const addVertex=(x:number,y:number,z:number,u:number,v:number)=>{positions.push(x,y,z,u,v); return positions.length/5-1;};
   const sides=[
     (hw:number,hh:number,z:number)=>[[-hw,hh,z],[hw,hh,z]],
@@ -19,7 +20,7 @@ export function createProfileFrameGeometry(openingWidthMm:number, openingHeightM
       const hw=(openingWidthMm/2+uMm)*MM_TO_WORLD, hh=(openingHeightMm/2+uMm)*MM_TO_WORLD;
       const corners=side(hw,hh,zMm*MM_TO_WORLD) as number[][];
       const runMm=(sideIndex===0||sideIndex===2 ? openingWidthMm+2*uMm : openingHeightMm+2*uMm);
-      rows.push(corners.map((p, end)=>addVertex(p[0],p[1],p[2],end?runMm/130:0,uMm/97)));
+      rows.push(corners.map((p, end)=>addVertex(p[0],p[1],p[2],end?runMm/130:0,uMm/profileWidth)));
     });
     for(let i=0;i<rows.length-1;i++){ const [a,b]=rows[i], [c,d]=rows[i+1]; indices.push(a,b,c,b,d,c); }
   });
