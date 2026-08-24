@@ -1,0 +1,6 @@
+export type Moulding = { sku:string; supplier:string; name:string; widthMm:number; depthMm:number; rebateMm:number; profileType:'ornate-scoop'|'flat'|'angled'; finish:string; baseColor:string; accentColor?:string; roughness:number; ornament:number; confidence:Record<string,string> };
+export const mouldings:Moulding[] = [
+  { sku:'POL-4875', supplier:'Mainline', name:'Verona Black', widthMm:97, depthMm:49, rebateMm:16, profileType:'ornate-scoop', finish:'ornate black polcore', baseColor:'#151515', accentColor:'#4b453c', roughness:.31, ornament:1, confidence:{shape:'Medium',dimensions:'High',texture:'Medium',colour:'Medium',material:'Medium'} },
+  { sku:'POL-4100', supplier:'Mainline', name:'Brushed Black', widthMm:41, depthMm:13, rebateMm:9, profileType:'flat', finish:'brushed black polcore', baseColor:'#151817', accentColor:'#515751', roughness:.44, ornament:.18, confidence:{shape:'Medium',dimensions:'Medium',texture:'Medium',colour:'Medium',material:'Medium'} },
+  { sku:'4925BG', supplier:'Centrado', name:'Bergen Black & Gold Angled', widthMm:49, depthMm:25, rebateMm:10, profileType:'angled', finish:'black and gold angled', baseColor:'#11110f', accentColor:'#ad8641', roughness:.28, ornament:.55, confidence:{shape:'Medium',dimensions:'Medium',texture:'Medium',colour:'Medium',material:'Medium'} }
+];

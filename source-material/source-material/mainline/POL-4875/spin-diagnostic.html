@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>POL-4875 spin inspection</title><style>
+:root{color-scheme:dark;font-family:Inter,system-ui,sans-serif;background:#111;color:#eee}*{box-sizing:border-box}body{margin:0}.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;min-height:100vh}.viewer{position:sticky;top:0;height:100vh;display:grid;place-items:center;padding:32px;background:#181818}.viewer img{max-width:100%;max-height:calc(100vh - 100px);object-fit:contain;background:#fff}.caption{position:absolute;left:40px;bottom:25px;font:13px ui-monospace,monospace;color:#bbb}.rail{padding:24px;border-left:1px solid #333;background:#101010}.rail h1{font-size:21px;margin:0 0 6px}.rail p{color:#999;margin:0 0 20px;font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.thumb{padding:0;border:1px solid #333;background:#1d1d1d;color:#ccc;cursor:pointer}.thumb.active{border-color:#d5ad66}.thumb img{display:block;width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff}.thumb span{display:block;padding:6px;font:11px ui-monospace,monospace}</style></head>
+<body><main class="layout"><section class="viewer"><img id="large" alt="Selected spin frame"><div class="caption" id="caption"></div></section><aside class="rail"><h1>POL-4875</h1><p>45 ordered spin frames</p><div class="grid">
+    <button class="thumb" data-index="0" type="button">
+      <img src="spin/img01.jpg" alt="img01" loading="lazy">
+      <span>img01</span>
+    </button>
+    <button class="thumb" data-index="1" type="button">
+      <img src="spin/img02.jpg" alt="img02" loading="lazy">
+      <span>img02</span>
+    </button>
+    <button class="thumb" data-index="2" type="button">
+      <img src="spin/img03.jpg" alt="img03" loading="lazy">
+      <span>img03</span>
+    </button>
+    <button class="thumb" data-index="3" type="button">
+      <img src="spin/img04.jpg" alt="img04" loading="lazy">
+      <span>img04</span>
+    </button>
+    <button class="thumb" data-index="4" type="button">
+      <img src="spin/img05.jpg" alt="img05" loading="lazy">
+      <span>img05</span>
+    </button>
+    <button class="thumb" data-index="5" type="button">
+      <img src="spin/img06.jpg" alt="img06" loading="lazy">
+      <span>img06</span>
+    </button>
+    <button class="thumb" data-index="6" type="button">
+      <img src="spin/img07.jpg" alt="img07" loading="lazy">
+      <span>img07</span>
+    </button>
+    <button class="thumb" data-index="7" type="button">
+      <img src="spin/img08.jpg" alt="img08" loading="lazy">
+      <span>img08</span>
+    </button>
+    <button class="thumb" data-index="8" type="button">
+      <img src="spin/img09.jpg" alt="img09" loading="lazy">
+      <span>img09</span>
+    </button>
+    <button class="thumb" data-index="9" type="button">
+      <img src="spin/img10.jpg" alt="img10" loading="lazy">
+      <span>img10</span>
+    </button>
+    <button class="thumb" data-index="10" type="button">
+      <img src="spin/img11.jpg" alt="img11" loading="lazy">
+      <span>img11</span>
+    </button>
+    <button class="thumb" data-index="11" type="button">
+      <img src="spin/img12.jpg" alt="img12" loading="lazy">
+      <span>img12</span>
+    </button>
+    <button class="thumb" data-index="12" type="button">
+      <img src="spin/img13.jpg" alt="img13" loading="lazy">
+      <span>img13</span>
+    </button>
+    <button class="thumb" data-index="13" type="button">
+      <img src="spin/img14.jpg" alt="img14" loading="lazy">
+      <span>img14</span>
+    </button>
+    <button class="thumb" data-index="14" type="button">
+      <img src="spin/img15.jpg" alt="img15" loading="lazy">
+      <span>img15</span>
+    </button>
+    <button class="thumb" data-index="15" type="button">
+      <img src="spin/img16.jpg" alt="img16" loading="lazy">
+      <span>img16</span>
+    </button>
+    <button class="thumb" data-index="16" type="button">
+      <img src="spin/img17.jpg" alt="img17" loading="lazy">
+      <span>img17</span>
+    </button>
+    <button class="thumb" data-index="17" type="button">
+      <img src="spin/img18.jpg" alt="img18" loading="lazy">
+      <span>img18</span>
+    </button>
+    <button class="thumb" data-index="18" type="button">
+      <img src="spin/img19.jpg" alt="img19" loading="lazy">
+      <span>img19</span>
+    </button>
+    <button class="thumb" data-index="19" type="button">
+      <img src="spin/img20.jpg" alt="img20" loading="lazy">
+      <span>img20</span>
+    </button>
+    <button class="thumb" data-index="20" type="button">
+      <img src="spin/img21.jpg" alt="img21" loading="lazy">
+      <span>img21</span>
+    </button>
+    <button class="thumb" data-index="21" type="button">
+      <img src="spin/img22.jpg" alt="img22" loading="lazy">
+      <span>img22</span>
+    </button>
+    <button class="thumb" data-index="22" type="button">
+      <img src="spin/img23.jpg" alt="img23" loading="lazy">
+      <span>img23</span>
+    </button>
+    <button class="thumb" data-index="23" type="button">
+      <img src="spin/img24.jpg" alt="img24" loading="lazy">
+      <span>img24</span>
+    </button>
+    <button class="thumb" data-index="24" type="button">
+      <img src="spin/img25.jpg" alt="img25" loading="lazy">
+      <span>img25</span>
+    </button>
+    <button class="thumb" data-index="25" type="button">
+      <img src="spin/img26.jpg" alt="img26" loading="lazy">
+      <span>img26</span>
+    </button>
+    <button class="thumb" data-index="26" type="button">
+      <img src="spin/img27.jpg" alt="img27" loading="lazy">
+      <span>img27</span>
+    </button>
+    <button class="thumb" data-index="27" type="button">
+      <img src="spin/img28.jpg" alt="img28" loading="lazy">
+      <span>img28</span>
+    </button>
+    <button class="thumb" data-index="28" type="button">
+      <img src="spin/img29.jpg" alt="img29" loading="lazy">
+      <span>img29</span>
+    </button>
+    <button class="thumb" data-index="29" type="button">
+      <img src="spin/img30.jpg" alt="img30" loading="lazy">
+      <span>img30</span>
+    </button>
+    <button class="thumb" data-index="30" type="button">
+      <img src="spin/img31.jpg" alt="img31" loading="lazy">
+      <span>img31</span>
+    </button>
+    <button class="thumb" data-index="31" type="button">
+      <img src="spin/img32.jpg" alt="img32" loading="lazy">
+      <span>img32</span>
+    </button>
+    <button class="thumb" data-index="32" type="button">
+      <img src="spin/img33.jpg" alt="img33" loading="lazy">
+      <span>img33</span>
+    </button>
+    <button class="thumb" data-index="33" type="button">
+      <img src="spin/img34.jpg" alt="img34" loading="lazy">
+      <span>img34</span>
+    </button>
+    <button class="thumb" data-index="34" type="button">
+      <img src="spin/img35.jpg" alt="img35" loading="lazy">
+      <span>img35</span>
+    </button>
+    <button class="thumb" data-index="35" type="button">
+      <img src="spin/img36.jpg" alt="img36" loading="lazy">
+      <span>img36</span>
+    </button>
+    <button class="thumb" data-index="36" type="button">
+      <img src="spin/img37.jpg" alt="img37" loading="lazy">
+      <span>img37</span>
+    </button>
+    <button class="thumb" data-index="37" type="button">
+      <img src="spin/img38.jpg" alt="img38" loading="lazy">
+      <span>img38</span>
+    </button>
+    <button class="thumb" data-index="38" type="button">
+      <img src="spin/img39.jpg" alt="img39" loading="lazy">
+      <span>img39</span>
+    </button>
+    <button class="thumb" data-index="39" type="button">
+      <img src="spin/img40.jpg" alt="img40" loading="lazy">
+      <span>img40</span>
+    </button>
+    <button class="thumb" data-index="40" type="button">
+      <img src="spin/img41.jpg" alt="img41" loading="lazy">
+      <span>img41</span>
+    </button>
+    <button class="thumb" data-index="41" type="button">
+      <img src="spin/img42.jpg" alt="img42" loading="lazy">
+      <span>img42</span>
+    </button>
+    <button class="thumb" data-index="42" type="button">
+      <img src="spin/img43.jpg" alt="img43" loading="lazy">
+      <span>img43</span>
+    </button>
+    <button class="thumb" data-index="43" type="button">
+      <img src="spin/img44.jpg" alt="img44" loading="lazy">
+      <span>img44</span>
+    </button>
+    <button class="thumb" data-index="44" type="button">
+      <img src="spin/img45.jpg" alt="img45" loading="lazy">
+      <span>img45</span>
+    </button></div></aside></main>
+<script>const frames=[{"filename":"img01.jpg","label":"img01","width":279,"height":255},{"filename":"img02.jpg","label":"img02","width":279,"height":255},{"filename":"img03.jpg","label":"img03","width":279,"height":255},{"filename":"img04.jpg","label":"img04","width":279,"height":255},{"filename":"img05.jpg","label":"img05","width":279,"height":255},{"filename":"img06.jpg","label":"img06","width":279,"height":255},{"filename":"img07.jpg","label":"img07","width":279,"height":255},{"filename":"img08.jpg","label":"img08","width":279,"height":255},{"filename":"img09.jpg","label":"img09","width":279,"height":255},{"filename":"img10.jpg","label":"img10","width":279,"height":255},{"filename":"img11.jpg","label":"img11","width":279,"height":255},{"filename":"img12.jpg","label":"img12","width":279,"height":255},{"filename":"img13.jpg","label":"img13","width":279,"height":255},{"filename":"img14.jpg","label":"img14","width":279,"height":255},{"filename":"img15.jpg","label":"img15","width":279,"height":255},{"filename":"img16.jpg","label":"img16","width":279,"height":255},{"filename":"img17.jpg","label":"img17","width":279,"height":255},{"filename":"img18.jpg","label":"img18","width":279,"height":255},{"filename":"img19.jpg","label":"img19","width":279,"height":255},{"filename":"img20.jpg","label":"img20","width":279,"height":255},{"filename":"img21.jpg","label":"img21","width":279,"height":255},{"filename":"img22.jpg","label":"img22","width":279,"height":255},{"filename":"img23.jpg","label":"img23","width":279,"height":255},{"filename":"img24.jpg","label":"img24","width":279,"height":255},{"filename":"img25.jpg","label":"img25","width":279,"height":255},{"filename":"img26.jpg","label":"img26","width":279,"height":255},{"filename":"img27.jpg","label":"img27","width":279,"height":255},{"filename":"img28.jpg","label":"img28","width":279,"height":255},{"filename":"img29.jpg","label":"img29","width":279,"height":255},{"filename":"img30.jpg","label":"img30","width":279,"height":255},{"filename":"img31.jpg","label":"img31","width":279,"height":255},{"filename":"img32.jpg","label":"img32","width":279,"height":255},{"filename":"img33.jpg","label":"img33","width":279,"height":255},{"filename":"img34.jpg","label":"img34","width":279,"height":255},{"filename":"img35.jpg","label":"img35","width":279,"height":255},{"filename":"img36.jpg","label":"img36","width":279,"height":255},{"filename":"img37.jpg","label":"img37","width":279,"height":255},{"filename":"img38.jpg","label":"img38","width":279,"height":255},{"filename":"img39.jpg","label":"img39","width":279,"height":255},{"filename":"img40.jpg","label":"img40","width":279,"height":255},{"filename":"img41.jpg","label":"img41","width":279,"height":255},{"filename":"img42.jpg","label":"img42","width":279,"height":255},{"filename":"img43.jpg","label":"img43","width":279,"height":255},{"filename":"img44.jpg","label":"img44","width":279,"height":255},{"filename":"img45.jpg","label":"img45","width":279,"height":255}];const large=document.querySelector('#large');const caption=document.querySelector('#caption');const buttons=[...document.querySelectorAll('.thumb')];function select(i){const f=frames[i];large.src='spin/'+encodeURIComponent(f.filename);caption.textContent=f.label+' · '+(f.width||'?')+' × '+(f.height||'?')+' px';buttons.forEach((b,n)=>b.classList.toggle('active',n===i))}buttons.forEach((b,i)=>b.addEventListener('click',()=>select(i)));select(0)</script></body></html>

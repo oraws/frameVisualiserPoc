@@ -1,0 +1,11 @@
+{
+  "sku": "POL-4875",
+  "generatedAt": "2026-08-19T20:50:43.997Z",
+  "source": "source-product.jpg",
+  "workflow": [
+    "Source retained unchanged",
+    "Manual crop / seam selection required",
+    "Runtime uses deterministic PBR parameters",
+    "Normal and roughness maps are future pipeline outputs"
+  ]
+}

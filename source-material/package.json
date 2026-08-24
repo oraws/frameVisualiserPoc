@@ -1,0 +1,30 @@
+{
+  "name": "framed-art-visualiser-poc",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "asset:prepare": "node tools/asset-generator/index.mjs",
+    "spin:mainline": "node tools/mainline-spin-importer/index.mjs",
+    "test:geometry": "node tools/test-profile-geometry.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "latest",
+    "@react-three/drei": "latest",
+    "@react-three/fiber": "latest",
+    "astro": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "three": "latest"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "playwright": "^1.62.1",
+    "typescript": "latest"
+  }
+}
