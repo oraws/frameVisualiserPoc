@@ -101,6 +101,12 @@ body {
   stroke-width: 2;
   cursor: ns-resize;
 }
+.centre-handle {
+  fill: #ff5c9d;
+  stroke: #32101e;
+  stroke-width: 2;
+  cursor: move;
+}
 .cal-caption {
   position: absolute;
   left: 42px;
@@ -173,6 +179,27 @@ body {
   font-size: 10px;
 }
 .cal-source a { color: #d9bf83; text-decoration: none; }
+.cal-intake {
+  margin: 0 0 18px;
+  padding: 13px 14px;
+  border: 1px solid #ffffff18;
+  background: #20211f;
+}
+.cal-intake h2 { margin: 0 0 5px; color: #ddd5c7; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+.cal-intake p { margin: 0 0 10px; color: #96938b; font-size: 10px; line-height: 1.45; }
+.cal-intake p a { color: #cbb684; }
+.cal-stock-links { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-bottom: 12px; }
+.cal-stock-links a { padding: 8px; border: 1px solid #d7c19a55; color: #dfc78f; font-size: 10px; text-align: center; text-decoration: none; }
+.cal-intake label { display: grid; gap: 5px; margin-top: 8px; color: #aaa79f; font-size: 9px; text-transform: uppercase; }
+.cal-intake input[type="text"],
+.cal-intake input[type="url"],
+.cal-intake input:not([type]) { width: 100%; padding: 8px; border: 1px solid #ffffff22; background: #111; color: #eee; }
+.cal-upload input { width: 100%; color: #aaa; font-size: 10px; text-transform: none; }
+.cal-visibility { display: grid; grid-template-columns: 19px 1fr; gap: 9px; margin: 0 0 18px; padding: 12px; border: 1px solid #ffffff1c; background: #20211f; }
+.cal-visibility input { width: 16px; height: 16px; margin: 1px 0 0; accent-color: #d7c19a; }
+.cal-visibility span,.cal-visibility b,.cal-visibility small { display: block; }
+.cal-visibility b { color: #ddd8ce; font-size: 10px; }
+.cal-visibility small { margin-top: 4px; color: #8f8c84; font-size: 9px; line-height: 1.4; }
 .cal-status {
   display: flex;
   justify-content: space-between;

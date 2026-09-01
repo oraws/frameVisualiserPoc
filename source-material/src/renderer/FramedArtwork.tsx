@@ -9,8 +9,8 @@ import { fallbackRoom, roomPresets, type RoomTemplate } from './roomTemplates';
 
 type ProfileVariant='Current'|'SAM 2.1'|'Catalogue';
 type ScaleReference={lengthMm:number;pointsNormalised:number[][]};
-type RoomCalibration={manualCalibration?:{quadNormalised:number[][];scaleReference?:ScaleReference};renderer?:{wallYawDegrees?:number;wallPitchDegrees?:number}};
-type Props={ moulding:Moulding; artWidth:number; artHeight:number; mount:number; mountColor:string; glass:string; lighting:string; lightStrength:number; ambientFill:number; exposure:number; wallColour:string; view:string; debug:boolean; artwork:string; geometryMode:'Profile'|'Flat Legacy'; materialMode:'Texture'|'Clay'|'Normal'|'Wireframe'; displayMode:'Inspect'|'Wall'; wallPreset:string; wallPositionX:number; wallPositionY:number; wallScale:number; wallShadow:number; materialVariant:string; profileVariant:ProfileVariant; roomCalibration?:RoomCalibration|null };
+type RoomCalibration={manualCalibration?:{quadNormalised:number[][];frameCentreNormalised?:number[];scaleReference?:ScaleReference};renderer?:{wallYawDegrees?:number;wallPitchDegrees?:number}};
+type Props={ moulding:Moulding; artWidth:number; artHeight:number; mount:number; mountColor:string; glass:string; lighting:string; lightStrength:number; ambientFill:number; exposure:number; wallColour:string; view:string; debug:boolean; artwork:string; geometryMode:'Profile'|'Flat Legacy'; materialMode:'Texture'|'Clay'|'Normal'|'Wireframe'; displayMode:'Inspect'|'Wall'; wallPreset:string; wallPositionX:number; wallPositionY:number; wallScale:number; wallShadow:number; materialVariant:string; profileVariant:ProfileVariant; roomCalibration?:RoomCalibration|null; roomTemplate?:RoomTemplate };
 const mm=0.0025;
 function roomPlaneMetrics(room:RoomTemplate,size:{width:number;height:number}){
  const planeZ=-.42, cameraZ=room.camera.position[2], viewHeight=2*(cameraZ-planeZ)*Math.tan(THREE.MathUtils.degToRad(room.camera.fov/2));
@@ -43,7 +43,7 @@ function calibratedFramePose(quad:number[][],size:{width:number;height:number},r
  const toPixels=(point:number[])=>[offsetX+point[0]*displayedWidth,offsetY+point[1]*displayedHeight],pixelQuad=quad.map(toPixels),reference=calibration?.manualCalibration?.scaleReference||{lengthMm:2400,pointsNormalised:[[.12,.18],[.12,.72]]},referenceStart=toPixels(reference.pointsNormalised[0]),referenceEnd=toPixels(reference.pointsNormalised[1]),referencePixels=Math.max(1,Math.hypot(referenceEnd[0]-referenceStart[0],referenceEnd[1]-referenceStart[1])),focal=size.height/(2*Math.tan(THREE.MathUtils.degToRad(room.camera.fov/2))),cx=size.width/2,cy=size.height/2;
  const right=vanishingDirection(pixelQuad[0],pixelQuad[1],pixelQuad[3],pixelQuad[2],focal,cx,cy),up=vanishingDirection(pixelQuad[3],pixelQuad[0],pixelQuad[2],pixelQuad[1],focal,cx,cy);
  if(right.x<0)right.multiplyScalar(-1);if(up.y>0)up.multiplyScalar(-1);up.addScaledVector(right,-right.dot(up)).normalize();const normal=new THREE.Vector3().crossVectors(right,up).normalize();
- const referenceCentre=[(referenceStart[0]+referenceEnd[0])/2,(referenceStart[1]+referenceEnd[1])/2],referenceDepth=focal*(reference.lengthMm*mm)/referencePixels,referencePoint=new THREE.Vector3((referenceCentre[0]-cx)*referenceDepth/focal,(referenceCentre[1]-cy)*referenceDepth/focal,referenceDepth),center=toPixels(transformPoint(quadHomography(quad),[.5,.5])),centreRay=new THREE.Vector3((center[0]-cx)/focal,(center[1]-cy)/focal,1),depth=normal.dot(referencePoint)/normal.dot(centreRay),translation=centreRay.multiplyScalar(depth);
+ const referenceCentre=[(referenceStart[0]+referenceEnd[0])/2,(referenceStart[1]+referenceEnd[1])/2],referenceDepth=focal*(reference.lengthMm*mm)/referencePixels,referencePoint=new THREE.Vector3((referenceCentre[0]-cx)*referenceDepth/focal,(referenceCentre[1]-cy)*referenceDepth/focal,referenceDepth),frameCentre=calibration?.manualCalibration?.frameCentreNormalised||[.5,.5],center=toPixels(transformPoint(quadHomography(quad),frameCentre)),centreRay=new THREE.Vector3((center[0]-cx)/focal,(center[1]-cy)/focal,1),depth=normal.dot(referencePoint)/normal.dot(centreRay),translation=centreRay.multiplyScalar(depth);
  const toThree=(vector:THREE.Vector3)=>new THREE.Vector3(vector.x,-vector.y,-vector.z),rotation=new THREE.Matrix4().makeBasis(toThree(right),toThree(up),toThree(normal));
  return{position:[translation.x,room.camera.position[1]-translation.y,room.camera.position[2]-translation.z] as [number,number,number],quaternion:new THREE.Quaternion().setFromRotationMatrix(rotation)};
 }
@@ -165,8 +165,8 @@ function Framing({moulding,ow,oh,iw,ih,geometryMode,materialMode,materialVariant
   </group>;
 }
 function Exposure({value}:{value:number}){const {gl}=useThree();useEffect(()=>{gl.toneMappingExposure=value},[gl,value]);return null;}
-function RoomBackdrop({preset,tint}:{preset:string;tint:string}){
- const room=roomPresets[preset]||fallbackRoom, map=useTexture(room.image),{size}=useThree(),plane=roomPlaneMetrics(room,size);
+function RoomBackdrop({room,tint}:{room:RoomTemplate;tint:string}){
+ const map=useTexture(room.image),{size}=useThree(),plane=roomPlaneMetrics(room,size);
  useMemo(()=>{map.colorSpace=THREE.SRGBColorSpace;map.anisotropy=8;map.needsUpdate=true;},[map]);
  return <group renderOrder={-100}>
   <mesh position={[plane.centerX,plane.centerY,plane.planeZ]} renderOrder={-100}><planeGeometry args={[plane.width,plane.height]}/><meshBasicMaterial map={map} toneMapped={false} depthTest={false} depthWrite={false}/></mesh>
@@ -178,7 +178,7 @@ function Scene(p:Props){
  const m=p.moulding, aw=p.artWidth*mm, ah=p.artHeight*mm, mt=p.mount*mm, experimental4508=m.sku==='POL-4508'&&p.profileVariant==='SAM 2.1', catalogueCandidate=p.profileVariant==='Catalogue'&&!!mainlineCatalogueProfile(m.sku), includedAccent=m.supplier==='Centrado'||experimental4508||catalogueCandidate, fw=(m.widthMm+(includedAccent?0:(m.accentWidthMm||0)))*mm, ow=aw+2*(mt+fw), oh=ah+2*(mt+fw), iw=aw+2*mt, ih=ah+2*mt;
  const art=useTexture(p.artwork); art.colorSpace=THREE.SRGBColorSpace;
  const light={"Studio Soft":[3,4,5,1.2,'#fff7e8'],"Window Left":[-4,3,4,2.1,'#e4efff'],"Warm Interior":[2,2,3,1.6,'#ffd4a2'],"Dramatic Raking Light":[-5,.7,2,2.8,'#e9e0c8']}[p.lighting]||[3,4,5,1,'#fff'];
- const wall=p.displayMode==='Wall', room=roomPresets[p.wallPreset]||fallbackRoom;
+ const wall=p.displayMode==='Wall', room=p.roomTemplate||roomPresets[p.wallPreset]||fallbackRoom;
  const detailTarget:[number,number,number]=[ow*.38,oh*.36,0], orbitTarget:[number,number,number]=p.view==='Detail'?detailTarget:[0,wall?.1:0,0];
  const cam=wall?room.camera.position:p.view==='Review'?[0,0,4.2]:p.view==='Front'?[0,0,3.75]:p.view==='Detail'?[detailTarget[0]+.34,detailTarget[1]+.24,.9]:[ow*.35,oh*.22,3.05];
  const metricRebate=m.sku==='POL-4508'||m.supplier==='Centrado'||catalogueCandidate, rebateFront=metricRebate?(m.depthMm-m.rebateMm)*mm:.013, mountZ=metricRebate?rebateFront-.009:.004, artZ=metricRebate?rebateFront+.002:.015, glassZ=metricRebate?rebateFront+.006:.033;
@@ -191,7 +191,7 @@ function Scene(p:Props){
   wallScale=p.wallScale;
  }
  const activeLight=wall?room.keyLight:{position:light.slice(0,3) as [number,number,number],intensity:light[3] as number,color:light[4] as string};
- return <><Exposure value={p.exposure*(wall?1.16:1)}/><color attach="background" args={[p.wallColour]}/><ambientLight intensity={(wall?room.ambient:.32)*p.ambientFill}/>{wall&&<><hemisphereLight args={['#f7f0e3','#756b5e',.42*p.ambientFill]}/><directionalLight position={[4.2,1.8,4.6]} intensity={.38*p.ambientFill} color="#dce7f2"/></>}<directionalLight position={activeLight.position} intensity={activeLight.intensity*p.lightStrength} color={activeLight.color} castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-4} shadow-camera-right={4} shadow-camera-top={4} shadow-camera-bottom={-4} shadow-bias={wall?room.shadow.bias:-.0001} shadow-normalBias={wall?.0007:0} shadow-radius={wall?room.shadow.radius:3}/><Environment preset="warehouse" environmentIntensity={(wall?room.environment:.38)*Math.max(.65,p.ambientFill)}/>{wall&&<RoomBackdrop preset={p.wallPreset} tint={p.wallColour}/>}<group quaternion={wall?wallQuaternion:new THREE.Quaternion()} position={wall?wallPosition:[0,0,0]} scale={wall?wallScale:1}>
+ return <><Exposure value={p.exposure*(wall?1.16:1)}/><color attach="background" args={[p.wallColour]}/><ambientLight intensity={(wall?room.ambient:.32)*p.ambientFill}/>{wall&&<><hemisphereLight args={['#f7f0e3','#756b5e',.42*p.ambientFill]}/><directionalLight position={[4.2,1.8,4.6]} intensity={.38*p.ambientFill} color="#dce7f2"/></>}<directionalLight position={activeLight.position} intensity={activeLight.intensity*p.lightStrength} color={activeLight.color} castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-4} shadow-camera-right={4} shadow-camera-top={4} shadow-camera-bottom={-4} shadow-bias={wall?room.shadow.bias:-.0001} shadow-normalBias={wall?.0007:0} shadow-radius={wall?room.shadow.radius:3}/><Environment preset="warehouse" environmentIntensity={(wall?room.environment:.38)*Math.max(.65,p.ambientFill)}/>{wall&&<RoomBackdrop room={room} tint={p.wallColour}/>}<group quaternion={wall?wallQuaternion:new THREE.Quaternion()} position={wall?wallPosition:[0,0,0]} scale={wall?wallScale:1}>
    {wall&&<mesh position={[0,0,-.01]} receiveShadow><planeGeometry args={[ow+1.05,oh+1.05]}/><shadowMaterial color={room.shadow.color} transparent opacity={room.shadow.opacity*p.wallShadow} depthWrite={false}/></mesh>}
    <mesh position={[0,0,mountZ]}><boxGeometry args={[iw,ih,.018]}/><meshStandardMaterial color={p.mountColor} roughness={.82}/></mesh>
    <mesh position={[0,0,artZ]}><planeGeometry args={[aw,ah]}/><meshBasicMaterial map={art} toneMapped={false}/></mesh>
