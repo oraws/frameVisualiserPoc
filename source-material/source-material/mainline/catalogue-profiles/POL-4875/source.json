@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4875",
+  "name": "Verona Black",
+  "widthMm": 97,
+  "depthMm": 49,
+  "rebateMm": 16,
+  "profileType": "ornate-scoop",
+  "page": 106,
+  "label": "POL 4875",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 687,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 42.52,
+    "top": 69.68,
+    "x1": 317.32,
+    "bottom": 269.36
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "sku": "POL-1301",
+  "name": "Starling 35mm Brushed Black Bronze Sides Polcore Moulding",
+  "widthMm": 35,
+  "depthMm": 15,
+  "rebateMm": 7,
+  "profileType": "scoop",
+  "page": 146,
+  "label": "POL 1301",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 255,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 887.558,
+    "top": 333.231,
+    "x1": 989.558,
+    "bottom": 532.671
+  }
+}

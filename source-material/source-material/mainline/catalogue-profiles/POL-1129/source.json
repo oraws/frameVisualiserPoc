@@ -1,0 +1,19 @@
+{
+  "sku": "POL-1129",
+  "name": "Edge 30mm Brushed Silver Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 16,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 138,
+  "label": "POL 1129",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 213,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 353.236,
+    "top": 333.737,
+    "x1": 438.196,
+    "bottom": 533.657
+  }
+}

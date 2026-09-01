@@ -1,0 +1,24 @@
+{
+  "sku": "POL-2190",
+  "invoiceDescription": "Plastic Picture Moulding",
+  "name": "Contemporary Classics 70mm Black Polcore Moulding",
+  "description": "70x30mm Contemporary Classic Matt Black",
+  "metaDescription": "Browse our wide range of framing materials and framing equipment in the elegant contemporary classic matt black style. Shop now at Mainline Mouldings.",
+  "productUrl": "https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/",
+  "discoveredFrom": "https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/?searchuuid=0852884c-28dd-4a71-b5e9-8fc789d90ee1&search_query=POL-2190",
+  "discontinued": false,
+  "details": {
+    "colour": "Black",
+    "profile": "Scoop",
+    "finish": "Matt",
+    "range": "Contemporary Classics"
+  },
+  "dimensions": {
+    "length": "2.9m",
+    "widthMm": 70,
+    "depthMm": 30,
+    "rebateMm": 15
+  },
+  "spinImageCount": 45,
+  "importedAt": "2026-08-27T08:52:06.988Z"
+}

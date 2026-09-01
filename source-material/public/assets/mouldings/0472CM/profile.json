@@ -1,0 +1,235 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "0472CM",
+  "name": "Casterbridge Cream Step - Open Grain",
+  "description": "52x35mm Cream Casterbridge Step Moulding",
+  "productUrl": "https://centrado.co/product/casterbridge-cream-step-open-grain-0472cm/",
+  "widthMm": 52.0,
+  "depthMm": 35.0,
+  "rebateMm": 19.6,
+  "profileType": "angled",
+  "colourTags": [
+    "cream"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      17.256
+    ],
+    [
+      1.944,
+      18.329
+    ],
+    [
+      2.624,
+      19.011
+    ],
+    [
+      2.916,
+      19.986
+    ],
+    [
+      3.305,
+      20.376
+    ],
+    [
+      3.985,
+      20.669
+    ],
+    [
+      6.123,
+      20.669
+    ],
+    [
+      6.609,
+      21.058
+    ],
+    [
+      6.901,
+      21.741
+    ],
+    [
+      7.193,
+      22.033
+    ],
+    [
+      8.067,
+      22.521
+    ],
+    [
+      8.845,
+      22.716
+    ],
+    [
+      9.622,
+      22.716
+    ],
+    [
+      10.692,
+      22.423
+    ],
+    [
+      12.052,
+      21.253
+    ],
+    [
+      12.538,
+      20.376
+    ],
+    [
+      12.733,
+      19.694
+    ],
+    [
+      12.733,
+      18.816
+    ],
+    [
+      12.927,
+      18.621
+    ],
+    [
+      33.047,
+      18.719
+    ],
+    [
+      33.436,
+      19.986
+    ],
+    [
+      34.116,
+      20.864
+    ],
+    [
+      35.379,
+      21.643
+    ],
+    [
+      36.546,
+      22.033
+    ],
+    [
+      37.421,
+      23.398
+    ],
+    [
+      38.684,
+      24.568
+    ],
+    [
+      40.531,
+      25.153
+    ],
+    [
+      40.725,
+      26.031
+    ],
+    [
+      41.6,
+      27.396
+    ],
+    [
+      42.28,
+      27.786
+    ],
+    [
+      43.641,
+      27.883
+    ],
+    [
+      43.836,
+      28.078
+    ],
+    [
+      43.836,
+      28.565
+    ],
+    [
+      44.224,
+      29.833
+    ],
+    [
+      44.905,
+      31.198
+    ],
+    [
+      45.779,
+      32.368
+    ],
+    [
+      47.14,
+      33.635
+    ],
+    [
+      48.598,
+      34.513
+    ],
+    [
+      49.862,
+      35.0
+    ],
+    [
+      50.931,
+      35.0
+    ],
+    [
+      52.0,
+      34.415
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 104,
+      "right": 639,
+      "top": 140,
+      "baseline": 499
+    },
+    "pixelsPerMmX": 10.2885,
+    "pixelsPerMmZ": 10.2571,
+    "anisotropyFraction": 0.00304,
+    "sampleCount": 615,
+    "simplifiedPointCount": 41
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472CM.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472-Profile-1.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472CM_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery-8.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-1.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472CM-3DB.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-2.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472CM-3DF.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

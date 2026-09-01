@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4571",
+  "name": "16mm Flats Brushed Oak Polcore Moulding",
+  "widthMm": 16,
+  "depthMm": 15,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 82,
+  "label": "POL 4571",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 113,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 391.566,
+    "top": 333.179,
+    "x1": 436.926,
+    "bottom": 533.579
+  }
+}

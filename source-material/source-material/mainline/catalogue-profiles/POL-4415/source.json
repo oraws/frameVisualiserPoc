@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4415",
+  "name": "30mm Flats Brushed Bronze Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 16,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 88,
+  "label": "POL 4415",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 213,
+  "pixelHeight": 498,
+  "pdfImageBox": {
+    "x0": 42.076,
+    "top": 69.785,
+    "x1": 127.036,
+    "bottom": 268.985
+  }
+}

@@ -1,0 +1,364 @@
+[
+  {
+    "sku": "POL-4100",
+    "widthMm": 41.0,
+    "depthMm": 13.0,
+    "method": "VGGT shared-3D cut-face rectification plus leave-one-view-out fusion",
+    "model": "facebook/VGGT-1B original research checkpoint",
+    "commercialDeploymentAllowed": false,
+    "rendererIntegrated": false,
+    "fitFrames": [
+      "img22",
+      "img23",
+      "img24"
+    ],
+    "heldOut": {
+      "img22": {
+        "medianMm": 0.037,
+        "p95Mm": 0.627
+      },
+      "img23": {
+        "medianMm": 0.016,
+        "p95Mm": 0.539
+      },
+      "img24": {
+        "medianMm": 0.052,
+        "p95Mm": 0.333
+      }
+    },
+    "evidence": [
+      {
+        "label": "img22",
+        "mask": "profile-analysis/section-pilot/img22-cut-mask.png",
+        "maskMethod": "classical cut-face mask",
+        "overlay": "img22-3d-evidence.png"
+      },
+      {
+        "label": "img23",
+        "mask": "profile-analysis/section-pilot/img23-cut-mask.png",
+        "maskMethod": "classical cut-face mask",
+        "overlay": "img23-3d-evidence.png"
+      },
+      {
+        "label": "img24",
+        "mask": "profile-analysis/section-pilot/img24-cut-mask.png",
+        "maskMethod": "classical cut-face mask",
+        "overlay": "img24-3d-evidence.png"
+      }
+    ],
+    "heldOutRerenders": [
+      {
+        "label": "img01",
+        "iou": 0.252,
+        "overlay": "img01-heldout-rerender.png"
+      },
+      {
+        "label": "img06",
+        "iou": 0.534,
+        "overlay": "img06-heldout-rerender.png"
+      },
+      {
+        "label": "img12",
+        "iou": 0.742,
+        "overlay": "img12-heldout-rerender.png"
+      },
+      {
+        "label": "img17",
+        "iou": 0.883,
+        "overlay": "img17-heldout-rerender.png"
+      },
+      {
+        "label": "img28",
+        "iou": 0.866,
+        "overlay": "img28-heldout-rerender.png"
+      },
+      {
+        "label": "img34",
+        "iou": 0.815,
+        "overlay": "img34-heldout-rerender.png"
+      },
+      {
+        "label": "img39",
+        "iou": 0.559,
+        "overlay": "img39-heldout-rerender.png"
+      },
+      {
+        "label": "img45",
+        "iou": 0.7,
+        "overlay": "img45-heldout-rerender.png"
+      }
+    ],
+    "cutPlaneResidualWorldP95": 0.0022147,
+    "worldUnitsPerMm": 0.0043978,
+    "points": [
+      [
+        0.0,
+        10.98
+      ],
+      [
+        0.854,
+        11.981
+      ],
+      [
+        1.538,
+        12.249
+      ],
+      [
+        8.371,
+        12.019
+      ],
+      [
+        9.908,
+        12.617
+      ],
+      [
+        15.546,
+        12.4
+      ],
+      [
+        17.425,
+        13.011
+      ],
+      [
+        39.975,
+        12.245
+      ],
+      [
+        41.0,
+        11.844
+      ]
+    ],
+    "decision": {
+      "passesPilotGate": true,
+      "worstHeldOutP95Mm": 0.627,
+      "observedReliefMm": 0.969,
+      "medianHeldOutSilhouetteIou": 0.721,
+      "reason": "The flat control remains flat and agrees across held-out views."
+    }
+  },
+  {
+    "sku": "POL-4508",
+    "widthMm": 30.0,
+    "depthMm": 30.0,
+    "method": "VGGT shared-3D cut-face rectification plus leave-one-view-out fusion",
+    "model": "facebook/VGGT-1B original research checkpoint",
+    "commercialDeploymentAllowed": false,
+    "rendererIntegrated": false,
+    "fitFrames": [
+      "img22",
+      "img23",
+      "img24"
+    ],
+    "heldOut": {
+      "img22": {
+        "medianMm": 4.299,
+        "p95Mm": 8.574
+      },
+      "img23": {
+        "medianMm": 9.641,
+        "p95Mm": 12.409
+      },
+      "img24": {
+        "medianMm": 3.166,
+        "p95Mm": 9.157
+      }
+    },
+    "evidence": [
+      {
+        "label": "img22",
+        "mask": "profile-analysis/sam2-section-benchmark-sam2.1-hiera-base-plus/img22-sam2-mask.png",
+        "maskMethod": "SAM 2.1 guided cut-face mask",
+        "overlay": "img22-3d-evidence.png"
+      },
+      {
+        "label": "img23",
+        "mask": "profile-analysis/sam2-section-benchmark-sam2.1-hiera-base-plus/img23-sam2-mask.png",
+        "maskMethod": "SAM 2.1 guided cut-face mask",
+        "overlay": "img23-3d-evidence.png"
+      },
+      {
+        "label": "img24",
+        "mask": "profile-analysis/sam2-section-benchmark-sam2.1-hiera-base-plus/img24-sam2-mask.png",
+        "maskMethod": "SAM 2.1 guided cut-face mask",
+        "overlay": "img24-3d-evidence.png"
+      }
+    ],
+    "heldOutRerenders": [
+      {
+        "label": "img01",
+        "iou": 0.151,
+        "overlay": "img01-heldout-rerender.png"
+      },
+      {
+        "label": "img06",
+        "iou": 0.332,
+        "overlay": "img06-heldout-rerender.png"
+      },
+      {
+        "label": "img12",
+        "iou": 0.574,
+        "overlay": "img12-heldout-rerender.png"
+      },
+      {
+        "label": "img17",
+        "iou": 0.571,
+        "overlay": "img17-heldout-rerender.png"
+      },
+      {
+        "label": "img28",
+        "iou": 0.669,
+        "overlay": "img28-heldout-rerender.png"
+      },
+      {
+        "label": "img34",
+        "iou": 0.37,
+        "overlay": "img34-heldout-rerender.png"
+      },
+      {
+        "label": "img39",
+        "iou": 0.148,
+        "overlay": "img39-heldout-rerender.png"
+      },
+      {
+        "label": "img45",
+        "iou": 0.06,
+        "overlay": "img45-heldout-rerender.png"
+      }
+    ],
+    "cutPlaneResidualWorldP95": 0.0025946,
+    "worldUnitsPerMm": 0.00532639,
+    "points": [
+      [
+        0.0,
+        21.836
+      ],
+      [
+        0.75,
+        21.579
+      ],
+      [
+        2.125,
+        20.788
+      ],
+      [
+        3.125,
+        23.503
+      ],
+      [
+        4.125,
+        24.259
+      ],
+      [
+        4.75,
+        25.268
+      ],
+      [
+        5.0,
+        25.395
+      ],
+      [
+        5.25,
+        25.125
+      ],
+      [
+        6.0,
+        23.211
+      ],
+      [
+        6.25,
+        23.234
+      ],
+      [
+        6.75,
+        24.29
+      ],
+      [
+        6.875,
+        24.156
+      ],
+      [
+        7.625,
+        20.44
+      ],
+      [
+        7.875,
+        19.829
+      ],
+      [
+        8.125,
+        19.924
+      ],
+      [
+        8.375,
+        20.335
+      ],
+      [
+        9.0,
+        22.473
+      ],
+      [
+        9.25,
+        22.673
+      ],
+      [
+        10.0,
+        19.847
+      ],
+      [
+        10.375,
+        19.021
+      ],
+      [
+        11.5,
+        18.658
+      ],
+      [
+        16.75,
+        14.735
+      ],
+      [
+        17.75,
+        14.145
+      ],
+      [
+        18.875,
+        12.364
+      ],
+      [
+        19.625,
+        12.861
+      ],
+      [
+        20.5,
+        12.838
+      ],
+      [
+        23.25,
+        14.778
+      ],
+      [
+        24.5,
+        15.16
+      ],
+      [
+        27.125,
+        16.898
+      ],
+      [
+        27.75,
+        16.786
+      ],
+      [
+        30.0,
+        15.492
+      ]
+    ],
+    "decision": {
+      "passesPilotGate": false,
+      "worstHeldOutP95Mm": 12.409,
+      "observedReliefMm": 11.995,
+      "medianHeldOutSilhouetteIou": 0.351,
+      "reason": "The recovered relief is not stable enough across held-out supplier views."
+    }
+  }
+]

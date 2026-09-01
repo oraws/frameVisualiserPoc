@@ -1,0 +1,91 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "5821WH",
+  "name": "Ancona White Flat - Open Grain",
+  "description": "58x21mm White Ancona Flat Moulding",
+  "productUrl": "https://centrado.co/product/ancona-white-flat-open-grain-5821wh/",
+  "widthMm": 58.0,
+  "depthMm": 21.0,
+  "rebateMm": 11.8,
+  "profileType": "flat",
+  "colourTags": [
+    "white"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      19.409
+    ],
+    [
+      50.632,
+      19.409
+    ],
+    [
+      51.053,
+      19.939
+    ],
+    [
+      51.158,
+      21.0
+    ],
+    [
+      58.0,
+      21.0
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 95,
+      "right": 646,
+      "top": 257,
+      "baseline": 455
+    },
+    "pixelsPerMmX": 9.5,
+    "pixelsPerMmZ": 9.4286,
+    "anisotropyFraction": 0.00752,
+    "sampleCount": 561,
+    "simplifiedPointCount": 5
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821WH.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821-Profile-2.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821WH_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Ancona-Macro_Gallery-2.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-1.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821WH-3DB.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-2.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821WH-3DF.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

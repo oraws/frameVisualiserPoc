@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4417",
+  "name": "Outline 30mm Brushed Black Silver Edges Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 16,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 86,
+  "label": "POL 4417",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 213,
+  "pixelHeight": 498,
+  "pdfImageBox": {
+    "x0": 187.716,
+    "top": 599.798,
+    "x1": 272.676,
+    "bottom": 798.998
+  }
+}

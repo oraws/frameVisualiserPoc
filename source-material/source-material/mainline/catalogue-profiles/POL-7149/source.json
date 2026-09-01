@@ -1,0 +1,19 @@
+{
+  "sku": "POL-7149",
+  "name": "Hockney 69mm Brushed Black Polcore Moulding",
+  "widthMm": 69,
+  "depthMm": 40,
+  "rebateMm": 18,
+  "profileType": "scoop",
+  "page": 112,
+  "label": "POL 7149",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 489,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 81.491,
+    "top": 333.983,
+    "x1": 277.091,
+    "bottom": 533.423
+  }
+}

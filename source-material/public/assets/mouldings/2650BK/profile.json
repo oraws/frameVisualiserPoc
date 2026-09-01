@@ -1,0 +1,99 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "2650BK",
+  "name": "Alberta Black Open Grain Flat",
+  "description": "50x26mm Black Open Grain Alberta Flat Moulding",
+  "productUrl": "https://centrado.co/product/alberta-black-open-grain-flat-2650bk/",
+  "widthMm": 50.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "profileType": "flat",
+  "colourTags": [
+    "black"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      22.884
+    ],
+    [
+      13.663,
+      22.981
+    ],
+    [
+      13.857,
+      22.787
+    ],
+    [
+      14.535,
+      12.27
+    ],
+    [
+      14.826,
+      9.738
+    ],
+    [
+      43.217,
+      9.738
+    ],
+    [
+      43.411,
+      10.03
+    ],
+    [
+      44.283,
+      25.805
+    ],
+    [
+      44.477,
+      26.0
+    ],
+    [
+      50.0,
+      26.0
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 112,
+      "right": 628,
+      "top": 131,
+      "baseline": 398
+    },
+    "pixelsPerMmX": 10.32,
+    "pixelsPerMmZ": 10.2692,
+    "anisotropyFraction": 0.00492,
+    "sampleCount": 793,
+    "simplifiedPointCount": 10
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650BK.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650-Profile.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650BK_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Alberta-BK-WH-Macro_Gallery.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

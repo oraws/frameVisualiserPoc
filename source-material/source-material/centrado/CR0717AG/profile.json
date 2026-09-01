@@ -1,0 +1,75 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR0717AG",
+  "name": "Create Lustre Antique Gold Flat",
+  "description": "17x17mm Antique Gold Create Lustre Flat Moulding",
+  "productUrl": "https://centrado.co/product/create-lustre-antique-gold-flat-cr0717ag/",
+  "widthMm": 17.0,
+  "depthMm": 17.0,
+  "rebateMm": 9.5,
+  "profileType": "flat",
+  "colourTags": [
+    "gold"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      14.854
+    ],
+    [
+      0.258,
+      16.828
+    ],
+    [
+      0.429,
+      17.0
+    ],
+    [
+      17.0,
+      16.914
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 107,
+      "right": 305,
+      "top": 49,
+      "baseline": 247
+    },
+    "pixelsPerMmX": 11.6471,
+    "pixelsPerMmZ": 11.6471,
+    "anisotropyFraction": 0.0,
+    "sampleCount": 218,
+    "simplifiedPointCount": 4
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717AG.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Profile-1.png",
+      "width": 367,
+      "height": 367
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717AG_Chevron.jpg",
+      "width": 2077,
+      "height": 2077
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Macro_Gallery-1.jpg",
+      "width": 700,
+      "height": 700
+    }
+  ],
+  "rendererIntegrated": true
+}

@@ -1,0 +1,131 @@
+{
+  "supplier": "Mainline",
+  "sku": "POL-4508",
+  "name": "Paramount 30mm Brushed Black with Silver Slip Polcore Moulding",
+  "productUrl": "https://mainlinemouldings.com/paramount-black-sse-30mm-polcore-moulding/?searchuuid=3d2309b3-b76f-48fb-a6c5-2e31965a7707&search_query=POL-4508",
+  "method": "multi-frame-exposed-cut-section-v2-metric",
+  "widthMm": 30.0,
+  "depthMm": 30.0,
+  "rebateMm": 13.0,
+  "sourceImageCount": 45,
+  "selectedFrameCount": 3,
+  "selectedFrames": [
+    {
+      "label": "img22",
+      "filename": "img22.jpg",
+      "overlay": "img22-overlay.png",
+      "mask": "img22-cut-mask.png",
+      "edgeScore": 72.95,
+      "quality": 0.6413,
+      "depthSpanPixels": 36.66,
+      "registration": {
+        "horizontalShiftSamples": 2,
+        "projectiveWarp": 0.06,
+        "scale": 1.0981,
+        "offsetMm": -2.9934
+      }
+    },
+    {
+      "label": "img23",
+      "filename": "img23.jpg",
+      "overlay": "img23-overlay.png",
+      "mask": "img23-cut-mask.png",
+      "edgeScore": 91.389,
+      "quality": 0.6406,
+      "depthSpanPixels": 33.9,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.0,
+        "scale": 1.0,
+        "offsetMm": 0.0
+      }
+    },
+    {
+      "label": "img24",
+      "filename": "img24.jpg",
+      "overlay": "img24-overlay.png",
+      "mask": "img24-cut-mask.png",
+      "edgeScore": 90.892,
+      "quality": 0.6437,
+      "depthSpanPixels": 34.0,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.0,
+        "scale": 1.0624,
+        "offsetMm": -1.876
+      }
+    }
+  ],
+  "points": [
+    [
+      0.0,
+      11.94
+    ],
+    [
+      2.25,
+      12.548
+    ],
+    [
+      4.625,
+      13.692
+    ],
+    [
+      6.125,
+      14.858
+    ],
+    [
+      8.75,
+      27.344
+    ],
+    [
+      9.375,
+      28.761
+    ],
+    [
+      10.125,
+      28.926
+    ],
+    [
+      15.375,
+      28.95
+    ],
+    [
+      17.0,
+      29.46
+    ],
+    [
+      26.75,
+      29.47
+    ],
+    [
+      28.125,
+      29.865
+    ],
+    [
+      28.75,
+      29.645
+    ],
+    [
+      29.5,
+      28.819
+    ],
+    [
+      30.0,
+      28.645
+    ]
+  ],
+  "validation": {
+    "heldOutMedianBoundaryPixels": 0.285,
+    "heldOutP95BoundaryPixels": 11.665,
+    "crossSubsetP95ProfileMm": 2.231,
+    "dimensionResidualMm": 0.0,
+    "passesInitialGate": false
+  },
+  "status": "experimental-rejected",
+  "rendererIntegrated": false,
+  "limitations": [
+    "Supplier spin imagery is low resolution",
+    "Macro profile only; ornament relief is a later material stage",
+    "Acceptance requires review of automatic overlays"
+  ]
+}

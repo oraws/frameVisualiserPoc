@@ -1,0 +1,889 @@
+[
+  {
+    "supplier": "Mainline",
+    "sku": "POL-4100",
+    "name": "Brushed Black 41mm Polcore Moulding",
+    "productUrl": "https://mainlinemouldings.com/brushed-black-41mm-polcore-moulding/?searchuuid=58e99621-bebd-4bdc-b882-d9ee484572ec&search_query=pol4100",
+    "method": "multi-frame-exposed-cut-section-v2-metric",
+    "widthMm": 41.0,
+    "depthMm": 13.0,
+    "rebateMm": 9.0,
+    "sourceImageCount": 45,
+    "selectedFrameCount": 3,
+    "selectedFrames": [
+      {
+        "label": "img22",
+        "filename": "img22.jpg",
+        "overlay": "img22-overlay.png",
+        "mask": "img22-cut-mask.png",
+        "edgeScore": 110.535,
+        "quality": 0.621,
+        "depthSpanPixels": 4.0,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.0,
+          "scale": 1.0,
+          "offsetMm": 0.3981
+        }
+      },
+      {
+        "label": "img23",
+        "filename": "img23.jpg",
+        "overlay": "img23-overlay.png",
+        "mask": "img23-cut-mask.png",
+        "edgeScore": 111.019,
+        "quality": 0.6209,
+        "depthSpanPixels": 3.92,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.0,
+          "scale": 1.0,
+          "offsetMm": 0.0
+        }
+      },
+      {
+        "label": "img24",
+        "filename": "img24.jpg",
+        "overlay": "img24-overlay.png",
+        "mask": "img24-cut-mask.png",
+        "edgeScore": 99.081,
+        "quality": 0.6441,
+        "depthSpanPixels": 9.82,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.0,
+          "scale": 1.0095,
+          "offsetMm": -0.123
+        }
+      }
+    ],
+    "points": [
+      [
+        0.0,
+        11.21
+      ],
+      [
+        0.683,
+        11.798
+      ],
+      [
+        1.196,
+        11.814
+      ],
+      [
+        1.708,
+        12.176
+      ],
+      [
+        9.054,
+        12.232
+      ],
+      [
+        9.567,
+        12.576
+      ],
+      [
+        16.4,
+        12.629
+      ],
+      [
+        16.913,
+        12.974
+      ],
+      [
+        40.146,
+        12.974
+      ],
+      [
+        40.487,
+        12.711
+      ],
+      [
+        41.0,
+        11.608
+      ]
+    ],
+    "validation": {
+      "heldOutMedianBoundaryPixels": 0.0,
+      "heldOutP95BoundaryPixels": 1.0,
+      "crossSubsetP95ProfileMm": 0.338,
+      "dimensionResidualMm": 0.0,
+      "passesInitialGate": true
+    },
+    "status": "experimental-pass",
+    "rendererIntegrated": false,
+    "limitations": [
+      "Supplier spin imagery is low resolution",
+      "Macro profile only; ornament relief is a later material stage",
+      "Acceptance requires review of automatic overlays"
+    ]
+  },
+  {
+    "supplier": "Mainline",
+    "sku": "POL-2190",
+    "name": "Contemporary Classics 70mm Black Polcore Moulding",
+    "productUrl": "https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/",
+    "method": "multi-frame-exposed-cut-section-v2-metric",
+    "widthMm": 70.0,
+    "depthMm": 30.0,
+    "rebateMm": 15.0,
+    "sourceImageCount": 45,
+    "selectedFrameCount": 3,
+    "selectedFrames": [
+      {
+        "label": "img22",
+        "filename": "img22.jpg",
+        "overlay": "img22-overlay.png",
+        "mask": "img22-cut-mask.png",
+        "edgeScore": 98.225,
+        "quality": 0.797,
+        "depthSpanPixels": 53.0,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.06,
+          "scale": 0.9739,
+          "offsetMm": 0.5982
+        }
+      },
+      {
+        "label": "img23",
+        "filename": "img23.jpg",
+        "overlay": "img23-overlay.png",
+        "mask": "img23-cut-mask.png",
+        "edgeScore": 89.926,
+        "quality": 0.7948,
+        "depthSpanPixels": 53.62,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.0,
+          "scale": 1.0,
+          "offsetMm": 0.0
+        }
+      },
+      {
+        "label": "img24",
+        "filename": "img24.jpg",
+        "overlay": "img24-overlay.png",
+        "mask": "img24-cut-mask.png",
+        "edgeScore": 86.205,
+        "quality": 0.7961,
+        "depthSpanPixels": 53.58,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": -0.06,
+          "scale": 0.9901,
+          "offsetMm": 0.2269
+        }
+      }
+    ],
+    "points": [
+      [
+        0.0,
+        20.67
+      ],
+      [
+        8.167,
+        20.813
+      ],
+      [
+        8.75,
+        21.912
+      ],
+      [
+        14.0,
+        21.909
+      ],
+      [
+        15.75,
+        21.278
+      ],
+      [
+        17.208,
+        20.216
+      ],
+      [
+        19.25,
+        19.648
+      ],
+      [
+        19.833,
+        18.489
+      ],
+      [
+        21.875,
+        18.405
+      ],
+      [
+        22.458,
+        17.732
+      ],
+      [
+        29.167,
+        17.476
+      ],
+      [
+        34.417,
+        17.847
+      ],
+      [
+        34.708,
+        18.603
+      ],
+      [
+        35.875,
+        19.071
+      ],
+      [
+        39.375,
+        19.456
+      ],
+      [
+        40.25,
+        20.516
+      ],
+      [
+        40.833,
+        21.833
+      ],
+      [
+        42.292,
+        23.086
+      ],
+      [
+        43.75,
+        25.573
+      ],
+      [
+        44.917,
+        26.467
+      ],
+      [
+        45.792,
+        27.662
+      ],
+      [
+        52.208,
+        27.717
+      ],
+      [
+        52.792,
+        29.472
+      ],
+      [
+        54.542,
+        29.666
+      ],
+      [
+        56.875,
+        29.466
+      ],
+      [
+        58.042,
+        27.583
+      ],
+      [
+        59.5,
+        27.329
+      ],
+      [
+        59.792,
+        26.8
+      ],
+      [
+        61.542,
+        19.987
+      ],
+      [
+        63.875,
+        13.638
+      ],
+      [
+        65.625,
+        10.861
+      ],
+      [
+        66.5,
+        10.285
+      ],
+      [
+        67.375,
+        8.962
+      ],
+      [
+        68.833,
+        8.177
+      ],
+      [
+        69.417,
+        6.754
+      ],
+      [
+        70.0,
+        6.359
+      ]
+    ],
+    "validation": {
+      "heldOutMedianBoundaryPixels": 0.623,
+      "heldOutP95BoundaryPixels": 3.762,
+      "crossSubsetP95ProfileMm": 1.318,
+      "dimensionResidualMm": 0.0,
+      "passesInitialGate": false
+    },
+    "status": "experimental-rejected",
+    "rendererIntegrated": false,
+    "limitations": [
+      "Supplier spin imagery is low resolution",
+      "Macro profile only; ornament relief is a later material stage",
+      "Acceptance requires review of automatic overlays"
+    ]
+  },
+  {
+    "supplier": "Mainline",
+    "sku": "POL-4540",
+    "name": "Watercolour 25mm Antique Silver Polcore Moulding",
+    "productUrl": "https://mainlinemouldings.com/watercolour-silver-25mm-polcore-moulding/",
+    "method": "multi-frame-exposed-cut-section-v2-metric",
+    "widthMm": 25.0,
+    "depthMm": 18.0,
+    "rebateMm": 11.0,
+    "sourceImageCount": 45,
+    "selectedFrameCount": 3,
+    "selectedFrames": [
+      {
+        "label": "img22",
+        "filename": "img22.jpg",
+        "overlay": "img22-overlay.png",
+        "mask": "img22-cut-mask.png",
+        "edgeScore": 124.943,
+        "quality": 0.635,
+        "depthSpanPixels": 48.0,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.06,
+          "scale": 0.9706,
+          "offsetMm": 0.5298
+        }
+      },
+      {
+        "label": "img23",
+        "filename": "img23.jpg",
+        "overlay": "img23-overlay.png",
+        "mask": "img23-cut-mask.png",
+        "edgeScore": 112.162,
+        "quality": 0.622,
+        "depthSpanPixels": 55.52,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.0,
+          "scale": 1.0,
+          "offsetMm": 0.0
+        }
+      },
+      {
+        "label": "img24",
+        "filename": "img24.jpg",
+        "overlay": "img24-overlay.png",
+        "mask": "img24-cut-mask.png",
+        "edgeScore": 129.129,
+        "quality": 0.6186,
+        "depthSpanPixels": 56.3,
+        "registration": {
+          "horizontalShiftSamples": -2,
+          "projectiveWarp": -0.06,
+          "scale": 1.0006,
+          "offsetMm": -0.0782
+        }
+      }
+    ],
+    "points": [
+      [
+        0.0,
+        13.897
+      ],
+      [
+        1.042,
+        14.455
+      ],
+      [
+        1.562,
+        15.954
+      ],
+      [
+        1.979,
+        16.367
+      ],
+      [
+        4.688,
+        17.276
+      ],
+      [
+        5.104,
+        17.874
+      ],
+      [
+        6.875,
+        17.683
+      ],
+      [
+        8.229,
+        16.911
+      ],
+      [
+        10.104,
+        16.469
+      ],
+      [
+        11.562,
+        13.908
+      ],
+      [
+        12.917,
+        12.162
+      ],
+      [
+        14.167,
+        11.392
+      ],
+      [
+        15.833,
+        10.699
+      ],
+      [
+        19.375,
+        10.128
+      ],
+      [
+        20.417,
+        9.28
+      ],
+      [
+        22.188,
+        8.601
+      ],
+      [
+        22.812,
+        8.171
+      ],
+      [
+        23.125,
+        7.487
+      ],
+      [
+        24.479,
+        6.107
+      ],
+      [
+        24.792,
+        4.398
+      ],
+      [
+        25.0,
+        4.398
+      ]
+    ],
+    "validation": {
+      "heldOutMedianBoundaryPixels": 0.447,
+      "heldOutP95BoundaryPixels": 1.495,
+      "crossSubsetP95ProfileMm": 0.297,
+      "dimensionResidualMm": 0.0,
+      "passesInitialGate": true
+    },
+    "status": "experimental-pass",
+    "rendererIntegrated": false,
+    "limitations": [
+      "Supplier spin imagery is low resolution",
+      "Macro profile only; ornament relief is a later material stage",
+      "Acceptance requires review of automatic overlays"
+    ]
+  },
+  {
+    "supplier": "Mainline",
+    "sku": "POL-4508",
+    "name": "Paramount 30mm Brushed Black with Silver Slip Polcore Moulding",
+    "productUrl": "https://mainlinemouldings.com/paramount-black-sse-30mm-polcore-moulding/?searchuuid=3d2309b3-b76f-48fb-a6c5-2e31965a7707&search_query=POL-4508",
+    "method": "multi-frame-exposed-cut-section-v2-metric",
+    "widthMm": 30.0,
+    "depthMm": 30.0,
+    "rebateMm": 13.0,
+    "sourceImageCount": 45,
+    "selectedFrameCount": 3,
+    "selectedFrames": [
+      {
+        "label": "img22",
+        "filename": "img22.jpg",
+        "overlay": "img22-overlay.png",
+        "mask": "img22-cut-mask.png",
+        "edgeScore": 72.95,
+        "quality": 0.6413,
+        "depthSpanPixels": 36.66,
+        "registration": {
+          "horizontalShiftSamples": 2,
+          "projectiveWarp": 0.06,
+          "scale": 1.0981,
+          "offsetMm": -2.9934
+        }
+      },
+      {
+        "label": "img23",
+        "filename": "img23.jpg",
+        "overlay": "img23-overlay.png",
+        "mask": "img23-cut-mask.png",
+        "edgeScore": 91.389,
+        "quality": 0.6406,
+        "depthSpanPixels": 33.9,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.0,
+          "scale": 1.0,
+          "offsetMm": 0.0
+        }
+      },
+      {
+        "label": "img24",
+        "filename": "img24.jpg",
+        "overlay": "img24-overlay.png",
+        "mask": "img24-cut-mask.png",
+        "edgeScore": 90.892,
+        "quality": 0.6437,
+        "depthSpanPixels": 34.0,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.0,
+          "scale": 1.0624,
+          "offsetMm": -1.876
+        }
+      }
+    ],
+    "points": [
+      [
+        0.0,
+        11.94
+      ],
+      [
+        2.25,
+        12.548
+      ],
+      [
+        4.625,
+        13.692
+      ],
+      [
+        6.125,
+        14.858
+      ],
+      [
+        8.75,
+        27.344
+      ],
+      [
+        9.375,
+        28.761
+      ],
+      [
+        10.125,
+        28.926
+      ],
+      [
+        15.375,
+        28.95
+      ],
+      [
+        17.0,
+        29.46
+      ],
+      [
+        26.75,
+        29.47
+      ],
+      [
+        28.125,
+        29.865
+      ],
+      [
+        28.75,
+        29.645
+      ],
+      [
+        29.5,
+        28.819
+      ],
+      [
+        30.0,
+        28.645
+      ]
+    ],
+    "validation": {
+      "heldOutMedianBoundaryPixels": 0.285,
+      "heldOutP95BoundaryPixels": 11.665,
+      "crossSubsetP95ProfileMm": 2.231,
+      "dimensionResidualMm": 0.0,
+      "passesInitialGate": false
+    },
+    "status": "experimental-rejected",
+    "rendererIntegrated": false,
+    "limitations": [
+      "Supplier spin imagery is low resolution",
+      "Macro profile only; ornament relief is a later material stage",
+      "Acceptance requires review of automatic overlays"
+    ]
+  },
+  {
+    "supplier": "Mainline",
+    "sku": "POL-4875",
+    "name": "Verona Black 97mm Polcore Moulding",
+    "productUrl": "https://mainlinemouldings.com/verona-black-97mm-polcore-moulding/",
+    "method": "multi-frame-exposed-cut-section-v2-metric",
+    "widthMm": 97.0,
+    "depthMm": 49.0,
+    "rebateMm": 16.0,
+    "sourceImageCount": 45,
+    "selectedFrameCount": 3,
+    "selectedFrames": [
+      {
+        "label": "img22",
+        "filename": "img22.jpg",
+        "overlay": "img22-overlay.png",
+        "mask": "img22-cut-mask.png",
+        "edgeScore": 73.242,
+        "quality": 0.8106,
+        "depthSpanPixels": 103.0,
+        "registration": {
+          "horizontalShiftSamples": -1,
+          "projectiveWarp": 0.06,
+          "scale": 0.9834,
+          "offsetMm": 1.0283
+        }
+      },
+      {
+        "label": "img23",
+        "filename": "img23.jpg",
+        "overlay": "img23-overlay.png",
+        "mask": "img23-cut-mask.png",
+        "edgeScore": 66.495,
+        "quality": 0.7984,
+        "depthSpanPixels": 110.12,
+        "registration": {
+          "horizontalShiftSamples": 0,
+          "projectiveWarp": 0.0,
+          "scale": 1.0,
+          "offsetMm": 0.0
+        }
+      },
+      {
+        "label": "img24",
+        "filename": "img24.jpg",
+        "overlay": "img24-overlay.png",
+        "mask": "img24-cut-mask.png",
+        "edgeScore": 63.642,
+        "quality": 0.8052,
+        "depthSpanPixels": 102.0,
+        "registration": {
+          "horizontalShiftSamples": -1,
+          "projectiveWarp": 0.0,
+          "scale": 0.9972,
+          "offsetMm": 0.393
+        }
+      }
+    ],
+    "points": [
+      [
+        0.0,
+        17.694
+      ],
+      [
+        2.021,
+        17.694
+      ],
+      [
+        2.425,
+        18.729
+      ],
+      [
+        3.638,
+        18.952
+      ],
+      [
+        4.446,
+        19.69
+      ],
+      [
+        8.488,
+        19.427
+      ],
+      [
+        9.7,
+        20.093
+      ],
+      [
+        11.721,
+        20.081
+      ],
+      [
+        14.146,
+        19.534
+      ],
+      [
+        14.954,
+        16.099
+      ],
+      [
+        16.975,
+        16.622
+      ],
+      [
+        18.188,
+        16.533
+      ],
+      [
+        19.804,
+        15.815
+      ],
+      [
+        24.654,
+        15.97
+      ],
+      [
+        27.079,
+        16.857
+      ],
+      [
+        27.888,
+        18.836
+      ],
+      [
+        28.292,
+        21.549
+      ],
+      [
+        30.312,
+        21.266
+      ],
+      [
+        30.717,
+        19.839
+      ],
+      [
+        34.758,
+        19.102
+      ],
+      [
+        35.567,
+        18.12
+      ],
+      [
+        37.992,
+        18.097
+      ],
+      [
+        38.8,
+        20.62
+      ],
+      [
+        40.821,
+        21.348
+      ],
+      [
+        44.862,
+        21.82
+      ],
+      [
+        45.671,
+        24.574
+      ],
+      [
+        47.287,
+        25.104
+      ],
+      [
+        48.096,
+        27.324
+      ],
+      [
+        49.713,
+        27.835
+      ],
+      [
+        50.925,
+        31.304
+      ],
+      [
+        51.329,
+        31.621
+      ],
+      [
+        55.775,
+        32.055
+      ],
+      [
+        57.392,
+        32.8
+      ],
+      [
+        57.796,
+        33.754
+      ],
+      [
+        59.008,
+        34.406
+      ],
+      [
+        60.221,
+        36.933
+      ],
+      [
+        61.838,
+        37.331
+      ],
+      [
+        63.454,
+        48.216
+      ],
+      [
+        71.942,
+        47.886
+      ],
+      [
+        73.558,
+        47.509
+      ],
+      [
+        75.983,
+        45.068
+      ],
+      [
+        79.217,
+        13.709
+      ],
+      [
+        82.854,
+        12.808
+      ],
+      [
+        92.554,
+        11.568
+      ],
+      [
+        94.979,
+        9.596
+      ],
+      [
+        97.0,
+        9.384
+      ]
+    ],
+    "validation": {
+      "heldOutMedianBoundaryPixels": 1.5,
+      "heldOutP95BoundaryPixels": 17.679,
+      "crossSubsetP95ProfileMm": 4.188,
+      "dimensionResidualMm": 0.0,
+      "passesInitialGate": false
+    },
+    "status": "experimental-rejected",
+    "rendererIntegrated": false,
+    "limitations": [
+      "Supplier spin imagery is low resolution",
+      "Macro profile only; ornament relief is a later material stage",
+      "Acceptance requires review of automatic overlays"
+    ]
+  }
+]

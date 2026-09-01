@@ -1,0 +1,14 @@
+{
+  "roomId": "stock-pilot",
+  "title": "Empty room with white walls and a coffered ceiling",
+  "photographer": "Nisha Vastu & Dubai Property Consultant",
+  "sourcePage": "https://unsplash.com/photos/an-empty-room-with-white-walls-and-a-white-ceiling-nkpxdzyyj_I",
+  "downloadUrl": "https://unsplash.com/photos/nkpxdzyyj_I/download?force=true",
+  "licence": "Unsplash License",
+  "licenceUrl": "https://unsplash.com/license",
+  "downloadedAt": "2026-08-31",
+  "originalFile": "room-source.jpg",
+  "workingCrop": "room.jpg",
+  "workingCropDescription": "Full-frame resized working copy retaining the blank left wall, coffered ceiling, skirting, tiled floor and door geometry.",
+  "notes": "Selected for calibration rather than styling: the wall-ceiling boundary, skirting, tiled floor and door jambs provide multiple independent perspective cues. The JPEG remains LDR, so recovered lighting is an approximation rather than HDR radiance."
+}

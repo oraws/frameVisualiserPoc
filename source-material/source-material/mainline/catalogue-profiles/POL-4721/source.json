@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4721",
+  "name": "30mm Flats Oak Woodgrain Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 16,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 87,
+  "label": "POL 4721",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 211,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 683.693,
+    "top": 333.375,
+    "x1": 767.933,
+    "bottom": 533.775
+  }
+}

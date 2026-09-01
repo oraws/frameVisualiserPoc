@@ -1,0 +1,77 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "0219BK",
+  "name": "Black Bevel - Open Grain",
+  "description": "20x15mm Black Bevel Moulding",
+  "productUrl": "https://centrado.co/product/black-bevel-open-grain-0219bk/",
+  "widthMm": 20.0,
+  "depthMm": 15.0,
+  "rebateMm": 8.4,
+  "profileType": "angled",
+  "colourTags": [
+    "black"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      10.57
+    ],
+    [
+      0.401,
+      11.577
+    ],
+    [
+      0.952,
+      12.081
+    ],
+    [
+      7.469,
+      14.95
+    ],
+    [
+      19.799,
+      14.95
+    ],
+    [
+      20.0,
+      14.799
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 197,
+      "right": 596,
+      "top": 119,
+      "baseline": 417
+    },
+    "pixelsPerMmX": 19.95,
+    "pixelsPerMmZ": 19.8667,
+    "anisotropyFraction": 0.00418,
+    "sampleCount": 412,
+    "simplifiedPointCount": 6
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219BK.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219-Profile.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219BK_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

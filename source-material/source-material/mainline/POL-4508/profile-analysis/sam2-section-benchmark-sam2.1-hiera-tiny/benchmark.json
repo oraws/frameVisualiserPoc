@@ -1,0 +1,413 @@
+{
+  "sku": "POL-4508",
+  "model": "facebook/sam2.1-hiera-tiny",
+  "outputFolder": "sam2-section-benchmark-sam2.1-hiera-tiny",
+  "device": "cpu",
+  "rendererIntegrated": false,
+  "promptSource": "automatic-classical-cut-mask",
+  "frames": [
+    {
+      "frame": "img22",
+      "source": "img22.jpg",
+      "classicalMask": "img22-cut-mask.png",
+      "learnedMask": "img22-sam2-mask.png",
+      "overlay": "img22-sam2-overlay.png",
+      "selectedCandidate": 2,
+      "inferenceSeconds": 0.464,
+      "boundaryMedianDifferencePixels": 1.0,
+      "boundaryP95DifferencePixels": 2.0,
+      "boundaryFallbackRate": 0.0441,
+      "maximumAllowedBoundaryDeltaPixels": 10,
+      "prompts": {
+        "points": [
+          [
+            49,
+            38
+          ],
+          [
+            58,
+            39
+          ],
+          [
+            67,
+            52
+          ],
+          [
+            76,
+            57
+          ],
+          [
+            84,
+            57
+          ],
+          [
+            93,
+            58
+          ],
+          [
+            102,
+            58
+          ],
+          [
+            49,
+            58
+          ],
+          [
+            58,
+            61
+          ],
+          [
+            67,
+            82
+          ],
+          [
+            76,
+            91
+          ],
+          [
+            84,
+            91
+          ],
+          [
+            93,
+            92
+          ],
+          [
+            102,
+            92
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "box": [
+          39,
+          2,
+          112,
+          105
+        ]
+      },
+      "candidateMetrics": [
+        {
+          "modelPredictedIou": 0.8026,
+          "classicalMaskIou": 0.901,
+          "positivePromptCoverage": 0.8571,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0253,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.8385
+        },
+        {
+          "modelPredictedIou": 0.9117,
+          "classicalMaskIou": 0.9124,
+          "positivePromptCoverage": 1.0,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0471,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.9023
+        },
+        {
+          "modelPredictedIou": 0.9395,
+          "classicalMaskIou": 0.9067,
+          "positivePromptCoverage": 1.0,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0565,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.9059
+        }
+      ],
+      "modelPredictedIou": 0.9395,
+      "classicalMaskIou": 0.9067,
+      "positivePromptCoverage": 1.0,
+      "negativePromptExclusion": 0.8571,
+      "areaRatioToClassical": 1.0565,
+      "promptAndAreaConstraintsPass": true,
+      "selectionScore": 0.9059,
+      "boundaryRefinementConstraintsPass": true
+    },
+    {
+      "frame": "img23",
+      "source": "img23.jpg",
+      "classicalMask": "img23-cut-mask.png",
+      "learnedMask": "img23-sam2-mask.png",
+      "overlay": "img23-sam2-overlay.png",
+      "selectedCandidate": 2,
+      "inferenceSeconds": 0.423,
+      "boundaryMedianDifferencePixels": 0.0,
+      "boundaryP95DifferencePixels": 2.0,
+      "boundaryFallbackRate": 0.0714,
+      "maximumAllowedBoundaryDeltaPixels": 9,
+      "prompts": {
+        "points": [
+          [
+            58,
+            39
+          ],
+          [
+            65,
+            46
+          ],
+          [
+            72,
+            57
+          ],
+          [
+            80,
+            57
+          ],
+          [
+            87,
+            58
+          ],
+          [
+            94,
+            58
+          ],
+          [
+            102,
+            58
+          ],
+          [
+            58,
+            61
+          ],
+          [
+            65,
+            73
+          ],
+          [
+            72,
+            91
+          ],
+          [
+            80,
+            91
+          ],
+          [
+            87,
+            92
+          ],
+          [
+            94,
+            92
+          ],
+          [
+            102,
+            93
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "box": [
+          49,
+          2,
+          110,
+          105
+        ]
+      },
+      "candidateMetrics": [
+        {
+          "modelPredictedIou": 0.842,
+          "classicalMaskIou": 0.8994,
+          "positivePromptCoverage": 1.0,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0424,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.8791
+        },
+        {
+          "modelPredictedIou": 0.9112,
+          "classicalMaskIou": 0.9086,
+          "positivePromptCoverage": 1.0,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0533,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.8986
+        },
+        {
+          "modelPredictedIou": 0.9403,
+          "classicalMaskIou": 0.9004,
+          "positivePromptCoverage": 1.0,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0641,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.9014
+        }
+      ],
+      "modelPredictedIou": 0.9403,
+      "classicalMaskIou": 0.9004,
+      "positivePromptCoverage": 1.0,
+      "negativePromptExclusion": 0.8571,
+      "areaRatioToClassical": 1.0641,
+      "promptAndAreaConstraintsPass": true,
+      "selectionScore": 0.9014,
+      "boundaryRefinementConstraintsPass": true
+    },
+    {
+      "frame": "img24",
+      "source": "img24.jpg",
+      "classicalMask": "img24-cut-mask.png",
+      "learnedMask": "img24-sam2-mask.png",
+      "overlay": "img24-sam2-overlay.png",
+      "selectedCandidate": 1,
+      "inferenceSeconds": 0.421,
+      "boundaryMedianDifferencePixels": 0.0,
+      "boundaryP95DifferencePixels": 2.05,
+      "boundaryFallbackRate": 0.1167,
+      "maximumAllowedBoundaryDeltaPixels": 10,
+      "prompts": {
+        "points": [
+          [
+            56,
+            39
+          ],
+          [
+            64,
+            46
+          ],
+          [
+            72,
+            57
+          ],
+          [
+            80,
+            57
+          ],
+          [
+            87,
+            58
+          ],
+          [
+            95,
+            58
+          ],
+          [
+            103,
+            58
+          ],
+          [
+            56,
+            61
+          ],
+          [
+            64,
+            73
+          ],
+          [
+            72,
+            91
+          ],
+          [
+            80,
+            91
+          ],
+          [
+            87,
+            92
+          ],
+          [
+            95,
+            92
+          ],
+          [
+            103,
+            92
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "box": [
+          47,
+          2,
+          112,
+          105
+        ]
+      },
+      "candidateMetrics": [
+        {
+          "modelPredictedIou": 0.8615,
+          "classicalMaskIou": 0.8929,
+          "positivePromptCoverage": 1.0,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0381,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.8857
+        },
+        {
+          "modelPredictedIou": 0.909,
+          "classicalMaskIou": 0.8715,
+          "positivePromptCoverage": 1.0,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0098,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.9083
+        },
+        {
+          "modelPredictedIou": 0.9383,
+          "classicalMaskIou": 0.8974,
+          "positivePromptCoverage": 1.0,
+          "negativePromptExclusion": 0.8571,
+          "areaRatioToClassical": 1.0492,
+          "promptAndAreaConstraintsPass": true,
+          "selectionScore": 0.9065
+        }
+      ],
+      "modelPredictedIou": 0.909,
+      "classicalMaskIou": 0.8715,
+      "positivePromptCoverage": 1.0,
+      "negativePromptExclusion": 0.8571,
+      "areaRatioToClassical": 1.0098,
+      "promptAndAreaConstraintsPass": true,
+      "selectionScore": 0.9083,
+      "boundaryRefinementConstraintsPass": true
+    }
+  ],
+  "averageInferenceSeconds": 0.436,
+  "decision": {
+    "learnedCrossViewP95Mm": 1.933,
+    "classicalCrossViewP95Mm": 3.253,
+    "allBoundaryRefinementsPass": true,
+    "learnedImprovesStability": true
+  }
+}

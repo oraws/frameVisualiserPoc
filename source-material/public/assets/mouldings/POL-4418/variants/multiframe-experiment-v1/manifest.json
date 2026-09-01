@@ -1,0 +1,43 @@
+{
+  "id": "multiframe-experiment-v1",
+  "sku": "POL-4418",
+  "label": "Supplier spin multi-frame experiment",
+  "status": "experimental",
+  "productUrl": "https://mainlinemouldings.com/54mm-flat-bronze-polcore-moulding/?searchuuid=13af4cbd-eb45-4f91-892b-5ebd360b7e30&search_query=POL-4418",
+  "source": "Mainline Lv2 spin images only",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crop": [
+    29,
+    67,
+    130,
+    232
+  ],
+  "alignmentShiftsPx": [
+    -4,
+    -4,
+    -2,
+    0,
+    1,
+    3,
+    4
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "69c745deff6405a050f819004a1db545aedd847712daf0f98b73f1384ddc5373",
+      "roughness.jpg": "0e576f65c133831b292407be341b1e878c5dcb43788df32b0cf67a1f5e6fc961",
+      "bump.jpg": "280352f5fd999ee155c2029c55918d5637091014effcd7aa81380c295a73536a"
+    }
+  },
+  "activation": "Manual review required"
+}

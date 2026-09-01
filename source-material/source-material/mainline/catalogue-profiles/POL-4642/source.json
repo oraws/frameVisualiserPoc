@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4642",
+  "name": "Naples 31mm Gold Polcore Moulding",
+  "widthMm": 31,
+  "depthMm": 15,
+  "rebateMm": 7,
+  "profileType": "flat",
+  "page": 145,
+  "label": "POL 4642",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 220,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 1076.545,
+    "top": 69.809,
+    "x1": 1164.385,
+    "bottom": 269.489
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR0225BF",
+  "name": "Create Brown Foil Flat - Open Grain",
+  "description": "21x22mm Brown Foil Create Flat Moulding",
+  "productUrl": "https://centrado.co/product/create-brown-foil-flat-open-grain-cr0225bf/",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "profileType": "flat",
+  "colourTags": [
+    "brown"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      21.637
+    ],
+    [
+      0.415,
+      22.0
+    ],
+    [
+      20.585,
+      22.0
+    ],
+    [
+      21.0,
+      21.689
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 192,
+      "right": 597,
+      "top": 63,
+      "baseline": 487
+    },
+    "pixelsPerMmX": 19.2857,
+    "pixelsPerMmZ": 19.2727,
+    "anisotropyFraction": 0.00067,
+    "sampleCount": 406,
+    "simplifiedPointCount": 4
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225BF.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225-Profile-3.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225BF_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Create-Natural-AF-BF-GF-Macro_Gallery-1.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

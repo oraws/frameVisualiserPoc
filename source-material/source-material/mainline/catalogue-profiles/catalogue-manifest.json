@@ -1,0 +1,750 @@
+{
+  "sourcePdf": "/Users/stephenorawe/Work/frame-visualizer-poc/source-material/source-material/mainline/ml_catalogue.pdf",
+  "method": "pdf-layout-image-pairing",
+  "requestedCount": 39,
+  "products": [
+    {
+      "sku": "POL-4875",
+      "name": "Verona Black",
+      "widthMm": 97,
+      "depthMm": 49,
+      "rebateMm": 16,
+      "profileType": "ornate-scoop",
+      "page": 106,
+      "label": "POL 4875",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 687,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 42.52,
+        "top": 69.68,
+        "x1": 317.32,
+        "bottom": 269.36
+      }
+    },
+    {
+      "sku": "POL-4100",
+      "name": "Brushed Black",
+      "widthMm": 41,
+      "depthMm": 13,
+      "rebateMm": 9,
+      "profileType": "flat",
+      "page": 88,
+      "label": "POL 4100",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 290,
+      "pixelHeight": 503,
+      "pdfImageBox": {
+        "x0": 819.391,
+        "top": 599.941,
+        "x1": 935.551,
+        "bottom": 801.061
+      }
+    },
+    {
+      "sku": "POL-4508",
+      "name": "Paramount Black & Silver",
+      "widthMm": 30,
+      "depthMm": 30,
+      "rebateMm": 13,
+      "profileType": "composite",
+      "page": 92,
+      "label": "POL 4508",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 212,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 673.026,
+        "top": 70.104,
+        "x1": 757.986,
+        "bottom": 270.264
+      }
+    },
+    {
+      "sku": "POL-4418",
+      "name": "Flat Bronze",
+      "widthMm": 54,
+      "depthMm": 20,
+      "rebateMm": 14,
+      "profileType": "flat",
+      "page": 92,
+      "label": "POL 4418",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 383,
+      "pixelHeight": 498,
+      "pdfImageBox": {
+        "x0": 224.529,
+        "top": 69.887,
+        "x1": 377.649,
+        "bottom": 269.087
+      }
+    },
+    {
+      "sku": "POL-4211",
+      "name": "Flat Oak",
+      "widthMm": 54,
+      "depthMm": 20,
+      "rebateMm": 14,
+      "profileType": "flat",
+      "page": 91,
+      "label": "POL 4211",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 384,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 648.643,
+        "top": 600.573,
+        "x1": 802.243,
+        "bottom": 800.733
+      }
+    },
+    {
+      "sku": "POL-4721",
+      "name": "30mm Flats Oak Woodgrain Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 16,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 87,
+      "label": "POL 4721",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 211,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 683.693,
+        "top": 333.375,
+        "x1": 767.933,
+        "bottom": 533.775
+      }
+    },
+    {
+      "sku": "POL-4415",
+      "name": "30mm Flats Brushed Bronze Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 16,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 88,
+      "label": "POL 4415",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 213,
+      "pixelHeight": 498,
+      "pdfImageBox": {
+        "x0": 42.076,
+        "top": 69.785,
+        "x1": 127.036,
+        "bottom": 268.985
+      }
+    },
+    {
+      "sku": "POL-1301",
+      "name": "Starling 35mm Brushed Black Bronze Sides Polcore Moulding",
+      "widthMm": 35,
+      "depthMm": 15,
+      "rebateMm": 7,
+      "profileType": "scoop",
+      "page": 146,
+      "label": "POL 1301",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 255,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 887.558,
+        "top": 333.231,
+        "x1": 989.558,
+        "bottom": 532.671
+      }
+    },
+    {
+      "sku": "POL-1336",
+      "name": "Nelson 38mm Distressed Black Polcore Moulding",
+      "widthMm": 38,
+      "depthMm": 28,
+      "rebateMm": 22,
+      "profileType": "flat",
+      "page": 144,
+      "label": "POL 1336",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 269,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 1057.519,
+        "top": 69.744,
+        "x1": 1165.039,
+        "bottom": 269.904
+      }
+    },
+    {
+      "sku": "POL-4202",
+      "name": "30mm Flats Brushed Black Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 16,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 88,
+      "label": "POL 4202",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 213,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 152.192,
+        "top": 333.455,
+        "x1": 237.152,
+        "bottom": 533.375
+      }
+    },
+    {
+      "sku": "POL-4446",
+      "name": "Outline 30mm Brushed Black Gold Edges Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 16,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 86,
+      "label": "POL 4446",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 212,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 190.2,
+        "top": 69.708,
+        "x1": 275.16,
+        "bottom": 269.388
+      }
+    },
+    {
+      "sku": "POL-4313",
+      "name": "Edge 43mm Brushed Silver SSE Polcore Moulding",
+      "widthMm": 43,
+      "depthMm": 20,
+      "rebateMm": 14,
+      "profileType": "flat",
+      "page": 96,
+      "label": "POL 4313",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 304,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 309.448,
+        "top": 70.044,
+        "x1": 431.368,
+        "bottom": 269.724
+      }
+    },
+    {
+      "sku": "POL-4436",
+      "name": "Edge 30mm Brushed Gold GSE Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 30,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 96,
+      "label": "POL 4436",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 212,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 473.209,
+        "top": 600.445,
+        "x1": 558.169,
+        "bottom": 800.125
+      }
+    },
+    {
+      "sku": "POL-7146",
+      "name": "L Shape 10mm White Woodgrain Polcore Moulding",
+      "widthMm": 10,
+      "depthMm": 45,
+      "rebateMm": 33,
+      "profileType": "l-shape",
+      "page": 82,
+      "label": "POL 7146",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 283,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 673.996,
+        "top": 599.792,
+        "x1": 787.276,
+        "bottom": 799.232
+      }
+    },
+    {
+      "sku": "POL-4416",
+      "name": "30mm Flats Brushed Gunmetal Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 16,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 88,
+      "label": "POL 4416",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 212,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 473.905,
+        "top": 333.496,
+        "x1": 558.625,
+        "bottom": 533.808
+      }
+    },
+    {
+      "sku": "POL-2109",
+      "name": "Contemporary Classics 40mm Antique Gold Polcore Moulding",
+      "widthMm": 40,
+      "depthMm": 21,
+      "rebateMm": 10,
+      "profileType": "scoop",
+      "page": 123,
+      "label": "POL 2109",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 282,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 286.649,
+        "top": 599.932,
+        "x1": 399.449,
+        "bottom": 799.372
+      }
+    },
+    {
+      "sku": "POL-4540",
+      "name": "Watercolour 25mm Antique Silver Polcore Moulding",
+      "widthMm": 25,
+      "depthMm": 18,
+      "rebateMm": 11,
+      "profileType": "reverse",
+      "page": 84,
+      "label": "POL 4540",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 177,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 153.372,
+        "top": 599.737,
+        "x1": 224.172,
+        "bottom": 799.657
+      }
+    },
+    {
+      "sku": "POL-4344",
+      "name": "43mm Box Limed White Polcore Moulding",
+      "widthMm": 43,
+      "depthMm": 32,
+      "rebateMm": 26,
+      "profileType": "flat",
+      "page": 94,
+      "label": "POL 4344",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 307,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 63.282,
+        "top": 334.326,
+        "x1": 185.922,
+        "bottom": 534.486
+      }
+    },
+    {
+      "sku": "POL-7145",
+      "name": "L Shape 10mm Black Woodgrain Polcore Moulding",
+      "widthMm": 10,
+      "depthMm": 45,
+      "rebateMm": 33,
+      "profileType": "l-shape",
+      "page": 82,
+      "label": "POL 7145",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 283,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 870.304,
+        "top": 599.706,
+        "x1": 983.584,
+        "bottom": 799.386
+      }
+    },
+    {
+      "sku": "POL-7150",
+      "name": "Hockney 69mm Brushed White Polcore Moulding",
+      "widthMm": 69,
+      "depthMm": 40,
+      "rebateMm": 18,
+      "profileType": "scoop",
+      "page": 112,
+      "label": "POL 7150",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 489,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 335.192,
+        "top": 333.416,
+        "x1": 530.792,
+        "bottom": 532.856
+      }
+    },
+    {
+      "sku": "POL-4541",
+      "name": "Watercolour 25mm Gold Polcore Moulding",
+      "widthMm": 25,
+      "depthMm": 18,
+      "rebateMm": 11,
+      "profileType": "reverse",
+      "page": 84,
+      "label": "POL 4541",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 177,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 487.795,
+        "top": 599.93,
+        "x1": 558.595,
+        "bottom": 799.37
+      }
+    },
+    {
+      "sku": "POL-4642",
+      "name": "Naples 31mm Gold Polcore Moulding",
+      "widthMm": 31,
+      "depthMm": 15,
+      "rebateMm": 7,
+      "profileType": "flat",
+      "page": 145,
+      "label": "POL 4642",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 220,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 1076.545,
+        "top": 69.809,
+        "x1": 1164.385,
+        "bottom": 269.489
+      }
+    },
+    {
+      "sku": "POL-4640",
+      "name": "Naples 48mm Gold Polcore Moulding",
+      "widthMm": 48,
+      "depthMm": 18,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 145,
+      "label": "POL 4640",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 339,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 919.842,
+        "top": 69.957,
+        "x1": 1055.442,
+        "bottom": 270.357
+      }
+    },
+    {
+      "sku": "POL-4571",
+      "name": "16mm Flats Brushed Oak Polcore Moulding",
+      "widthMm": 16,
+      "depthMm": 15,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 82,
+      "label": "POL 4571",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 113,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 391.566,
+        "top": 333.179,
+        "x1": 436.926,
+        "bottom": 533.579
+      }
+    },
+    {
+      "sku": "POL-2169",
+      "name": "79mm Gold Polcore Moulding",
+      "widthMm": 79,
+      "depthMm": 27,
+      "rebateMm": 15,
+      "profileType": "flat",
+      "page": 151,
+      "label": "POL 2169",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 559,
+      "pixelHeight": 503,
+      "pdfImageBox": {
+        "x0": 933.027,
+        "top": 599.87,
+        "x1": 1156.947,
+        "bottom": 800.75
+      }
+    },
+    {
+      "sku": "POL-4506",
+      "name": "Paramount 53mm Brushed Gunmetal with Silver Slip Polcore Moulding",
+      "widthMm": 53,
+      "depthMm": 30,
+      "rebateMm": 13,
+      "profileType": "flat",
+      "page": 93,
+      "label": "POL 4506",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 376,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 42.997,
+        "top": 333.37,
+        "x1": 193.237,
+        "bottom": 534.01
+      }
+    },
+    {
+      "sku": "POL-7149",
+      "name": "Hockney 69mm Brushed Black Polcore Moulding",
+      "widthMm": 69,
+      "depthMm": 40,
+      "rebateMm": 18,
+      "profileType": "scoop",
+      "page": 112,
+      "label": "POL 7149",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 489,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 81.491,
+        "top": 333.983,
+        "x1": 277.091,
+        "bottom": 533.423
+      }
+    },
+    {
+      "sku": "POL-2190",
+      "name": "Contemporary Classics 70mm Black Polcore Moulding",
+      "widthMm": 70,
+      "depthMm": 30,
+      "rebateMm": 15,
+      "profileType": "scoop",
+      "page": 124,
+      "label": "POL 2190",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 497,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 922.16,
+        "top": 333.277,
+        "x1": 1120.64,
+        "bottom": 533.197
+      }
+    },
+    {
+      "sku": "POL-1009",
+      "name": "28mm Flats Brushed Black Polcore Moulding",
+      "widthMm": 28,
+      "depthMm": 16,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 139,
+      "label": "POL 1009",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 198,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 648.848,
+        "top": 599.866,
+        "x1": 728.048,
+        "bottom": 799.306
+      }
+    },
+    {
+      "sku": "POL-1129",
+      "name": "Edge 30mm Brushed Silver Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 16,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 138,
+      "label": "POL 1129",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 213,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 353.236,
+        "top": 333.737,
+        "x1": 438.196,
+        "bottom": 533.657
+      }
+    },
+    {
+      "sku": "POL-1334",
+      "name": "Nelson 38mm Distressed Walnut Polcore Moulding",
+      "widthMm": 38,
+      "depthMm": 28,
+      "rebateMm": 22,
+      "profileType": "flat",
+      "page": 144,
+      "label": "POL 1334",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 269,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 649.134,
+        "top": 70.369,
+        "x1": 756.894,
+        "bottom": 270.769
+      }
+    },
+    {
+      "sku": "POL-7026",
+      "name": "Fletcher 30mm Walnut Woodgrain Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 20,
+      "rebateMm": 9,
+      "profileType": "scoop",
+      "page": 132,
+      "label": "POL 7026",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 213,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 389.958,
+        "top": 70.126,
+        "x1": 475.158,
+        "bottom": 269.806
+      }
+    },
+    {
+      "sku": "POL-2104",
+      "name": "Contemporary Classics 70mm Antique Gold Polcore Moulding",
+      "widthMm": 70,
+      "depthMm": 30,
+      "rebateMm": 15,
+      "profileType": "scoop",
+      "page": 123,
+      "label": "POL 2104",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 495,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 42.205,
+        "top": 599.91,
+        "x1": 240.445,
+        "bottom": 799.588
+      }
+    },
+    {
+      "sku": "010-1009",
+      "name": "Fletcher 53mm White Woodgrain Wood Moulding",
+      "widthMm": 53,
+      "depthMm": 35,
+      "rebateMm": 14,
+      "profileType": "scoop",
+      "page": 29,
+      "label": "010 1009",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 375,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 258.237,
+        "top": 333.993,
+        "x1": 408.477,
+        "bottom": 533.673
+      }
+    },
+    {
+      "sku": "010-4609",
+      "name": "Deep Rebate 27mm White Woodgrain Wood Moulding",
+      "widthMm": 27,
+      "depthMm": 40,
+      "rebateMm": 33,
+      "profileType": "flat",
+      "page": 36,
+      "label": "010 4609",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 192,
+      "pixelHeight": 498,
+      "pdfImageBox": {
+        "x0": 1069.592,
+        "top": 69.783,
+        "x1": 1146.392,
+        "bottom": 268.983
+      }
+    },
+    {
+      "sku": "019-1272",
+      "name": "Richmond 12mm Antique Gold Wood Moulding",
+      "widthMm": 12,
+      "depthMm": 14,
+      "rebateMm": 9,
+      "profileType": "cushion",
+      "page": 14,
+      "label": "019 1272",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 142,
+      "pixelHeight": 499,
+      "pdfImageBox": {
+        "x0": 388.063,
+        "top": 69.932,
+        "x1": 444.703,
+        "bottom": 269.612
+      }
+    },
+    {
+      "sku": "010-4603",
+      "name": "Deep Rebate 27mm Black Woodgrain Wood Moulding",
+      "widthMm": 27,
+      "depthMm": 40,
+      "rebateMm": 33,
+      "profileType": "flat",
+      "page": 36,
+      "label": "010 4603",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 193,
+      "pixelHeight": 498,
+      "pdfImageBox": {
+        "x0": 957.874,
+        "top": 69.807,
+        "x1": 1035.154,
+        "bottom": 269.247
+      }
+    },
+    {
+      "sku": "POL-4417",
+      "name": "Outline 30mm Brushed Black Silver Edges Polcore Moulding",
+      "widthMm": 30,
+      "depthMm": 16,
+      "rebateMm": 10,
+      "profileType": "flat",
+      "page": 86,
+      "label": "POL 4417",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 213,
+      "pixelHeight": 498,
+      "pdfImageBox": {
+        "x0": 187.716,
+        "top": 599.798,
+        "x1": 272.676,
+        "bottom": 798.998
+      }
+    },
+    {
+      "sku": "POL-4643",
+      "name": "Naples 31mm Silver Polcore Moulding",
+      "widthMm": 31,
+      "depthMm": 15,
+      "rebateMm": 7,
+      "profileType": "flat",
+      "page": 145,
+      "label": "POL 4643",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 220,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 809.575,
+        "top": 69.806,
+        "x1": 897.415,
+        "bottom": 269.726
+      }
+    }
+  ],
+  "failures": [],
+  "importedCount": 39
+}

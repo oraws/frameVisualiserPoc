@@ -1,0 +1,65 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR8005OA",
+  "name": "Create Oak Flat - Closed Grain",
+  "description": "40x30mm Oak Closed Grain Create Flat Moulding",
+  "productUrl": "https://centrado.co/product/create-oak-flat-closed-grain-cr8005oa/",
+  "widthMm": 40.0,
+  "depthMm": 30.0,
+  "rebateMm": 16.8,
+  "profileType": "flat",
+  "colourTags": [
+    "oak"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      29.829
+    ],
+    [
+      0.256,
+      30.0
+    ],
+    [
+      40.0,
+      29.914
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 121,
+      "right": 590,
+      "top": 128,
+      "baseline": 478
+    },
+    "pixelsPerMmX": 11.725,
+    "pixelsPerMmZ": 11.6667,
+    "anisotropyFraction": 0.00498,
+    "sampleCount": 468,
+    "simplifiedPointCount": 3
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR8005OA.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR8005-Profile.png",
+      "width": 662,
+      "height": 663
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR8005OA_Chevron.jpg",
+      "width": 2077,
+      "height": 2077
+    }
+  ],
+  "rendererIntegrated": true
+}

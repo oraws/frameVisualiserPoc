@@ -1,0 +1,884 @@
+{
+  "sourceCsv": "/Users/stephenorawe/Work/invoice-extractor/unique_mouldings.csv",
+  "importedAt": "2026-08-27T08:52:54.364Z",
+  "count": 36,
+  "products": [
+    {
+      "sku": "POL-4211",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "54mm Flats Brushed Oak Polcore Moulding",
+      "description": "54x20mm Flat Brushed Oak Picture Frame Moulding.",
+      "metaDescription": "Discover the perfect frame for your artwork or photographs with Mainline Mouldings. Our Flat Brushed Oak frames offer a sleek and modern look, enhancing the visual appeal of your pieces. Browse our extensive collection of framing materials and equipment to find the perfect match for your framing needs.",
+      "productUrl": "https://mainlinemouldings.com/54mm-flat-oak-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/54mm-flat-oak-polcore-moulding/?searchuuid=8d67b9c2-bd58-451a-8d8b-960c85275ad2&search_query=POL-4211",
+      "discontinued": false,
+      "details": {
+        "colour": "Oak",
+        "profile": "Flat",
+        "finish": "Wood Grain Brushed",
+        "range": "54x20mm Flats"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 54,
+        "depthMm": 20,
+        "rebateMm": 14
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:13.406Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4721",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "POL-4721",
+      "description": null,
+      "metaDescription": null,
+      "productUrl": "https://mainlinemouldings.com/30mm-woodgrain-oak-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/30mm-woodgrain-oak-polcore-moulding/?searchuuid=036283a1-482a-4d14-b1eb-7604f868f956&search_query=POL-4721",
+      "discontinued": true,
+      "details": {
+        "colour": null,
+        "profile": null,
+        "finish": null,
+        "range": null
+      },
+      "dimensions": null,
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:17.401Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4415",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "30mm Flats Brushed Bronze Polcore Moulding",
+      "description": "30x16mm Flat Brushed Bronze Picture Frame Moulding.",
+      "metaDescription": "Looking for high-quality framing materials? Check out our Flat Brushed Bronze Moulding. Designed with precision and durability in mind, it's the perfect choice for framing your artwork or photographs. Shop now at Mainline Mouldings.",
+      "productUrl": "https://mainlinemouldings.com/30mm-flat-bronze-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/30mm-flat-bronze-polcore-moulding/?searchuuid=5cad4c10-fcee-48a6-befe-f932ca651dd2&search_query=POL-4415",
+      "discontinued": false,
+      "details": {
+        "colour": "Bronze",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "30mm Flats"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 30,
+        "depthMm": 16,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:21.413Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-1301",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Starling 35mm Brushed Black Bronze Sides Polcore Moulding",
+      "description": "35x15mm Starling Brushed Black Bronze Sides Picture Frame Moulding",
+      "metaDescription": "Enhance your artwork with the sleek and elegant Starling Black and Gold Polcore  framing materials. Made from durable and lightweight Polcore, these framing materials are perfect for showcasing your favorite artwork or photographs. Shop now and give your artwork the presentation it deserves! Mainline Mouldings offers a wide range of framing materials and framing equipment.",
+      "productUrl": "https://mainlinemouldings.com/starling-black-gse-35mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/starling-black-gse-35mm-polcore-moulding/?searchuuid=a3379aeb-7878-41e1-acfa-5029de93b458&search_query=POL-1301",
+      "discontinued": false,
+      "details": {
+        "colour": "Black",
+        "profile": "Scoop",
+        "finish": "Brushed",
+        "range": "Starling Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 35,
+        "depthMm": 15,
+        "rebateMm": 7
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:25.502Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-1336",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Nelson 38mm Distressed Black Polcore Moulding",
+      "description": "With its deep rebate and stylish distressed finish, the 38x28mm Nelson Distressed Black Polcore Moulding is ideal for framing artsy-crafty items and artwork, posters, and all types of memorabilia. A popular, great-value choice.",
+      "metaDescription": "38x28mm Nelson Distressed Black Deep Rebate  Polcore moulding. Great for posters and arty crafty items and artwork. Stylish distressed finish with extra deep rebate.",
+      "productUrl": "https://mainlinemouldings.com/nelson-black-38mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/nelson-black-38mm-polcore-moulding/?searchuuid=bbc3482c-6ea1-4a7a-97b6-2c78b4a80792&search_query=POL-1336",
+      "discontinued": false,
+      "details": {
+        "colour": "Black",
+        "profile": "Flat",
+        "finish": "Wood Grain",
+        "range": "Nelson"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 38,
+        "depthMm": 28,
+        "rebateMm": 22
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:29.495Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4202",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "30mm Flats Brushed Black Polcore Moulding",
+      "description": "30x16mm Flat Brushed Black Picture Frame Moulding.",
+      "metaDescription": "Shop for high-quality flat brushed black framing material online at Mainline Mouldings. Enhance the visual appeal of your artwork or photograph with this sleek and modern framing option. Discover a wide range of framing materials and equipment to create the perfect frame for your displayed pieces.",
+      "productUrl": "https://mainlinemouldings.com/30mm-flats-brushed-black-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/30mm-flats-brushed-black-polcore-moulding/?searchuuid=4b067f81-af6f-4706-ac26-8b6f750f7634&search_query=POL-4202",
+      "discontinued": false,
+      "details": {
+        "colour": "Black",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "30mm Flats"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 30,
+        "depthMm": 16,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:33.595Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4446",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Outline 30mm Brushed Black Gold Edges Polcore Moulding",
+      "description": "30x16mm Outline Brushed Black Gold Edges Picture Frame Moulding.",
+      "metaDescription": "Shop Mainline Mouldings for high-quality framing materials and equipment. Get the Flat Brushed Black Gold Outlines to add elegance to your artwork or photograph. Durable and stylish, this framing material is perfect for any framing project.",
+      "productUrl": "https://mainlinemouldings.com/outline-black-gse-30mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/outline-black-gse-30mm-polcore-moulding/?searchuuid=47969bb8-3b33-4b20-8d53-16b45e0c72f5&search_query=POL-4446",
+      "discontinued": true,
+      "details": {
+        "colour": "Black",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "Outline"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 30,
+        "depthMm": 16,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:37.572Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4313",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Edge 43mm Brushed Silver SSE Polcore Moulding",
+      "description": "43x20mm Edge Brushed Silver Silver Edge Picture Frame Moulding.",
+      "metaDescription": "43x20mm brushed silver Polcore frame moulding with silver sight edge and 14mm rebate. Sustainable recycled material, perfect for contemporary photos, certificates, and artwork. Order online with quick UK dispatch.",
+      "productUrl": "https://mainlinemouldings.com/edge-silver-sse-43mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/edge-silver-sse-43mm-polcore-moulding/?searchuuid=b1d77baa-7ae7-4d9c-8991-498ebb58267c&search_query=POL-4313",
+      "discontinued": false,
+      "details": {
+        "colour": "Silver",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "Edge Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 43,
+        "depthMm": 20,
+        "rebateMm": 14
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:46.931Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4436",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Edge 30mm Brushed Gold GSE Polcore Moulding",
+      "description": null,
+      "metaDescription": "Edge 30mm Brushed Gold Polcore moulding. Elegant slim profile with warm brushed gold finish. Ideal for modern photo frames, portraits and fine art photography. Lightweight and outstanding value.",
+      "productUrl": "https://mainlinemouldings.com/edge-gold-30mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/edge-gold-30mm-polcore-moulding/?searchuuid=6ff16287-a96c-4aeb-8798-f7ac1d74309e&search_query=POL-4436",
+      "discontinued": false,
+      "details": {
+        "colour": "Gold",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "Edge Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 30,
+        "depthMm": 30,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:51.004Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4418",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "54mm Flats Brushed Bronze Polcore Moulding",
+      "description": "54x20mm Flat Brushed Bronze Picture Frame Moulding.",
+      "metaDescription": "Find the perfect framing materials and equipment online at Mainline Mouldings. Shop the Flat Brushed Bronze Frame Moulding for a sleek and stylish look to enhance the beauty of your artwork. Made from durable materials, this high-quality moulding is perfect for professionals and DIY enthusiasts.",
+      "productUrl": "https://mainlinemouldings.com/54mm-flat-bronze-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/54mm-flat-bronze-polcore-moulding/?searchuuid=120e1abd-8dd5-4c2f-bf30-1fc5605030fc&search_query=POL-4418",
+      "discontinued": false,
+      "details": {
+        "colour": "Bronze",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "54x20mm Flats"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 54,
+        "depthMm": 20,
+        "rebateMm": 14
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:54.990Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-7146",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "L Shape 10mm White Woodgrain Polcore Moulding",
+      "description": null,
+      "metaDescription": "Shop the White Woodgrain L Shape online at Mainline Mouldings. We offer a wide range of framing materials and framing equipment to help you create beautiful and professional frames for your artwork or photographs. The White Woodgrain L Shape is made from high-quality wood with a white woodgrain finish, adding a touch of elegance and rustic charm to your frames. Perfect for professional framers and DIY enthusiasts alike.",
+      "productUrl": "https://mainlinemouldings.com/l-shape-10mm-white-woodgrain-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/l-shape-10mm-white-woodgrain-polcore-moulding/?searchuuid=33691431-13e9-4b9d-bd89-c54ae5769ef4&search_query=POL-7146",
+      "discontinued": false,
+      "details": {
+        "colour": "White",
+        "profile": "L Shape",
+        "finish": "Wood Grain Matt",
+        "range": "L Shapes Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 10,
+        "depthMm": 45,
+        "rebateMm": 33
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:50:58.954Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4416",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "30mm Flats Brushed Gunmetal Polcore Moulding",
+      "description": "30x16mm Flat Brushed Charcoal Picture Frame Moulding.",
+      "metaDescription": "Shop Mainline Mouldings for high-quality 30x16mm flat brushed charcoal framing material. Enhance your framing projects with this durable and sleek framing material. Perfect for artwork, photographs, and documents.",
+      "productUrl": "https://mainlinemouldings.com/30mm-flat-brushed-gunmetal-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/30mm-flat-brushed-gunmetal-polcore-moulding/?searchuuid=813eebd8-0171-4028-a47e-0ccb57317778&search_query=POL-4416",
+      "discontinued": false,
+      "details": {
+        "colour": "Gunmetal",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "30mm Flats"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 30,
+        "depthMm": 16,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:09.069Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-2109",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Contemporary Classics 40mm Antique Gold Polcore Moulding",
+      "description": "40x21mm Contemporary Classic Antique Gold Picture Frame Moulding.",
+      "metaDescription": "Discover a variety of contemporary classic antique gold framing materials online at Mainline Mouldings. Enhance your artwork, photographs, and more with our high-quality selection. Shop now and bring elegance and sophistication to your framing projects.",
+      "productUrl": "https://mainlinemouldings.com/contemporary-classics-antique-gold-40mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/contemporary-classics-antique-gold-40mm-polcore-moulding/?searchuuid=0c85a645-285a-4925-a5f4-aebde0a2540a&search_query=POL-2109",
+      "discontinued": false,
+      "details": {
+        "colour": "Gold",
+        "profile": "Scoop",
+        "finish": "Antique",
+        "range": "Contemporary Classics"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 40,
+        "depthMm": 21,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:13.122Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4540",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Watercolour 25mm Antique Silver Polcore Moulding",
+      "description": "25x18mm Watercolour Silver Reverse Polcore Picture Frame Moulding",
+      "metaDescription": "Shop for Watercolour Silver Reverse and other framing materials and equipment online at Mainline Mouldings. Enhance and protect your artwork with this elegant silver reverse moulding. Perfect for framing paintings, drawings, and prints. Order now!",
+      "productUrl": "https://mainlinemouldings.com/watercolour-silver-25mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/watercolour-silver-25mm-polcore-moulding/?searchuuid=33058969-2386-40f0-84c4-8b32d11c099a&search_query=POL-4540",
+      "discontinued": true,
+      "details": {
+        "colour": "Silver",
+        "profile": "Reverse",
+        "finish": "Leaf",
+        "range": "Watercolour"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 25,
+        "depthMm": 18,
+        "rebateMm": 11
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:17.221Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4344",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "43mm Box Limed White Polcore Moulding",
+      "description": "43x32mm Flat Box Limed White Picture Frame Moulding.",
+      "metaDescription": "Shop online for the flat box limed white at Mainline Mouldings. Enhance your framing projects with this high-quality framing material. Add a touch of elegance to your artwork or photographs with its limed white finish. Get yours today!",
+      "productUrl": "https://mainlinemouldings.com/box-white-43mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/box-white-43mm-polcore-moulding/?searchuuid=b777cafa-605c-452e-b6fb-0f331d6615e2&search_query=POL-4344",
+      "discontinued": false,
+      "details": {
+        "colour": "White",
+        "profile": "Flat",
+        "finish": "Limed",
+        "range": "43x32mm Box"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 43,
+        "depthMm": 32,
+        "rebateMm": 26
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:21.255Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-7145",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "L Shape 10mm Black Woodgrain Polcore Moulding",
+      "description": null,
+      "metaDescription": "Discover the perfect framing materials and framing equipment at Mainline Mouldings. Buy the Black Woodgrain L Shape Moulding online and add a stylish touch to your artwork or photographs. Shop now!",
+      "productUrl": "https://mainlinemouldings.com/l-shape-10mm-black-woodgrain-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/l-shape-10mm-black-woodgrain-polcore-moulding/?searchuuid=f168a6d1-c275-40b8-a369-9af60dd6d4b7&search_query=POL-7145",
+      "discontinued": false,
+      "details": {
+        "colour": "Black",
+        "profile": "L Shape",
+        "finish": "Wood Grain Matt",
+        "range": "L Shapes Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 10,
+        "depthMm": 45,
+        "rebateMm": 33
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:25.313Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-7150",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Hockney 69mm Brushed White Polcore Moulding",
+      "description": "69x40mm Hockney scoop Brushed White Picture Frame Moulding.",
+      "metaDescription": "Looking for high-quality framing materials and equipment? Mainline Mouldings offers the Hockney brushed white, perfect for framing photographs, artwork, and more. Shop now for durable and elegant framing solutions.",
+      "productUrl": "https://mainlinemouldings.com/hockney-69mm-brushed-white-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/hockney-69mm-brushed-white-polcore-moulding/?searchuuid=6568e622-ac22-4cea-a003-8f8381741e45&search_query=POL-7150",
+      "discontinued": false,
+      "details": {
+        "colour": "White",
+        "profile": "Scoop",
+        "finish": "Brushed",
+        "range": "Hockney Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 69,
+        "depthMm": 40,
+        "rebateMm": 18
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:29.305Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4541",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Watercolour 25mm Gold Polcore Moulding",
+      "description": "25x18mm Watercolour Gold Reverse Picture Frame Moulding.",
+      "metaDescription": "Shop the Watercolour Gold Reverse framing material online at Mainline Mouldings. Enhance the beauty of your artwork with this stylish and elegant framing material. Made with high-quality materials, it provides durability and long-lasting protection for your artwork.",
+      "productUrl": "https://mainlinemouldings.com/watercolour-gold-25mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/watercolour-gold-25mm-polcore-moulding/?searchuuid=27c25a6e-6d18-4025-a7da-e2b79ef948ad&search_query=POL-4541",
+      "discontinued": true,
+      "details": {
+        "colour": "Gold",
+        "profile": "Reverse",
+        "finish": "Leaf",
+        "range": "Watercolour"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 25,
+        "depthMm": 18,
+        "rebateMm": 11
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:33.250Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4642",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Naples 31mm Gold Polcore Moulding",
+      "description": "31x15mm Naples Flat Gold with lip Picture Frame Moulding",
+      "metaDescription": "Shop online for the finest quality Naples Flat Gold  framing material at Mainline Mouldings. Enhance your artwork with this elegant and timeless piece. Find all your framing equipment and materials in one place.",
+      "productUrl": "https://mainlinemouldings.com/naples-gold-31mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/naples-gold-31mm-polcore-moulding/?searchuuid=df37ae93-7e54-4351-acb7-c05bc8aae533&search_query=POL-4642",
+      "discontinued": false,
+      "details": {
+        "colour": "Gold",
+        "profile": "Flat",
+        "finish": "Leaf",
+        "range": "Naples Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 31,
+        "depthMm": 15,
+        "rebateMm": 7
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:37.212Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4640",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Naples 48mm Gold Polcore Moulding",
+      "description": "48x19mm Naples Flat Gold with lip Picture Frame Moulding",
+      "metaDescription": "Looking for high-quality framing materials? Shop the Naples Flat Gold  moulding online at Mainline Mouldings. Elevate your framing game with this sleek and sophisticated design, perfect for showcasing your cherished artwork and photographs. Browse now and discover the timeless elegance of Naples Flat Gold !",
+      "productUrl": "https://mainlinemouldings.com/naples-gold-48mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/naples-gold-48mm-polcore-moulding/?searchuuid=6dc3561e-61fd-4158-876f-71d0bd5c028b&search_query=POL-4640",
+      "discontinued": false,
+      "details": {
+        "colour": "Gold",
+        "profile": "Flat",
+        "finish": "Leaf",
+        "range": "Naples Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 48,
+        "depthMm": 18,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:44.111Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4571",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "16mm Flats Brushed Oak Polcore Moulding",
+      "description": "16x14mm Flat Brushed Oak Picture Frame Moulding.",
+      "metaDescription": "Shop online for the highest quality flat brushed oak framing material at Mainline Mouldings. Enhance your artwork or photographs with this elegant and durable framing material. Perfect for professionals and DIY enthusiasts alike.",
+      "productUrl": "https://mainlinemouldings.com/16mm-flat-oak-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/16mm-flat-oak-polcore-moulding/?searchuuid=0bb03b04-c664-40f2-af60-203f6c9f5e4b&search_query=POL-4571",
+      "discontinued": false,
+      "details": {
+        "colour": "Oak",
+        "profile": "Flat",
+        "finish": "Wood Grain Brushed",
+        "range": "16x14mm Flats"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 16,
+        "depthMm": 15,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:51:48.148Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-2169",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "status": "not-found",
+      "error": "page.goto: net::ERR_ABORTED at https://mainlinemouldings.com/basics-gold-79mm-polcore-moulding/?searchuuid=34c624d7-2e23-4be5-a0d2-11b22be74fbc&search_query=POL-2169\nCall log:\n\u001b[2m  - navigating to \"https://mainlinemouldings.com/basics-gold-79mm-polcore-moulding/?searchuuid=34c624d7-2e23-4be5-a0d2-11b22be74fbc&search_query=POL-2169\", waiting until \"commit\"\u001b[22m\n",
+      "discoveredFrom": "https://mainlinemouldings.com/search.php?search_query=POL-2169"
+    },
+    {
+      "sku": "POL-4506",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Paramount 53mm Brushed Gunmetal with Silver Slip Polcore Moulding",
+      "description": "*OBSOLETE* 53x30mm Paramount Brushed Gunmetal with Silver Slip Picture Frame Moulding.",
+      "metaDescription": "Shop online for the Paramount Gunmetal with Silver Edge framing material at Mainline Mouldings. Add a touch of sophistication to your artwork or photographs with this sleek gunmetal finish and stylish silver edge. Durable and long-lasting, it provides excellent protection for your cherished pieces.",
+      "productUrl": "https://mainlinemouldings.com/paramount-gunmetal-53mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/paramount-gunmetal-53mm-polcore-moulding/?searchuuid=e0324dd7-5487-4604-babd-12a2775a3ae3&search_query=POL-4506",
+      "discontinued": true,
+      "details": {
+        "colour": "Gunmetal",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "Paramount"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 53,
+        "depthMm": 30,
+        "rebateMm": 13
+      },
+      "spinImageCount": 0,
+      "importedAt": "2026-08-27T08:51:58.939Z",
+      "spinImportStatus": "unavailable"
+    },
+    {
+      "sku": "POL-7149",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Hockney 69mm Brushed Black Polcore Moulding",
+      "description": "69x40mm Hockney scoop Brushed Black Picture Frame Picture Frame Moulding.",
+      "metaDescription": "Enhance the beauty of your artwork with brushed black Hockney framing material. Made with high-quality materials, it provides a sleek and modern look to your frames. Perfect for framing paintings, photographs, and prints. Shop now at Mainline Mouldings.",
+      "productUrl": "https://mainlinemouldings.com/hockney-69mm-brushed-black-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/hockney-69mm-brushed-black-polcore-moulding/?searchuuid=c5de536b-132e-43a7-b412-ee097e845074&search_query=POL-7149",
+      "discontinued": false,
+      "details": {
+        "colour": "Black",
+        "profile": "Scoop",
+        "finish": "Brushed",
+        "range": "Hockney Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 69,
+        "depthMm": 40,
+        "rebateMm": 18
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:02.887Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-2190",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Contemporary Classics 70mm Black Polcore Moulding",
+      "description": "70x30mm Contemporary Classic Matt Black",
+      "metaDescription": "Browse our wide range of framing materials and framing equipment in the elegant contemporary classic matt black style. Shop now at Mainline Mouldings.",
+      "productUrl": "https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/?searchuuid=0852884c-28dd-4a71-b5e9-8fc789d90ee1&search_query=POL-2190",
+      "discontinued": false,
+      "details": {
+        "colour": "Black",
+        "profile": "Scoop",
+        "finish": "Matt",
+        "range": "Contemporary Classics"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 70,
+        "depthMm": 30,
+        "rebateMm": 15
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:06.988Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-1009",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "28mm Flats Brushed Black Polcore Moulding",
+      "description": null,
+      "metaDescription": "Premium 28mm Brushed Black  flat Polcore moulding. Beautiful textured finish perfect for modern artwork, photo-frames and professional framing.",
+      "productUrl": "https://mainlinemouldings.com/basics-brushed-black-28mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/basics-brushed-black-28mm-polcore-moulding/?searchuuid=5b77c446-91b3-444a-ae97-9c0f68ce5d64&search_query=POL-1009",
+      "discontinued": false,
+      "details": {
+        "colour": "Black",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "Basics 28mm Flats"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 28,
+        "depthMm": 16,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:10.950Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-1129",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Edge 30mm Brushed Silver Polcore Moulding",
+      "description": "30x16mm Edge Brushed Silver Picture Frame Moulding",
+      "metaDescription": "Shop the 30x16mm Edge Brushed Silver with Silver Line  framing material online at Mainline Mouldings. Discover a wide selection of high-quality framing materials and equipment for all your framing needs.",
+      "productUrl": "https://mainlinemouldings.com/basics-edge-silver-30mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/basics-edge-silver-30mm-polcore-moulding/?searchuuid=f4723584-52a9-4ebb-a224-e57fc4c99826&search_query=POL-1129",
+      "discontinued": false,
+      "details": {
+        "colour": "Silver",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "Edge Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 30,
+        "depthMm": 16,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:14.882Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-1334",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Nelson 38mm Distressed Walnut Polcore Moulding",
+      "description": "Rich and warm, the 38x28mm Nelson Distressed Walnut Polcore Moulding with deep rebate is ideal for framing posters and craft items. A great-value wood-effect option with character.",
+      "metaDescription": "Warm 38x28mm Nelson Distressed Walnut Deep Rebate  Polcore moulding. Excellent for posters, football shirts and memorabilia framing.",
+      "productUrl": "https://mainlinemouldings.com/nelson-walnut-38mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/nelson-walnut-38mm-polcore-moulding/?searchuuid=969ef3d1-f4b0-4299-852b-e18540a42470&search_query=POL-1334",
+      "discontinued": false,
+      "details": {
+        "colour": "Walnut",
+        "profile": "Flat",
+        "finish": "Distressed",
+        "range": "Nelson"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 38,
+        "depthMm": 28,
+        "rebateMm": 22
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:18.966Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-7026",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Fletcher 30mm Walnut Woodgrain Polcore Moulding",
+      "description": "30x20mm Fletcher Walnut Woodgrain Picture Frame Moulding",
+      "metaDescription": "Enhance your framing projects with the Fletcher Walnut scoop . Made from high-quality materials, this framing essential provides a sleek and sophisticated finish. Buy it now online at Mainline Mouldings for all your framing needs.",
+      "productUrl": "https://mainlinemouldings.com/fletcher-30mm-walnut-woodgrain-basics-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/fletcher-30mm-walnut-woodgrain-basics-polcore-moulding/?searchuuid=020df229-b120-45e8-8853-4dafbf3f44cf&search_query=POL-7026",
+      "discontinued": true,
+      "details": {
+        "colour": "Walnut",
+        "profile": "Scoop",
+        "finish": "Brushed Wood Grain",
+        "range": "Fletcher Polcore Basics"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 30,
+        "depthMm": 20,
+        "rebateMm": 9
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:22.965Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-2104",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Contemporary Classics 70mm Antique Gold Polcore Moulding",
+      "description": "70x30mm Contemporary Classic Antique Gold Picture Frame Moulding.",
+      "metaDescription": "Shop the finest framing materials and equipment at Mainline Mouldings. Add a touch of elegance to your artwork or photographs with our Contemporary Classic Antique Gold Frame. Crafted with precision and made from high-quality materials, it ensures durability and longevity. Perfect for framing cherished memories or showcasing art pieces. Order now!",
+      "productUrl": "https://mainlinemouldings.com/contemporary-classics-antique-gold-70mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/contemporary-classics-antique-gold-70mm-polcore-moulding/?searchuuid=9553146c-60e4-4a10-be9c-862f93ee498f&search_query=POL-2104",
+      "discontinued": false,
+      "details": {
+        "colour": "Gold",
+        "profile": "Scoop",
+        "finish": "Antique",
+        "range": "Contemporary Classics"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 70,
+        "depthMm": 30,
+        "rebateMm": 15
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:26.856Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "010-1009",
+      "invoiceDescription": "Wood Picture Moulding",
+      "name": "Fletcher 53mm White Woodgrain Wood Moulding",
+      "description": "53x35mm Fletcher White Woodgrain",
+      "metaDescription": "Shop online at Mainline Mouldings for the Fletcher White BASICS framing material. Enhance the presentation of your artwork with this high-quality framing material. Perfect for all your framing needs.",
+      "productUrl": "https://mainlinemouldings.com/fletcher-53mm-white-basics-wood-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/fletcher-53mm-white-basics-wood-moulding/?searchuuid=94c6cf6b-f86c-48e0-8ce7-578dba200cff&search_query=010-1009",
+      "discontinued": true,
+      "details": {
+        "colour": "White",
+        "profile": "Scoop",
+        "finish": "Wood Grain",
+        "range": "Fletcher Wood"
+      },
+      "dimensions": {
+        "length": null,
+        "widthMm": 53,
+        "depthMm": 35,
+        "rebateMm": 14
+      },
+      "spinImageCount": 0,
+      "importedAt": "2026-08-27T08:52:33.822Z",
+      "spinImportStatus": "unavailable"
+    },
+    {
+      "sku": "010-4609",
+      "invoiceDescription": "Wood Picture Moulding",
+      "name": "Deep Rebate 27mm White Woodgrain Wood Moulding",
+      "description": "27x40mm Deep Rebate White Woodgrain",
+      "metaDescription": "Shop for high-quality White Woodgrain Deep Rebate Framing Material online at Mainline Mouldings. Enhance your artwork, photographs, and cherished memories with this durable and stylish framing material.",
+      "productUrl": "https://mainlinemouldings.com/deep-rebate-white-27mm-wood-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/deep-rebate-white-27mm-wood-moulding/?searchuuid=379c9ee1-20af-403e-9777-d72b20f3c2d7&search_query=010-4609",
+      "discontinued": false,
+      "details": {
+        "colour": "White",
+        "profile": "Flat",
+        "finish": "Wood Grain",
+        "range": "Essential Deep Rebates"
+      },
+      "dimensions": {
+        "length": null,
+        "widthMm": 27,
+        "depthMm": 40,
+        "rebateMm": 33
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:37.736Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "019-1272",
+      "invoiceDescription": "Wood Picture Moulding",
+      "name": "Richmond 12mm Antique Gold Wood Moulding",
+      "description": "Slim and refined, the 12x14mm Richmond Warm Antique Gold Cushion Moulding is perfect for smaller pieces, traditional etchings, and delicate line drawings while maintaining elegant presence.",
+      "metaDescription": "Petite 12x14mm Richmond Warm Antique Gold cushion wood moulding. Slim profile ideal for small artworks and traditional prints.",
+      "productUrl": "https://mainlinemouldings.com/richmond-12mm-antique-gold-basics-wood-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/richmond-12mm-antique-gold-basics-wood-moulding/?searchuuid=4c386db5-0060-4298-bd13-7d05f4cd6879&search_query=019-1272",
+      "discontinued": false,
+      "details": {
+        "colour": "Gold",
+        "profile": "Cushion",
+        "finish": "Antique Distressed",
+        "range": "Richmond Wood"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 12,
+        "depthMm": 14,
+        "rebateMm": 9
+      },
+      "spinImageCount": 0,
+      "importedAt": "2026-08-27T08:52:41.686Z",
+      "spinImportStatus": "unavailable"
+    },
+    {
+      "sku": "010-4603",
+      "invoiceDescription": "Wood Picture Moulding",
+      "name": "Deep Rebate 27mm Black Woodgrain Wood Moulding",
+      "description": "27x40mm Deep Rebate Black Woodgrain",
+      "metaDescription": "Shop online for the best selection of black woodgrain framing material at Mainline Mouldings. Our high-quality framing materials are perfect for adding a touch of elegance to your framed artworks or photographs. With a deep rebate design and a black woodgrain texture, these framing materials offer a professional finish and a sophisticated look. Whether you're a professional framer or a DIY enthusiast, our black woodgrain framing materials are a must-have for all your framing projects.",
+      "productUrl": "https://mainlinemouldings.com/deep-rebate-black-27mm-wood-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/deep-rebate-black-27mm-wood-moulding/?searchuuid=70f18406-d397-484a-b71b-aa7186618a62&search_query=010-4603",
+      "discontinued": false,
+      "details": {
+        "colour": "Black",
+        "profile": "Flat",
+        "finish": "Wood Grain",
+        "range": "Essential Deep Rebates"
+      },
+      "dimensions": {
+        "length": null,
+        "widthMm": 27,
+        "depthMm": 40,
+        "rebateMm": 33
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:46.160Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4417",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Outline 30mm Brushed Black Silver Edges Polcore Moulding",
+      "description": "30x16mm Outline Brushed Black Silver Edges",
+      "metaDescription": "Shop online at Mainline Mouldings for high-quality framing materials and equipment. Explore our range of Brushed Black Silver Outlines, perfect for adding a modern touch to your artwork or photographs.",
+      "productUrl": "https://mainlinemouldings.com/outline-black-sse-30mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/outline-black-sse-30mm-polcore-moulding/?searchuuid=4161bc53-2268-4a65-9fc9-058b1b5898e6&search_query=POL-4417",
+      "discontinued": true,
+      "details": {
+        "colour": "Black",
+        "profile": "Flat",
+        "finish": "Brushed",
+        "range": "Outline"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 30,
+        "depthMm": 16,
+        "rebateMm": 10
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:50.200Z",
+      "spinImportStatus": "existing"
+    },
+    {
+      "sku": "POL-4643",
+      "invoiceDescription": "Plastic Picture Moulding",
+      "name": "Naples 31mm Silver Polcore Moulding",
+      "description": "31x15mm Naples Flat Silver Gold Edge Picture Frame Moulding",
+      "metaDescription": "Shop online at Mainline Mouldings for the Naples Flat Silver Gold Edge framing material. Enhance your artwork with its timeless elegance and sleek silver gold edge. Made from durable materials, this moulding provides a sturdy and professional frame for your cherished photographs, beautiful paintings, and meaningful prints.",
+      "productUrl": "https://mainlinemouldings.com/naples-silver-31mm-polcore-moulding/",
+      "discoveredFrom": "https://mainlinemouldings.com/naples-silver-31mm-polcore-moulding/?searchuuid=b807a6b6-7436-44f4-8658-7158a03e4209&search_query=POL-4643",
+      "discontinued": false,
+      "details": {
+        "colour": "Silver",
+        "profile": "Flat",
+        "finish": "Leaf",
+        "range": "Naples Polcore"
+      },
+      "dimensions": {
+        "length": "2.9m",
+        "widthMm": 31,
+        "depthMm": 15,
+        "rebateMm": 7
+      },
+      "spinImageCount": 45,
+      "importedAt": "2026-08-27T08:52:54.195Z",
+      "spinImportStatus": "existing"
+    }
+  ]
+}

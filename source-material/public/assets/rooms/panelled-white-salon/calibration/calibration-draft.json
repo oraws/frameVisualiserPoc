@@ -1,0 +1,6 @@
+{
+  "roomId":"panelled-white-salon","status":"manual-seed-awaiting-approval","sourceDimensions":{"width":2400,"height":3600},
+  "geometry":{"model":"architectural-line seed","commercialDeploymentAllowed":true,"device":"manual draft","inferenceSeconds":0,"camera":{"horizontalFovDegrees":48},"wallHypothesis":{"yawDegrees":0,"pitchDegrees":0,"ransacInlierFraction":0.8,"residualP95ModelUnits":0}},
+  "manualCalibration":{"quadNormalised":[[0.16,0.27],[0.84,0.27],[0.84,0.70],[0.16,0.70]],"scaleReference":{"label":"Target-wall floor to ceiling","lengthMm":2700,"pointsNormalised":[[0.12,0.25],[0.12,0.81]]}},
+  "lighting":{"status":"LDR direction proxy","dominantImagePoint":[0.28,0.20],"exposureClippedFraction":0.02,"rendererUseAllowed":false}
+}

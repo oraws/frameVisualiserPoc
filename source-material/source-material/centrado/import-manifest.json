@@ -1,0 +1,5813 @@
+[
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "4925BG",
+    "name": "Bergen Black and Gold Angled",
+    "productUrl": "https://centrado.co/product/bergen-black-and-gold-angled-4925bg/",
+    "widthMm": 49,
+    "depthMm": 25,
+    "rebateMm": 14,
+    "profileType": "angled",
+    "colourTags": [
+      "black",
+      "gold"
+    ],
+    "method": "dimensioned-profile-png-v1",
+    "accentWidthMm": 16,
+    "points": [
+      [
+        0.0,
+        17.829
+      ],
+      [
+        2.498,
+        18.702
+      ],
+      [
+        3.555,
+        19.38
+      ],
+      [
+        4.804,
+        20.543
+      ],
+      [
+        6.437,
+        22.965
+      ],
+      [
+        7.206,
+        25.0
+      ],
+      [
+        11.049,
+        25.0
+      ],
+      [
+        12.394,
+        22.868
+      ],
+      [
+        12.971,
+        22.481
+      ],
+      [
+        13.739,
+        22.674
+      ],
+      [
+        14.988,
+        24.031
+      ],
+      [
+        16.237,
+        24.031
+      ],
+      [
+        49.0,
+        9.981
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 112,
+        "right": 622,
+        "top": 210,
+        "baseline": 468
+      },
+      "pixelsPerMmX": 10.4082,
+      "pixelsPerMmZ": 10.32,
+      "anisotropyFraction": 0.00847,
+      "sampleCount": 540,
+      "simplifiedPointCount": 13
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4925BG.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4925-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4925BG_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Bergen-Macro_Gallery-3.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "framed-reference.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Bergen-BG_Gallery-1.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "8054BG",
+    "name": "Luxe Wentworth Black/Gold Scoop",
+    "productUrl": "https://centrado.co/product/luxe-wentworth-black-gold-scoop-8054bg/",
+    "widthMm": 80,
+    "depthMm": 54,
+    "rebateMm": 26,
+    "profileType": "ornate-scoop",
+    "colourTags": [
+      "black",
+      "gold"
+    ],
+    "method": "dimensioned-profile-png-v1",
+    "accentWidthMm": 15,
+    "points": [
+      [
+        0.0,
+        31.806
+      ],
+      [
+        0.989,
+        32.372
+      ],
+      [
+        2.12,
+        32.372
+      ],
+      [
+        3.251,
+        32.796
+      ],
+      [
+        3.816,
+        33.644
+      ],
+      [
+        4.382,
+        34.068
+      ],
+      [
+        5.088,
+        34.209
+      ],
+      [
+        6.643,
+        34.068
+      ],
+      [
+        8.057,
+        35.058
+      ],
+      [
+        8.763,
+        35.058
+      ],
+      [
+        9.329,
+        35.34
+      ],
+      [
+        9.894,
+        36.047
+      ],
+      [
+        10.035,
+        37.037
+      ],
+      [
+        10.742,
+        37.743
+      ],
+      [
+        12.721,
+        38.592
+      ],
+      [
+        14.558,
+        38.592
+      ],
+      [
+        15.406,
+        38.168
+      ],
+      [
+        16.254,
+        37.319
+      ],
+      [
+        16.82,
+        36.188
+      ],
+      [
+        17.244,
+        35.764
+      ],
+      [
+        26.714,
+        35.623
+      ],
+      [
+        30.106,
+        36.188
+      ],
+      [
+        32.509,
+        37.037
+      ],
+      [
+        34.205,
+        37.885
+      ],
+      [
+        36.608,
+        39.44
+      ],
+      [
+        39.293,
+        41.984
+      ],
+      [
+        40.848,
+        44.246
+      ],
+      [
+        41.979,
+        45.094
+      ],
+      [
+        43.816,
+        45.377
+      ],
+      [
+        44.806,
+        44.812
+      ],
+      [
+        46.219,
+        44.812
+      ],
+      [
+        48.763,
+        47.356
+      ],
+      [
+        50.318,
+        48.487
+      ],
+      [
+        52.58,
+        49.759
+      ],
+      [
+        56.82,
+        51.314
+      ],
+      [
+        59.647,
+        51.738
+      ],
+      [
+        62.049,
+        51.738
+      ],
+      [
+        63.18,
+        52.728
+      ],
+      [
+        63.322,
+        53.152
+      ],
+      [
+        63.887,
+        53.717
+      ],
+      [
+        64.594,
+        54.0
+      ],
+      [
+        69.823,
+        53.859
+      ],
+      [
+        70.53,
+        53.293
+      ],
+      [
+        71.095,
+        52.304
+      ],
+      [
+        71.095,
+        48.911
+      ],
+      [
+        70.671,
+        47.497
+      ],
+      [
+        68.127,
+        42.974
+      ],
+      [
+        66.148,
+        38.45
+      ],
+      [
+        65.724,
+        36.471
+      ],
+      [
+        65.724,
+        33.927
+      ],
+      [
+        66.007,
+        32.513
+      ],
+      [
+        66.996,
+        30.11
+      ],
+      [
+        68.127,
+        28.555
+      ],
+      [
+        69.541,
+        27.141
+      ],
+      [
+        70.53,
+        26.435
+      ],
+      [
+        72.085,
+        25.869
+      ],
+      [
+        73.64,
+        24.88
+      ],
+      [
+        74.205,
+        23.89
+      ],
+      [
+        74.77,
+        23.325
+      ],
+      [
+        76.042,
+        22.618
+      ],
+      [
+        77.032,
+        21.628
+      ],
+      [
+        77.456,
+        20.78
+      ],
+      [
+        77.597,
+        19.366
+      ],
+      [
+        79.435,
+        18.66
+      ],
+      [
+        80.0,
+        18.094
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 80,
+        "right": 646,
+        "top": 151,
+        "baseline": 533
+      },
+      "pixelsPerMmX": 7.075,
+      "pixelsPerMmZ": 7.0741,
+      "anisotropyFraction": 0.00013,
+      "sampleCount": 794,
+      "simplifiedPointCount": 65
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/8054BG.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/8054-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/8054BG_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Wentworth-Macro_Gallery-6.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "framed-reference.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Wentworth-BG_Gallery-1.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "3826BK",
+    "name": "Kashmir Decorative Black Bevel",
+    "description": "63x25mm Decorative Black Kashmir Bevel Moulding",
+    "productUrl": "https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/",
+    "widthMm": 63.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        16.905
+      ],
+      [
+        3.415,
+        17.143
+      ],
+      [
+        3.533,
+        17.262
+      ],
+      [
+        7.419,
+        17.262
+      ],
+      [
+        7.772,
+        17.024
+      ],
+      [
+        8.714,
+        17.024
+      ],
+      [
+        9.185,
+        17.5
+      ],
+      [
+        10.009,
+        17.5
+      ],
+      [
+        10.245,
+        18.333
+      ],
+      [
+        11.305,
+        19.048
+      ],
+      [
+        12.129,
+        19.167
+      ],
+      [
+        12.953,
+        20.0
+      ],
+      [
+        13.307,
+        20.119
+      ],
+      [
+        14.013,
+        20.0
+      ],
+      [
+        15.191,
+        20.119
+      ],
+      [
+        18.252,
+        18.81
+      ],
+      [
+        19.312,
+        17.976
+      ],
+      [
+        20.607,
+        18.095
+      ],
+      [
+        21.667,
+        18.69
+      ],
+      [
+        22.609,
+        18.571
+      ],
+      [
+        23.08,
+        18.333
+      ],
+      [
+        23.787,
+        18.333
+      ],
+      [
+        24.258,
+        18.81
+      ],
+      [
+        24.847,
+        18.81
+      ],
+      [
+        25.436,
+        18.452
+      ],
+      [
+        25.907,
+        18.452
+      ],
+      [
+        26.26,
+        18.69
+      ],
+      [
+        29.321,
+        18.81
+      ],
+      [
+        30.264,
+        19.167
+      ],
+      [
+        31.206,
+        19.881
+      ],
+      [
+        31.794,
+        20.0
+      ],
+      [
+        33.796,
+        19.881
+      ],
+      [
+        34.856,
+        19.643
+      ],
+      [
+        35.563,
+        19.167
+      ],
+      [
+        36.74,
+        19.167
+      ],
+      [
+        37.8,
+        19.405
+      ],
+      [
+        38.389,
+        20.0
+      ],
+      [
+        38.507,
+        20.595
+      ],
+      [
+        39.095,
+        21.429
+      ],
+      [
+        40.037,
+        21.548
+      ],
+      [
+        40.508,
+        22.024
+      ],
+      [
+        41.804,
+        22.738
+      ],
+      [
+        42.981,
+        22.738
+      ],
+      [
+        44.277,
+        22.024
+      ],
+      [
+        45.101,
+        21.19
+      ],
+      [
+        45.572,
+        21.19
+      ],
+      [
+        46.396,
+        22.143
+      ],
+      [
+        47.338,
+        22.381
+      ],
+      [
+        48.398,
+        23.333
+      ],
+      [
+        49.458,
+        23.69
+      ],
+      [
+        49.929,
+        24.524
+      ],
+      [
+        50.636,
+        25.0
+      ],
+      [
+        52.049,
+        24.881
+      ],
+      [
+        52.755,
+        24.167
+      ],
+      [
+        53.226,
+        23.214
+      ],
+      [
+        53.815,
+        23.214
+      ],
+      [
+        53.933,
+        23.571
+      ],
+      [
+        54.875,
+        24.286
+      ],
+      [
+        55.699,
+        24.405
+      ],
+      [
+        56.17,
+        24.167
+      ],
+      [
+        56.641,
+        24.167
+      ],
+      [
+        56.877,
+        24.405
+      ],
+      [
+        57.583,
+        24.524
+      ],
+      [
+        58.996,
+        24.048
+      ],
+      [
+        59.585,
+        23.452
+      ],
+      [
+        60.409,
+        23.452
+      ],
+      [
+        61.116,
+        23.81
+      ],
+      [
+        61.469,
+        23.81
+      ],
+      [
+        63.0,
+        22.857
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 98,
+        "right": 633,
+        "top": 218,
+        "baseline": 428
+      },
+      "pixelsPerMmX": 8.4921,
+      "pixelsPerMmZ": 8.4,
+      "anisotropyFraction": 0.01084,
+      "sampleCount": 555,
+      "simplifiedPointCount": 69
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Kashmir-Macro_Gallery-6.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "framed-reference.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Kashmir-BK_Gallery-1.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826BK-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826BK-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR4030BN",
+    "name": "Create Brown Flat - Closed Grain",
+    "description": "40x30mm Brown Closed Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-brown-flat-closed-grain-cr4030bn/",
+    "widthMm": 40.0,
+    "depthMm": 30.0,
+    "rebateMm": 16.8,
+    "profileType": "flat",
+    "colourTags": [
+      "brown"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        29.355
+      ],
+      [
+        0.805,
+        30.0
+      ],
+      [
+        39.276,
+        30.0
+      ],
+      [
+        40.0,
+        29.435
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 129,
+        "right": 626,
+        "top": 151,
+        "baseline": 523
+      },
+      "pixelsPerMmX": 12.425,
+      "pixelsPerMmZ": 12.4,
+      "anisotropyFraction": 0.00201,
+      "sampleCount": 498,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR4030BN.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR4030-Profile-2.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR4030BN_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0225MG",
+    "name": "Create Matt Gold Flat",
+    "description": "21x22mm Matt Closed Grain Gold Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-matt-gold-flat-cr0225mg/",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "colourTags": [
+      "gold"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        21.637
+      ],
+      [
+        0.415,
+        22.0
+      ],
+      [
+        20.585,
+        22.0
+      ],
+      [
+        21.0,
+        21.689
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 192,
+        "right": 597,
+        "top": 63,
+        "baseline": 487
+      },
+      "pixelsPerMmX": 19.2857,
+      "pixelsPerMmZ": 19.2727,
+      "anisotropyFraction": 0.00067,
+      "sampleCount": 406,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225MG.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225-Profile-17.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225MG_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR1513BK",
+    "name": "Create Black Cushion - Closed Grain",
+    "description": "23x13mm Black Closed Grain Create Cushion Moulding",
+    "productUrl": "https://centrado.co/product/create-black-cushion-closed-grain-cr1513bk/",
+    "widthMm": 23.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "cushion",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        11.833
+      ],
+      [
+        2.76,
+        12.389
+      ],
+      [
+        5.791,
+        12.778
+      ],
+      [
+        12.339,
+        13.0
+      ],
+      [
+        17.967,
+        12.722
+      ],
+      [
+        23.0,
+        11.722
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 173,
+        "right": 598,
+        "top": 194,
+        "baseline": 428
+      },
+      "pixelsPerMmX": 18.4783,
+      "pixelsPerMmZ": 18.0,
+      "anisotropyFraction": 0.02588,
+      "sampleCount": 424,
+      "simplifiedPointCount": 6
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1513BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1513BK-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1513BK_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0219BK",
+    "name": "Black Bevel - Open Grain",
+    "description": "20x15mm Black Bevel Moulding",
+    "productUrl": "https://centrado.co/product/black-bevel-open-grain-0219bk/",
+    "widthMm": 20.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "profileType": "angled",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        10.57
+      ],
+      [
+        0.401,
+        11.577
+      ],
+      [
+        0.952,
+        12.081
+      ],
+      [
+        7.469,
+        14.95
+      ],
+      [
+        19.799,
+        14.95
+      ],
+      [
+        20.0,
+        14.799
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 197,
+        "right": 596,
+        "top": 119,
+        "baseline": 417
+      },
+      "pixelsPerMmX": 19.95,
+      "pixelsPerMmZ": 19.8667,
+      "anisotropyFraction": 0.00418,
+      "sampleCount": 412,
+      "simplifiedPointCount": 6
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0472BK",
+    "name": "Casterbridge Black Step - Open Grain",
+    "description": "52x35mm Black Casterbridge Step Moulding",
+    "productUrl": "https://centrado.co/product/casterbridge-black-step-open-grain-0472bk/",
+    "widthMm": 52.0,
+    "depthMm": 35.0,
+    "rebateMm": 19.6,
+    "profileType": "angled",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        17.256
+      ],
+      [
+        1.944,
+        18.329
+      ],
+      [
+        2.624,
+        19.011
+      ],
+      [
+        2.916,
+        19.986
+      ],
+      [
+        3.305,
+        20.376
+      ],
+      [
+        3.985,
+        20.669
+      ],
+      [
+        6.123,
+        20.669
+      ],
+      [
+        6.609,
+        21.058
+      ],
+      [
+        6.901,
+        21.741
+      ],
+      [
+        7.193,
+        22.033
+      ],
+      [
+        8.067,
+        22.521
+      ],
+      [
+        8.845,
+        22.716
+      ],
+      [
+        9.622,
+        22.716
+      ],
+      [
+        10.692,
+        22.423
+      ],
+      [
+        12.052,
+        21.253
+      ],
+      [
+        12.538,
+        20.376
+      ],
+      [
+        12.733,
+        19.694
+      ],
+      [
+        12.733,
+        18.816
+      ],
+      [
+        12.927,
+        18.621
+      ],
+      [
+        33.047,
+        18.719
+      ],
+      [
+        33.436,
+        19.986
+      ],
+      [
+        34.116,
+        20.864
+      ],
+      [
+        35.379,
+        21.643
+      ],
+      [
+        36.546,
+        22.033
+      ],
+      [
+        37.421,
+        23.398
+      ],
+      [
+        38.684,
+        24.568
+      ],
+      [
+        40.531,
+        25.153
+      ],
+      [
+        40.725,
+        26.031
+      ],
+      [
+        41.6,
+        27.396
+      ],
+      [
+        42.28,
+        27.786
+      ],
+      [
+        43.641,
+        27.883
+      ],
+      [
+        43.836,
+        28.078
+      ],
+      [
+        43.836,
+        28.565
+      ],
+      [
+        44.224,
+        29.833
+      ],
+      [
+        44.905,
+        31.198
+      ],
+      [
+        45.779,
+        32.368
+      ],
+      [
+        47.14,
+        33.635
+      ],
+      [
+        48.598,
+        34.513
+      ],
+      [
+        49.862,
+        35.0
+      ],
+      [
+        50.931,
+        35.0
+      ],
+      [
+        52.0,
+        34.415
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 104,
+        "right": 639,
+        "top": 140,
+        "baseline": 499
+      },
+      "pixelsPerMmX": 10.2885,
+      "pixelsPerMmZ": 10.2571,
+      "anisotropyFraction": 0.00304,
+      "sampleCount": 615,
+      "simplifiedPointCount": 41
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery-7.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472BK-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472BK-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "2650BK",
+    "name": "Alberta Black Open Grain Flat",
+    "description": "50x26mm Black Open Grain Alberta Flat Moulding",
+    "productUrl": "https://centrado.co/product/alberta-black-open-grain-flat-2650bk/",
+    "widthMm": 50.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "profileType": "flat",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        22.884
+      ],
+      [
+        13.663,
+        22.981
+      ],
+      [
+        13.857,
+        22.787
+      ],
+      [
+        14.535,
+        12.27
+      ],
+      [
+        14.826,
+        9.738
+      ],
+      [
+        43.217,
+        9.738
+      ],
+      [
+        43.411,
+        10.03
+      ],
+      [
+        44.283,
+        25.805
+      ],
+      [
+        44.477,
+        26.0
+      ],
+      [
+        50.0,
+        26.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 112,
+        "right": 628,
+        "top": 131,
+        "baseline": 398
+      },
+      "pixelsPerMmX": 10.32,
+      "pixelsPerMmZ": 10.2692,
+      "anisotropyFraction": 0.00492,
+      "sampleCount": 793,
+      "simplifiedPointCount": 10
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Alberta-BK-WH-Macro_Gallery.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "HS9",
+    "name": "Raw Pine Stretcher FSC \u00ae",
+    "description": "31x27mm Raw Pine Stretcher Moulding FSC",
+    "productUrl": "https://centrado.co/product/raw-pine-stretcher-fsc-hs9/",
+    "widthMm": 31.0,
+    "depthMm": 27.0,
+    "rebateMm": 15.1,
+    "profileType": "flat",
+    "colourTags": [
+      "pine"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        1.075
+      ],
+      [
+        8.556,
+        21.183
+      ],
+      [
+        26.784,
+        26.874
+      ],
+      [
+        27.652,
+        27.0
+      ],
+      [
+        29.512,
+        26.874
+      ],
+      [
+        30.38,
+        26.241
+      ],
+      [
+        31.0,
+        25.23
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 150,
+        "right": 650,
+        "top": 96,
+        "baseline": 523
+      },
+      "pixelsPerMmX": 16.129,
+      "pixelsPerMmZ": 15.8148,
+      "anisotropyFraction": 0.01948,
+      "sampleCount": 687,
+      "simplifiedPointCount": 7
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/HS9.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/HS9-Profile.png",
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0472WH",
+    "name": "Casterbridge White Step - Open Grain",
+    "description": "52x35mm White Casterbridge Step Moulding",
+    "productUrl": "https://centrado.co/product/casterbridge-white-step-open-grain-0472wh/",
+    "widthMm": 52.0,
+    "depthMm": 35.0,
+    "rebateMm": 19.6,
+    "profileType": "angled",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        17.256
+      ],
+      [
+        1.944,
+        18.329
+      ],
+      [
+        2.624,
+        19.011
+      ],
+      [
+        2.916,
+        19.986
+      ],
+      [
+        3.305,
+        20.376
+      ],
+      [
+        3.985,
+        20.669
+      ],
+      [
+        6.123,
+        20.669
+      ],
+      [
+        6.609,
+        21.058
+      ],
+      [
+        6.901,
+        21.741
+      ],
+      [
+        7.193,
+        22.033
+      ],
+      [
+        8.067,
+        22.521
+      ],
+      [
+        8.845,
+        22.716
+      ],
+      [
+        9.622,
+        22.716
+      ],
+      [
+        10.692,
+        22.423
+      ],
+      [
+        12.052,
+        21.253
+      ],
+      [
+        12.538,
+        20.376
+      ],
+      [
+        12.733,
+        19.694
+      ],
+      [
+        12.733,
+        18.816
+      ],
+      [
+        12.927,
+        18.621
+      ],
+      [
+        33.047,
+        18.719
+      ],
+      [
+        33.436,
+        19.986
+      ],
+      [
+        34.116,
+        20.864
+      ],
+      [
+        35.379,
+        21.643
+      ],
+      [
+        36.546,
+        22.033
+      ],
+      [
+        37.421,
+        23.398
+      ],
+      [
+        38.684,
+        24.568
+      ],
+      [
+        40.531,
+        25.153
+      ],
+      [
+        40.725,
+        26.031
+      ],
+      [
+        41.6,
+        27.396
+      ],
+      [
+        42.28,
+        27.786
+      ],
+      [
+        43.641,
+        27.883
+      ],
+      [
+        43.836,
+        28.078
+      ],
+      [
+        43.836,
+        28.565
+      ],
+      [
+        44.224,
+        29.833
+      ],
+      [
+        44.905,
+        31.198
+      ],
+      [
+        45.779,
+        32.368
+      ],
+      [
+        47.14,
+        33.635
+      ],
+      [
+        48.598,
+        34.513
+      ],
+      [
+        49.862,
+        35.0
+      ],
+      [
+        50.931,
+        35.0
+      ],
+      [
+        52.0,
+        34.415
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 104,
+        "right": 639,
+        "top": 140,
+        "baseline": 499
+      },
+      "pixelsPerMmX": 10.2885,
+      "pixelsPerMmZ": 10.2571,
+      "anisotropyFraction": 0.00304,
+      "sampleCount": 615,
+      "simplifiedPointCount": 41
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472-Profile-6.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery-13.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472WH-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472WH-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "2301BK",
+    "name": "New Orleans Black Bevel",
+    "description": "15x20mm Black New Orleans Bevelled Box Moulding",
+    "productUrl": "https://centrado.co/product/new-orleans-black-bevel-2301bk/",
+    "widthMm": 15.0,
+    "depthMm": 20.0,
+    "rebateMm": 11.2,
+    "profileType": "angled",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        15.114
+      ],
+      [
+        4.116,
+        19.132
+      ],
+      [
+        5.213,
+        20.0
+      ],
+      [
+        15.0,
+        19.954
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 234,
+        "right": 562,
+        "top": 72,
+        "baseline": 510
+      },
+      "pixelsPerMmX": 21.8667,
+      "pixelsPerMmZ": 21.9,
+      "anisotropyFraction": 0.00152,
+      "sampleCount": 327,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2301BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2301-NO-Profile-1.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2301BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/New-Orleans-Macro_Gallery-1.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2301BK-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2301BK-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0219WH",
+    "name": "White Bevel - Open Grain",
+    "description": "20x15mm White Bevel Moulding",
+    "productUrl": "https://centrado.co/product/white-bevel-open-grain-0219wh/",
+    "widthMm": 20.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "profileType": "angled",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        10.57
+      ],
+      [
+        0.401,
+        11.577
+      ],
+      [
+        0.952,
+        12.081
+      ],
+      [
+        7.469,
+        14.95
+      ],
+      [
+        19.799,
+        14.95
+      ],
+      [
+        20.0,
+        14.799
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 197,
+        "right": 596,
+        "top": 119,
+        "baseline": 417
+      },
+      "pixelsPerMmX": 19.95,
+      "pixelsPerMmZ": 19.8667,
+      "anisotropyFraction": 0.00418,
+      "sampleCount": 412,
+      "simplifiedPointCount": 6
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219-Profile-1.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0219WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR1090WH",
+    "name": "Create White Flat - Open Grain",
+    "description": "35x15mm White Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-white-flat-open-grain-cr1090wh/",
+    "widthMm": 35.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "profileType": "flat",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.783
+      ],
+      [
+        0.359,
+        15.0
+      ],
+      [
+        34.57,
+        15.0
+      ],
+      [
+        35.0,
+        14.71
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 138,
+        "right": 626,
+        "top": 216,
+        "baseline": 423
+      },
+      "pixelsPerMmX": 13.9429,
+      "pixelsPerMmZ": 13.8,
+      "anisotropyFraction": 0.01025,
+      "sampleCount": 487,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1090WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1090-Profile-7.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1090WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "3825BK",
+    "name": "Kashmir Decorative Black Bevel",
+    "description": "38x25mm Decorative Black Kashmir Bevel Moulding",
+    "productUrl": "https://centrado.co/product/kashmir-decorative-black-bevel-3825bk/",
+    "widthMm": 38.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        15.512
+      ],
+      [
+        0.375,
+        16.114
+      ],
+      [
+        0.974,
+        16.491
+      ],
+      [
+        3.448,
+        16.566
+      ],
+      [
+        3.972,
+        17.244
+      ],
+      [
+        4.272,
+        18.449
+      ],
+      [
+        4.947,
+        18.524
+      ],
+      [
+        5.396,
+        18.901
+      ],
+      [
+        6.821,
+        18.75
+      ],
+      [
+        7.045,
+        18.976
+      ],
+      [
+        7.645,
+        19.051
+      ],
+      [
+        8.02,
+        18.599
+      ],
+      [
+        8.769,
+        18.524
+      ],
+      [
+        9.294,
+        18.976
+      ],
+      [
+        9.369,
+        19.352
+      ],
+      [
+        9.968,
+        19.729
+      ],
+      [
+        10.043,
+        20.256
+      ],
+      [
+        10.343,
+        20.482
+      ],
+      [
+        11.243,
+        20.407
+      ],
+      [
+        12.966,
+        18.599
+      ],
+      [
+        13.416,
+        18.449
+      ],
+      [
+        14.091,
+        18.599
+      ],
+      [
+        14.615,
+        19.352
+      ],
+      [
+        15.44,
+        18.825
+      ],
+      [
+        16.264,
+        18.825
+      ],
+      [
+        16.789,
+        19.428
+      ],
+      [
+        16.939,
+        19.428
+      ],
+      [
+        17.014,
+        19.051
+      ],
+      [
+        19.712,
+        19.352
+      ],
+      [
+        20.686,
+        19.88
+      ],
+      [
+        22.036,
+        20.181
+      ],
+      [
+        22.71,
+        20.783
+      ],
+      [
+        24.059,
+        21.31
+      ],
+      [
+        24.809,
+        22.139
+      ],
+      [
+        25.408,
+        22.063
+      ],
+      [
+        25.858,
+        22.59
+      ],
+      [
+        28.556,
+        23.117
+      ],
+      [
+        29.755,
+        23.117
+      ],
+      [
+        30.655,
+        23.795
+      ],
+      [
+        31.254,
+        23.72
+      ],
+      [
+        31.554,
+        23.87
+      ],
+      [
+        32.379,
+        24.774
+      ],
+      [
+        32.903,
+        25.0
+      ],
+      [
+        33.353,
+        25.0
+      ],
+      [
+        34.028,
+        24.473
+      ],
+      [
+        35.377,
+        21.913
+      ],
+      [
+        36.126,
+        19.654
+      ],
+      [
+        36.501,
+        19.277
+      ],
+      [
+        37.475,
+        19.127
+      ],
+      [
+        38.0,
+        18.75
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 129,
+        "right": 636,
+        "top": 145,
+        "baseline": 477
+      },
+      "pixelsPerMmX": 13.3421,
+      "pixelsPerMmZ": 13.28,
+      "anisotropyFraction": 0.00465,
+      "sampleCount": 586,
+      "simplifiedPointCount": 50
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3825BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3825-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3825BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Kashmir-Macro_Gallery.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "framed-reference.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Kashmir-BK_Gallery.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3825BK-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3825BK-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0471DB",
+    "name": "Casterbridge Dark Brown Step - Open Grain",
+    "description": "30x25mm Dark Brown Casterbridge Step Moulding",
+    "productUrl": "https://centrado.co/product/casterbridge-dark-brown-step-open-grain-0471db/",
+    "widthMm": 30.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "colourTags": [
+      "brown"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.706
+      ],
+      [
+        1.727,
+        16.368
+      ],
+      [
+        3.198,
+        16.496
+      ],
+      [
+        3.966,
+        17.263
+      ],
+      [
+        4.797,
+        17.583
+      ],
+      [
+        5.629,
+        17.519
+      ],
+      [
+        6.205,
+        17.199
+      ],
+      [
+        6.716,
+        16.624
+      ],
+      [
+        7.036,
+        15.729
+      ],
+      [
+        19.574,
+        15.729
+      ],
+      [
+        20.085,
+        17.072
+      ],
+      [
+        20.469,
+        17.391
+      ],
+      [
+        21.109,
+        17.455
+      ],
+      [
+        21.812,
+        18.478
+      ],
+      [
+        22.324,
+        18.926
+      ],
+      [
+        23.731,
+        19.565
+      ],
+      [
+        24.051,
+        19.885
+      ],
+      [
+        24.115,
+        20.524
+      ],
+      [
+        24.371,
+        20.972
+      ],
+      [
+        25.906,
+        21.867
+      ],
+      [
+        26.034,
+        22.506
+      ],
+      [
+        26.354,
+        23.082
+      ],
+      [
+        27.761,
+        24.488
+      ],
+      [
+        29.616,
+        25.0
+      ],
+      [
+        30.0,
+        24.744
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 150,
+        "right": 619,
+        "top": 106,
+        "baseline": 497
+      },
+      "pixelsPerMmX": 15.6333,
+      "pixelsPerMmZ": 15.64,
+      "anisotropyFraction": 0.00043,
+      "sampleCount": 524,
+      "simplifiedPointCount": 25
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471DB.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471-Profile-2.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471DB_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery-2.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471DB-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471DB-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "5821WH",
+    "name": "Ancona White Flat - Open Grain",
+    "description": "58x21mm White Ancona Flat Moulding",
+    "productUrl": "https://centrado.co/product/ancona-white-flat-open-grain-5821wh/",
+    "widthMm": 58.0,
+    "depthMm": 21.0,
+    "rebateMm": 11.8,
+    "profileType": "flat",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        19.409
+      ],
+      [
+        50.632,
+        19.409
+      ],
+      [
+        51.053,
+        19.939
+      ],
+      [
+        51.158,
+        21.0
+      ],
+      [
+        58.0,
+        21.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 95,
+        "right": 646,
+        "top": 257,
+        "baseline": 455
+      },
+      "pixelsPerMmX": 9.5,
+      "pixelsPerMmZ": 9.4286,
+      "anisotropyFraction": 0.00752,
+      "sampleCount": 561,
+      "simplifiedPointCount": 5
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821-Profile-2.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Ancona-Macro_Gallery-2.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821WH-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5821WH-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR3313MW",
+    "name": "Create Matt White Flat - Closed Grain",
+    "description": "33x13mm Matt Closed Grain White Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-matt-white-flat-closed-grain-cr3313mw/",
+    "widthMm": 33.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "flat",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        13.0
+      ],
+      [
+        33.0,
+        13.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 143,
+        "right": 630,
+        "top": 248,
+        "baseline": 438
+      },
+      "pixelsPerMmX": 14.7576,
+      "pixelsPerMmZ": 14.6154,
+      "anisotropyFraction": 0.00964,
+      "sampleCount": 486,
+      "simplifiedPointCount": 2
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313MW.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313-Profile-10.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313MW_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR1013BK",
+    "name": "Create Black Cushion - Closed Grain",
+    "description": "14x13mm Closed Grain Black Create Cushion Moulding",
+    "productUrl": "https://centrado.co/product/create-black-cushion-closed-grain-cr1013bk/",
+    "widthMm": 14.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "cushion",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        12.026
+      ],
+      [
+        0.783,
+        12.513
+      ],
+      [
+        1.664,
+        12.805
+      ],
+      [
+        4.112,
+        13.0
+      ],
+      [
+        12.238,
+        12.951
+      ],
+      [
+        13.413,
+        12.61
+      ],
+      [
+        14.0,
+        12.075
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 244,
+        "right": 530,
+        "top": 168,
+        "baseline": 435
+      },
+      "pixelsPerMmX": 20.4286,
+      "pixelsPerMmZ": 20.5385,
+      "anisotropyFraction": 0.00535,
+      "sampleCount": 286,
+      "simplifiedPointCount": 7
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1013BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1013BK-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1013BK_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "4426WH",
+    "name": "White Scoop - Open Grain",
+    "description": "44x26mm White Scoop Moulding",
+    "productUrl": "https://centrado.co/product/white-scoop-open-grain-4426wh/",
+    "widthMm": 44.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "profileType": "scoop",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        9.201
+      ],
+      [
+        0.42,
+        9.708
+      ],
+      [
+        1.26,
+        9.708
+      ],
+      [
+        1.763,
+        10.805
+      ],
+      [
+        2.939,
+        11.649
+      ],
+      [
+        10.748,
+        13.169
+      ],
+      [
+        11.42,
+        14.351
+      ],
+      [
+        12.008,
+        15.026
+      ],
+      [
+        13.603,
+        16.039
+      ],
+      [
+        15.786,
+        16.461
+      ],
+      [
+        18.221,
+        16.461
+      ],
+      [
+        20.656,
+        16.714
+      ],
+      [
+        24.687,
+        17.643
+      ],
+      [
+        27.038,
+        18.487
+      ],
+      [
+        30.733,
+        20.26
+      ],
+      [
+        33.168,
+        21.695
+      ],
+      [
+        35.435,
+        23.299
+      ],
+      [
+        37.115,
+        24.987
+      ],
+      [
+        38.71,
+        25.831
+      ],
+      [
+        39.466,
+        26.0
+      ],
+      [
+        41.229,
+        26.0
+      ],
+      [
+        42.069,
+        25.831
+      ],
+      [
+        42.824,
+        25.409
+      ],
+      [
+        44.0,
+        24.058
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 118,
+        "right": 642,
+        "top": 168,
+        "baseline": 476
+      },
+      "pixelsPerMmX": 11.9091,
+      "pixelsPerMmZ": 11.8462,
+      "anisotropyFraction": 0.00528,
+      "sampleCount": 542,
+      "simplifiedPointCount": 24
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4426WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4426-Profile-1.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4426WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0717AG",
+    "name": "Create Lustre Antique Gold Flat",
+    "description": "17x17mm Antique Gold Create Lustre Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-lustre-antique-gold-flat-cr0717ag/",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "colourTags": [
+      "gold"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.854
+      ],
+      [
+        0.258,
+        16.828
+      ],
+      [
+        0.429,
+        17.0
+      ],
+      [
+        17.0,
+        16.914
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 107,
+        "right": 305,
+        "top": 49,
+        "baseline": 247
+      },
+      "pixelsPerMmX": 11.6471,
+      "pixelsPerMmZ": 11.6471,
+      "anisotropyFraction": 0.0,
+      "sampleCount": 218,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717AG.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Profile-1.png",
+        "width": 367,
+        "height": 367
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717AG_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Macro_Gallery-1.jpg",
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0225BN",
+    "name": "Create Brown Flat - Closed Grain",
+    "description": "22x22mm Brown Closed Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-brown-flat-closed-grain-cr0225bn/",
+    "widthMm": 22.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "colourTags": [
+      "brown"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        21.637
+      ],
+      [
+        0.435,
+        22.0
+      ],
+      [
+        21.565,
+        22.0
+      ],
+      [
+        22.0,
+        21.689
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 192,
+        "right": 597,
+        "top": 63,
+        "baseline": 487
+      },
+      "pixelsPerMmX": 18.4091,
+      "pixelsPerMmZ": 19.2727,
+      "anisotropyFraction": 0.04481,
+      "sampleCount": 406,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225BN.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225-Profile-5.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225BN_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0225OR",
+    "name": "Create Orange Flat - Closed Grain",
+    "description": "21x22mm Orange Closed Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-orange-flat-closed-grain-cr0225or/",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "colourTags": [
+      "orange"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        21.637
+      ],
+      [
+        0.415,
+        22.0
+      ],
+      [
+        20.585,
+        22.0
+      ],
+      [
+        21.0,
+        21.689
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 192,
+        "right": 597,
+        "top": 63,
+        "baseline": 487
+      },
+      "pixelsPerMmX": 19.2857,
+      "pixelsPerMmZ": 19.2727,
+      "anisotropyFraction": 0.00067,
+      "sampleCount": 406,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225OR.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225-Profile-23.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225OR_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR4530BK",
+    "name": "Create Black Flat - Open Grain",
+    "description": "21x22mm Black Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-black-flat-open-grain-cr4530bk/",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        21.671
+      ],
+      [
+        0.44,
+        22.0
+      ],
+      [
+        20.505,
+        22.0
+      ],
+      [
+        21.0,
+        21.671
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 206,
+        "right": 588,
+        "top": 106,
+        "baseline": 507
+      },
+      "pixelsPerMmX": 18.1905,
+      "pixelsPerMmZ": 18.2273,
+      "anisotropyFraction": 0.00202,
+      "sampleCount": 383,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR4530BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR4530-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR4530BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR3313MB",
+    "name": "Create Matt Black Flat - Closed Grain",
+    "description": "33x13mm Matt Closed Grain Black Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-matt-black-flat-closed-grain-cr3313mb/",
+    "widthMm": 33.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "flat",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        13.0
+      ],
+      [
+        33.0,
+        13.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 143,
+        "right": 630,
+        "top": 248,
+        "baseline": 438
+      },
+      "pixelsPerMmX": 14.7576,
+      "pixelsPerMmZ": 14.6154,
+      "anisotropyFraction": 0.00964,
+      "sampleCount": 486,
+      "simplifiedPointCount": 2
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313MB.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313-Profile-6.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313MB_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR3313MG",
+    "name": "Create Matt Gold Flat",
+    "description": "33x13mm Matt Closed Grain Gold Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-matt-gold-flat-cr3313mg/",
+    "widthMm": 33.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "flat",
+    "colourTags": [
+      "gold"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        13.0
+      ],
+      [
+        33.0,
+        13.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 143,
+        "right": 630,
+        "top": 248,
+        "baseline": 438
+      },
+      "pixelsPerMmX": 14.7576,
+      "pixelsPerMmZ": 14.6154,
+      "anisotropyFraction": 0.00964,
+      "sampleCount": 486,
+      "simplifiedPointCount": 2
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313MG.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313-Profile-7.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313MG_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0225RD",
+    "name": "Create Red Flat - Closed Grain",
+    "description": "21x22mm Bright Red Closed Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-red-flat-closed-grain-cr0225rd/",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "colourTags": [
+      "red"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        21.637
+      ],
+      [
+        0.415,
+        22.0
+      ],
+      [
+        20.585,
+        22.0
+      ],
+      [
+        21.0,
+        21.689
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 192,
+        "right": 597,
+        "top": 63,
+        "baseline": 487
+      },
+      "pixelsPerMmX": 19.2857,
+      "pixelsPerMmZ": 19.2727,
+      "anisotropyFraction": 0.00067,
+      "sampleCount": 406,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225RD.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225-Profile-28.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225RD_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0471WH",
+    "name": "Casterbridge White Step - Open Grain",
+    "description": "30x25mm White Casterbridge Step Moulding",
+    "productUrl": "https://centrado.co/product/casterbridge-white-step-open-grain-0471wh/",
+    "widthMm": 30.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.706
+      ],
+      [
+        1.727,
+        16.368
+      ],
+      [
+        3.198,
+        16.496
+      ],
+      [
+        3.966,
+        17.263
+      ],
+      [
+        4.797,
+        17.583
+      ],
+      [
+        5.629,
+        17.519
+      ],
+      [
+        6.205,
+        17.199
+      ],
+      [
+        6.716,
+        16.624
+      ],
+      [
+        7.036,
+        15.729
+      ],
+      [
+        19.574,
+        15.729
+      ],
+      [
+        20.085,
+        17.072
+      ],
+      [
+        20.469,
+        17.391
+      ],
+      [
+        21.109,
+        17.455
+      ],
+      [
+        21.812,
+        18.478
+      ],
+      [
+        22.324,
+        18.926
+      ],
+      [
+        23.731,
+        19.565
+      ],
+      [
+        24.051,
+        19.885
+      ],
+      [
+        24.115,
+        20.524
+      ],
+      [
+        24.371,
+        20.972
+      ],
+      [
+        25.906,
+        21.867
+      ],
+      [
+        26.034,
+        22.506
+      ],
+      [
+        26.354,
+        23.082
+      ],
+      [
+        27.761,
+        24.488
+      ],
+      [
+        29.616,
+        25.0
+      ],
+      [
+        30.0,
+        24.744
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 150,
+        "right": 619,
+        "top": 106,
+        "baseline": 497
+      },
+      "pixelsPerMmX": 15.6333,
+      "pixelsPerMmZ": 15.64,
+      "anisotropyFraction": 0.00043,
+      "sampleCount": 524,
+      "simplifiedPointCount": 25
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471-Profile-6.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery-6.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471WH-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471WH-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0471BK",
+    "name": "Casterbridge Black Step - Open Grain",
+    "description": "30x25mm Black Casterbridge Step Moulding",
+    "productUrl": "https://centrado.co/product/casterbridge-black-step-open-grain-0471bk/",
+    "widthMm": 30.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.706
+      ],
+      [
+        1.727,
+        16.368
+      ],
+      [
+        3.198,
+        16.496
+      ],
+      [
+        3.966,
+        17.263
+      ],
+      [
+        4.797,
+        17.583
+      ],
+      [
+        5.629,
+        17.519
+      ],
+      [
+        6.205,
+        17.199
+      ],
+      [
+        6.716,
+        16.624
+      ],
+      [
+        7.036,
+        15.729
+      ],
+      [
+        19.574,
+        15.729
+      ],
+      [
+        20.085,
+        17.072
+      ],
+      [
+        20.469,
+        17.391
+      ],
+      [
+        21.109,
+        17.455
+      ],
+      [
+        21.812,
+        18.478
+      ],
+      [
+        22.324,
+        18.926
+      ],
+      [
+        23.731,
+        19.565
+      ],
+      [
+        24.051,
+        19.885
+      ],
+      [
+        24.115,
+        20.524
+      ],
+      [
+        24.371,
+        20.972
+      ],
+      [
+        25.906,
+        21.867
+      ],
+      [
+        26.034,
+        22.506
+      ],
+      [
+        26.354,
+        23.082
+      ],
+      [
+        27.761,
+        24.488
+      ],
+      [
+        29.616,
+        25.0
+      ],
+      [
+        30.0,
+        24.744
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 150,
+        "right": 619,
+        "top": 106,
+        "baseline": 497
+      },
+      "pixelsPerMmX": 15.6333,
+      "pixelsPerMmZ": 15.64,
+      "anisotropyFraction": 0.00043,
+      "sampleCount": 524,
+      "simplifiedPointCount": 25
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471BK-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471BK-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "2650WH",
+    "name": "Alberta White Open Grain Flat",
+    "description": "50x26mm White Open Grain Alberta Flat Moulding",
+    "productUrl": "https://centrado.co/product/alberta-white-open-grain-flat-2650wh/",
+    "widthMm": 50.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "profileType": "flat",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        22.884
+      ],
+      [
+        13.663,
+        22.981
+      ],
+      [
+        13.857,
+        22.787
+      ],
+      [
+        14.535,
+        12.27
+      ],
+      [
+        14.826,
+        9.738
+      ],
+      [
+        43.217,
+        9.738
+      ],
+      [
+        43.411,
+        10.03
+      ],
+      [
+        44.283,
+        25.805
+      ],
+      [
+        44.477,
+        26.0
+      ],
+      [
+        50.0,
+        26.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 112,
+        "right": 628,
+        "top": 131,
+        "baseline": 398
+      },
+      "pixelsPerMmX": 10.32,
+      "pixelsPerMmZ": 10.2692,
+      "anisotropyFraction": 0.00492,
+      "sampleCount": 793,
+      "simplifiedPointCount": 10
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650-Profile-1.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/2650WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Alberta-BK-WH-Macro_Gallery-1.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "framed-reference.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Alberta-WH-2_Gallery.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "3042IV",
+    "name": "Ivory Flat - Open Grain",
+    "description": "30x42mm Cream Flat Moulding",
+    "productUrl": "https://centrado.co/product/ivory-flat-open-grain-3042iv/",
+    "widthMm": 30.0,
+    "depthMm": 42.0,
+    "rebateMm": 23.5,
+    "profileType": "flat",
+    "colourTags": [
+      "cream"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        41.502
+      ],
+      [
+        0.831,
+        42.0
+      ],
+      [
+        29.169,
+        42.0
+      ],
+      [
+        29.723,
+        41.751
+      ],
+      [
+        30.0,
+        41.502
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 210,
+        "right": 535,
+        "top": 51,
+        "baseline": 557
+      },
+      "pixelsPerMmX": 10.8333,
+      "pixelsPerMmZ": 12.0476,
+      "anisotropyFraction": 0.10079,
+      "sampleCount": 325,
+      "simplifiedPointCount": 5
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042IV.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042-Profile-2.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042IV_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042IV-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042IV-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "3042BK",
+    "name": "Black Flat - Open Grain",
+    "description": "27x42mm Black Flat Moulding",
+    "productUrl": "https://centrado.co/product/black-flat-open-grain-3042bk/",
+    "widthMm": 27.0,
+    "depthMm": 42.0,
+    "rebateMm": 23.5,
+    "profileType": "flat",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        41.502
+      ],
+      [
+        0.748,
+        42.0
+      ],
+      [
+        26.252,
+        42.0
+      ],
+      [
+        27.0,
+        41.502
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 210,
+        "right": 535,
+        "top": 51,
+        "baseline": 557
+      },
+      "pixelsPerMmX": 12.037,
+      "pixelsPerMmZ": 12.0476,
+      "anisotropyFraction": 0.00088,
+      "sampleCount": 325,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042BK-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042BK-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "3042WH",
+    "name": "White Flat - Open Grain",
+    "description": "27x42mm White Flat Moulding",
+    "productUrl": "https://centrado.co/product/white-flat-open-grain-3042wh/",
+    "widthMm": 27.0,
+    "depthMm": 42.0,
+    "rebateMm": 23.5,
+    "profileType": "flat",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        41.502
+      ],
+      [
+        0.748,
+        42.0
+      ],
+      [
+        26.252,
+        42.0
+      ],
+      [
+        27.0,
+        41.502
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 210,
+        "right": 535,
+        "top": 51,
+        "baseline": 557
+      },
+      "pixelsPerMmX": 12.037,
+      "pixelsPerMmZ": 12.0476,
+      "anisotropyFraction": 0.00088,
+      "sampleCount": 325,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042-Profile-6.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042WH-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042WH-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "5819WH",
+    "name": "Ravenna White Bevel - Open Grain",
+    "description": "58x19mm White Ravenna Bevel Moulding",
+    "productUrl": "https://centrado.co/product/ravenna-white-bevel-open-grain-5819wh/",
+    "widthMm": 58.0,
+    "depthMm": 19.0,
+    "rebateMm": 10.6,
+    "profileType": "angled",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        12.557
+      ],
+      [
+        7.411,
+        19.0
+      ],
+      [
+        58.0,
+        19.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 100,
+        "right": 640,
+        "top": 255,
+        "baseline": 429
+      },
+      "pixelsPerMmX": 9.3103,
+      "pixelsPerMmZ": 9.1579,
+      "anisotropyFraction": 0.01637,
+      "sampleCount": 540,
+      "simplifiedPointCount": 3
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819-Profile-3.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819WH_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819WH-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819WH-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR2253WH",
+    "name": "Create White Flat - Open Grain",
+    "description": "22x53mm White Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-white-flat-open-grain-cr2253wh/",
+    "widthMm": 22.0,
+    "depthMm": 53.0,
+    "rebateMm": 29.7,
+    "profileType": "flat",
+    "colourTags": [
+      "white"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        52.709
+      ],
+      [
+        0.391,
+        53.0
+      ],
+      [
+        21.609,
+        53.0
+      ],
+      [
+        22.0,
+        52.806
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 260,
+        "right": 485,
+        "top": 54,
+        "baseline": 600
+      },
+      "pixelsPerMmX": 10.2273,
+      "pixelsPerMmZ": 10.3019,
+      "anisotropyFraction": 0.00724,
+      "sampleCount": 224,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR2253WH.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR2253-Profile-1.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR2253WH_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0717YW",
+    "name": "Create Yellow Flat - Open Grain",
+    "description": "17x17mm Yellow Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-yellow-flat-open-grain-cr0717yw/",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "colourTags": [
+      "yellow"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.854
+      ],
+      [
+        0.258,
+        16.828
+      ],
+      [
+        0.429,
+        17.0
+      ],
+      [
+        17.0,
+        16.914
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 107,
+        "right": 305,
+        "top": 49,
+        "baseline": 247
+      },
+      "pixelsPerMmX": 11.6471,
+      "pixelsPerMmZ": 11.6471,
+      "anisotropyFraction": 0.0,
+      "sampleCount": 218,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717YW.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Profile-25.png",
+        "width": 367,
+        "height": 367
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717YW_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Macro_Gallery-25.jpg",
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0403BK",
+    "name": "Black Cushion - Open Grain",
+    "description": "20x14mm Black Cushion Moulding",
+    "productUrl": "https://centrado.co/product/black-cushion-open-grain-0403bk/",
+    "widthMm": 20.0,
+    "depthMm": 14.0,
+    "rebateMm": 7.8,
+    "profileType": "cushion",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        12.605
+      ],
+      [
+        1.683,
+        13.086
+      ],
+      [
+        4.712,
+        13.663
+      ],
+      [
+        9.375,
+        14.0
+      ],
+      [
+        15.481,
+        13.759
+      ],
+      [
+        17.933,
+        13.423
+      ],
+      [
+        20.0,
+        12.942
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 198,
+        "right": 614,
+        "top": 143,
+        "baseline": 434
+      },
+      "pixelsPerMmX": 20.8,
+      "pixelsPerMmZ": 20.7857,
+      "anisotropyFraction": 0.00069,
+      "sampleCount": 415,
+      "simplifiedPointCount": 7
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0403BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0403BK-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0403BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "5819IV",
+    "name": "Ravenna Ivory Bevel - Open Grain",
+    "description": "58x19mm Ivory Ravenna Bevel Moulding",
+    "productUrl": "https://centrado.co/product/ravenna-ivory-bevel-open-grain-5819iv/",
+    "widthMm": 58.0,
+    "depthMm": 19.0,
+    "rebateMm": 10.6,
+    "profileType": "angled",
+    "colourTags": [
+      "ivory"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        12.557
+      ],
+      [
+        7.411,
+        19.0
+      ],
+      [
+        58.0,
+        19.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 100,
+        "right": 640,
+        "top": 255,
+        "baseline": 429
+      },
+      "pixelsPerMmX": 9.3103,
+      "pixelsPerMmZ": 9.1579,
+      "anisotropyFraction": 0.01637,
+      "sampleCount": 540,
+      "simplifiedPointCount": 3
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819IV.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819-Profile-2.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819IV_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819IV-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819IV-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0717RD",
+    "name": "Create Red Flat - Open Grain",
+    "description": "17x17mm Red Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-red-flat-open-grain-cr0717rd/",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "colourTags": [
+      "red"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.854
+      ],
+      [
+        0.258,
+        16.828
+      ],
+      [
+        0.429,
+        17.0
+      ],
+      [
+        17.0,
+        16.914
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 107,
+        "right": 305,
+        "top": 49,
+        "baseline": 247
+      },
+      "pixelsPerMmX": 11.6471,
+      "pixelsPerMmZ": 11.6471,
+      "anisotropyFraction": 0.0,
+      "sampleCount": 218,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717RD.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Profile-21.png",
+        "width": 367,
+        "height": 367
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717RD_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Macro_Gallery-21.jpg",
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR1090BK",
+    "name": "Create Black Flat - Open Grain",
+    "description": "35x15mm Black Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-black-flat-open-grain-cr1090bk/",
+    "widthMm": 35.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "profileType": "flat",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.783
+      ],
+      [
+        0.359,
+        15.0
+      ],
+      [
+        34.57,
+        15.0
+      ],
+      [
+        35.0,
+        14.71
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 138,
+        "right": 626,
+        "top": 216,
+        "baseline": 423
+      },
+      "pixelsPerMmX": 13.9429,
+      "pixelsPerMmZ": 13.8,
+      "anisotropyFraction": 0.01025,
+      "sampleCount": 487,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1090BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1090-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1090BK_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR8005OA",
+    "name": "Create Oak Flat - Closed Grain",
+    "description": "40x30mm Oak Closed Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-oak-flat-closed-grain-cr8005oa/",
+    "widthMm": 40.0,
+    "depthMm": 30.0,
+    "rebateMm": 16.8,
+    "profileType": "flat",
+    "colourTags": [
+      "oak"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        29.829
+      ],
+      [
+        0.256,
+        30.0
+      ],
+      [
+        40.0,
+        29.914
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 121,
+        "right": 590,
+        "top": 128,
+        "baseline": 478
+      },
+      "pixelsPerMmX": 11.725,
+      "pixelsPerMmZ": 11.6667,
+      "anisotropyFraction": 0.00498,
+      "sampleCount": 468,
+      "simplifiedPointCount": 3
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR8005OA.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR8005-Profile.png",
+        "width": 662,
+        "height": 663
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR8005OA_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0717OR",
+    "name": "Create Orange Flat - Open Grain",
+    "description": "17x17mm Orange Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-orange-flat-open-grain-cr0717or/",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "colourTags": [
+      "orange"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.854
+      ],
+      [
+        0.258,
+        16.828
+      ],
+      [
+        0.429,
+        17.0
+      ],
+      [
+        17.0,
+        16.914
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 107,
+        "right": 305,
+        "top": 49,
+        "baseline": 247
+      },
+      "pixelsPerMmX": 11.6471,
+      "pixelsPerMmZ": 11.6471,
+      "anisotropyFraction": 0.0,
+      "sampleCount": 218,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717OR.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Profile-17.png",
+        "width": 367,
+        "height": 367
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717OR_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Macro_Gallery-17.jpg",
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0717MD",
+    "name": "Create Midnight Flat - Open Grain",
+    "description": "17x17mm Midnight Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-midnight-flat-open-grain-cr0717md/",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "colourTags": [
+      "midnight"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.854
+      ],
+      [
+        0.258,
+        16.828
+      ],
+      [
+        0.429,
+        17.0
+      ],
+      [
+        17.0,
+        16.914
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 107,
+        "right": 305,
+        "top": 49,
+        "baseline": 247
+      },
+      "pixelsPerMmX": 11.6471,
+      "pixelsPerMmZ": 11.6471,
+      "anisotropyFraction": 0.0,
+      "sampleCount": 218,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717MD.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Profile-10.png",
+        "width": 367,
+        "height": 367
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717MD_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Macro_Gallery-10.jpg",
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0473BK",
+    "name": "Casterbridge Black Step - Open Grain",
+    "description": "84x40mm Black Casterbridge Step Moulding",
+    "productUrl": "https://centrado.co/product/casterbridge-black-step-open-grain-0473bk/",
+    "widthMm": 84.0,
+    "depthMm": 40.0,
+    "rebateMm": 22.4,
+    "profileType": "angled",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        23.764
+      ],
+      [
+        1.466,
+        23.764
+      ],
+      [
+        2.199,
+        24.059
+      ],
+      [
+        3.518,
+        25.387
+      ],
+      [
+        3.958,
+        26.421
+      ],
+      [
+        4.838,
+        27.306
+      ],
+      [
+        5.424,
+        27.601
+      ],
+      [
+        6.89,
+        27.601
+      ],
+      [
+        7.77,
+        27.159
+      ],
+      [
+        8.356,
+        27.159
+      ],
+      [
+        9.089,
+        29.225
+      ],
+      [
+        10.702,
+        31.439
+      ],
+      [
+        11.581,
+        32.03
+      ],
+      [
+        13.047,
+        32.62
+      ],
+      [
+        14.806,
+        32.62
+      ],
+      [
+        16.272,
+        31.882
+      ],
+      [
+        17.445,
+        30.554
+      ],
+      [
+        18.471,
+        28.192
+      ],
+      [
+        19.058,
+        25.535
+      ],
+      [
+        20.084,
+        25.387
+      ],
+      [
+        21.11,
+        24.945
+      ],
+      [
+        22.136,
+        23.469
+      ],
+      [
+        53.215,
+        23.469
+      ],
+      [
+        54.827,
+        25.092
+      ],
+      [
+        56.733,
+        25.24
+      ],
+      [
+        57.759,
+        27.011
+      ],
+      [
+        58.639,
+        27.897
+      ],
+      [
+        60.105,
+        28.487
+      ],
+      [
+        60.691,
+        28.339
+      ],
+      [
+        68.461,
+        28.339
+      ],
+      [
+        71.539,
+        32.62
+      ],
+      [
+        74.178,
+        35.277
+      ],
+      [
+        75.791,
+        36.605
+      ],
+      [
+        77.55,
+        37.786
+      ],
+      [
+        81.948,
+        39.852
+      ],
+      [
+        83.267,
+        40.0
+      ],
+      [
+        84.0,
+        39.41
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 77,
+        "right": 650,
+        "top": 194,
+        "baseline": 465
+      },
+      "pixelsPerMmX": 6.8214,
+      "pixelsPerMmZ": 6.775,
+      "anisotropyFraction": 0.00681,
+      "sampleCount": 631,
+      "simplifiedPointCount": 37
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0473BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0473-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0473BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery-14.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0473BK-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0473BK-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "5819BK",
+    "name": "Ravenna Black Bevel - Open Grain",
+    "description": "58x19mm Black Ravenna Bevel Moulding",
+    "productUrl": "https://centrado.co/product/ravenna-black-bevel-open-grain-5819bk/",
+    "widthMm": 58.0,
+    "depthMm": 19.0,
+    "rebateMm": 10.6,
+    "profileType": "angled",
+    "colourTags": [
+      "black"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        12.557
+      ],
+      [
+        7.411,
+        19.0
+      ],
+      [
+        58.0,
+        19.0
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 100,
+        "right": 640,
+        "top": 255,
+        "baseline": 429
+      },
+      "pixelsPerMmX": 9.3103,
+      "pixelsPerMmZ": 9.1579,
+      "anisotropyFraction": 0.01637,
+      "sampleCount": 540,
+      "simplifiedPointCount": 3
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819BK.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819BK_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819BK-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819BK-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "0472CM",
+    "name": "Casterbridge Cream Step - Open Grain",
+    "description": "52x35mm Cream Casterbridge Step Moulding",
+    "productUrl": "https://centrado.co/product/casterbridge-cream-step-open-grain-0472cm/",
+    "widthMm": 52.0,
+    "depthMm": 35.0,
+    "rebateMm": 19.6,
+    "profileType": "angled",
+    "colourTags": [
+      "cream"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        17.256
+      ],
+      [
+        1.944,
+        18.329
+      ],
+      [
+        2.624,
+        19.011
+      ],
+      [
+        2.916,
+        19.986
+      ],
+      [
+        3.305,
+        20.376
+      ],
+      [
+        3.985,
+        20.669
+      ],
+      [
+        6.123,
+        20.669
+      ],
+      [
+        6.609,
+        21.058
+      ],
+      [
+        6.901,
+        21.741
+      ],
+      [
+        7.193,
+        22.033
+      ],
+      [
+        8.067,
+        22.521
+      ],
+      [
+        8.845,
+        22.716
+      ],
+      [
+        9.622,
+        22.716
+      ],
+      [
+        10.692,
+        22.423
+      ],
+      [
+        12.052,
+        21.253
+      ],
+      [
+        12.538,
+        20.376
+      ],
+      [
+        12.733,
+        19.694
+      ],
+      [
+        12.733,
+        18.816
+      ],
+      [
+        12.927,
+        18.621
+      ],
+      [
+        33.047,
+        18.719
+      ],
+      [
+        33.436,
+        19.986
+      ],
+      [
+        34.116,
+        20.864
+      ],
+      [
+        35.379,
+        21.643
+      ],
+      [
+        36.546,
+        22.033
+      ],
+      [
+        37.421,
+        23.398
+      ],
+      [
+        38.684,
+        24.568
+      ],
+      [
+        40.531,
+        25.153
+      ],
+      [
+        40.725,
+        26.031
+      ],
+      [
+        41.6,
+        27.396
+      ],
+      [
+        42.28,
+        27.786
+      ],
+      [
+        43.641,
+        27.883
+      ],
+      [
+        43.836,
+        28.078
+      ],
+      [
+        43.836,
+        28.565
+      ],
+      [
+        44.224,
+        29.833
+      ],
+      [
+        44.905,
+        31.198
+      ],
+      [
+        45.779,
+        32.368
+      ],
+      [
+        47.14,
+        33.635
+      ],
+      [
+        48.598,
+        34.513
+      ],
+      [
+        49.862,
+        35.0
+      ],
+      [
+        50.931,
+        35.0
+      ],
+      [
+        52.0,
+        34.415
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 104,
+        "right": 639,
+        "top": 140,
+        "baseline": 499
+      },
+      "pixelsPerMmX": 10.2885,
+      "pixelsPerMmZ": 10.2571,
+      "anisotropyFraction": 0.00304,
+      "sampleCount": 615,
+      "simplifiedPointCount": 41
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472CM.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472-Profile-1.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472CM_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery-8.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-1.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472CM-3DB.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "product-detail-2.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0472CM-3DF.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0717DR",
+    "name": "Create Dark Red Flat - Open Grain",
+    "description": "17x17mm Dark Red Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-dark-red-flat-open-grain-cr0717dr/",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "colourTags": [
+      "red"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.854
+      ],
+      [
+        0.258,
+        16.828
+      ],
+      [
+        0.429,
+        17.0
+      ],
+      [
+        17.0,
+        16.914
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 107,
+        "right": 305,
+        "top": 49,
+        "baseline": 247
+      },
+      "pixelsPerMmX": 11.6471,
+      "pixelsPerMmZ": 11.6471,
+      "anisotropyFraction": 0.0,
+      "sampleCount": 218,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717DR.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Profile-8.png",
+        "width": 367,
+        "height": 367
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717DR_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Macro_Gallery-8.jpg",
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0717NY",
+    "name": "Create Navy Flat - Open Grain",
+    "description": "17x17mm Navy Open Grain Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-navy-flat-open-grain-cr0717ny/",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "colourTags": [
+      "navy"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        14.854
+      ],
+      [
+        0.258,
+        16.828
+      ],
+      [
+        0.429,
+        17.0
+      ],
+      [
+        17.0,
+        16.914
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 107,
+        "right": 305,
+        "top": 49,
+        "baseline": 247
+      },
+      "pixelsPerMmX": 11.6471,
+      "pixelsPerMmZ": 11.6471,
+      "anisotropyFraction": 0.0,
+      "sampleCount": 218,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717NY.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Profile-13.png",
+        "width": 367,
+        "height": 367
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717NY_Chevron.jpg",
+        "width": 2077,
+        "height": 2077
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0717-Macro_Gallery-13.jpg",
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "4426CM",
+    "name": "Cream Scoop - Open Grain",
+    "description": "44x26mm Cream Scoop Moulding",
+    "productUrl": "https://centrado.co/product/cream-scoop-open-grain-4426cm/",
+    "widthMm": 44.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "profileType": "scoop",
+    "colourTags": [
+      "cream"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        9.201
+      ],
+      [
+        0.42,
+        9.708
+      ],
+      [
+        1.26,
+        9.708
+      ],
+      [
+        1.763,
+        10.805
+      ],
+      [
+        2.939,
+        11.649
+      ],
+      [
+        10.748,
+        13.169
+      ],
+      [
+        11.42,
+        14.351
+      ],
+      [
+        12.008,
+        15.026
+      ],
+      [
+        13.603,
+        16.039
+      ],
+      [
+        15.786,
+        16.461
+      ],
+      [
+        18.221,
+        16.461
+      ],
+      [
+        20.656,
+        16.714
+      ],
+      [
+        24.687,
+        17.643
+      ],
+      [
+        27.038,
+        18.487
+      ],
+      [
+        30.733,
+        20.26
+      ],
+      [
+        33.168,
+        21.695
+      ],
+      [
+        35.435,
+        23.299
+      ],
+      [
+        37.115,
+        24.987
+      ],
+      [
+        38.71,
+        25.831
+      ],
+      [
+        39.466,
+        26.0
+      ],
+      [
+        41.229,
+        26.0
+      ],
+      [
+        42.069,
+        25.831
+      ],
+      [
+        42.824,
+        25.409
+      ],
+      [
+        44.0,
+        24.058
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 118,
+        "right": 642,
+        "top": 168,
+        "baseline": 476
+      },
+      "pixelsPerMmX": 11.9091,
+      "pixelsPerMmZ": 11.8462,
+      "anisotropyFraction": 0.00528,
+      "sampleCount": 542,
+      "simplifiedPointCount": 24
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4426CM.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4426-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4426CM_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR0225BF",
+    "name": "Create Brown Foil Flat - Open Grain",
+    "description": "21x22mm Brown Foil Create Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-brown-foil-flat-open-grain-cr0225bf/",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "colourTags": [
+      "brown"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        21.637
+      ],
+      [
+        0.415,
+        22.0
+      ],
+      [
+        20.585,
+        22.0
+      ],
+      [
+        21.0,
+        21.689
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 192,
+        "right": 597,
+        "top": 63,
+        "baseline": 487
+      },
+      "pixelsPerMmX": 19.2857,
+      "pixelsPerMmZ": 19.2727,
+      "anisotropyFraction": 0.00067,
+      "sampleCount": 406,
+      "simplifiedPointCount": 4
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225BF.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225-Profile-3.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225BF_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Create-Natural-AF-BF-GF-Macro_Gallery-1.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "CR3330AG",
+    "name": "Create Lustre Antique Gold Flat",
+    "description": "33x30mm Antique Gold Create Lustre Flat Moulding",
+    "productUrl": "https://centrado.co/product/create-lustre-antique-gold-flat-cr3330ag/",
+    "widthMm": 33.0,
+    "depthMm": 30.0,
+    "rebateMm": 16.8,
+    "profileType": "flat",
+    "colourTags": [
+      "gold"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 0,
+    "points": [
+      [
+        0.0,
+        29.238
+      ],
+      [
+        0.484,
+        29.792
+      ],
+      [
+        0.899,
+        30.0
+      ],
+      [
+        32.101,
+        30.0
+      ],
+      [
+        32.516,
+        29.792
+      ],
+      [
+        33.0,
+        29.238
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 142,
+        "right": 619,
+        "top": 100,
+        "baseline": 533
+      },
+      "pixelsPerMmX": 14.4545,
+      "pixelsPerMmZ": 14.4333,
+      "anisotropyFraction": 0.00147,
+      "sampleCount": 480,
+      "simplifiedPointCount": 6
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3330AG.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3330-Profile-1.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3330AG_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Create-Lustre-Macro_Gallery-9.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "framed-reference.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Create-Lustre-AG_Gallery-3.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  },
+  {
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "sku": "4924BG",
+    "name": "Bergen Black and Gold Angled",
+    "description": "30x20mm Closed Grain Black and Gold Bergen Angled Moulding",
+    "productUrl": "https://centrado.co/product/bergen-black-and-gold-angled-4924bg/",
+    "widthMm": 30.0,
+    "depthMm": 20.0,
+    "rebateMm": 11.2,
+    "profileType": "angled",
+    "colourTags": [
+      "black",
+      "gold"
+    ],
+    "method": "dimensioned-profile-png-v2-batch",
+    "accentWidthMm": 9.6,
+    "points": [
+      [
+        0.0,
+        12.757
+      ],
+      [
+        0.132,
+        14.286
+      ],
+      [
+        0.33,
+        14.618
+      ],
+      [
+        4.559,
+        16.013
+      ],
+      [
+        6.013,
+        16.877
+      ],
+      [
+        7.269,
+        18.007
+      ],
+      [
+        8.855,
+        18.405
+      ],
+      [
+        9.581,
+        19.468
+      ],
+      [
+        9.978,
+        19.801
+      ],
+      [
+        10.441,
+        20.0
+      ],
+      [
+        11.101,
+        20.0
+      ],
+      [
+        11.894,
+        19.668
+      ],
+      [
+        30.0,
+        7.973
+      ]
+    ],
+    "extraction": {
+      "sourceBoundsPixels": {
+        "left": 148,
+        "right": 602,
+        "top": 160,
+        "baseline": 461
+      },
+      "pixelsPerMmX": 15.1333,
+      "pixelsPerMmZ": 15.05,
+      "anisotropyFraction": 0.00551,
+      "sampleCount": 482,
+      "simplifiedPointCount": 13
+    },
+    "assets": [
+      {
+        "filename": "product-section.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4924BG.JPG",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "profile-source.png",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4924-Profile.png",
+        "width": 700,
+        "height": 700
+      },
+      {
+        "filename": "chevron.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4924BG_Chevron.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "macro.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Bergen-Macro_Gallery.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "filename": "framed-reference.jpg",
+        "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Bergen-BG_Gallery.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "rendererIntegrated": true
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "roomId":"white-gallery-corridor","status":"manual-seed-awaiting-approval","sourceDimensions":{"width":2400,"height":1602},
+  "geometry":{"model":"architectural-line seed","commercialDeploymentAllowed":true,"device":"manual draft","inferenceSeconds":0,"camera":{"horizontalFovDegrees":58},"wallHypothesis":{"yawDegrees":-47,"pitchDegrees":0,"ransacInlierFraction":0.75,"residualP95ModelUnits":0}},
+  "manualCalibration":{"quadNormalised":[[0.05,0.16],[0.31,0.28],[0.31,0.72],[0.05,0.88]],"scaleReference":{"label":"Target-wall floor to ceiling","lengthMm":2400,"pointsNormalised":[[0.07,0.17],[0.07,0.87]]}},
+  "lighting":{"status":"LDR direction proxy","dominantImagePoint":[0.14,0.25],"exposureClippedFraction":0.04,"rendererUseAllowed":false}
+}

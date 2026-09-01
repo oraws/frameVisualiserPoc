@@ -1,0 +1,19 @@
+{
+  "sku": "010-4609",
+  "name": "Deep Rebate 27mm White Woodgrain Wood Moulding",
+  "widthMm": 27,
+  "depthMm": 40,
+  "rebateMm": 33,
+  "profileType": "flat",
+  "page": 36,
+  "label": "010 4609",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 192,
+  "pixelHeight": 498,
+  "pdfImageBox": {
+    "x0": 1069.592,
+    "top": 69.783,
+    "x1": 1146.392,
+    "bottom": 268.983
+  }
+}

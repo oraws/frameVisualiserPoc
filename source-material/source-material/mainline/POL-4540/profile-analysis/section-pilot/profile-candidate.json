@@ -1,0 +1,159 @@
+{
+  "supplier": "Mainline",
+  "sku": "POL-4540",
+  "name": "Watercolour 25mm Antique Silver Polcore Moulding",
+  "productUrl": "https://mainlinemouldings.com/watercolour-silver-25mm-polcore-moulding/",
+  "method": "multi-frame-exposed-cut-section-v2-metric",
+  "widthMm": 25.0,
+  "depthMm": 18.0,
+  "rebateMm": 11.0,
+  "sourceImageCount": 45,
+  "selectedFrameCount": 3,
+  "selectedFrames": [
+    {
+      "label": "img22",
+      "filename": "img22.jpg",
+      "overlay": "img22-overlay.png",
+      "mask": "img22-cut-mask.png",
+      "edgeScore": 124.943,
+      "quality": 0.635,
+      "depthSpanPixels": 48.0,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.06,
+        "scale": 0.9706,
+        "offsetMm": 0.5298
+      }
+    },
+    {
+      "label": "img23",
+      "filename": "img23.jpg",
+      "overlay": "img23-overlay.png",
+      "mask": "img23-cut-mask.png",
+      "edgeScore": 112.162,
+      "quality": 0.622,
+      "depthSpanPixels": 55.52,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.0,
+        "scale": 1.0,
+        "offsetMm": 0.0
+      }
+    },
+    {
+      "label": "img24",
+      "filename": "img24.jpg",
+      "overlay": "img24-overlay.png",
+      "mask": "img24-cut-mask.png",
+      "edgeScore": 129.129,
+      "quality": 0.6186,
+      "depthSpanPixels": 56.3,
+      "registration": {
+        "horizontalShiftSamples": -2,
+        "projectiveWarp": -0.06,
+        "scale": 1.0006,
+        "offsetMm": -0.0782
+      }
+    }
+  ],
+  "points": [
+    [
+      0.0,
+      13.897
+    ],
+    [
+      1.042,
+      14.455
+    ],
+    [
+      1.562,
+      15.954
+    ],
+    [
+      1.979,
+      16.367
+    ],
+    [
+      4.688,
+      17.276
+    ],
+    [
+      5.104,
+      17.874
+    ],
+    [
+      6.875,
+      17.683
+    ],
+    [
+      8.229,
+      16.911
+    ],
+    [
+      10.104,
+      16.469
+    ],
+    [
+      11.562,
+      13.908
+    ],
+    [
+      12.917,
+      12.162
+    ],
+    [
+      14.167,
+      11.392
+    ],
+    [
+      15.833,
+      10.699
+    ],
+    [
+      19.375,
+      10.128
+    ],
+    [
+      20.417,
+      9.28
+    ],
+    [
+      22.188,
+      8.601
+    ],
+    [
+      22.812,
+      8.171
+    ],
+    [
+      23.125,
+      7.487
+    ],
+    [
+      24.479,
+      6.107
+    ],
+    [
+      24.792,
+      4.398
+    ],
+    [
+      25.0,
+      4.398
+    ]
+  ],
+  "validation": {
+    "heldOutMedianBoundaryPixels": 0.447,
+    "heldOutP95BoundaryPixels": 1.495,
+    "crossSubsetP95ProfileMm": 0.297,
+    "dimensionResidualMm": 0.0,
+    "passesInitialGate": true
+  },
+  "status": "experimental-pass",
+  "rendererIntegrated": false,
+  "limitations": [
+    "Supplier spin imagery is low resolution",
+    "Macro profile only; ornament relief is a later material stage",
+    "Acceptance requires review of automatic overlays"
+  ]
+}

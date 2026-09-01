@@ -1,0 +1,219 @@
+{
+  "supplier": "Mainline",
+  "sku": "POL-2190",
+  "name": "Contemporary Classics 70mm Black Polcore Moulding",
+  "productUrl": "https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/",
+  "method": "multi-frame-exposed-cut-section-v2-metric",
+  "widthMm": 70.0,
+  "depthMm": 30.0,
+  "rebateMm": 15.0,
+  "sourceImageCount": 45,
+  "selectedFrameCount": 3,
+  "selectedFrames": [
+    {
+      "label": "img22",
+      "filename": "img22.jpg",
+      "overlay": "img22-overlay.png",
+      "mask": "img22-cut-mask.png",
+      "edgeScore": 98.225,
+      "quality": 0.797,
+      "depthSpanPixels": 53.0,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.06,
+        "scale": 0.9739,
+        "offsetMm": 0.5982
+      }
+    },
+    {
+      "label": "img23",
+      "filename": "img23.jpg",
+      "overlay": "img23-overlay.png",
+      "mask": "img23-cut-mask.png",
+      "edgeScore": 89.926,
+      "quality": 0.7948,
+      "depthSpanPixels": 53.62,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.0,
+        "scale": 1.0,
+        "offsetMm": 0.0
+      }
+    },
+    {
+      "label": "img24",
+      "filename": "img24.jpg",
+      "overlay": "img24-overlay.png",
+      "mask": "img24-cut-mask.png",
+      "edgeScore": 86.205,
+      "quality": 0.7961,
+      "depthSpanPixels": 53.58,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": -0.06,
+        "scale": 0.9901,
+        "offsetMm": 0.2269
+      }
+    }
+  ],
+  "points": [
+    [
+      0.0,
+      20.67
+    ],
+    [
+      8.167,
+      20.813
+    ],
+    [
+      8.75,
+      21.912
+    ],
+    [
+      14.0,
+      21.909
+    ],
+    [
+      15.75,
+      21.278
+    ],
+    [
+      17.208,
+      20.216
+    ],
+    [
+      19.25,
+      19.648
+    ],
+    [
+      19.833,
+      18.489
+    ],
+    [
+      21.875,
+      18.405
+    ],
+    [
+      22.458,
+      17.732
+    ],
+    [
+      29.167,
+      17.476
+    ],
+    [
+      34.417,
+      17.847
+    ],
+    [
+      34.708,
+      18.603
+    ],
+    [
+      35.875,
+      19.071
+    ],
+    [
+      39.375,
+      19.456
+    ],
+    [
+      40.25,
+      20.516
+    ],
+    [
+      40.833,
+      21.833
+    ],
+    [
+      42.292,
+      23.086
+    ],
+    [
+      43.75,
+      25.573
+    ],
+    [
+      44.917,
+      26.467
+    ],
+    [
+      45.792,
+      27.662
+    ],
+    [
+      52.208,
+      27.717
+    ],
+    [
+      52.792,
+      29.472
+    ],
+    [
+      54.542,
+      29.666
+    ],
+    [
+      56.875,
+      29.466
+    ],
+    [
+      58.042,
+      27.583
+    ],
+    [
+      59.5,
+      27.329
+    ],
+    [
+      59.792,
+      26.8
+    ],
+    [
+      61.542,
+      19.987
+    ],
+    [
+      63.875,
+      13.638
+    ],
+    [
+      65.625,
+      10.861
+    ],
+    [
+      66.5,
+      10.285
+    ],
+    [
+      67.375,
+      8.962
+    ],
+    [
+      68.833,
+      8.177
+    ],
+    [
+      69.417,
+      6.754
+    ],
+    [
+      70.0,
+      6.359
+    ]
+  ],
+  "validation": {
+    "heldOutMedianBoundaryPixels": 0.623,
+    "heldOutP95BoundaryPixels": 3.762,
+    "crossSubsetP95ProfileMm": 1.318,
+    "dimensionResidualMm": 0.0,
+    "passesInitialGate": false
+  },
+  "status": "experimental-rejected",
+  "rendererIntegrated": false,
+  "limitations": [
+    "Supplier spin imagery is low resolution",
+    "Macro profile only; ornament relief is a later material stage",
+    "Acceptance requires review of automatic overlays"
+  ]
+}

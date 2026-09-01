@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4416",
+  "name": "30mm Flats Brushed Gunmetal Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 16,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 88,
+  "label": "POL 4416",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 212,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 473.905,
+    "top": 333.496,
+    "x1": 558.625,
+    "bottom": 533.808
+  }
+}

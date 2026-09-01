@@ -1,0 +1,19 @@
+{
+  "sku": "POL-2169",
+  "name": "79mm Gold Polcore Moulding",
+  "widthMm": 79,
+  "depthMm": 27,
+  "rebateMm": 15,
+  "profileType": "flat",
+  "page": 151,
+  "label": "POL 2169",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 559,
+  "pixelHeight": 503,
+  "pdfImageBox": {
+    "x0": 933.027,
+    "top": 599.87,
+    "x1": 1156.947,
+    "bottom": 800.75
+  }
+}

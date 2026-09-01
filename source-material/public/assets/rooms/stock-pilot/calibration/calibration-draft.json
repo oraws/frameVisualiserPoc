@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "roomId": "stock-pilot",
+  "sourceImage": "room.jpg",
+  "sourceDimensions": {
+    "width": 2600,
+    "height": 1733
+  },
+  "status": "draft-needs-grid-approval",
+  "approved": false,
+  "rendererUseAllowed": false,
+  "geometry": {
+    "model": "facebook/VGGT-1B research checkpoint",
+    "commercialDeploymentAllowed": false,
+    "device": "cpu",
+    "inferenceSeconds": 3.142,
+    "modelInput": {
+      "sourceWidth": 2600,
+      "sourceHeight": 1733,
+      "modelSize": 518,
+      "resizedWidth": 518,
+      "resizedHeight": 350,
+      "left": 0,
+      "top": 84,
+      "scaleX": 0.19923076923076924,
+      "scaleY": 0.20196191575302944
+    },
+    "camera": {
+      "intrinsicsModelPixels": [
+        [
+          230.32579040527344,
+          0.0,
+          259.0
+        ],
+        [
+          0.0,
+          231.3837432861328,
+          259.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "horizontalFovDegrees": 96.7073
+    },
+    "wallHypothesis": {
+      "sourceRoi": [
+        130,
+        433,
+        1040,
+        1282
+      ],
+      "planeCameraCoordinates": [
+        0.7217795,
+        0.0073121,
+        -0.6920845,
+        1.0554467
+      ],
+      "normal": [
+        0.7217795,
+        0.0073121,
+        -0.6920845
+      ],
+      "yawDegrees": 46.2032,
+      "pitchDegrees": 0.419,
+      "ransacInlierFraction": 1.0,
+      "residualP95ModelUnits": 0.0011862
+    }
+  },
+  "manualCalibration": {
+    "method": "four-corner wall quad with perspective grid",
+    "quadNormalised": [
+      [
+        0.08,
+        0.34
+      ],
+      [
+        0.35,
+        0.39
+      ],
+      [
+        0.35,
+        0.69
+      ],
+      [
+        0.08,
+        0.78
+      ]
+    ],
+    "scaleReference": {
+      "label": "Target-wall floor to ceiling",
+      "lengthMm": 2400,
+      "pointsNormalised": [
+        [
+          0.12,
+          0.18
+        ],
+        [
+          0.12,
+          0.72
+        ]
+      ]
+    },
+    "reviewedAt": null,
+    "reviewer": null
+  },
+  "lighting": {
+    "status": "ldr-cue-only",
+    "method": "bright-region centroid and colour; no HDR radiance recovery",
+    "dominantImagePoint": [
+      0.25385,
+      0.59146
+    ],
+    "dominantColourSrgb": [
+      212,
+      214,
+      217
+    ],
+    "peakLinearLuminance": 0.67656,
+    "exposureClippedFraction": 0.01056,
+    "rendererUseAllowed": false
+  },
+  "evidence": {
+    "depth": "depth-diagnostic.png",
+    "confidence": "confidence-diagnostic.png",
+    "prediction": "geometry-prediction.npz"
+  }
+}

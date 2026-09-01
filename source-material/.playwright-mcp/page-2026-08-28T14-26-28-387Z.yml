@@ -1,0 +1,577 @@
+- generic [active] [ref=e1]:
+  - dialog "Manage Consent" [ref=e2]:
+    - generic [ref=e3]:
+      - img "Centrado" [ref=e5]
+      - generic [ref=e6]: Manage Consent
+      - button "Close dialogue" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]: 
+    - generic [ref=e11]: To provide the best experiences, we use technologies like cookies to store and/or access device information. Consenting to these technologies will allow us to process data such as browsing behavior or unique IDs on this site. Not consenting or withdrawing consent, may adversely affect certain features and functions.
+    - generic [ref=e12]:
+      - button "Accept" [ref=e13] [cursor=pointer]
+      - button "Deny" [ref=e14] [cursor=pointer]
+      - button "View preferences" [ref=e15] [cursor=pointer]
+    - generic:
+      - list:
+        - listitem:
+          - link:
+            - /url: https://centrado.co/product/create-beech-flat-closed-grain-cr1080be/
+        - listitem
+        - listitem
+  - link "Skip to main content" [ref=e16] [cursor=pointer]:
+    - /url: "#main"
+  - generic:
+    - generic:
+      - textbox "Search for products" [ref=e18]
+      - link [ref=e20] [cursor=pointer]:
+        - /url: ""
+        - img [ref=e22]
+      - button "" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]: 
+  - generic [ref=e26]:
+    - banner [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e31]:
+            - link "Resource hub" [ref=e32] [cursor=pointer]:
+              - /url: /resource-hub/
+            - link "Contact" [ref=e33] [cursor=pointer]:
+              - /url: https://centrado.co/contact/
+          - link "Centrado - Home" [ref=e36] [cursor=pointer]:
+            - /url: https://centrado.co
+            - img "Centrado - Home" [ref=e37]
+          - generic [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e41]
+            - generic [ref=e43]:
+              - link "Register" [ref=e44] [cursor=pointer]:
+                - /url: /register/
+              - link "Login" [ref=e45] [cursor=pointer]:
+                - /url: /login/
+        - list [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Glazing" [ref=e51] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/glazing/
+            - list:
+              - listitem:
+                - link "Artglass":
+                  - /url: https://centrado.co/product-category/glazing/artglass/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Float Glass":
+                  - /url: https://centrado.co/product-category/glazing/float-glass/
+              - listitem:
+                - link "Plastic Glazing":
+                  - /url: https://centrado.co/product-category/glazing/plastic-glazing/
+              - listitem:
+                - link "Mirrors":
+                  - /url: https://centrado.co/product-category/glazing/mirrors/
+              - listitem:
+                - link "Glass Cleaning":
+                  - /url: https://centrado.co/product-category/glazing/glass-cleaning/
+              - listitem:
+                - link "Glass Cutting":
+                  - /url: https://centrado.co/product-category/glazing/glass-cutting/
+              - listitem:
+                - link "Plastic Accessories":
+                  - /url: https://centrado.co/product-category/glazing/plastic-accessories/
+          - listitem [ref=e52]:
+            - link "Moulding" [ref=e53] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/moulding/
+            - list:
+              - listitem:
+                - link "Black & White":
+                  - /url: https://centrado.co/product-category/moulding/black-white-moulding/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Colours":
+                  - /url: https://centrado.co/product-category/moulding/colours/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Create":
+                  - /url: https://centrado.co/product-category/moulding/create-moulding/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Luxe":
+                  - /url: https://centrado.co/product-category/moulding/luxe/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Metallics":
+                  - /url: https://centrado.co/product-category/moulding/metallics/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Raw Timber":
+                  - /url: https://centrado.co/product-category/moulding/raw-timber/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Veneers":
+                  - /url: https://centrado.co/product-category/moulding/veneers/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Wood Tones":
+                  - /url: https://centrado.co/product-category/moulding/wood-tones/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Slips & Fillets":
+                  - /url: https://centrado.co/product-category/moulding/slips-fillets-moulding/
+              - listitem:
+                - link "Polymer":
+                  - /url: https://centrado.co/product-category/moulding/polymer/
+              - listitem:
+                - link "L-Shapes":
+                  - /url: https://centrado.co/product-category/moulding/l-shapes/
+          - listitem [ref=e54]:
+            - link "Mountboard" [ref=e55] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/mountboard/
+            - list:
+              - listitem:
+                - link "Centrado":
+                  - /url: https://centrado.co/product-category/mountboard/centrado/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Create":
+                  - /url: https://centrado.co/product-category/mountboard/create/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Daler":
+                  - /url: https://centrado.co/product-category/mountboard/daler/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Rising":
+                  - /url: https://centrado.co/product-category/mountboard/rising/
+          - listitem [ref=e56]:
+            - link "Backing" [ref=e57] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/backing/
+            - list:
+              - listitem:
+                - link "Kool Tack":
+                  - /url: https://centrado.co/product-category/backing/kool-tack/
+              - listitem:
+                - link "Corri-Cor":
+                  - /url: https://centrado.co/product-category/backing/corri-cor-backing/
+              - listitem:
+                - link "Foam Centred":
+                  - /url: https://centrado.co/product-category/backing/foam-centred/
+              - listitem:
+                - link "MDF":
+                  - /url: https://centrado.co/product-category/backing/mdf-backing/
+              - listitem:
+                - link "Other Board Products":
+                  - /url: https://centrado.co/product-category/backing/other-board-products-backing/
+              - listitem:
+                - link "Self Adhesive Boards":
+                  - /url: https://centrado.co/product-category/backing/self-adhesive-boards/
+              - listitem:
+                - link "Tawnyboard":
+                  - /url: https://centrado.co/product-category/backing/tawnyboard-backing/
+          - listitem [ref=e58]:
+            - link "Accessories" [ref=e59] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/accessories/
+            - list:
+              - listitem:
+                - link "Adhesives":
+                  - /url: https://centrado.co/product-category/accessories/adhesives/
+                - button "Show sub-categories"
+              - listitem:
+                - link "BEST®":
+                  - /url: https://centrado.co/product-category/accessories/best/
+              - listitem:
+                - link "Blades":
+                  - /url: https://centrado.co/product-category/accessories/blades/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Cord & Wire":
+                  - /url: https://centrado.co/product-category/accessories/cord-wire/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Econospace":
+                  - /url: https://centrado.co/product-category/accessories/econospace/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Hardware":
+                  - /url: https://centrado.co/product-category/accessories/hardware/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Packaging":
+                  - /url: https://centrado.co/product-category/accessories/packaging-accessories/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Points & Point Drivers":
+                  - /url: https://centrado.co/product-category/accessories/points-point-drivers/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Screws":
+                  - /url: https://centrado.co/product-category/accessories/screws-accessories/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Security":
+                  - /url: https://centrado.co/product-category/accessories/security/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Services":
+                  - /url: https://centrado.co/product-category/accessories/services-accessories/
+              - listitem:
+                - link "Springlock":
+                  - /url: https://centrado.co/product-category/accessories/springlock/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Staples":
+                  - /url: https://centrado.co/product-category/accessories/staples/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Strut Backs":
+                  - /url: https://centrado.co/product-category/accessories/strut-backs/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Tapes":
+                  - /url: https://centrado.co/product-category/accessories/tapes-accessories/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Touch Up & Repair":
+                  - /url: https://centrado.co/product-category/accessories/touch-up-repair/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Underpinner Parts":
+                  - /url: https://centrado.co/product-category/accessories/underpinner-parts/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Wedges":
+                  - /url: https://centrado.co/product-category/accessories/wedges/
+                - button "Show sub-categories"
+      - generic [ref=e60]:
+        - generic [ref=e61]: 
+        - link "We will be closed for the Bank Holiday on 31st August. Click here for delivery information for your region" [ref=e62] [cursor=pointer]:
+          - /url: https://centrado.co/services/#in-house-delivery-team
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - link "BACK TO COLLECTION" [ref=e67] [cursor=pointer]:
+          - /url: https://centrado.co/product-category/moulding/colours/kashmir-colours/
+        - main [ref=e69]:
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - link [ref=e73] [cursor=pointer]:
+                  - /url: "#"
+                - link [ref=e75] [cursor=pointer]:
+                  - /url: "#"
+                - link [ref=e77] [cursor=pointer]:
+                  - /url: "#"
+                - link [ref=e79] [cursor=pointer]:
+                  - /url: "#"
+                - link [ref=e81] [cursor=pointer]:
+                  - /url: "#"
+                - link [ref=e83] [cursor=pointer]:
+                  - /url: "#"
+                - link [ref=e85] [cursor=pointer]:
+                  - /url: "#"
+              - generic [ref=e90]:
+                - text: <
+                - generic [ref=e92]:
+                  - img [ref=e95] [cursor=pointer]
+                  - img [ref=e98] [cursor=pointer]
+                  - img [ref=e101] [cursor=pointer]
+                  - img [ref=e104] [cursor=pointer]
+                  - img [ref=e107] [cursor=pointer]
+                  - img [ref=e110] [cursor=pointer]
+                  - img [ref=e113] [cursor=pointer]
+                - text: ">"
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - heading "3826BK" [level=1] [ref=e116]
+                - heading "Kashmir Decorative Black Bevel" [level=1] [ref=e117]
+                - heading "63 x 25MM" [level=1] [ref=e118]
+              - link "LOGIN TO SEE PRICE" [ref=e120] [cursor=pointer]:
+                - /url: /my-account
+              - generic: 
+            - generic [ref=e122]:
+              - generic [ref=e124]:
+                - generic [ref=e125]: Size
+                - generic [ref=e126]:
+                  - link "38x25mm" [ref=e128] [cursor=pointer]:
+                    - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3825bk/
+                  - link "63x25mm" [ref=e130] [cursor=pointer]:
+                    - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                - generic [ref=e131]: Colour
+                - generic [ref=e132]:
+                  - link "Black" [ref=e134] [cursor=pointer]:
+                    - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                  - link "Gold" [ref=e136] [cursor=pointer]:
+                    - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                  - link "Silver" [ref=e138] [cursor=pointer]:
+                    - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                  - link "White" [ref=e140] [cursor=pointer]:
+                    - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+              - generic [ref=e145]:
+                - paragraph [ref=e146]: Specification
+                - generic [ref=e149] [cursor=pointer]: 
+            - generic [ref=e150]:
+              - heading "Alternative Products" [level=2] [ref=e153]
+              - generic [ref=e156]:
+                - generic [ref=e157]:
+                  - button "Go to last slide" [ref=e158] [cursor=pointer]:
+                    - generic [ref=e159]: 
+                  - button "Next slide" [ref=e160] [cursor=pointer]:
+                    - generic [ref=e161]: 
+                - list [ref=e163]:
+                  - listitem [ref=e164]:
+                    - link "3826WH" [ref=e166] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - link "Kashmir Decorative White Bevel" [ref=e168] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - generic [ref=e169]: 63 x 25MM
+                    - link [ref=e170] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - link "ADD TO BASKET" [ref=e172] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                  - listitem [ref=e173]:
+                    - link "3826SI" [ref=e175] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - link "Kashmir Decorative Silver Bevel" [ref=e177] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - generic [ref=e178]: 63 x 25MM
+                    - link [ref=e179] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - link "ADD TO BASKET" [ref=e181] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                  - listitem [ref=e182]:
+                    - link "3826GD" [ref=e184] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                    - link "Kashmir Decorative Gold Bevel" [ref=e186] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                    - generic [ref=e187]: 63 x 25MM
+                    - link [ref=e188] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                    - link "ADD TO BASKET" [ref=e190] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                  - listitem [ref=e191]:
+                    - link "3826BK" [ref=e193] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                    - link "Kashmir Decorative Black Bevel" [ref=e195] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                    - generic [ref=e196]: 63 x 25MM
+                    - link [ref=e197] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                    - link "ADD TO BASKET" [ref=e199] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                  - listitem [ref=e200]:
+                    - link "3826SI" [ref=e202] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - link "Kashmir Decorative Silver Bevel" [ref=e204] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - generic [ref=e205]: 63 x 25MM
+                    - link [ref=e206] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - link "ADD TO BASKET" [ref=e208] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                  - listitem [ref=e209]:
+                    - link "3826WH" [ref=e211] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - link "Kashmir Decorative White Bevel" [ref=e213] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - generic [ref=e214]: 63 x 25MM
+                    - link [ref=e215] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - link "ADD TO BASKET" [ref=e217] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                  - listitem [ref=e218]:
+                    - link "3826WH" [ref=e220] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - link "Kashmir Decorative White Bevel" [ref=e222] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - generic [ref=e223]: 63 x 25MM
+                    - link [ref=e224] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - link "ADD TO BASKET" [ref=e226] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                  - listitem [ref=e227]:
+                    - link "3826SI" [ref=e229] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - link "Kashmir Decorative Silver Bevel" [ref=e231] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - generic [ref=e232]: 63 x 25MM
+                    - link [ref=e233] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - link "ADD TO BASKET" [ref=e235] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                  - listitem [ref=e236]:
+                    - link "3826GD" [ref=e238] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                    - link "Kashmir Decorative Gold Bevel" [ref=e240] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                    - generic [ref=e241]: 63 x 25MM
+                    - link [ref=e242] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                    - link "ADD TO BASKET" [ref=e244] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-gold-bevel-3826gd/
+                  - listitem [ref=e245]:
+                    - link "3826BK" [ref=e247] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                    - link "Kashmir Decorative Black Bevel" [ref=e249] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                    - generic [ref=e250]: 63 x 25MM
+                    - link [ref=e251] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                    - link "ADD TO BASKET" [ref=e253] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/
+                  - listitem [ref=e254]:
+                    - link "3826SI" [ref=e256] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - link "Kashmir Decorative Silver Bevel" [ref=e258] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - generic [ref=e259]: 63 x 25MM
+                    - link [ref=e260] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                    - link "ADD TO BASKET" [ref=e262] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-silver-bevel-3826si/
+                  - listitem [ref=e263]:
+                    - link "3826WH" [ref=e265] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - link "Kashmir Decorative White Bevel" [ref=e267] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - generic [ref=e268]: 63 x 25MM
+                    - link [ref=e269] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                    - link "ADD TO BASKET" [ref=e271] [cursor=pointer]:
+                      - /url: https://centrado.co/product/kashmir-decorative-white-bevel-3826wh/
+                - list [ref=e272]:
+                  - listitem [ref=e273]:
+                    - button "Go to page 1" [ref=e274] [cursor=pointer]
+                  - listitem [ref=e275]:
+                    - button "Go to page 2" [ref=e276] [cursor=pointer]
+                  - listitem [ref=e277]:
+                    - button "Go to page 3" [ref=e278] [cursor=pointer]
+                  - listitem [ref=e279]:
+                    - button "Go to page 4" [ref=e280] [cursor=pointer]
+                  - listitem [ref=e281]:
+                    - button "Go to page 5" [ref=e282] [cursor=pointer]
+                  - listitem [ref=e283]:
+                    - button "Go to page 6" [ref=e284] [cursor=pointer]
+            - generic [ref=e288]:
+              - generic [ref=e289]:
+                - heading "Services tailored for you" [level=2] [ref=e291]
+                - link "CHOP SERVICE" [ref=e292] [cursor=pointer]:
+                  - /url: /services/#chop-service
+                  - img [ref=e294]
+                  - generic [ref=e295]:
+                    - text: CHOP
+                    - text: SERVICE
+                - link "EXPRESS SAMPLE SERVICE" [ref=e296] [cursor=pointer]:
+                  - /url: /services/#complimentary-samples
+                  - img [ref=e298]
+                  - generic [ref=e299]:
+                    - text: EXPRESS
+                    - text: SAMPLE SERVICE
+                - link "GLASS COLLECTION & RECYCLING" [ref=e300] [cursor=pointer]:
+                  - /url: /services/#glass-collection-and-recycling
+                  - img [ref=e302]
+                  - generic [ref=e303]:
+                    - text: GLASS COLLECTION
+                    - text: "& RECYCLING"
+                - link "IN-HOUSE DELIVERY TEAM" [ref=e304] [cursor=pointer]:
+                  - /url: /services/#in-house-delivery-team
+                  - img [ref=e306]
+                  - generic [ref=e307]:
+                    - text: IN-HOUSE
+                    - text: DELIVERY TEAM
+                - link "CUT TO SIZE" [ref=e308] [cursor=pointer]:
+                  - /url: /services/#cut-to-size-service
+                  - img [ref=e310]
+                  - generic [ref=e311]: CUT TO SIZE
+                - link "BLADE SHARPENING" [ref=e312] [cursor=pointer]:
+                  - /url: /services/#blade-sharpening
+                  - img [ref=e314]
+                  - generic [ref=e315]:
+                    - text: BLADE
+                    - text: SHARPENING
+              - link "EXPLORE SERVICES" [ref=e318] [cursor=pointer]:
+                - /url: /services/
+  - contentinfo "Site footer" [ref=e319]:
+    - generic [ref=e320]:
+      - generic [ref=e322]:
+        - list [ref=e324]:
+          - listitem [ref=e325]:
+            - link "Glazing" [ref=e326] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/glazing/
+          - listitem [ref=e327]:
+            - link "Moulding" [ref=e328] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/moulding/
+          - listitem [ref=e329]:
+            - link "Mountboard" [ref=e330] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/mountboard/
+          - listitem [ref=e331]:
+            - link "Backing" [ref=e332] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/backing/
+          - listitem [ref=e333]:
+            - link "Accessories" [ref=e334] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/accessories/
+        - generic [ref=e336]:
+          - link "Login" [ref=e337] [cursor=pointer]:
+            - /url: /login
+          - link "Register for an account" [ref=e338] [cursor=pointer]:
+            - /url: /register
+      - generic [ref=e340]:
+        - link "01480 445480" [ref=e342] [cursor=pointer]:
+          - /url: tel:01480 445480
+        - generic [ref=e343]:
+          - link [ref=e344] [cursor=pointer]:
+            - /url: https://www.facebook.com/centradotradingltd/
+            - generic [ref=e345]: 
+          - link [ref=e346] [cursor=pointer]:
+            - /url: https://www.instagram.com/centrado_trading/
+            - generic [ref=e347]: 
+          - link [ref=e348] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/centrado/
+            - generic [ref=e349]: 
+          - link [ref=e350] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=441480445480
+            - generic [ref=e351]: 
+        - link "sales@centrado.co" [ref=e353] [cursor=pointer]:
+          - /url: mailto:sales@centrado.co
+    - generic [ref=e354]:
+      - generic [ref=e356]:
+        - link:
+          - /url: /promise
+          - img [ref=e357] [cursor=pointer]
+        - img [ref=e358]
+        - list [ref=e359]:
+          - listitem [ref=e360]:
+            - link "About" [ref=e361] [cursor=pointer]:
+              - /url: https://centrado.co/about/
+          - listitem [ref=e362]:
+            - link "News" [ref=e363] [cursor=pointer]:
+              - /url: https://centrado.co/news/
+          - listitem [ref=e364]:
+            - link "Resource Hub" [ref=e365] [cursor=pointer]:
+              - /url: https://centrado.co/resource-hub/
+          - listitem [ref=e366]:
+            - link "Careers" [ref=e367] [cursor=pointer]:
+              - /url: https://centrado.co/vacancies/
+          - listitem [ref=e368]:
+            - link "Contact" [ref=e369] [cursor=pointer]:
+              - /url: https://centrado.co/contact/
+      - generic [ref=e370]:
+        - list [ref=e372]:
+          - listitem [ref=e373]:
+            - link "Privacy/" [ref=e374] [cursor=pointer]:
+              - /url: https://centrado.co/privacy/
+          - listitem [ref=e375]:
+            - link "Terms/" [ref=e376] [cursor=pointer]:
+              - /url: https://centrado.co/terms/
+          - listitem [ref=e377]:
+            - link "Returns/" [ref=e378] [cursor=pointer]:
+              - /url: https://centrado.co/returns/
+          - listitem [ref=e379]:
+            - link "German Website/" [ref=e380] [cursor=pointer]:
+              - /url: https://centrado.eu
+          - listitem [ref=e381]:
+            - link "Leave a review/" [ref=e382] [cursor=pointer]:
+              - /url: https://g.page/r/CbVyNpOF3Mt_EAg/review
+          - listitem [ref=e383]:
+            - link "Change Cookie Consent" [ref=e384] [cursor=pointer]:
+              - /url: https://centrado.co/#cookie-consent
+        - paragraph [ref=e386]: © Centrado 2026
+  - status [ref=e387]
+  - iframe [ref=e390]:
+    - generic [ref=f1e6]:
+      - text: protected by
+      - strong [ref=f1e7]: reCAPTCHA

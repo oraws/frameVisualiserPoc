@@ -1,4 +1,5 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "react" }
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "react" },
+  "exclude": ["dist", "model-evaluation-pack", "model-evaluation-pack 2"]
 }

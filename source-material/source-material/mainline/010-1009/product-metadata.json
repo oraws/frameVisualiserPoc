@@ -1,0 +1,24 @@
+{
+  "sku": "010-1009",
+  "invoiceDescription": "Wood Picture Moulding",
+  "name": "Fletcher 53mm White Woodgrain Wood Moulding",
+  "description": "53x35mm Fletcher White Woodgrain",
+  "metaDescription": "Shop online at Mainline Mouldings for the Fletcher White BASICS framing material. Enhance the presentation of your artwork with this high-quality framing material. Perfect for all your framing needs.",
+  "productUrl": "https://mainlinemouldings.com/fletcher-53mm-white-basics-wood-moulding/",
+  "discoveredFrom": "https://mainlinemouldings.com/fletcher-53mm-white-basics-wood-moulding/?searchuuid=94c6cf6b-f86c-48e0-8ce7-578dba200cff&search_query=010-1009",
+  "discontinued": true,
+  "details": {
+    "colour": "White",
+    "profile": "Scoop",
+    "finish": "Wood Grain",
+    "range": "Fletcher Wood"
+  },
+  "dimensions": {
+    "length": null,
+    "widthMm": 53,
+    "depthMm": 35,
+    "rebateMm": 14
+  },
+  "spinImageCount": 0,
+  "importedAt": "2026-08-27T08:52:33.822Z"
+}

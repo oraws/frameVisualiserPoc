@@ -1,0 +1,19 @@
+{
+  "sku": "POL-7145",
+  "name": "L Shape 10mm Black Woodgrain Polcore Moulding",
+  "widthMm": 10,
+  "depthMm": 45,
+  "rebateMm": 33,
+  "profileType": "l-shape",
+  "page": 82,
+  "label": "POL 7145",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 283,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 870.304,
+    "top": 599.706,
+    "x1": 983.584,
+    "bottom": 799.386
+  }
+}

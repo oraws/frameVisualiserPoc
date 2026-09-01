@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4418",
+  "name": "Flat Bronze",
+  "widthMm": 54,
+  "depthMm": 20,
+  "rebateMm": 14,
+  "profileType": "flat",
+  "page": 92,
+  "label": "POL 4418",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 383,
+  "pixelHeight": 498,
+  "pdfImageBox": {
+    "x0": 224.529,
+    "top": 69.887,
+    "x1": 377.649,
+    "bottom": 269.087
+  }
+}

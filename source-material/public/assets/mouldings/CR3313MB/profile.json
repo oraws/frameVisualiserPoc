@@ -1,0 +1,61 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR3313MB",
+  "name": "Create Matt Black Flat - Closed Grain",
+  "description": "33x13mm Matt Closed Grain Black Create Flat Moulding",
+  "productUrl": "https://centrado.co/product/create-matt-black-flat-closed-grain-cr3313mb/",
+  "widthMm": 33.0,
+  "depthMm": 13.0,
+  "rebateMm": 7.3,
+  "profileType": "flat",
+  "colourTags": [
+    "black"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      13.0
+    ],
+    [
+      33.0,
+      13.0
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 143,
+      "right": 630,
+      "top": 248,
+      "baseline": 438
+    },
+    "pixelsPerMmX": 14.7576,
+    "pixelsPerMmZ": 14.6154,
+    "anisotropyFraction": 0.00964,
+    "sampleCount": 486,
+    "simplifiedPointCount": 2
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313MB.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313-Profile-6.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3313MB_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

@@ -1,0 +1,24 @@
+{
+  "sku": "POL-4541",
+  "invoiceDescription": "Plastic Picture Moulding",
+  "name": "Watercolour 25mm Gold Polcore Moulding",
+  "description": "25x18mm Watercolour Gold Reverse Picture Frame Moulding.",
+  "metaDescription": "Shop the Watercolour Gold Reverse framing material online at Mainline Mouldings. Enhance the beauty of your artwork with this stylish and elegant framing material. Made with high-quality materials, it provides durability and long-lasting protection for your artwork.",
+  "productUrl": "https://mainlinemouldings.com/watercolour-gold-25mm-polcore-moulding/",
+  "discoveredFrom": "https://mainlinemouldings.com/watercolour-gold-25mm-polcore-moulding/?searchuuid=27c25a6e-6d18-4025-a7da-e2b79ef948ad&search_query=POL-4541",
+  "discontinued": true,
+  "details": {
+    "colour": "Gold",
+    "profile": "Reverse",
+    "finish": "Leaf",
+    "range": "Watercolour"
+  },
+  "dimensions": {
+    "length": "2.9m",
+    "widthMm": 25,
+    "depthMm": 18,
+    "rebateMm": 11
+  },
+  "spinImageCount": 45,
+  "importedAt": "2026-08-27T08:51:33.250Z"
+}

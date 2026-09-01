@@ -1,0 +1,118 @@
+{
+  "supplier": "Mainline",
+  "sku": "POL-4640",
+  "source": "ml_catalogue.pdf page 145",
+  "method": "catalogue-cross-section-grabcut-edge-snap",
+  "widthMm": 48,
+  "depthMm": 18,
+  "rebateMm": 10,
+  "confidence": 0.9797,
+  "reviewBand": "high",
+  "scores": {
+    "materialSeparation": 1,
+    "continuity": 0.9549,
+    "coverage": 0.9764,
+    "dimensionCalibration": 1
+  },
+  "points": [
+    [
+      0.0,
+      8.0
+    ],
+    [
+      3.345,
+      11.953
+    ],
+    [
+      4.509,
+      13.814
+    ],
+    [
+      6.691,
+      14.512
+    ],
+    [
+      7.564,
+      14.279
+    ],
+    [
+      9.164,
+      17.302
+    ],
+    [
+      10.036,
+      18.0
+    ],
+    [
+      11.345,
+      18.0
+    ],
+    [
+      12.218,
+      17.302
+    ],
+    [
+      13.527,
+      14.744
+    ],
+    [
+      45.818,
+      14.977
+    ],
+    [
+      48.0,
+      14.512
+    ]
+  ],
+  "sourceTracePixelsRightToLeft": [
+    [
+      334.0,
+      415.0
+    ],
+    [
+      311.0,
+      398.0
+    ],
+    [
+      303.0,
+      390.0
+    ],
+    [
+      288.0,
+      387.0
+    ],
+    [
+      282.0,
+      388.0
+    ],
+    [
+      271.0,
+      375.0
+    ],
+    [
+      265.0,
+      372.0
+    ],
+    [
+      256.0,
+      372.0
+    ],
+    [
+      250.0,
+      375.0
+    ],
+    [
+      241.0,
+      386.0
+    ],
+    [
+      19.0,
+      385.0
+    ],
+    [
+      4.0,
+      387.0
+    ]
+  ],
+  "status": "experimental-catalogue-candidate"
+}

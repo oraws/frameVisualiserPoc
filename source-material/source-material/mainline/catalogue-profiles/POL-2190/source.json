@@ -1,0 +1,19 @@
+{
+  "sku": "POL-2190",
+  "name": "Contemporary Classics 70mm Black Polcore Moulding",
+  "widthMm": 70,
+  "depthMm": 30,
+  "rebateMm": 15,
+  "profileType": "scoop",
+  "page": 124,
+  "label": "POL 2190",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 497,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 922.16,
+    "top": 333.277,
+    "x1": 1120.64,
+    "bottom": 533.197
+  }
+}

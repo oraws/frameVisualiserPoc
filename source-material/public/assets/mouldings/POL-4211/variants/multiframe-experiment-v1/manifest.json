@@ -1,0 +1,43 @@
+{
+  "id": "multiframe-experiment-v1",
+  "sku": "POL-4211",
+  "label": "Supplier spin multi-frame experiment",
+  "status": "experimental",
+  "productUrl": "https://mainlinemouldings.com/54mm-flat-oak-polcore-moulding/?searchuuid=afca3c48-4ae0-4747-b589-0576fb613910&search_query=POL-4211",
+  "source": "Mainline Lv2 spin images only",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crop": [
+    29,
+    67,
+    130,
+    232
+  ],
+  "alignmentShiftsPx": [
+    4,
+    -4,
+    -2,
+    0,
+    3,
+    4,
+    -4
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "8e550050be241b2ec41c67be831300f1c58f6c6d0070001fd8fc40c6eaacf6ef",
+      "roughness.jpg": "4c0d8b680df87b3b922ef4b52c35f663782479ffcfd8e86966dfabd94fda5b89",
+      "bump.jpg": "e8113391b8209097b5c16e43c52846e6829519c796692d5b942a221d042e77eb"
+    }
+  },
+  "activation": "Manual review required"
+}

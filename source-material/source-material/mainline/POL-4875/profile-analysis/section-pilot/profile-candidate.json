@@ -1,0 +1,259 @@
+{
+  "supplier": "Mainline",
+  "sku": "POL-4875",
+  "name": "Verona Black 97mm Polcore Moulding",
+  "productUrl": "https://mainlinemouldings.com/verona-black-97mm-polcore-moulding/",
+  "method": "multi-frame-exposed-cut-section-v2-metric",
+  "widthMm": 97.0,
+  "depthMm": 49.0,
+  "rebateMm": 16.0,
+  "sourceImageCount": 45,
+  "selectedFrameCount": 3,
+  "selectedFrames": [
+    {
+      "label": "img22",
+      "filename": "img22.jpg",
+      "overlay": "img22-overlay.png",
+      "mask": "img22-cut-mask.png",
+      "edgeScore": 73.242,
+      "quality": 0.8106,
+      "depthSpanPixels": 103.0,
+      "registration": {
+        "horizontalShiftSamples": -1,
+        "projectiveWarp": 0.06,
+        "scale": 0.9834,
+        "offsetMm": 1.0283
+      }
+    },
+    {
+      "label": "img23",
+      "filename": "img23.jpg",
+      "overlay": "img23-overlay.png",
+      "mask": "img23-cut-mask.png",
+      "edgeScore": 66.495,
+      "quality": 0.7984,
+      "depthSpanPixels": 110.12,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.0,
+        "scale": 1.0,
+        "offsetMm": 0.0
+      }
+    },
+    {
+      "label": "img24",
+      "filename": "img24.jpg",
+      "overlay": "img24-overlay.png",
+      "mask": "img24-cut-mask.png",
+      "edgeScore": 63.642,
+      "quality": 0.8052,
+      "depthSpanPixels": 102.0,
+      "registration": {
+        "horizontalShiftSamples": -1,
+        "projectiveWarp": 0.0,
+        "scale": 0.9972,
+        "offsetMm": 0.393
+      }
+    }
+  ],
+  "points": [
+    [
+      0.0,
+      17.694
+    ],
+    [
+      2.021,
+      17.694
+    ],
+    [
+      2.425,
+      18.729
+    ],
+    [
+      3.638,
+      18.952
+    ],
+    [
+      4.446,
+      19.69
+    ],
+    [
+      8.488,
+      19.427
+    ],
+    [
+      9.7,
+      20.093
+    ],
+    [
+      11.721,
+      20.081
+    ],
+    [
+      14.146,
+      19.534
+    ],
+    [
+      14.954,
+      16.099
+    ],
+    [
+      16.975,
+      16.622
+    ],
+    [
+      18.188,
+      16.533
+    ],
+    [
+      19.804,
+      15.815
+    ],
+    [
+      24.654,
+      15.97
+    ],
+    [
+      27.079,
+      16.857
+    ],
+    [
+      27.888,
+      18.836
+    ],
+    [
+      28.292,
+      21.549
+    ],
+    [
+      30.312,
+      21.266
+    ],
+    [
+      30.717,
+      19.839
+    ],
+    [
+      34.758,
+      19.102
+    ],
+    [
+      35.567,
+      18.12
+    ],
+    [
+      37.992,
+      18.097
+    ],
+    [
+      38.8,
+      20.62
+    ],
+    [
+      40.821,
+      21.348
+    ],
+    [
+      44.862,
+      21.82
+    ],
+    [
+      45.671,
+      24.574
+    ],
+    [
+      47.287,
+      25.104
+    ],
+    [
+      48.096,
+      27.324
+    ],
+    [
+      49.713,
+      27.835
+    ],
+    [
+      50.925,
+      31.304
+    ],
+    [
+      51.329,
+      31.621
+    ],
+    [
+      55.775,
+      32.055
+    ],
+    [
+      57.392,
+      32.8
+    ],
+    [
+      57.796,
+      33.754
+    ],
+    [
+      59.008,
+      34.406
+    ],
+    [
+      60.221,
+      36.933
+    ],
+    [
+      61.838,
+      37.331
+    ],
+    [
+      63.454,
+      48.216
+    ],
+    [
+      71.942,
+      47.886
+    ],
+    [
+      73.558,
+      47.509
+    ],
+    [
+      75.983,
+      45.068
+    ],
+    [
+      79.217,
+      13.709
+    ],
+    [
+      82.854,
+      12.808
+    ],
+    [
+      92.554,
+      11.568
+    ],
+    [
+      94.979,
+      9.596
+    ],
+    [
+      97.0,
+      9.384
+    ]
+  ],
+  "validation": {
+    "heldOutMedianBoundaryPixels": 1.5,
+    "heldOutP95BoundaryPixels": 17.679,
+    "crossSubsetP95ProfileMm": 4.188,
+    "dimensionResidualMm": 0.0,
+    "passesInitialGate": false
+  },
+  "status": "experimental-rejected",
+  "rendererIntegrated": false,
+  "limitations": [
+    "Supplier spin imagery is low resolution",
+    "Macro profile only; ornament relief is a later material stage",
+    "Acceptance requires review of automatic overlays"
+  ]
+}

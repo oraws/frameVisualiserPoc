@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4436",
+  "name": "Edge 30mm Brushed Gold GSE Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 30,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 96,
+  "label": "POL 4436",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 212,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 473.209,
+    "top": 600.445,
+    "x1": 558.169,
+    "bottom": 800.125
+  }
+}

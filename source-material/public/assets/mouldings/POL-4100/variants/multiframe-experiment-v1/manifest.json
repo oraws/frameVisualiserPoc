@@ -1,0 +1,46 @@
+{
+  "id": "multiframe-experiment-v1",
+  "sku": "POL-4100",
+  "label": "Supplier spin multi-frame experiment",
+  "status": "experimental-inactive",
+  "source": "Mainline Lv2 spin images only",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crop": [
+    34,
+    56,
+    126,
+    230
+  ],
+  "alignmentShiftsPx": [
+    -1,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    -3
+  ],
+  "profile": {
+    "source": "protected baseline-v1",
+    "changed": false
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "8a6cd12630531c2bc499813749f25d8caf6cc10fc714b27b3f562b0c79b28f86",
+      "roughness.jpg": "309f23c78c003a4f788ffd1732652b75199b19a2f86116241f59ccb530e47a41",
+      "bump.jpg": "a0b055657dedac7c71262cd77f8aa3ac1884d41c56324f772638d5ec66d66420"
+    }
+  },
+  "activation": "Manual review only; cannot overwrite baseline-v1"
+}

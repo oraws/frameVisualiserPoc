@@ -1,0 +1,19 @@
+{
+  "sku": "010-4603",
+  "name": "Deep Rebate 27mm Black Woodgrain Wood Moulding",
+  "widthMm": 27,
+  "depthMm": 40,
+  "rebateMm": 33,
+  "profileType": "flat",
+  "page": 36,
+  "label": "010 4603",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 193,
+  "pixelHeight": 498,
+  "pdfImageBox": {
+    "x0": 957.874,
+    "top": 69.807,
+    "x1": 1035.154,
+    "bottom": 269.247
+  }
+}

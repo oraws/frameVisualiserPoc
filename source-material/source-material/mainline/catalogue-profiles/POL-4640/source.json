@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4640",
+  "name": "Naples 48mm Gold Polcore Moulding",
+  "widthMm": 48,
+  "depthMm": 18,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 145,
+  "label": "POL 4640",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 339,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 919.842,
+    "top": 69.957,
+    "x1": 1055.442,
+    "bottom": 270.357
+  }
+}

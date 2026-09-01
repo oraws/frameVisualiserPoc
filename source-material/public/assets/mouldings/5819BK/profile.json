@@ -1,0 +1,77 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "5819BK",
+  "name": "Ravenna Black Bevel - Open Grain",
+  "description": "58x19mm Black Ravenna Bevel Moulding",
+  "productUrl": "https://centrado.co/product/ravenna-black-bevel-open-grain-5819bk/",
+  "widthMm": 58.0,
+  "depthMm": 19.0,
+  "rebateMm": 10.6,
+  "profileType": "angled",
+  "colourTags": [
+    "black"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      12.557
+    ],
+    [
+      7.411,
+      19.0
+    ],
+    [
+      58.0,
+      19.0
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 100,
+      "right": 640,
+      "top": 255,
+      "baseline": 429
+    },
+    "pixelsPerMmX": 9.3103,
+    "pixelsPerMmZ": 9.1579,
+    "anisotropyFraction": 0.01637,
+    "sampleCount": 540,
+    "simplifiedPointCount": 3
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819BK.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819-Profile.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819BK_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-1.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819BK-3DB.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-2.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/5819BK-3DF.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

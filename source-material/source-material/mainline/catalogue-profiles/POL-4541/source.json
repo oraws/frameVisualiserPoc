@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4541",
+  "name": "Watercolour 25mm Gold Polcore Moulding",
+  "widthMm": 25,
+  "depthMm": 18,
+  "rebateMm": 11,
+  "profileType": "reverse",
+  "page": 84,
+  "label": "POL 4541",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 177,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 487.795,
+    "top": 599.93,
+    "x1": 558.595,
+    "bottom": 799.37
+  }
+}

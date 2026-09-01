@@ -1,0 +1,19 @@
+{
+  "sku": "POL-1336",
+  "name": "Nelson 38mm Distressed Black Polcore Moulding",
+  "widthMm": 38,
+  "depthMm": 28,
+  "rebateMm": 22,
+  "profileType": "flat",
+  "page": 144,
+  "label": "POL 1336",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 269,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 1057.519,
+    "top": 69.744,
+    "x1": 1165.039,
+    "bottom": 269.904
+  }
+}

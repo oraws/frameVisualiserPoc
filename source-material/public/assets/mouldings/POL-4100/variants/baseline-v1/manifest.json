@@ -1,0 +1,32 @@
+{
+  "id": "baseline-v1",
+  "sku": "POL-4100",
+  "label": "Current supplier-derived baseline",
+  "status": "protected-baseline",
+  "createdAt": "2026-08-24",
+  "profile": {
+    "widthMm": 41,
+    "depthMm": 13,
+    "rebateMm": 9,
+    "points": [[0, 4], [4.871, 4], [7.307, 13], [41, 13]]
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "2ae293db3761e17d65b0cd8e5c35fb54b61d0f8cb7dfe029c536cb5cbe5c9d00",
+      "roughness.jpg": "06a6c5f391d82caa59dc847c36e8da8fbe60fc95fd086a66f6bc86c16b4ff921",
+      "bump.jpg": "66a48c9beb035af62882455c901518b1ce952f5e6abbd9f448f58fd65baec3a9"
+    },
+    "roughnessValue": 0.9,
+    "bumpScale": 0.0065,
+    "metalness": 0,
+    "flatShading": true
+  },
+  "notes": [
+    "This is the protected POL-4100 result approved for comparison.",
+    "Experiments must write to a separate variant directory.",
+    "Do not replace this variant automatically."
+  ]
+}

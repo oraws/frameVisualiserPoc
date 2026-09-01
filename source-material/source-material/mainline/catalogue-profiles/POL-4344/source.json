@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4344",
+  "name": "43mm Box Limed White Polcore Moulding",
+  "widthMm": 43,
+  "depthMm": 32,
+  "rebateMm": 26,
+  "profileType": "flat",
+  "page": 94,
+  "label": "POL 4344",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 307,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 63.282,
+    "top": 334.326,
+    "x1": 185.922,
+    "bottom": 534.486
+  }
+}

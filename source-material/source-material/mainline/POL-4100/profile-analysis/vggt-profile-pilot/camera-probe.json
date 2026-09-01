@@ -1,0 +1,51 @@
+{
+  "sku": "POL-4100",
+  "model": "facebook/VGGT-1B research checkpoint",
+  "commercialDeploymentAllowed": false,
+  "rendererIntegrated": false,
+  "device": "mps",
+  "imageSize": 518,
+  "frames": [
+    "img01",
+    "img06",
+    "img12",
+    "img17",
+    "img22",
+    "img23",
+    "img24",
+    "img28",
+    "img34",
+    "img39",
+    "img45"
+  ],
+  "inferenceSeconds": 8.983,
+  "cameraMetrics": {
+    "circleRadius": 0.9544290088819973,
+    "circleResidualP95Fraction": 0.01461,
+    "planeResidualP95Fraction": 0.06446,
+    "monotonicAngleFraction": 1.0,
+    "cameraCentreSingularValues": [
+      2.098734,
+      1.130088,
+      0.097681
+    ],
+    "anglesDegrees": [
+      0.0,
+      23.019,
+      47.246,
+      70.233,
+      90.698,
+      91.562,
+      92.119,
+      109.94,
+      132.073,
+      155.825,
+      175.332
+    ],
+    "focalLengthMedianPx": 1040.786,
+    "focalLengthP95VariationFraction": 0.04431
+  },
+  "outputs": {
+    "predictions": "predictions.npz"
+  }
+}

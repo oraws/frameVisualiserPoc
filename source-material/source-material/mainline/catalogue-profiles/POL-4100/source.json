@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4100",
+  "name": "Brushed Black",
+  "widthMm": 41,
+  "depthMm": 13,
+  "rebateMm": 9,
+  "profileType": "flat",
+  "page": 88,
+  "label": "POL 4100",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 290,
+  "pixelHeight": 503,
+  "pdfImageBox": {
+    "x0": 819.391,
+    "top": 599.941,
+    "x1": 935.551,
+    "bottom": 801.061
+  }
+}

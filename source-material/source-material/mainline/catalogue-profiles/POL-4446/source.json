@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4446",
+  "name": "Outline 30mm Brushed Black Gold Edges Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 16,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 86,
+  "label": "POL 4446",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 212,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 190.2,
+    "top": 69.708,
+    "x1": 275.16,
+    "bottom": 269.388
+  }
+}

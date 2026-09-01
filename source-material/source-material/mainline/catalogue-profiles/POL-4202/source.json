@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4202",
+  "name": "30mm Flats Brushed Black Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 16,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 88,
+  "label": "POL 4202",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 213,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 152.192,
+    "top": 333.455,
+    "x1": 237.152,
+    "bottom": 533.375
+  }
+}

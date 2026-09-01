@@ -1,0 +1,69 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR2253WH",
+  "name": "Create White Flat - Open Grain",
+  "description": "22x53mm White Open Grain Create Flat Moulding",
+  "productUrl": "https://centrado.co/product/create-white-flat-open-grain-cr2253wh/",
+  "widthMm": 22.0,
+  "depthMm": 53.0,
+  "rebateMm": 29.7,
+  "profileType": "flat",
+  "colourTags": [
+    "white"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      52.709
+    ],
+    [
+      0.391,
+      53.0
+    ],
+    [
+      21.609,
+      53.0
+    ],
+    [
+      22.0,
+      52.806
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 260,
+      "right": 485,
+      "top": 54,
+      "baseline": 600
+    },
+    "pixelsPerMmX": 10.2273,
+    "pixelsPerMmZ": 10.3019,
+    "anisotropyFraction": 0.00724,
+    "sampleCount": 224,
+    "simplifiedPointCount": 4
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR2253WH.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR2253-Profile-1.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR2253WH_Chevron.jpg",
+      "width": 2077,
+      "height": 2077
+    }
+  ],
+  "rendererIntegrated": true
+}

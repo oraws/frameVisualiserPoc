@@ -1,0 +1,96 @@
+{
+  "sourcePdf": "/Users/stephenorawe/Work/frame-visualizer-poc/source-material/source-material/mainline/ml_catalogue.pdf",
+  "method": "pdf-layout-image-pairing",
+  "products": [
+    {
+      "sku": "POL-4875",
+      "page": 106,
+      "widthMm": 97,
+      "depthMm": 49,
+      "rebateMm": 16,
+      "class": "ornate",
+      "label": "POL 4875",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 687,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 42.52,
+        "top": 69.68,
+        "x1": 317.32,
+        "bottom": 269.36
+      }
+    },
+    {
+      "sku": "POL-4508",
+      "page": 92,
+      "widthMm": 30,
+      "depthMm": 30,
+      "rebateMm": 13,
+      "class": "composite",
+      "label": "POL 4508",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 212,
+      "pixelHeight": 501,
+      "pdfImageBox": {
+        "x0": 673.026,
+        "top": 70.104,
+        "x1": 757.986,
+        "bottom": 270.264
+      }
+    },
+    {
+      "sku": "POL-2104",
+      "page": 123,
+      "widthMm": 70,
+      "depthMm": 30,
+      "rebateMm": 15,
+      "class": "ornate",
+      "label": "POL 2104",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 495,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 42.205,
+        "top": 599.91,
+        "x1": 240.445,
+        "bottom": 799.588
+      }
+    },
+    {
+      "sku": "POL-4540",
+      "page": 84,
+      "widthMm": 25,
+      "depthMm": 18,
+      "rebateMm": 11,
+      "class": "reverse",
+      "label": "POL 4540",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 177,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 153.372,
+        "top": 599.737,
+        "x1": 224.172,
+        "bottom": 799.657
+      }
+    },
+    {
+      "sku": "010-1009",
+      "page": 29,
+      "widthMm": 53,
+      "depthMm": 35,
+      "rebateMm": 14,
+      "class": "wood-scoop",
+      "label": "010 1009",
+      "filename": "catalogue-panel.png",
+      "pixelWidth": 375,
+      "pixelHeight": 500,
+      "pdfImageBox": {
+        "x0": 258.237,
+        "top": 333.993,
+        "x1": 408.477,
+        "bottom": 533.673
+      }
+    }
+  ]
+}

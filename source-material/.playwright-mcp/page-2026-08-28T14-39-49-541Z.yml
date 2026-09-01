@@ -1,0 +1,582 @@
+- generic [active] [ref=e1]:
+  - dialog "Manage Consent" [ref=e2]:
+    - generic [ref=e3]:
+      - img "Centrado" [ref=e5]
+      - generic [ref=e6]: Manage Consent
+      - button "Close dialogue" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]: 
+    - generic [ref=e11]: To provide the best experiences, we use technologies like cookies to store and/or access device information. Consenting to these technologies will allow us to process data such as browsing behavior or unique IDs on this site. Not consenting or withdrawing consent, may adversely affect certain features and functions.
+    - generic [ref=e12]:
+      - button "Accept" [ref=e13] [cursor=pointer]
+      - button "Deny" [ref=e14] [cursor=pointer]
+      - button "View preferences" [ref=e15] [cursor=pointer]
+    - generic:
+      - list:
+        - listitem:
+          - link:
+            - /url: https://centrado.co/product/chicago-gold-and-black-flat-2222bg/
+        - listitem
+        - listitem
+  - link "Skip to main content" [ref=e16] [cursor=pointer]:
+    - /url: "#main"
+  - generic:
+    - generic:
+      - textbox "Search for products" [ref=e18]
+      - link [ref=e20] [cursor=pointer]:
+        - /url: ""
+        - img [ref=e22]
+      - button "" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]: 
+  - generic [ref=e26]:
+    - banner [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e31]:
+            - link "Resource hub" [ref=e32] [cursor=pointer]:
+              - /url: /resource-hub/
+            - link "Contact" [ref=e33] [cursor=pointer]:
+              - /url: https://centrado.co/contact/
+          - link "Centrado - Home" [ref=e36] [cursor=pointer]:
+            - /url: https://centrado.co
+            - img "Centrado - Home" [ref=e37]
+          - generic [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e41]
+            - generic [ref=e43]:
+              - link "Register" [ref=e44] [cursor=pointer]:
+                - /url: /register/
+              - link "Login" [ref=e45] [cursor=pointer]:
+                - /url: /login/
+        - list [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Glazing" [ref=e51] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/glazing/
+            - list:
+              - listitem:
+                - link "Artglass":
+                  - /url: https://centrado.co/product-category/glazing/artglass/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Float Glass":
+                  - /url: https://centrado.co/product-category/glazing/float-glass/
+              - listitem:
+                - link "Plastic Glazing":
+                  - /url: https://centrado.co/product-category/glazing/plastic-glazing/
+              - listitem:
+                - link "Mirrors":
+                  - /url: https://centrado.co/product-category/glazing/mirrors/
+              - listitem:
+                - link "Glass Cleaning":
+                  - /url: https://centrado.co/product-category/glazing/glass-cleaning/
+              - listitem:
+                - link "Glass Cutting":
+                  - /url: https://centrado.co/product-category/glazing/glass-cutting/
+              - listitem:
+                - link "Plastic Accessories":
+                  - /url: https://centrado.co/product-category/glazing/plastic-accessories/
+          - listitem [ref=e52]:
+            - link "Moulding" [ref=e53] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/moulding/
+            - list:
+              - listitem:
+                - link "Black & White":
+                  - /url: https://centrado.co/product-category/moulding/black-white-moulding/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Colours":
+                  - /url: https://centrado.co/product-category/moulding/colours/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Create":
+                  - /url: https://centrado.co/product-category/moulding/create-moulding/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Luxe":
+                  - /url: https://centrado.co/product-category/moulding/luxe/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Metallics":
+                  - /url: https://centrado.co/product-category/moulding/metallics/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Raw Timber":
+                  - /url: https://centrado.co/product-category/moulding/raw-timber/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Veneers":
+                  - /url: https://centrado.co/product-category/moulding/veneers/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Wood Tones":
+                  - /url: https://centrado.co/product-category/moulding/wood-tones/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Slips & Fillets":
+                  - /url: https://centrado.co/product-category/moulding/slips-fillets-moulding/
+              - listitem:
+                - link "Polymer":
+                  - /url: https://centrado.co/product-category/moulding/polymer/
+              - listitem:
+                - link "L-Shapes":
+                  - /url: https://centrado.co/product-category/moulding/l-shapes/
+          - listitem [ref=e54]:
+            - link "Mountboard" [ref=e55] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/mountboard/
+            - list:
+              - listitem:
+                - link "Centrado":
+                  - /url: https://centrado.co/product-category/mountboard/centrado/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Create":
+                  - /url: https://centrado.co/product-category/mountboard/create/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Daler":
+                  - /url: https://centrado.co/product-category/mountboard/daler/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Rising":
+                  - /url: https://centrado.co/product-category/mountboard/rising/
+          - listitem [ref=e56]:
+            - link "Backing" [ref=e57] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/backing/
+            - list:
+              - listitem:
+                - link "Kool Tack":
+                  - /url: https://centrado.co/product-category/backing/kool-tack/
+              - listitem:
+                - link "Corri-Cor":
+                  - /url: https://centrado.co/product-category/backing/corri-cor-backing/
+              - listitem:
+                - link "Foam Centred":
+                  - /url: https://centrado.co/product-category/backing/foam-centred/
+              - listitem:
+                - link "MDF":
+                  - /url: https://centrado.co/product-category/backing/mdf-backing/
+              - listitem:
+                - link "Other Board Products":
+                  - /url: https://centrado.co/product-category/backing/other-board-products-backing/
+              - listitem:
+                - link "Self Adhesive Boards":
+                  - /url: https://centrado.co/product-category/backing/self-adhesive-boards/
+              - listitem:
+                - link "Tawnyboard":
+                  - /url: https://centrado.co/product-category/backing/tawnyboard-backing/
+          - listitem [ref=e58]:
+            - link "Accessories" [ref=e59] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/accessories/
+            - list:
+              - listitem:
+                - link "Adhesives":
+                  - /url: https://centrado.co/product-category/accessories/adhesives/
+                - button "Show sub-categories"
+              - listitem:
+                - link "BEST®":
+                  - /url: https://centrado.co/product-category/accessories/best/
+              - listitem:
+                - link "Blades":
+                  - /url: https://centrado.co/product-category/accessories/blades/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Cord & Wire":
+                  - /url: https://centrado.co/product-category/accessories/cord-wire/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Econospace":
+                  - /url: https://centrado.co/product-category/accessories/econospace/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Hardware":
+                  - /url: https://centrado.co/product-category/accessories/hardware/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Packaging":
+                  - /url: https://centrado.co/product-category/accessories/packaging-accessories/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Points & Point Drivers":
+                  - /url: https://centrado.co/product-category/accessories/points-point-drivers/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Screws":
+                  - /url: https://centrado.co/product-category/accessories/screws-accessories/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Security":
+                  - /url: https://centrado.co/product-category/accessories/security/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Services":
+                  - /url: https://centrado.co/product-category/accessories/services-accessories/
+              - listitem:
+                - link "Springlock":
+                  - /url: https://centrado.co/product-category/accessories/springlock/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Staples":
+                  - /url: https://centrado.co/product-category/accessories/staples/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Strut Backs":
+                  - /url: https://centrado.co/product-category/accessories/strut-backs/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Tapes":
+                  - /url: https://centrado.co/product-category/accessories/tapes-accessories/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Touch Up & Repair":
+                  - /url: https://centrado.co/product-category/accessories/touch-up-repair/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Underpinner Parts":
+                  - /url: https://centrado.co/product-category/accessories/underpinner-parts/
+                - button "Show sub-categories"
+              - listitem:
+                - link "Wedges":
+                  - /url: https://centrado.co/product-category/accessories/wedges/
+                - button "Show sub-categories"
+      - generic [ref=e60]:
+        - generic [ref=e61]: 
+        - link "We will be closed for the Bank Holiday on 31st August. Click here for delivery information for your region" [ref=e62] [cursor=pointer]:
+          - /url: https://centrado.co/services/#in-house-delivery-team
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - link "BACK TO COLLECTION" [ref=e67] [cursor=pointer]:
+          - /url: https://centrado.co/product-category/moulding/black-white-moulding/more/
+        - main [ref=e69]:
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - link [ref=e73] [cursor=pointer]:
+                  - /url: "#"
+                - link [ref=e75] [cursor=pointer]:
+                  - /url: "#"
+                - link [ref=e77] [cursor=pointer]:
+                  - /url: "#"
+              - generic [ref=e82]:
+                - text: <
+                - generic [ref=e84]:
+                  - img [ref=e87] [cursor=pointer]
+                  - img [ref=e90] [cursor=pointer]
+                  - img [ref=e93] [cursor=pointer]
+                - text: ">"
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - heading "0403BK" [level=1] [ref=e96]
+                - heading "Black Cushion - Open Grain" [level=1] [ref=e97]
+                - heading "20 x 14MM" [level=1] [ref=e98]
+              - link "LOGIN TO SEE PRICE" [ref=e100] [cursor=pointer]:
+                - /url: /my-account
+              - generic: 
+            - generic [ref=e104]:
+              - paragraph [ref=e105]: Specification
+              - generic [ref=e106]:
+                - generic [ref=e108]:
+                  - generic [ref=e109]:
+                    - generic [ref=e110]: RANGE
+                    - generic [ref=e111]: More
+                  - generic [ref=e112]:
+                    - generic [ref=e113]: COLOR
+                    - generic [ref=e114]: Black
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: STYLE
+                    - generic [ref=e117]: Cushion
+                  - generic [ref=e118]:
+                    - generic [ref=e119]: SPECIES
+                    - generic [ref=e120]: Obeche
+                  - generic [ref=e121]:
+                    - generic [ref=e122]: FINISH
+                    - generic [ref=e123]: Stain
+                - generic [ref=e125]:
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: WIDTH
+                    - generic [ref=e128]: 20mm
+                  - generic [ref=e129]:
+                    - generic [ref=e130]: HEIGHT
+                    - generic [ref=e131]: 14mm
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: REBATE
+                    - generic [ref=e134]: 8mm
+                  - generic [ref=e135]:
+                    - generic [ref=e136]:
+                      - text: BOX QTY
+                      - generic "BOX - The box quantity is an average approximation and may still vary due to different mould lengths" [ref=e138] [cursor=pointer]:
+                        - generic: 
+                    - generic [ref=e139]: "271"
+                  - generic [ref=e140]:
+                    - generic [ref=e141]: PACK QTY
+                    - generic [ref=e142]: "9.6"
+            - generic [ref=e144]:
+              - heading "Alternative Products" [level=2] [ref=e147]
+              - generic [ref=e150]:
+                - generic [ref=e151]:
+                  - button "Go to last slide" [ref=e152] [cursor=pointer]:
+                    - generic [ref=e153]: 
+                  - button "Next slide" [ref=e154] [cursor=pointer]:
+                    - generic [ref=e155]: 
+                - list [ref=e157]:
+                  - listitem [ref=e158]:
+                    - link "9945BK" [ref=e160] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9945bk-9945bk/
+                    - link "Black Flat - Open Grain FSC®" [ref=e162] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9945bk-9945bk/
+                    - generic [ref=e163]: 20 x 20MM
+                    - link [ref=e164] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9945bk-9945bk/
+                    - link "ADD TO BASKET" [ref=e166] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9945bk-9945bk/
+                  - listitem [ref=e167]:
+                    - link "9945WH" [ref=e169] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9945wh-9945wh/
+                    - link "White Flat - Open Grain FSC®" [ref=e171] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9945wh-9945wh/
+                    - generic [ref=e172]: 20 x 20MM
+                    - link [ref=e173] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9945wh-9945wh/
+                    - link "ADD TO BASKET" [ref=e175] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9945wh-9945wh/
+                  - listitem [ref=e176]:
+                    - link "9946BK" [ref=e178] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9946bk-9946bk/
+                    - link "Black Flat - Open Grain FSC®" [ref=e180] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9946bk-9946bk/
+                    - generic [ref=e181]: 30 x 30MM
+                    - link [ref=e182] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9946bk-9946bk/
+                    - link "ADD TO BASKET" [ref=e184] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9946bk-9946bk/
+                  - listitem [ref=e185]:
+                    - link "9946WH" [ref=e187] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9946wh-9946wh/
+                    - link "White Flat - Open Grain FSC®" [ref=e189] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9946wh-9946wh/
+                    - generic [ref=e190]: 30 x 30MM
+                    - link [ref=e191] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9946wh-9946wh/
+                    - link "ADD TO BASKET" [ref=e193] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9946wh-9946wh/
+                  - listitem [ref=e194]:
+                    - link "9947BK" [ref=e196] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9947bk-9947bk/
+                    - link "Black Flat - Open Grain FSC®" [ref=e198] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9947bk-9947bk/
+                    - generic [ref=e199]: 40 x 40MM
+                    - link [ref=e200] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9947bk-9947bk/
+                    - link "ADD TO BASKET" [ref=e202] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9947bk-9947bk/
+                  - listitem [ref=e203]:
+                    - link "9947WH" [ref=e205] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9947wh-9947wh/
+                    - link "White Flat - Open Grain FSC®" [ref=e207] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9947wh-9947wh/
+                    - generic [ref=e208]: 40 x 40MM
+                    - link [ref=e209] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9947wh-9947wh/
+                    - link "ADD TO BASKET" [ref=e211] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9947wh-9947wh/
+                  - listitem [ref=e212]:
+                    - link "9945BK" [ref=e214] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9945bk-9945bk/
+                    - link "Black Flat - Open Grain FSC®" [ref=e216] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9945bk-9945bk/
+                    - generic [ref=e217]: 20 x 20MM
+                    - link [ref=e218] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9945bk-9945bk/
+                    - link "ADD TO BASKET" [ref=e220] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9945bk-9945bk/
+                  - listitem [ref=e221]:
+                    - link "9945WH" [ref=e223] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9945wh-9945wh/
+                    - link "White Flat - Open Grain FSC®" [ref=e225] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9945wh-9945wh/
+                    - generic [ref=e226]: 20 x 20MM
+                    - link [ref=e227] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9945wh-9945wh/
+                    - link "ADD TO BASKET" [ref=e229] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9945wh-9945wh/
+                  - listitem [ref=e230]:
+                    - link "9946BK" [ref=e232] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9946bk-9946bk/
+                    - link "Black Flat - Open Grain FSC®" [ref=e234] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9946bk-9946bk/
+                    - generic [ref=e235]: 30 x 30MM
+                    - link [ref=e236] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9946bk-9946bk/
+                    - link "ADD TO BASKET" [ref=e238] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9946bk-9946bk/
+                  - listitem [ref=e239]:
+                    - link "9946WH" [ref=e241] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9946wh-9946wh/
+                    - link "White Flat - Open Grain FSC®" [ref=e243] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9946wh-9946wh/
+                    - generic [ref=e244]: 30 x 30MM
+                    - link [ref=e245] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9946wh-9946wh/
+                    - link "ADD TO BASKET" [ref=e247] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9946wh-9946wh/
+                  - listitem [ref=e248]:
+                    - link "9947BK" [ref=e250] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9947bk-9947bk/
+                    - link "Black Flat - Open Grain FSC®" [ref=e252] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9947bk-9947bk/
+                    - generic [ref=e253]: 40 x 40MM
+                    - link [ref=e254] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9947bk-9947bk/
+                    - link "ADD TO BASKET" [ref=e256] [cursor=pointer]:
+                      - /url: https://centrado.co/product/black-flat-open-grain-fsc-9947bk-9947bk/
+                  - listitem [ref=e257]:
+                    - link "9947WH" [ref=e259] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9947wh-9947wh/
+                    - link "White Flat - Open Grain FSC®" [ref=e261] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9947wh-9947wh/
+                    - generic [ref=e262]: 40 x 40MM
+                    - link [ref=e263] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9947wh-9947wh/
+                    - link "ADD TO BASKET" [ref=e265] [cursor=pointer]:
+                      - /url: https://centrado.co/product/white-flat-open-grain-fsc-9947wh-9947wh/
+                - list [ref=e266]:
+                  - listitem [ref=e267]:
+                    - button "Go to page 1" [ref=e268] [cursor=pointer]
+                  - listitem [ref=e269]:
+                    - button "Go to page 2" [ref=e270] [cursor=pointer]
+                  - listitem [ref=e271]:
+                    - button "Go to page 3" [ref=e272] [cursor=pointer]
+                  - listitem [ref=e273]:
+                    - button "Go to page 4" [ref=e274] [cursor=pointer]
+                  - listitem [ref=e275]:
+                    - button "Go to page 5" [ref=e276] [cursor=pointer]
+                  - listitem [ref=e277]:
+                    - button "Go to page 6" [ref=e278] [cursor=pointer]
+            - generic [ref=e282]:
+              - generic [ref=e283]:
+                - heading "Services tailored for you" [level=2] [ref=e285]
+                - link "CHOP SERVICE" [ref=e286] [cursor=pointer]:
+                  - /url: /services/#chop-service
+                  - img [ref=e288]
+                  - generic [ref=e289]:
+                    - text: CHOP
+                    - text: SERVICE
+                - link "EXPRESS SAMPLE SERVICE" [ref=e290] [cursor=pointer]:
+                  - /url: /services/#complimentary-samples
+                  - img [ref=e292]
+                  - generic [ref=e293]:
+                    - text: EXPRESS
+                    - text: SAMPLE SERVICE
+                - link "GLASS COLLECTION & RECYCLING" [ref=e294] [cursor=pointer]:
+                  - /url: /services/#glass-collection-and-recycling
+                  - img [ref=e296]
+                  - generic [ref=e297]:
+                    - text: GLASS COLLECTION
+                    - text: "& RECYCLING"
+                - link "IN-HOUSE DELIVERY TEAM" [ref=e298] [cursor=pointer]:
+                  - /url: /services/#in-house-delivery-team
+                  - img [ref=e300]
+                  - generic [ref=e301]:
+                    - text: IN-HOUSE
+                    - text: DELIVERY TEAM
+                - link "CUT TO SIZE" [ref=e302] [cursor=pointer]:
+                  - /url: /services/#cut-to-size-service
+                  - img [ref=e304]
+                  - generic [ref=e305]: CUT TO SIZE
+                - link "BLADE SHARPENING" [ref=e306] [cursor=pointer]:
+                  - /url: /services/#blade-sharpening
+                  - img [ref=e308]
+                  - generic [ref=e309]:
+                    - text: BLADE
+                    - text: SHARPENING
+              - link "EXPLORE SERVICES" [ref=e312] [cursor=pointer]:
+                - /url: /services/
+  - contentinfo "Site footer" [ref=e313]:
+    - generic [ref=e314]:
+      - generic [ref=e316]:
+        - list [ref=e318]:
+          - listitem [ref=e319]:
+            - link "Glazing" [ref=e320] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/glazing/
+          - listitem [ref=e321]:
+            - link "Moulding" [ref=e322] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/moulding/
+          - listitem [ref=e323]:
+            - link "Mountboard" [ref=e324] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/mountboard/
+          - listitem [ref=e325]:
+            - link "Backing" [ref=e326] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/backing/
+          - listitem [ref=e327]:
+            - link "Accessories" [ref=e328] [cursor=pointer]:
+              - /url: https://centrado.co/product-category/accessories/
+        - generic [ref=e330]:
+          - link "Login" [ref=e331] [cursor=pointer]:
+            - /url: /login
+          - link "Register for an account" [ref=e332] [cursor=pointer]:
+            - /url: /register
+      - generic [ref=e334]:
+        - link "01480 445480" [ref=e336] [cursor=pointer]:
+          - /url: tel:01480 445480
+        - generic [ref=e337]:
+          - link [ref=e338] [cursor=pointer]:
+            - /url: https://www.facebook.com/centradotradingltd/
+            - generic [ref=e339]: 
+          - link [ref=e340] [cursor=pointer]:
+            - /url: https://www.instagram.com/centrado_trading/
+            - generic [ref=e341]: 
+          - link [ref=e342] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/centrado/
+            - generic [ref=e343]: 
+          - link [ref=e344] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=441480445480
+            - generic [ref=e345]: 
+        - link "sales@centrado.co" [ref=e347] [cursor=pointer]:
+          - /url: mailto:sales@centrado.co
+    - generic [ref=e348]:
+      - generic [ref=e350]:
+        - link:
+          - /url: /promise
+          - img [ref=e351] [cursor=pointer]
+        - img [ref=e352]
+        - list [ref=e353]:
+          - listitem [ref=e354]:
+            - link "About" [ref=e355] [cursor=pointer]:
+              - /url: https://centrado.co/about/
+          - listitem [ref=e356]:
+            - link "News" [ref=e357] [cursor=pointer]:
+              - /url: https://centrado.co/news/
+          - listitem [ref=e358]:
+            - link "Resource Hub" [ref=e359] [cursor=pointer]:
+              - /url: https://centrado.co/resource-hub/
+          - listitem [ref=e360]:
+            - link "Careers" [ref=e361] [cursor=pointer]:
+              - /url: https://centrado.co/vacancies/
+          - listitem [ref=e362]:
+            - link "Contact" [ref=e363] [cursor=pointer]:
+              - /url: https://centrado.co/contact/
+      - generic [ref=e364]:
+        - list [ref=e366]:
+          - listitem [ref=e367]:
+            - link "Privacy/" [ref=e368] [cursor=pointer]:
+              - /url: https://centrado.co/privacy/
+          - listitem [ref=e369]:
+            - link "Terms/" [ref=e370] [cursor=pointer]:
+              - /url: https://centrado.co/terms/
+          - listitem [ref=e371]:
+            - link "Returns/" [ref=e372] [cursor=pointer]:
+              - /url: https://centrado.co/returns/
+          - listitem [ref=e373]:
+            - link "German Website/" [ref=e374] [cursor=pointer]:
+              - /url: https://centrado.eu
+          - listitem [ref=e375]:
+            - link "Leave a review/" [ref=e376] [cursor=pointer]:
+              - /url: https://g.page/r/CbVyNpOF3Mt_EAg/review
+          - listitem [ref=e377]:
+            - link "Change Cookie Consent" [ref=e378] [cursor=pointer]:
+              - /url: https://centrado.co/#cookie-consent
+        - paragraph [ref=e380]: © Centrado 2026
+  - status [ref=e381]
+  - iframe [ref=e384]:
+    - generic [ref=f5e6]:
+      - text: protected by
+      - strong [ref=f5e7]: reCAPTCHA

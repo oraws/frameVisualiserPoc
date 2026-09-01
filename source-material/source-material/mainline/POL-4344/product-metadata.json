@@ -1,0 +1,24 @@
+{
+  "sku": "POL-4344",
+  "invoiceDescription": "Plastic Picture Moulding",
+  "name": "43mm Box Limed White Polcore Moulding",
+  "description": "43x32mm Flat Box Limed White Picture Frame Moulding.",
+  "metaDescription": "Shop online for the flat box limed white at Mainline Mouldings. Enhance your framing projects with this high-quality framing material. Add a touch of elegance to your artwork or photographs with its limed white finish. Get yours today!",
+  "productUrl": "https://mainlinemouldings.com/box-white-43mm-polcore-moulding/",
+  "discoveredFrom": "https://mainlinemouldings.com/box-white-43mm-polcore-moulding/?searchuuid=b777cafa-605c-452e-b6fb-0f331d6615e2&search_query=POL-4344",
+  "discontinued": false,
+  "details": {
+    "colour": "White",
+    "profile": "Flat",
+    "finish": "Limed",
+    "range": "43x32mm Box"
+  },
+  "dimensions": {
+    "length": "2.9m",
+    "widthMm": 43,
+    "depthMm": 32,
+    "rebateMm": 26
+  },
+  "spinImageCount": 45,
+  "importedAt": "2026-08-27T08:51:21.255Z"
+}

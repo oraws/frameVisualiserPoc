@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4506",
+  "name": "Paramount 53mm Brushed Gunmetal with Silver Slip Polcore Moulding",
+  "widthMm": 53,
+  "depthMm": 30,
+  "rebateMm": 13,
+  "profileType": "flat",
+  "page": 93,
+  "label": "POL 4506",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 376,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 42.997,
+    "top": 333.37,
+    "x1": 193.237,
+    "bottom": 534.01
+  }
+}

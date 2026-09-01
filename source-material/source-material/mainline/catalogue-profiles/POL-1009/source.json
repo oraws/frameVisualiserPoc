@@ -1,0 +1,19 @@
+{
+  "sku": "POL-1009",
+  "name": "28mm Flats Brushed Black Polcore Moulding",
+  "widthMm": 28,
+  "depthMm": 16,
+  "rebateMm": 10,
+  "profileType": "flat",
+  "page": 139,
+  "label": "POL 1009",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 198,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 648.848,
+    "top": 599.866,
+    "x1": 728.048,
+    "bottom": 799.306
+  }
+}

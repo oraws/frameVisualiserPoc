@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4508",
+  "name": "Paramount Black & Silver",
+  "widthMm": 30,
+  "depthMm": 30,
+  "rebateMm": 13,
+  "profileType": "composite",
+  "page": 92,
+  "label": "POL 4508",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 212,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 673.026,
+    "top": 70.104,
+    "x1": 757.986,
+    "bottom": 270.264
+  }
+}

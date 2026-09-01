@@ -1,0 +1,81 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "0403BK",
+  "name": "Black Cushion - Open Grain",
+  "description": "20x14mm Black Cushion Moulding",
+  "productUrl": "https://centrado.co/product/black-cushion-open-grain-0403bk/",
+  "widthMm": 20.0,
+  "depthMm": 14.0,
+  "rebateMm": 7.8,
+  "profileType": "cushion",
+  "colourTags": [
+    "black"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      12.605
+    ],
+    [
+      1.683,
+      13.086
+    ],
+    [
+      4.712,
+      13.663
+    ],
+    [
+      9.375,
+      14.0
+    ],
+    [
+      15.481,
+      13.759
+    ],
+    [
+      17.933,
+      13.423
+    ],
+    [
+      20.0,
+      12.942
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 198,
+      "right": 614,
+      "top": 143,
+      "baseline": 434
+    },
+    "pixelsPerMmX": 20.8,
+    "pixelsPerMmZ": 20.7857,
+    "anisotropyFraction": 0.00069,
+    "sampleCount": 415,
+    "simplifiedPointCount": 7
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0403BK.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0403BK-Profile.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0403BK_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

@@ -1,0 +1,2501 @@
+[
+  {
+    "sku": "4925BG",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Bergen Black and Gold Angled",
+    "description": "Bergen Black and Gold Angled",
+    "widthMm": 49,
+    "depthMm": 25,
+    "rebateMm": 14,
+    "profileType": "angled",
+    "finish": "Bergen Black and Gold Angled",
+    "baseColor": "#171716",
+    "accentColor": "#b8903e",
+    "accentWidthMm": 16,
+    "colourTags": [
+      "black",
+      "gold"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/bergen-black-and-gold-angled-4925bg/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/4925BG/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/4925BG/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/4925BG/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/4925BG/macro.jpg"
+      },
+      {
+        "label": "Framed reference",
+        "url": "/assets/mouldings/4925BG/framed-reference.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "8054BG",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Luxe Wentworth Black/Gold Scoop",
+    "description": "Luxe Wentworth Black/Gold Scoop",
+    "widthMm": 80,
+    "depthMm": 54,
+    "rebateMm": 26,
+    "profileType": "ornate-scoop",
+    "finish": "Luxe Wentworth Black/Gold Scoop",
+    "baseColor": "#171716",
+    "accentColor": "#b8903e",
+    "accentWidthMm": 15,
+    "colourTags": [
+      "black",
+      "gold"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.72,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/luxe-wentworth-black-gold-scoop-8054bg/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/8054BG/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/8054BG/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/8054BG/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/8054BG/macro.jpg"
+      },
+      {
+        "label": "Framed reference",
+        "url": "/assets/mouldings/8054BG/framed-reference.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "3826BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Kashmir Decorative Black Bevel",
+    "description": "63x25mm Decorative Black Kashmir Bevel Moulding",
+    "widthMm": 63.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "finish": "63x25mm Decorative Black Kashmir Bevel Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.72,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/3826BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/3826BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/3826BK/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/3826BK/macro.jpg"
+      },
+      {
+        "label": "Framed reference",
+        "url": "/assets/mouldings/3826BK/framed-reference.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/3826BK/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/3826BK/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR4030BN",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Brown Flat - Closed Grain",
+    "description": "40x30mm Brown Closed Grain Create Flat Moulding",
+    "widthMm": 40.0,
+    "depthMm": 30.0,
+    "rebateMm": 16.8,
+    "profileType": "flat",
+    "finish": "40x30mm Brown Closed Grain Create Flat Moulding",
+    "baseColor": "#654b38",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "brown"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-brown-flat-closed-grain-cr4030bn/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR4030BN/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR4030BN/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR4030BN/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0225MG",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Matt Gold Flat",
+    "description": "21x22mm Matt Closed Grain Gold Create Flat Moulding",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "finish": "21x22mm Matt Closed Grain Gold Create Flat Moulding",
+    "baseColor": "#b8903e",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "gold"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-matt-gold-flat-cr0225mg/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0225MG/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0225MG/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0225MG/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR1513BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Black Cushion - Closed Grain",
+    "description": "23x13mm Black Closed Grain Create Cushion Moulding",
+    "widthMm": 23.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "cushion",
+    "finish": "23x13mm Black Closed Grain Create Cushion Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-black-cushion-closed-grain-cr1513bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR1513BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR1513BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR1513BK/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0219BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Black Bevel - Open Grain",
+    "description": "20x15mm Black Bevel Moulding",
+    "widthMm": 20.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "profileType": "angled",
+    "finish": "20x15mm Black Bevel Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/black-bevel-open-grain-0219bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0219BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0219BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0219BK/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0472BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Casterbridge Black Step - Open Grain",
+    "description": "52x35mm Black Casterbridge Step Moulding",
+    "widthMm": 52.0,
+    "depthMm": 35.0,
+    "rebateMm": 19.6,
+    "profileType": "angled",
+    "finish": "52x35mm Black Casterbridge Step Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/casterbridge-black-step-open-grain-0472bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0472BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0472BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0472BK/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/0472BK/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/0472BK/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/0472BK/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "2650BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Alberta Black Open Grain Flat",
+    "description": "50x26mm Black Open Grain Alberta Flat Moulding",
+    "widthMm": 50.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "profileType": "flat",
+    "finish": "50x26mm Black Open Grain Alberta Flat Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/alberta-black-open-grain-flat-2650bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/2650BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/2650BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/2650BK/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/2650BK/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "HS9",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Raw Pine Stretcher FSC \u00ae",
+    "description": "31x27mm Raw Pine Stretcher Moulding FSC",
+    "widthMm": 31.0,
+    "depthMm": 27.0,
+    "rebateMm": 15.1,
+    "profileType": "flat",
+    "finish": "31x27mm Raw Pine Stretcher Moulding FSC",
+    "baseColor": "#c7a571",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "pine"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/raw-pine-stretcher-fsc-hs9/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/HS9/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/HS9/profile-source.png"
+      }
+    ]
+  },
+  {
+    "sku": "0472WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Casterbridge White Step - Open Grain",
+    "description": "52x35mm White Casterbridge Step Moulding",
+    "widthMm": 52.0,
+    "depthMm": 35.0,
+    "rebateMm": 19.6,
+    "profileType": "angled",
+    "finish": "52x35mm White Casterbridge Step Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/casterbridge-white-step-open-grain-0472wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0472WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0472WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0472WH/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/0472WH/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/0472WH/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/0472WH/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "2301BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "New Orleans Black Bevel",
+    "description": "15x20mm Black New Orleans Bevelled Box Moulding",
+    "widthMm": 15.0,
+    "depthMm": 20.0,
+    "rebateMm": 11.2,
+    "profileType": "angled",
+    "finish": "15x20mm Black New Orleans Bevelled Box Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/new-orleans-black-bevel-2301bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/2301BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/2301BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/2301BK/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/2301BK/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/2301BK/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/2301BK/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0219WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "White Bevel - Open Grain",
+    "description": "20x15mm White Bevel Moulding",
+    "widthMm": 20.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "profileType": "angled",
+    "finish": "20x15mm White Bevel Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/white-bevel-open-grain-0219wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0219WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0219WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0219WH/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR1090WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create White Flat - Open Grain",
+    "description": "35x15mm White Open Grain Create Flat Moulding",
+    "widthMm": 35.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "profileType": "flat",
+    "finish": "35x15mm White Open Grain Create Flat Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-white-flat-open-grain-cr1090wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR1090WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR1090WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR1090WH/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "3825BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Kashmir Decorative Black Bevel",
+    "description": "38x25mm Decorative Black Kashmir Bevel Moulding",
+    "widthMm": 38.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "finish": "38x25mm Decorative Black Kashmir Bevel Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.72,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/kashmir-decorative-black-bevel-3825bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/3825BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/3825BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/3825BK/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/3825BK/macro.jpg"
+      },
+      {
+        "label": "Framed reference",
+        "url": "/assets/mouldings/3825BK/framed-reference.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/3825BK/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/3825BK/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0471DB",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Casterbridge Dark Brown Step - Open Grain",
+    "description": "30x25mm Dark Brown Casterbridge Step Moulding",
+    "widthMm": 30.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "finish": "30x25mm Dark Brown Casterbridge Step Moulding",
+    "baseColor": "#654b38",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "brown"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/casterbridge-dark-brown-step-open-grain-0471db/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0471DB/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0471DB/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0471DB/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/0471DB/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/0471DB/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/0471DB/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "5821WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Ancona White Flat - Open Grain",
+    "description": "58x21mm White Ancona Flat Moulding",
+    "widthMm": 58.0,
+    "depthMm": 21.0,
+    "rebateMm": 11.8,
+    "profileType": "flat",
+    "finish": "58x21mm White Ancona Flat Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/ancona-white-flat-open-grain-5821wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/5821WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/5821WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/5821WH/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/5821WH/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/5821WH/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/5821WH/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR3313MW",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Matt White Flat - Closed Grain",
+    "description": "33x13mm Matt Closed Grain White Create Flat Moulding",
+    "widthMm": 33.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "flat",
+    "finish": "33x13mm Matt Closed Grain White Create Flat Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-matt-white-flat-closed-grain-cr3313mw/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR3313MW/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR3313MW/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR3313MW/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR1013BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Black Cushion - Closed Grain",
+    "description": "14x13mm Closed Grain Black Create Cushion Moulding",
+    "widthMm": 14.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "cushion",
+    "finish": "14x13mm Closed Grain Black Create Cushion Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-black-cushion-closed-grain-cr1013bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR1013BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR1013BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR1013BK/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "4426WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "White Scoop - Open Grain",
+    "description": "44x26mm White Scoop Moulding",
+    "widthMm": 44.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "profileType": "scoop",
+    "finish": "44x26mm White Scoop Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.72,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/white-scoop-open-grain-4426wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/4426WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/4426WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/4426WH/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0717AG",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Lustre Antique Gold Flat",
+    "description": "17x17mm Antique Gold Create Lustre Flat Moulding",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "finish": "17x17mm Antique Gold Create Lustre Flat Moulding",
+    "baseColor": "#b8903e",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "gold"
+    ],
+    "roughness": 0.38,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-lustre-antique-gold-flat-cr0717ag/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0717AG/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0717AG/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0717AG/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR0717AG/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0225BN",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Brown Flat - Closed Grain",
+    "description": "22x22mm Brown Closed Grain Create Flat Moulding",
+    "widthMm": 22.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "finish": "22x22mm Brown Closed Grain Create Flat Moulding",
+    "baseColor": "#654b38",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "brown"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-brown-flat-closed-grain-cr0225bn/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0225BN/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0225BN/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0225BN/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0225OR",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Orange Flat - Closed Grain",
+    "description": "21x22mm Orange Closed Grain Create Flat Moulding",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "finish": "21x22mm Orange Closed Grain Create Flat Moulding",
+    "baseColor": "#b75b2d",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "orange"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-orange-flat-closed-grain-cr0225or/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0225OR/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0225OR/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0225OR/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR4530BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Black Flat - Open Grain",
+    "description": "21x22mm Black Open Grain Create Flat Moulding",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "finish": "21x22mm Black Open Grain Create Flat Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-black-flat-open-grain-cr4530bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR4530BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR4530BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR4530BK/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR3313MB",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Matt Black Flat - Closed Grain",
+    "description": "33x13mm Matt Closed Grain Black Create Flat Moulding",
+    "widthMm": 33.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "flat",
+    "finish": "33x13mm Matt Closed Grain Black Create Flat Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-matt-black-flat-closed-grain-cr3313mb/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR3313MB/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR3313MB/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR3313MB/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR3313MG",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Matt Gold Flat",
+    "description": "33x13mm Matt Closed Grain Gold Create Flat Moulding",
+    "widthMm": 33.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "profileType": "flat",
+    "finish": "33x13mm Matt Closed Grain Gold Create Flat Moulding",
+    "baseColor": "#b8903e",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "gold"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-matt-gold-flat-cr3313mg/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR3313MG/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR3313MG/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR3313MG/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0225RD",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Red Flat - Closed Grain",
+    "description": "21x22mm Bright Red Closed Grain Create Flat Moulding",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "finish": "21x22mm Bright Red Closed Grain Create Flat Moulding",
+    "baseColor": "#9e2e29",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "red"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-red-flat-closed-grain-cr0225rd/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0225RD/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0225RD/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0225RD/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0471WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Casterbridge White Step - Open Grain",
+    "description": "30x25mm White Casterbridge Step Moulding",
+    "widthMm": 30.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "finish": "30x25mm White Casterbridge Step Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/casterbridge-white-step-open-grain-0471wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0471WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0471WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0471WH/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/0471WH/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/0471WH/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/0471WH/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0471BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Casterbridge Black Step - Open Grain",
+    "description": "30x25mm Black Casterbridge Step Moulding",
+    "widthMm": 30.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "profileType": "angled",
+    "finish": "30x25mm Black Casterbridge Step Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/casterbridge-black-step-open-grain-0471bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0471BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0471BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0471BK/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/0471BK/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/0471BK/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/0471BK/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "2650WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Alberta White Open Grain Flat",
+    "description": "50x26mm White Open Grain Alberta Flat Moulding",
+    "widthMm": 50.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "profileType": "flat",
+    "finish": "50x26mm White Open Grain Alberta Flat Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/alberta-white-open-grain-flat-2650wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/2650WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/2650WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/2650WH/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/2650WH/macro.jpg"
+      },
+      {
+        "label": "Framed reference",
+        "url": "/assets/mouldings/2650WH/framed-reference.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "3042IV",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Ivory Flat - Open Grain",
+    "description": "30x42mm Cream Flat Moulding",
+    "widthMm": 30.0,
+    "depthMm": 42.0,
+    "rebateMm": 23.5,
+    "profileType": "flat",
+    "finish": "30x42mm Cream Flat Moulding",
+    "baseColor": "#d8d0b8",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "cream"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/ivory-flat-open-grain-3042iv/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/3042IV/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/3042IV/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/3042IV/chevron.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/3042IV/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/3042IV/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "3042BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Black Flat - Open Grain",
+    "description": "27x42mm Black Flat Moulding",
+    "widthMm": 27.0,
+    "depthMm": 42.0,
+    "rebateMm": 23.5,
+    "profileType": "flat",
+    "finish": "27x42mm Black Flat Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/black-flat-open-grain-3042bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/3042BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/3042BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/3042BK/chevron.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/3042BK/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/3042BK/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "3042WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "White Flat - Open Grain",
+    "description": "27x42mm White Flat Moulding",
+    "widthMm": 27.0,
+    "depthMm": 42.0,
+    "rebateMm": 23.5,
+    "profileType": "flat",
+    "finish": "27x42mm White Flat Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/white-flat-open-grain-3042wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/3042WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/3042WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/3042WH/chevron.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/3042WH/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/3042WH/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "5819WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Ravenna White Bevel - Open Grain",
+    "description": "58x19mm White Ravenna Bevel Moulding",
+    "widthMm": 58.0,
+    "depthMm": 19.0,
+    "rebateMm": 10.6,
+    "profileType": "angled",
+    "finish": "58x19mm White Ravenna Bevel Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/ravenna-white-bevel-open-grain-5819wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/5819WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/5819WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/5819WH/chevron.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/5819WH/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/5819WH/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR2253WH",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create White Flat - Open Grain",
+    "description": "22x53mm White Open Grain Create Flat Moulding",
+    "widthMm": 22.0,
+    "depthMm": 53.0,
+    "rebateMm": 29.7,
+    "profileType": "flat",
+    "finish": "22x53mm White Open Grain Create Flat Moulding",
+    "baseColor": "#eceae3",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "white"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-white-flat-open-grain-cr2253wh/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR2253WH/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR2253WH/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR2253WH/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0717YW",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Yellow Flat - Open Grain",
+    "description": "17x17mm Yellow Open Grain Create Flat Moulding",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "finish": "17x17mm Yellow Open Grain Create Flat Moulding",
+    "baseColor": "#d2a92f",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "yellow"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-yellow-flat-open-grain-cr0717yw/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0717YW/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0717YW/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0717YW/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR0717YW/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0403BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Black Cushion - Open Grain",
+    "description": "20x14mm Black Cushion Moulding",
+    "widthMm": 20.0,
+    "depthMm": 14.0,
+    "rebateMm": 7.8,
+    "profileType": "cushion",
+    "finish": "20x14mm Black Cushion Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/black-cushion-open-grain-0403bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0403BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0403BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0403BK/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "5819IV",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Ravenna Ivory Bevel - Open Grain",
+    "description": "58x19mm Ivory Ravenna Bevel Moulding",
+    "widthMm": 58.0,
+    "depthMm": 19.0,
+    "rebateMm": 10.6,
+    "profileType": "angled",
+    "finish": "58x19mm Ivory Ravenna Bevel Moulding",
+    "baseColor": "#ddd4bd",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "ivory"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/ravenna-ivory-bevel-open-grain-5819iv/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/5819IV/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/5819IV/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/5819IV/chevron.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/5819IV/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/5819IV/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0717RD",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Red Flat - Open Grain",
+    "description": "17x17mm Red Open Grain Create Flat Moulding",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "finish": "17x17mm Red Open Grain Create Flat Moulding",
+    "baseColor": "#9e2e29",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "red"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-red-flat-open-grain-cr0717rd/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0717RD/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0717RD/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0717RD/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR0717RD/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR1090BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Black Flat - Open Grain",
+    "description": "35x15mm Black Open Grain Create Flat Moulding",
+    "widthMm": 35.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "profileType": "flat",
+    "finish": "35x15mm Black Open Grain Create Flat Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-black-flat-open-grain-cr1090bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR1090BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR1090BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR1090BK/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR8005OA",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Oak Flat - Closed Grain",
+    "description": "40x30mm Oak Closed Grain Create Flat Moulding",
+    "widthMm": 40.0,
+    "depthMm": 30.0,
+    "rebateMm": 16.8,
+    "profileType": "flat",
+    "finish": "40x30mm Oak Closed Grain Create Flat Moulding",
+    "baseColor": "#9b7650",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "oak"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-oak-flat-closed-grain-cr8005oa/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR8005OA/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR8005OA/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR8005OA/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0717OR",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Orange Flat - Open Grain",
+    "description": "17x17mm Orange Open Grain Create Flat Moulding",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "finish": "17x17mm Orange Open Grain Create Flat Moulding",
+    "baseColor": "#b75b2d",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "orange"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-orange-flat-open-grain-cr0717or/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0717OR/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0717OR/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0717OR/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR0717OR/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0717MD",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Midnight Flat - Open Grain",
+    "description": "17x17mm Midnight Open Grain Create Flat Moulding",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "finish": "17x17mm Midnight Open Grain Create Flat Moulding",
+    "baseColor": "#20242e",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "midnight"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-midnight-flat-open-grain-cr0717md/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0717MD/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0717MD/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0717MD/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR0717MD/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0473BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Casterbridge Black Step - Open Grain",
+    "description": "84x40mm Black Casterbridge Step Moulding",
+    "widthMm": 84.0,
+    "depthMm": 40.0,
+    "rebateMm": 22.4,
+    "profileType": "angled",
+    "finish": "84x40mm Black Casterbridge Step Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/casterbridge-black-step-open-grain-0473bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0473BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0473BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0473BK/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/0473BK/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/0473BK/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/0473BK/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "5819BK",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Ravenna Black Bevel - Open Grain",
+    "description": "58x19mm Black Ravenna Bevel Moulding",
+    "widthMm": 58.0,
+    "depthMm": 19.0,
+    "rebateMm": 10.6,
+    "profileType": "angled",
+    "finish": "58x19mm Black Ravenna Bevel Moulding",
+    "baseColor": "#171716",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "black"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/ravenna-black-bevel-open-grain-5819bk/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/5819BK/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/5819BK/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/5819BK/chevron.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/5819BK/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/5819BK/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "0472CM",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Casterbridge Cream Step - Open Grain",
+    "description": "52x35mm Cream Casterbridge Step Moulding",
+    "widthMm": 52.0,
+    "depthMm": 35.0,
+    "rebateMm": 19.6,
+    "profileType": "angled",
+    "finish": "52x35mm Cream Casterbridge Step Moulding",
+    "baseColor": "#d8d0b8",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "cream"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/casterbridge-cream-step-open-grain-0472cm/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/0472CM/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/0472CM/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/0472CM/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/0472CM/macro.jpg"
+      },
+      {
+        "label": "Product detail 1",
+        "url": "/assets/mouldings/0472CM/product-detail-1.jpg"
+      },
+      {
+        "label": "Product detail 2",
+        "url": "/assets/mouldings/0472CM/product-detail-2.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0717DR",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Dark Red Flat - Open Grain",
+    "description": "17x17mm Dark Red Open Grain Create Flat Moulding",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "finish": "17x17mm Dark Red Open Grain Create Flat Moulding",
+    "baseColor": "#9e2e29",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "red"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-dark-red-flat-open-grain-cr0717dr/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0717DR/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0717DR/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0717DR/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR0717DR/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0717NY",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Navy Flat - Open Grain",
+    "description": "17x17mm Navy Open Grain Create Flat Moulding",
+    "widthMm": 17.0,
+    "depthMm": 17.0,
+    "rebateMm": 9.5,
+    "profileType": "flat",
+    "finish": "17x17mm Navy Open Grain Create Flat Moulding",
+    "baseColor": "#26364d",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "navy"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-navy-flat-open-grain-cr0717ny/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0717NY/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0717NY/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0717NY/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR0717NY/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "4426CM",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Cream Scoop - Open Grain",
+    "description": "44x26mm Cream Scoop Moulding",
+    "widthMm": 44.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "profileType": "scoop",
+    "finish": "44x26mm Cream Scoop Moulding",
+    "baseColor": "#d8d0b8",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "cream"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.72,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/cream-scoop-open-grain-4426cm/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/4426CM/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/4426CM/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/4426CM/chevron.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR0225BF",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Brown Foil Flat - Open Grain",
+    "description": "21x22mm Brown Foil Create Flat Moulding",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "profileType": "flat",
+    "finish": "21x22mm Brown Foil Create Flat Moulding",
+    "baseColor": "#654b38",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "brown"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-brown-foil-flat-open-grain-cr0225bf/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR0225BF/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR0225BF/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR0225BF/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR0225BF/macro.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "CR3330AG",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Create Lustre Antique Gold Flat",
+    "description": "33x30mm Antique Gold Create Lustre Flat Moulding",
+    "widthMm": 33.0,
+    "depthMm": 30.0,
+    "rebateMm": 16.8,
+    "profileType": "flat",
+    "finish": "33x30mm Antique Gold Create Lustre Flat Moulding",
+    "baseColor": "#b8903e",
+    "accentColor": null,
+    "accentWidthMm": 0,
+    "colourTags": [
+      "gold"
+    ],
+    "roughness": 0.38,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/create-lustre-antique-gold-flat-cr3330ag/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/CR3330AG/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/CR3330AG/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/CR3330AG/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/CR3330AG/macro.jpg"
+      },
+      {
+        "label": "Framed reference",
+        "url": "/assets/mouldings/CR3330AG/framed-reference.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "4924BG",
+    "supplier": "Centrado",
+    "supplierCode": "CTR",
+    "name": "Bergen Black and Gold Angled",
+    "description": "30x20mm Closed Grain Black and Gold Bergen Angled Moulding",
+    "widthMm": 30.0,
+    "depthMm": 20.0,
+    "rebateMm": 11.2,
+    "profileType": "angled",
+    "finish": "30x20mm Closed Grain Black and Gold Bergen Angled Moulding",
+    "baseColor": "#171716",
+    "accentColor": "#b8903e",
+    "accentWidthMm": 9.6,
+    "colourTags": [
+      "black",
+      "gold"
+    ],
+    "roughness": 0.66,
+    "ornament": 0.12,
+    "renderStatus": "auto-candidate",
+    "confidence": {
+      "shape": "Supplier profile \u00b7 high",
+      "dimensions": "High",
+      "texture": "Supplier-derived",
+      "colour": "Supplier-derived",
+      "material": "Supplier-derived"
+    },
+    "sourceUrl": "https://centrado.co/product/bergen-black-and-gold-angled-4924bg/",
+    "supplierImages": [
+      {
+        "label": "Physical section",
+        "url": "/assets/mouldings/4924BG/product-section.jpg"
+      },
+      {
+        "label": "Dimensioned profile",
+        "url": "/assets/mouldings/4924BG/profile-source.png"
+      },
+      {
+        "label": "Chevron",
+        "url": "/assets/mouldings/4924BG/chevron.jpg"
+      },
+      {
+        "label": "Material macro",
+        "url": "/assets/mouldings/4924BG/macro.jpg"
+      },
+      {
+        "label": "Framed reference",
+        "url": "/assets/mouldings/4924BG/framed-reference.jpg"
+      }
+    ]
+  }
+]

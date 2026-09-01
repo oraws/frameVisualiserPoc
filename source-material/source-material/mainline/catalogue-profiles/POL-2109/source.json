@@ -1,0 +1,19 @@
+{
+  "sku": "POL-2109",
+  "name": "Contemporary Classics 40mm Antique Gold Polcore Moulding",
+  "widthMm": 40,
+  "depthMm": 21,
+  "rebateMm": 10,
+  "profileType": "scoop",
+  "page": 123,
+  "label": "POL 2109",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 282,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 286.649,
+    "top": 599.932,
+    "x1": 399.449,
+    "bottom": 799.372
+  }
+}

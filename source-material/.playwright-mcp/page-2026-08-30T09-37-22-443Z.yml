@@ -1,0 +1,287 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - text: atelier / frame study
+        - generic [ref=e6]: supplier-grounded visualisation POC
+      - generic [ref=e10]: Drag to orbit · right-drag to move · scroll to zoom
+    - complementary [ref=e11]:
+      - heading "Frame Visualiser" [level=1] [ref=e12]
+      - paragraph [ref=e13]: A supplier-grounded material, proportion and room study.
+      - generic [ref=e14]:
+        - generic [ref=e15]: Presentation
+        - generic [ref=e16]:
+          - button "Frame detail" [ref=e17]
+          - button "View on wall" [ref=e18]
+          - button "Asset review" [ref=e19]
+      - generic [ref=e20]:
+        - generic [ref=e21]: Filter by colour
+        - generic [ref=e22]:
+          - button "All" [pressed] [ref=e23]:
+            - generic [ref=e25]: All
+          - button "Black" [ref=e26]:
+            - generic [ref=e28]: Black
+          - button "Brown" [ref=e29]:
+            - generic [ref=e31]: Brown
+          - button "Gold" [ref=e32]:
+            - generic [ref=e34]: Gold
+          - button "Silver" [ref=e35]:
+            - generic [ref=e37]: Silver
+          - button "Bronze" [ref=e38]:
+            - generic [ref=e40]: Bronze
+          - button "White" [ref=e41]:
+            - generic [ref=e43]: White
+          - button "Cream" [ref=e44]:
+            - generic [ref=e46]: Cream
+          - button "Grey" [ref=e47]:
+            - generic [ref=e49]: Grey
+          - button "Red" [ref=e50]:
+            - generic [ref=e52]: Red
+          - button "Orange" [ref=e53]:
+            - generic [ref=e55]: Orange
+          - button "Yellow" [ref=e56]:
+            - generic [ref=e58]: Yellow
+          - button "Blue" [ref=e59]:
+            - generic [ref=e61]: Blue
+          - button "Natural" [ref=e62]:
+            - generic [ref=e64]: Natural
+        - generic [ref=e65]: Moulding
+        - combobox [ref=e66]:
+          - option "MNL · POL-4875 · Verona Black — 97 mm"
+          - option "MNL · POL-4100 · Brushed Black — 41 mm"
+          - option "MNL · POL-4508 · Paramount Black & Silver — 30 mm"
+          - option "MNL · POL-4418 · Flat Bronze — 54 mm"
+          - option "MNL · POL-4211 · Flat Oak — 54 mm"
+          - option "CTR · 4925BG · Bergen Black and Gold Angled — 49 mm"
+          - option "CTR · 8054BG · Luxe Wentworth Black/Gold Scoop — 80 mm"
+          - option "CTR · 3826BK · Kashmir Decorative Black Bevel — 63 mm"
+          - option "CTR · CR4030BN · Create Brown Flat - Closed Grain — 40 mm"
+          - option "CTR · CR0225MG · Create Matt Gold Flat — 21 mm"
+          - option "CTR · CR1513BK · Create Black Cushion - Closed Grain — 23 mm"
+          - option "CTR · 0219BK · Black Bevel - Open Grain — 20 mm"
+          - option "CTR · 0472BK · Casterbridge Black Step - Open Grain — 52 mm"
+          - option "CTR · 2650BK · Alberta Black Open Grain Flat — 50 mm"
+          - option "CTR · HS9 · Raw Pine Stretcher FSC ® — 31 mm"
+          - option "CTR · 0472WH · Casterbridge White Step - Open Grain — 52 mm"
+          - option "CTR · 2301BK · New Orleans Black Bevel — 15 mm"
+          - option "CTR · 0219WH · White Bevel - Open Grain — 20 mm"
+          - option "CTR · CR1090WH · Create White Flat - Open Grain — 35 mm"
+          - option "CTR · 3825BK · Kashmir Decorative Black Bevel — 38 mm"
+          - option "CTR · 0471DB · Casterbridge Dark Brown Step - Open Grain — 30 mm"
+          - option "CTR · 5821WH · Ancona White Flat - Open Grain — 58 mm"
+          - option "CTR · CR3313MW · Create Matt White Flat - Closed Grain — 33 mm"
+          - option "CTR · CR1013BK · Create Black Cushion - Closed Grain — 14 mm"
+          - option "CTR · 4426WH · White Scoop - Open Grain — 44 mm"
+          - option "CTR · CR0717AG · Create Lustre Antique Gold Flat — 17 mm"
+          - option "CTR · CR0225BN · Create Brown Flat - Closed Grain — 22 mm"
+          - option "CTR · CR0225OR · Create Orange Flat - Closed Grain — 21 mm"
+          - option "CTR · CR4530BK · Create Black Flat - Open Grain — 21 mm"
+          - option "CTR · CR3313MB · Create Matt Black Flat - Closed Grain — 33 mm"
+          - option "CTR · CR3313MG · Create Matt Gold Flat — 33 mm"
+          - option "CTR · CR0225RD · Create Red Flat - Closed Grain — 21 mm"
+          - option "CTR · 0471WH · Casterbridge White Step - Open Grain — 30 mm"
+          - option "CTR · 0471BK · Casterbridge Black Step - Open Grain — 30 mm"
+          - option "CTR · 2650WH · Alberta White Open Grain Flat — 50 mm"
+          - option "CTR · 3042IV · Ivory Flat - Open Grain — 30 mm"
+          - option "CTR · 3042BK · Black Flat - Open Grain — 27 mm"
+          - option "CTR · 3042WH · White Flat - Open Grain — 27 mm"
+          - option "CTR · 5819WH · Ravenna White Bevel - Open Grain — 58 mm"
+          - option "CTR · CR2253WH · Create White Flat - Open Grain — 22 mm"
+          - option "CTR · CR0717YW · Create Yellow Flat - Open Grain — 17 mm"
+          - option "CTR · 0403BK · Black Cushion - Open Grain — 20 mm"
+          - option "CTR · 5819IV · Ravenna Ivory Bevel - Open Grain — 58 mm"
+          - option "CTR · CR0717RD · Create Red Flat - Open Grain — 17 mm"
+          - option "CTR · CR1090BK · Create Black Flat - Open Grain — 35 mm"
+          - option "CTR · CR8005OA · Create Oak Flat - Closed Grain — 40 mm"
+          - option "CTR · CR0717OR · Create Orange Flat - Open Grain — 17 mm"
+          - option "CTR · CR0717MD · Create Midnight Flat - Open Grain — 17 mm"
+          - option "CTR · 0473BK · Casterbridge Black Step - Open Grain — 84 mm"
+          - option "CTR · 5819BK · Ravenna Black Bevel - Open Grain — 58 mm"
+          - option "CTR · 0472CM · Casterbridge Cream Step - Open Grain — 52 mm"
+          - option "CTR · CR0717DR · Create Dark Red Flat - Open Grain — 17 mm"
+          - option "CTR · CR0717NY · Create Navy Flat - Open Grain — 17 mm"
+          - option "CTR · 4426CM · Cream Scoop - Open Grain — 44 mm"
+          - option "CTR · CR0225BF · Create Brown Foil Flat - Open Grain — 21 mm"
+          - option "CTR · CR3330AG · Create Lustre Antique Gold Flat — 33 mm"
+          - option "CTR · 4924BG · Bergen Black and Gold Angled — 30 mm"
+          - option "MNL · POL-4721 · 30mm Flats Oak Woodgrain Polcore Moulding — 30 mm · discontinued"
+          - option "MNL · POL-4415 · 30mm Flats Brushed Bronze Polcore Moulding — 30 mm"
+          - option "MNL · POL-1301 · Starling 35mm Brushed Black Bronze Sides Polcore Moulding — 35 mm"
+          - option "MNL · POL-1336 · Nelson 38mm Distressed Black Polcore Moulding — 38 mm"
+          - option "MNL · POL-4202 · 30mm Flats Brushed Black Polcore Moulding — 30 mm"
+          - option "MNL · POL-4446 · Outline 30mm Brushed Black Gold Edges Polcore Moulding — 30 mm · discontinued"
+          - option "MNL · POL-4313 · Edge 43mm Brushed Silver SSE Polcore Moulding — 43 mm"
+          - option "MNL · POL-4436 · Edge 30mm Brushed Gold GSE Polcore Moulding — 30 mm"
+          - option "MNL · POL-7146 · L Shape 10mm White Woodgrain Polcore Moulding — 10 mm"
+          - option "MNL · POL-4416 · 30mm Flats Brushed Gunmetal Polcore Moulding — 30 mm"
+          - option "MNL · POL-2109 · Contemporary Classics 40mm Antique Gold Polcore Moulding — 40 mm"
+          - option "MNL · POL-4540 · Watercolour 25mm Antique Silver Polcore Moulding — 25 mm · discontinued"
+          - option "MNL · POL-4344 · 43mm Box Limed White Polcore Moulding — 43 mm"
+          - option "MNL · POL-7145 · L Shape 10mm Black Woodgrain Polcore Moulding — 10 mm"
+          - option "MNL · POL-7150 · Hockney 69mm Brushed White Polcore Moulding — 69 mm"
+          - option "MNL · POL-4541 · Watercolour 25mm Gold Polcore Moulding — 25 mm · discontinued"
+          - option "MNL · POL-4642 · Naples 31mm Gold Polcore Moulding — 31 mm"
+          - option "MNL · POL-4640 · Naples 48mm Gold Polcore Moulding — 48 mm"
+          - option "MNL · POL-4571 · 16mm Flats Brushed Oak Polcore Moulding — 16 mm"
+          - option "MNL · POL-2169 · 79mm Gold Polcore Moulding — 79 mm"
+          - option "MNL · POL-4506 · Paramount 53mm Brushed Gunmetal with Silver Slip Polcore Moulding — 53 mm · discontinued"
+          - option "MNL · POL-7149 · Hockney 69mm Brushed Black Polcore Moulding — 69 mm"
+          - option "MNL · POL-2190 · Contemporary Classics 70mm Black Polcore Moulding — 70 mm" [selected]
+          - option "MNL · POL-1009 · 28mm Flats Brushed Black Polcore Moulding — 28 mm"
+          - option "MNL · POL-1129 · Edge 30mm Brushed Silver Polcore Moulding — 30 mm"
+          - option "MNL · POL-1334 · Nelson 38mm Distressed Walnut Polcore Moulding — 38 mm"
+          - option "MNL · POL-7026 · Fletcher 30mm Walnut Woodgrain Polcore Moulding — 30 mm · discontinued"
+          - option "MNL · POL-2104 · Contemporary Classics 70mm Antique Gold Polcore Moulding — 70 mm"
+          - option "MNL · 010-1009 · Fletcher 53mm White Woodgrain Wood Moulding — 53 mm · discontinued"
+          - option "MNL · 010-4609 · Deep Rebate 27mm White Woodgrain Wood Moulding — 27 mm"
+          - option "MNL · 019-1272 · Richmond 12mm Antique Gold Wood Moulding — 12 mm"
+          - option "MNL · 010-4603 · Deep Rebate 27mm Black Woodgrain Wood Moulding — 27 mm"
+          - option "MNL · POL-4417 · Outline 30mm Brushed Black Silver Edges Polcore Moulding — 30 mm · discontinued"
+          - option "MNL · POL-4643 · Naples 31mm Silver Polcore Moulding — 31 mm"
+        - paragraph [ref=e212]: 70x30mm Contemporary Classic Matt Black
+        - generic [ref=e67]:
+          - text: SUPPLIER
+          - generic [ref=e68]: MNL
+          - text: FACE WIDTH
+          - generic [ref=e69]: 70 mm
+          - text: PROFILE DEPTH
+          - generic [ref=e70]: 30 mm
+          - text: RESPONSE
+          - generic [ref=e71]: Black · Matt · Contemporary Classics
+        - generic [ref=e72]:
+          - generic [ref=e73]: Supplier review
+          - text: supplier reference only · profile queued
+      - generic [ref=e74]:
+        - generic [ref=e75]: Profile comparison
+        - generic [ref=e76]:
+          - button "Current" [ref=e77]
+          - button "Catalogue" [ref=e79]
+        - paragraph [ref=e80]: Existing protected render
+      - generic [ref=e81]:
+        - generic [ref=e82]: Supplier references
+        - generic [ref=e83]:
+          - img "Contemporary Classics 70mm Black Polcore Moulding Rotation 01" [ref=e213]
+          - generic [ref=e85]: Rotation 01
+        - generic [ref=e86]:
+          - button "Rotation 01 01" [ref=e214]:
+            - img "Rotation 01" [ref=e215]
+            - generic [ref=e216]: "01"
+          - button "Rotation 12 02" [ref=e217]:
+            - img "Rotation 12" [ref=e218]
+            - generic [ref=e219]: "02"
+          - button "Rotation 23 03" [ref=e220]:
+            - img "Rotation 23" [ref=e221]
+            - generic [ref=e222]: "03"
+          - button "Rotation 34 04" [ref=e223]:
+            - img "Rotation 34" [ref=e224]
+            - generic [ref=e225]: "04"
+          - button "Rotation 45 05" [ref=e226]:
+            - img "Rotation 45" [ref=e227]
+            - generic [ref=e228]: "05"
+        - link "Open supplier product page ↗" [ref=e102] [cursor=pointer]:
+          - /url: https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/
+      - generic [ref=e103]:
+        - generic [ref=e104]: Artwork dimensions (mm)
+        - generic [ref=e105]:
+          - spinbutton "Artwork width" [ref=e106]: "700"
+          - spinbutton "Artwork height" [ref=e107]: "500"
+        - generic [ref=e108]: Replace artwork
+        - button "Choose File" [ref=e109]
+      - generic [ref=e110]:
+        - generic [ref=e111]: Mount
+        - combobox [ref=e112]:
+          - option "Off White" [selected]
+          - option "White"
+          - option "Cream"
+          - option "Light Grey"
+          - option "Black"
+        - generic [ref=e113]:
+          - button "No mount" [ref=e114]
+          - button "30 mm" [ref=e115]
+          - button "50 mm" [ref=e116]
+          - button "70 mm" [ref=e117]
+      - generic [ref=e118]:
+        - generic [ref=e119]: Glazing
+        - generic [ref=e120]:
+          - button "None" [ref=e121]
+          - button "Standard" [ref=e122]
+          - button "Museum" [ref=e123]
+      - generic [ref=e124]:
+        - generic [ref=e125]: Wall colour
+        - generic [ref=e126]:
+          - button "Wall colour White" [ref=e127]:
+            - generic [ref=e129]: White
+          - button "Wall colour Warm white" [ref=e130]:
+            - generic [ref=e132]: Warm white
+          - button "Wall colour Light grey" [ref=e133]:
+            - generic [ref=e135]: Light grey
+          - button "Wall colour Mid grey" [ref=e136]:
+            - generic [ref=e138]: Mid grey
+          - button "Wall colour Charcoal" [ref=e139]:
+            - generic [ref=e141]: Charcoal
+          - button "Wall colour Deep green" [ref=e142]:
+            - generic [ref=e144]: Deep green
+          - button "Wall colour Navy" [ref=e145]:
+            - generic [ref=e147]: Navy
+      - generic [ref=e148]:
+        - generic [ref=e149]: Lighting
+        - combobox [ref=e150]:
+          - option "Studio Soft"
+          - option "Window Left" [selected]
+          - option "Warm Interior"
+          - option "Dramatic Raking Light"
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - text: Key light
+            - generic [ref=e153]: 100%
+          - slider "Key light" [ref=e154]: "1"
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - text: Shadow fill
+            - generic [ref=e157]: 100%
+          - slider "Shadow fill" [ref=e158]: "1"
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - text: Exposure
+            - generic [ref=e161]: 1.00×
+          - slider "Exposure" [ref=e162]: "1"
+        - button "Reset light adjustments" [ref=e163]
+      - generic [ref=e164]:
+        - generic [ref=e165]: View
+        - generic [ref=e166]:
+          - button "Front" [ref=e167]
+          - button "Slight Angle" [ref=e168]
+          - button "Detail" [ref=e169]
+      - generic [ref=e170]:
+        - generic [ref=e171]: Geometry
+        - generic [ref=e172]:
+          - button "Profile" [ref=e173]
+          - button "Flat Legacy" [ref=e174]
+        - generic [ref=e175]: Material diagnostic
+        - generic [ref=e176]:
+          - button "Texture" [ref=e177]
+          - button "Clay" [ref=e178]
+          - button "Normal" [ref=e179]
+          - button "Wireframe" [ref=e180]
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - text: OUTER FRAME
+          - generic [ref=e183]: 940 × 740 mm
+          - text: MOUNT OPENING
+          - generic [ref=e184]: 700 × 500 mm
+        - button "Show diagnostic" [ref=e185]
+  - generic [ref=e188]:
+    - button "Menu" [ref=e189]:
+      - img [ref=e191]
+      - generic: Menu
+    - button "Inspect" [ref=e195]:
+      - img [ref=e197]
+      - generic: Inspect
+    - button "Audit" [ref=e199]:
+      - generic [ref=e200]:
+        - img [ref=e201]
+        - img [ref=e204]
+      - generic: Audit
+    - button "Settings" [ref=e207]:
+      - img [ref=e209]
+      - generic: Settings

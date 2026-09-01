@@ -1,0 +1,19 @@
+{
+  "sku": "019-1272",
+  "name": "Richmond 12mm Antique Gold Wood Moulding",
+  "widthMm": 12,
+  "depthMm": 14,
+  "rebateMm": 9,
+  "profileType": "cushion",
+  "page": 14,
+  "label": "019 1272",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 142,
+  "pixelHeight": 499,
+  "pdfImageBox": {
+    "x0": 388.063,
+    "top": 69.932,
+    "x1": 444.703,
+    "bottom": 269.612
+  }
+}

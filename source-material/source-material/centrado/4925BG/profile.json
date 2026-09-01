@@ -1,0 +1,117 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "4925BG",
+  "name": "Bergen Black and Gold Angled",
+  "productUrl": "https://centrado.co/product/bergen-black-and-gold-angled-4925bg/",
+  "widthMm": 49,
+  "depthMm": 25,
+  "rebateMm": 14,
+  "profileType": "angled",
+  "colourTags": [
+    "black",
+    "gold"
+  ],
+  "method": "dimensioned-profile-png-v1",
+  "accentWidthMm": 16,
+  "points": [
+    [
+      0.0,
+      17.829
+    ],
+    [
+      2.498,
+      18.702
+    ],
+    [
+      3.555,
+      19.38
+    ],
+    [
+      4.804,
+      20.543
+    ],
+    [
+      6.437,
+      22.965
+    ],
+    [
+      7.206,
+      25.0
+    ],
+    [
+      11.049,
+      25.0
+    ],
+    [
+      12.394,
+      22.868
+    ],
+    [
+      12.971,
+      22.481
+    ],
+    [
+      13.739,
+      22.674
+    ],
+    [
+      14.988,
+      24.031
+    ],
+    [
+      16.237,
+      24.031
+    ],
+    [
+      49.0,
+      9.981
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 112,
+      "right": 622,
+      "top": 210,
+      "baseline": 468
+    },
+    "pixelsPerMmX": 10.4082,
+    "pixelsPerMmZ": 10.32,
+    "anisotropyFraction": 0.00847,
+    "sampleCount": 540,
+    "simplifiedPointCount": 13
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4925BG.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4925-Profile.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/4925BG_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Bergen-Macro_Gallery-3.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "framed-reference.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Bergen-BG_Gallery-1.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

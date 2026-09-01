@@ -1,0 +1,81 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR1013BK",
+  "name": "Create Black Cushion - Closed Grain",
+  "description": "14x13mm Closed Grain Black Create Cushion Moulding",
+  "productUrl": "https://centrado.co/product/create-black-cushion-closed-grain-cr1013bk/",
+  "widthMm": 14.0,
+  "depthMm": 13.0,
+  "rebateMm": 7.3,
+  "profileType": "cushion",
+  "colourTags": [
+    "black"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      12.026
+    ],
+    [
+      0.783,
+      12.513
+    ],
+    [
+      1.664,
+      12.805
+    ],
+    [
+      4.112,
+      13.0
+    ],
+    [
+      12.238,
+      12.951
+    ],
+    [
+      13.413,
+      12.61
+    ],
+    [
+      14.0,
+      12.075
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 244,
+      "right": 530,
+      "top": 168,
+      "baseline": 435
+    },
+    "pixelsPerMmX": 20.4286,
+    "pixelsPerMmZ": 20.5385,
+    "anisotropyFraction": 0.00535,
+    "sampleCount": 286,
+    "simplifiedPointCount": 7
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1013BK.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1013BK-Profile.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR1013BK_Chevron.jpg",
+      "width": 2077,
+      "height": 2077
+    }
+  ],
+  "rendererIntegrated": true
+}

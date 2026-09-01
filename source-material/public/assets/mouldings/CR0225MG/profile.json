@@ -1,0 +1,69 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR0225MG",
+  "name": "Create Matt Gold Flat",
+  "description": "21x22mm Matt Closed Grain Gold Create Flat Moulding",
+  "productUrl": "https://centrado.co/product/create-matt-gold-flat-cr0225mg/",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "profileType": "flat",
+  "colourTags": [
+    "gold"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      21.637
+    ],
+    [
+      0.415,
+      22.0
+    ],
+    [
+      20.585,
+      22.0
+    ],
+    [
+      21.0,
+      21.689
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 192,
+      "right": 597,
+      "top": 63,
+      "baseline": 487
+    },
+    "pixelsPerMmX": 19.2857,
+    "pixelsPerMmZ": 19.2727,
+    "anisotropyFraction": 0.00067,
+    "sampleCount": 406,
+    "simplifiedPointCount": 4
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225MG.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225-Profile-17.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225MG_Chevron.jpg",
+      "width": 2077,
+      "height": 2077
+    }
+  ],
+  "rendererIntegrated": true
+}

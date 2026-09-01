@@ -1,0 +1,75 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "HS9",
+  "name": "Raw Pine Stretcher FSC \u00ae",
+  "description": "31x27mm Raw Pine Stretcher Moulding FSC",
+  "productUrl": "https://centrado.co/product/raw-pine-stretcher-fsc-hs9/",
+  "widthMm": 31.0,
+  "depthMm": 27.0,
+  "rebateMm": 15.1,
+  "profileType": "flat",
+  "colourTags": [
+    "pine"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      1.075
+    ],
+    [
+      8.556,
+      21.183
+    ],
+    [
+      26.784,
+      26.874
+    ],
+    [
+      27.652,
+      27.0
+    ],
+    [
+      29.512,
+      26.874
+    ],
+    [
+      30.38,
+      26.241
+    ],
+    [
+      31.0,
+      25.23
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 150,
+      "right": 650,
+      "top": 96,
+      "baseline": 523
+    },
+    "pixelsPerMmX": 16.129,
+    "pixelsPerMmZ": 15.8148,
+    "anisotropyFraction": 0.01948,
+    "sampleCount": 687,
+    "simplifiedPointCount": 7
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/HS9.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/HS9-Profile.png",
+      "width": 700,
+      "height": 700
+    }
+  ],
+  "rendererIntegrated": true
+}

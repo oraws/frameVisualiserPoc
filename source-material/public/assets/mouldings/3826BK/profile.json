@@ -1,0 +1,353 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "3826BK",
+  "name": "Kashmir Decorative Black Bevel",
+  "description": "63x25mm Decorative Black Kashmir Bevel Moulding",
+  "productUrl": "https://centrado.co/product/kashmir-decorative-black-bevel-3826bk/",
+  "widthMm": 63.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "profileType": "angled",
+  "colourTags": [
+    "black"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      16.905
+    ],
+    [
+      3.415,
+      17.143
+    ],
+    [
+      3.533,
+      17.262
+    ],
+    [
+      7.419,
+      17.262
+    ],
+    [
+      7.772,
+      17.024
+    ],
+    [
+      8.714,
+      17.024
+    ],
+    [
+      9.185,
+      17.5
+    ],
+    [
+      10.009,
+      17.5
+    ],
+    [
+      10.245,
+      18.333
+    ],
+    [
+      11.305,
+      19.048
+    ],
+    [
+      12.129,
+      19.167
+    ],
+    [
+      12.953,
+      20.0
+    ],
+    [
+      13.307,
+      20.119
+    ],
+    [
+      14.013,
+      20.0
+    ],
+    [
+      15.191,
+      20.119
+    ],
+    [
+      18.252,
+      18.81
+    ],
+    [
+      19.312,
+      17.976
+    ],
+    [
+      20.607,
+      18.095
+    ],
+    [
+      21.667,
+      18.69
+    ],
+    [
+      22.609,
+      18.571
+    ],
+    [
+      23.08,
+      18.333
+    ],
+    [
+      23.787,
+      18.333
+    ],
+    [
+      24.258,
+      18.81
+    ],
+    [
+      24.847,
+      18.81
+    ],
+    [
+      25.436,
+      18.452
+    ],
+    [
+      25.907,
+      18.452
+    ],
+    [
+      26.26,
+      18.69
+    ],
+    [
+      29.321,
+      18.81
+    ],
+    [
+      30.264,
+      19.167
+    ],
+    [
+      31.206,
+      19.881
+    ],
+    [
+      31.794,
+      20.0
+    ],
+    [
+      33.796,
+      19.881
+    ],
+    [
+      34.856,
+      19.643
+    ],
+    [
+      35.563,
+      19.167
+    ],
+    [
+      36.74,
+      19.167
+    ],
+    [
+      37.8,
+      19.405
+    ],
+    [
+      38.389,
+      20.0
+    ],
+    [
+      38.507,
+      20.595
+    ],
+    [
+      39.095,
+      21.429
+    ],
+    [
+      40.037,
+      21.548
+    ],
+    [
+      40.508,
+      22.024
+    ],
+    [
+      41.804,
+      22.738
+    ],
+    [
+      42.981,
+      22.738
+    ],
+    [
+      44.277,
+      22.024
+    ],
+    [
+      45.101,
+      21.19
+    ],
+    [
+      45.572,
+      21.19
+    ],
+    [
+      46.396,
+      22.143
+    ],
+    [
+      47.338,
+      22.381
+    ],
+    [
+      48.398,
+      23.333
+    ],
+    [
+      49.458,
+      23.69
+    ],
+    [
+      49.929,
+      24.524
+    ],
+    [
+      50.636,
+      25.0
+    ],
+    [
+      52.049,
+      24.881
+    ],
+    [
+      52.755,
+      24.167
+    ],
+    [
+      53.226,
+      23.214
+    ],
+    [
+      53.815,
+      23.214
+    ],
+    [
+      53.933,
+      23.571
+    ],
+    [
+      54.875,
+      24.286
+    ],
+    [
+      55.699,
+      24.405
+    ],
+    [
+      56.17,
+      24.167
+    ],
+    [
+      56.641,
+      24.167
+    ],
+    [
+      56.877,
+      24.405
+    ],
+    [
+      57.583,
+      24.524
+    ],
+    [
+      58.996,
+      24.048
+    ],
+    [
+      59.585,
+      23.452
+    ],
+    [
+      60.409,
+      23.452
+    ],
+    [
+      61.116,
+      23.81
+    ],
+    [
+      61.469,
+      23.81
+    ],
+    [
+      63.0,
+      22.857
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 98,
+      "right": 633,
+      "top": 218,
+      "baseline": 428
+    },
+    "pixelsPerMmX": 8.4921,
+    "pixelsPerMmZ": 8.4,
+    "anisotropyFraction": 0.01084,
+    "sampleCount": 555,
+    "simplifiedPointCount": 69
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826BK.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826-Profile.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826BK_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Kashmir-Macro_Gallery-6.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "framed-reference.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Kashmir-BK_Gallery-1.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-1.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826BK-3DB.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-2.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3826BK-3DF.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

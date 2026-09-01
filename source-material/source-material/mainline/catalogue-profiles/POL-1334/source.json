@@ -1,0 +1,19 @@
+{
+  "sku": "POL-1334",
+  "name": "Nelson 38mm Distressed Walnut Polcore Moulding",
+  "widthMm": 38,
+  "depthMm": 28,
+  "rebateMm": 22,
+  "profileType": "flat",
+  "page": 144,
+  "label": "POL 1334",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 269,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 649.134,
+    "top": 70.369,
+    "x1": 756.894,
+    "bottom": 270.769
+  }
+}

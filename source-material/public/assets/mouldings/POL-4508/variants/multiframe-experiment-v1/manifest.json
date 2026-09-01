@@ -1,0 +1,43 @@
+{
+  "id": "multiframe-experiment-v1",
+  "sku": "POL-4508",
+  "label": "Supplier spin multi-frame experiment",
+  "status": "experimental",
+  "productUrl": "https://mainlinemouldings.com/paramount-black-sse-30mm-polcore-moulding/?searchuuid=3d2309b3-b76f-48fb-a6c5-2e31965a7707&search_query=POL-4508",
+  "source": "Mainline Lv2 spin images only",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crop": [
+    88,
+    78,
+    125,
+    226
+  ],
+  "alignmentShiftsPx": [
+    4,
+    -4,
+    -3,
+    0,
+    3,
+    4,
+    0
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "ece2292d8636a83a70b97e5fba16c01ff17fc776278342349974553661498918",
+      "roughness.jpg": "f06d3ee5b568bbc8f02c59fb2039d884ef241572d51b2cbe61ae0de2f366d4ff",
+      "bump.jpg": "0423edcabb10bf3fb3f3182917b7077c5283d87ab5e8d69ace9884f764ee1885"
+    }
+  },
+  "activation": "Manual review required"
+}

@@ -1,0 +1,118 @@
+{
+  "supplier": "Mainline",
+  "sku": "010-4603",
+  "source": "ml_catalogue.pdf page 36",
+  "method": "catalogue-cross-section-grabcut-edge-snap",
+  "widthMm": 27,
+  "depthMm": 40,
+  "rebateMm": 33,
+  "confidence": 0.9945,
+  "reviewBand": "high",
+  "scores": {
+    "materialSeparation": 1,
+    "continuity": 0.9979,
+    "coverage": 0.9793,
+    "dimensionCalibration": 1
+  },
+  "points": [
+    [
+      0.0,
+      7.0
+    ],
+    [
+      2.585,
+      40.0
+    ],
+    [
+      5.027,
+      40.0
+    ],
+    [
+      7.468,
+      40.0
+    ],
+    [
+      9.91,
+      40.0
+    ],
+    [
+      12.351,
+      40.0
+    ],
+    [
+      14.793,
+      40.0
+    ],
+    [
+      17.234,
+      40.0
+    ],
+    [
+      19.676,
+      40.0
+    ],
+    [
+      22.117,
+      40.0
+    ],
+    [
+      24.559,
+      40.0
+    ],
+    [
+      27.0,
+      40.0
+    ]
+  ],
+  "sourceTracePixelsRightToLeft": [
+    [
+      190.0,
+      216.0
+    ],
+    [
+      172.0,
+      215.0
+    ],
+    [
+      155.0,
+      215.0
+    ],
+    [
+      138.0,
+      215.0
+    ],
+    [
+      121.0,
+      215.0
+    ],
+    [
+      104.0,
+      215.0
+    ],
+    [
+      87.0,
+      215.0
+    ],
+    [
+      70.0,
+      215.0
+    ],
+    [
+      53.0,
+      215.0
+    ],
+    [
+      36.0,
+      215.0
+    ],
+    [
+      19.0,
+      215.0
+    ],
+    [
+      2.0,
+      215.0
+    ]
+  ],
+  "status": "experimental-catalogue-candidate"
+}

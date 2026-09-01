@@ -1,0 +1,119 @@
+{
+  "supplier": "Mainline",
+  "sku": "POL-4100",
+  "name": "Brushed Black 41mm Polcore Moulding",
+  "productUrl": "https://mainlinemouldings.com/brushed-black-41mm-polcore-moulding/?searchuuid=58e99621-bebd-4bdc-b882-d9ee484572ec&search_query=pol4100",
+  "method": "multi-frame-exposed-cut-section-v2-metric",
+  "widthMm": 41.0,
+  "depthMm": 13.0,
+  "rebateMm": 9.0,
+  "sourceImageCount": 45,
+  "selectedFrameCount": 3,
+  "selectedFrames": [
+    {
+      "label": "img22",
+      "filename": "img22.jpg",
+      "overlay": "img22-overlay.png",
+      "mask": "img22-cut-mask.png",
+      "edgeScore": 110.535,
+      "quality": 0.621,
+      "depthSpanPixels": 4.0,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.0,
+        "scale": 1.0,
+        "offsetMm": 0.3981
+      }
+    },
+    {
+      "label": "img23",
+      "filename": "img23.jpg",
+      "overlay": "img23-overlay.png",
+      "mask": "img23-cut-mask.png",
+      "edgeScore": 111.019,
+      "quality": 0.6209,
+      "depthSpanPixels": 3.92,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.0,
+        "scale": 1.0,
+        "offsetMm": 0.0
+      }
+    },
+    {
+      "label": "img24",
+      "filename": "img24.jpg",
+      "overlay": "img24-overlay.png",
+      "mask": "img24-cut-mask.png",
+      "edgeScore": 99.081,
+      "quality": 0.6441,
+      "depthSpanPixels": 9.82,
+      "registration": {
+        "horizontalShiftSamples": 0,
+        "projectiveWarp": 0.0,
+        "scale": 1.0095,
+        "offsetMm": -0.123
+      }
+    }
+  ],
+  "points": [
+    [
+      0.0,
+      11.21
+    ],
+    [
+      0.683,
+      11.798
+    ],
+    [
+      1.196,
+      11.814
+    ],
+    [
+      1.708,
+      12.176
+    ],
+    [
+      9.054,
+      12.232
+    ],
+    [
+      9.567,
+      12.576
+    ],
+    [
+      16.4,
+      12.629
+    ],
+    [
+      16.913,
+      12.974
+    ],
+    [
+      40.146,
+      12.974
+    ],
+    [
+      40.487,
+      12.711
+    ],
+    [
+      41.0,
+      11.608
+    ]
+  ],
+  "validation": {
+    "heldOutMedianBoundaryPixels": 0.0,
+    "heldOutP95BoundaryPixels": 1.0,
+    "crossSubsetP95ProfileMm": 0.338,
+    "dimensionResidualMm": 0.0,
+    "passesInitialGate": true
+  },
+  "status": "experimental-pass",
+  "rendererIntegrated": false,
+  "limitations": [
+    "Supplier spin imagery is low resolution",
+    "Macro profile only; ornament relief is a later material stage",
+    "Acceptance requires review of automatic overlays"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "sku": "POL-7026",
+  "name": "Fletcher 30mm Walnut Woodgrain Polcore Moulding",
+  "widthMm": 30,
+  "depthMm": 20,
+  "rebateMm": 9,
+  "profileType": "scoop",
+  "page": 132,
+  "label": "POL 7026",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 213,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 389.958,
+    "top": 70.126,
+    "x1": 475.158,
+    "bottom": 269.806
+  }
+}

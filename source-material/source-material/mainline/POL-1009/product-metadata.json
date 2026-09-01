@@ -1,0 +1,24 @@
+{
+  "sku": "POL-1009",
+  "invoiceDescription": "Plastic Picture Moulding",
+  "name": "28mm Flats Brushed Black Polcore Moulding",
+  "description": null,
+  "metaDescription": "Premium 28mm Brushed Black  flat Polcore moulding. Beautiful textured finish perfect for modern artwork, photo-frames and professional framing.",
+  "productUrl": "https://mainlinemouldings.com/basics-brushed-black-28mm-polcore-moulding/",
+  "discoveredFrom": "https://mainlinemouldings.com/basics-brushed-black-28mm-polcore-moulding/?searchuuid=5b77c446-91b3-444a-ae97-9c0f68ce5d64&search_query=POL-1009",
+  "discontinued": false,
+  "details": {
+    "colour": "Black",
+    "profile": "Flat",
+    "finish": "Brushed",
+    "range": "Basics 28mm Flats"
+  },
+  "dimensions": {
+    "length": "2.9m",
+    "widthMm": 28,
+    "depthMm": 16,
+    "rebateMm": 10
+  },
+  "spinImageCount": 45,
+  "importedAt": "2026-08-27T08:52:10.950Z"
+}

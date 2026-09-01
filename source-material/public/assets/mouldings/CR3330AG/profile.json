@@ -1,0 +1,89 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR3330AG",
+  "name": "Create Lustre Antique Gold Flat",
+  "description": "33x30mm Antique Gold Create Lustre Flat Moulding",
+  "productUrl": "https://centrado.co/product/create-lustre-antique-gold-flat-cr3330ag/",
+  "widthMm": 33.0,
+  "depthMm": 30.0,
+  "rebateMm": 16.8,
+  "profileType": "flat",
+  "colourTags": [
+    "gold"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      29.238
+    ],
+    [
+      0.484,
+      29.792
+    ],
+    [
+      0.899,
+      30.0
+    ],
+    [
+      32.101,
+      30.0
+    ],
+    [
+      32.516,
+      29.792
+    ],
+    [
+      33.0,
+      29.238
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 142,
+      "right": 619,
+      "top": 100,
+      "baseline": 533
+    },
+    "pixelsPerMmX": 14.4545,
+    "pixelsPerMmZ": 14.4333,
+    "anisotropyFraction": 0.00147,
+    "sampleCount": 480,
+    "simplifiedPointCount": 6
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3330AG.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3330-Profile-1.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR3330AG_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Create-Lustre-Macro_Gallery-9.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "framed-reference.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Create-Lustre-AG_Gallery-3.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

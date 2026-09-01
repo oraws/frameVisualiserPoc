@@ -1,0 +1,69 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "CR0225BN",
+  "name": "Create Brown Flat - Closed Grain",
+  "description": "22x22mm Brown Closed Grain Create Flat Moulding",
+  "productUrl": "https://centrado.co/product/create-brown-flat-closed-grain-cr0225bn/",
+  "widthMm": 22.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "profileType": "flat",
+  "colourTags": [
+    "brown"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      21.637
+    ],
+    [
+      0.435,
+      22.0
+    ],
+    [
+      21.565,
+      22.0
+    ],
+    [
+      22.0,
+      21.689
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 192,
+      "right": 597,
+      "top": 63,
+      "baseline": 487
+    },
+    "pixelsPerMmX": 18.4091,
+    "pixelsPerMmZ": 19.2727,
+    "anisotropyFraction": 0.04481,
+    "sampleCount": 406,
+    "simplifiedPointCount": 4
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225BN.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225-Profile-5.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/CR0225BN_Chevron.jpg",
+      "width": 2077,
+      "height": 2077
+    }
+  ],
+  "rendererIntegrated": true
+}

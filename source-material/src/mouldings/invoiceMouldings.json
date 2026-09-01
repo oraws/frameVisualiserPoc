@@ -1,0 +1,1524 @@
+[
+  {
+    "sku": "POL-4721",
+    "supplier": "Mainline",
+    "name": "30mm Flats Oak Woodgrain Polcore Moulding",
+    "description": "30x16mm Flat Oak Woodgrain Picture Frame Moulding.",
+    "widthMm": 30,
+    "depthMm": 16,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Oak · Wood Grain · 30mm Flats",
+    "baseColor": "#a77b47",
+    "roughness": 0.76,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": true,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/30mm-woodgrain-oak-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4721/Images/POL4721/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4721/Images/POL4721/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4721/Images/POL4721/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4721/Images/POL4721/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4721/Images/POL4721/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4415",
+    "supplier": "Mainline",
+    "name": "30mm Flats Brushed Bronze Polcore Moulding",
+    "description": "30x16mm Flat Brushed Bronze Picture Frame Moulding.",
+    "widthMm": 30,
+    "depthMm": 16,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Bronze · Brushed · 30mm Flats",
+    "baseColor": "#5c4c3a",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/30mm-flat-bronze-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4415/Images/POL4415/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4415/Images/POL4415/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4415/Images/POL4415/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4415/Images/POL4415/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4415/Images/POL4415/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-1301",
+    "supplier": "Mainline",
+    "name": "Starling 35mm Brushed Black Bronze Sides Polcore Moulding",
+    "description": "35x15mm Starling Brushed Black Bronze Sides Picture Frame Moulding",
+    "widthMm": 35,
+    "depthMm": 15,
+    "rebateMm": 7,
+    "profileType": "scoop",
+    "finish": "Black · Brushed · Starling Polcore",
+    "baseColor": "#171817",
+    "roughness": 0.66,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/starling-black-gse-35mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1301/Images/POL1301/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1301/Images/POL1301/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1301/Images/POL1301/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1301/Images/POL1301/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1301/Images/POL1301/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-1336",
+    "supplier": "Mainline",
+    "name": "Nelson 38mm Distressed Black Polcore Moulding",
+    "description": "With its deep rebate and stylish distressed finish, the 38x28mm Nelson Distressed Black Polcore Moulding is ideal for framing artsy-crafty items and artwork, posters, and all types of memorabilia. A popular, great-value choice.",
+    "widthMm": 38,
+    "depthMm": 28,
+    "rebateMm": 22,
+    "profileType": "flat",
+    "finish": "Black · Wood Grain · Nelson",
+    "baseColor": "#171817",
+    "roughness": 0.76,
+    "ornament": 0.08,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/nelson-black-38mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1336/Images/POL1336/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1336/Images/POL1336/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1336/Images/POL1336/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1336/Images/POL1336/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1336/Images/POL1336/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4202",
+    "supplier": "Mainline",
+    "name": "30mm Flats Brushed Black Polcore Moulding",
+    "description": "30x16mm Flat Brushed Black Picture Frame Moulding.",
+    "widthMm": 30,
+    "depthMm": 16,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Black · Brushed · 30mm Flats",
+    "baseColor": "#171817",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/30mm-flats-brushed-black-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4202/Images/POL4202/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4202/Images/POL4202/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4202/Images/POL4202/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4202/Images/POL4202/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4202/Images/POL4202/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4446",
+    "supplier": "Mainline",
+    "name": "Outline 30mm Brushed Black Gold Edges Polcore Moulding",
+    "description": "30x16mm Outline Brushed Black Gold Edges Picture Frame Moulding.",
+    "widthMm": 30,
+    "depthMm": 16,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Black · Brushed · Outline",
+    "baseColor": "#171817",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "supplier-reference",
+    "discontinued": true,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/outline-black-gse-30mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4446/Images/POL4446/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4446/Images/POL4446/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4446/Images/POL4446/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4446/Images/POL4446/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4446/Images/POL4446/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4313",
+    "supplier": "Mainline",
+    "name": "Edge 43mm Brushed Silver SSE Polcore Moulding",
+    "description": "43x20mm Edge Brushed Silver Silver Edge Picture Frame Moulding.",
+    "widthMm": 43,
+    "depthMm": 20,
+    "rebateMm": 14,
+    "profileType": "flat",
+    "finish": "Silver · Brushed · Edge Polcore",
+    "baseColor": "#b9bdbe",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/edge-silver-sse-43mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4313/Images/POL4313/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4313/Images/POL4313/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4313/Images/POL4313/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4313/Images/POL4313/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4313/Images/POL4313/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4436",
+    "supplier": "Mainline",
+    "name": "Edge 30mm Brushed Gold GSE Polcore Moulding",
+    "description": "Edge 30mm Brushed Gold Polcore moulding. Elegant slim profile with warm brushed gold finish. Ideal for modern photo frames, portraits and fine art photography. Lightweight and outstanding value.",
+    "widthMm": 30,
+    "depthMm": 30,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Gold · Brushed · Edge Polcore",
+    "baseColor": "#96743b",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/edge-gold-30mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4436/Images/POL4436/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4436/Images/POL4436/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4436/Images/POL4436/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4436/Images/POL4436/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4436/Images/POL4436/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-7146",
+    "supplier": "Mainline",
+    "name": "L Shape 10mm White Woodgrain Polcore Moulding",
+    "description": "Shop the White Woodgrain L Shape online at Mainline Mouldings. We offer a wide range of framing materials and framing equipment to help you create beautiful and professional frames for your artwork or photographs. The White Woodgrain L Shape is made from high-quality wood with a white woodgrain finish, adding a touch of elegance and rustic charm to your frames. Perfect for professional framers and DIY enthusiasts alike.",
+    "widthMm": 10,
+    "depthMm": 45,
+    "rebateMm": 33,
+    "profileType": "l-shape",
+    "finish": "White · Wood Grain Matt · L Shapes Polcore",
+    "baseColor": "#e3e1da",
+    "roughness": 0.84,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/l-shape-10mm-white-woodgrain-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7146/Images/POL7146/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7146/Images/POL7146/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7146/Images/POL7146/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7146/Images/POL7146/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7146/Images/POL7146/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4416",
+    "supplier": "Mainline",
+    "name": "30mm Flats Brushed Gunmetal Polcore Moulding",
+    "description": "30x16mm Flat Brushed Charcoal Picture Frame Moulding.",
+    "widthMm": 30,
+    "depthMm": 16,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Gunmetal · Brushed · 30mm Flats",
+    "baseColor": "#50555a",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/30mm-flat-brushed-gunmetal-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4416/Images/POL4416/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4416/Images/POL4416/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4416/Images/POL4416/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4416/Images/POL4416/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4416/Images/POL4416/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-2109",
+    "supplier": "Mainline",
+    "name": "Contemporary Classics 40mm Antique Gold Polcore Moulding",
+    "description": "40x21mm Contemporary Classic Antique Gold Picture Frame Moulding.",
+    "widthMm": 40,
+    "depthMm": 21,
+    "rebateMm": 10,
+    "profileType": "scoop",
+    "finish": "Gold · Antique · Contemporary Classics",
+    "baseColor": "#96743b",
+    "roughness": 0.58,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/contemporary-classics-antique-gold-40mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2109/Images/POL2109/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2109/Images/POL2109/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2109/Images/POL2109/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2109/Images/POL2109/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2109/Images/POL2109/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4540",
+    "supplier": "Mainline",
+    "name": "Watercolour 25mm Antique Silver Polcore Moulding",
+    "description": "25x18mm Watercolour Silver Reverse Polcore Picture Frame Moulding",
+    "widthMm": 25,
+    "depthMm": 18,
+    "rebateMm": 11,
+    "profileType": "reverse",
+    "finish": "Silver · Leaf · Watercolour",
+    "baseColor": "#b9bdbe",
+    "roughness": 0.58,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": true,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/watercolour-silver-25mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4540/Images/POL4540/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4540/Images/POL4540/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4540/Images/POL4540/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4540/Images/POL4540/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4540/Images/POL4540/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4344",
+    "supplier": "Mainline",
+    "name": "43mm Box Limed White Polcore Moulding",
+    "description": "43x32mm Flat Box Limed White Picture Frame Moulding.",
+    "widthMm": 43,
+    "depthMm": 32,
+    "rebateMm": 26,
+    "profileType": "flat",
+    "finish": "White · Limed · 43x32mm Box",
+    "baseColor": "#e3e1da",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/box-white-43mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4344/Images/POL4344/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4344/Images/POL4344/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4344/Images/POL4344/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4344/Images/POL4344/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4344/Images/POL4344/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-7145",
+    "supplier": "Mainline",
+    "name": "L Shape 10mm Black Woodgrain Polcore Moulding",
+    "description": "Discover the perfect framing materials and framing equipment at Mainline Mouldings. Buy the Black Woodgrain L Shape Moulding online and add a stylish touch to your artwork or photographs. Shop now!",
+    "widthMm": 10,
+    "depthMm": 45,
+    "rebateMm": 33,
+    "profileType": "l-shape",
+    "finish": "Black · Wood Grain Matt · L Shapes Polcore",
+    "baseColor": "#171817",
+    "roughness": 0.84,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/l-shape-10mm-black-woodgrain-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7145/Images/POL7145/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7145/Images/POL7145/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7145/Images/POL7145/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7145/Images/POL7145/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7145/Images/POL7145/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-7150",
+    "supplier": "Mainline",
+    "name": "Hockney 69mm Brushed White Polcore Moulding",
+    "description": "69x40mm Hockney scoop Brushed White Picture Frame Moulding.",
+    "widthMm": 69,
+    "depthMm": 40,
+    "rebateMm": 18,
+    "profileType": "scoop",
+    "finish": "White · Brushed · Hockney Polcore",
+    "baseColor": "#e3e1da",
+    "roughness": 0.66,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/hockney-69mm-brushed-white-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7150/Images/POL7150/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7150/Images/POL7150/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7150/Images/POL7150/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7150/Images/POL7150/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7150/Images/POL7150/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4541",
+    "supplier": "Mainline",
+    "name": "Watercolour 25mm Gold Polcore Moulding",
+    "description": "25x18mm Watercolour Gold Reverse Picture Frame Moulding.",
+    "widthMm": 25,
+    "depthMm": 18,
+    "rebateMm": 11,
+    "profileType": "reverse",
+    "finish": "Gold · Leaf · Watercolour",
+    "baseColor": "#96743b",
+    "roughness": 0.58,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": true,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/watercolour-gold-25mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4541/Images/POL4541/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4541/Images/POL4541/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4541/Images/POL4541/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4541/Images/POL4541/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4541/Images/POL4541/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4642",
+    "supplier": "Mainline",
+    "name": "Naples 31mm Gold Polcore Moulding",
+    "description": "31x15mm Naples Flat Gold with lip Picture Frame Moulding",
+    "widthMm": 31,
+    "depthMm": 15,
+    "rebateMm": 7,
+    "profileType": "flat",
+    "finish": "Gold · Leaf · Naples Polcore",
+    "baseColor": "#96743b",
+    "roughness": 0.58,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/naples-gold-31mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4642/Images/POL4642/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4642/Images/POL4642/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4642/Images/POL4642/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4642/Images/POL4642/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4642/Images/POL4642/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4640",
+    "supplier": "Mainline",
+    "name": "Naples 48mm Gold Polcore Moulding",
+    "description": "48x19mm Naples Flat Gold with lip Picture Frame Moulding",
+    "widthMm": 48,
+    "depthMm": 18,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Gold · Leaf · Naples Polcore",
+    "baseColor": "#96743b",
+    "roughness": 0.58,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/naples-gold-48mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4640/Images/POL4640/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4640/Images/POL4640/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4640/Images/POL4640/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4640/Images/POL4640/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4640/Images/POL4640/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4571",
+    "supplier": "Mainline",
+    "name": "16mm Flats Brushed Oak Polcore Moulding",
+    "description": "16x14mm Flat Brushed Oak Picture Frame Moulding.",
+    "widthMm": 16,
+    "depthMm": 15,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Oak · Wood Grain Brushed · 16x14mm Flats",
+    "baseColor": "#a77b47",
+    "roughness": 0.76,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/16mm-flat-oak-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4571/Images/POL4571/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4571/Images/POL4571/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4571/Images/POL4571/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4571/Images/POL4571/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4571/Images/POL4571/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-2169",
+    "supplier": "Mainline",
+    "name": "79mm Gold Polcore Moulding",
+    "description": "79x22mm Flat Gold with Lip Picture Frame Moulding",
+    "widthMm": 79,
+    "depthMm": 27,
+    "rebateMm": 15,
+    "profileType": "flat",
+    "finish": "Gold · Smooth · Pink",
+    "baseColor": "#96743b",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/basics-gold-79mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2169/Images/POL2169/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2169/Images/POL2169/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2169/Images/POL2169/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2169/Images/POL2169/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2169/Images/POL2169/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4506",
+    "supplier": "Mainline",
+    "name": "Paramount 53mm Brushed Gunmetal with Silver Slip Polcore Moulding",
+    "description": "*OBSOLETE* 53x30mm Paramount Brushed Gunmetal with Silver Slip Picture Frame Moulding.",
+    "widthMm": 53,
+    "depthMm": 30,
+    "rebateMm": 13,
+    "profileType": "flat",
+    "finish": "Gunmetal · Brushed · Paramount",
+    "baseColor": "#50555a",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "supplier-reference",
+    "discontinued": true,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/paramount-gunmetal-53mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4506/Images/POL4506/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4506/Images/POL4506/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4506/Images/POL4506/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4506/Images/POL4506/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4506/Images/POL4506/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-7149",
+    "supplier": "Mainline",
+    "name": "Hockney 69mm Brushed Black Polcore Moulding",
+    "description": "69x40mm Hockney scoop Brushed Black Picture Frame Picture Frame Moulding.",
+    "widthMm": 69,
+    "depthMm": 40,
+    "rebateMm": 18,
+    "profileType": "scoop",
+    "finish": "Black · Brushed · Hockney Polcore",
+    "baseColor": "#171817",
+    "roughness": 0.66,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/hockney-69mm-brushed-black-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7149/Images/POL7149/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7149/Images/POL7149/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7149/Images/POL7149/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7149/Images/POL7149/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7149/Images/POL7149/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-2190",
+    "supplier": "Mainline",
+    "name": "Contemporary Classics 70mm Black Polcore Moulding",
+    "description": "70x30mm Contemporary Classic Matt Black",
+    "widthMm": 70,
+    "depthMm": 30,
+    "rebateMm": 15,
+    "profileType": "scoop",
+    "finish": "Black · Matt · Contemporary Classics",
+    "baseColor": "#171817",
+    "roughness": 0.84,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2190/Images/POL2190/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2190/Images/POL2190/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2190/Images/POL2190/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2190/Images/POL2190/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2190/Images/POL2190/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-1009",
+    "supplier": "Mainline",
+    "name": "28mm Flats Brushed Black Polcore Moulding",
+    "description": "Premium 28mm Brushed Black  flat Polcore moulding. Beautiful textured finish perfect for modern artwork, photo-frames and professional framing.",
+    "widthMm": 28,
+    "depthMm": 16,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Black · Brushed · Basics 28mm Flats",
+    "baseColor": "#171817",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/basics-brushed-black-28mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1009/Images/POL1009/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1009/Images/POL1009/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1009/Images/POL1009/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1009/Images/POL1009/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1009/Images/POL1009/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-1129",
+    "supplier": "Mainline",
+    "name": "Edge 30mm Brushed Silver Polcore Moulding",
+    "description": "30x16mm Edge Brushed Silver Picture Frame Moulding",
+    "widthMm": 30,
+    "depthMm": 16,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Silver · Brushed · Edge Polcore",
+    "baseColor": "#b9bdbe",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/basics-edge-silver-30mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1129/Images/POL1129/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1129/Images/POL1129/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1129/Images/POL1129/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1129/Images/POL1129/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1129/Images/POL1129/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-1334",
+    "supplier": "Mainline",
+    "name": "Nelson 38mm Distressed Walnut Polcore Moulding",
+    "description": "Rich and warm, the 38x28mm Nelson Distressed Walnut Polcore Moulding with deep rebate is ideal for framing posters and craft items. A great-value wood-effect option with character.",
+    "widthMm": 38,
+    "depthMm": 28,
+    "rebateMm": 22,
+    "profileType": "flat",
+    "finish": "Walnut · Distressed · Nelson",
+    "baseColor": "#60452f",
+    "roughness": 0.76,
+    "ornament": 0.08,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/nelson-walnut-38mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1334/Images/POL1334/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1334/Images/POL1334/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1334/Images/POL1334/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1334/Images/POL1334/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL1334/Images/POL1334/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-7026",
+    "supplier": "Mainline",
+    "name": "Fletcher 30mm Walnut Woodgrain Polcore Moulding",
+    "description": "30x20mm Fletcher Walnut Woodgrain Picture Frame Moulding",
+    "widthMm": 30,
+    "depthMm": 20,
+    "rebateMm": 9,
+    "profileType": "scoop",
+    "finish": "Walnut · Brushed Wood Grain · Fletcher Polcore Basics",
+    "baseColor": "#60452f",
+    "roughness": 0.76,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": true,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/fletcher-30mm-walnut-woodgrain-basics-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7026/Images/POL7026/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7026/Images/POL7026/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7026/Images/POL7026/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7026/Images/POL7026/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL7026/Images/POL7026/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-2104",
+    "supplier": "Mainline",
+    "name": "Contemporary Classics 70mm Antique Gold Polcore Moulding",
+    "description": "70x30mm Contemporary Classic Antique Gold Picture Frame Moulding.",
+    "widthMm": 70,
+    "depthMm": 30,
+    "rebateMm": 15,
+    "profileType": "scoop",
+    "finish": "Gold · Antique · Contemporary Classics",
+    "baseColor": "#96743b",
+    "roughness": 0.58,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/contemporary-classics-antique-gold-70mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2104/Images/POL2104/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2104/Images/POL2104/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2104/Images/POL2104/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2104/Images/POL2104/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL2104/Images/POL2104/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "010-1009",
+    "supplier": "Mainline",
+    "name": "Fletcher 53mm White Woodgrain Wood Moulding",
+    "description": "53x35mm Fletcher White Woodgrain",
+    "widthMm": 53,
+    "depthMm": 35,
+    "rebateMm": 14,
+    "profileType": "scoop",
+    "finish": "White · Wood Grain · Fletcher Wood",
+    "baseColor": "#e3e1da",
+    "roughness": 0.76,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": true,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Product images only",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/fletcher-53mm-white-basics-wood-moulding/",
+    "supplierImages": []
+  },
+  {
+    "sku": "010-4609",
+    "supplier": "Mainline",
+    "name": "Deep Rebate 27mm White Woodgrain Wood Moulding",
+    "description": "27x40mm Deep Rebate White Woodgrain",
+    "widthMm": 27,
+    "depthMm": 40,
+    "rebateMm": 33,
+    "profileType": "flat",
+    "finish": "White · Wood Grain · Essential Deep Rebates",
+    "baseColor": "#e3e1da",
+    "roughness": 0.76,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/deep-rebate-white-27mm-wood-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104609/Images/0104609/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104609/Images/0104609/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104609/Images/0104609/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104609/Images/0104609/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104609/Images/0104609/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "019-1272",
+    "supplier": "Mainline",
+    "name": "Richmond 12mm Antique Gold Wood Moulding",
+    "description": "Slim and refined, the 12x14mm Richmond Warm Antique Gold Cushion Moulding is perfect for smaller pieces, traditional etchings, and delicate line drawings while maintaining elegant presence.",
+    "widthMm": 12,
+    "depthMm": 14,
+    "rebateMm": 9,
+    "profileType": "cushion",
+    "finish": "Gold · Antique Distressed · Richmond Wood",
+    "baseColor": "#96743b",
+    "roughness": 0.76,
+    "ornament": 0.45,
+    "renderStatus": "supplier-reference",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Product images only",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/richmond-12mm-antique-gold-basics-wood-moulding/",
+    "supplierImages": []
+  },
+  {
+    "sku": "010-4603",
+    "supplier": "Mainline",
+    "name": "Deep Rebate 27mm Black Woodgrain Wood Moulding",
+    "description": "27x40mm Deep Rebate Black Woodgrain",
+    "widthMm": 27,
+    "depthMm": 40,
+    "rebateMm": 33,
+    "profileType": "flat",
+    "finish": "Black · Wood Grain · Essential Deep Rebates",
+    "baseColor": "#171817",
+    "roughness": 0.76,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/deep-rebate-black-27mm-wood-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104603/Images/0104603/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104603/Images/0104603/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104603/Images/0104603/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104603/Images/0104603/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/0104603/Images/0104603/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4417",
+    "supplier": "Mainline",
+    "name": "Outline 30mm Brushed Black Silver Edges Polcore Moulding",
+    "description": "30x16mm Outline Brushed Black Silver Edges",
+    "widthMm": 30,
+    "depthMm": 16,
+    "rebateMm": 10,
+    "profileType": "flat",
+    "finish": "Black · Brushed · Outline",
+    "baseColor": "#171817",
+    "roughness": 0.66,
+    "ornament": 0.08,
+    "renderStatus": "supplier-reference",
+    "discontinued": true,
+    "confidence": {
+      "shape": "Supplier review",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/outline-black-sse-30mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4417/Images/POL4417/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4417/Images/POL4417/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4417/Images/POL4417/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4417/Images/POL4417/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4417/Images/POL4417/Lv2/img45.jpg"
+      }
+    ]
+  },
+  {
+    "sku": "POL-4643",
+    "supplier": "Mainline",
+    "name": "Naples 31mm Silver Polcore Moulding",
+    "description": "31x15mm Naples Flat Silver Gold Edge Picture Frame Moulding",
+    "widthMm": 31,
+    "depthMm": 15,
+    "rebateMm": 7,
+    "profileType": "flat",
+    "finish": "Silver · Leaf · Naples Polcore",
+    "baseColor": "#b9bdbe",
+    "roughness": 0.58,
+    "ornament": 0.08,
+    "renderStatus": "auto-candidate",
+    "discontinued": false,
+    "confidence": {
+      "shape": "Auto candidate",
+      "dimensions": "High",
+      "texture": "Supplier assets imported",
+      "colour": "Supplier description",
+      "material": "Unapproved"
+    },
+    "sourceUrl": "https://mainlinemouldings.com/naples-silver-31mm-polcore-moulding/",
+    "supplierImages": [
+      {
+        "label": "Rotation 01",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4643/Images/POL4643/Lv2/img01.jpg"
+      },
+      {
+        "label": "Rotation 12",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4643/Images/POL4643/Lv2/img12.jpg"
+      },
+      {
+        "label": "Rotation 23",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4643/Images/POL4643/Lv2/img23.jpg"
+      },
+      {
+        "label": "Rotation 34",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4643/Images/POL4643/Lv2/img34.jpg"
+      },
+      {
+        "label": "Rotation 45",
+        "url": "https://mainline-website.s3.amazonaws.com/spin_images/POL4643/Images/POL4643/Lv2/img45.jpg"
+      }
+    ]
+  }
+]

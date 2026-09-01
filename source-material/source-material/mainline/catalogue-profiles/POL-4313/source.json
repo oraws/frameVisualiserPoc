@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4313",
+  "name": "Edge 43mm Brushed Silver SSE Polcore Moulding",
+  "widthMm": 43,
+  "depthMm": 20,
+  "rebateMm": 14,
+  "profileType": "flat",
+  "page": 96,
+  "label": "POL 4313",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 304,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 309.448,
+    "top": 70.044,
+    "x1": 431.368,
+    "bottom": 269.724
+  }
+}

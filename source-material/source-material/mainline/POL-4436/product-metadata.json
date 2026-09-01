@@ -1,0 +1,24 @@
+{
+  "sku": "POL-4436",
+  "invoiceDescription": "Plastic Picture Moulding",
+  "name": "Edge 30mm Brushed Gold GSE Polcore Moulding",
+  "description": null,
+  "metaDescription": "Edge 30mm Brushed Gold Polcore moulding. Elegant slim profile with warm brushed gold finish. Ideal for modern photo frames, portraits and fine art photography. Lightweight and outstanding value.",
+  "productUrl": "https://mainlinemouldings.com/edge-gold-30mm-polcore-moulding/",
+  "discoveredFrom": "https://mainlinemouldings.com/edge-gold-30mm-polcore-moulding/?searchuuid=6ff16287-a96c-4aeb-8798-f7ac1d74309e&search_query=POL-4436",
+  "discontinued": false,
+  "details": {
+    "colour": "Gold",
+    "profile": "Flat",
+    "finish": "Brushed",
+    "range": "Edge Polcore"
+  },
+  "dimensions": {
+    "length": "2.9m",
+    "widthMm": 30,
+    "depthMm": 30,
+    "rebateMm": 10
+  },
+  "spinImageCount": 45,
+  "importedAt": "2026-08-27T08:50:51.004Z"
+}

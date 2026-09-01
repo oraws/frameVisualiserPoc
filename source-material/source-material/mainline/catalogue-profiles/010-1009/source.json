@@ -1,0 +1,19 @@
+{
+  "sku": "010-1009",
+  "name": "Fletcher 53mm White Woodgrain Wood Moulding",
+  "widthMm": 53,
+  "depthMm": 35,
+  "rebateMm": 14,
+  "profileType": "scoop",
+  "page": 29,
+  "label": "010 1009",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 375,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 258.237,
+    "top": 333.993,
+    "x1": 408.477,
+    "bottom": 533.673
+  }
+}

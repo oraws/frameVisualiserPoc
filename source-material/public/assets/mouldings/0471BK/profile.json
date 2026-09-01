@@ -1,0 +1,171 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "0471BK",
+  "name": "Casterbridge Black Step - Open Grain",
+  "description": "30x25mm Black Casterbridge Step Moulding",
+  "productUrl": "https://centrado.co/product/casterbridge-black-step-open-grain-0471bk/",
+  "widthMm": 30.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "profileType": "angled",
+  "colourTags": [
+    "black"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      14.706
+    ],
+    [
+      1.727,
+      16.368
+    ],
+    [
+      3.198,
+      16.496
+    ],
+    [
+      3.966,
+      17.263
+    ],
+    [
+      4.797,
+      17.583
+    ],
+    [
+      5.629,
+      17.519
+    ],
+    [
+      6.205,
+      17.199
+    ],
+    [
+      6.716,
+      16.624
+    ],
+    [
+      7.036,
+      15.729
+    ],
+    [
+      19.574,
+      15.729
+    ],
+    [
+      20.085,
+      17.072
+    ],
+    [
+      20.469,
+      17.391
+    ],
+    [
+      21.109,
+      17.455
+    ],
+    [
+      21.812,
+      18.478
+    ],
+    [
+      22.324,
+      18.926
+    ],
+    [
+      23.731,
+      19.565
+    ],
+    [
+      24.051,
+      19.885
+    ],
+    [
+      24.115,
+      20.524
+    ],
+    [
+      24.371,
+      20.972
+    ],
+    [
+      25.906,
+      21.867
+    ],
+    [
+      26.034,
+      22.506
+    ],
+    [
+      26.354,
+      23.082
+    ],
+    [
+      27.761,
+      24.488
+    ],
+    [
+      29.616,
+      25.0
+    ],
+    [
+      30.0,
+      24.744
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 150,
+      "right": 619,
+      "top": 106,
+      "baseline": 497
+    },
+    "pixelsPerMmX": 15.6333,
+    "pixelsPerMmZ": 15.64,
+    "anisotropyFraction": 0.00043,
+    "sampleCount": 524,
+    "simplifiedPointCount": 25
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471BK.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471-Profile.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471BK_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "macro.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/Casterbridge-Macro_Gallery.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-1.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471BK-3DB.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-2.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/0471BK-3DF.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

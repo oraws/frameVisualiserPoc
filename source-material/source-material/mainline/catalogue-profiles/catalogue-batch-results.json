@@ -1,0 +1,360 @@
+{
+  "sourcePdf": "/Users/stephenorawe/Work/frame-visualizer-poc/source-material/source-material/mainline/ml_catalogue.pdf",
+  "requestedCount": 39,
+  "processed": [
+    {
+      "sku": "POL-4875",
+      "name": "Verona Black",
+      "page": 106,
+      "points": 38,
+      "confidence": 0.7472,
+      "reviewBand": "inspect",
+      "coverage": 0.9767
+    },
+    {
+      "sku": "POL-4100",
+      "name": "Brushed Black",
+      "page": 88,
+      "points": 13,
+      "confidence": 0.8531,
+      "reviewBand": "high",
+      "coverage": 0.9793
+    },
+    {
+      "sku": "POL-4508",
+      "name": "Paramount Black & Silver",
+      "page": 92,
+      "points": 23,
+      "confidence": 0.6747,
+      "reviewBand": "low",
+      "coverage": 0.9717
+    },
+    {
+      "sku": "POL-4418",
+      "name": "Flat Bronze",
+      "page": 92,
+      "points": 29,
+      "confidence": 0.7816,
+      "reviewBand": "inspect",
+      "coverage": 0.9739
+    },
+    {
+      "sku": "POL-4211",
+      "name": "Flat Oak",
+      "page": 91,
+      "points": 54,
+      "confidence": 0.683,
+      "reviewBand": "inspect",
+      "coverage": 0.974
+    },
+    {
+      "sku": "POL-4721",
+      "name": "30mm Flats Oak Woodgrain Polcore Moulding",
+      "page": 87,
+      "points": 39,
+      "confidence": 0.6836,
+      "reviewBand": "inspect",
+      "coverage": 0.9716
+    },
+    {
+      "sku": "POL-4415",
+      "name": "30mm Flats Brushed Bronze Polcore Moulding",
+      "page": 88,
+      "points": 23,
+      "confidence": 0.7627,
+      "reviewBand": "inspect",
+      "coverage": 0.9718
+    },
+    {
+      "sku": "POL-1301",
+      "name": "Starling 35mm Brushed Black Bronze Sides Polcore Moulding",
+      "page": 146,
+      "points": 54,
+      "confidence": 0.7637,
+      "reviewBand": "inspect",
+      "coverage": 0.9765
+    },
+    {
+      "sku": "POL-1336",
+      "name": "Nelson 38mm Distressed Black Polcore Moulding",
+      "page": 144,
+      "points": 44,
+      "confidence": 0.573,
+      "reviewBand": "low",
+      "coverage": 0.9777
+    },
+    {
+      "sku": "POL-4202",
+      "name": "30mm Flats Brushed Black Polcore Moulding",
+      "page": 88,
+      "points": 18,
+      "confidence": 0.9401,
+      "reviewBand": "high",
+      "coverage": 0.9718
+    },
+    {
+      "sku": "POL-4446",
+      "name": "Outline 30mm Brushed Black Gold Edges Polcore Moulding",
+      "page": 86,
+      "points": 51,
+      "confidence": 0.5818,
+      "reviewBand": "low",
+      "coverage": 0.9717
+    },
+    {
+      "sku": "POL-4313",
+      "name": "Edge 43mm Brushed Silver SSE Polcore Moulding",
+      "page": 96,
+      "points": 15,
+      "confidence": 0.9899,
+      "reviewBand": "high",
+      "coverage": 0.9737
+    },
+    {
+      "sku": "POL-4436",
+      "name": "Edge 30mm Brushed Gold GSE Polcore Moulding",
+      "page": 96,
+      "points": 14,
+      "confidence": 0.9695,
+      "reviewBand": "high",
+      "coverage": 0.9717
+    },
+    {
+      "sku": "POL-7146",
+      "name": "L Shape 10mm White Woodgrain Polcore Moulding",
+      "page": 82,
+      "points": 21,
+      "confidence": 0.9476,
+      "reviewBand": "high",
+      "coverage": 0.9788
+    },
+    {
+      "sku": "POL-4416",
+      "name": "30mm Flats Brushed Gunmetal Polcore Moulding",
+      "page": 88,
+      "points": 36,
+      "confidence": 0.5691,
+      "reviewBand": "low",
+      "coverage": 0.9717
+    },
+    {
+      "sku": "POL-2109",
+      "name": "Contemporary Classics 40mm Antique Gold Polcore Moulding",
+      "page": 123,
+      "points": 49,
+      "confidence": 0.9264,
+      "reviewBand": "high",
+      "coverage": 0.9787
+    },
+    {
+      "sku": "POL-4540",
+      "name": "Watercolour 25mm Antique Silver Polcore Moulding",
+      "page": 84,
+      "points": 33,
+      "confidence": 0.7675,
+      "reviewBand": "inspect",
+      "coverage": 0.9774
+    },
+    {
+      "sku": "POL-4344",
+      "name": "43mm Box Limed White Polcore Moulding",
+      "page": 94,
+      "points": 51,
+      "confidence": 0.9463,
+      "reviewBand": "high",
+      "coverage": 0.9739
+    },
+    {
+      "sku": "POL-7145",
+      "name": "L Shape 10mm Black Woodgrain Polcore Moulding",
+      "page": 82,
+      "points": 54,
+      "confidence": 0.7052,
+      "reviewBand": "inspect",
+      "coverage": 0.9788
+    },
+    {
+      "sku": "POL-7150",
+      "name": "Hockney 69mm Brushed White Polcore Moulding",
+      "page": 112,
+      "points": 20,
+      "confidence": 0.9494,
+      "reviewBand": "high",
+      "coverage": 0.9755
+    },
+    {
+      "sku": "POL-4541",
+      "name": "Watercolour 25mm Gold Polcore Moulding",
+      "page": 84,
+      "points": 30,
+      "confidence": 0.7888,
+      "reviewBand": "inspect",
+      "coverage": 0.9774
+    },
+    {
+      "sku": "POL-4642",
+      "name": "Naples 31mm Gold Polcore Moulding",
+      "page": 145,
+      "points": 24,
+      "confidence": 0.9475,
+      "reviewBand": "high",
+      "coverage": 0.9727
+    },
+    {
+      "sku": "POL-4640",
+      "name": "Naples 48mm Gold Polcore Moulding",
+      "page": 145,
+      "points": 12,
+      "confidence": 0.9797,
+      "reviewBand": "high",
+      "coverage": 0.9764
+    },
+    {
+      "sku": "POL-4571",
+      "name": "16mm Flats Brushed Oak Polcore Moulding",
+      "page": 82,
+      "points": 35,
+      "confidence": 0.6868,
+      "reviewBand": "inspect",
+      "coverage": 0.9646
+    },
+    {
+      "sku": "POL-2169",
+      "name": "79mm Gold Polcore Moulding",
+      "page": 151,
+      "points": 17,
+      "confidence": 0.98,
+      "reviewBand": "high",
+      "coverage": 0.975
+    },
+    {
+      "sku": "POL-4506",
+      "name": "Paramount 53mm Brushed Gunmetal with Silver Slip Polcore Moulding",
+      "page": 93,
+      "points": 16,
+      "confidence": 0.9764,
+      "reviewBand": "high",
+      "coverage": 0.9734
+    },
+    {
+      "sku": "POL-7149",
+      "name": "Hockney 69mm Brushed Black Polcore Moulding",
+      "page": 112,
+      "points": 20,
+      "confidence": 0.9648,
+      "reviewBand": "high",
+      "coverage": 0.9755
+    },
+    {
+      "sku": "POL-2190",
+      "name": "Contemporary Classics 70mm Black Polcore Moulding",
+      "page": 124,
+      "points": 63,
+      "confidence": 0.7817,
+      "reviewBand": "inspect",
+      "coverage": 0.9759
+    },
+    {
+      "sku": "POL-1009",
+      "name": "28mm Flats Brushed Black Polcore Moulding",
+      "page": 139,
+      "points": 16,
+      "confidence": 0.9278,
+      "reviewBand": "high",
+      "coverage": 0.9798
+    },
+    {
+      "sku": "POL-1129",
+      "name": "Edge 30mm Brushed Silver Polcore Moulding",
+      "page": 138,
+      "points": 25,
+      "confidence": 0.9316,
+      "reviewBand": "high",
+      "coverage": 0.9718
+    },
+    {
+      "sku": "POL-1334",
+      "name": "Nelson 38mm Distressed Walnut Polcore Moulding",
+      "page": 144,
+      "points": 23,
+      "confidence": 0.9622,
+      "reviewBand": "high",
+      "coverage": 0.9777
+    },
+    {
+      "sku": "POL-7026",
+      "name": "Fletcher 30mm Walnut Woodgrain Polcore Moulding",
+      "page": 132,
+      "points": 25,
+      "confidence": 0.9404,
+      "reviewBand": "high",
+      "coverage": 0.9718
+    },
+    {
+      "sku": "POL-2104",
+      "name": "Contemporary Classics 70mm Antique Gold Polcore Moulding",
+      "page": 123,
+      "points": 45,
+      "confidence": 0.9237,
+      "reviewBand": "high",
+      "coverage": 0.9758
+    },
+    {
+      "sku": "010-1009",
+      "name": "Fletcher 53mm White Woodgrain Wood Moulding",
+      "page": 29,
+      "points": 27,
+      "confidence": 0.9003,
+      "reviewBand": "high",
+      "coverage": 0.9787
+    },
+    {
+      "sku": "010-4609",
+      "name": "Deep Rebate 27mm White Woodgrain Wood Moulding",
+      "page": 36,
+      "points": 14,
+      "confidence": 0.8911,
+      "reviewBand": "high",
+      "coverage": 0.9792
+    },
+    {
+      "sku": "019-1272",
+      "name": "Richmond 12mm Antique Gold Wood Moulding",
+      "page": 14,
+      "points": 36,
+      "confidence": 0.724,
+      "reviewBand": "inspect",
+      "coverage": 0.9718
+    },
+    {
+      "sku": "010-4603",
+      "name": "Deep Rebate 27mm Black Woodgrain Wood Moulding",
+      "page": 36,
+      "points": 12,
+      "confidence": 0.9945,
+      "reviewBand": "high",
+      "coverage": 0.9793
+    },
+    {
+      "sku": "POL-4417",
+      "name": "Outline 30mm Brushed Black Silver Edges Polcore Moulding",
+      "page": 86,
+      "points": 56,
+      "confidence": 0.6248,
+      "reviewBand": "low",
+      "coverage": 0.9718
+    },
+    {
+      "sku": "POL-4643",
+      "name": "Naples 31mm Silver Polcore Moulding",
+      "page": 145,
+      "points": 28,
+      "confidence": 0.9367,
+      "reviewBand": "high",
+      "coverage": 0.9727
+    }
+  ],
+  "failures": [],
+  "successfulCount": 39,
+  "failureCount": 0
+}

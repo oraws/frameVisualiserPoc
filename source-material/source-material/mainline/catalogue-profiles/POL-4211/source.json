@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4211",
+  "name": "Flat Oak",
+  "widthMm": 54,
+  "depthMm": 20,
+  "rebateMm": 14,
+  "profileType": "flat",
+  "page": 91,
+  "label": "POL 4211",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 384,
+  "pixelHeight": 501,
+  "pdfImageBox": {
+    "x0": 648.643,
+    "top": 600.573,
+    "x1": 802.243,
+    "bottom": 800.733
+  }
+}

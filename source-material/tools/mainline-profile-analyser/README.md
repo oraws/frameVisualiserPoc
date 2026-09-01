@@ -80,3 +80,49 @@ The confirmation action requires at least 96% width coverage and downloads an
 `accepted-manual-trace` JSON containing both the simplified millimetre points
 and the original red canvas strokes. Drafts persist locally and can also be
 downloaded/imported. Confirmation still leaves `rendererIntegrated: false`.
+
+## Automated exposed-section pilot
+
+Mainline's near-profile spin frames show the sawn end of the moulding. The
+section pilot automatically selects the three closest views, separates the
+product from the turntable, traces the lower edge of the exposed substrate,
+rectifies the small projective change between views, and converts the fused
+curve to supplier millimetres. Surface ornament is removed from the macro curve
+with edge-preserving smoothing.
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r tools/mainline-profile-analyser/requirements.txt
+npm run pilot:mainline-sections
+```
+
+The summary is written to
+`source-material/mainline/section-profile-pilot.html`; each product page shows
+the supplier source, automatic cut-face mask, detected boundary, fused
+reprojection, physical profile, and strict go/no-go metrics. A rejected result
+is retained as evidence but is never promoted. This pilot does not change the
+Three.js renderer or any approved POL-4100 material.
+
+## SAM 2 learned boundary refinement
+
+The learned benchmark uses the classical cut mask only to derive prompts and a
+bounded search region. SAM 2.1 proposes the local lower-edge transition; whole
+product/background masks, missing prompts, excessive movement and high fallback
+rates are rejected automatically. Tiny and base-plus checkpoints are kept as
+separate diagnostics so model-size regressions remain visible.
+
+```bash
+python3.12 -m venv .venv-sam2
+.venv-sam2/bin/pip install -r tools/mainline-profile-analyser/requirements-sam2.txt
+
+.venv-sam2/bin/hf download facebook/sam2.1-hiera-base-plus \
+  --local-dir .model-cache/sam2.1-hiera-base-plus
+
+npm run benchmark:sam2-sections
+```
+
+The primary report is
+`source-material/mainline/sam2-section-benchmark.html`. It compares learned and
+classical cross-view stability and exports simplified millimetre points, but it
+does not promote them to the renderer. Model weights and virtual environments
+are intentionally ignored by Git.

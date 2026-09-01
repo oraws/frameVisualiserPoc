@@ -1,0 +1,81 @@
+{
+  "supplier": "Centrado",
+  "supplierCode": "CTR",
+  "sku": "3042WH",
+  "name": "White Flat - Open Grain",
+  "description": "27x42mm White Flat Moulding",
+  "productUrl": "https://centrado.co/product/white-flat-open-grain-3042wh/",
+  "widthMm": 27.0,
+  "depthMm": 42.0,
+  "rebateMm": 23.5,
+  "profileType": "flat",
+  "colourTags": [
+    "white"
+  ],
+  "method": "dimensioned-profile-png-v2-batch",
+  "accentWidthMm": 0,
+  "points": [
+    [
+      0.0,
+      41.502
+    ],
+    [
+      0.748,
+      42.0
+    ],
+    [
+      26.252,
+      42.0
+    ],
+    [
+      27.0,
+      41.502
+    ]
+  ],
+  "extraction": {
+    "sourceBoundsPixels": {
+      "left": 210,
+      "right": 535,
+      "top": 51,
+      "baseline": 557
+    },
+    "pixelsPerMmX": 12.037,
+    "pixelsPerMmZ": 12.0476,
+    "anisotropyFraction": 0.00088,
+    "sampleCount": 325,
+    "simplifiedPointCount": 4
+  },
+  "assets": [
+    {
+      "filename": "product-section.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042WH.JPG",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "profile-source.png",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042-Profile-6.png",
+      "width": 700,
+      "height": 700
+    },
+    {
+      "filename": "chevron.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042WH_Chevron.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-1.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042WH-3DB.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "filename": "product-detail-2.jpg",
+      "originalUrl": "https://centrado.co/wp-content/uploads/2026/08/3042WH-3DF.jpg",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "rendererIntegrated": true
+}

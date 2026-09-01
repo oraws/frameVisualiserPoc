@@ -1,0 +1,19 @@
+{
+  "sku": "POL-4643",
+  "name": "Naples 31mm Silver Polcore Moulding",
+  "widthMm": 31,
+  "depthMm": 15,
+  "rebateMm": 7,
+  "profileType": "flat",
+  "page": 145,
+  "label": "POL 4643",
+  "filename": "catalogue-panel.png",
+  "pixelWidth": 220,
+  "pixelHeight": 500,
+  "pdfImageBox": {
+    "x0": 809.575,
+    "top": 69.806,
+    "x1": 897.415,
+    "bottom": 269.726
+  }
+}
