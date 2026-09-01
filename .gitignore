@@ -6,3 +6,10 @@ dist/
 .env
 .env.*
 !.env.example
+
+# Large generated analysis artifacts
+# Ignore bulky model outputs and catalog assets that are too large for GitHub pushes.
+**/*.npz
+**/*.pdf
+**/predictions.npz
+**/ml_catalogue.pdf
