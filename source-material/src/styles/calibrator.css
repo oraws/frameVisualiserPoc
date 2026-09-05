@@ -58,9 +58,7 @@ body {
   touch-action: none;
 }
 .grid-line,
-.grid-edge,
-.frame-proxy,
-.mount-proxy {
+.grid-edge {
   fill: none;
 }
 .grid-line {
@@ -72,13 +70,21 @@ body {
   stroke-width: 2;
 }
 .frame-proxy {
-  fill: #151413c9;
   stroke: #fff7e8;
   stroke-width: 2;
+}
+.frame-shadow-proxy {
+  fill: #17130f;
+  pointer-events: none;
 }
 .mount-proxy {
   fill: #eee9dcaa;
   stroke: #fff;
+  stroke-width: 1;
+}
+.art-proxy {
+  fill: #242424;
+  stroke: #ffffff88;
   stroke-width: 1;
 }
 .grid-handle {
@@ -281,6 +287,20 @@ body {
   background: #111;
   color: #fff;
 }
+.cal-lighting {
+  margin: 0 0 18px;
+  padding: 13px 14px;
+  border-left: 3px solid #d4a85d;
+  background: #242018;
+}
+.cal-lighting h2 { margin: 0 0 5px; color: #e4c78c; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+.cal-lighting h2:not(:first-child) { margin-top: 18px; padding-top: 14px; border-top: 1px solid #ffffff16; }
+.cal-lighting > p { margin: 0 0 11px; color: #a9a297; font-size: 10px; line-height: 1.45; }
+.cal-range { display: grid; gap: 5px; margin: 9px 0; }
+.cal-range span { display: flex; justify-content: space-between; color: #bcb6aa; font-size: 9px; }
+.cal-range b { color: #ead29e; font-weight: 500; }
+.cal-range input { width: 100%; accent-color: #d7b873; }
+.cal-panel .cal-preview { border-color: #d7b87388; background: #30281b; color: #ead29e; }
 .cal-evidence figure {
   margin: 0;
   border: 1px solid #ffffff1c;
