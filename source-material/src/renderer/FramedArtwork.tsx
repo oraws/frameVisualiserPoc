@@ -25,6 +25,7 @@ import {
 } from "../mouldings/profiles";
 import { createProfileFrameGeometry } from "./profileGeometry";
 import { fallbackRoom, roomPresets, type RoomTemplate } from "./roomTemplates";
+import mainlineMaterials from "../mouldings/mainlineMaterials.json";
 
 type ProfileVariant = "Current" | "SAM 2.1" | "Catalogue";
 type ScaleReference = { lengthMm: number; pointsNormalised: number[][] };
@@ -37,6 +38,16 @@ type RoomLighting = {
   shadowOpacity: number;
   shadowSoftness: number;
   shadowGapMm: number;
+  goboEnabled?: boolean;
+  goboAngle?: number;
+  goboScale?: number;
+  goboOffsetX?: number;
+  goboOffsetY?: number;
+  goboStrength?: number;
+  goboSoftness?: number;
+  foregroundBrightness?: number;
+  foregroundSaturation?: number;
+  foregroundWarmth?: number;
 };
 type RoomCalibration = {
   manualCalibration?: {
@@ -58,6 +69,8 @@ type Props = {
   artHeight: number;
   mount: number;
   mountColor: string;
+  innerMount: number;
+  innerMountColor: string;
   glass: string;
   lighting: string;
   lightStrength: number;
@@ -75,6 +88,7 @@ type Props = {
   wallPositionY: number;
   wallScale: number;
   wallShadow: number;
+  roomMatchStrength: number;
   materialVariant: string;
   profileVariant: ProfileVariant;
   roomCalibration?: RoomCalibration | null;
@@ -373,9 +387,34 @@ function ProfileFrame({
   profile: ProfilePoint[];
   materialVariant: string;
 }) {
+  const renderedProfile = useMemo(() => {
+    const curvedProfile = ["ornate-scoop", "scoop", "reverse", "cushion"].includes(
+      moulding.profileType,
+    );
+    if (!curvedProfile) return profile;
+    let smoothed = profile.map(([x, z]) => [x, z] as ProfilePoint);
+    const passes = moulding.profileType === "ornate-scoop" ? 3 : 2;
+    for (let pass = 0; pass < passes; pass += 1) {
+      smoothed = smoothed.map((point, index, points) => {
+        if (index === 0 || index === points.length - 1) return point;
+        return [
+          point[0],
+          points[index - 1][1] * 0.2 +
+            point[1] * 0.6 +
+            points[index + 1][1] * 0.2,
+        ];
+      });
+    }
+    return smoothed;
+  }, [moulding.sku, profile]);
   const geometry = useMemo(
-    () => createProfileFrameGeometry(openingWidthMm, openingHeightMm, profile),
-    [openingWidthMm, openingHeightMm, profile],
+    () =>
+      createProfileFrameGeometry(
+        openingWidthMm,
+        openingHeightMm,
+        renderedProfile,
+      ),
+    [openingWidthMm, openingHeightMm, renderedProfile],
   );
   if (materialMode === "Normal")
     return (
@@ -395,17 +434,10 @@ function ProfileFrame({
         <meshStandardMaterial color="#8b8983" roughness={0.68} />
       </mesh>
     );
-  const hasApprovedMaps = [
-    "POL-4100",
-    "POL-4508",
-    "POL-4418",
-    "POL-4211",
-  ].includes(moulding.sku);
+  const hasSupplierMaps = moulding.sku in mainlineMaterials;
   return (
     <mesh geometry={geometry} castShadow receiveShadow>
-      {moulding.sku === "POL-4875" ? (
-        <VeronaProfileMaterial />
-      ) : hasApprovedMaps ? (
+      {hasSupplierMaps ? (
         <SupplierVariantMaterial
           moulding={moulding}
           variant={materialVariant}
@@ -424,24 +456,6 @@ function ProfileFrame({
     </mesh>
   );
 }
-function VeronaProfileMaterial() {
-  const map = useTexture("/assets/mouldings/POL-4875/profile-strip.jpg");
-  useMemo(() => {
-    map.colorSpace = THREE.SRGBColorSpace;
-    map.wrapS = map.wrapT = THREE.RepeatWrapping;
-    map.anisotropy = 8;
-    map.needsUpdate = true;
-  }, [map]);
-  return (
-    <meshStandardMaterial
-      map={map}
-      color="#7b7780"
-      roughness={0.5}
-      metalness={0.22}
-      envMapIntensity={0.16}
-    />
-  );
-}
 function SupplierVariantMaterial({
   moulding,
   variant,
@@ -450,9 +464,12 @@ function SupplierVariantMaterial({
   variant: string;
 }) {
   const selected =
-      moulding.sku === "POL-4100" && variant !== "multiframe-experiment-v1"
+      moulding.sku === "POL-4100" && variant === "baseline-v1"
         ? "baseline-v1"
-        : "multiframe-experiment-v1",
+        : variant === "multiframe-experiment-v1" &&
+            ["POL-4508", "POL-4418", "POL-4211"].includes(moulding.sku)
+          ? "multiframe-experiment-v1"
+          : "supplier-derived-v2",
     root = `/assets/mouldings/${moulding.sku}/variants/${selected}`;
   const [map, roughnessMap, bumpMap] = useTexture([
     `${root}/basecolor.jpg`,
@@ -467,7 +484,7 @@ function SupplierVariantMaterial({
     }
     map.colorSpace = THREE.SRGBColorSpace;
   }, [map, roughnessMap, bumpMap]);
-  const settings: Record<
+  const approvedSettings: Record<
     string,
     {
       bump: number;
@@ -505,8 +522,41 @@ function SupplierVariantMaterial({
       env: 0.16,
       color: "#e1d7c8",
     },
+    "POL-2104": {
+      bump: 0.00042,
+      roughness: 0.68,
+      metalness: 0.08,
+      env: 0.18,
+      color: "#aaa39a",
+    },
   };
-  const s = settings[moulding.sku] || settings["POL-4100"];
+  const finish = `${moulding.name} ${moulding.finish}`;
+  const metallic = /gold|silver|bronze|gunmetal|metallic|lustre/i.test(finish);
+  const dark = /black|midnight|charcoal/i.test(finish);
+  const pale = /white|ivory|cream/i.test(finish);
+  const wood = /oak|walnut|woodgrain|wood grain|pine|natural/i.test(finish);
+  const generated = {
+    bump: wood ? 0.00055 : moulding.ornament > 0.55 ? 0.00048 : 0.00034,
+    roughness: Math.max(0.52, Math.min(0.9, moulding.roughness + 0.18)),
+    metalness: metallic ? 0.1 : 0,
+    env: metallic ? 0.2 : 0.16,
+    color: /antique gold/i.test(finish)
+      ? "#aaa39a"
+      : /gold/i.test(finish)
+        ? "#d8cfbc"
+        : /bronze/i.test(finish)
+          ? "#c7b6a7"
+          : /silver|gunmetal/i.test(finish)
+            ? "#d5d5d2"
+        : dark
+          ? "#d0d2cf"
+          : pale
+            ? "#eeeae2"
+            : wood
+              ? "#d5cec4"
+              : "#d8d4cf",
+  };
+  const s = approvedSettings[moulding.sku] || generated;
   return (
     <meshStandardMaterial
       map={map}
@@ -517,7 +567,7 @@ function SupplierVariantMaterial({
       roughness={s.roughness}
       metalness={s.metalness}
       envMapIntensity={s.env}
-      flatShading
+      flatShading={false}
     />
   );
 }
@@ -1168,6 +1218,113 @@ function ProjectionReporter({
   });
   return null;
 }
+function rectangularRingGeometry(
+  outerWidth: number,
+  outerHeight: number,
+  innerWidth: number,
+  innerHeight: number,
+) {
+  const ring = new THREE.Shape();
+  ring.moveTo(-outerWidth / 2, -outerHeight / 2);
+  ring.lineTo(outerWidth / 2, -outerHeight / 2);
+  ring.lineTo(outerWidth / 2, outerHeight / 2);
+  ring.lineTo(-outerWidth / 2, outerHeight / 2);
+  ring.closePath();
+  const opening = new THREE.Path();
+  opening.moveTo(-innerWidth / 2, -innerHeight / 2);
+  opening.lineTo(-innerWidth / 2, innerHeight / 2);
+  opening.lineTo(innerWidth / 2, innerHeight / 2);
+  opening.lineTo(innerWidth / 2, -innerHeight / 2);
+  opening.closePath();
+  ring.holes.push(opening);
+  return new THREE.ShapeGeometry(ring);
+}
+function mountBevelGeometry(
+  faceWidth: number,
+  faceHeight: number,
+  backWidth: number,
+  backHeight: number,
+  thickness: number,
+) {
+  const positions: number[] = [];
+  const addQuad = (a: number[], b: number[], c: number[], d: number[]) => {
+    positions.push(...a, ...b, ...c, ...a, ...c, ...d);
+  };
+  const fw = faceWidth / 2,
+    fh = faceHeight / 2,
+    bw = backWidth / 2,
+    bh = backHeight / 2;
+  addQuad([-fw, fh, 0], [fw, fh, 0], [bw, bh, -thickness], [-bw, bh, -thickness]);
+  addQuad([fw, -fh, 0], [-fw, -fh, 0], [-bw, -bh, -thickness], [bw, -bh, -thickness]);
+  addQuad([-fw, -fh, 0], [-fw, fh, 0], [-bw, bh, -thickness], [-bw, -bh, -thickness]);
+  addQuad([fw, fh, 0], [fw, -fh, 0], [bw, -bh, -thickness], [bw, bh, -thickness]);
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+  geometry.computeVertexNormals();
+  return geometry;
+}
+function MountBoard({
+  outerWidth,
+  outerHeight,
+  artworkWidth,
+  artworkHeight,
+  overlap,
+  color,
+  faceZ,
+  thickness,
+}: {
+  outerWidth: number;
+  outerHeight: number;
+  artworkWidth: number;
+  artworkHeight: number;
+  overlap: number;
+  color: string;
+  faceZ: number;
+  thickness: number;
+}) {
+  const bevelWidth = thickness;
+  const faceOpeningWidth = artworkWidth + 2 * bevelWidth;
+  const faceOpeningHeight = artworkHeight + 2 * bevelWidth;
+  const faceGeometry = useMemo(
+    () => rectangularRingGeometry(
+      outerWidth + 2 * overlap,
+      outerHeight + 2 * overlap,
+      faceOpeningWidth,
+      faceOpeningHeight,
+    ),
+    [outerWidth, outerHeight, overlap, faceOpeningWidth, faceOpeningHeight],
+  );
+  const bevelGeometry = useMemo(
+    () => mountBevelGeometry(
+      faceOpeningWidth,
+      faceOpeningHeight,
+      artworkWidth,
+      artworkHeight,
+      thickness,
+    ),
+    [faceOpeningWidth, faceOpeningHeight, artworkWidth, artworkHeight, thickness],
+  );
+  useEffect(() => () => {
+    faceGeometry.dispose();
+    bevelGeometry.dispose();
+  }, [faceGeometry, bevelGeometry]);
+  return (
+    <group position={[0, 0, faceZ]}>
+      <mesh geometry={faceGeometry} castShadow receiveShadow>
+        <meshStandardMaterial color={color} roughness={0.88} />
+      </mesh>
+      <mesh geometry={bevelGeometry} castShadow receiveShadow>
+        <meshStandardMaterial
+          color="#fffefa"
+          emissive="#4a4842"
+          emissiveIntensity={0.16}
+          roughness={1}
+          side={THREE.DoubleSide}
+        />
+      </mesh>
+    </group>
+  );
+}
 function Scene(p: Props) {
   const { size } = useThree();
   const m = p.moulding,
@@ -1183,7 +1340,11 @@ function Scene(p: Props) {
     ow = aw + 2 * (mt + fw),
     oh = ah + 2 * (mt + fw),
     iw = aw + 2 * mt,
-    ih = ah + 2 * mt;
+    ih = ah + 2 * mt,
+    // The mount is physically larger than the sight opening and sits beneath
+    // the rebate. Overscanning it prevents the room behind the frame becoming
+    // visible through the opening when the assembly is viewed at an angle.
+    rebateOverlap = Math.min(8, Math.max(3, m.rebateMm * 0.35)) * mm;
   const art = useTexture(p.artwork);
   art.colorSpace = THREE.SRGBColorSpace;
   const light = {
@@ -1218,9 +1379,23 @@ function Scene(p: Props) {
   const metricRebate =
       m.sku === "POL-4508" || m.supplier === "Centrado" || catalogueCandidate,
     rebateFront = metricRebate ? (m.depthMm - m.rebateMm) * mm : 0.013,
-    mountZ = metricRebate ? rebateFront - 0.009 : 0.004,
-    artZ = metricRebate ? rebateFront + 0.002 : 0.015,
-    glassZ = metricRebate ? rebateFront + 0.006 : 0.033;
+    mountThickness = 2 * mm,
+    mountFaceZ = metricRebate ? rebateFront + 0.001 : 0.016,
+    innerMountReveal = p.mount > 0 ? Math.max(0, p.innerMount) * mm : 0,
+    hasInnerMount = innerMountReveal > 0,
+    innerMountFaceZ = mountFaceZ - mountThickness - 0.00003,
+    artZ = p.mount > 0
+      ? (hasInnerMount ? innerMountFaceZ : mountFaceZ) -
+        mountThickness -
+        0.00003
+      : metricRebate
+        ? rebateFront + 0.001
+        : 0.015,
+    glassZ = p.mount > 0
+      ? mountFaceZ + 0.002
+      : metricRebate
+        ? rebateFront + 0.006
+        : 0.033;
   let frameMatrix = new THREE.Matrix4();
   if (wall) {
     frameMatrix.compose(
@@ -1354,14 +1529,47 @@ function Scene(p: Props) {
             color={room.shadow.color}
           />
         )}
-        <mesh position={[0, 0, mountZ]}>
-          <boxGeometry args={[iw, ih, 0.018]} />
-          <meshStandardMaterial color={p.mountColor} roughness={0.82} />
-        </mesh>
-        <mesh position={[0, 0, artZ]}>
+        {p.mount > 0 && (
+          <>
+            <MountBoard
+              outerWidth={iw}
+              outerHeight={ih}
+              artworkWidth={aw + 2 * innerMountReveal}
+              artworkHeight={ah + 2 * innerMountReveal}
+              overlap={rebateOverlap}
+              color={p.mountColor}
+              faceZ={mountFaceZ}
+              thickness={mountThickness}
+            />
+            {hasInnerMount && (
+              <MountBoard
+                outerWidth={iw}
+                outerHeight={ih}
+                artworkWidth={aw}
+                artworkHeight={ah}
+                overlap={rebateOverlap}
+                color={p.innerMountColor}
+                faceZ={innerMountFaceZ}
+                thickness={mountThickness}
+              />
+            )}
+          </>
+        )}
+        <mesh position={[0, 0, artZ]} receiveShadow>
           <planeGeometry args={[aw, ah]} />
           <meshBasicMaterial map={art} toneMapped={false} />
         </mesh>
+        {p.mount > 0 && (
+          <mesh position={[0, 0, artZ + 0.00005]} receiveShadow renderOrder={3}>
+            <planeGeometry args={[aw, ah]} />
+            <shadowMaterial
+              transparent
+              opacity={0.22}
+              depthWrite={false}
+              toneMapped={false}
+            />
+          </mesh>
+        )}
         <Framing
           moulding={m}
           ow={ow}
@@ -1439,9 +1647,19 @@ function Scene(p: Props) {
   );
 }
 export default function FramedArtwork(p: Props) {
+  const lighting = p.roomCalibration?.renderer?.lighting;
+  const match = THREE.MathUtils.clamp(p.roomMatchStrength, 0, 1);
+  const brightness = 1 + ((lighting?.foregroundBrightness ?? 0.82) - 1) * match;
+  const saturation = 1 + ((lighting?.foregroundSaturation ?? 0.82) - 1) * match;
+  const warmth = (lighting?.foregroundWarmth ?? 0) * match;
+  const compositeFilter = p.overlayOnly
+    ? `brightness(${brightness}) saturate(${saturation}) sepia(${Math.max(0, warmth) * 0.18}) hue-rotate(${Math.min(0, warmth) * 8}deg)`
+    : undefined;
   return (
     <Canvas
+      key={p.overlayOnly ? "wall-overlay" : "opaque-scene"}
       className="canvas"
+      style={{ filter: compositeFilter }}
       shadows={{ type: THREE.PCFSoftShadowMap }}
       dpr={[1, 2]}
       gl={{

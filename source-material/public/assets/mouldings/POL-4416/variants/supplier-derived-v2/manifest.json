@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4416",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/30mm-flat-brushed-gunmetal-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      34,
+      131,
+      110,
+      240
+    ],
+    "img21.jpg": [
+      33,
+      131,
+      110,
+      240
+    ],
+    "img22.jpg": [
+      32,
+      131,
+      108,
+      240
+    ],
+    "img23.jpg": [
+      30,
+      131,
+      106,
+      240
+    ],
+    "img24.jpg": [
+      29,
+      131,
+      107,
+      240
+    ],
+    "img25.jpg": [
+      28,
+      131,
+      108,
+      240
+    ],
+    "img26.jpg": [
+      27,
+      131,
+      109,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -4,
+    2,
+    0,
+    0,
+    -3,
+    -6,
+    4
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "1b23f9d5e78391b388e4945861d437c25994efe7532ef528f78fdba073a64608",
+      "roughness.jpg": "b92ba841044c5e5f516391bca6f3e00a916e2123cf123d792a8def204228ef2e",
+      "bump.jpg": "ec06f46cb1123f5575166efbf0372a47fd7eb81244d1a3a357d018775cee54fe"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

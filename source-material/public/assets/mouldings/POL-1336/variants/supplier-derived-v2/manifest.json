@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-1336",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/nelson-black-38mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      38,
+      131,
+      136,
+      240
+    ],
+    "img21.jpg": [
+      37,
+      131,
+      136,
+      240
+    ],
+    "img22.jpg": [
+      35,
+      131,
+      136,
+      240
+    ],
+    "img23.jpg": [
+      33,
+      131,
+      132,
+      240
+    ],
+    "img24.jpg": [
+      32,
+      131,
+      135,
+      240
+    ],
+    "img25.jpg": [
+      31,
+      131,
+      137,
+      240
+    ],
+    "img26.jpg": [
+      30,
+      131,
+      140,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -3,
+    2,
+    4,
+    0,
+    -6,
+    3,
+    -1
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "3d9279cee4b81810d022d6a232813996995e79ec0fd8d1214ed6aca17ddb9531",
+      "roughness.jpg": "4ac752f8ece09097dd839d3bd1dca68baddb566213ec0ef72f618bb4eb3d10b3",
+      "bump.jpg": "2bc14fa942446a0c8414daa70d2ded385a00eda9a8e1908bef627b89c670871d"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

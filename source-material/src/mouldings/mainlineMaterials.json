@@ -1,0 +1,158 @@
+{
+  "010-1009": {
+    "variant": "supplier-derived-v2",
+    "source": "catalogue"
+  },
+  "010-4603": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "010-4609": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "019-1272": {
+    "variant": "supplier-derived-v2",
+    "source": "catalogue"
+  },
+  "POL-1009": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-1129": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-1301": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-1334": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-1336": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-2104": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-2109": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-2169": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-2190": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4100": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4202": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4211": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4313": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4344": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4415": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4416": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4417": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4418": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4436": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4446": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4506": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4508": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4540": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4541": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4571": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4640": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4642": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4643": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4721": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-4875": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-7026": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-7145": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-7146": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-7149": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  },
+  "POL-7150": {
+    "variant": "supplier-derived-v2",
+    "source": "spin"
+  }
+}

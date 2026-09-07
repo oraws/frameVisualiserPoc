@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4417",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/outline-black-sse-30mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      3,
+      134,
+      122,
+      240
+    ],
+    "img21.jpg": [
+      3,
+      134,
+      122,
+      240
+    ],
+    "img22.jpg": [
+      3,
+      134,
+      122,
+      240
+    ],
+    "img23.jpg": [
+      3,
+      134,
+      122,
+      240
+    ],
+    "img24.jpg": [
+      3,
+      134,
+      122,
+      240
+    ],
+    "img25.jpg": [
+      3,
+      134,
+      122,
+      240
+    ],
+    "img26.jpg": [
+      3,
+      134,
+      122,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    1,
+    -6,
+    -3,
+    0,
+    4,
+    6,
+    6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "2e6b80b945e6896413f423ef3baffb59e6bebe93534034f25064d464b57c2ea5",
+      "roughness.jpg": "ed56beee5d6f4a8f94c14f2367271986231606f1bda5a589f39e4ccc8ae93bf6",
+      "bump.jpg": "6f31f13ebcd39f92a0b081ce47cc4528b12e4e4943dde65b01eb8625ee26c58e"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

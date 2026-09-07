@@ -13,16 +13,19 @@ body {
   display: grid;
   grid-template-columns: minmax(680px, 1fr) 390px;
   min-width: 1080px;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   background: #111;
 }
 .cal-workspace {
   position: relative;
   display: flex;
-  min-height: 100vh;
-  align-items: center;
+  height: 100vh;
+  min-height: 0;
+  align-items: flex-start;
   justify-content: center;
   padding: 88px 42px 72px;
+  overflow: auto;
   background: radial-gradient(circle at 45% 40%, #33342f, #171817 68%);
 }
 .cal-brand {
@@ -127,8 +130,12 @@ body {
   color: #e7cf99;
 }
 .cal-panel {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 0;
   padding: 34px 30px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
   background: #181918;
   border-left: 1px solid #ffffff18;
 }

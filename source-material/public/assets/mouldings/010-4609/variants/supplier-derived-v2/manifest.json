@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "010-4609",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/deep-rebate-white-27mm-wood-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      20,
+      132,
+      178,
+      240
+    ],
+    "img21.jpg": [
+      66,
+      132,
+      180,
+      240
+    ],
+    "img22.jpg": [
+      68,
+      132,
+      180,
+      240
+    ],
+    "img23.jpg": [
+      59,
+      132,
+      179,
+      240
+    ],
+    "img24.jpg": [
+      63,
+      132,
+      179,
+      240
+    ],
+    "img25.jpg": [
+      60,
+      132,
+      178,
+      240
+    ],
+    "img26.jpg": [
+      58,
+      131,
+      169,
+      238
+    ]
+  },
+  "alignmentShiftsPx": [
+    6,
+    -1,
+    2,
+    0,
+    -2,
+    -3,
+    6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "53ead9ff45352682dabb2a16db442078dad6072639f3a3e9a545b97a86730a19",
+      "roughness.jpg": "405b75e8a8e2d8e160814dc43bb48214b6a904d0236d0fc0d12cb8753ac8e3b0",
+      "bump.jpg": "0344457303c52614d6396dd8190dd6a243d640e18d15813ef6d25cb56eed73a5"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

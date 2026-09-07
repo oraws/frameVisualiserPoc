@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-7150",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/hockney-69mm-brushed-white-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      35,
+      133,
+      205,
+      240
+    ],
+    "img21.jpg": [
+      35,
+      133,
+      204,
+      240
+    ],
+    "img22.jpg": [
+      35,
+      133,
+      202,
+      240
+    ],
+    "img23.jpg": [
+      35,
+      133,
+      200,
+      240
+    ],
+    "img24.jpg": [
+      36,
+      133,
+      199,
+      240
+    ],
+    "img25.jpg": [
+      36,
+      133,
+      202,
+      240
+    ],
+    "img26.jpg": [
+      37,
+      133,
+      206,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    2,
+    6,
+    6,
+    0,
+    -3,
+    -4,
+    -3
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "6b51bf9724e3b4f1cf9f19a8342ac95e40b22abe87474529eda2d6114b5e99e1",
+      "roughness.jpg": "9cab95b1e4af055adafba9384621ad3a7f5ec312a674c5727f670744795e6372",
+      "bump.jpg": "c678699daad86c201f9ebfd583fd3874f178e6f1f77f61cd8fb90399d755e903"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

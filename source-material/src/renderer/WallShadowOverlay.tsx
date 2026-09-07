@@ -8,6 +8,13 @@ type Lighting = {
   shadowOpacity: number;
   shadowSoftness: number;
   shadowGapMm: number;
+  goboEnabled: boolean;
+  goboAngle: number;
+  goboScale: number;
+  goboOffsetX: number;
+  goboOffsetY: number;
+  goboStrength: number;
+  goboSoftness: number;
 };
 type Calibration = {
   manualCalibration?: {
@@ -36,6 +43,13 @@ const defaultLighting: Lighting = {
   shadowOpacity: 0.34,
   shadowSoftness: 10,
   shadowGapMm: 10,
+  goboEnabled: false,
+  goboAngle: -24,
+  goboScale: 1,
+  goboOffsetX: 0,
+  goboOffsetY: 0,
+  goboStrength: 0.55,
+  goboSoftness: 5,
 };
 function homography(points: Point[]) {
   const [p0, p1, p2, p3] = points,
@@ -129,9 +143,11 @@ export default function WallShadowOverlay(p: Props) {
           Math.hypot(base[2].x - base[3].x, base[2].y - base[3].y)) /
         2;
       const depthRatio =
-        (p.profileDepthMm + lighting.shadowGapMm) /
-        Math.max(1, p.outerWidthMm);
-      const distance = Math.min(0.03, Math.max(0.0035, screenWidth * depthRatio * 1.35));
+        (p.profileDepthMm + lighting.shadowGapMm) / Math.max(1, p.outerWidthMm);
+      const distance = Math.min(
+        0.03,
+        Math.max(0.0035, screenWidth * depthRatio * 1.35),
+      );
       const castOffset = {
         x: -lighting.azimuth * distance,
         y: Math.max(0.2, lighting.elevation) * distance,
@@ -139,7 +155,11 @@ export default function WallShadowOverlay(p: Props) {
       const contactOffset = { x: castOffset.x * 0.14, y: castOffset.y * 0.14 };
       const shift = (offset: Point) =>
         base.map((point) => ({ x: point.x + offset.x, y: point.y + offset.y }));
-      return { cast: shift(castOffset), contact: shift(contactOffset) };
+      return {
+        frame: base,
+        cast: shift(castOffset),
+        contact: shift(contactOffset),
+      };
     }
     const raw = p.calibration?.manualCalibration?.quadNormalised;
     if (!raw || raw.length !== 4) return null;
@@ -191,6 +211,7 @@ export default function WallShadowOverlay(p: Props) {
       );
     };
     return {
+      frame: corners(0, 0),
       cast: corners(p.profileDepthMm + lighting.shadowGapMm, 1.15),
       contact: corners(Math.max(2, lighting.shadowGapMm), 0.18),
     };
@@ -208,51 +229,114 @@ export default function WallShadowOverlay(p: Props) {
     lighting.shadowGapMm,
   ]);
   if (!geometry) return null;
-  const alignment = p.projectedCorners?.length === 4
-      ? "none"
-      : p.room.imageAnchorX === "left" ? "xMinYMid slice" : "xMidYMid slice",
+  const alignment =
+      p.projectedCorners?.length === 4
+        ? "none"
+        : p.room.imageAnchorX === "left"
+          ? "xMinYMid slice"
+          : "xMidYMid slice",
     opacity = Math.min(0.7, lighting.shadowOpacity * p.strength);
   return (
-    <svg
-      className="wall-shadow-overlay"
-      viewBox="0 0 1 1"
-      preserveAspectRatio={alignment}
-      aria-hidden="true"
-    >
-      <defs>
-        <filter
-          id="wall-cast-blur"
-          x="-40%"
-          y="-40%"
-          width="180%"
-          height="180%"
+    <>
+      <svg
+        className="wall-shadow-overlay"
+        viewBox="0 0 1 1"
+        preserveAspectRatio={alignment}
+        aria-hidden="true"
+      >
+        <defs>
+          <filter
+            id="wall-cast-blur"
+            x="-40%"
+            y="-40%"
+            width="180%"
+            height="180%"
+          >
+            <feGaussianBlur
+              stdDeviation={0.0025 + lighting.shadowSoftness * 0.0007}
+            />
+          </filter>
+          <filter
+            id="wall-contact-blur"
+            x="-30%"
+            y="-30%"
+            width="160%"
+            height="160%"
+          >
+            <feGaussianBlur stdDeviation=".0015" />
+          </filter>
+        </defs>
+        <polygon
+          points={serialise(geometry.cast)}
+          fill="#241f1b"
+          opacity={opacity * 0.72}
+          filter="url(#wall-cast-blur)"
+        />
+        <polygon
+          points={serialise(geometry.contact)}
+          fill="#191714"
+          opacity={opacity * 0.62}
+          filter="url(#wall-contact-blur)"
+        />
+      </svg>
+      {lighting.goboEnabled && (
+        <svg
+          className="wall-gobo-overlay"
+          viewBox="0 0 1 1"
+          preserveAspectRatio={alignment}
+          aria-hidden="true"
         >
-          <feGaussianBlur
-            stdDeviation={0.0025 + lighting.shadowSoftness * 0.0007}
+          <defs>
+            <clipPath id="wall-gobo-frame">
+              <polygon points={serialise(geometry.frame)} />
+            </clipPath>
+            <pattern
+              id="wall-gobo-pattern"
+              width={0.16 * lighting.goboScale}
+              height={0.16 * lighting.goboScale}
+              patternUnits="userSpaceOnUse"
+              patternTransform={`translate(${lighting.goboOffsetX * 0.2} ${lighting.goboOffsetY * 0.2}) rotate(${lighting.goboAngle} .5 .5)`}
+            >
+              <rect
+                width="100%"
+                height="100%"
+                fill="#ffe8bd"
+                fillOpacity=".48"
+              />
+              <rect
+                width="14%"
+                height="100%"
+                fill="#17130f"
+                fillOpacity=".82"
+              />
+              <rect
+                width="100%"
+                height="14%"
+                fill="#17130f"
+                fillOpacity=".82"
+              />
+            </pattern>
+            <filter
+              id="wall-gobo-blur"
+              x="-20%"
+              y="-20%"
+              width="140%"
+              height="140%"
+            >
+              <feGaussianBlur stdDeviation={lighting.goboSoftness * 0.00035} />
+            </filter>
+          </defs>
+          <rect
+            width="1"
+            height="1"
+            fill="url(#wall-gobo-pattern)"
+            opacity={lighting.goboStrength}
+            clipPath="url(#wall-gobo-frame)"
+            filter="url(#wall-gobo-blur)"
+            style={{ mixBlendMode: "soft-light" }}
           />
-        </filter>
-        <filter
-          id="wall-contact-blur"
-          x="-30%"
-          y="-30%"
-          width="160%"
-          height="160%"
-        >
-          <feGaussianBlur stdDeviation=".0015" />
-        </filter>
-      </defs>
-      <polygon
-        points={serialise(geometry.cast)}
-        fill="#241f1b"
-        opacity={opacity * 0.72}
-        filter="url(#wall-cast-blur)"
-      />
-      <polygon
-        points={serialise(geometry.contact)}
-        fill="#191714"
-        opacity={opacity * 0.62}
-        filter="url(#wall-contact-blur)"
-      />
-    </svg>
+        </svg>
+      )}
+    </>
   );
 }

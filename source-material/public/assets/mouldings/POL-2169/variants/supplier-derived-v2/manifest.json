@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-2169",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/basics-gold-79mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      6,
+      127,
+      238,
+      239
+    ],
+    "img21.jpg": [
+      6,
+      127,
+      238,
+      239
+    ],
+    "img22.jpg": [
+      6,
+      127,
+      238,
+      239
+    ],
+    "img23.jpg": [
+      6,
+      127,
+      238,
+      239
+    ],
+    "img24.jpg": [
+      6,
+      127,
+      238,
+      239
+    ],
+    "img25.jpg": [
+      6,
+      127,
+      238,
+      239
+    ],
+    "img26.jpg": [
+      6,
+      127,
+      238,
+      239
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    -4,
+    -2,
+    0,
+    2,
+    3,
+    3
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "5688df1dc79a1e3726c0854a58896e61eab9983b66737cb76a67d17a68c502bb",
+      "roughness.jpg": "bc1dba53ac03abc23d2ce11859c4168ef6a9596f3c275d3c6e23042017ae751e",
+      "bump.jpg": "de713b788576e9d13b71e0374a4bab78d94f2a946f1fefcc908118890dd65fc0"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

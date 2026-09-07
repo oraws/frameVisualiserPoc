@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4313",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/edge-silver-sse-43mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      30,
+      130,
+      135,
+      240
+    ],
+    "img21.jpg": [
+      29,
+      130,
+      135,
+      240
+    ],
+    "img22.jpg": [
+      28,
+      130,
+      134,
+      240
+    ],
+    "img23.jpg": [
+      26,
+      130,
+      133,
+      240
+    ],
+    "img24.jpg": [
+      24,
+      130,
+      131,
+      240
+    ],
+    "img25.jpg": [
+      24,
+      130,
+      132,
+      240
+    ],
+    "img26.jpg": [
+      23,
+      130,
+      133,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -5,
+    -2,
+    0,
+    0,
+    0,
+    3,
+    5
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "798b9ac9dd80f0ea105211fab085f3baac1612154892e31d83c32cd3a2578f31",
+      "roughness.jpg": "f61cac0cbe98d303d631b574d393ea0a9ac7449b67d39a6b392845c4653fab61",
+      "bump.jpg": "1e8a60a28e0b1f76673f247c95ce6ff65ee8eaac0bb7a80bdac48ffcb9b75e07"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

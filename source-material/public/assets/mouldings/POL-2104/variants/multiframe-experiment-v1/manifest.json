@@ -1,0 +1,43 @@
+{
+  "id": "multiframe-experiment-v1",
+  "sku": "POL-2104",
+  "label": "Supplier spin multi-frame experiment",
+  "status": "experimental",
+  "productUrl": "https://mainlinemouldings.com/contemporary-classics-antique-gold-70mm-polcore-moulding/",
+  "source": "Mainline Lv2 spin images only",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crop": [
+    31,
+    112,
+    136,
+    218
+  ],
+  "alignmentShiftsPx": [
+    -2,
+    -2,
+    -1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "8337a06efcd7603e430099c2d33e3ff78e3a80fd1990cc7196a79c21154476c0",
+      "roughness.jpg": "1a6f6da1fc576cdab0743a49abcfa78d702a2915e7098fa3d7a20bfbc191451f",
+      "bump.jpg": "5aedd4f587a19a56a1ec6de4ebb9581d84bf15a30c3fb3414cc443869a04f2e8"
+    }
+  },
+  "activation": "Manual review required"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4100",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/brushed-black-41mm-polcore-moulding/?searchuuid=58e99621-bebd-4bdc-b882-d9ee484572ec&search_query=pol4100",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      3,
+      132,
+      154,
+      240
+    ],
+    "img21.jpg": [
+      3,
+      133,
+      154,
+      240
+    ],
+    "img22.jpg": [
+      3,
+      132,
+      154,
+      240
+    ],
+    "img23.jpg": [
+      3,
+      132,
+      154,
+      240
+    ],
+    "img24.jpg": [
+      3,
+      132,
+      154,
+      240
+    ],
+    "img25.jpg": [
+      3,
+      132,
+      154,
+      240
+    ],
+    "img26.jpg": [
+      3,
+      133,
+      154,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    1,
+    0,
+    0,
+    0,
+    -1,
+    -3,
+    -5
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "107136d9309f11fb0a4c51b9f03651029ca43828566f532a7cdafb03e79e1214",
+      "roughness.jpg": "c5ef074c719834dfa7a73adb6b70b6e3b9093a40e9c5460af664ededd15e06f5",
+      "bump.jpg": "37d3c2cc8ed83f6e835df2bf8b135ef1da135733fdf9818eed5bb94d44f0a9a9"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

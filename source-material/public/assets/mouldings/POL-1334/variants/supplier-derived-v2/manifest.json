@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-1334",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/nelson-walnut-38mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      41,
+      134,
+      139,
+      240
+    ],
+    "img21.jpg": [
+      39,
+      134,
+      137,
+      240
+    ],
+    "img22.jpg": [
+      38,
+      134,
+      135,
+      240
+    ],
+    "img23.jpg": [
+      35,
+      134,
+      133,
+      240
+    ],
+    "img24.jpg": [
+      34,
+      134,
+      135,
+      240
+    ],
+    "img25.jpg": [
+      32,
+      134,
+      137,
+      240
+    ],
+    "img26.jpg": [
+      30,
+      134,
+      139,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -3,
+    -2,
+    0,
+    0,
+    6,
+    6,
+    -4
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "5a3ab0fef7ef9a5dfc65d0d911ba66516c1e1266cd22e941c131e9920b05e899",
+      "roughness.jpg": "4e846fd5bba5f3a5071c001dda6602ba183c7ef5d26007d18b8662fed033a994",
+      "bump.jpg": "5efd07cda0af516a94de3547c6c45e3509f15ccb27e5fc01996caf954b69322e"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

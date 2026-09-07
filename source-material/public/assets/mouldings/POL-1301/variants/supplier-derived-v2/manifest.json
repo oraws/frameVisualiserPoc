@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-1301",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/starling-black-gse-35mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      46,
+      239,
+      240,
+      438
+    ],
+    "img21.jpg": [
+      41,
+      239,
+      242,
+      438
+    ],
+    "img22.jpg": [
+      14,
+      239,
+      248,
+      438
+    ],
+    "img23.jpg": [
+      41,
+      239,
+      237,
+      438
+    ],
+    "img24.jpg": [
+      43,
+      239,
+      248,
+      438
+    ],
+    "img25.jpg": [
+      38,
+      239,
+      249,
+      438
+    ],
+    "img26.jpg": [
+      42,
+      239,
+      237,
+      438
+    ]
+  },
+  "alignmentShiftsPx": [
+    4,
+    -4,
+    -3,
+    0,
+    3,
+    5,
+    -2
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "2747c89b5ddb30cdcb5e99055227063225aa9f9fe352a82fca6527ed4c3d22b8",
+      "roughness.jpg": "21bb035e279ccc8518e29fe1803b0863522e9390d503a56209cc936a681e5378",
+      "bump.jpg": "a33e8325d0d3f380bc3285598b2725b3b853813c7874883de2bd9066a257a328"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

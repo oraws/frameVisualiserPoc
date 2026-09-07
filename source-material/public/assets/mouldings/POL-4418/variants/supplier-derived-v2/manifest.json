@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4418",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/54mm-flat-bronze-polcore-moulding/?searchuuid=13af4cbd-eb45-4f91-892b-5ebd360b7e30&search_query=POL-4418",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img21.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img22.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img23.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img24.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img25.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img26.jpg": [
+      29,
+      67,
+      130,
+      232
+    ]
+  },
+  "alignmentShiftsPx": [
+    2,
+    0,
+    -6,
+    0,
+    4,
+    -5,
+    -1
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "a8996aa03516d7794bfa3700f3634b059d13361bff076490a256b9e162a62058",
+      "roughness.jpg": "fa38ad2be742d89edfe44494b3e29e105762ca3a8153a3a3659759d039dc77a0",
+      "bump.jpg": "20fb491190beb12a78d2e58b2317da1fab16b5bef25463b1a17f0558b7961b39"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

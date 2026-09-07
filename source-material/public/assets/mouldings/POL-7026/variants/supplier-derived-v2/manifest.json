@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-7026",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/fletcher-30mm-walnut-woodgrain-basics-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      57,
+      258,
+      209,
+      470
+    ],
+    "img21.jpg": [
+      55,
+      258,
+      207,
+      470
+    ],
+    "img22.jpg": [
+      52,
+      258,
+      202,
+      470
+    ],
+    "img23.jpg": [
+      52,
+      258,
+      201,
+      470
+    ],
+    "img24.jpg": [
+      51,
+      257,
+      201,
+      470
+    ],
+    "img25.jpg": [
+      52,
+      257,
+      204,
+      470
+    ],
+    "img26.jpg": [
+      52,
+      257,
+      205,
+      470
+    ]
+  },
+  "alignmentShiftsPx": [
+    -1,
+    0,
+    -3,
+    0,
+    2,
+    6,
+    -6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "47186098c7b890dcb70b00fdfa9eb10cd4fbdfc2895f9177a52807405476547d",
+      "roughness.jpg": "5776406f8a003bb085f06559f14c984eddeab805a9d1d4a2de11166076e81191",
+      "bump.jpg": "603a41c49921a02936767679fb2bb1369154ab893f5be1fdb045301a6c990648"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

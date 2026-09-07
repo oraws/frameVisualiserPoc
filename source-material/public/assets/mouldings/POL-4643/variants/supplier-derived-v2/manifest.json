@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4643",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/naples-silver-31mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      31,
+      130,
+      103,
+      240
+    ],
+    "img21.jpg": [
+      29,
+      130,
+      102,
+      240
+    ],
+    "img22.jpg": [
+      28,
+      130,
+      101,
+      240
+    ],
+    "img23.jpg": [
+      28,
+      130,
+      100,
+      240
+    ],
+    "img24.jpg": [
+      27,
+      130,
+      100,
+      240
+    ],
+    "img25.jpg": [
+      27,
+      130,
+      100,
+      240
+    ],
+    "img26.jpg": [
+      26,
+      130,
+      101,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    -5,
+    -5,
+    0,
+    6,
+    -6,
+    -5
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "9fcb1ac3be1fa2474eba00d98aadd2476039865295572cfd474c0c37525e68f5",
+      "roughness.jpg": "d94c38b8aadfbcd2f95d66b79e691d65df64f83b52d57acce4e77e6ec4189029",
+      "bump.jpg": "f136215d9edf6c3960e8bedc9acb9e7cf401d3619600c7285c590a1345bcc2b3"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

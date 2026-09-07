@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-7146",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/l-shape-10mm-white-woodgrain-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      40,
+      128,
+      142,
+      230
+    ],
+    "img21.jpg": [
+      43,
+      128,
+      139,
+      230
+    ],
+    "img22.jpg": [
+      45,
+      128,
+      135,
+      231
+    ],
+    "img23.jpg": [
+      48,
+      128,
+      133,
+      231
+    ],
+    "img24.jpg": [
+      50,
+      129,
+      136,
+      231
+    ],
+    "img25.jpg": [
+      52,
+      128,
+      139,
+      231
+    ],
+    "img26.jpg": [
+      54,
+      129,
+      141,
+      232
+    ]
+  },
+  "alignmentShiftsPx": [
+    -3,
+    -4,
+    -2,
+    0,
+    4,
+    4,
+    3
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "9c8f54cdba1cc4349fdd5128bf104fb2cd126aea54f7f3fc8659931ee77e56b7",
+      "roughness.jpg": "8ef544e15e7dd5750e80c143fe6589197b921437a045fbc91f83336ee3785ff6",
+      "bump.jpg": "6699d89e5aaa94b8d16ffc505c2a217314bcb1158911a95d8b23d55e0b9e9be1"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

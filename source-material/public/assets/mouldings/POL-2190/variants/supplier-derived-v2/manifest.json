@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-2190",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/contemporary-classics-black-70mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      28,
+      134,
+      199,
+      240
+    ],
+    "img21.jpg": [
+      21,
+      134,
+      229,
+      240
+    ],
+    "img22.jpg": [
+      13,
+      134,
+      229,
+      240
+    ],
+    "img23.jpg": [
+      21,
+      134,
+      230,
+      240
+    ],
+    "img24.jpg": [
+      23,
+      134,
+      230,
+      240
+    ],
+    "img25.jpg": [
+      30,
+      134,
+      229,
+      240
+    ],
+    "img26.jpg": [
+      33,
+      134,
+      230,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    -6,
+    6,
+    0,
+    5,
+    -3,
+    3
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "8956c1c0e1eef0f940d1087692b168f1ed6aceb30ffee956810568b3f87a751b",
+      "roughness.jpg": "fc096e04cf78f6dc960f6c047d8483af6c15caa52bf7e6618d5b4486b867a689",
+      "bump.jpg": "6aa0ae51aeaa6489de0c08c4a0e9843c3bd079013b898490805d01e43db1895d"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

@@ -126,3 +126,24 @@ The primary report is
 classical cross-view stability and exports simplified millimetre points, but it
 does not promote them to the renderer. Model weights and virtual environments
 are intentionally ignored by Git.
+
+## Standard supplier-material build
+
+Every imported Mainline moulding is given a repeatable PBR material candidate
+from supplier assets. The builder discovers products automatically, selects
+seven adjacent near-frontal spin frames from the manifest without assuming a
+fixed sequence length, aligns and fuses their finish, and emits colour,
+roughness and bump maps. Catalogue imagery is used when no spin exists.
+
+```bash
+npm run materials:mainline
+npm run validate:moulding-assets
+```
+
+Outputs live in
+`public/assets/mouldings/<SKU>/variants/supplier-derived-v2/`; the generated
+`src/mouldings/mainlineMaterials.json` index is the renderer allow-list. A new
+Mainline import must pass the asset validator and then be compared in the live
+visualiser against its supplier thumbnails before it is considered ready.
+Curved profile families receive conservative surface smoothing in the renderer;
+flat, angled and L-shaped profiles retain their hard edges.

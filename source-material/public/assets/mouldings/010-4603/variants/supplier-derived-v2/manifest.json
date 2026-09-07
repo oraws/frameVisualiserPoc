@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "010-4603",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/deep-rebate-black-27mm-wood-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      50,
+      131,
+      116,
+      240
+    ],
+    "img21.jpg": [
+      48,
+      131,
+      134,
+      240
+    ],
+    "img22.jpg": [
+      46,
+      131,
+      139,
+      240
+    ],
+    "img23.jpg": [
+      44,
+      131,
+      139,
+      240
+    ],
+    "img24.jpg": [
+      41,
+      131,
+      139,
+      240
+    ],
+    "img25.jpg": [
+      38,
+      131,
+      139,
+      240
+    ],
+    "img26.jpg": [
+      35,
+      131,
+      141,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    1,
+    -6,
+    0,
+    6,
+    -3,
+    2
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "418bec8a7df4d4c4425031a48f02579e903dfea6563e7d239bc3267a2cd625ea",
+      "roughness.jpg": "de879d35dc29946641858a44bd6f492a703b7f8d38407c6f69dbe6df381f9146",
+      "bump.jpg": "21051ad25ffe9f2900d60cbb4905056c4bd1d5894f8399bab3eed871f3b8fc58"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4506",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/paramount-gunmetal-53mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      17,
+      132,
+      148,
+      240
+    ],
+    "img21.jpg": [
+      15,
+      132,
+      146,
+      240
+    ],
+    "img22.jpg": [
+      34,
+      133,
+      146,
+      240
+    ],
+    "img23.jpg": [
+      34,
+      133,
+      145,
+      240
+    ],
+    "img24.jpg": [
+      34,
+      133,
+      146,
+      240
+    ],
+    "img25.jpg": [
+      33,
+      133,
+      147,
+      240
+    ],
+    "img26.jpg": [
+      19,
+      133,
+      148,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    6,
+    -6,
+    -6,
+    0,
+    -2,
+    -3,
+    -6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "038d82545d826b1f89d0baa5aa554d96758091795648d7e55bfa948931c61be2",
+      "roughness.jpg": "1fedba23b6fb8de386a7b6eb34a21d62636d529aab92c8c3edf462d142a1c2a7",
+      "bump.jpg": "303b3fdcc849c08edb270479a025bf2baf92b20a565d38000d8dd1fa020a6471"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

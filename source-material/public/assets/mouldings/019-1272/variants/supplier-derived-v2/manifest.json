@@ -1,0 +1,33 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "019-1272",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "ml_catalogue.pdf",
+  "source": "catalogue",
+  "frames": [
+    "catalogue/source.png"
+  ],
+  "crops": {
+    "catalogue/source.png": [
+      0,
+      0,
+      142,
+      279
+    ]
+  },
+  "alignmentShiftsPx": [
+    0
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "fc0c09fe04239334fc54be2f480b209345edf9d561537553ea4daa5d0e5c55a0",
+      "roughness.jpg": "0e8ff9b2014df12f3ebbfcb54b6ed7282b9f21e966ee3cacaeb9fc3b75272f35",
+      "bump.jpg": "38b1ddf71a394c019eb437f8cc7ff46e6c90021f65e5c17c78d4f638cde4845c"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

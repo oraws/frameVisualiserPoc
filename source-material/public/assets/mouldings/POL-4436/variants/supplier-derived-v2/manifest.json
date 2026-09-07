@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4436",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/edge-gold-30mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      3,
+      133,
+      128,
+      240
+    ],
+    "img21.jpg": [
+      3,
+      133,
+      128,
+      240
+    ],
+    "img22.jpg": [
+      3,
+      133,
+      128,
+      240
+    ],
+    "img23.jpg": [
+      3,
+      133,
+      128,
+      240
+    ],
+    "img24.jpg": [
+      3,
+      133,
+      128,
+      240
+    ],
+    "img25.jpg": [
+      3,
+      133,
+      128,
+      240
+    ],
+    "img26.jpg": [
+      3,
+      133,
+      128,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -2,
+    -6,
+    -4,
+    0,
+    4,
+    6,
+    6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "b1eb3515f6b4ee97bf658eea2cc2f8b6bc488803096cf005da86bf9639c95391",
+      "roughness.jpg": "eff76e95a57c7521c1870ccedc1dbfee89e6157eb081da8dd543ecd1e6c0e6d8",
+      "bump.jpg": "5df9d172bbf790de6f5d250e3c6b273e1938b777c9db87e639aa861f137918fc"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

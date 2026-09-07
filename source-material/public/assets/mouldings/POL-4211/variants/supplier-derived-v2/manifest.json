@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4211",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/54mm-flat-oak-polcore-moulding/?searchuuid=afca3c48-4ae0-4747-b589-0576fb613910&search_query=POL-4211",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img21.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img22.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img23.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img24.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img25.jpg": [
+      29,
+      67,
+      130,
+      232
+    ],
+    "img26.jpg": [
+      29,
+      67,
+      130,
+      232
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    1,
+    -6,
+    0,
+    6,
+    2,
+    0
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "81aae4aa54a67b1427e040a4e90d966866147c273d6bf476815bb48285853622",
+      "roughness.jpg": "fe1be70d5f3bf22e28aab6894cd025439752064926a567ff3638a87893ec193d",
+      "bump.jpg": "886406e3d26f533d6c5836a8e469d5d485239701d496806e3dd048ae2fe04e47"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

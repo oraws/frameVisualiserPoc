@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-2109",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/contemporary-classics-antique-gold-40mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      3,
+      132,
+      152,
+      240
+    ],
+    "img21.jpg": [
+      3,
+      132,
+      152,
+      240
+    ],
+    "img22.jpg": [
+      3,
+      132,
+      152,
+      240
+    ],
+    "img23.jpg": [
+      3,
+      132,
+      152,
+      240
+    ],
+    "img24.jpg": [
+      3,
+      132,
+      152,
+      240
+    ],
+    "img25.jpg": [
+      3,
+      132,
+      152,
+      240
+    ],
+    "img26.jpg": [
+      3,
+      131,
+      152,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    -5,
+    -2,
+    0,
+    2,
+    5,
+    6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "477396663c355a3a711671bbd2eb0dc64e97db0bb54b4f42800da2a6fdc8b36a",
+      "roughness.jpg": "9990ca5fc5c3b43d3272ab6500cd587f472dd4201ececff186579dd84edc56c2",
+      "bump.jpg": "45eedda69f827727d68c5b9d11d5a32cebb29ca741eab67ca992a7799817670b"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

@@ -28,7 +28,12 @@ export function createProfileFrameGeometry(openingWidthMm:number, openingHeightM
   for (const edge of [0,profile.length-1]) for(let s=0;s<4;s++){
     const base=(s*profile.length+edge)*2, a=base,b=base+1;
     const ax=positions[a*5],ay=positions[a*5+1], bx=positions[b*5],by=positions[b*5+1];
-    const a0=addVertex(ax,ay,.008,0,0),b0=addVertex(bx,by,.008,1,0); indices.push(a,b,a0,b,b0,a0);
+    const a0=addVertex(ax,ay,.008,0,0),b0=addVertex(bx,by,.008,1,0);
+    // The inner and outer closure walls face opposite directions. Using the
+    // same winding for both culled the inner rebate wall at oblique angles,
+    // exposing the scene background between the moulding and mount.
+    if(edge===0) indices.push(a,a0,b,b,a0,b0);
+    else indices.push(a,b,a0,b,b0,a0);
   }
   const geometry=new THREE.BufferGeometry(); geometry.setAttribute('position',new THREE.Float32BufferAttribute(positions.filter((_,i)=>i%5<3),3)); geometry.setAttribute('uv',new THREE.Float32BufferAttribute(positions.filter((_,i)=>i%5>=3),2)); geometry.setIndex(indices); geometry.computeVertexNormals(); geometry.computeBoundingBox(); geometry.computeBoundingSphere(); return geometry;
 }

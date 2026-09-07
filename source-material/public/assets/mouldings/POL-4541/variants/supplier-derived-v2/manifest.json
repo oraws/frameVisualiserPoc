@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4541",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/watercolour-gold-25mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      2,
+      132,
+      116,
+      240
+    ],
+    "img21.jpg": [
+      2,
+      132,
+      116,
+      240
+    ],
+    "img22.jpg": [
+      2,
+      132,
+      116,
+      240
+    ],
+    "img23.jpg": [
+      2,
+      132,
+      116,
+      240
+    ],
+    "img24.jpg": [
+      2,
+      132,
+      116,
+      240
+    ],
+    "img25.jpg": [
+      2,
+      132,
+      116,
+      240
+    ],
+    "img26.jpg": [
+      2,
+      132,
+      116,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    -6,
+    -1,
+    0,
+    1,
+    1,
+    0
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "9be77cfbcbe2c506d43cb7561f7decb00b93c80522e2efe2f0472bb9b1286160",
+      "roughness.jpg": "8743c65f0e314dafdb1d8253e8551c1293005af23b24a15f5c1946e61896be03",
+      "bump.jpg": "9e3f16f4ea6a31b03b756e89a3a3fa64e85156636b973178a52e6032d4a582b6"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

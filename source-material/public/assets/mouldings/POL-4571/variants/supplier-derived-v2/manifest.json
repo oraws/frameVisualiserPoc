@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4571",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/16mm-flat-oak-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      6,
+      130,
+      113,
+      240
+    ],
+    "img21.jpg": [
+      4,
+      130,
+      113,
+      240
+    ],
+    "img22.jpg": [
+      7,
+      130,
+      113,
+      240
+    ],
+    "img23.jpg": [
+      31,
+      130,
+      113,
+      240
+    ],
+    "img24.jpg": [
+      34,
+      130,
+      113,
+      240
+    ],
+    "img25.jpg": [
+      30,
+      131,
+      113,
+      240
+    ],
+    "img26.jpg": [
+      32,
+      130,
+      113,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    1,
+    2,
+    -5,
+    0,
+    2,
+    -5,
+    -2
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "27ecf8f420a606d90b1f925f485be730f5c8b848bd2f06356f78227e33e39578",
+      "roughness.jpg": "9df48692e198997c132dc1c16bedee29de9475269cf71e0d424224e1438b72c4",
+      "bump.jpg": "92e712e5ff6abf490e53be60f052214e0c734a201e0b27d0e5523d5dd1406cdb"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

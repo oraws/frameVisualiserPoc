@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-1129",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/basics-edge-silver-30mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      20,
+      131,
+      97,
+      240
+    ],
+    "img21.jpg": [
+      19,
+      131,
+      96,
+      240
+    ],
+    "img22.jpg": [
+      18,
+      131,
+      95,
+      240
+    ],
+    "img23.jpg": [
+      17,
+      131,
+      94,
+      240
+    ],
+    "img24.jpg": [
+      16,
+      131,
+      94,
+      240
+    ],
+    "img25.jpg": [
+      15,
+      131,
+      95,
+      240
+    ],
+    "img26.jpg": [
+      14,
+      131,
+      96,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    -4,
+    -3,
+    0,
+    2,
+    4,
+    -6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "7e613fa4a6da9762845049d4f4fced7233c50ee039fc93ccdc0f6c3ee73e2926",
+      "roughness.jpg": "df928b4f6a548013027dbab005d82061f87ee437f65fc15cca20f23fe8a55dc7",
+      "bump.jpg": "86df68292edb35edb3585b33a35bcd348c4c7a46a94cdaad7a3fc5f04b8ef5dd"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

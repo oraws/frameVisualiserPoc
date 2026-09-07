@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4721",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/30mm-woodgrain-oak-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      3,
+      132,
+      136,
+      240
+    ],
+    "img21.jpg": [
+      3,
+      132,
+      140,
+      240
+    ],
+    "img22.jpg": [
+      3,
+      132,
+      125,
+      240
+    ],
+    "img23.jpg": [
+      3,
+      132,
+      138,
+      240
+    ],
+    "img24.jpg": [
+      3,
+      132,
+      139,
+      240
+    ],
+    "img25.jpg": [
+      3,
+      132,
+      134,
+      240
+    ],
+    "img26.jpg": [
+      3,
+      132,
+      132,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    6,
+    -3,
+    -3,
+    0,
+    4,
+    2,
+    2
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "5fa2eb7c7a8fef5e1d3a96ae8078b69b0075cc09779f725316845459bc2dbb16",
+      "roughness.jpg": "b46ddffe55d2a0d36a10f92194e1ee7bc332199e620dac8fbb927d76bada5d65",
+      "bump.jpg": "0e54cf06ef70f226ab1869573fbbb06c42e89fc2a5e41e237b9b9750e9f34fd8"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4508",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/paramount-black-sse-30mm-polcore-moulding/?searchuuid=3d2309b3-b76f-48fb-a6c5-2e31965a7707&search_query=POL-4508",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      88,
+      78,
+      125,
+      226
+    ],
+    "img21.jpg": [
+      88,
+      78,
+      125,
+      226
+    ],
+    "img22.jpg": [
+      88,
+      78,
+      125,
+      226
+    ],
+    "img23.jpg": [
+      88,
+      78,
+      125,
+      226
+    ],
+    "img24.jpg": [
+      88,
+      78,
+      125,
+      226
+    ],
+    "img25.jpg": [
+      88,
+      78,
+      125,
+      226
+    ],
+    "img26.jpg": [
+      88,
+      78,
+      125,
+      226
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    6,
+    6,
+    0,
+    6,
+    6,
+    -2
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "c0ff53000e705fa6b70dbe74091121c0e646d1e2bef4d2facbd307979b821f3f",
+      "roughness.jpg": "9bb369a4bdd54ab6372a6bef0612bd456b8accf0f81221c5ff95dc82598ba99f",
+      "bump.jpg": "a8ddecb899f1ac74df576645d0c40816eaaf97aa8ae657c1e421cb845ef9d3ec"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

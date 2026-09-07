@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4202",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/30mm-flats-brushed-black-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      3,
+      132,
+      124,
+      240
+    ],
+    "img21.jpg": [
+      3,
+      132,
+      124,
+      240
+    ],
+    "img22.jpg": [
+      3,
+      132,
+      124,
+      240
+    ],
+    "img23.jpg": [
+      3,
+      132,
+      124,
+      240
+    ],
+    "img24.jpg": [
+      3,
+      132,
+      124,
+      240
+    ],
+    "img25.jpg": [
+      3,
+      132,
+      124,
+      240
+    ],
+    "img26.jpg": [
+      3,
+      132,
+      124,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    -6,
+    -3,
+    0,
+    4,
+    6,
+    6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "16809d113a4c374b35f1df848c2e794c95c3e52a020ac8e420fe9a1f8740792d",
+      "roughness.jpg": "52da830377a4a41b46e0a6fb4dbd0e548cde24c649bc87d26a5a77f50df3e6b4",
+      "bump.jpg": "2e4e32cd0dca01601dad74155d249f57af77e54298112fe78656f15af2628c59"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

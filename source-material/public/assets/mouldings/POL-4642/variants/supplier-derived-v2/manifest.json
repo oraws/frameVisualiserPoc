@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4642",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/naples-gold-31mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      3,
+      133,
+      135,
+      240
+    ],
+    "img21.jpg": [
+      3,
+      133,
+      135,
+      240
+    ],
+    "img22.jpg": [
+      3,
+      133,
+      135,
+      240
+    ],
+    "img23.jpg": [
+      3,
+      133,
+      135,
+      240
+    ],
+    "img24.jpg": [
+      3,
+      133,
+      135,
+      240
+    ],
+    "img25.jpg": [
+      3,
+      133,
+      135,
+      240
+    ],
+    "img26.jpg": [
+      3,
+      133,
+      135,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    -6,
+    -4,
+    -2,
+    0,
+    2,
+    3,
+    5
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "6bc51295c428ec03ae256f3fd4db559b958fd9b581c12323ab26ebafe0e79a08",
+      "roughness.jpg": "562af9672de01c3a0c16514780798f77b73fd2df0dccd7f45a4b5ebdf2398ed6",
+      "bump.jpg": "d568ced2865903733bfd894244d98ca1bc481baf95ba564ba7b46a2f5872a7c0"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4344",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/box-white-43mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      22,
+      126,
+      123,
+      230
+    ],
+    "img21.jpg": [
+      20,
+      126,
+      123,
+      230
+    ],
+    "img22.jpg": [
+      23,
+      126,
+      123,
+      230
+    ],
+    "img23.jpg": [
+      22,
+      125,
+      122,
+      229
+    ],
+    "img24.jpg": [
+      20,
+      125,
+      126,
+      229
+    ],
+    "img25.jpg": [
+      18,
+      126,
+      129,
+      230
+    ],
+    "img26.jpg": [
+      18,
+      126,
+      132,
+      231
+    ]
+  },
+  "alignmentShiftsPx": [
+    2,
+    3,
+    -3,
+    0,
+    -5,
+    4,
+    -6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "9d1006b4a0f6ca4efca7904b68196ffaf3aa2be2c5818f28cecad0548eaa5377",
+      "roughness.jpg": "a84de08853479188dfbba4c97a330979b6ecd5e4ef79ffb7a45ad0bb661aede2",
+      "bump.jpg": "3c9963ba2b77b0d2b6d1fa5944ed4bc1a0db555e2033676063e5bb17f9aabb89"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

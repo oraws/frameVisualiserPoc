@@ -23,3 +23,10 @@ For an invoice-derived CSV containing `product_code` and `description`, use:
 The batch importer resolves canonical product URLs through Centrado's SKU
 search, discovers original gallery assets without assuming a fixed image
 count, and records any ambiguous or incomplete rows in `batch-failures.json`.
+
+After importing, run `npm run validate:moulding-assets`. Each Centrado product
+must have a metric `profile.json`, base colour/bump maps, and separate accent
+maps when the supplier record has an accent width. The final QA step is a live
+visualiser comparison of the rendered section, tone and finish against the
+supplier profile and gallery thumbnails; importer success alone is not visual
+approval.

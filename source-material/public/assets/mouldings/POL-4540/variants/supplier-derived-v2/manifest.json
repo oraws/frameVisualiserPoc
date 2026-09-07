@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-4540",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/watercolour-silver-25mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      6,
+      202,
+      249,
+      372
+    ],
+    "img21.jpg": [
+      6,
+      203,
+      249,
+      372
+    ],
+    "img22.jpg": [
+      5,
+      202,
+      222,
+      372
+    ],
+    "img23.jpg": [
+      6,
+      203,
+      249,
+      372
+    ],
+    "img24.jpg": [
+      6,
+      202,
+      249,
+      372
+    ],
+    "img25.jpg": [
+      6,
+      202,
+      242,
+      372
+    ],
+    "img26.jpg": [
+      6,
+      202,
+      249,
+      372
+    ]
+  },
+  "alignmentShiftsPx": [
+    6,
+    -6,
+    -2,
+    0,
+    2,
+    1,
+    5
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "64eacd37a65637c6d6203f143572273390f843d8b1f5111b7908dfc0413898f0",
+      "roughness.jpg": "a47834c080db394ed2a8490112fbc4421b4e6f5b1edb7873dbedce8896c8531d",
+      "bump.jpg": "18b123ee7dcbea041e53ee46d520bf95064beb5a48af4ed6bc3a8063b9f597eb"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

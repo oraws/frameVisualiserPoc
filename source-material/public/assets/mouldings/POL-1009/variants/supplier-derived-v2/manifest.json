@@ -1,0 +1,81 @@
+{
+  "id": "supplier-derived-v2",
+  "sku": "POL-1009",
+  "label": "Supplier-derived PBR material",
+  "status": "generated-review-required",
+  "productUrl": "https://mainlinemouldings.com/basics-brushed-black-28mm-polcore-moulding/",
+  "source": "spin",
+  "frames": [
+    "img20.jpg",
+    "img21.jpg",
+    "img22.jpg",
+    "img23.jpg",
+    "img24.jpg",
+    "img25.jpg",
+    "img26.jpg"
+  ],
+  "crops": {
+    "img20.jpg": [
+      2,
+      133,
+      116,
+      240
+    ],
+    "img21.jpg": [
+      2,
+      133,
+      116,
+      240
+    ],
+    "img22.jpg": [
+      2,
+      133,
+      116,
+      240
+    ],
+    "img23.jpg": [
+      2,
+      133,
+      116,
+      240
+    ],
+    "img24.jpg": [
+      2,
+      133,
+      116,
+      240
+    ],
+    "img25.jpg": [
+      2,
+      133,
+      116,
+      240
+    ],
+    "img26.jpg": [
+      2,
+      133,
+      116,
+      240
+    ]
+  },
+  "alignmentShiftsPx": [
+    6,
+    -6,
+    -5,
+    0,
+    4,
+    6,
+    -6
+  ],
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "14bea86d428b5ca1a0122bc2bb513b386db9001270555d2c309a0c49518d6872",
+      "roughness.jpg": "8deb7e8bd1ae574986f6bc4fb7b3ab12aaae86e458dafd5f5e95e6a6d39d40f2",
+      "bump.jpg": "66a30c9d7cd6b8221ef12134d9393cb45f9f9405968af0290a27e3dc70edb138"
+    }
+  },
+  "activation": "Automatic visualiser candidate; compare with supplier references"
+}

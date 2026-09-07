@@ -26,6 +26,7 @@ import {
   customRoomImageUrl,
   listCustomRooms,
 } from "../renderer/customRoomStore";
+import mainlineMaterials from "../mouldings/mainlineMaterials.json";
 
 const mountColours = {
   "Off White": "#e9e2d3",
@@ -36,7 +37,8 @@ const mountColours = {
 };
 const sampleArtwork = "/assets/artwork/img1.jpg";
 const emptyArtwork = "/assets/artwork/default.svg";
-const reviewableSkus = ["POL-4100", "POL-4508", "POL-4418", "POL-4211"];
+const legacyReviewableSkus = ["POL-4100", "POL-4508", "POL-4418", "POL-4211"];
+const hasMainlineMaterial = (sku: string) => sku in mainlineMaterials;
 type ProfileVariant = "Current" | "SAM 2.1" | "Catalogue";
 type RoomCalibration = {
   preview?: boolean;
@@ -60,6 +62,16 @@ type RoomCalibration = {
       shadowOpacity: number;
       shadowSoftness: number;
       shadowGapMm: number;
+      goboEnabled?: boolean;
+      goboAngle?: number;
+      goboScale?: number;
+      goboOffsetX?: number;
+      goboOffsetY?: number;
+      goboStrength?: number;
+      goboSoftness?: number;
+      foregroundBrightness?: number;
+      foregroundSaturation?: number;
+      foregroundWarmth?: number;
     };
   };
 };
@@ -135,6 +147,8 @@ export default function Visualiser() {
     [artHeight, setArtHeight] = useState(500),
     [mount, setMount] = useState(50),
     [mountName, setMountName] = useState("Off White"),
+    [innerMountInches, setInnerMountInches] = useState(0),
+    [innerMountName, setInnerMountName] = useState("Black"),
     [glass, setGlass] = useState("Standard"),
     [lighting, setLighting] = useState("Window Left"),
     [lightStrength, setLightStrength] = useState(1),
@@ -158,12 +172,13 @@ export default function Visualiser() {
     [wallPositionY, setWallPositionY] = useState(0),
     [wallScale, setWallScale] = useState(1),
     [wallShadow, setWallShadow] = useState(1),
+    [roomMatchStrength, setRoomMatchStrength] = useState(1),
     [supplierFrame, setSupplierFrame] = useState(0),
     [reviewDecision, setReviewDecision] = useState("Pending review"),
     [materialVariant, setMaterialVariant] = useState<
-      "baseline-v1" | "multiframe-experiment-v1"
-    >("baseline-v1"),
-    [profileVariant, setProfileVariant] = useState<ProfileVariant>("Current");
+      "baseline-v1" | "multiframe-experiment-v1" | "supplier-derived-v2"
+    >("supplier-derived-v2"),
+    [profileVariant, setProfileVariant] = useState<ProfileVariant>("Catalogue");
   const [roomCalibrations, setRoomCalibrations] = useState<
     Record<string, RoomCalibration>
   >({});
@@ -198,20 +213,11 @@ export default function Visualiser() {
   }, [sku, materialVariant]);
   useEffect(() => {
     setMaterialVariant(
-      sku === "POL-4100"
-        ? "baseline-v1"
-        : reviewableSkus.includes(sku)
-          ? "multiframe-experiment-v1"
-          : "baseline-v1",
+      sku === "POL-4100" ? "baseline-v1" : "supplier-derived-v2",
     );
   }, [sku]);
   useEffect(() => {
-    if (!hasCatalogueProfile) setProfileVariant("Current");
-    else if (
-      profileVariant === "SAM 2.1" &&
-      !["POL-4508", "POL-4875"].includes(sku)
-    )
-      setProfileVariant("Current");
+    setProfileVariant(hasCatalogueProfile ? "Catalogue" : "Current");
   }, [sku, hasCatalogueProfile]);
   useEffect(() => {
     setWallPositionX(0);
@@ -410,6 +416,10 @@ export default function Visualiser() {
           artHeight={artHeight}
           mount={mount}
           mountColor={mountColours[mountName as keyof typeof mountColours]}
+          innerMount={innerMountInches * 25.4}
+          innerMountColor={
+            mountColours[innerMountName as keyof typeof mountColours]
+          }
           glass={glass}
           lighting={lighting}
           lightStrength={lightStrength}
@@ -427,6 +437,7 @@ export default function Visualiser() {
           wallPositionY={wallPositionY}
           wallScale={wallScale}
           wallShadow={wallShadow}
+          roomMatchStrength={roomMatchStrength}
           materialVariant={materialVariant}
           profileVariant={profileVariant}
           roomCalibration={activeCalibration}
@@ -460,7 +471,7 @@ export default function Visualiser() {
                 onClick={() => {
                   setDisplayMode(v);
                   if (v === "Review") {
-                    if (!reviewableSkus.includes(sku)) setSku("POL-4100");
+                    if (!hasMainlineMaterial(sku)) setSku("POL-4100");
                     setSupplierFrame(2);
                     setMaterialMode("Texture");
                   }
@@ -668,16 +679,14 @@ export default function Visualiser() {
             )}
           </div>
         )}
-        {displayMode === "Review" && reviewableSkus.includes(sku) && (
+        {displayMode === "Review" && hasMainlineMaterial(sku) && (
           <div className="group review-card">
             <label>
               {sku === "POL-4100"
                 ? "Material comparison"
                 : "Experimental material"}
             </label>
-            <div
-              className={`variant-switch ${sku !== "POL-4100" ? "single" : ""}`}
-            >
+            <div className="variant-switch">
               {sku === "POL-4100" && (
                 <button
                   className={materialVariant === "baseline-v1" ? "active" : ""}
@@ -687,16 +696,25 @@ export default function Visualiser() {
                   <span>Single supplier image · tuned</span>
                 </button>
               )}
+              {legacyReviewableSkus.includes(sku) && (
+                <button
+                  className={
+                    materialVariant === "multiframe-experiment-v1"
+                      ? "active experiment"
+                      : ""
+                  }
+                  onClick={() => setMaterialVariant("multiframe-experiment-v1")}
+                >
+                  <strong>Legacy multi-frame</strong>
+                  <span>Earlier comparison material</span>
+                </button>
+              )}
               <button
-                className={
-                  materialVariant === "multiframe-experiment-v1"
-                    ? "active experiment"
-                    : ""
-                }
-                onClick={() => setMaterialVariant("multiframe-experiment-v1")}
+                className={materialVariant === "supplier-derived-v2" ? "active" : ""}
+                onClick={() => setMaterialVariant("supplier-derived-v2")}
               >
-                <strong>Multi-frame</strong>
-                <span>7 supplier spin frames</span>
+                <strong>Supplier-derived</strong>
+                <span>Automatic colour, roughness and relief · v2</span>
               </button>
             </div>
             <div
@@ -708,7 +726,9 @@ export default function Visualiser() {
             >
               {materialVariant === "baseline-v1"
                 ? "Protected baseline · v1"
-                : "Inactive experiment · v1"}
+                : materialVariant === "supplier-derived-v2"
+                  ? "Automatic supplier material · v2"
+                  : "Legacy experiment · v1"}
             </div>
             {materialVariant === "multiframe-experiment-v1" && (
               <img
@@ -730,8 +750,9 @@ export default function Visualiser() {
               <div>
                 <strong>Profile candidate</strong>
                 <span>
-                  {sku === "POL-4508" ? "13 silver + 2 black" : "4"} calibrated
-                  points
+                  {sku === "POL-4508"
+                    ? "13 silver + 2 black"
+                    : mainlineCatalogueProfile(sku)?.length || 4} calibrated points
                 </span>
                 <span>
                   {sku === "POL-4508"
@@ -869,6 +890,7 @@ export default function Visualiser() {
         <div className="group">
           <label>Mount</label>
           <select
+            aria-label="Outer mount colour"
             value={mountName}
             onChange={(e) => setMountName(e.target.value)}
           >
@@ -887,6 +909,38 @@ export default function Visualiser() {
               </button>
             ))}
           </div>
+          {mount > 0 && (
+            <>
+              <label style={{ marginTop: 16 }}>Inner mount colour</label>
+              <select
+                aria-label="Inner mount colour"
+                value={innerMountName}
+                onChange={(e) => setInnerMountName(e.target.value)}
+              >
+                {Object.keys(mountColours).map((v) => (
+                  <option key={v}>{v}</option>
+                ))}
+              </select>
+              <label style={{ marginTop: 12 }}>Inner mount reveal</label>
+              <div className="chips" style={{ marginTop: 9 }}>
+                {[
+                  { value: 0, label: "No inner" },
+                  { value: 0.25, label: '¼″' },
+                  { value: 0.375, label: '⅜″' },
+                  { value: 0.5, label: '½″' },
+                ].map(({ value, label }) => (
+                  <button
+                    key={value}
+                    type="button"
+                    onClick={() => setInnerMountInches(value)}
+                    className={innerMountInches === value ? "active" : ""}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
         </div>
         <div className="group">
           <label>Glazing</label>
@@ -950,8 +1004,20 @@ export default function Visualiser() {
           {displayMode === "Wall" && (
             <p className="room-light-note">
               The approved Room Admin direction, warmth and softness now drive
-              the real 3D frame lights and wall shadow.
+              the real 3D frame lights and wall shadow. Room match blends the
+              complete framed object into the photograph.
             </p>
+          )}
+          {displayMode === "Wall" && (
+            <RangeControl
+              label="Match to room"
+              value={roomMatchStrength}
+              min={0}
+              max={1}
+              step={0.05}
+              display={`${Math.round(roomMatchStrength * 100)}%`}
+              onChange={setRoomMatchStrength}
+            />
           )}
           <RangeControl
             label="Key light"
@@ -987,6 +1053,7 @@ export default function Visualiser() {
               setLightStrength(1);
               setAmbientFill(1);
               setExposure(1);
+              setRoomMatchStrength(1);
             }}
           >
             Reset light adjustments
@@ -1154,9 +1221,10 @@ function ProfileMiniPlot({
   width: number;
   depth: number;
 }) {
-  const totalWidth = sku === "POL-4508" ? 39.5 : width,
+  const catalogue = mainlineCatalogueProfile(sku),
+    totalWidth = sku === "POL-4508" ? 39.5 : width,
     points =
-      sku === "POL-4508"
+      catalogue || (sku === "POL-4508"
         ? [
             [0, 17],
             [0.5, 16],
@@ -1184,7 +1252,7 @@ function ProfileMiniPlot({
               [4.5, 6],
               [6.5, 20],
               [54, 20],
-            ];
+            ]);
   const x = (u: number) => 4 + (u / totalWidth) * 122,
     y = (z: number) => 44 - (z / depth) * 39,
     path = points
