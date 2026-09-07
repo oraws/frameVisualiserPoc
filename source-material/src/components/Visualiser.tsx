@@ -37,6 +37,7 @@ const mountColours = {
 };
 const sampleArtwork = "/assets/artwork/img1.jpg";
 const emptyArtwork = "/assets/artwork/default.svg";
+const selectedMouldingKey = "frame-visualiser:selected-moulding";
 const legacyReviewableSkus = ["POL-4100", "POL-4508", "POL-4418", "POL-4211"];
 const hasMainlineMaterial = (sku: string) => sku in mainlineMaterials;
 type ProfileVariant = "Current" | "SAM 2.1" | "Catalogue";
@@ -141,7 +142,14 @@ const matchesColour = (moulding: Moulding, colour: string) => {
   return mouldingColourTags(moulding).some((tag) => tags.includes(tag));
 };
 export default function Visualiser() {
-  const [sku, setSku] = useState("POL-4875"),
+  const params = new URLSearchParams(window.location.search),
+    embedded = params.get("embed") === "1";
+  const [sku, setSku] = useState(() => {
+      const saved = localStorage.getItem(selectedMouldingKey);
+      return saved && mouldings.some((item) => item.sku === saved)
+        ? saved
+        : "POL-4875";
+    }),
     [colourFilter, setColourFilter] = useState("all"),
     [artWidth, setArtWidth] = useState(700),
     [artHeight, setArtHeight] = useState(500),
@@ -168,6 +176,7 @@ export default function Visualiser() {
       "Inspect",
     ),
     [wallPreset, setWallPreset] = useState("Oblique Gallery Wall"),
+    [roomImageFit, setRoomImageFit] = useState<"contain" | "cover">("contain"),
     [wallPositionX, setWallPositionX] = useState(0),
     [wallPositionY, setWallPositionY] = useState(0),
     [wallScale, setWallScale] = useState(1),
@@ -205,6 +214,9 @@ export default function Visualiser() {
           : moulding.accentWidthMm || 0),
     outerW = artWidth + 2 * (mount + visibleFace),
     outerH = artHeight + 2 * (mount + visibleFace);
+  useEffect(() => {
+    localStorage.setItem(selectedMouldingKey, sku);
+  }, [sku]);
   useEffect(() => {
     setReviewDecision(
       localStorage.getItem(`moulding-review:${sku}:${materialVariant}`) ||
@@ -378,7 +390,7 @@ export default function Visualiser() {
       ? "Calibrated quad"
       : activeRoom?.angleLabel;
   return (
-    <main className="app">
+    <main className={`app${embedded ? " embedded" : ""}`}>
       <section
         className={`stage ${displayMode === "Wall" ? "wall-stage" : ""} ${["#f2f0e9", "#d8d0c1", "#a9aaa7"].includes(wallColour) && displayMode !== "Wall" ? "light-stage" : ""}`}
       >
@@ -391,6 +403,7 @@ export default function Visualiser() {
               className="wall-photo"
               src={activeRoom.image}
               style={{
+                objectFit: roomImageFit,
                 objectPosition:
                   activeRoom.imageAnchorX === "left" ? "left center" : "center",
               }}
@@ -442,6 +455,7 @@ export default function Visualiser() {
           profileVariant={profileVariant}
           roomCalibration={activeCalibration}
           roomTemplate={activeRoom}
+          roomImageFit={roomImageFit}
           overlayOnly={displayMode === "Wall"}
           onWallProjection={setWallProjection}
         />
@@ -460,7 +474,12 @@ export default function Visualiser() {
         </p>
         <nav className="app-nav">
           <span>Viewer</span>
-          <a href="/room-calibrator/">Room admin</a>
+          <a
+            href={`/room-calibrator/?room=${activeRoom?.calibrationId || "stock-pilot"}`}
+          >
+            Room admin
+          </a>
+          <a href="/test-centre/">Test centre</a>
         </nav>
         <div className="group">
           <label>Presentation</label>
@@ -502,6 +521,23 @@ export default function Visualiser() {
               >
                 <span>{roomStatus}</span>
                 <b>{roomPerspective}</b>
+              </div>
+              <label style={{ marginTop: 14 }}>Room framing</label>
+              <div className="chips">
+                <button
+                  type="button"
+                  className={roomImageFit === "contain" ? "active" : ""}
+                  onClick={() => setRoomImageFit("contain")}
+                >
+                  Full room
+                </button>
+                <button
+                  type="button"
+                  className={roomImageFit === "cover" ? "active" : ""}
+                  onClick={() => setRoomImageFit("cover")}
+                >
+                  Fill stage
+                </button>
               </div>
               <a
                 className="room-calibrator-link"

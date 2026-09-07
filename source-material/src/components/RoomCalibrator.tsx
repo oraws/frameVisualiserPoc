@@ -96,8 +96,8 @@ const defaultLighting: LightingControls = {
   goboScale: 1,
   goboOffsetX: 0,
   goboOffsetY: 0,
-  goboStrength: 0.55,
-  goboSoftness: 5,
+  goboStrength: 0.32,
+  goboSoftness: 8,
   foregroundBrightness: 0.82,
   foregroundSaturation: 0.82,
   foregroundWarmth: 0,
@@ -275,6 +275,7 @@ export default function RoomCalibrator() {
   } | null>(null);
   const [checks, setChecks] = useState([false, false, false]);
   const [saved, setSaved] = useState(false);
+  const [previewRevision, setPreviewRevision] = useState(0);
   const [visible, setVisible] = useState(true);
   const [uploadName, setUploadName] = useState("My room");
   const [uploadSource, setUploadSource] = useState("");
@@ -506,6 +507,41 @@ export default function RoomCalibrator() {
         lighting: roomLighting,
       },
     };
+  const livePreviewSignature = useMemo(
+    () =>
+      JSON.stringify({
+        roomId,
+        points,
+        scalePoints,
+        frameCentre,
+        referenceMm,
+        cameraFov,
+        roomLighting,
+        checks,
+        visible,
+      }),
+    [
+      roomId,
+      points,
+      scalePoints,
+      frameCentre,
+      referenceMm,
+      cameraFov,
+      roomLighting,
+      checks,
+      visible,
+    ],
+  );
+  useEffect(() => {
+    if (!draft || !project) return;
+    const timer = window.setTimeout(() => {
+      const record = calibrationRecord(false);
+      if (!record) return;
+      localStorage.setItem(previewKey, JSON.stringify(record));
+      setPreviewRevision((current) => current + 1);
+    }, 220);
+    return () => window.clearTimeout(timer);
+  }, [draft, project, previewKey, livePreviewSignature]);
   const approveAndOpen = () => {
     const record = calibrationRecord(true);
     if (!record) return;
@@ -608,6 +644,7 @@ export default function RoomCalibrator() {
             {selectedRoom.name.toUpperCase()} · CALIBRATION DRAFT + MANUAL PROOF
           </span>
         </div>
+        <div className="cal-workspace-stack">
         <div className="cal-image-wrap">
           <img
             src={selectedRoom.image}
@@ -686,7 +723,9 @@ export default function RoomCalibrator() {
               </pattern>
               <filter id="admin-gobo-blur">
                 <feGaussianBlur
-                  stdDeviation={roomLighting.goboSoftness * 0.00035}
+                  stdDeviation={
+                    0.0008 + roomLighting.goboSoftness * 0.0005
+                  }
                 />
               </filter>
             </defs>
@@ -734,10 +773,10 @@ export default function RoomCalibrator() {
                     width="1"
                     height="1"
                     fill="url(#admin-gobo-pattern)"
-                    opacity={roomLighting.goboStrength}
+                    opacity={roomLighting.goboStrength * 0.5}
                     clipPath="url(#admin-gobo-clip)"
                     filter="url(#admin-gobo-blur)"
-                    style={{ mixBlendMode: "soft-light" }}
+                    style={{ mixBlendMode: "screen" }}
                   />
                 )}
                 <polygon
@@ -811,13 +850,27 @@ export default function RoomCalibrator() {
         </div>
         <div className="cal-caption">
           <b>Gold: perspective · cyan: physical scale · pink: frame centre.</b>{" "}
-          The live proxy is a 700 × 500 mm artwork in the current Verona frame.
+          The calibration proxy is a 700 × 500 mm artwork. The viewer below
+          uses your currently selected moulding.
+        </div>
+        <section className="cal-live-viewer">
+          <div className="cal-live-viewer-heading">
+            <b>Live visualiser result</b>
+            <span>Actual Three.js frame, perspective, lighting and shadow</span>
+          </div>
+          <iframe
+            key={`${roomId}-${previewRevision}`}
+            title={`${selectedRoom.name} live visualiser result`}
+            src={`/?mode=wall&room=${roomId}&preview=1&embed=1&revision=${previewRevision}`}
+          />
+        </section>
         </div>
       </section>
       <aside className="cal-panel">
         <nav className="cal-nav">
-          <a href="/">Viewer</a>
+          <a href={`/?mode=wall&room=${roomId}`}>Viewer</a>
           <span>Room admin</span>
+          <a href="/test-centre/">Test centre</a>
         </nav>
         <h1>Wall-plane review</h1>
         <p>
@@ -1107,8 +1160,9 @@ export default function RoomCalibrator() {
           />
           <h2>Window-light mask</h2>
           <p>
-            An optional gobo adds window bars only across the rendered frame, so
-            it can match window light already present in the room photograph.
+            An optional gobo adds a soft window-light lift across the rendered
+            frame. Unlit areas keep their normal exposure instead of being
+            darkened.
           </p>
           <label className="cal-visibility">
             <input

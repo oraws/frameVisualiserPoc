@@ -10,12 +10,23 @@ body {
   margin: 0;
   min-width: 980px;
 }
+body:has(.app.embedded) {
+  min-width: 0;
+}
 .app {
   height: 100vh;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 326px;
   background: #121313;
+}
+.app.embedded {
+  grid-template-columns: 1fr;
+}
+.app.embedded .panel,
+.app.embedded .brand,
+.app.embedded .status {
+  display: none;
 }
 .stage {
   position: relative;

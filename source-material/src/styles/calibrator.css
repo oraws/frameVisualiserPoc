@@ -19,14 +19,17 @@ body {
 }
 .cal-workspace {
   position: relative;
-  display: flex;
   height: 100vh;
   min-height: 0;
-  align-items: flex-start;
-  justify-content: center;
   padding: 88px 42px 72px;
   overflow: auto;
   background: radial-gradient(circle at 45% 40%, #33342f, #171817 68%);
+}
+.cal-workspace-stack {
+  display: grid;
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  gap: 14px;
 }
 .cal-brand {
   position: absolute;
@@ -45,7 +48,7 @@ body {
 }
 .cal-image-wrap {
   position: relative;
-  width: min(100%, 1100px);
+  width: 100%;
   box-shadow: 0 24px 70px #0009;
 }
 .cal-image-wrap img {
@@ -117,9 +120,7 @@ body {
   cursor: move;
 }
 .cal-caption {
-  position: absolute;
-  left: 42px;
-  bottom: 25px;
+  justify-self: start;
   padding: 10px 13px;
   border: 1px solid #ffffff22;
   background: #101111d9;
@@ -128,6 +129,35 @@ body {
 }
 .cal-caption b {
   color: #e7cf99;
+}
+.cal-live-viewer {
+  margin-top: 22px;
+  border: 1px solid #ffffff22;
+  background: #101111;
+  box-shadow: 0 24px 70px #0009;
+}
+.cal-live-viewer-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 15px;
+  border-bottom: 1px solid #ffffff1c;
+  color: #e7cf99;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cal-live-viewer-heading span {
+  color: #8e8d86;
+  font-size: 9px;
+}
+.cal-live-viewer iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 0;
+  background: #101111;
 }
 .cal-panel {
   height: 100vh;

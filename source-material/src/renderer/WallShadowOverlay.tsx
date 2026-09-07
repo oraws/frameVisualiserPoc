@@ -48,8 +48,8 @@ const defaultLighting: Lighting = {
   goboScale: 1,
   goboOffsetX: 0,
   goboOffsetY: 0,
-  goboStrength: 0.55,
-  goboSoftness: 5,
+  goboStrength: 0.32,
+  goboSoftness: 8,
 };
 function homography(points: Point[]) {
   const [p0, p1, p2, p3] = points,
@@ -301,7 +301,7 @@ export default function WallShadowOverlay(p: Props) {
                 width="100%"
                 height="100%"
                 fill="#ffe8bd"
-                fillOpacity=".48"
+                fillOpacity=".56"
               />
               <rect
                 width="14%"
@@ -323,17 +323,19 @@ export default function WallShadowOverlay(p: Props) {
               width="140%"
               height="140%"
             >
-              <feGaussianBlur stdDeviation={lighting.goboSoftness * 0.00035} />
+              <feGaussianBlur
+                stdDeviation={0.0008 + lighting.goboSoftness * 0.0005}
+              />
             </filter>
           </defs>
           <rect
             width="1"
             height="1"
             fill="url(#wall-gobo-pattern)"
-            opacity={lighting.goboStrength}
+            opacity={lighting.goboStrength * 0.5}
             clipPath="url(#wall-gobo-frame)"
             filter="url(#wall-gobo-blur)"
-            style={{ mixBlendMode: "soft-light" }}
+            style={{ mixBlendMode: "screen" }}
           />
         </svg>
       )}

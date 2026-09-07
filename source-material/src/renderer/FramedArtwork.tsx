@@ -93,9 +93,21 @@ type Props = {
   profileVariant: ProfileVariant;
   roomCalibration?: RoomCalibration | null;
   roomTemplate?: RoomTemplate;
+  roomImageFit?: "contain" | "cover";
   overlayOnly?: boolean;
   onWallProjection?: (corners: number[][]) => void;
 };
+
+function CameraPoseReporter() {
+  const { camera, gl } = useThree();
+  useFrame(() => {
+    gl.domElement.dataset.cameraPose = [
+      ...camera.position.toArray(),
+      ...camera.quaternion.toArray(),
+    ].map((value) => value.toFixed(6)).join(",");
+  });
+  return null;
+}
 const mm = 0.0025;
 function temperatureColour(kelvin: number) {
   const t = Math.max(10, Math.min(400, kelvin / 100));
@@ -200,6 +212,7 @@ function calibratedFramePose(
   size: { width: number; height: number },
   room: RoomTemplate,
   calibration?: RoomCalibration | null,
+  imageFit: "contain" | "cover" = "contain",
 ) {
   const imageAspect = room.imageAspect || size.width / Math.max(1, size.height),
     stageAspect = size.width / Math.max(1, size.height);
@@ -207,11 +220,15 @@ function calibratedFramePose(
     displayedHeight: number,
     offsetX = 0,
     offsetY = 0;
-  if (stageAspect < imageAspect) {
+  if (
+    (imageFit === "cover" && stageAspect < imageAspect) ||
+    (imageFit === "contain" && stageAspect >= imageAspect)
+  ) {
     displayedHeight = size.height;
     displayedWidth = displayedHeight * imageAspect;
-    offsetX =
-      room.imageAnchorX === "left" ? 0 : (size.width - displayedWidth) / 2;
+    offsetX = imageFit === "cover" && room.imageAnchorX === "left"
+      ? 0
+      : (size.width - displayedWidth) / 2;
   } else {
     displayedWidth = size.width;
     displayedHeight = displayedWidth / imageAspect;
@@ -1376,6 +1393,12 @@ function Scene(p: Props) {
         : p.view === "Detail"
           ? [detailTarget[0] + 0.34, detailTarget[1] + 0.24, 0.9]
           : [ow * 0.35, oh * 0.22, 3.05];
+  const cameraResetKey = `${p.displayMode}-${p.view}-${p.wallPreset}-${p.artWidth}-${p.artHeight}`;
+  // Mount widths and moulding changes alter the physical frame but must not
+  // reset a camera the user has already orbited or panned. Re-seed only for a
+  // genuinely new view.
+  const stableCameraPosition = useMemo(() => cam, [cameraResetKey]);
+  const stableOrbitTarget = useMemo(() => orbitTarget, [cameraResetKey]);
   const metricRebate =
       m.sku === "POL-4508" || m.supplier === "Centrado" || catalogueCandidate,
     rebateFront = metricRebate ? (m.depthMm - m.rebateMm) * mm : 0.013,
@@ -1421,6 +1444,7 @@ function Scene(p: Props) {
       size,
       room,
       p.roomCalibration,
+      p.roomImageFit,
     );
     frameMatrix = pose.matrix.clone();
     const position = new THREE.Vector3().setFromMatrixPosition(frameMatrix),
@@ -1627,8 +1651,8 @@ function Scene(p: Props) {
         />
       )}
       <OrbitControls
-        key={`controls-${p.displayMode}-${p.view}-${p.wallPreset}`}
-        target={orbitTarget}
+        key={`controls-${cameraResetKey}`}
+        target={stableOrbitTarget}
         enableRotate={!wall}
         enablePan={!wall}
         screenSpacePanning={!wall}
@@ -1638,9 +1662,9 @@ function Scene(p: Props) {
         maxPolarAngle={Math.PI * 0.64}
       />
       <PerspectiveCamera
-        key={`camera-${p.displayMode}-${p.view}-${p.wallPreset}`}
+        key={`camera-${cameraResetKey}`}
         makeDefault
-        position={cam as [number, number, number]}
+        position={stableCameraPosition as [number, number, number]}
         fov={wall ? room.camera.fov : p.view === "Detail" ? 31 : 33}
       />
     </>
@@ -1671,6 +1695,7 @@ export default function FramedArtwork(p: Props) {
         if (p.overlayOnly) gl.setClearColor(0x000000, 0);
       }}
     >
+      <CameraPoseReporter />
       <Scene {...p} />
     </Canvas>
   );
