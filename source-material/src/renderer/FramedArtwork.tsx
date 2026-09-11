@@ -6,9 +6,9 @@ import {
   PerspectiveCamera,
   useTexture,
 } from "@react-three/drei";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useFrame, useThree, type ThreeElements } from "@react-three/fiber";
 import * as THREE from "three";
-import { useEffect, useMemo, useRef } from "react";
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
 import type { Moulding } from "../mouldings/catalog";
 import {
   centradoProfile,
@@ -24,8 +24,98 @@ import {
   type ProfilePoint,
 } from "../mouldings/profiles";
 import { createProfileFrameGeometry } from "./profileGeometry";
-import { fallbackRoom, roomPresets, type RoomTemplate } from "./roomTemplates";
+import { fallbackRoom, roomPresets, generatedScenes, type RoomTemplate } from "./roomTemplates";
 import mainlineMaterials from "../mouldings/mainlineMaterials.json";
+import materialPilotsV3 from "../mouldings/materialPilotsV3.json";
+import FrameWallContact from "./FrameWallContact";
+import GeneratedRoomLighting from "./GeneratedRoomLighting";
+import { GLTFExporter } from "three/addons/exporters/GLTFExporter.js";
+import { fittedRoomFov } from "./generatedRoomMath";
+
+// Generated rooms use the full room reflection capture, as the offline PBR
+// renderer does. Legacy studio/photo materials retain their authored damping.
+const GeneratedMaterialContext = createContext(false);
+type ColourFaithfulStandardProps = ThreeElements["meshStandardMaterial"] & {
+  colourFidelity?: number;
+};
+type ColourFaithfulPhysicalProps = ThreeElements["meshPhysicalMaterial"] & {
+  colourFidelity?: number;
+};
+
+function colourFidelityShader(fidelity: number) {
+  const mixAmount = THREE.MathUtils.clamp(fidelity, 0, 1).toFixed(4);
+  return (shader: THREE.WebGLProgramParametersWithUniforms) => {
+    shader.fragmentShader = shader.fragmentShader.replace(
+      "#include <opaque_fragment>",
+      `// Keep product colour anchored to its calibrated supplier base colour.\n` +
+      `outgoingLight = mix(outgoingLight, diffuseColor.rgb, ${mixAmount});\n` +
+      "#include <opaque_fragment>",
+    );
+  };
+}
+
+function RoomStandardMaterial({ colourFidelity = 0, ...props }: ColourFaithfulStandardProps) {
+  const generated = useContext(GeneratedMaterialContext);
+  const effectiveFidelity = generated ? colourFidelity : 0;
+  const onBeforeCompile = useMemo(
+    () => colourFidelityShader(effectiveFidelity),
+    [effectiveFidelity],
+  );
+  return <meshStandardMaterial {...props}
+    envMapIntensity={generated ? props.envMapIntensity ?? .55 : props.envMapIntensity}
+    onBeforeCompile={onBeforeCompile}
+    customProgramCacheKey={() => `supplier-colour-${effectiveFidelity.toFixed(4)}`}
+  />;
+}
+
+function RoomPhysicalMaterial({ colourFidelity = 0, ...props }: ColourFaithfulPhysicalProps) {
+  const generated = useContext(GeneratedMaterialContext);
+  const effectiveFidelity = generated ? colourFidelity : 0;
+  const onBeforeCompile = useMemo(
+    () => colourFidelityShader(effectiveFidelity),
+    [effectiveFidelity],
+  );
+  return <meshPhysicalMaterial {...props}
+    envMapIntensity={generated ? props.envMapIntensity ?? .55 : props.envMapIntensity}
+    onBeforeCompile={onBeforeCompile}
+    customProgramCacheKey={() => `supplier-colour-${effectiveFidelity.toFixed(4)}`}
+  />;
+}
+
+type ReviewedFinish = {
+  gloss: "matte" | "satin" | "gloss";
+  roughness: number;
+  clearcoat: number;
+  envMapIntensity: number;
+  colourFidelity: number;
+};
+
+function useReviewedFinish(sku: string, variant: string): ReviewedFinish | null {
+  const [variantName, revision] = variant.split("@");
+  const isReview = variantName === "supplier-matched-v4-candidate" ||
+    /^review-\d{14}-[a-f0-9]{8}$/.test(variantName);
+  const [finish, setFinish] = useState<ReviewedFinish | null>(null);
+  useEffect(() => {
+    if (!isReview) { setFinish(null); return; }
+    const controller = new AbortController();
+    const cacheKey = revision ? `?review=${encodeURIComponent(revision)}` : "";
+    fetch(`/assets/mouldings/${sku}/variants/${variantName}/quality-report.json${cacheKey}`, {
+      cache: "no-store", signal: controller.signal,
+    }).then(response => response.ok ? response.json() : Promise.reject())
+      .then(report => {
+        const description = `${report.agents?.analyst?.gloss || ""} ${report.agents?.analyst?.finishClass || ""}`.toLowerCase();
+        const gloss: ReviewedFinish["gloss"] = /matte|matt/.test(description)
+          ? "matte" : /gloss|polished|lacquer/.test(description) ? "gloss" : "satin";
+        setFinish(gloss === "matte"
+          ? { gloss, roughness: 1, clearcoat: 0, envMapIntensity: .12, colourFidelity: .88 }
+          : gloss === "gloss"
+            ? { gloss, roughness: .58, clearcoat: .22, envMapIntensity: .34, colourFidelity: .46 }
+            : { gloss, roughness: .86, clearcoat: .035, envMapIntensity: .2, colourFidelity: .7 });
+      }).catch(reason => { if (reason.name !== "AbortError") setFinish(null); });
+    return () => controller.abort();
+  }, [sku, variantName, revision, isReview]);
+  return finish;
+}
 
 type ProfileVariant = "Current" | "SAM 2.1" | "Catalogue";
 type ScaleReference = { lengthMm: number; pointsNormalised: number[][] };
@@ -64,6 +154,7 @@ type RoomCalibration = {
   };
 };
 type Props = {
+  onExportReady?: (exporter: (() => Promise<ArrayBuffer>) | null) => void;
   moulding: Moulding;
   artWidth: number;
   artHeight: number;
@@ -80,6 +171,7 @@ type Props = {
   view: string;
   debug: boolean;
   artwork: string;
+  artworkColourMode?: "Source colours" | "Room lighting";
   geometryMode: "Profile" | "Flat Legacy";
   materialMode: "Texture" | "Clay" | "Normal" | "Wireframe";
   displayMode: "Inspect" | "Wall";
@@ -90,6 +182,8 @@ type Props = {
   wallShadow: number;
   roomMatchStrength: number;
   materialVariant: string;
+  materialRevision: number;
+  reviewProfile?: Array<[number, number]>;
   profileVariant: ProfileVariant;
   roomCalibration?: RoomCalibration | null;
   roomTemplate?: RoomTemplate;
@@ -289,16 +383,60 @@ function calibratedFramePose(
     .multiplyScalar(sceneScale);
   const cvToThree = (vector: THREE.Vector3) =>
       new THREE.Vector3(vector.x, -vector.y, -vector.z),
-    basisX = cvToThree(axisU).multiplyScalar(1 / axisNorm),
-    basisY = cvToThree(axisV).multiplyScalar(-1 / axisNorm),
-    basisZ = new THREE.Vector3().crossVectors(basisX, basisY).normalize();
+    // The homography columns contain both wall orientation and the arbitrary
+    // width/height of the admin grid. Carrying those unequal lengths into the
+    // object matrix stretches the framed artwork differently in each room.
+    // Keep only their directions and rebuild an orthonormal wall basis so one
+    // metre remains one metre on both axes; camera perspective supplies the
+    // apparent foreshortening.
+    basisX = cvToThree(axisU).normalize(),
+    basisYHint = cvToThree(axisV).multiplyScalar(-1).normalize(),
+    basisZ = new THREE.Vector3().crossVectors(basisX, basisYHint).normalize(),
+    basisY = new THREE.Vector3().crossVectors(basisZ, basisX).normalize();
   const position = new THREE.Vector3(
       room.camera.position[0] + centreCv.x,
       room.camera.position[1] - centreCv.y,
       room.camera.position[2] - centreCv.z,
+    );
+  // A room calibration contains one trustworthy metric reference (normally
+  // floor-to-ceiling), so it fixes the vertical scale but cannot independently
+  // establish the physical width represented by the administrator's arbitrary
+  // quadrilateral. Measure both recovered wall axes at the frame centre and
+  // compensate the uncalibrated horizontal axis. This keeps a 700 x 500 mm
+  // artwork at 7:5 in every room while retaining the approved wall directions.
+  const projectionCamera = new THREE.PerspectiveCamera(
+      room.camera.fov,
+      size.width / Math.max(1, size.height),
+      0.01,
+      100,
+    ),
+    cameraTarget = new THREE.Vector3(0, 0.1, 0);
+  projectionCamera.position.fromArray(room.camera.position);
+  projectionCamera.lookAt(cameraTarget);
+  projectionCamera.updateMatrixWorld();
+  projectionCamera.updateProjectionMatrix();
+  const projectedCentre = position.clone().project(projectionCamera),
+    projectedX = position.clone().add(basisX).project(projectionCamera),
+    projectedY = position.clone().add(basisY).project(projectionCamera),
+    pixelsPerX = Math.hypot(
+      (projectedX.x - projectedCentre.x) * size.width * 0.5,
+      (projectedX.y - projectedCentre.y) * size.height * 0.5,
+    ),
+    pixelsPerY = Math.hypot(
+      (projectedY.x - projectedCentre.x) * size.width * 0.5,
+      (projectedY.y - projectedCentre.y) * size.height * 0.5,
+    ),
+    horizontalMetricCorrection = THREE.MathUtils.clamp(
+      pixelsPerY / Math.max(1e-6, pixelsPerX),
+      0.4,
+      2.5,
     ),
     matrix = new THREE.Matrix4()
-      .makeBasis(basisX, basisY, basisZ)
+      .makeBasis(
+        basisX.multiplyScalar(horizontalMetricCorrection),
+        basisY,
+        basisZ,
+      )
       .setPosition(position);
   return { matrix };
 }
@@ -315,12 +453,13 @@ function OrnateMaterial() {
     map.needsUpdate = true;
   }, [map]);
   return (
-    <meshStandardMaterial
+    <RoomStandardMaterial
       map={map}
       color="#8d8990"
       roughness={0.53}
       metalness={0.26}
       envMapIntensity={0.16}
+      colourFidelity={0.42}
     />
   );
 }
@@ -350,12 +489,13 @@ function Rail({
       {moulding.profileType === "ornate-scoop" ? (
         <OrnateMaterial />
       ) : (
-        <meshPhysicalMaterial
+        <RoomPhysicalMaterial
           color={moulding.baseColor}
           roughness={moulding.roughness}
           metalness={moulding.sku === "4925BG" ? 0.08 : 0.02}
           clearcoat={0.08}
           envMapIntensity={0.18}
+          colourFidelity={0.68}
         />
       )}
     </mesh>
@@ -448,10 +588,13 @@ function ProfileFrame({
   if (materialMode === "Clay")
     return (
       <mesh geometry={geometry} castShadow receiveShadow>
-        <meshStandardMaterial color="#8b8983" roughness={0.68} />
+        <RoomStandardMaterial color="#8b8983" roughness={0.68} />
       </mesh>
     );
-  const hasSupplierMaps = moulding.sku in mainlineMaterials;
+  const requestedVariant = materialVariant.split("@")[0];
+  const hasSupplierMaps = moulding.sku in mainlineMaterials ||
+    requestedVariant === "supplier-matched-v4-candidate" ||
+    /^review-\d{14}-[a-f0-9]{8}$/.test(requestedVariant);
   return (
     <mesh geometry={geometry} castShadow receiveShadow>
       {hasSupplierMaps ? (
@@ -460,13 +603,14 @@ function ProfileFrame({
           variant={materialVariant}
         />
       ) : (
-        <meshStandardMaterial
+        <RoomStandardMaterial
           color={moulding.baseColor}
           roughness={moulding.roughness}
           metalness={
             /Gold|Silver|Bronze|Gunmetal/i.test(moulding.finish) ? 0.12 : 0
           }
           envMapIntensity={0.18}
+          colourFidelity={/Gold|Silver|Bronze|Gunmetal/i.test(moulding.finish) ? 0.4 : 0.72}
           flatShading
         />
       )}
@@ -480,18 +624,28 @@ function SupplierVariantMaterial({
   moulding: Moulding;
   variant: string;
 }) {
+  const [requestedVariant, revision] = variant.split("@");
+  const reviewedFinish = useReviewedFinish(moulding.sku, variant);
+  const pilot = materialPilotsV3[
+    moulding.sku as keyof typeof materialPilotsV3
+  ];
   const selected =
-      moulding.sku === "POL-4100" && variant === "baseline-v1"
+      /^review-\d{14}-[a-f0-9]{8}$/.test(requestedVariant) || requestedVariant === "supplier-matched-v4-candidate"
+        ? requestedVariant
+      : moulding.sku === "POL-4100" && requestedVariant === "baseline-v1"
         ? "baseline-v1"
-        : variant === "multiframe-experiment-v1" &&
+        : requestedVariant === "supplier-derived-v3" && pilot
+          ? "supplier-derived-v3"
+        : requestedVariant === "multiframe-experiment-v1" &&
             ["POL-4508", "POL-4418", "POL-4211"].includes(moulding.sku)
           ? "multiframe-experiment-v1"
           : "supplier-derived-v2",
-    root = `/assets/mouldings/${moulding.sku}/variants/${selected}`;
+    root = `/assets/mouldings/${moulding.sku}/variants/${selected}`,
+    cacheKey = revision ? `?review=${encodeURIComponent(revision)}` : "";
   const [map, roughnessMap, bumpMap] = useTexture([
-    `${root}/basecolor.jpg`,
-    `${root}/roughness.jpg`,
-    `${root}/bump.jpg`,
+    `${root}/basecolor.jpg${cacheKey}`,
+    `${root}/roughness.jpg${cacheKey}`,
+    `${root}/bump.jpg${cacheKey}`,
   ]);
   useMemo(() => {
     for (const texture of [map, roughnessMap, bumpMap]) {
@@ -500,7 +654,16 @@ function SupplierVariantMaterial({
       texture.needsUpdate = true;
     }
     map.colorSpace = THREE.SRGBColorSpace;
-  }, [map, roughnessMap, bumpMap]);
+    const repeatX =
+      selected === "supplier-matched-v4-candidate" || selected.startsWith("review-")
+        ? .25
+        : selected === "supplier-derived-v3" && pilot
+        ? 130 / pilot.physicalLengthMm
+        : 1;
+    for (const texture of [map, roughnessMap, bumpMap]) {
+      texture.repeat.set(repeatX, 1);
+    }
+  }, [map, roughnessMap, bumpMap, pilot, selected]);
   const approvedSettings: Record<
     string,
     {
@@ -574,8 +737,22 @@ function SupplierVariantMaterial({
               : "#d8d4cf",
   };
   const s = approvedSettings[moulding.sku] || generated;
+  if (reviewedFinish) return (
+    <RoomPhysicalMaterial
+      map={map}
+      roughnessMap={roughnessMap}
+      bumpMap={bumpMap}
+      bumpScale={s.bump}
+      color={s.color}
+      roughness={reviewedFinish.roughness}
+      metalness={s.metalness}
+      clearcoat={reviewedFinish.clearcoat}
+      envMapIntensity={reviewedFinish.envMapIntensity}
+      colourFidelity={reviewedFinish.colourFidelity}
+    />
+  );
   return (
-    <meshStandardMaterial
+    <RoomStandardMaterial
       map={map}
       roughnessMap={roughnessMap}
       bumpMap={bumpMap}
@@ -584,6 +761,7 @@ function SupplierVariantMaterial({
       roughness={s.roughness}
       metalness={s.metalness}
       envMapIntensity={s.env}
+      colourFidelity={metallic ? 0.42 : dark ? 0.82 : 0.7}
       flatShading={false}
     />
   );
@@ -610,25 +788,54 @@ function CentradoMaterial({
   moulding,
   part,
   mode,
+  materialVariant,
 }: {
   moulding: Moulding;
   part: "base" | "accent";
   mode: Props["materialMode"];
+  materialVariant: string;
 }) {
-  const [map, bumpMap] = useTexture([
-    `/assets/mouldings/${moulding.sku}/${part}-texture.jpg`,
-    `/assets/mouldings/${moulding.sku}/${part}-bump.jpg`,
+  const pilot = materialPilotsV3[
+    moulding.sku as keyof typeof materialPilotsV3
+  ];
+  const [requestedVariant, revision] = materialVariant.split("@");
+  const reviewedFinish = useReviewedFinish(moulding.sku, materialVariant);
+  const useReview = part === "base" && (requestedVariant === "supplier-matched-v4-candidate" ||
+    /^review-\d{14}-[a-f0-9]{8}$/.test(requestedVariant));
+  const usePilot =
+    part === "base" && requestedVariant === "supplier-derived-v3" && !!pilot;
+  const pilotRoot = `/assets/mouldings/${moulding.sku}/variants/supplier-derived-v3`;
+  const reviewRoot = `/assets/mouldings/${moulding.sku}/variants/${requestedVariant}`;
+  const cacheKey = revision ? `?review=${encodeURIComponent(revision)}` : "";
+  const [map, roughnessMap, bumpMap] = useTexture([
+    useReview
+      ? `${reviewRoot}/basecolor.jpg${cacheKey}`
+      : usePilot
+      ? `${pilotRoot}/basecolor.jpg`
+      : `/assets/mouldings/${moulding.sku}/${part}-texture.jpg`,
+    useReview
+      ? `${reviewRoot}/roughness.jpg${cacheKey}`
+      : usePilot
+      ? `${pilotRoot}/roughness.jpg`
+      : `/assets/mouldings/${moulding.sku}/${part}-bump.jpg`,
+    useReview
+      ? `${reviewRoot}/bump.jpg${cacheKey}`
+      : usePilot
+      ? `${pilotRoot}/bump.jpg`
+      : `/assets/mouldings/${moulding.sku}/${part}-bump.jpg`,
   ]);
   useMemo(() => {
-    for (const texture of [map, bumpMap]) {
+    for (const texture of [map, roughnessMap, bumpMap]) {
       texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
       texture.anisotropy = 16;
       texture.needsUpdate = true;
     }
     map.colorSpace = THREE.SRGBColorSpace;
-    map.repeat.set(1.8, 1);
-    bumpMap.repeat.copy(map.repeat);
-  }, [map, bumpMap]);
+    const repeatX = useReview ? .25 : usePilot && pilot ? 130 / pilot.physicalLengthMm : 1.8;
+    for (const texture of [map, roughnessMap, bumpMap]) {
+      texture.repeat.set(repeatX, 1);
+    }
+  }, [map, roughnessMap, bumpMap, pilot, usePilot, useReview]);
   if (mode === "Normal") return <meshNormalMaterial />;
   if (mode === "Wireframe")
     return (
@@ -640,22 +847,24 @@ function CentradoMaterial({
       />
     );
   if (mode === "Clay")
-    return <meshStandardMaterial color="#8b8983" roughness={0.68} />;
+    return <RoomStandardMaterial color="#8b8983" roughness={0.68} />;
   const metallic = /gold|silver|bronze|lustre/i.test(
     part === "accent"
       ? moulding.accentColor || moulding.finish
       : moulding.finish,
   );
   return (
-    <meshPhysicalMaterial
+    <RoomPhysicalMaterial
       map={map}
+      roughnessMap={usePilot || useReview ? roughnessMap : undefined}
       bumpMap={bumpMap}
       bumpScale={part === "accent" ? 0.0008 : 0.00115}
       color="#ffffff"
       metalness={metallic ? 0.42 : 0.01}
-      roughness={part === "accent" ? 0.42 : moulding.roughness}
-      clearcoat={part === "accent" ? 0.12 : 0.04}
-      envMapIntensity={part === "accent" ? 0.4 : 0.2}
+      roughness={part === "accent" ? 0.42 : reviewedFinish?.roughness ?? moulding.roughness}
+      clearcoat={part === "accent" ? 0.12 : reviewedFinish?.clearcoat ?? 0.04}
+      envMapIntensity={part === "accent" ? 0.4 : reviewedFinish?.envMapIntensity ?? 0.2}
+      colourFidelity={part === "accent" || metallic ? 0.4 : reviewedFinish?.colourFidelity ?? 0.7}
     />
   );
 }
@@ -665,12 +874,14 @@ function CentradoFrame({
   materialMode,
   moulding,
   profile,
+  materialVariant,
 }: {
   openingWidthMm: number;
   openingHeightMm: number;
   materialMode: Props["materialMode"];
   moulding: Moulding;
   profile: ProfilePoint[];
+  materialVariant: string;
 }) {
   const accentWidth = moulding.accentWidthMm || 0;
   const [accentProfile, remainder] = useMemo(
@@ -695,7 +906,12 @@ function CentradoFrame({
   return (
     <group>
       <mesh geometry={baseGeometry} castShadow receiveShadow>
-        <CentradoMaterial moulding={moulding} part="base" mode={materialMode} />
+        <CentradoMaterial
+          moulding={moulding}
+          part="base"
+          mode={materialMode}
+          materialVariant={materialVariant}
+        />
       </mesh>
       {accentWidth > 0 && (
         <mesh geometry={accentGeometry} castShadow receiveShadow>
@@ -703,6 +919,7 @@ function CentradoFrame({
             moulding={moulding}
             part="accent"
             mode={materialMode}
+            materialVariant={materialVariant}
           />
         </mesh>
       )}
@@ -720,14 +937,15 @@ function ParamountSilverMaterial({
   if (mode === "Wireframe")
     return <meshBasicMaterial color="#d8b976" wireframe />;
   if (mode === "Clay")
-    return <meshStandardMaterial color="#8b8983" roughness={0.68} />;
+    return <RoomStandardMaterial color="#8b8983" roughness={0.68} />;
   return (
-    <meshPhysicalMaterial
+    <RoomPhysicalMaterial
       color={moulding.accentColor || "#c5c2b9"}
       metalness={0.82}
       roughness={0.23}
       clearcoat={0.12}
       envMapIntensity={0.56}
+      colourFidelity={0.36}
     />
   );
 }
@@ -862,6 +1080,7 @@ function Framing({
   materialMode,
   materialVariant,
   profileVariant,
+  reviewProfile,
 }: {
   moulding: Moulding;
   ow: number;
@@ -872,7 +1091,30 @@ function Framing({
   materialMode: Props["materialMode"];
   materialVariant: string;
   profileVariant: Props["profileVariant"];
+  reviewProfile?: Props["reviewProfile"];
 }) {
+  if (reviewProfile?.length && geometryMode === "Profile" && moulding.supplier === "Centrado")
+    return (
+      <CentradoFrame
+        openingWidthMm={iw / mm}
+        openingHeightMm={ih / mm}
+        materialMode={materialMode}
+        moulding={moulding}
+        profile={reviewProfile}
+        materialVariant={materialVariant}
+      />
+    );
+  if (reviewProfile?.length && geometryMode === "Profile")
+    return (
+      <ProfileFrame
+        openingWidthMm={iw / mm}
+        openingHeightMm={ih / mm}
+        materialMode={materialMode}
+        moulding={moulding}
+        profile={reviewProfile}
+        materialVariant={materialVariant}
+      />
+    );
   const supplierProfile =
     moulding.supplier === "Centrado"
       ? centradoProfile(moulding.sku)
@@ -889,6 +1131,7 @@ function Framing({
         materialMode={materialMode}
         moulding={moulding}
         profile={supplierProfile}
+        materialVariant={materialVariant}
       />
     );
   if (
@@ -955,6 +1198,7 @@ function Framing({
     [moulding.widthMm, moulding.depthMm],
   ];
   const profile =
+    reviewProfile ||
     profiles[moulding.sku] ||
     (moulding.renderStatus === "auto-candidate" &&
     moulding.profileType === "flat"
@@ -1042,7 +1286,7 @@ function Framing({
           ].map(([args, pos], i) => (
             <mesh key={i} position={pos as [number, number, number]}>
               <boxGeometry args={args as [number, number, number]} />
-              <meshPhysicalMaterial
+              <RoomPhysicalMaterial
                 color={gold}
                 metalness={0.72}
                 roughness={0.24}
@@ -1328,10 +1572,10 @@ function MountBoard({
   return (
     <group position={[0, 0, faceZ]}>
       <mesh geometry={faceGeometry} castShadow receiveShadow>
-        <meshStandardMaterial color={color} roughness={0.88} />
+        <RoomStandardMaterial color={color} roughness={0.88} />
       </mesh>
       <mesh geometry={bevelGeometry} castShadow receiveShadow>
-        <meshStandardMaterial
+        <RoomStandardMaterial
           color="#fffefa"
           emissive="#4a4842"
           emissiveIntensity={0.16}
@@ -1342,8 +1586,81 @@ function MountBoard({
     </group>
   );
 }
+
+/** Keeps the measured rebate readable under broad, almost frontal light. */
+function RebateContactShadow({
+  openingWidth,
+  openingHeight,
+  faceZ,
+  rebateMm,
+}: {
+  openingWidth: number;
+  openingHeight: number;
+  faceZ: number;
+  rebateMm: number;
+}) {
+  const reach = THREE.MathUtils.clamp(rebateMm * 0.14, 1.4, 3.4) * mm;
+  const rings = useMemo(() => {
+    const stops = [0, 0.24, 0.58, 1];
+    return stops.slice(0, -1).map((start, index) => ({
+      geometry: rectangularRingGeometry(
+        openingWidth - 2 * reach * start,
+        openingHeight - 2 * reach * start,
+        openingWidth - 2 * reach * stops[index + 1],
+        openingHeight - 2 * reach * stops[index + 1],
+      ),
+      opacity: [0.2, 0.105, 0.045][index],
+    }));
+  }, [openingWidth, openingHeight, reach]);
+  useEffect(
+    () => () => rings.forEach(({ geometry }) => geometry.dispose()),
+    [rings],
+  );
+  return (
+    <group name="render-debug" position={[0, 0, faceZ + 0.00012]}>
+      {rings.map(({ geometry, opacity }, index) => (
+        <mesh key={index} geometry={geometry} renderOrder={4 + index}>
+          <meshBasicMaterial
+            color="#17130f"
+            transparent
+            opacity={opacity}
+            depthWrite={false}
+            toneMapped={false}
+          />
+        </mesh>
+      ))}
+    </group>
+  );
+}
 function Scene(p: Props) {
   const { size } = useThree();
+  const product = useRef<THREE.Group>(null);
+  useEffect(() => {
+    p.onExportReady?.(async () => {
+      if (!product.current) throw new Error("The frame is still loading.");
+      product.current.updateWorldMatrix(true, true);
+      const copy = product.current.clone(true);
+      const remove: THREE.Object3D[] = [];
+      const materials = new Map<THREE.Material, THREE.Material>();
+      const exportMaterial = (material: THREE.Material) => {
+        if (!materials.has(material)) {
+          const cloned = material.clone();
+          cloned.name = `export-material-${material.uuid}`;
+          materials.set(material, cloned);
+        }
+        return materials.get(material)!;
+      };
+      copy.traverse((node: any) => {
+        if (node.isLine || node.name === "render-debug" || (node.isMesh && (Array.isArray(node.material) ? node.material : [node.material]).some((m: any) => m.isShadowMaterial))) remove.push(node);
+      });
+      remove.forEach(node => node.removeFromParent());
+      copy.traverse((node: any) => {
+        if (node.isMesh) node.material = Array.isArray(node.material) ? node.material.map(exportMaterial) : exportMaterial(node.material);
+      });
+      return await new GLTFExporter().parseAsync(copy, { binary: true, onlyVisible: true }) as ArrayBuffer;
+    });
+    return () => p.onExportReady?.(null);
+  }, [p.onExportReady]);
   const m = p.moulding,
     aw = p.artWidth * mm,
     ah = p.artHeight * mm,
@@ -1371,6 +1688,7 @@ function Scene(p: Props) {
     "Dramatic Raking Light": [-5, 0.7, 2, 2.8, "#e9e0c8"],
   }[p.lighting] || [3, 4, 5, 1, "#fff"];
   const wall = p.displayMode === "Wall",
+    generatedRoom = wall && p.roomTemplate?.kind === "generated",
     baseRoom = p.roomTemplate || roomPresets[p.wallPreset] || fallbackRoom,
     room = {
       ...baseRoom,
@@ -1383,7 +1701,7 @@ function Scene(p: Props) {
     calibratedLighting = p.roomCalibration?.renderer?.lighting;
   const detailTarget: [number, number, number] = [ow * 0.38, oh * 0.36, 0],
     orbitTarget: [number, number, number] =
-      p.view === "Detail" ? detailTarget : [0, wall ? 0.1 : 0, 0];
+      p.view === "Detail" && !wall ? detailTarget : wall && room.camera.target ? room.camera.target : [0, wall ? 0.1 : 0, 0];
   const cam = wall
     ? room.camera.position
     : p.view === "Review"
@@ -1399,11 +1717,14 @@ function Scene(p: Props) {
   // genuinely new view.
   const stableCameraPosition = useMemo(() => cam, [cameraResetKey]);
   const stableOrbitTarget = useMemo(() => orbitTarget, [cameraResetKey]);
-  const metricRebate =
-      m.sku === "POL-4508" || m.supplier === "Centrado" || catalogueCandidate,
-    rebateFront = metricRebate ? (m.depthMm - m.rebateMm) * mm : 0.013,
+  // All catalogue mouldings carry a measured rebate. The mounted package sits
+  // just behind its inner lip so the existing rebate wall remains visible at
+  // oblique angles instead of merging with the mount into one flat plane.
+  const rebateLipZ = Math.max(1, m.depthMm - m.rebateMm) * mm,
+    packageSetbackMm = THREE.MathUtils.clamp(m.rebateMm * 0.12, 0.8, 2.4),
+    packageFaceZ = Math.max(0.0082, rebateLipZ - packageSetbackMm * mm),
     mountThickness = 2 * mm,
-    mountFaceZ = metricRebate ? rebateFront + 0.001 : 0.016,
+    mountFaceZ = packageFaceZ,
     innerMountReveal = p.mount > 0 ? Math.max(0, p.innerMount) * mm : 0,
     hasInnerMount = innerMountReveal > 0,
     innerMountFaceZ = mountFaceZ - mountThickness - 0.00003,
@@ -1411,14 +1732,12 @@ function Scene(p: Props) {
       ? (hasInnerMount ? innerMountFaceZ : mountFaceZ) -
         mountThickness -
         0.00003
-      : metricRebate
-        ? rebateFront + 0.001
-        : 0.015,
-    glassZ = p.mount > 0
-      ? mountFaceZ + 0.002
-      : metricRebate
-        ? rebateFront + 0.006
-        : 0.033;
+      : packageFaceZ,
+    glassZ = Math.min(
+      rebateLipZ - 0.25 * mm,
+      (p.mount > 0 ? mountFaceZ : packageFaceZ) + 0.65 * mm,
+    );
+  const rearClosureFace = Math.min(.008, artZ - .0005);
   let frameMatrix = new THREE.Matrix4();
   if (wall) {
     frameMatrix.compose(
@@ -1482,8 +1801,9 @@ function Scene(p: Props) {
     shadowGap = (calibratedLighting?.shadowGapMm ?? 4) * mm;
   return (
     <>
-      <Exposure value={p.exposure * (wall ? 1.22 : 1)} />
+      <Exposure value={p.exposure * (wall && !generatedRoom ? 1.22 : 1)} />
       {!p.overlayOnly && <color attach="background" args={[p.wallColour]} />}
+      {generatedRoom ? <GeneratedRoomLighting sceneId={room.sceneId!} strength={p.lightStrength} fill={p.ambientFill} shadow={p.wallShadow} depthMm={m.depthMm} /> : <>
       <ambientLight
         intensity={
           (wall ? Math.max(0.72, room.ambient * ambientStrength) : 0.32) *
@@ -1534,13 +1854,24 @@ function Scene(p: Props) {
           Math.max(0.7, p.ambientFill)
         }
       />
+      </>}
       {wall && !p.overlayOnly && (
         <RoomBackdrop room={room} tint={p.wallColour} />
       )}
-      <group
+      {generatedRoom && <FrameWallContact matrix={frameMatrix} width={ow} height={oh} wallZ={generatedScenes[room.sceneId!].wallZ} strength={p.wallShadow} />}
+      <GeneratedMaterialContext.Provider value={generatedRoom}>
+      <group ref={product} name="configured-frame"
         matrix={wall ? frameMatrix : new THREE.Matrix4()}
         matrixAutoUpdate={false}
       >
+        {generatedRoom && <mesh name="product-rear-closure"
+          position={[0, 0, (rearClosureFace + (generatedScenes[room.sceneId!].wallZ + .0002 - room.framePosition[2]) / (room.frameScale * p.wallScale)) / 2]}
+          castShadow receiveShadow>
+          {/* The swept profile ends at z=.008. Close the remaining stand-off
+              to the wall; a shadow overlay cannot hide this visible air gap. */}
+          <boxGeometry args={[ow - .001, oh - .001, rearClosureFace - (generatedScenes[room.sceneId!].wallZ + .0002 - room.framePosition[2]) / (room.frameScale * p.wallScale)]} />
+          <RoomStandardMaterial color={m.baseColor} roughness={.95} />
+        </mesh>}
         {wall && !p.overlayOnly && (
           <SoftWallShadow
             width={ow}
@@ -1579,21 +1910,29 @@ function Scene(p: Props) {
             )}
           </>
         )}
-        <mesh position={[0, 0, artZ]} receiveShadow>
+        <mesh name="product-artwork" position={[0, 0, artZ]} receiveShadow>
           <planeGeometry args={[aw, ah]} />
-          <meshBasicMaterial map={art} toneMapped={false} />
+          {generatedRoom && p.artworkColourMode === "Room lighting"
+            ? <RoomStandardMaterial map={art} roughness={.95} metalness={0} envMapIntensity={.55} toneMapped={false} />
+            : <meshBasicMaterial map={art} toneMapped={false} />}
         </mesh>
-        {p.mount > 0 && (
+        {((generatedRoom && p.artworkColourMode !== "Room lighting") || (p.mount > 0 && !generatedRoom)) && (
           <mesh position={[0, 0, artZ + 0.00005]} receiveShadow renderOrder={3}>
             <planeGeometry args={[aw, ah]} />
             <shadowMaterial
               transparent
-              opacity={0.22}
+              opacity={generatedRoom ? 0.16 : 0.22}
               depthWrite={false}
               toneMapped={false}
             />
           </mesh>
         )}
+        <RebateContactShadow
+          openingWidth={iw}
+          openingHeight={ih}
+          faceZ={p.mount > 0 ? mountFaceZ : artZ}
+          rebateMm={m.rebateMm}
+        />
         <Framing
           moulding={m}
           ow={ow}
@@ -1602,18 +1941,20 @@ function Scene(p: Props) {
           ih={ih}
           geometryMode={p.geometryMode}
           materialMode={p.materialMode}
-          materialVariant={p.materialVariant}
+          materialVariant={p.materialRevision ? `${p.materialVariant}@${p.materialRevision}` : p.materialVariant}
           profileVariant={p.profileVariant}
+          reviewProfile={p.reviewProfile}
         />
         {p.glass !== "None" && (
-          <mesh position={[0, 0, glassZ]}>
-            <planeGeometry args={[aw, ah]} />
+          <mesh name="product-glass" position={[0, 0, glassZ]}>
+            <planeGeometry args={generatedRoom ? [iw, ih] : [aw, ah]} />
             <meshPhysicalMaterial
               transparent
-              opacity={p.glass === "Museum" ? 0.07 : 0.16}
-              roughness={p.glass === "Museum" ? 0.06 : 0.19}
-              metalness={0.05}
+              opacity={generatedRoom ? (p.glass === "Museum" ? .008 : .035) : p.glass === "Museum" ? 0.07 : 0.16}
+              roughness={generatedRoom ? .045 : p.glass === "Museum" ? 0.06 : 0.19}
+              metalness={generatedRoom ? 0 : 0.05}
               clearcoat={1}
+              envMapIntensity={generatedRoom ? .45 : 1}
             />
           </mesh>
         )}
@@ -1625,7 +1966,7 @@ function Scene(p: Props) {
               />
               <lineBasicMaterial color="#e3b65f" />
             </lineSegments>
-            <Text
+            <Text name="render-debug"
               position={[0, -oh / 2 - 0.12, 0.04]}
               fontSize={0.035}
               color="#d9b86f"
@@ -1633,6 +1974,7 @@ function Scene(p: Props) {
           </>
         )}
       </group>
+      </GeneratedMaterialContext.Provider>
       {wall && (
         <ProjectionReporter
           frameMatrix={frameMatrix}
@@ -1655,6 +1997,7 @@ function Scene(p: Props) {
         target={stableOrbitTarget}
         enableRotate={!wall}
         enablePan={!wall}
+        enableZoom={!wall}
         screenSpacePanning={!wall}
         minDistance={wall ? 7.2 : p.view === "Detail" ? 0.42 : 1.05}
         maxDistance={wall ? 11 : 4.2}
@@ -1665,29 +2008,33 @@ function Scene(p: Props) {
         key={`camera-${cameraResetKey}`}
         makeDefault
         position={stableCameraPosition as [number, number, number]}
-        fov={wall ? room.camera.fov : p.view === "Detail" ? 31 : 33}
+        fov={generatedRoom
+          ? fittedRoomFov(room.camera.fov, room.imageAspect!, size.width / Math.max(1, size.height), p.roomImageFit || "contain")
+          : wall ? room.camera.fov : p.view === "Detail" ? 31 : 33}
       />
     </>
   );
 }
 export default function FramedArtwork(p: Props) {
+  const generatedRoom = p.displayMode === "Wall" && p.roomTemplate?.kind === "generated";
   const lighting = p.roomCalibration?.renderer?.lighting;
   const match = THREE.MathUtils.clamp(p.roomMatchStrength, 0, 1);
   const brightness = 1 + ((lighting?.foregroundBrightness ?? 0.82) - 1) * match;
   const saturation = 1 + ((lighting?.foregroundSaturation ?? 0.82) - 1) * match;
   const warmth = (lighting?.foregroundWarmth ?? 0) * match;
-  const compositeFilter = p.overlayOnly
+  const compositeFilter = p.overlayOnly && !generatedRoom
     ? `brightness(${brightness}) saturate(${saturation}) sepia(${Math.max(0, warmth) * 0.18}) hue-rotate(${Math.min(0, warmth) * 8}deg)`
     : undefined;
   return (
     <Canvas
-      key={p.overlayOnly ? "wall-overlay" : "opaque-scene"}
+      key={generatedRoom ? "generated-room-soft-daylight" : p.overlayOnly ? "wall-overlay" : "opaque-scene"}
       className="canvas"
+      frameloop={generatedRoom ? "demand" : "always"}
       style={{ filter: compositeFilter }}
-      shadows={{ type: THREE.PCFSoftShadowMap }}
+      shadows={{ type: generatedRoom ? THREE.PCFShadowMap : THREE.PCFSoftShadowMap }}
       dpr={[1, 2]}
       gl={{
-        toneMapping: THREE.ACESFilmicToneMapping,
+        toneMapping: generatedRoom ? THREE.AgXToneMapping : THREE.ACESFilmicToneMapping,
         outputColorSpace: THREE.SRGBColorSpace,
         alpha: !!p.overlayOnly,
       }}

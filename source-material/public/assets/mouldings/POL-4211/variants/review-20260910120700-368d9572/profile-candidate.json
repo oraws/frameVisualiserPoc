@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4211",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 54.0,
+  "depthMm": 20.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      19.825
+    ],
+    [
+      0.35,
+      20.0
+    ],
+    [
+      27.05,
+      20.0
+    ],
+    [
+      53.75,
+      20.0
+    ],
+    [
+      54.0,
+      19.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "observations": [
+      "Supplier profile label is 'flat' and the rotation photographs show a uniform planar face with no ridge, hollow, bevel or crown; the face reads as a single flat plane.",
+      "Cross-section (lower panel) confirms a flat front face over a straight vertical body, consistent with a 54 x 20 mm flat stock with a 14 mm rebate at the back.",
+      "Finish is a light oak/ash veneer with fine, tight directional grain; grain runs horizontally in the rotation shots and vertically in the face shot, which is only an orientation difference, not a texture change.",
+      "Surface relief is minimal (low gloss, near-flat veneer); no moulded profile features are present to model.",
+      "A greenish speckled band is visible beneath the veneer in the cross-section, consistent with the substrate/core or rebate backing rather than a moulded edge."
+    ],
+    "concerns": [
+      "Do not introduce any crown, bevel, or hollow in the candidate; the real moulding is a flat face with square (or minimally broken) sight edges, so faceCrownMm is held at 0 and edge radii at the 0.2 mm minimum.",
+      "The green speckled region in the cross-section is substrate/rebate backing, not a coloured moulding edge; the candidate must keep the visible face as the light oak veneer only.",
+      "The top row is a three-panel tiled rotation capture; remove the panel seams and tiling while retaining the natural fine grain variation.",
+      "Preserve the supplied envelope (54 x 20 mm, 14 mm rebate) and do not let lighting/perspective in the supplier photos be misread as a curved profile."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "reasons": [
+      "Supplier profile label is 'flat' and the candidate cross-section shows a flat rectangular face with no ridges, hollows or bevels, matching a flat moulding.",
+      "A rebate is present on the inner sight edge in the candidate, consistent with the supplier's stated rebate of 14 mm.",
+      "The overall rectangular outline is consistent with flat 54 x 20 mm stock rather than a shaped profile.",
+      "No extra geometry (curves, coves, beads) is introduced that would be absent from the real flat moulding."
+    ],
+    "concerns": [
+      "The 'REBATE DROP 14 mm' dimension line visually spans close to the full depth of the section, making it hard to confirm the 14 mm rebate against the 20 mm depth from the diagram alone.",
+      "The candidate cross-section is rendered as a solid tan block, so finish, grain direction, gloss and surface relief cannot be verified from it; texture must be judged from the supplier photos separately.",
+      "Supplier photos show differing grain orientations (horizontal in the top strip, vertical in the lower-left sample), which is likely just rotation but should be confirmed against the intended install direction."
+    ]
+  }
+}

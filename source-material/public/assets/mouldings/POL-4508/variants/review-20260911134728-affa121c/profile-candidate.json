@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4508",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 30.0,
+  "rebateMm": 13.0,
+  "points": [
+    [
+      0.0,
+      17.0
+    ],
+    [
+      0.147,
+      29.825
+    ],
+    [
+      0.35,
+      30.0
+    ],
+    [
+      15.05,
+      30.0
+    ],
+    [
+      29.75,
+      30.0
+    ],
+    [
+      30.0,
+      29.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face (supplier profile label = flat)",
+      "Fine directional horizontal grain / brushing on the face",
+      "Rebate / step of 13 mm within the 30 x 30 mm envelope (catalogue trace + label)"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel, hollow or crown supported by the trace or photographs"
+    ],
+    "observations": [
+      "Top-row supplier panels show one continuous flat face with horizontal grain; the bright band at the top edge is a lighting highlight, not a profile feature",
+      "Directional grain is intentional fine brushing, not a tiled repeat",
+      "Catalogue trace on the lower-left shows a flat vertical face with a speckled rebate step, consistent with the 'flat' label and 30 x 30 mm / 13 mm rebate dimensions"
+    ],
+    "concerns": [
+      "Top-row photographs are low-resolution and do not independently show the rebate depth; the step is taken from the catalogue trace and supplier label",
+      "Edge radii are not clearly resolvable in the photographs; sharp (0.2 mm) values assumed for a flat rebate profile"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier profile label is 'flat' and the candidate renders a single planar tan face with no added perimeter ridge, bead or hollow, consistent with a flat moulding.",
+      "Candidate rebate drop of 13 mm on the inner sight edge matches the stated supplier dimension 'rebate 13 mm' and the 30 x 30 mm section.",
+      "Top supplier photographs show a flat dark-wood face with fine directional grain/brushing and no repeating macro ridge, supporting a flat face rather than a profiled bead.",
+      "The left catalogue/edge strip shows a vertical edge treatment and a step/notch at the base, consistent with the rebate step present in the candidate cross-section.",
+      "The curved recess visible in the grey speckled substrate of the catalogue guide is treated as advisory and is correctly omitted from the candidate, per the rule that a flat photographed face must not gain trace-only features."
+    ],
+    "concerns": [
+      "Catalogue/extracted guide shows a curved hollow in the grey speckled base that is not represented in the candidate; this is acceptable only if that region is a separate substrate rather than the moulding profile.",
+      "Grain direction appears horizontal in the top photos but vertical in the left strip, likely due to rotation/perspective; neutral-lighting confirmation of colour and gloss is recommended.",
+      "Top photographs contain a bright band at the top edge that may be lighting/edge highlight rather than a physical feature; verify it is not a bevel."
+    ]
+  }
+}

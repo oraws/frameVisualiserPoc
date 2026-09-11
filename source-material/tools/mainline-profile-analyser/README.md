@@ -147,3 +147,9 @@ Mainline import must pass the asset validator and then be compared in the live
 visualiser against its supplier thumbnails before it is considered ready.
 Curved profile families receive conservative surface smoothing in the renderer;
 flat, angled and L-shaped profiles retain their hard edges.
+
+For a stricter supplier match, run `npm run materials:quality`. This adds a
+bounded candidate-and-review loop for colour, detail, seams, pattern repetition
+and fixed-light appearance. It can use an installed Ollama vision model for
+reference analysis and visual criticism; deterministic gates remain mandatory.
+See `tools/moulding-material-pilot/README.md` for usage and review rules.

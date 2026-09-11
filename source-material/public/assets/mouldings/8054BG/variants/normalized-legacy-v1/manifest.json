@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sku": "8054BG",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/8054BG/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg",
+    "macro.jpg",
+    "framed-reference.jpg"
+  ]
+}

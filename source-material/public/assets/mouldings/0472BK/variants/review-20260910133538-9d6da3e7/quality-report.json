@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "sku": "0472BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-10T13:38:33.076423+00:00",
+  "requestedFault": "TEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "material"
+  ],
+  "profile": null,
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260910133538-9d6da3e7",
+  "referenceImages": [
+    "public/assets/mouldings/0472BK/product-section.jpg",
+    "public/assets/mouldings/0472BK/profile-source.png",
+    "public/assets/mouldings/0472BK/chevron.jpg",
+    "public/assets/mouldings/0472BK/macro.jpg",
+    "public/assets/mouldings/0472BK/product-detail-1.jpg",
+    "public/assets/mouldings/0472BK/product-detail-2.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.78,
+    "contrast": 1.04,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 198.0,
+    "roughness_detail": 0.55,
+    "bump_detail": 2.6
+  },
+  "bestMetrics": {
+    "colourDeltaE": 4.4544,
+    "colourSpreadError": 0.168,
+    "seamError": 0.0131,
+    "maximumAutocorrelation": 0.2861,
+    "detailError": 0.2249,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.78,
+        "contrast": 1.04,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 198.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 4.4544,
+        "colourSpreadError": 0.168,
+        "seamError": 0.0131,
+        "maximumAutocorrelation": 0.2861,
+        "detailError": 0.2249,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 88.6,
+      "failedGates": [],
+      "agentReview": {
+        "score": 80,
+        "colourMatch": 82,
+        "textureMatch": 74,
+        "repetition": 88,
+        "seam": 92,
+        "finishMatch": 78,
+        "blockers": [],
+        "observations": [
+          "Candidate colour reads as a deep charcoal-black that aligns with the black supplier miter sample; colourDeltaE 4.45 is within an acceptable band for a dark painted finish.",
+          "Reeded/fluted edge profile and flat centre panel are reproduced correctly in the fixed-light preview, matching the supplier moulding geometry.",
+          "Surface grain in the candidate appears as a fine isotropic speckle/stipple rather than the subtle directional brush grain visible on the supplier painted samples; this is the main texture-character mismatch.",
+          "maximumAutocorrelation 0.2861 indicates no strong periodic tiling; the speckle is irregular and does not form a repeating macro tile, so repetition is not a fault.",
+          "seamError 0.0131 and clippedPixels 0.0 indicate clean atlas edges and no HDR clipping under the fixed light.",
+          "Gloss level in the candidate is matte-to-satin, consistent with the supplier painted wood references; no obvious over-gloss or plastic sheen."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.4
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "painted_wood_matte",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "longitudinal_grain_direction",
+        "profile_fluting_relief",
+        "natural_colour_variation",
+        "cut_end_substrate_tone"
+      ],
+      "risks": [
+        "tiling_repeat_of_grain_pattern",
+        "over_saturated_pure_black_flattening_grain",
+        "excess_gloss_hotspots_on_bevels",
+        "bump_scale_too_fine_losing_reeding_depth"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.78,
+        "contrast": 1.04,
+        "roughness_mid": 198,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.6
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Candidate's dark matte finish and fine surface relief are broadly consistent with the black mitered-frame supplier reference.",
+        "No obvious macro-scale tiled repeat is visible; maximumAutocorrelation (0.2861) is moderate, not indicative of a strong periodic tile.",
+        "Horizontal reeded grooves and flat field provide the expected surface relief and scale."
+      ],
+      "concerns": [
+        "A faint vertical seam/discontinuity is visible on the right side of the candidate preview, suggesting a tiling boundary.",
+        "Candidate texture reads as a fine stipple/speckle rather than the directional brushed/linear grain shown in the supplier frame samples, a possible texture-character mismatch.",
+        "Candidate tone is a brownish charcoal under fixed light, which should be re-verified against the pure-black supplier reference under neutral lighting.",
+        "Surface variation appears somewhat uniform; natural irregularity may be under-represented."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "1994f0b56f0a57ca08d993683e5950b6a3a6bb1895dbb01e86f3ee3fca29dfd2",
+      "roughness.jpg": "942ae3f0d7489f1d440802af39d0ceb6814ff8721dd6d4c1b1baac53fd7b57c3",
+      "bump.jpg": "762017eb326114f34fef65e513a6dbc66f29e7ed12e36eb1a576b3e9aaf5b41b"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

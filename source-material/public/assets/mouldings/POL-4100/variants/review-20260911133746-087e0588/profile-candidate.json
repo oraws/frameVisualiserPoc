@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4100",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 41.0,
+  "depthMm": 13.0,
+  "rebateMm": 9.0,
+  "points": [
+    [
+      0.0,
+      4.0
+    ],
+    [
+      0.168,
+      12.72
+    ],
+    [
+      0.4,
+      13.0
+    ],
+    [
+      20.5,
+      13.0
+    ],
+    [
+      40.6,
+      13.0
+    ],
+    [
+      41.0,
+      12.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face with no visible ridge, bead, bevel, hollow or step",
+      "Fine directional grain / brushing running across the face",
+      "Dark charcoal / graphite colour with low-to-matte gloss"
+    ],
+    "rejectedTraceFeatures": [
+      "No profile geometry (crown, bead, rebate step) is visible in the supplier photographs; only the labelled 9 mm rebate is accepted as a dimensional spec, not as a visible moulded feature"
+    ],
+    "observations": [
+      "Top-row supplier panels show a flat, planar surface with horizontal directional grain under varying lighting; no cross-section, chevron or oblique rotation is present to reveal edge geometry",
+      "Catalogue image (lower left) shows the same dark grain finish on a vertical board with a grey substrate at the base, consistent with a flat board",
+      "Supplier profile label reads 'flat' and dimensions 41 x 13 mm with a 9 mm rebate, which is consistent with a single planar face",
+      "Grain orientation appears horizontal in the supplier photos and vertical in the catalogue image, likely a difference in board orientation rather than a profile feature"
+    ],
+    "concerns": [
+      "No physical section, chevron or oblique rotation photograph is provided, so the rebate depth and inner/outer edge radii are not independently confirmed and are set to minimal plausible values",
+      "Edge radii (inner/outer) are inferred, not directly visible; treat as unverified",
+      "Lighting and perspective in the supplier panels create tonal banding that could be mistaken for relief; it is read here as flat-face shading only"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.8,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier profile label is 'flat' and the candidate cross-section shows a single planar face with no added beads, ridges or bevels, consistent with a flat board.",
+      "The only edge feature in the candidate is a 9 mm rebate step on the inner sight edge, which matches the stated supplier dimension 'rebate 9 mm' and is not a perimeter ridge on the photographed flat face.",
+      "Photographs (top panels and lower-left vertical panel) show a flat face with directional grain/brushing and no moulded profile, so no trace-only geometry has been introduced.",
+      "Overall dimensions 41 x 13 mm with a 9 mm rebate are coherent with the rendered section proportions."
+    ],
+    "concerns": [
+      "Grain direction appears horizontal in the top panels but vertical in the lower-left panel; this is consistent with rotation/lighting rather than tiling, but should be confirmed under neutral fixed lighting.",
+      "The rebate step is not directly visible in the supplied face-on photographs and is accepted on the basis of the supplier label and dimensions; an oblique/chevron view would fully confirm it."
+    ]
+  }
+}

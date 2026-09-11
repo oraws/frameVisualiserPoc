@@ -1,4 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import HighResRender from "./HighResRender";
+import OllamaMaterialReview from "./OllamaMaterialReview";
 import FramedArtwork from "../renderer/FramedArtwork";
 import WallShadowOverlay from "../renderer/WallShadowOverlay";
 import {
@@ -27,6 +29,7 @@ import {
   listCustomRooms,
 } from "../renderer/customRoomStore";
 import mainlineMaterials from "../mouldings/mainlineMaterials.json";
+import materialPilotsV3 from "../mouldings/materialPilotsV3.json";
 
 const mountColours = {
   "Off White": "#e9e2d3",
@@ -38,8 +41,10 @@ const mountColours = {
 const sampleArtwork = "/assets/artwork/img1.jpg";
 const emptyArtwork = "/assets/artwork/default.svg";
 const selectedMouldingKey = "frame-visualiser:selected-moulding";
+const ollamaBatchSelectionKey = "frame-visualiser:ollama-batch-selection";
 const legacyReviewableSkus = ["POL-4100", "POL-4508", "POL-4418", "POL-4211"];
 const hasMainlineMaterial = (sku: string) => sku in mainlineMaterials;
+const hasMaterialPilotV3 = (sku: string) => sku in materialPilotsV3;
 type ProfileVariant = "Current" | "SAM 2.1" | "Catalogue";
 type RoomCalibration = {
   preview?: boolean;
@@ -142,17 +147,24 @@ const matchesColour = (moulding: Moulding, colour: string) => {
   return mouldingColourTags(moulding).some((tag) => tags.includes(tag));
 };
 export default function Visualiser() {
+  const renderExporter = useRef<(() => Promise<ArrayBuffer>) | null>(null);
+  const onExportReady = useCallback((exporter: (() => Promise<ArrayBuffer>) | null) => { renderExporter.current = exporter; }, []);
   const params = new URLSearchParams(window.location.search),
     embedded = params.get("embed") === "1";
   const [sku, setSku] = useState(() => {
+      const requestedSku = params.get("sku");
+      if (requestedSku && mouldings.some((item) => item.sku === requestedSku)) {
+        return requestedSku;
+      }
       const saved = localStorage.getItem(selectedMouldingKey);
       return saved && mouldings.some((item) => item.sku === saved)
         ? saved
         : "POL-4875";
     }),
     [colourFilter, setColourFilter] = useState("all"),
-    [artWidth, setArtWidth] = useState(700),
-    [artHeight, setArtHeight] = useState(500),
+    [baseArtWidth, setBaseArtWidth] = useState(700),
+    [baseArtHeight, setBaseArtHeight] = useState(500),
+    [artworkScale, setArtworkScale] = useState(1),
     [mount, setMount] = useState(50),
     [mountName, setMountName] = useState("Off White"),
     [innerMountInches, setInnerMountInches] = useState(0),
@@ -172,21 +184,38 @@ export default function Visualiser() {
     [materialMode, setMaterialMode] = useState<
       "Texture" | "Clay" | "Normal" | "Wireframe"
     >("Texture"),
-    [displayMode, setDisplayMode] = useState<"Inspect" | "Wall" | "Review">(
+    [displayMode, setDisplayMode] = useState<"Inspect" | "Wall" | "Review" | "Ollama">(
       "Inspect",
     ),
     [wallPreset, setWallPreset] = useState("Oblique Gallery Wall"),
     [roomImageFit, setRoomImageFit] = useState<"contain" | "cover">("contain"),
     [wallPositionX, setWallPositionX] = useState(0),
     [wallPositionY, setWallPositionY] = useState(0),
-    [wallScale, setWallScale] = useState(1),
     [wallShadow, setWallShadow] = useState(1),
     [roomMatchStrength, setRoomMatchStrength] = useState(1),
+    [artworkColourMode, setArtworkColourMode] = useState<"Source colours" | "Room lighting">("Source colours"),
     [supplierFrame, setSupplierFrame] = useState(0),
     [reviewDecision, setReviewDecision] = useState("Pending review"),
-    [materialVariant, setMaterialVariant] = useState<
-      "baseline-v1" | "multiframe-experiment-v1" | "supplier-derived-v2"
-    >("supplier-derived-v2"),
+    [assetStatuses, setAssetStatuses] = useState<Record<string, {
+      assetStatus: string;
+      acceptedVersion?: string | null;
+      acceptedProfile?: Array<[number, number]> | null;
+      acceptedRevision?: number | null;
+      eligible?: boolean;
+      versionCount?: number;
+    }>>({}),
+    [reviewGrid, setReviewGrid] = useState(false),
+    [reviewSupplier, setReviewSupplier] = useState("All"),
+    [reviewStatusFilter, setReviewStatusFilter] = useState("all"),
+    [ollamaBatchSelection, setOllamaBatchSelection] = useState<Record<string, Array<"profile" | "material">>>(() => {
+      try {
+        const saved = JSON.parse(localStorage.getItem(ollamaBatchSelectionKey) || "{}");
+        return saved && typeof saved === "object" ? saved : {};
+      } catch { return {}; }
+    }),
+    [materialVariant, setMaterialVariant] = useState<string>("supplier-derived-v2"),
+    [materialRevision, setMaterialRevision] = useState(0),
+    [reviewProfile, setReviewProfile] = useState<{ sku: string; points: Array<[number, number]> } | null>(null),
     [profileVariant, setProfileVariant] = useState<ProfileVariant>("Catalogue");
   const [roomCalibrations, setRoomCalibrations] = useState<
     Record<string, RoomCalibration>
@@ -198,7 +227,9 @@ export default function Visualiser() {
   const [customRoomTemplates, setCustomRoomTemplates] = useState<
     Record<string, RoomTemplate>
   >({});
-  const moulding = useMemo(() => mouldings.find((x) => x.sku === sku)!, [sku]),
+  const artWidth = Math.round(baseArtWidth * artworkScale),
+    artHeight = Math.round(baseArtHeight * artworkScale),
+    moulding = useMemo(() => mouldings.find((x) => x.sku === sku)!, [sku]),
     filteredMouldings = useMemo(
       () => mouldings.filter((item) => matchesColour(item, colourFilter)),
       [colourFilter],
@@ -218,23 +249,42 @@ export default function Visualiser() {
     localStorage.setItem(selectedMouldingKey, sku);
   }, [sku]);
   useEffect(() => {
-    setReviewDecision(
-      localStorage.getItem(`moulding-review:${sku}:${materialVariant}`) ||
-        "Pending review",
-    );
-  }, [sku, materialVariant]);
+    localStorage.setItem(ollamaBatchSelectionKey, JSON.stringify(ollamaBatchSelection));
+  }, [ollamaBatchSelection]);
+  const loadAssetStatuses = useCallback(() => {
+    fetch("/api/material-review/statuses", { cache: "no-store" })
+      .then(response => response.ok ? response.json() : Promise.reject())
+      .then(data => setAssetStatuses(data.statuses || {})).catch(() => {});
+  }, []);
+  useEffect(() => { loadAssetStatuses(); }, [loadAssetStatuses]);
   useEffect(() => {
-    setMaterialVariant(
-      sku === "POL-4100" ? "baseline-v1" : "supplier-derived-v2",
-    );
-  }, [sku]);
+    const status = assetStatuses[sku]?.assetStatus || "pending";
+    setReviewDecision(status === "accepted" ? "Accepted" : status === "needs-work" ? "Needs work" : "Pending review");
+  }, [sku, assetStatuses]);
   useEffect(() => {
-    setProfileVariant(hasCatalogueProfile ? "Catalogue" : "Current");
-  }, [sku, hasCatalogueProfile]);
+    const accepted = assetStatuses[sku];
+    const baseline = sku === "POL-4100"
+      ? "baseline-v1"
+      : hasMaterialPilotV3(sku)
+        ? "supplier-derived-v3"
+        : "supplier-derived-v2";
+    setMaterialVariant(accepted?.acceptedVersion || baseline);
+    // Keep ordinary catalogue selections on stable texture URLs. Generating a
+    // fresh query string on every grid click defeats useTexture's cache and can
+    // eventually exhaust the browser's WebGL texture memory.
+    setMaterialRevision(accepted?.acceptedRevision || 0);
+    setReviewProfile(accepted?.acceptedProfile?.length
+      ? { sku, points: accepted.acceptedProfile }
+      : null);
+    setProfileVariant(accepted?.acceptedProfile?.length ? "Current" : hasCatalogueProfile ? "Catalogue" : "Current");
+    if (accepted?.acceptedVersion) {
+      setMaterialMode("Texture");
+      setGeometryMode("Profile");
+    }
+  }, [sku, assetStatuses, hasCatalogueProfile]);
   useEffect(() => {
     setWallPositionX(0);
     setWallPositionY(0);
-    setWallScale(1);
     setWallShadow(1);
     setWallProjection(null);
   }, [wallPreset]);
@@ -268,6 +318,8 @@ export default function Visualiser() {
     setRoomCalibrations(approved);
     setRoomVisibility(visibility);
     if (params.get("mode") === "wall") setDisplayMode("Wall");
+    const generatedRoom = Object.entries(roomPresets).find(([, room]) => room.kind === "generated" && room.sceneId === requestedId);
+    if (generatedRoom) setWallPreset(generatedRoom[0]);
     const requestedRoom = roomAdminRooms.find(
       (room) => room.id === params.get("room"),
     );
@@ -348,18 +400,95 @@ export default function Visualiser() {
     const f = e.target.files?.[0];
     if (f) setArtwork(URL.createObjectURL(f));
   };
-  const saveDecision = (decision: string) => {
-    setReviewDecision(decision);
-    localStorage.setItem(`moulding-review:${sku}:${materialVariant}`, decision);
+  const saveDecision = async (decision: "accepted" | "needs-work", targetSku = sku) => {
+    const response = await fetch("/api/material-review/decision", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sku: targetSku, assetStatus: decision }),
+    });
+    if (response.ok) loadAssetStatuses();
+  };
+  const selectMoulding = (targetSku: string) => {
+    const accepted = assetStatuses[targetSku];
+    const baseline = targetSku === "POL-4100"
+      ? "baseline-v1"
+      : hasMaterialPilotV3(targetSku)
+        ? "supplier-derived-v3"
+        : "supplier-derived-v2";
+    // Update the identity, profile and material in one React event batch. This
+    // prevents a transient render that combines the new SKU with the previous
+    // moulding's accepted variant URL.
+    setMaterialVariant(accepted?.acceptedVersion || baseline);
+    setMaterialRevision(accepted?.acceptedRevision || 0);
+    setReviewProfile(accepted?.acceptedProfile?.length
+      ? { sku: targetSku, points: accepted.acceptedProfile }
+      : null);
+    setProfileVariant(accepted?.acceptedProfile?.length
+      ? "Current"
+      : mainlineCatalogueProfile(targetSku)
+        ? "Catalogue"
+        : "Current");
+    if (accepted?.acceptedVersion) {
+      setMaterialMode("Texture");
+      setGeometryMode("Profile");
+    }
+    setSku(targetSku);
+    setSupplierFrame(0);
   };
   const chooseColour = (colour: string) => {
     setColourFilter(colour);
     const choices = mouldings.filter((item) => matchesColour(item, colour));
     if (!choices.some((item) => item.sku === sku) && choices[0]) {
-      setSku(choices[0].sku);
-      setSupplierFrame(0);
+      selectMoulding(choices[0].sku);
     }
   };
+  const toggleBatchScope = (targetSku: string, scope: "profile" | "material") => {
+    setOllamaBatchSelection(current => {
+      const selected = current[targetSku] || [];
+      const nextScopes = selected.includes(scope)
+        ? selected.filter(value => value !== scope)
+        : [...selected, scope];
+      if (!nextScopes.length) {
+        const next = { ...current };
+        delete next[targetSku];
+        return next;
+      }
+      return { ...current, [targetSku]: nextScopes };
+    });
+  };
+  const useOllamaCandidate = useCallback((result: {
+    sku?: string;
+    revision: number;
+    outputVariant?: string;
+    profile?: { points?: Array<[number, number]> };
+  }, targetSku = result.sku || sku) => {
+    setSku(targetSku);
+    setSupplierFrame(0);
+    setMaterialVariant(result.outputVariant || "supplier-matched-v4-candidate");
+    setMaterialRevision(result.revision || Date.now());
+    setMaterialMode("Texture");
+    if (result.profile?.points?.length) {
+      setReviewProfile({ sku: targetSku, points: result.profile.points });
+      setProfileVariant("Current");
+      setGeometryMode("Profile");
+    } else {
+      const acceptedProfile = assetStatuses[targetSku]?.acceptedProfile;
+      setReviewProfile(acceptedProfile?.length ? { sku: targetSku, points: acceptedProfile } : null);
+      setProfileVariant(acceptedProfile?.length ? "Current" : mainlineCatalogueProfile(targetSku) ? "Catalogue" : "Current");
+    }
+  }, [sku, assetStatuses]);
+  const useOllamaBaseline = useCallback((variant: string, targetSku = sku) => {
+    setSku(targetSku);
+    setSupplierFrame(0);
+    setMaterialVariant(variant);
+    setMaterialRevision(Date.now());
+    setReviewProfile(null);
+    setProfileVariant("Current");
+    setGeometryMode("Profile");
+    setProfileVariant(mainlineCatalogueProfile(targetSku) ? "Catalogue" : "Current");
+  }, [sku]);
+  const gridMouldings = mouldings.filter(item =>
+    (reviewSupplier === "All" || item.supplier === reviewSupplier) &&
+    (reviewStatusFilter === "all" || (assetStatuses[item.sku]?.assetStatus || "pending") === reviewStatusFilter));
   const variantRoot = `/assets/mouldings/${sku}/variants/${materialVariant}`;
   const allRoomTemplates = { ...roomPresets, ...customRoomTemplates };
   const availableRoomNames = [
@@ -375,10 +504,11 @@ export default function Visualiser() {
     return room.calibrationStatus !== "approved-local";
   });
   const activeRoom = allRoomTemplates[wallPreset];
+  const generatedRoom = displayMode === "Wall" && activeRoom?.kind === "generated";
   const activeCalibration = activeRoom?.calibrationId
     ? roomCalibrations[activeRoom.calibrationId] || null
     : null;
-  const roomStatus = activeCalibration?.preview
+  const roomStatus = generatedRoom ? "3D room template" : activeCalibration?.preview
     ? "Admin lighting preview"
     : activeCalibration
       ? "Admin approved"
@@ -393,6 +523,14 @@ export default function Visualiser() {
     <main className={`app${embedded ? " embedded" : ""}`}>
       <section
         className={`stage ${displayMode === "Wall" ? "wall-stage" : ""} ${["#f2f0e9", "#d8d0c1", "#a9aaa7"].includes(wallColour) && displayMode !== "Wall" ? "light-stage" : ""}`}
+        onWheel={(event) => {
+          if (displayMode !== "Wall") return;
+          event.preventDefault();
+          const factor = Math.exp(-event.deltaY * 0.0012);
+          setArtworkScale((current) =>
+            Math.max(0.55, Math.min(1.5, current * factor)),
+          );
+        }}
       >
         <div className="brand">
           atelier / frame study<span>supplier-grounded visualisation POC</span>
@@ -409,7 +547,7 @@ export default function Visualiser() {
               }}
               alt=""
             />
-            <WallShadowOverlay
+            {!generatedRoom && <WallShadowOverlay
               room={activeRoom}
               calibration={activeCalibration}
               outerWidthMm={outerW}
@@ -417,13 +555,14 @@ export default function Visualiser() {
               profileDepthMm={moulding.depthMm}
               positionX={wallPositionX}
               positionY={wallPositionY}
-              scale={wallScale}
+              scale={1}
               strength={wallShadow}
               projectedCorners={wallProjection}
-            />
+            />}
           </>
         )}
         <FramedArtwork
+          onExportReady={onExportReady}
           moulding={moulding}
           artWidth={artWidth}
           artHeight={artHeight}
@@ -435,23 +574,26 @@ export default function Visualiser() {
           }
           glass={glass}
           lighting={lighting}
-          lightStrength={lightStrength}
-          ambientFill={ambientFill}
-          exposure={exposure}
+          lightStrength={generatedRoom ? 1 : lightStrength}
+          ambientFill={generatedRoom ? 1 : ambientFill}
+          exposure={generatedRoom ? 1 : exposure}
           wallColour={wallColour}
           view={displayMode === "Review" ? "Review" : view}
           debug={debug}
           artwork={artwork}
+          artworkColourMode={artworkColourMode}
           geometryMode={geometryMode}
           materialMode={materialMode}
           displayMode={displayMode === "Wall" ? "Wall" : "Inspect"}
           wallPreset={wallPreset}
           wallPositionX={wallPositionX}
           wallPositionY={wallPositionY}
-          wallScale={wallScale}
+          wallScale={1}
           wallShadow={wallShadow}
-          roomMatchStrength={roomMatchStrength}
+          roomMatchStrength={generatedRoom ? 0 : roomMatchStrength}
           materialVariant={materialVariant}
+          materialRevision={materialRevision}
+          reviewProfile={reviewProfile?.sku === sku ? reviewProfile.points : undefined}
           profileVariant={profileVariant}
           roomCalibration={activeCalibration}
           roomTemplate={activeRoom}
@@ -461,7 +603,7 @@ export default function Visualiser() {
         />
         <div className="status">
           {displayMode === "Wall"
-            ? `Photographic room · ${roomStatus}`
+            ? generatedRoom ? "3D room · Daylight from left · Fixed view" : `Photographic room · ${roomStatus}`
             : displayMode === "Review"
               ? "Approval view · right-drag to move"
               : "Drag to orbit · right-drag to move · scroll to zoom"}
@@ -484,13 +626,12 @@ export default function Visualiser() {
         <div className="group">
           <label>Presentation</label>
           <div className="chips mode-chips">
-            {(["Inspect", "Wall", "Review"] as const).map((v) => (
+            {(["Inspect", "Wall", "Review", "Ollama"] as const).map((v) => (
               <button
                 key={v}
                 onClick={() => {
                   setDisplayMode(v);
                   if (v === "Review") {
-                    if (!hasMainlineMaterial(sku)) setSku("POL-4100");
                     setSupplierFrame(2);
                     setMaterialMode("Texture");
                   }
@@ -501,13 +642,15 @@ export default function Visualiser() {
                   ? "Frame detail"
                   : v === "Wall"
                     ? "View on wall"
-                    : "Asset review"}
+                    : v === "Review"
+                      ? "Asset review"
+                      : "Ollama review"}
               </button>
             ))}
           </div>
           {displayMode === "Wall" && (
             <>
-              <label style={{ marginTop: 14 }}>Photographic room</label>
+              <label style={{ marginTop: 14 }}>Room</label>
               <select
                 value={wallPreset}
                 onChange={(e) => setWallPreset(e.target.value)}
@@ -539,12 +682,13 @@ export default function Visualiser() {
                   Fill stage
                 </button>
               </div>
-              <a
+              {!generatedRoom && <a
                 className="room-calibrator-link"
                 href={`/room-calibrator/?room=${activeRoom?.calibrationId || "stock-pilot"}`}
               >
                 Manage room calibration →
-              </a>
+              </a>}
+              {generatedRoom && <p className="room-light-note">A rendered 3D room with prepared daylight. Change the art and frame below, or choose a photographic room above to compare.</p>}
               <label style={{ marginTop: 14 }}>Frame placement</label>
               <RangeControl
                 label="Horizontal"
@@ -565,13 +709,13 @@ export default function Visualiser() {
                 onChange={setWallPositionY}
               />
               <RangeControl
-                label="Scale"
-                value={wallScale}
+                label="Artwork size"
+                value={artworkScale}
                 min={0.55}
                 max={1.5}
                 step={0.01}
-                display={`${Math.round(wallScale * 100)}%`}
-                onChange={setWallScale}
+                display={`${artWidth} × ${artHeight} mm`}
+                onChange={setArtworkScale}
               />
               <RangeControl
                 label="Wall shadow"
@@ -588,7 +732,6 @@ export default function Visualiser() {
                 onClick={() => {
                   setWallPositionX(0);
                   setWallPositionY(0);
-                  setWallScale(1);
                   setWallShadow(1);
                 }}
               >
@@ -617,18 +760,25 @@ export default function Visualiser() {
           <label style={{ marginTop: 14 }}>Moulding</label>
           <select
             value={sku}
-            onChange={(e) => {
-              setSku(e.target.value);
-              setSupplierFrame(0);
-            }}
+            onChange={(e) => selectMoulding(e.target.value)}
           >
             {filteredMouldings.map((m) => (
               <option key={`${m.supplier}-${m.sku}`} value={m.sku}>
                 {mouldingSupplierCode(m)} · {m.sku} · {m.name} — {m.widthMm} mm
                 {m.discontinued ? " · discontinued" : ""}
+                {assetStatuses[m.sku]?.acceptedVersion
+                  ? " · ✓ Ollama approved"
+                  : (assetStatuses[m.sku]?.versionCount || 0) > 0
+                    ? " · ◇ Ollama reviewed"
+                    : ""}
               </option>
             ))}
           </select>
+          {displayMode !== "Ollama" && (
+            <button type="button" className="ollama-open" onClick={() => setDisplayMode("Ollama")}>
+              Review selected frame with Ollama
+            </button>
+          )}
           {moulding.description && (
             <p className="catalog-description">{moulding.description}</p>
           )}
@@ -669,6 +819,71 @@ export default function Visualiser() {
             {moulding.discontinued && <em> · discontinued</em>}
           </div>
         </div>
+        {displayMode === "Ollama" && (
+          <OllamaMaterialReview sku={sku} name={moulding.name} onUseCandidate={useOllamaCandidate}
+            onUseBaseline={useOllamaBaseline}
+            batchItems={mouldings.map(item => ({ sku: item.sku, supplier: item.supplier, name: item.name,
+              eligible: assetStatuses[item.sku]?.eligible !== false }))}
+            selectedBatchItems={Object.entries(ollamaBatchSelection).flatMap(([selectedSku, selectedScopes]) => {
+              const item = mouldings.find(candidate => candidate.sku === selectedSku);
+              return item ? [{ sku: selectedSku, supplier: item.supplier, name: item.name,
+                eligible: assetStatuses[selectedSku]?.eligible !== false, scopes: selectedScopes }] : [];
+            })}
+            onClearSelectedBatch={() => setOllamaBatchSelection({})}
+            assetStatuses={assetStatuses} onStatusesChanged={loadAssetStatuses} />
+        )}
+        {displayMode === "Review" && <div className="group asset-status-card">
+          <label>Asset review status</label>
+          <div className={`review-state ${reviewDecision === "Accepted" ? "approved" : reviewDecision === "Needs work" ? "tuning" : ""}`}>{reviewDecision}</div>
+          <div className="review-actions asset-status-actions">
+            <button className="approve" type="button" onClick={() => void saveDecision("accepted")}>Mark moulding OK</button>
+            <button type="button" onClick={() => void saveDecision("needs-work")}>Flag as not OK</button>
+          </div>
+          <button type="button" className="grid-toggle" onClick={() => setReviewGrid(value => !value)}>{reviewGrid ? "Hide moulding grid" : "Show moulding grid"}</button>
+          {reviewGrid && <>
+            <div className="review-grid-filters">
+              <select aria-label="Grid supplier" value={reviewSupplier} onChange={event => setReviewSupplier(event.target.value)}>
+                <option>All</option>{[...new Set(mouldings.map(item => item.supplier))].map(value => <option key={value}>{value}</option>)}
+              </select>
+              <select aria-label="Grid review status" value={reviewStatusFilter} onChange={event => setReviewStatusFilter(event.target.value)}>
+                <option value="all">All statuses</option><option value="pending">Pending</option><option value="needs-work">Not OK</option><option value="accepted">OK</option>
+              </select>
+            </div>
+            <div className="moulding-review-grid">
+              <div className="review-grid-batch-bar">
+                <span><strong>{Object.keys(ollamaBatchSelection).length}</strong> mouldings selected</span>
+                <button type="button" disabled={!Object.keys(ollamaBatchSelection).length}
+                  onClick={() => setDisplayMode("Ollama")}>Add selected to Ollama batch</button>
+              </div>
+              {gridMouldings.map(item => {
+                const review = assetStatuses[item.sku];
+                const status = review?.assetStatus || "pending";
+                const eligible = review?.eligible !== false;
+                const selectedScopes = ollamaBatchSelection[item.sku] || [];
+                const thumbnail = review?.acceptedVersion
+                  ? `/assets/mouldings/${item.sku}/variants/${review.acceptedVersion}/basecolor.jpg`
+                  : item.supplierImages?.[0]?.url || `/assets/mouldings/${item.sku}/base-texture.jpg`;
+                return <article key={item.sku} className={`moulding-grid-card ${status} ${item.sku === sku ? "selected" : ""}`}>
+                  <button type="button" className="moulding-grid-preview" onClick={() => selectMoulding(item.sku)}>
+                    <img src={thumbnail} alt="" loading="lazy" decoding="async" />
+                    <strong>{item.sku}</strong><span>{item.name}</span>
+                    <small className="grid-status">{status === "accepted" ? "OK · kept version" : status === "needs-work" ? "Not OK" : "Pending"}</small>
+                  </button>
+                  <div className="grid-review-scopes">
+                    <label title={eligible ? "Add profile review" : "No usable local material image is available"}>
+                      <input type="checkbox" checked={selectedScopes.includes("profile")} disabled={!eligible}
+                        onChange={() => toggleBatchScope(item.sku, "profile")} /> Profile
+                    </label>
+                    <label title={eligible ? "Add texture and colour review" : "No usable local material image is available"}>
+                      <input type="checkbox" checked={selectedScopes.includes("material")} disabled={!eligible}
+                        onChange={() => toggleBatchScope(item.sku, "material")} /> Texture
+                    </label>
+                  </div>
+                </article>;
+              })}
+            </div>
+          </>}
+        </div>}
         {hasCatalogueProfile && (
           <div className="group">
             <label>Profile comparison</label>
@@ -715,7 +930,8 @@ export default function Visualiser() {
             )}
           </div>
         )}
-        {displayMode === "Review" && hasMainlineMaterial(sku) && (
+        {displayMode === "Review" &&
+          (hasMainlineMaterial(sku) || hasMaterialPilotV3(sku)) && (
           <div className="group review-card">
             <label>
               {sku === "POL-4100"
@@ -745,13 +961,24 @@ export default function Visualiser() {
                   <span>Earlier comparison material</span>
                 </button>
               )}
-              <button
-                className={materialVariant === "supplier-derived-v2" ? "active" : ""}
-                onClick={() => setMaterialVariant("supplier-derived-v2")}
-              >
-                <strong>Supplier-derived</strong>
-                <span>Automatic colour, roughness and relief · v2</span>
-              </button>
+              {hasMainlineMaterial(sku) && (
+                <button
+                  className={materialVariant === "supplier-derived-v2" ? "active" : ""}
+                  onClick={() => setMaterialVariant("supplier-derived-v2")}
+                >
+                  <strong>Supplier-derived</strong>
+                  <span>Automatic colour, roughness and relief · v2</span>
+                </button>
+              )}
+              {hasMaterialPilotV3(sku) && (
+                <button
+                  className={materialVariant === "supplier-derived-v3" ? "active experiment" : ""}
+                  onClick={() => setMaterialVariant("supplier-derived-v3")}
+                >
+                  <strong>Low-repeat pilot</strong>
+                  <span>Long physical atlas · v3</span>
+                </button>
+              )}
             </div>
             <div
               className={
@@ -764,6 +991,8 @@ export default function Visualiser() {
                 ? "Protected baseline · v1"
                 : materialVariant === "supplier-derived-v2"
                   ? "Automatic supplier material · v2"
+                  : materialVariant === "supplier-derived-v3"
+                    ? "Low-repeat supplier material · v3 pilot"
                   : "Legacy experiment · v1"}
             </div>
             {materialVariant === "multiframe-experiment-v1" && (
@@ -826,26 +1055,9 @@ export default function Visualiser() {
                 </figure>
               ))}
             </div>
-            <div
-              className={`review-state ${reviewDecision === "Approved" ? "approved" : reviewDecision === "Fine tuning requested" ? "tuning" : ""}`}
-            >
-              {reviewDecision}
-            </div>
-            <div className="review-actions">
-              <button
-                className="approve"
-                onClick={() => saveDecision("Approved")}
-              >
-                Approve this variant
-              </button>
-              <button onClick={() => saveDecision("Fine tuning requested")}>
-                Send to fine tuning
-              </button>
-            </div>
             <p className="review-note">
-              The live frame at left uses this variant. Review decisions are
-              stored per SKU and variant. POL-4100’s protected baseline remains
-              unchanged.
+              The live frame at left uses this variant. The moulding-level review
+              status and retained Ollama versions are managed separately above.
             </p>
           </div>
         )}
@@ -891,15 +1103,33 @@ export default function Visualiser() {
               aria-label="Artwork width"
               type="number"
               value={artWidth}
-              onChange={(e) => setArtWidth(+e.target.value)}
+              onChange={(e) => {
+                const value = Math.max(1, Number(e.target.value));
+                setBaseArtWidth(value);
+                setBaseArtHeight(artHeight);
+                setArtworkScale(1);
+              }}
             />
             <input
               aria-label="Artwork height"
               type="number"
               value={artHeight}
-              onChange={(e) => setArtHeight(+e.target.value)}
+              onChange={(e) => {
+                const value = Math.max(1, Number(e.target.value));
+                setBaseArtWidth(artWidth);
+                setBaseArtHeight(value);
+                setArtworkScale(1);
+              }}
             />
           </div>
+          <button
+            type="button"
+            className="placement-reset artwork-size-reset"
+            disabled={artworkScale === 1}
+            onClick={() => setArtworkScale(1)}
+          >
+            Reset artwork size to {baseArtWidth} × {baseArtHeight} mm
+          </button>
           <label style={{ marginTop: 12 }}>Replace artwork</label>
           <input
             type="file"
@@ -992,7 +1222,19 @@ export default function Visualiser() {
             ))}
           </div>
         </div>
-        <div className="group">
+        {generatedRoom && <HighResRender roomId={activeRoom.sceneId!} colourMode={artworkColourMode} glass={glass} exporter={renderExporter} />}
+        {generatedRoom && <div className="group">
+          <label>Artwork colour</label>
+          <div className="chips">
+            {(["Source colours", "Room lighting"] as const).map(mode => <button
+              key={mode} type="button" className={artworkColourMode === mode ? "active" : ""}
+              aria-pressed={artworkColourMode === mode} onClick={() => setArtworkColourMode(mode)}>{mode}</button>)}
+          </div>
+          <p className="room-light-note">{artworkColourMode === "Source colours"
+            ? "Preserves the image colours with subtle edge shadows. Select no glazing for the clearest colour comparison."
+            : "Shows how the room’s warm light can change the artwork’s appearance."}</p>
+        </div>}
+        {!generatedRoom && <div className="group">
           <label>Wall colour</label>
           <div className="wall-colours">
             {wallColours.map((colour) => (
@@ -1015,11 +1257,12 @@ export default function Visualiser() {
               material detail and light remain visible.
             </p>
           )}
-        </div>
+        </div>}
         <div className="group lighting-controls">
           <label>
-            {displayMode === "Wall" ? "Room-matched lighting" : "Lighting"}
+            {generatedRoom ? "Prepared daylight" : displayMode === "Wall" ? "Room-matched lighting" : "Lighting"}
           </label>
+          {generatedRoom ? <p className="room-light-note">The frame, mount and glazing use the room’s prepared daylight. Artwork uses your colour choice above; no room calibration is needed.</p> : <>
           {displayMode !== "Wall" && (
             <select
               value={lighting}
@@ -1094,6 +1337,7 @@ export default function Visualiser() {
           >
             Reset light adjustments
           </button>
+          </>}
         </div>
         {displayMode === "Inspect" && (
           <div className="group">

@@ -25,7 +25,8 @@ type Scenario = {
   url: string;
   width: number;
   height: number;
-  inspect: "admin-live-viewer" | "wall-viewer" | "frame-detail" | "mount-camera-stability";
+  inspect: "admin-live-viewer" | "wall-viewer" | "frame-detail" | "mount-camera-stability" | "pilot-material" | "artwork-scale-consistency";
+  expectedSku?: string;
 };
 
 const scenarios: Scenario[] = [
@@ -85,6 +86,17 @@ const scenarios: Scenario[] = [
     inspect: "wall-viewer",
   },
   {
+    id: "artwork-scale-consistency",
+    name: "Artwork ratio and room scale",
+    description: "Checks that wall resizing changes metric artwork dimensions without stretching or resetting between rooms.",
+    pack: "rooms",
+    room: "cross-room",
+    url: "/?mode=wall&room=stock-pilot",
+    width: 1280,
+    height: 800,
+    inspect: "artwork-scale-consistency",
+  },
+  {
     id: "frame-detail",
     name: "Frame Detail render",
     description: "Checks that geometry, texture and artwork render in the inspection view.",
@@ -105,6 +117,42 @@ const scenarios: Scenario[] = [
     width: 1280,
     height: 800,
     inspect: "mount-camera-stability",
+  },
+  {
+    id: "material-v3-hs9",
+    name: "Low-repeat pilot · Raw Pine",
+    description: "Visual proof for natural grain continuity and absence of short repeating blocks.",
+    pack: "mouldings",
+    room: "CTR · HS9",
+    url: "/?mode=inspect&embed=1&sku=HS9",
+    width: 1280,
+    height: 800,
+    inspect: "pilot-material",
+    expectedSku: "HS9",
+  },
+  {
+    id: "material-v3-3826bk",
+    name: "Low-repeat pilot · Kashmir",
+    description: "Visual proof that ornamental relief survives while artificial tile seams are reduced.",
+    pack: "mouldings",
+    room: "CTR · 3826BK",
+    url: "/?mode=inspect&embed=1&sku=3826BK",
+    width: 1280,
+    height: 800,
+    inspect: "pilot-material",
+    expectedSku: "3826BK",
+  },
+  {
+    id: "material-v3-pol4875",
+    name: "Low-repeat pilot · Verona",
+    description: "Visual proof that the pale crop contamination and diagonal repeat bands are gone.",
+    pack: "mouldings",
+    room: "MNL · POL-4875",
+    url: "/?mode=inspect&embed=1&sku=POL-4875",
+    width: 1280,
+    height: 800,
+    inspect: "pilot-material",
+    expectedSku: "POL-4875",
   },
 ];
 
@@ -161,6 +209,16 @@ export default function TestCentre() {
     setSelected(new Set(scenarios.filter((item) => item.pack === pack).map((item) => item.id)));
   }
 
+  function selectLowRepeatPilot() {
+    setSelected(
+      new Set(
+        scenarios
+          .filter((item) => item.inspect === "pilot-material")
+          .map((item) => item.id),
+      ),
+    );
+  }
+
   async function loadScenario(scenario: Scenario) {
     setActiveScenario(scenario);
     await wait(50);
@@ -182,7 +240,8 @@ export default function TestCentre() {
     const doc = frame.contentDocument;
     if (!doc) return [check("Same-origin document", false, "The test page could not be inspected.")];
     const body = doc.body;
-    const canvas = doc.querySelector("canvas");
+    const canvases = Array.from(doc.querySelectorAll<HTMLCanvasElement>("canvas"));
+    const canvas = canvases.find((item) => item.dataset.cameraPose) || canvases[0] || null;
     const checks: CheckResult[] = [
       check("Page rendered", body.children.length > 0, `${body.children.length} top-level element(s)`),
       check("No horizontal page overflow", doc.documentElement.scrollWidth <= doc.documentElement.clientWidth + 2,
@@ -216,18 +275,25 @@ export default function TestCentre() {
     } else {
       const stage = doc.querySelector<HTMLElement>(".stage");
       checks.push(check("Three.js canvas loaded", Boolean(canvas), canvas ? "Canvas present" : "Canvas missing"));
-      const expectedStageWidth = scenario.inspect === "mount-camera-stability"
+      const expectedStageWidth = ["mount-camera-stability", "artwork-scale-consistency"].includes(scenario.inspect)
         ? frame.clientWidth * 0.65
         : frame.clientWidth - 4;
       checks.push(check("Render stage has expected width", Boolean(stage && stage.clientWidth >= expectedStageWidth),
         stage ? `${stage.clientWidth} × ${stage.clientHeight}px` : "Stage missing"));
       if (scenario.inspect === "mount-camera-stability") {
-        const before = canvas?.dataset.cameraPose;
+        const readCameraPose = () => Array.from(doc.querySelectorAll<HTMLCanvasElement>("canvas"))
+          .map((item) => item.dataset.cameraPose)
+          .find(Boolean);
+        let before = readCameraPose();
+        for (let attempt = 0; !before && attempt < 8; attempt += 1) {
+          await wait(150);
+          before = readCameraPose();
+        }
         const mountButton = Array.from(doc.querySelectorAll<HTMLButtonElement>("button"))
           .find((button) => button.textContent?.trim() === "70 mm");
         mountButton?.click();
         await wait(500);
-        const after = canvas?.dataset.cameraPose;
+        const after = readCameraPose();
         checks.push(check("Outer mount control found", Boolean(mountButton),
           mountButton ? "70 mm mount option found" : "70 mm mount option missing"));
         checks.push(check("Outer mount preserves camera pose", Boolean(before && after && before === after),
@@ -239,13 +305,13 @@ export default function TestCentre() {
         const alternative = mouldingSelect
           ? Array.from(mouldingSelect.options).find((option) => option.value !== mouldingSelect.value)
           : undefined;
-        const beforeMoulding = canvas?.dataset.cameraPose;
+        const beforeMoulding = readCameraPose();
         if (mouldingSelect && alternative) {
           mouldingSelect.value = alternative.value;
           mouldingSelect.dispatchEvent(new Event("change", { bubbles: true }));
         }
         await wait(500);
-        const afterMoulding = canvas?.dataset.cameraPose;
+        const afterMoulding = readCameraPose();
         checks.push(check("Moulding selector found", Boolean(mouldingSelect && alternative),
           mouldingSelect && alternative ? `Changed to ${alternative.textContent?.trim()}` : "Moulding selector missing"));
         checks.push(check("Moulding change preserves camera pose",
@@ -260,6 +326,67 @@ export default function TestCentre() {
           roomImage ? `${roomImage.naturalWidth} × ${roomImage.naturalHeight}px` : "Room image missing"));
         checks.push(check("Wall composite mode active", Boolean(doc.querySelector(".wall-stage")),
           doc.querySelector(".wall-stage") ? "Wall stage present" : "Wall stage missing"));
+      }
+      if (scenario.inspect === "artwork-scale-consistency") {
+        const widthInput = doc.querySelector<HTMLInputElement>('input[aria-label="Artwork width"]'),
+          heightInput = doc.querySelector<HTMLInputElement>('input[aria-label="Artwork height"]'),
+          stage = doc.querySelector<HTMLElement>(".stage"),
+          initialWidth = Number(widthInput?.value),
+          initialHeight = Number(heightInput?.value),
+          initialRatio = initialWidth / Math.max(1, initialHeight);
+        stage?.dispatchEvent(new WheelEvent("wheel", {
+          deltaY: -240,
+          bubbles: true,
+          cancelable: true,
+        }));
+        await wait(350);
+        const scaledWidth = Number(widthInput?.value),
+          scaledHeight = Number(heightInput?.value),
+          scaledRatio = scaledWidth / Math.max(1, scaledHeight);
+        checks.push(check("Wall resize updates artwork dimensions",
+          scaledWidth > initialWidth && scaledHeight > initialHeight,
+          `${initialWidth} × ${initialHeight} → ${scaledWidth} × ${scaledHeight} mm`));
+        checks.push(check("Artwork aspect ratio is preserved",
+          Math.abs(scaledRatio - initialRatio) < 0.005,
+          `${initialRatio.toFixed(4)} → ${scaledRatio.toFixed(4)}`));
+
+        const roomSelect = Array.from(doc.querySelectorAll<HTMLSelectElement>("select"))
+          .find((select) => Array.from(select.options)
+            .some((option) => option.textContent?.includes("Oblique Gallery Wall")));
+        if (roomSelect) {
+          roomSelect.value = "Oblique Gallery Wall";
+          roomSelect.dispatchEvent(new Event("change", { bubbles: true }));
+        }
+        await wait(350);
+        const switchedWidth = Number(widthInput?.value),
+          switchedHeight = Number(heightInput?.value);
+        checks.push(check("Artwork size survives room changes",
+          switchedWidth === scaledWidth && switchedHeight === scaledHeight,
+          `${switchedWidth} × ${switchedHeight} mm after room change`));
+
+        const reset = Array.from(doc.querySelectorAll<HTMLButtonElement>("button"))
+          .find((button) => button.textContent?.trim().startsWith("Reset artwork size"));
+        reset?.click();
+        await wait(250);
+        checks.push(check("Artwork size reset restores entered dimensions",
+          Number(widthInput?.value) === initialWidth && Number(heightInput?.value) === initialHeight,
+          `${widthInput?.value} × ${heightInput?.value} mm`));
+      }
+      if (scenario.inspect === "pilot-material") {
+        const mouldingSelect = Array.from(doc.querySelectorAll<HTMLSelectElement>("select"))
+          .find((select) => Array.from(select.options)
+            .some((option) => option.value === scenario.expectedSku));
+        const selectedSku = mouldingSelect?.value;
+        const resources = frame.contentWindow?.performance
+          .getEntriesByType("resource")
+          .map((entry) => entry.name) || [];
+        const expectedRoot = `/assets/mouldings/${scenario.expectedSku}/variants/supplier-derived-v3/`;
+        const loadedMaps = ["basecolor.jpg", "roughness.jpg", "bump.jpg"]
+          .filter((file) => resources.some((url) => url.includes(`${expectedRoot}${file}`)));
+        checks.push(check("Expected moulding selected", selectedSku === scenario.expectedSku,
+          selectedSku ? `${selectedSku} selected` : "Moulding selector missing"));
+        checks.push(check("V3 physical atlas loaded", loadedMaps.length === 3,
+          loadedMaps.length === 3 ? "Base colour, roughness and bump loaded" : `${loadedMaps.length} of 3 maps loaded`));
       }
     }
     return checks;
@@ -335,6 +462,7 @@ export default function TestCentre() {
           <button onClick={() => selectPack("admin")}>Admin layout</button>
           <button onClick={() => selectPack("rooms")}>Room rendering</button>
           <button onClick={() => selectPack("mouldings")}>Moulding rendering</button>
+          <button onClick={selectLowRepeatPilot}>Low-repeat pilot</button>
         </div>
         <button className="qa-run" disabled={!selectedCount || status === "running"} onClick={runTests}>
           {status === "running" ? "Running…" : `Run ${selectedCount} selected`}

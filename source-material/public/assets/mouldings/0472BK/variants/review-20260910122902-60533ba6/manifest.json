@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 2,
+  "sku": "0472BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-10T12:40:43.110192+00:00",
+  "requestedFault": "TEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "material"
+  ],
+  "profile": null,
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260910122902-60533ba6",
+  "referenceImages": [
+    "public/assets/mouldings/0472BK/product-section.jpg",
+    "public/assets/mouldings/0472BK/profile-source.png",
+    "public/assets/mouldings/0472BK/chevron.jpg",
+    "public/assets/mouldings/0472BK/macro.jpg",
+    "public/assets/mouldings/0472BK/product-detail-1.jpg",
+    "public/assets/mouldings/0472BK/product-detail-2.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 3,
+    "colour_strength": 0.85,
+    "contrast": 1.0,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 170.0,
+    "roughness_detail": 0.4,
+    "bump_detail": 1.2
+  },
+  "bestMetrics": {
+    "colourDeltaE": 10.0921,
+    "colourSpreadError": 1.922,
+    "seamError": 0.0142,
+    "maximumAutocorrelation": 0.1497,
+    "detailError": 0.6554,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [
+    "colourDeltaE",
+    "colourSpreadError",
+    "detailError"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 30.2869,
+        "colourSpreadError": 1.9111,
+        "seamError": 0.0142,
+        "maximumAutocorrelation": 0.2855,
+        "detailError": 0.6929,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 43.9,
+      "failedGates": [
+        "colourDeltaE",
+        "colourSpreadError",
+        "detailError"
+      ],
+      "agentReview": {
+        "score": 54,
+        "colourMatch": 38,
+        "textureMatch": 52,
+        "repetition": 86,
+        "seam": 90,
+        "finishMatch": 50,
+        "blockers": [
+          "Colour mismatch: candidate renders as a flat neutral grey while supplier references are dominated by a deep black frame and a warm tan end-cap; reported colourDeltaE ~30.3 confirms a large hue/lightness offset.",
+          "Texture pattern mismatch: supplier moldings show fine, tight reeded/fluted ridges (parallel vertical grooves) on the angled profile, whereas the candidate shows a broad cove/bead groove plus a random speckle field, so the relief scale and rhythm do not match.",
+          "Detail error is moderate (detailError ~0.69), indicating the fine surface grain is not faithfully reproduced under fixed light."
+        ],
+        "observations": [
+          "Supplier top row shows a reeded/fluted picture-frame profile in multiple paint colours (black, dark brown, slate, cream, light grey, white) with a smooth satin painted face and a tan end cap.",
+          "Candidate (middle unlit atlas and bottom fixed-light preview) presents a horizontal profile with two broad grooves and a fine stippled speckle rather than the tight reeded fluting seen on the supplier frames.",
+          "No obvious tiled macro-repeat is visible; the horizontal ridges read as a continuous profile and the speckle as fine grain, so repetition is acceptable (maxAutocorrelation ~0.29).",
+          "Seam quality is good (seamError ~0.014); no visible vertical seam line in either panel.",
+          "Gloss/relief under fixed light is roughly satin and plausible, but the relief geometry (broad cove vs fine reeding) is the main texture discrepancy.",
+          "Lighting/perspective in supplier crops (yellow backdrop, angled frames) should not be over-read; the core issue is the candidate's colour target and relief pattern."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.06,
+          "patch_width": 512,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.7,
+          "bump_detail": 3.4
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.06,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.7,
+        "bump_detail": 3.4
+      },
+      "metrics": {
+        "colourDeltaE": 10.467,
+        "colourSpreadError": 1.8689,
+        "seamError": 0.0135,
+        "maximumAutocorrelation": 0.2849,
+        "detailError": 0.6329,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 48.9,
+      "failedGates": [
+        "colourDeltaE",
+        "colourSpreadError",
+        "detailError"
+      ],
+      "agentReview": {
+        "score": 57,
+        "colourMatch": 60,
+        "textureMatch": 52,
+        "repetition": 86,
+        "seam": 90,
+        "finishMatch": 55,
+        "blockers": [
+          "Directional grain/brushing present on supplier frames is absent in the candidate; the candidate shows an isotropic fine speckle instead of a brushed wood grain.",
+          "Gloss/sheen mismatch: supplier samples read as a satin painted finish with soft highlights on the beads, while the candidate reads as a flat matte grey with little specular response.",
+          "Colour temperature is off: the candidate grey is cooler and flatter than the warm neutral-grey and grey-blue supplier samples, losing the subtle undertone seen in the references."
+        ],
+        "observations": [
+          "Supplier references (top) show mitered painted-wood frame corners with molded bead/flute profiles, a satin sheen, and fine directional grain running along the profile.",
+          "The candidate (middle unlit atlas and bottom fixed-light preview) reproduces the horizontal bead molding and a flat field, but the surface texture is a uniform micro-speckle rather than directional brushing.",
+          "No distinctive macro feature repeats at regular intervals; the horizontal lines are the molding profile, not a tiled repeat, so tiling is not the primary fault.",
+          "Seam error is low (0.0135) and no visible seam line is present in the fixed-light preview.",
+          "Under fixed light the candidate lacks the soft highlight roll-off on the beads that the supplier satin finish exhibits, confirming a gloss/roughness mismatch.",
+          "Colour delta (10.467) and spread error (1.8689) indicate the grey is close in hue but off in saturation/temperature versus the supplier grey samples."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.06,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 185,
+          "roughness_detail": 0.55,
+          "bump_detail": 2.4
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.85,
+        "contrast": 1.06,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 10.4397,
+        "colourSpreadError": 1.8303,
+        "seamError": 0.0155,
+        "maximumAutocorrelation": 0.2963,
+        "detailError": 0.6266,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 48.6,
+      "failedGates": [
+        "colourDeltaE",
+        "colourSpreadError",
+        "detailError"
+      ],
+      "agentReview": {
+        "score": 64,
+        "colourMatch": 70,
+        "textureMatch": 58,
+        "repetition": 86,
+        "seam": 80,
+        "finishMatch": 60,
+        "blockers": [
+          "Flat-field stipple grain is markedly heavier than the supplier's smooth satin field, reading as noise rather than natural variation",
+          "Candidate neutral grey is cooler and flatter than the supplier light/cream frames under neutral light"
+        ],
+        "observations": [
+          "Supplier profiles show fine vertical reeding/fluting with a smooth eggshell field; candidate reproduces the fluting relief but the field is over-textured with a speckled stipple",
+          "No distinctive macro feature repeats at regular intervals; the visible grain is fine directional stipple, not a tiled repeat, so repetition is acceptable",
+          "A faint horizontal seam line crosses the flat field in both the unlit atlas and fixed-light preview, but seamError (0.0155) is low and it is not visually dominant",
+          "Fixed-light preview shows a matte response with low specular highlight, whereas supplier frames exhibit a soft satin sheen",
+          "Colour of the candidate sits in the light-grey supplier range but lacks the warm undertone seen in the cream/white references"
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 170,
+          "roughness_detail": 0.4,
+          "bump_detail": 1.2
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 170.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.2
+      },
+      "metrics": {
+        "colourDeltaE": 10.0921,
+        "colourSpreadError": 1.922,
+        "seamError": 0.0142,
+        "maximumAutocorrelation": 0.1497,
+        "detailError": 0.6554,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 52.2,
+      "failedGates": [
+        "colourDeltaE",
+        "colourSpreadError",
+        "detailError"
+      ],
+      "agentReview": {
+        "score": 64,
+        "colourMatch": 70,
+        "textureMatch": 60,
+        "repetition": 82,
+        "seam": 86,
+        "finishMatch": 72,
+        "blockers": [
+          "Flat field shows a uniform fine speckle that reads as synthetic micro-noise rather than the smooth, finely directional grain seen on the supplier frame faces; this is the primary texture fault."
+        ],
+        "observations": [
+          "Reeded/fluted profile scale and relief in the candidate closely match the supplier vertical reeding, and the fixed-light preview reproduces the glossy specular band on the reeds, so finish and relief are reasonably aligned.",
+          "Candidate neutral grey is in the same family as the supplier light-grey sample, but appears slightly desaturated and flat compared with the richer, glossier supplier faces (colourDeltaE ~10.1).",
+          "No hard seam line is visible across the atlas; the only hard edge is the intentional profile-to-field boundary, and seamError is low (0.0142).",
+          "No distinctive macro feature repeats at regular intervals; the recurring horizontal lines are the intentional profile, and the fine speckle is grain-scale, so this is not a tiled-repeat failure, but its uniformity is the texture concern.",
+          "Supplier references show a range of tints (brown, slate, beige, grey, white); the candidate is a single neutral grey, so colour match is acceptable only against the grey reference, not the full palette."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.06,
+          "patch_width": 512,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.6
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "painted_woodgrain_moulding",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "fine linear grain/brushing running along the moulding length",
+        "soft low-angle sheen on bevels without mirror highlights",
+        "natural tonal variation in the near-black brown coat",
+        "profile relief and miter corner continuity",
+        "pale porous substrate visible only at cut ends"
+      ],
+      "risks": [
+        "grain tiling/repeat when stretched across long runs",
+        "over-smoothing that erases the directional brush texture",
+        "colour reading as flat pure black instead of warm near-black",
+        "excess bump creating banding or false ridges on the flutes",
+        "seam or colour shift at the miter joint under fixed lighting"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "roughness_mid": 185,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Supplier references show a smooth painted finish with subtle directional grain/brushing on the moulding profiles, whereas the candidate displays a fine, uniform speckled noise texture that reads as procedural rather than natural wood grain or brush lines.",
+        "The candidate's neutral grey tone does not clearly match the primary tan/beige reference (top-left profile and the exposed cut backing on the mitered corner), though it is within the range of the grey variants shown in the multi-colour row.",
+        "No obvious seam line or regularly repeating macro feature is visible across the candidate strips; the horizontal ridges correspond to the moulding profile geometry rather than a tiled repeat.",
+        "Texture scale and surface relief in the candidate appear flatter and more synthetic than the natural variation and relief implied by the supplier photographs."
+      ],
+      "concerns": [
+        "Texture irregularity looks like synthetic speckle/noise instead of the natural grain and brush variation present in the supplier evidence.",
+        "Colour may not match the intended tan/beige product; the grey could be an unrequested variant or a lighting/preview artifact.",
+        "Finish gloss and surface relief are not clearly consistent with the supplier's painted moulding finish under the fixed-light preview."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "f211f0e6dda65acda5a8380a1626fe57b3d8c89044fcb7eaa9f4db396157a323",
+      "roughness.jpg": "60f51e42349aaea0f15d2600df41e3cc4cde4a47dbd14935860aabc9870a2396",
+      "bump.jpg": "e5b596b17b6b0466665a5929f576cb911ea6e22d8c60d7804846e15145b59561"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

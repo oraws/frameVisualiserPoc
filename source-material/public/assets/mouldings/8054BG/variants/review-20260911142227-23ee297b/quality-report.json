@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 2,
+  "sku": "8054BG",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T14:33:01.430630+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "8054BG",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "ornate",
+    "widthMm": 80.0,
+    "depthMm": 54.0,
+    "rebateMm": 26.0,
+    "points": [
+      [
+        0.0,
+        31.806
+      ],
+      [
+        0.989,
+        32.372
+      ],
+      [
+        2.12,
+        32.372
+      ],
+      [
+        3.251,
+        32.796
+      ],
+      [
+        3.816,
+        33.644
+      ],
+      [
+        4.382,
+        34.068
+      ],
+      [
+        5.088,
+        34.209
+      ],
+      [
+        6.643,
+        34.068
+      ],
+      [
+        8.057,
+        35.058
+      ],
+      [
+        8.763,
+        35.058
+      ],
+      [
+        9.329,
+        35.34
+      ],
+      [
+        9.894,
+        36.047
+      ],
+      [
+        10.035,
+        37.037
+      ],
+      [
+        10.742,
+        37.743
+      ],
+      [
+        12.721,
+        38.592
+      ],
+      [
+        14.558,
+        38.592
+      ],
+      [
+        15.406,
+        38.168
+      ],
+      [
+        16.254,
+        37.319
+      ],
+      [
+        16.82,
+        36.188
+      ],
+      [
+        17.244,
+        35.764
+      ],
+      [
+        26.714,
+        35.623
+      ],
+      [
+        30.106,
+        36.188
+      ],
+      [
+        32.509,
+        37.037
+      ],
+      [
+        34.205,
+        37.885
+      ],
+      [
+        36.608,
+        39.44
+      ],
+      [
+        39.293,
+        41.984
+      ],
+      [
+        40.848,
+        44.246
+      ],
+      [
+        41.979,
+        45.094
+      ],
+      [
+        43.816,
+        45.377
+      ],
+      [
+        44.806,
+        44.812
+      ],
+      [
+        46.219,
+        44.812
+      ],
+      [
+        48.763,
+        47.356
+      ],
+      [
+        50.318,
+        48.487
+      ],
+      [
+        52.58,
+        49.759
+      ],
+      [
+        56.82,
+        51.314
+      ],
+      [
+        59.647,
+        51.738
+      ],
+      [
+        62.049,
+        51.738
+      ],
+      [
+        63.18,
+        52.728
+      ],
+      [
+        63.322,
+        53.152
+      ],
+      [
+        63.887,
+        53.717
+      ],
+      [
+        64.594,
+        54.0
+      ],
+      [
+        65.724,
+        36.471
+      ],
+      [
+        65.724,
+        33.927
+      ],
+      [
+        66.007,
+        32.513
+      ],
+      [
+        66.148,
+        38.45
+      ],
+      [
+        66.996,
+        30.11
+      ],
+      [
+        68.127,
+        42.974
+      ],
+      [
+        68.127,
+        28.555
+      ],
+      [
+        69.541,
+        27.141
+      ],
+      [
+        69.823,
+        53.859
+      ],
+      [
+        70.53,
+        53.293
+      ],
+      [
+        70.53,
+        26.435
+      ],
+      [
+        70.671,
+        47.497
+      ],
+      [
+        71.095,
+        52.304
+      ],
+      [
+        71.095,
+        48.911
+      ],
+      [
+        72.085,
+        25.869
+      ],
+      [
+        73.64,
+        24.88
+      ],
+      [
+        74.205,
+        23.89
+      ],
+      [
+        74.77,
+        23.325
+      ],
+      [
+        76.042,
+        22.618
+      ],
+      [
+        77.032,
+        21.628
+      ],
+      [
+        77.456,
+        20.78
+      ],
+      [
+        77.597,
+        19.366
+      ],
+      [
+        79.435,
+        18.66
+      ],
+      [
+        80.0,
+        18.094
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "ornate",
+      "faceCrownMm": 2.5,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 1.0,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "Single flat planar face confirmed in chevron and oblique rotation",
+        "Outer ogee/cove (scoop) near the outer sight edge",
+        "Inner gold sight edge rendered as a small bead/rib (fluted in oblique view)",
+        "Rebate step of ~26 mm depth at the back"
+      ],
+      "rejectedTraceFeatures": [
+        "Wavy lobed contour on the left silhouette top edge (segmentation/background noise, not present in photos)",
+        "Any additional ridges or beads implied by the trace beyond the single outer scoop and inner bead"
+      ],
+      "observations": [
+        "Supplier photos show black and white painted finishes with a contrasting gold inner sight edge",
+        "Fine directional grain/brushing visible on the white face, consistent with painted wood, not a tiled repeat",
+        "Chevron mitre is clean; gold edge follows the inner sight line",
+        "Dimension envelope 80 x 54 mm with 26 mm rebate preserved"
+      ],
+      "concerns": [
+        "Catalogue label 'ornate-scoop' overstates complexity; physical profile is a simple flat face with one outer cove and one inner bead",
+        "Extracted trace left-edge waviness must not be interpreted as profile geometry",
+        "Gloss and gold edge appearance vary with lighting across the three photos"
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Tall thin vertical spike/ridge with a notch near the outer edge (right side of candidate cross-section) is not present in the chevron or oblique photographs nor in the catalogue outline.",
+        "Small rounded bead/bump on the face near the inner sight edge is not clearly visible in the supplier photographs, which show a near-planar black face transitioning directly into the cove."
+      ],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "The dominant cove/scoop curve from inner sight edge to outer edge and the 26 mm rebate drop are consistent across the catalogue outline, the chevron photo, and the candidate.",
+        "The chevron and oblique photographs show a smooth concave scoop terminating in a small rounded bead at the outer tip; they do not show the tall thin vertical spike/ridge that the candidate renders just before the rebate.",
+        "The candidate's inner-edge bead bump is not independently confirmable in the photographs, where the face reads as essentially flat with only the gold sight-edge strip.",
+        "Per the review rule, a perimeter ridge/spike that appears only in the candidate geometry and not in any physical photograph must be flagged as unsupported."
+      ],
+      "concerns": [
+        "The thin vertical spike near the outer edge looks like an artefact of the extracted trace rather than a real moulding feature; it should be removed unless a photograph confirms it.",
+        "Verify whether the inner face is truly planar or carries a small bead; the photos lean toward a flat face.",
+        "Confirm the outer-tip bead radius and the rebate step height against the 26 mm dimension, as the candidate's outer edge geometry (spike + step) does not match the rounded bead seen in the chevron photo."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260911142227-23ee297b",
+  "referenceImages": [
+    "public/assets/mouldings/8054BG/product-section.jpg",
+    "public/assets/mouldings/8054BG/profile-source.png",
+    "public/assets/mouldings/8054BG/chevron.jpg",
+    "public/assets/mouldings/8054BG/macro.jpg",
+    "public/assets/mouldings/8054BG/framed-reference.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 2,
+    "colour_strength": 0.9,
+    "contrast": 1.02,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.5
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.3809,
+    "colourSpreadError": 0.1277,
+    "seamError": 0.0151,
+    "maximumAutocorrelation": 0.2774,
+    "detailError": 0.1705,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.62,
+        "contrast": 1.02,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 1.6
+      },
+      "metrics": {
+        "colourDeltaE": 3.8846,
+        "colourSpreadError": 0.1437,
+        "seamError": 0.0128,
+        "maximumAutocorrelation": 0.3888,
+        "detailError": 0.1775,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 89.3,
+      "failedGates": [],
+      "agentReview": {
+        "score": 64,
+        "colourMatch": 72,
+        "textureMatch": 66,
+        "repetition": 58,
+        "seam": 88,
+        "finishMatch": 68,
+        "blockers": [
+          "Candidate face shows a repeating horizontal plank/board seam pattern (regular macro banding) that is not present in the supplier moulding photographs, which show a single continuous flat face with only fine directional grain.",
+          "Flat fixed-light preview cannot confirm the moulding cross-section (face, sight edge, rebate, 26 mm dimension); profile geometry is unverified against the supplier chevron/oblique photos."
+        ],
+        "observations": [
+          "Base colour is a near-black with subtle warm brown/olive grain, broadly consistent with the supplier black moulding face (colourDeltaE 3.88 is acceptable).",
+          "Grain direction in the candidate runs horizontally, matching the longitudinal grain seen on the supplier moulding face.",
+          "The gold/brass inner sight edge visible in the supplier photos is a separate edge material and is correctly absent from the face texture; not a fault.",
+          "seamError 0.0128 and clippedPixels 0.0 indicate clean tiling at the atlas level, but maximumAutocorrelation 0.3888 plus visible regular board rows indicate a tiled plank repeat rather than natural continuous grain.",
+          "Supplier cross-section trace (tan outline, dim 26) is treated as unverified; the photographs show a flat face with a small top bead/step and a rebate, which the flat preview neither confirms nor contradicts."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "patch_width": 512,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 3.8489,
+        "colourSpreadError": 0.1131,
+        "seamError": 0.0133,
+        "maximumAutocorrelation": 0.064,
+        "detailError": 0.1668,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 95.7,
+      "failedGates": [],
+      "agentReview": {
+        "score": 76,
+        "colourMatch": 82,
+        "textureMatch": 78,
+        "repetition": 84,
+        "seam": 80,
+        "finishMatch": 74,
+        "blockers": [
+          "Candidate face shows only two shallow horizontal grooves, which does not clearly reproduce the multi-ridge reeded/beaded profile visible at the top edge of the supplier black and white corner photographs.",
+          "The brass/gold inner rebate edge present in both supplier corner photos is absent from the candidate; this is a geometry/trim gap rather than a material defect and must be resolved in the profile build."
+        ],
+        "observations": [
+          "Supplier cross-section trace (tan, dim '26') is treated as an unverified guide; the corner photographs take priority and show a flat face with a bevelled sight edge and a series of parallel ridges at the outer edge plus a gold rebate.",
+          "Candidate fixed-light preview is a deep black with fine horizontal directional grain, consistent with the black supplier corner photo; the white supplier photo is a separate colour variant and is not used for colour matching.",
+          "Directional grain scale and brushing in the candidate are comparable to the supplier black reference; no obvious fine brush-line tiling is detected.",
+          "No distinctive macro feature repeats at a regular interval in the candidate; the horizontal lines are interpreted as profile grooves, not a tiled repeat.",
+          "Fixed-light vertical gradient (brighter mid-band, darker top/bottom) is a lighting artifact of the preview, not a material seam.",
+          "Gloss in the candidate reads as a soft semi-gloss, broadly consistent with the sheen on the supplier black moulding."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.9,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.9,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 3.3809,
+        "colourSpreadError": 0.1277,
+        "seamError": 0.0151,
+        "maximumAutocorrelation": 0.2774,
+        "detailError": 0.1705,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 95.1,
+      "failedGates": [],
+      "agentReview": {
+        "score": 79,
+        "colourMatch": 78,
+        "textureMatch": 81,
+        "repetition": 86,
+        "seam": 92,
+        "finishMatch": 77,
+        "blockers": [
+          "Candidate is a flat fixed-light texture preview only; the moulding cross-section (face, inner sight edge, outer edge, rebate, 26 mm dimension) is not represented in geometry, so profile correctness cannot be confirmed from this render.",
+          "The gold/brass inner sight edge visible in the supplier chevron and oblique photos is a separate trim material and is absent from the candidate black-wood material; ensure it is supplied as a distinct asset rather than baked into the black face."
+        ],
+        "observations": [
+          "Supplier chevron and oblique views show a black stained-wood face with parallel stepped grooves and a contrasting gold inner edge; the tan cross-section trace is treated as an unverified guide and the visible stepped profile in the photos takes priority.",
+          "Candidate grain is fine, directional and horizontal, consistent with intentional brushed/stained wood rather than a tiled macro repeat; maximumAutoCorrelation 0.2774 indicates no strong periodic tiling.",
+          "seamError 0.0151 and detailError 0.1705 are low, indicating clean atlas seams and preserved surface relief.",
+          "colourDeltaE 3.3809 is acceptable for a deep black but slightly warm; the supplier black reads marginally cooler/denser under neutral light.",
+          "Gloss and surface relief in the fixed-light preview broadly match the semi-gloss black finish in the supplier photos."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.9,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 170,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.6
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "satin lacquered / painted wood with fine brushed grain",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "fine horizontal brush/grain streaks on the black face (intentional directional texture, not a tiled repeat)",
+        "soft, broad highlight on curved profile edges without mirror reflection",
+        "natural tonal variation and slight mottling in the black paint",
+        "flat planar face of the moulding with only a single visible bevel/step at the outer edge",
+        "rebate (inner sight edge) of ~26 mm and overall height ~54 mm",
+        "separate metallic gold liner sheen kept distinct from the black/white frame body"
+      ],
+      "risks": [
+        "adding an extra bead, ridge or hollow on the face that is supported only by the extracted beige trace and not visible in the chevron/oblique photos",
+        "misreading the smooth curved outer edge of the trace as a second step when the photo shows one bevel + rebate",
+        "over-sharpening the brush grain into a regular tiled pattern or visible seam",
+        "raising gloss so the black reads as high-gloss mirror when highlights are actually soft and broad",
+        "losing the matte/satin contrast of the white frame body against the gold liner"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.62,
+        "contrast": 1.02,
+        "roughness_mid": 185,
+        "roughness_detail": 0.55,
+        "bump_detail": 1.6
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Candidate is a flat fixed-light material preview and does not display the moulding profile (ridges, beads, bevel, rebate, gold inner sight edge) that is clearly visible in the supplier chevron and oblique photographs, so profile fidelity cannot be confirmed from this image.",
+        "The black matte wood-grain finish and texture scale in the candidate are broadly consistent with the black supplier moulding, and seamError (0.0151) and clippedPixels (0.0) indicate no hard seam or clipping.",
+        "maximumAutoCorrelation of 0.2774 indicates mild horizontal periodicity in the grain, which is borderline and should be checked against the supplier's natural irregular grain before approval."
+      ],
+      "concerns": [
+        "Profile geometry (face, sight edge, outer edge, rebate, dimension 26) is not represented in this flat preview; the tan cross-section trace is an unverified guide and the visible supplier photos show a multi-ridge profile with a gold inner edge that the candidate does not exhibit.",
+        "Horizontal grain streaks show a faint regular banding that could be a subtle tiled repeat rather than natural wood variation.",
+        "colourDeltaE of 3.3809 is moderate; under neutral lighting the black tone should be re-verified against the supplier black moulding to ensure no brown/green cast."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "eb5291fccd0edc86a9fe5bc7b733bb9e9a5a864405ba19834e90e50058bb1d13",
+      "roughness.jpg": "668f1feef5aff77e143a8520b48ee7fbdb194d986864807ca0262698a708ea42",
+      "bump.jpg": "9b8b2dd9d0dbbf22b2e072f16508aaccb5c1a7fc907c78bf8f9cc1d03b1b6356"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

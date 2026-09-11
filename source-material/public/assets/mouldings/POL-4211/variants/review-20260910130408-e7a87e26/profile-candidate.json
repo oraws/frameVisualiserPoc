@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4211",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 54.0,
+  "depthMm": 20.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      19.825
+    ],
+    [
+      0.35,
+      20.0
+    ],
+    [
+      27.05,
+      20.0
+    ],
+    [
+      53.75,
+      20.0
+    ],
+    [
+      54.0,
+      19.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0.0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "observations": [
+      "Supplier profile label states 'flat' and the rotation photographs show a uniform planar face with no crown, hollow, or bevel.",
+      "Face exhibits fine, tight directional grain (brushed/linear) in a light tan/oak tone; grain runs horizontally in the top rotation shots and vertically in the lower face panel, consistent with a 90-degree rotation of the same flat surface.",
+      "Lower cross-section panel shows a flat face over a greenish speckled substrate core (MDF/particle-board type), with a small white cutout at the lower-right indicating the rebate region.",
+      "Stated envelope 54 x 20 mm with a 14 mm rebate is preserved; the rebate is a square/stepped cut rather than a curved profile feature.",
+      "Edges appear square (minimal radius), matching a flat rebate profile rather than an ornate or convex moulding."
+    ],
+    "concerns": [
+      "Render candidate must not introduce any ridge, hollow, or bevel on the face; the real moulding is flat, so any crown or concave/convex relief would be a geometry error.",
+      "The greenish speckled core visible in the cross-section is substrate, not a finish colour; do not propagate it into the face texture or treat it as a colour fault.",
+      "Grain is fine directional brushing, not a tiled repeat; avoid tiling the linear grain pattern in the render while retaining natural tonal variation.",
+      "Verify the 14 mm rebate is modelled as a square step at the correct depth and that the 54 x 20 mm envelope is respected, since the white notch in the cross-section marks the rebate location.",
+      "Lighting/perspective in supplier photos may exaggerate grain contrast; evaluate the candidate under neutral fixed lighting before concluding a texture mismatch."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "reasons": [
+      "Supplier profile label is 'flat' and the candidate cross-section is a flat rectangular face with no ridges, hollows or bevels, matching the stated flat moulding.",
+      "A rebate step is present on the inner sight edge side of the candidate, consistent with the supplier's 14 mm rebate specification.",
+      "Stated dimensions (54 x 20 mm) are plausible for the flat face width/height shown, and the candidate uses a single flat plane rather than an invented profile.",
+      "The wood finish in the photographs is a light oak with fine linear/brushed grain; the candidate's flat face is compatible with that finish under neutral lighting."
+    ],
+    "concerns": [
+      "The green 'REBATE DROP 14 mm' dimension line spans nearly the full height of the section, but the visible rebate notch on the left edge is only a small step; the dimension line length does not correspond to the 14 mm step, indicating a geometry/label mismatch.",
+      "The cross-section is rendered as a flat tan fill with no texture or grain, so the brushed linear grain and colour seen in the supplier photos cannot be verified from the candidate section itself.",
+      "Grain orientation differs between the top panels (horizontal) and the left panel (vertical); this is likely a rotation difference but should be confirmed against the intended install orientation.",
+      "The left photograph shows the sample on a speckled green substrate with a white corner, which is unrelated to the profile and should not be interpreted as part of the moulding."
+    ]
+  }
+}

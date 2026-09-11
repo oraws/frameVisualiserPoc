@@ -1,0 +1,19 @@
+{
+  "id": "generated-gallery",
+  "name": "3D · Daylight Gallery",
+  "version": 1,
+  "image": "/assets/rooms/generated-gallery/room.jpg",
+  "environment": "/assets/rooms/generated-gallery/environment.exr",
+  "imageWidth": 1800,
+  "imageHeight": 1400,
+  "camera": { "position": [0, 0.1, 9.2], "target": [0, 0.1, 0], "fov": 42 },
+  "framePosition": [0, 0.65, 0.012],
+  "wallZ": 0,
+  "floorY": -3,
+  "keyLight": { "position": [-4.3, 3.2, 3.4], "target": [0, 0.65, 0], "intensity": 2.5, "color": "#fff1dc", "width": 3, "height": 3.8, "powerWatts": 2200 },
+  "fill": 0.18,
+  "environmentIntensity": 0.6,
+  "exposure": 1,
+  "wallColour": "#d9d1c1",
+  "description": "Original scripted room with plaster walls, oak floor, walnut console and linen seating. The empty room and local reflection environment are rendered from the same scene."
+}

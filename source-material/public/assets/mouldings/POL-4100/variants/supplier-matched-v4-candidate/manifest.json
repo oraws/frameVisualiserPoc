@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4100",
+  "status": "automated-approved-candidate",
+  "promotion": "not-promoted",
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "supplier-matched-v4-candidate",
+  "referenceImages": [
+    "source-material/mainline/POL-4100/spin/img20.jpg",
+    "source-material/mainline/POL-4100/spin/img21.jpg",
+    "source-material/mainline/POL-4100/spin/img22.jpg",
+    "source-material/mainline/POL-4100/spin/img23.jpg",
+    "source-material/mainline/POL-4100/spin/img24.jpg",
+    "source-material/mainline/POL-4100/spin/img25.jpg",
+    "source-material/mainline/POL-4100/spin/img26.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.95,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 175.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 3.0
+  },
+  "bestMetrics": {
+    "colourDeltaE": 0.178,
+    "colourSpreadError": 0.0063,
+    "seamError": 0.0042,
+    "maximumAutocorrelation": 0.1479,
+    "detailError": 0.1073,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.95,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 0.178,
+        "colourSpreadError": 0.0063,
+        "seamError": 0.0042,
+        "maximumAutocorrelation": 0.1479,
+        "detailError": 0.1073,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 100.0,
+      "failedGates": [],
+      "agentReview": {
+        "score": 94,
+        "colourMatch": 95,
+        "textureMatch": 92,
+        "repetition": 90,
+        "seam": 98,
+        "finishMatch": 93,
+        "blockers": [],
+        "observations": [
+          "Supplier references show multiple panels with vertical seams; candidate's unlit atlas and fixed-light preview exhibit consistent texture without visible seams.",
+          "Fixed-light preview shows subtle sheen variation compared to supplier references, likely due to lighting differences."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.95,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 170,
+          "roughness_detail": 0.7,
+          "bump_detail": 3.2
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3-vl:30b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "brushed",
+      "directional": "vertical",
+      "gloss": "matte",
+      "preserve": [
+        "color",
+        "contrast"
+      ],
+      "risks": [
+        "inconsistent brush direction",
+        "uneven texture"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.95,
+        "contrast": 1.0,
+        "roughness_mid": 175,
+        "roughness_detail": 0.6,
+        "bump_detail": 3.0
+      }
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.95,
+      "reasons": [
+        "Supplier and candidate share identical dark gray color tone",
+        "Finish texture (brushed, vertical line pattern) is consistent in scale and appearance",
+        "No visible seams or obvious repeating patterns detected"
+      ],
+      "concerns": []
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "30c9bed056fdcb88d8c1c8389b0e99f7f9e6921333ef73665b31d3a719edd598",
+      "roughness.jpg": "c5492ee10cdcced2f187ea06a2754f31420d1deb2d25295649ccc77667d3c94a",
+      "bump.jpg": "917168ed6367bad45aa6d7c60eef5d493ae35f7cb8bf07c8e460082ad37851e1"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

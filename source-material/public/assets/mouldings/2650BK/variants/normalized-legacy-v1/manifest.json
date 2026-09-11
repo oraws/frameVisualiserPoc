@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "sku": "2650BK",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/2650BK/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg",
+    "macro.jpg"
+  ]
+}

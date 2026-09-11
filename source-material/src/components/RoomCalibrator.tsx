@@ -11,6 +11,11 @@ import {
   listCustomRooms,
   saveCustomRoom,
 } from "../renderer/customRoomStore";
+import {
+  clampWindowLightStrength,
+  MAX_WINDOW_LIGHT_STRENGTH,
+  windowLightBand,
+} from "../renderer/windowLight";
 
 type Point = { x: number; y: number };
 type Draft = {
@@ -96,12 +101,22 @@ const defaultLighting: LightingControls = {
   goboScale: 1,
   goboOffsetX: 0,
   goboOffsetY: 0,
-  goboStrength: 0.32,
+  goboStrength: 0.05,
   goboSoftness: 8,
   foregroundBrightness: 0.82,
   foregroundSaturation: 0.82,
   foregroundWarmth: 0,
 };
+
+function normaliseLighting(
+  lighting?: Partial<LightingControls>,
+): LightingControls {
+  const merged = { ...defaultLighting, ...lighting };
+  return {
+    ...merged,
+    goboStrength: clampWindowLightStrength(merged.goboStrength),
+  };
+}
 type AdminRoom = RoomAdminDefinition & {
   draftRecord?: Draft;
   custom?: boolean;
@@ -348,10 +363,7 @@ export default function RoomCalibrator() {
               parsed.renderer?.cameraFovDegrees ||
                 record.geometry.camera.horizontalFovDegrees,
             );
-            setRoomLighting({
-              ...defaultLighting,
-              ...parsed.renderer?.lighting,
-            });
+            setRoomLighting(normaliseLighting(parsed.renderer?.lighting));
             setReferenceMm(scale.lengthMm);
             setChecks(parsed.adminChecks || [true, true, true]);
             setSaved(parsed.approved === true);
@@ -375,7 +387,7 @@ export default function RoomCalibrator() {
         record.renderer?.cameraFovDegrees ||
           record.geometry.camera.horizontalFovDegrees,
       );
-      setRoomLighting({ ...defaultLighting, ...record.renderer?.lighting });
+      setRoomLighting(normaliseLighting(record.renderer?.lighting));
       setReferenceMm(scale.lengthMm);
     });
   }, [roomId, adminRooms.length]);
@@ -422,6 +434,7 @@ export default function RoomCalibrator() {
     };
   }, [points, scalePoints, referenceMm, frameCentre, roomLighting, project]);
   const previewCompositeFilter = `brightness(${roomLighting.foregroundBrightness}) saturate(${roomLighting.foregroundSaturation}) sepia(${Math.max(0, roomLighting.foregroundWarmth) * 0.18}) hue-rotate(${Math.min(0, roomLighting.foregroundWarmth) * 8}deg)`;
+  const previewGoboBand = windowLightBand(roomLighting);
   const allChecked = checks.every(Boolean);
   const pointerPoint = (event: React.PointerEvent) => {
     const rect = svgRef.current!.getBoundingClientRect();
@@ -569,7 +582,7 @@ export default function RoomCalibrator() {
     setScalePoints(scale.pointsNormalised.map(([x, y]) => ({ x, y })));
     setReferenceMm(scale.lengthMm);
     setCameraFov(draft.geometry.camera.horizontalFovDegrees);
-    setRoomLighting({ ...defaultLighting, ...draft.renderer?.lighting });
+    setRoomLighting(normaliseLighting(draft.renderer?.lighting));
     setChecks([false, false, false]);
     setSaved(false);
     localStorage.removeItem(calibrationKey);
@@ -593,7 +606,13 @@ export default function RoomCalibrator() {
     key: keyof LightingControls,
     value: number | boolean,
   ) => {
-    setRoomLighting((current) => ({ ...current, [key]: value }));
+    setRoomLighting((current) => ({
+      ...current,
+      [key]:
+        key === "goboStrength" && typeof value === "number"
+          ? clampWindowLightStrength(value)
+          : value,
+    }));
     setSaved(false);
   };
   const uploadRoom = async (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -695,32 +714,30 @@ export default function RoomCalibrator() {
                     .join(" ")}
                 />
               </clipPath>
-              <pattern
+              <linearGradient
                 id="admin-gobo-pattern"
-                width={0.16 * roomLighting.goboScale}
-                height={0.16 * roomLighting.goboScale}
-                patternUnits="userSpaceOnUse"
-                patternTransform={`translate(${roomLighting.goboOffsetX * 0.2} ${roomLighting.goboOffsetY * 0.2}) rotate(${roomLighting.goboAngle} .5 .5)`}
+                x1="0"
+                y1="0"
+                x2="1"
+                y2="0"
+                gradientUnits="objectBoundingBox"
+                gradientTransform={`rotate(${roomLighting.goboAngle} .5 .5)`}
               >
-                <rect
-                  width="100%"
-                  height="100%"
-                  fill={temperatureCss(roomLighting.temperature)}
-                  fillOpacity=".45"
+                <stop offset="0" stopColor="#000" />
+                <stop offset={previewGoboBand.start} stopColor="#000" />
+                <stop
+                  offset={previewGoboBand.startSoft}
+                  stopColor={temperatureCss(roomLighting.temperature)}
+                  stopOpacity=".78"
                 />
-                <rect
-                  width="14%"
-                  height="100%"
-                  fill="#15120e"
-                  fillOpacity=".72"
+                <stop
+                  offset={previewGoboBand.endSoft}
+                  stopColor={temperatureCss(roomLighting.temperature)}
+                  stopOpacity=".78"
                 />
-                <rect
-                  width="100%"
-                  height="14%"
-                  fill="#15120e"
-                  fillOpacity=".72"
-                />
-              </pattern>
+                <stop offset={previewGoboBand.end} stopColor="#000" />
+                <stop offset="1" stopColor="#000" />
+              </linearGradient>
               <filter id="admin-gobo-blur">
                 <feGaussianBlur
                   stdDeviation={
@@ -773,7 +790,7 @@ export default function RoomCalibrator() {
                     width="1"
                     height="1"
                     fill="url(#admin-gobo-pattern)"
-                    opacity={roomLighting.goboStrength * 0.5}
+                    opacity={Math.min(0.68, roomLighting.goboStrength * 1.15)}
                     clipPath="url(#admin-gobo-clip)"
                     filter="url(#admin-gobo-blur)"
                     style={{ mixBlendMode: "screen" }}
@@ -1201,12 +1218,16 @@ export default function RoomCalibrator() {
                 onChange={(value) => updateLighting("goboScale", value)}
               />
               <AdminRange
-                label="Gobo horizontal"
+                label="Gobo horizontal (left / right)"
                 value={roomLighting.goboOffsetX}
                 min={-1}
                 max={1}
                 step={0.05}
-                display={`${Math.round(roomLighting.goboOffsetX * 100)}%`}
+                display={
+                  roomLighting.goboOffsetX === 0
+                    ? "Centre"
+                    : `${roomLighting.goboOffsetX > 0 ? "Right" : "Left"} ${Math.abs(Math.round(roomLighting.goboOffsetX * 100))}%`
+                }
                 onChange={(value) => updateLighting("goboOffsetX", value)}
               />
               <AdminRange
@@ -1221,10 +1242,10 @@ export default function RoomCalibrator() {
               <AdminRange
                 label="Gobo strength"
                 value={roomLighting.goboStrength}
-                min={0.05}
-                max={1}
-                step={0.05}
-                display={`${Math.round(roomLighting.goboStrength * 100)}%`}
+                min={0}
+                max={MAX_WINDOW_LIGHT_STRENGTH}
+                step={0.001}
+                display={`${(roomLighting.goboStrength * 100).toFixed(1)}%`}
                 onChange={(value) => updateLighting("goboStrength", value)}
               />
               <AdminRange

@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 2,
+  "sku": "2650BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-10T13:26:39.723242+00:00",
+  "requestedFault": "TEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "material"
+  ],
+  "profile": null,
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260910131712-727490e5",
+  "referenceImages": [
+    "public/assets/mouldings/2650BK/product-section.jpg",
+    "public/assets/mouldings/2650BK/profile-source.png",
+    "public/assets/mouldings/2650BK/chevron.jpg",
+    "public/assets/mouldings/2650BK/macro.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.55,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 185.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.0
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.6779,
+    "colourSpreadError": 0.054,
+    "seamError": 0.0381,
+    "maximumAutocorrelation": 0.2278,
+    "detailError": 0.0863,
+    "clippedPixels": 0.109
+  },
+  "bestFailedGates": [
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 3.6779,
+        "colourSpreadError": 0.054,
+        "seamError": 0.0381,
+        "maximumAutocorrelation": 0.2278,
+        "detailError": 0.0863,
+        "clippedPixels": 0.109
+      },
+      "deterministicScore": 85.4,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 68,
+        "textureMatch": 62,
+        "repetition": 66,
+        "seam": 78,
+        "finishMatch": 64,
+        "blockers": [
+          "Candidate base tone is a mid charcoal-grey, noticeably lighter than the supplier's near-black charred finish; the dark, low-reflectance look is not matched.",
+          "Grain reads as a procedural field of short horizontal dashes/dots rather than the continuous, irregular charred-wood streaks seen in the supplier crops; character of the brushing is wrong.",
+          "The dash pattern in the fixed-light preview shows a regular horizontal rhythm that risks reading as a tiled repeat at scale."
+        ],
+        "observations": [
+          "Supplier references (top-left and mitered corner) show a matte, near-black surface with long, irregular horizontal grain and subtle relief; gloss is low.",
+          "Unlit atlas (middle) and fixed-light preview (bottom) both show a lighter grey with a fine speckled/dashed grain and a vertical light gradient across the strip, indicating a lighting/gradient artifact rather than true albedo.",
+          "Directional grain orientation (horizontal) is consistent with the supplier, but the scale and continuity of the streaks differ: candidate marks are shorter and more uniform.",
+          "No hard seam line is visible, but the gradient banding across the atlas height could be mistaken for a seam under some lighting.",
+          "Relief/bump in the candidate looks flatter and more uniform than the slightly broken, charred relief in the supplier corner piece."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.82,
+          "contrast": 1.08,
+          "patch_width": 512,
+          "overlap": 176,
+          "roughness_mid": 190,
+          "roughness_detail": 0.55,
+          "bump_detail": 2.2
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.82,
+        "contrast": 1.08,
+        "patch_width": 512,
+        "overlap": 176,
+        "roughness_mid": 190.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 3.6779,
+        "colourSpreadError": 0.1377,
+        "seamError": 0.0599,
+        "maximumAutocorrelation": 0.1442,
+        "detailError": 0.2606,
+        "clippedPixels": 0.1704
+      },
+      "deterministicScore": 75.6,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 64,
+        "colourMatch": 70,
+        "textureMatch": 62,
+        "repetition": 86,
+        "seam": 88,
+        "finishMatch": 52,
+        "blockers": [
+          "Finish mismatch: supplier frame corner (top-right) shows a semi-gloss sheen with specular highlights, while the candidate reads as a flat matte surface under fixed light.",
+          "Grain character mismatch: supplier wood shows long, continuous horizontal streaks and plank separation; candidate grain is broken into short dash/speckle marks, losing the directional wood streak."
+        ],
+        "observations": [
+          "Colour is in the correct charcoal/dark-grey family but the candidate is slightly lighter and more neutral than the supplier's near-black warm charcoal (colourDeltaE 3.68).",
+          "Directional grain is present and horizontal, matching the supplier's brushing direction, but the scale is finer and more fragmented than the supplier's long grain streaks.",
+          "maximumAutoCorrelation 0.1442 indicates no strong periodic tiling; the visible grain reads as natural variation rather than a repeated tile.",
+          "seamError 0.0599 is low; no obvious seam line is visible across the fixed-light preview.",
+          "clippedPixels 0.1704 suggests some highlight clipping that may be flattening the perceived gloss.",
+          "Supplier technical drawing (cross-section and mitered corner) confirms a black coated profile with a tan core; the candidate's solid dark surface is consistent with the coated face but lacks the gloss response."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.92,
+          "contrast": 1.06,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 150,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.6
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.92,
+        "contrast": 1.06,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 150.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 3.4527,
+        "colourSpreadError": 0.1152,
+        "seamError": 0.0511,
+        "maximumAutocorrelation": 0.2663,
+        "detailError": 0.2009,
+        "clippedPixels": 0.1761
+      },
+      "deterministicScore": 79.4,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 76,
+        "colourMatch": 78,
+        "textureMatch": 80,
+        "repetition": 72,
+        "seam": 76,
+        "finishMatch": 75,
+        "blockers": [],
+        "observations": [
+          "Supplier references show a near-black charcoal finish with fine horizontal directional grain (short dash-like brush marks) and low gloss; the candidate atlas and fixed-light preview reproduce this horizontal dash grain at a comparable scale.",
+          "Fixed-light preview shows a vertical bright band left-of-centre; this is a fixed-lighting sheen artifact, not a material defect, but it slightly lifts perceived value relative to the supplier's flatter near-black.",
+          "colourDeltaE 3.45 and the lighter grey cast in the preview indicate the candidate is marginally lighter/less saturated than the supplier crop; a small reduction in colour strength / increase in depth would close the gap.",
+          "maximumAutocorrelation 0.2663 is moderate and consistent with intentional fine directional grain rather than a tiled macro repeat; no distinctive large feature recurs at a regular interval.",
+          "seamError 0.0511 is low; a faint horizontal tonal step is visible in the unlit atlas but does not read as a hard seam under fixed light.",
+          "Surface relief and roughness read as matte with subtle micro-relief, matching the supplier's low-gloss charred finish."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.06,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.85,
+        "contrast": 1.06,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 3.6779,
+        "colourSpreadError": 0.1036,
+        "seamError": 0.0402,
+        "maximumAutocorrelation": 0.2207,
+        "detailError": 0.1993,
+        "clippedPixels": 0.1685
+      },
+      "deterministicScore": 83.2,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 64,
+        "colourMatch": 70,
+        "textureMatch": 62,
+        "repetition": 55,
+        "seam": 60,
+        "finishMatch": 68,
+        "blockers": [
+          "Visible horizontal seam line across the unlit atlas (mid-lower band) that does not appear in supplier crops.",
+          "Dash/knot marks in the candidate recur in near-regular horizontal rows, reading as a tiled repeat rather than natural scatter.",
+          "Candidate grain reads slightly cooler/greyer and a touch larger in scale than the warm charcoal supplier finish."
+        ],
+        "observations": [
+          "Supplier references show a deep charcoal matte finish with fine horizontal directional grain and sparse, irregular char marks; the raw tan core is only visible in the profile cross-section and is not part of the visible finish.",
+          "The fixed-light preview reproduces the dark charcoal tone and horizontal grain direction reasonably, but the small dash marks are over-regular and banded.",
+          "Relief/gloss in the candidate is close to the supplier's low-satin matte, though the dash relief is slightly too crisp.",
+          "colourDeltaE 3.68 indicates a moderate hue/temperature offset toward cool grey rather than the supplier's neutral-warm charcoal.",
+          "seamError 0.0402 is low numerically but a perceptible horizontal seam is still visible in the atlas, suggesting a hard tile boundary."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.05,
+          "patch_width": 512,
+          "overlap": 192,
+          "roughness_mid": 175,
+          "roughness_detail": 0.45,
+          "bump_detail": 2.2
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "brushed matte textured",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "fine horizontal directional grain / brush streaks",
+        "natural tonal variation within the black face",
+        "subtle surface relief (micro bumps) of the brushed texture",
+        "tan/beige substrate visible at cut edges and backing",
+        "low-sheen matte response under neutral light"
+      ],
+      "risks": [
+        "grain tiling or visible repeat seams if texture is tiled",
+        "over-smoothing that erases the directional brush lines",
+        "bump too strong causing banding or plastic relief",
+        "colour pushed to flat pure black losing the warm dark-brown undertone",
+        "gloss too high producing specular highlights not present in supplier photos"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "roughness_mid": 185,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.0
+      }
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.72,
+      "reasons": [
+        "Candidate colour is a dark charcoal/black that matches the supplier reference tone; reported colourDeltaE 3.68 is within an acceptable range for a fixed-light preview.",
+        "Directional horizontal grain and fine brush-line scale in the candidate correspond to the supplier's horizontal wood-grain finish, with comparable fleck size and surface relief.",
+        "Natural irregularity is retained: speckling and grain streaks are distributed non-uniformly rather than forming a regular grid.",
+        "No obvious macro feature repeats at a regular interval across the candidate bands; maximumAutocorrelation 0.228 and seamError 0.038 indicate no strong periodic tiling or visible seam."
+      ],
+      "concerns": [
+        "Surface relief in the fixed-light preview looks slightly flatter than the corner-frame render, which may be a lighting/perspective effect rather than a true finish mismatch.",
+        "Moderate autocorrelation (0.228) leaves a small residual risk of a subtle repeat that is not visually obvious at this resolution; recommend a larger-scale or angled check if the fault report persists."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "42ec9963b0a837be186e9a24fc4b3e38e17254cba8e974ee8b7cf1fad2f9239d",
+      "roughness.jpg": "21c55f1f327cab7680446ef6c16e95ddcbbaad62ff90e51e72cdf369c5b6fdc5",
+      "bump.jpg": "149ff0820d6e54f45d4b8a0cfbf896d82e99f474bb8c34c446b5db1bbafbcea1"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

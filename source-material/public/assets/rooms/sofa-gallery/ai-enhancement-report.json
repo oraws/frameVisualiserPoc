@@ -1,0 +1,11 @@
+{
+  "promptId": "de15fa71-d793-48fc-84f4-948cbb65243a",
+  "model": "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+  "adapter": "Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors",
+  "seed": 18092026,
+  "steps": 4,
+  "elapsedSeconds": 102.36,
+  "source": "tools/ai-room-enhancer/runtime/ComfyUI/output/frame-visualiser/sofa-gallery-ai_00002_.png",
+  "output": "public/assets/rooms/sofa-gallery/room-ai-enhanced.png",
+  "prompt": "Transform this existing CGI room into a high-end photorealistic editorial interior photograph. Preserve the exact camera, crop, wall plane, sofa silhouette, cushion count and locations, curtain position, floor line, and all geometry. Keep the large central wall area completely empty and undecorated for later artwork placement. Do not add pictures, frames, shelves, wall decor, text, lamps, plants, windows or doors. Refine only materials and photographic detail: natural woven cream linen with realistic seams and subtle wrinkles, warm oak plinth and floor grain, fine warm off-white lime-plaster wall texture, and realistic curtain weave. Keep daylight entering from the upper left exactly as shown with soft realistic shadows and balanced neutral-warm colour. Commercial art catalogue photography, natural dynamic range, crisp material detail, no plastic CGI appearance."
+}

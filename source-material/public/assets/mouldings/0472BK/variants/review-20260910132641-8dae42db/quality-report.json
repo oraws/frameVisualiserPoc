@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 2,
+  "sku": "0472BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-10T13:33:53.952391+00:00",
+  "requestedFault": "TEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "material"
+  ],
+  "profile": null,
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260910132641-8dae42db",
+  "referenceImages": [
+    "public/assets/mouldings/0472BK/product-section.jpg",
+    "public/assets/mouldings/0472BK/profile-source.png",
+    "public/assets/mouldings/0472BK/chevron.jpg",
+    "public/assets/mouldings/0472BK/macro.jpg",
+    "public/assets/mouldings/0472BK/product-detail-1.jpg",
+    "public/assets/mouldings/0472BK/product-detail-2.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.55,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 195.0,
+    "roughness_detail": 0.55,
+    "bump_detail": 2.2
+  },
+  "bestMetrics": {
+    "colourDeltaE": 4.1687,
+    "colourSpreadError": 0.1092,
+    "seamError": 0.0113,
+    "maximumAutocorrelation": 0.2879,
+    "detailError": 0.1023,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 195.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 4.1687,
+        "colourSpreadError": 0.1092,
+        "seamError": 0.0113,
+        "maximumAutocorrelation": 0.2879,
+        "detailError": 0.1023,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 93.3,
+      "failedGates": [],
+      "agentReview": {
+        "score": 74,
+        "colourMatch": 78,
+        "textureMatch": 80,
+        "repetition": 85,
+        "seam": 70,
+        "finishMatch": 80,
+        "blockers": [
+          "Visible vertical tonal patch on the right third of the fixed-light preview (a rectangular region of slightly different luminance) indicates an unblended atlas tile boundary.",
+          "A horizontal darker band across the mid-field suggests a seam/transition line between texture rows."
+        ],
+        "observations": [
+          "Base colour is a near-matte black that aligns with the black supplier mitered-corner reference; colourDeltaE 4.19 is acceptable but on the high side for a dark neutral where small shifts read as grey/green cast.",
+          "Fine speckled grain and the reeded/fluted edge lines are present in both the unlit atlas and the fixed-light preview, matching the supplier's fine surface texture and profile relief.",
+          "The horizontal fluting lines are a structural profile feature, not a tiled repeat; maximumAutocorrelation 0.2879 and the natural-looking speckle show no obvious distinctive macro feature repeating at regular intervals, so tiling is not the primary fault.",
+          "Satin sheen on the reeded edges under fixed light is consistent with the soft highlights seen on the supplier profiles; gloss level appears well matched.",
+          "The right-side tonal rectangle and the mid horizontal band are the main visible defects and are consistent with insufficient patch overlap / blending rather than a colour or texture mismatch.",
+          "clippedPixels 0.0 and low seamError (0.0113) confirm no hard clipping, but the perceptual patch remains visible under neutral lighting."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.92,
+          "contrast": 1.0,
+          "patch_width": 512,
+          "overlap": 192,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.2
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.92,
+        "contrast": 1.0,
+        "patch_width": 512,
+        "overlap": 192,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 4.9614,
+        "colourSpreadError": 0.1542,
+        "seamError": 0.0111,
+        "maximumAutocorrelation": 0.2137,
+        "detailError": 0.216,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 89.7,
+      "failedGates": [],
+      "agentReview": {
+        "score": 70,
+        "colourMatch": 74,
+        "textureMatch": 66,
+        "repetition": 78,
+        "seam": 90,
+        "finishMatch": 72,
+        "blockers": [
+          "Flat field shows a fine speckled noise and faint horizontal banding that reads as a procedural/compression artifact rather than the natural painted-wood grain seen in the supplier black corner sample.",
+          "Reeded groove relief in the candidate is slightly soft and low-contrast compared with the crisp, well-defined reeding in the supplier mitered samples."
+        ],
+        "observations": [
+          "Colour is a near-neutral charcoal/black that aligns with the supplier's black mitered corner reference; colourDeltaE ~4.96 is acceptable but the candidate reads marginally cooler/greyer than the warm-black supplier paint.",
+          "No obvious macro tiling or regular repeat is visible; maximumAutocorrelation 0.2137 is moderate and the speckle is irregular, so this is not a tiled repeat.",
+          "Seam is clean (seamError 0.0111) with no visible join line across the atlas.",
+          "Gloss/satin response in the fixed-light preview is plausible for a painted wood, but the flat field lacks the subtle directional grain/brushing present in the supplier photos.",
+          "detailError 0.216 indicates the micro-relief scale is not yet matching the supplier's fine grain."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.92,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 185,
+          "roughness_detail": 0.55,
+          "bump_detail": 2.4
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.92,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 4.4281,
+        "colourSpreadError": 0.1845,
+        "seamError": 0.0123,
+        "maximumAutocorrelation": 0.2975,
+        "detailError": 0.2814,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 86.3,
+      "failedGates": [],
+      "agentReview": {
+        "score": 80,
+        "colourMatch": 82,
+        "textureMatch": 78,
+        "repetition": 86,
+        "seam": 92,
+        "finishMatch": 76,
+        "blockers": [],
+        "observations": [
+          "Colour reads as a deep neutral charcoal-black, consistent with the black frame reference; deltaE 4.43 is acceptable but the candidate is marginally lighter/greyer than the supplier's near-black, so a small colour_strength increase would tighten the match.",
+          "Moulding relief (reeded/fluted profile) is reproduced correctly in both the unlit atlas and the fixed-light preview, matching the supplier frame corner geometry.",
+          "Surface shows a fine, evenly distributed speckle grain. This is natural micro-texture rather than a tiled repeat; maximumAutocorrelation 0.2975 and the lack of a periodic macro feature indicate no obvious tiling.",
+          "Seam quality is strong (seamError 0.0123); no visible hard edge or colour band across the atlas.",
+          "Finish under fixed light is a soft matte/eggshell with low specular, broadly matching the painted supplier samples; the speckle is slightly more pronounced than the smoothest cream/white references, which may read as a touch noisy on large flat fields.",
+          "Detail error 0.2814 suggests the fine grain scale is close but could be softened slightly to better emulate a smooth painted film."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.92,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 185,
+          "roughness_detail": 0.45,
+          "bump_detail": 1.8
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "painted-wood-moulding",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "longitudinal grain and brush direction along the moulding length",
+        "natural tonal variation in the black paint (not a flat uniform black)",
+        "macro profile relief (crown, baseboard, frame bevels)",
+        "low-sheen diffuse surface response",
+        "exposed light wood core at cut ends"
+      ],
+      "risks": [
+        "grain pattern tiling or repeating at regular intervals",
+        "over-smoothing that erases fine directional grain",
+        "colour rendered as pure flat black losing wood undertone",
+        "gloss/sheen too high, turning matte paint into a reflective coat",
+        "bump relief exaggerated so the profile looks carved rather than painted"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "roughness_mid": 195,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "The candidate preview shows the same molded-ridge-plus-flat-field block stacked twice (top half and bottom half are near-identical), indicating a tiled texture repeat rather than continuous natural variation.",
+        "A hard horizontal seam/label band runs across the middle of the candidate, and the ridge pattern restarts at the same offset in each half, consistent with tiling.",
+        "Finish mismatch: the supplier black frame reference shows a semi-gloss surface with soft highlights on the molded edges, whereas the candidate reads as a flat matte surface with low relief.",
+        "Texture character mismatch: supplier black shows fine directional brush/grain lines running along the molding, while the candidate shows an isotropic fine speckle/noise without clear directional grain.",
+        "Colour is a perceptible shift: candidate is a lighter matte dark-grey-black versus the deeper, slightly reflective black in the supplier reference (colourDeltaE ~4.19 supports a visible difference)."
+      ],
+      "concerns": [
+        "Obvious vertical repeat of the texture block (two identical halves) not removed.",
+        "Visible horizontal seam line in the middle of the candidate.",
+        "Gloss/relief does not match the semi-gloss molded supplier finish.",
+        "Directional grain/brushing present in supplier is absent in candidate (replaced by uniform speckle).",
+        "Colour tone and value differ from the supplier black reference under fixed lighting."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "464198604daebf3ec766595f144c0bbc892df7b11f101e0d68ca179c21c34e53",
+      "roughness.jpg": "79246a4ba774905b65b04026ca932c62c1c56c153dd5ff57badafaf56c455b50",
+      "bump.jpg": "aa8981b4be4b971cfcb40e2072617e8a5e4371a2abe927ff3a9ac22134b10969"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

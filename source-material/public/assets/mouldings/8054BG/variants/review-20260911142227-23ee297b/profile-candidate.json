@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "sku": "8054BG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "ornate",
+  "widthMm": 80.0,
+  "depthMm": 54.0,
+  "rebateMm": 26.0,
+  "points": [
+    [
+      0.0,
+      31.806
+    ],
+    [
+      0.989,
+      32.372
+    ],
+    [
+      2.12,
+      32.372
+    ],
+    [
+      3.251,
+      32.796
+    ],
+    [
+      3.816,
+      33.644
+    ],
+    [
+      4.382,
+      34.068
+    ],
+    [
+      5.088,
+      34.209
+    ],
+    [
+      6.643,
+      34.068
+    ],
+    [
+      8.057,
+      35.058
+    ],
+    [
+      8.763,
+      35.058
+    ],
+    [
+      9.329,
+      35.34
+    ],
+    [
+      9.894,
+      36.047
+    ],
+    [
+      10.035,
+      37.037
+    ],
+    [
+      10.742,
+      37.743
+    ],
+    [
+      12.721,
+      38.592
+    ],
+    [
+      14.558,
+      38.592
+    ],
+    [
+      15.406,
+      38.168
+    ],
+    [
+      16.254,
+      37.319
+    ],
+    [
+      16.82,
+      36.188
+    ],
+    [
+      17.244,
+      35.764
+    ],
+    [
+      26.714,
+      35.623
+    ],
+    [
+      30.106,
+      36.188
+    ],
+    [
+      32.509,
+      37.037
+    ],
+    [
+      34.205,
+      37.885
+    ],
+    [
+      36.608,
+      39.44
+    ],
+    [
+      39.293,
+      41.984
+    ],
+    [
+      40.848,
+      44.246
+    ],
+    [
+      41.979,
+      45.094
+    ],
+    [
+      43.816,
+      45.377
+    ],
+    [
+      44.806,
+      44.812
+    ],
+    [
+      46.219,
+      44.812
+    ],
+    [
+      48.763,
+      47.356
+    ],
+    [
+      50.318,
+      48.487
+    ],
+    [
+      52.58,
+      49.759
+    ],
+    [
+      56.82,
+      51.314
+    ],
+    [
+      59.647,
+      51.738
+    ],
+    [
+      62.049,
+      51.738
+    ],
+    [
+      63.18,
+      52.728
+    ],
+    [
+      63.322,
+      53.152
+    ],
+    [
+      63.887,
+      53.717
+    ],
+    [
+      64.594,
+      54.0
+    ],
+    [
+      65.724,
+      36.471
+    ],
+    [
+      65.724,
+      33.927
+    ],
+    [
+      66.007,
+      32.513
+    ],
+    [
+      66.148,
+      38.45
+    ],
+    [
+      66.996,
+      30.11
+    ],
+    [
+      68.127,
+      42.974
+    ],
+    [
+      68.127,
+      28.555
+    ],
+    [
+      69.541,
+      27.141
+    ],
+    [
+      69.823,
+      53.859
+    ],
+    [
+      70.53,
+      53.293
+    ],
+    [
+      70.53,
+      26.435
+    ],
+    [
+      70.671,
+      47.497
+    ],
+    [
+      71.095,
+      52.304
+    ],
+    [
+      71.095,
+      48.911
+    ],
+    [
+      72.085,
+      25.869
+    ],
+    [
+      73.64,
+      24.88
+    ],
+    [
+      74.205,
+      23.89
+    ],
+    [
+      74.77,
+      23.325
+    ],
+    [
+      76.042,
+      22.618
+    ],
+    [
+      77.032,
+      21.628
+    ],
+    [
+      77.456,
+      20.78
+    ],
+    [
+      77.597,
+      19.366
+    ],
+    [
+      79.435,
+      18.66
+    ],
+    [
+      80.0,
+      18.094
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "ornate",
+    "faceCrownMm": 2.5,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 1.0,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single flat planar face confirmed in chevron and oblique rotation",
+      "Outer ogee/cove (scoop) near the outer sight edge",
+      "Inner gold sight edge rendered as a small bead/rib (fluted in oblique view)",
+      "Rebate step of ~26 mm depth at the back"
+    ],
+    "rejectedTraceFeatures": [
+      "Wavy lobed contour on the left silhouette top edge (segmentation/background noise, not present in photos)",
+      "Any additional ridges or beads implied by the trace beyond the single outer scoop and inner bead"
+    ],
+    "observations": [
+      "Supplier photos show black and white painted finishes with a contrasting gold inner sight edge",
+      "Fine directional grain/brushing visible on the white face, consistent with painted wood, not a tiled repeat",
+      "Chevron mitre is clean; gold edge follows the inner sight line",
+      "Dimension envelope 80 x 54 mm with 26 mm rebate preserved"
+    ],
+    "concerns": [
+      "Catalogue label 'ornate-scoop' overstates complexity; physical profile is a simple flat face with one outer cove and one inner bead",
+      "Extracted trace left-edge waviness must not be interpreted as profile geometry",
+      "Gloss and gold edge appearance vary with lighting across the three photos"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Tall thin vertical spike/ridge with a notch near the outer edge (right side of candidate cross-section) is not present in the chevron or oblique photographs nor in the catalogue outline.",
+      "Small rounded bead/bump on the face near the inner sight edge is not clearly visible in the supplier photographs, which show a near-planar black face transitioning directly into the cove."
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The dominant cove/scoop curve from inner sight edge to outer edge and the 26 mm rebate drop are consistent across the catalogue outline, the chevron photo, and the candidate.",
+      "The chevron and oblique photographs show a smooth concave scoop terminating in a small rounded bead at the outer tip; they do not show the tall thin vertical spike/ridge that the candidate renders just before the rebate.",
+      "The candidate's inner-edge bead bump is not independently confirmable in the photographs, where the face reads as essentially flat with only the gold sight-edge strip.",
+      "Per the review rule, a perimeter ridge/spike that appears only in the candidate geometry and not in any physical photograph must be flagged as unsupported."
+    ],
+    "concerns": [
+      "The thin vertical spike near the outer edge looks like an artefact of the extracted trace rather than a real moulding feature; it should be removed unless a photograph confirms it.",
+      "Verify whether the inner face is truly planar or carries a small bead; the photos lean toward a flat face.",
+      "Confirm the outer-tip bead radius and the rebate step height against the 26 mm dimension, as the candidate's outer edge geometry (spike + step) does not match the rounded bead seen in the chevron photo."
+    ]
+  }
+}

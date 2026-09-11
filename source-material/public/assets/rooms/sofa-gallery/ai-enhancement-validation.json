@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": {
+    "aspectPreserved": true,
+    "sufficientResolution": true,
+    "structurePreserved": true,
+    "hangingAreaClear": true,
+    "meaningfulEnhancement": true
+  },
+  "metrics": {
+    "sourceAspect": 1.125,
+    "outputAspect": 1.125,
+    "outputWidth": 1152,
+    "outputHeight": 1024,
+    "structureMedianEdgeDistancePx": 1.0,
+    "structureP90EdgeDistancePx": 7.071,
+    "blankWallEdgeDensity": 0.0,
+    "meanAbsoluteLuminanceChange": 0.105156
+  }
+}

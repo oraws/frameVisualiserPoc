@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-4418",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Rebuild the physical moulding cross-section, including the flat or curved face, inner sight edge, outer edge, rebate and stated dimensions. Compare a rendered candidate with the supplier evidence and correct geometry that creates ridges, hollows or bevels absent from the real moulding.",
+  "reviewScopes": [
+    "profile"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-4418",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 54.0,
+    "depthMm": 20.0,
+    "rebateMm": 14.0,
+    "points": [
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.147,
+        19.825
+      ],
+      [
+        0.35,
+        20.0
+      ],
+      [
+        27.05,
+        20.0
+      ],
+      [
+        53.75,
+        20.0
+      ],
+      [
+        54.0,
+        19.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "observations": [
+        "Supplier profile label reads 'flat' and the cross-section strip shows a uniform dark band with a single rectangular rebate notch on the right, consistent with a flat face plus rebate rather than a crowned or hollowed profile.",
+        "Rotation photographs (top row) show a continuous wood-grain face with horizontal directional brush lines; no ridge, hollow, or bevel catches the light differently across the three rotations, supporting a flat face.",
+        "Stated envelope 54 x 20 mm with a 14 mm rebate is preserved; the visible rebate depth in the cross-section is proportionate to a 14 mm cut-in on a 20 mm stock.",
+        "Edge treatment appears square/broken-edge (minimal radius), matching a flat panel profile rather than an ornate or stepped moulding."
+      ],
+      "concerns": [
+        "The fine horizontal/vertical grain lines are intentional directional brush grain, not a tiled repeat; do not interpret them as a periodic moulding feature.",
+        "Lighting and perspective in the supplier rotation shots can exaggerate surface texture; no genuine crown or hollow is evidenced, so a rendered candidate must not add ridges or bevels.",
+        "User fault report is treated as a hypothesis only; visible evidence does not confirm any moulding geometry beyond a flat face and rebate."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.7,
+      "reasons": [
+        "Supplier profile label is 'flat' and the candidate cross-section is a flat-faced rectangle, so the face geometry (no ridge, hollow or bevel) matches the real moulding.",
+        "The candidate shows a single rebate step on the inner sight edge with a stated rebate drop of 14 mm, consistent with the supplier dimension 'rebate 14 mm'.",
+        "Supplier rotation/face photographs show a flat veneered face with only fine directional grain (no repeating macro feature and no moulded profile), which is consistent with a flat profile rather than a shaped one.",
+        "No spurious ridges, hollows or bevels are introduced in the candidate that are absent from the supplier evidence."
+      ],
+      "concerns": [
+        "Supplier photographs are texture/rotation views and do not independently confirm the rebate depth or the 54 x 20 mm proportions; the match relies on the stated dimensions and 'flat' label.",
+        "The candidate rectangle is rendered at a non-1:1 scale, so the 14 mm rebate appears small relative to the face; verify the rebate-to-depth ratio against the 20 mm depth before production."
+      ]
+    }
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "supplier-matched-v4-candidate",
+  "referenceImages": [
+    "source-material/mainline/POL-4418/spin/img20.jpg",
+    "source-material/mainline/POL-4418/spin/img21.jpg",
+    "source-material/mainline/POL-4418/spin/img22.jpg",
+    "source-material/mainline/POL-4418/spin/img23.jpg",
+    "source-material/mainline/POL-4418/spin/img24.jpg",
+    "source-material/mainline/POL-4418/spin/img25.jpg",
+    "source-material/mainline/POL-4418/spin/img26.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {},
+  "bestMetrics": {},
+  "bestFailedGates": [],
+  "attempts": [],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "observations": [
+        "Supplier profile label reads 'flat' and the cross-section strip shows a uniform dark band with a single rectangular rebate notch on the right, consistent with a flat face plus rebate rather than a crowned or hollowed profile.",
+        "Rotation photographs (top row) show a continuous wood-grain face with horizontal directional brush lines; no ridge, hollow, or bevel catches the light differently across the three rotations, supporting a flat face.",
+        "Stated envelope 54 x 20 mm with a 14 mm rebate is preserved; the visible rebate depth in the cross-section is proportionate to a 14 mm cut-in on a 20 mm stock.",
+        "Edge treatment appears square/broken-edge (minimal radius), matching a flat panel profile rather than an ornate or stepped moulding."
+      ],
+      "concerns": [
+        "The fine horizontal/vertical grain lines are intentional directional brush grain, not a tiled repeat; do not interpret them as a periodic moulding feature.",
+        "Lighting and perspective in the supplier rotation shots can exaggerate surface texture; no genuine crown or hollow is evidenced, so a rendered candidate must not add ridges or bevels.",
+        "User fault report is treated as a hypothesis only; visible evidence does not confirm any moulding geometry beyond a flat face and rebate."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.7,
+      "reasons": [
+        "Supplier profile label is 'flat' and the candidate cross-section is a flat-faced rectangle, so the face geometry (no ridge, hollow or bevel) matches the real moulding.",
+        "The candidate shows a single rebate step on the inner sight edge with a stated rebate drop of 14 mm, consistent with the supplier dimension 'rebate 14 mm'.",
+        "Supplier rotation/face photographs show a flat veneered face with only fine directional grain (no repeating macro feature and no moulded profile), which is consistent with a flat profile rather than a shaped one.",
+        "No spurious ridges, hollows or bevels are introduced in the candidate that are absent from the supplier evidence."
+      ],
+      "concerns": [
+        "Supplier photographs are texture/rotation views and do not independently confirm the rebate depth or the 54 x 20 mm proportions; the match relies on the stated dimensions and 'flat' label.",
+        "The candidate rectangle is rendered at a non-1:1 scale, so the 14 mm rebate appears small relative to the face; verify the rebate-to-depth ratio against the 20 mm depth before production."
+      ]
+    }
+  },
+  "material": {
+    "preservedFrom": "supplier-derived-v2",
+    "sha256": {
+      "basecolor.jpg": "a8996aa03516d7794bfa3700f3634b059d13361bff076490a256b9e162a62058",
+      "roughness.jpg": "fa38ad2be742d89edfe44494b3e29e105762ca3a8153a3a3659759d039dc77a0",
+      "bump.jpg": "20fb491190beb12a78d2e58b2317da1fab16b5bef25463b1a17f0558b7961b39"
+    }
+  },
+  "activation": "Candidate only. Inspect in the live visualiser before promotion."
+}

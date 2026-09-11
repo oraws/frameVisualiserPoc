@@ -1,3 +1,11 @@
 .venv/
 .venv-sam2/
+.venv-comfy/
 .model-cache/
+tools/ai-room-enhancer/runtime/
+
+.render-jobs/
+.material-review-jobs/
+.material-review-state.json
+tools/high-res-render/__pycache__/
+tools/moulding-material-pilot/__pycache__/

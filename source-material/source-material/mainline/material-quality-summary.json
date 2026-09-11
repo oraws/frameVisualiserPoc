@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "ollama": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "error": null
+  },
+  "results": [
+    {
+      "sku": "3826BK",
+      "status": "human-review-required",
+      "attempts": 4,
+      "score": 71.5,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "output": "public/assets/mouldings/3826BK/variants/review-20260911143302-7f265a48"
+    }
+  ]
+}

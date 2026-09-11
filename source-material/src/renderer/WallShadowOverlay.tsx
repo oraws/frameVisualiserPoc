@@ -1,8 +1,13 @@
 import { useMemo } from "react";
 import type { RoomTemplate } from "./roomTemplates";
+import {
+  clampWindowLightStrength,
+  windowLightBand,
+} from "./windowLight";
 
 type Point = { x: number; y: number };
 type Lighting = {
+  temperature: number;
   azimuth: number;
   elevation: number;
   shadowOpacity: number;
@@ -38,6 +43,7 @@ type Props = {
 };
 
 const defaultLighting: Lighting = {
+  temperature: 4400,
   azimuth: -0.55,
   elevation: 0.65,
   shadowOpacity: 0.34,
@@ -48,9 +54,26 @@ const defaultLighting: Lighting = {
   goboScale: 1,
   goboOffsetX: 0,
   goboOffsetY: 0,
-  goboStrength: 0.32,
+  goboStrength: 0.05,
   goboSoftness: 8,
 };
+function temperatureCss(kelvin: number) {
+  const warm = Math.max(0, Math.min(1, (6500 - kelvin) / 3300));
+  const cool = Math.max(0, Math.min(1, (kelvin - 6500) / 1500));
+  const mix = (from: number, to: number, amount: number) =>
+    Math.round(from + (to - from) * amount);
+  const warmColour = [255, 224, 178];
+  const neutralColour = [255, 250, 240];
+  const coolColour = [218, 234, 255];
+  const colour = warm
+    ? neutralColour.map((value, index) =>
+        mix(value, warmColour[index], warm),
+      )
+    : neutralColour.map((value, index) =>
+        mix(value, coolColour[index], cool),
+      );
+  return `rgb(${colour.join(" ")})`;
+}
 function homography(points: Point[]) {
   const [p0, p1, p2, p3] = points,
     dx1 = p1.x - p2.x,
@@ -135,6 +158,13 @@ const serialise = (points: Point[]) =>
 
 export default function WallShadowOverlay(p: Props) {
   const lighting = { ...defaultLighting, ...p.calibration?.renderer?.lighting };
+  // The admin proxy paints its light over near-black placeholder geometry. On
+  // photographic artwork and textured moulding the same alpha is visually much
+  // weaker, so convert the control value into a stronger additive lift here.
+  // A zero strength still produces no light and the unlit window bars remain
+  // transparent under screen blending.
+  const goboOpacity = clampWindowLightStrength(lighting.goboStrength) * 1.15;
+  const goboBand = windowLightBand(lighting);
   const geometry = useMemo(() => {
     if (p.projectedCorners?.length === 4) {
       const base = p.projectedCorners.map(([x, y]) => ({ x, y }));
@@ -290,32 +320,30 @@ export default function WallShadowOverlay(p: Props) {
             <clipPath id="wall-gobo-frame">
               <polygon points={serialise(geometry.frame)} />
             </clipPath>
-            <pattern
+            <linearGradient
               id="wall-gobo-pattern"
-              width={0.16 * lighting.goboScale}
-              height={0.16 * lighting.goboScale}
-              patternUnits="userSpaceOnUse"
-              patternTransform={`translate(${lighting.goboOffsetX * 0.2} ${lighting.goboOffsetY * 0.2}) rotate(${lighting.goboAngle} .5 .5)`}
+              x1="0"
+              y1="0"
+              x2="1"
+              y2="0"
+              gradientUnits="objectBoundingBox"
+              gradientTransform={`rotate(${lighting.goboAngle} .5 .5)`}
             >
-              <rect
-                width="100%"
-                height="100%"
-                fill="#ffe8bd"
-                fillOpacity=".56"
+              <stop offset="0" stopColor="#000" />
+              <stop offset={goboBand.start} stopColor="#000" />
+              <stop
+                offset={goboBand.startSoft}
+                stopColor={temperatureCss(lighting.temperature)}
+                stopOpacity=".78"
               />
-              <rect
-                width="14%"
-                height="100%"
-                fill="#17130f"
-                fillOpacity=".82"
+              <stop
+                offset={goboBand.endSoft}
+                stopColor={temperatureCss(lighting.temperature)}
+                stopOpacity=".78"
               />
-              <rect
-                width="100%"
-                height="14%"
-                fill="#17130f"
-                fillOpacity=".82"
-              />
-            </pattern>
+              <stop offset={goboBand.end} stopColor="#000" />
+              <stop offset="1" stopColor="#000" />
+            </linearGradient>
             <filter
               id="wall-gobo-blur"
               x="-20%"
@@ -332,7 +360,7 @@ export default function WallShadowOverlay(p: Props) {
             width="1"
             height="1"
             fill="url(#wall-gobo-pattern)"
-            opacity={lighting.goboStrength * 0.5}
+            opacity={goboOpacity}
             clipPath="url(#wall-gobo-frame)"
             filter="url(#wall-gobo-blur)"
             style={{ mixBlendMode: "screen" }}

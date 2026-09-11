@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4211",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 54.0,
+  "depthMm": 20.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.168,
+      19.72
+    ],
+    [
+      0.4,
+      20.0
+    ],
+    [
+      27.0,
+      20.0
+    ],
+    [
+      53.6,
+      20.0
+    ],
+    [
+      54.0,
+      19.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face with fine directional grain",
+      "light oak/ash tone with natural tonal variation",
+      "stated rebate of 14 mm (dimensional envelope only, not visually resolvable)"
+    ],
+    "rejectedTraceFeatures": [
+      "green speckled region at base of catalogue image (background, not a ridge or step)",
+      "white square in catalogue corner (false element / segmentation artifact)",
+      "faint horizontal line near catalogue base (segmentation edge / shadow, not a bevel)"
+    ],
+    "observations": [
+      "Top-row supplier photographs show one continuous flat face with horizontal fine grain; no recurring macro ridge, bead, hollow or step at regular intervals",
+      "Catalogue image shows the same flat face with vertical grain, consistent with a rotated view of the same planar sample",
+      "Supplier profile label reads 'flat' and dimensions 54 x 20 mm with 14 mm rebate, matching a planar face interpretation",
+      "No chevron or oblique rotation photograph is present to confirm any edge rounding, so edge radii are kept minimal and unverified"
+    ],
+    "concerns": [
+      "Rebate geometry (14 mm) is stated but not independently visible in the supplied photographs",
+      "Edge treatment (inner/outer radius) cannot be confirmed without a physical section or oblique rotation image",
+      "Grain direction differs between top row (horizontal) and catalogue (vertical); treated as orientation/rotation, not a profile feature"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.8,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier profile label is 'flat' and the candidate cross-section shows a single planar face with no added ridge, bead, bevel or hollow, matching a flat moulding.",
+      "The only edge treatment in the candidate is a 14 mm rebate drop on the inner sight edge, which is independently supported by the stated dimension 'rebate 14 mm' and by the lower-left oblique photograph showing a stepped edge/rebate below the face.",
+      "No perimeter ridge has been added to the photographed flat face; the top and outer edges remain straight and planar in the candidate.",
+      "Directional grain/brushing in the supplier photographs is fine and continuous, consistent with a brushed wood finish, and does not show a tiled macro repeat."
+    ],
+    "concerns": [
+      "Grain orientation differs between the top (horizontal) and lower-left (vertical) photographs, which is consistent with rotation but should be confirmed against the intended install orientation.",
+      "The cross-section is rendered as a solid tan fill without texture; this is acceptable for a section view but the face texture must be verified separately under neutral lighting."
+    ]
+  }
+}

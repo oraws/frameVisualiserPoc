@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-4875",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T13:37:45.878421+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-4875",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "ornate",
+    "widthMm": 97.0,
+    "depthMm": 49.0,
+    "rebateMm": 16.0,
+    "points": [
+      [
+        0.0,
+        15.0
+      ],
+      [
+        2.0,
+        15.0
+      ],
+      [
+        3.5,
+        21.0
+      ],
+      [
+        5.0,
+        26.0
+      ],
+      [
+        7.0,
+        27.0
+      ],
+      [
+        9.0,
+        22.0
+      ],
+      [
+        12.0,
+        19.0
+      ],
+      [
+        16.0,
+        19.0
+      ],
+      [
+        20.0,
+        25.0
+      ],
+      [
+        24.0,
+        32.0
+      ],
+      [
+        29.0,
+        38.0
+      ],
+      [
+        34.0,
+        43.0
+      ],
+      [
+        40.0,
+        46.0
+      ],
+      [
+        46.0,
+        48.0
+      ],
+      [
+        51.0,
+        48.0
+      ],
+      [
+        56.0,
+        45.0
+      ],
+      [
+        61.0,
+        40.0
+      ],
+      [
+        66.0,
+        34.0
+      ],
+      [
+        71.0,
+        29.0
+      ],
+      [
+        75.0,
+        28.0
+      ],
+      [
+        79.0,
+        32.0
+      ],
+      [
+        83.0,
+        35.0
+      ],
+      [
+        86.0,
+        31.0
+      ],
+      [
+        89.0,
+        25.0
+      ],
+      [
+        92.0,
+        22.0
+      ],
+      [
+        95.0,
+        17.0
+      ],
+      [
+        97.0,
+        16.0
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "ornate",
+      "faceCrownMm": 3.0,
+      "innerEdgeRadiusMm": 1.2,
+      "outerEdgeRadiusMm": 1.4,
+      "flatFaceConfirmed": false,
+      "catalogueTraceAgreement": "uncertain",
+      "verifiedFeatures": [
+        "High-relief carved leaf and scroll motif on the central field",
+        "Stippled / dotted ground texture behind the carving",
+        "Vertical fluting (parallel reeded grooves) on the left edge",
+        "Beaded / rope-moulded edge on the right side",
+        "Glossy dark finish with strong specular highlights on raised edges"
+      ],
+      "rejectedTraceFeatures": [
+        "Grey speckled foreground mass at the bottom (segmentation / background artifact, not a profile ridge)",
+        "No independent flat planar face confirmed; not reclassified as flat"
+      ],
+      "observations": [
+        "Lower panel is a catalogue/extracted image showing an ornate carved moulding, not a flat sample",
+        "Relief is multi-level: raised scrolls, recessed stippled ground, fluted and beaded margins",
+        "Dark, high-gloss surface; directional highlights follow the carved contours",
+        "Stated envelope 97 x 49 mm with 16 mm rebate preserved"
+      ],
+      "concerns": [
+        "Top-row supplier cross-section / rotation photographs are largely cropped or illegible, limiting independent confirmation of the true section",
+        "Foreground grey object obscures the lower profile, so rebate and base geometry cannot be fully verified",
+        "No clear red extracted trace present to compare; catalogue agreement left uncertain"
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.42,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "central smooth convex hump (candidate shows a rounded bulge where the photograph shows a flat stippled panel with carved leaf relief)",
+        "left perimeter peak/ridge at the inner sight edge",
+        "right perimeter peak/ridge at the outer edge",
+        "rebate drop of 16 mm (no clear rebate step visible in the oblique photograph)"
+      ],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "The candidate cross-section is a smooth, continuous convex hump in the centre, but the supplier photograph shows a relatively flat central face carrying a stippled/dotted ground and a carved acanthus/scroll motif, not a uniform rounded convex profile.",
+        "The left and right vertical bands in the photograph (fluted rib on the left, repeating bead/oval row on the right) are discrete moulded strips, whereas the candidate renders them as small isolated peaks on a single continuous curve; the relationship between these strips and the central face is not confirmed by a true section or chevron view.",
+        "The 16 mm rebate drop is annotated on the guide but no corresponding step or rebate is independently visible in the oblique photograph.",
+        "No supplier profile label is supplied and no clean physical-section or chevron rotation is provided, so the candidate geometry cannot be independently verified against a true cross-section."
+      ],
+      "concerns": [
+        "A flat photographed face (central stippled panel) appears to have gained a convex perimeter/central ridge in the candidate trace.",
+        "The foreground grey plaster-like mass and the small white cut-out in the photograph obscure the lower edge and rebate, preventing confirmation of the stated 97 x 49 mm and 16 mm rebate dimensions.",
+        "Lighting is low-key and the surface is dark, making relief depth (convex vs flat) hard to confirm; the candidate's smooth hump may be an artefact of the extracted trace rather than real geometry.",
+        "Recommend obtaining a true physical-section or chevron/oblique rotation photograph before approving the candidate profile."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v3",
+  "outputVariant": "review-20260911133042-e04a607b",
+  "referenceImages": [
+    "public/assets/mouldings/POL-4875/source-product.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.5,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.4,
+    "bump_detail": 1.0
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.9683,
+    "colourSpreadError": 0.2371,
+    "seamError": 0.0352,
+    "maximumAutocorrelation": 0.1997,
+    "detailError": 0.2209,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.0
+      },
+      "metrics": {
+        "colourDeltaE": 3.9683,
+        "colourSpreadError": 0.2371,
+        "seamError": 0.0352,
+        "maximumAutocorrelation": 0.1997,
+        "detailError": 0.2209,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 85.8,
+      "failedGates": [],
+      "agentReview": {
+        "score": 82,
+        "colourMatch": 88,
+        "textureMatch": 85,
+        "repetition": 80,
+        "seam": 70,
+        "finishMatch": 85,
+        "blockers": [
+          "Vertical banding / lighting streaks run down the fixed-light preview, reading as a seam or UV-lighting artifact rather than natural surface variation.",
+          "The acanthus scroll repeats with very regular spacing and identical relief; while mouldings are inherently repeating, the candidate shows no natural per-repeat variation, risking a tiled look."
+        ],
+        "observations": [
+          "Top beaded edge, notched flat band, central acanthus/leaf scroll, and lower beaded edge are all present in the candidate and correspond to the supplier reference.",
+          "Overall tone is a uniform dark charcoal grey, consistent with the supplier finish under neutral light.",
+          "Surface relief depth and matte, low-gloss finish match the supplier photographs reasonably well.",
+          "No cross-section or rotation photographs are visible in the supplied crops, so the rebate, sight edge and stated dimensions could not be independently verified; only the flat face is confirmable.",
+          "The recurring leaf motif is an intentional design repeat, not a fine-grain tiling error, but the vertical dark stripes across the preview are not present in the supplier reference and look like a lighting/seam defect."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "patch_width": 512,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "smooth",
+      "directional": false,
+      "gloss": "satin",
+      "preserve": [
+        "single planar face with one genuinely recessed panel",
+        "soft broad satin highlights and diffuse edge falloff",
+        "uniform deep black tone without warm/brown cast",
+        "subtle natural surface variation without tiling"
+      ],
+      "risks": [
+        "recessed panel edges over-sharpened or extra bevels added from unverified trace",
+        "satin sheen rendered too glossy with sharp mirror reflections",
+        "black colour over-saturated or shifted toward brown under warm lighting",
+        "fine directional brush lines or tiled repeat mistaken for real grain",
+        "unsupported rebate/step geometry introduced despite 'Rebate: None'"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.0
+      }
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.7,
+      "reasons": [
+        "Candidate colour is a uniform dark grey that matches the supplier reference strip under neutral fixed lighting.",
+        "Matte, low-gloss finish and surface relief of the candidate correspond to the supplier moulding; no gloss or sheen mismatch is visible.",
+        "Texture scale of the acanthus/leaf motif, the beaded top edge, and the horizontal banding align with the supplier reference in size and proportion.",
+        "The recurring leaf motif is the designed continuous moulding pattern, not a tiling artifact; maximumAutocorrelation (0.1997) and seamError (0.0352) are low, indicating no strong periodic tiling or visible seam line.",
+        "No extracted-trace-only geometry is evident; the visible face, beaded edge, and relief bands are consistent between supplier and candidate."
+      ],
+      "concerns": [
+        "detailError of 0.2209 is moderately high, suggesting some fine-detail loss in the leaf carving versus the supplier photo.",
+        "The regularity of the macro leaf motif could be misread as a repeat; it is judged intentional but should be confirmed against a longer supplier run.",
+        "Supplier reference is a single flat strip; cross-section/rotation evidence is not present in this image, so rebate and sight-edge geometry could not be independently verified."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "999466c510a4bd589b7ebe299ffe993d41ab97994f87fcce5a488a392af65577",
+      "roughness.jpg": "2936bb25580c9caf007c79b1179620f88ba5c2059dc520f60a68985f195bd203",
+      "bump.jpg": "5986948cbd01a351a440dc73b45dc363f4f598bf2592517a1f4b07250a500c70"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

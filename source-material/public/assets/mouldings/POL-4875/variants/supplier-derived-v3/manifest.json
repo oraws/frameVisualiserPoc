@@ -1,0 +1,15 @@
+{
+  "id": "supplier-derived-v3",
+  "sku": "POL-4875",
+  "status": "three-sku-pilot",
+  "method": "deterministic-overlap-quilting-v1",
+  "finishClass": "ornamental",
+  "atlasPixels": [
+    4096,
+    256
+  ],
+  "physicalLengthMm": 1200,
+  "maximumAutocorrelation": 0.3229,
+  "source": "spin/img23.jpg",
+  "activation": "Pilot only; compare in live visualiser before batch promotion"
+}

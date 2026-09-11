@@ -1,0 +1,15 @@
+{
+  "id": "supplier-derived-v3",
+  "sku": "HS9",
+  "status": "three-sku-pilot",
+  "method": "deterministic-overlap-quilting-v1",
+  "finishClass": "stochastic",
+  "atlasPixels": [
+    4096,
+    256
+  ],
+  "physicalLengthMm": 1600,
+  "maximumAutocorrelation": 0.4863,
+  "source": "base-texture.jpg",
+  "activation": "Pilot only; compare in live visualiser before batch promotion"
+}

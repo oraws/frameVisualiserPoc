@@ -1,0 +1,10 @@
+{
+  "id":"sofa-gallery", "name":"3D · Linen Sofa Gallery", "version":1,
+  "image":"/assets/rooms/sofa-gallery/room.jpg", "environment":"/assets/rooms/sofa-gallery/environment.exr",
+  "imageWidth":1800, "imageHeight":1600,
+  "camera":{"position":[3.5,0.5,9],"target":[0,0.05,0],"fov":40},
+  "framePosition":[0,0.8,0.012], "wallZ":0,"floorY":-3,
+  "keyLight":{"position":[-4.3,3.2,3.4],"target":[0,0.65,0],"intensity":2.5,"color":"#fff1dc","width":3,"height":3.8,"powerWatts":2200},
+  "fill":0.18,"environmentIntensity":0.6,"exposure":1,"wallColour":"#d9d1c1",
+  "description":"Angled art wall above a cream linen sofa, with tailored cushions, draped curtains and oak accents. Original geometry with CC0 Poly Haven linen normal texture."
+}

@@ -1,0 +1,678 @@
+{
+  "schemaVersion": 2,
+  "sku": "3826BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T14:50:02.587223+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "3826BK",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "ornate",
+    "widthMm": 63.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "points": [
+      [
+        0.0,
+        16.905
+      ],
+      [
+        3.415,
+        17.143
+      ],
+      [
+        3.533,
+        17.262
+      ],
+      [
+        7.419,
+        17.262
+      ],
+      [
+        7.772,
+        17.024
+      ],
+      [
+        8.714,
+        17.024
+      ],
+      [
+        9.185,
+        17.5
+      ],
+      [
+        10.009,
+        17.5
+      ],
+      [
+        10.245,
+        18.333
+      ],
+      [
+        11.305,
+        19.048
+      ],
+      [
+        12.129,
+        19.167
+      ],
+      [
+        12.953,
+        20.0
+      ],
+      [
+        13.307,
+        20.119
+      ],
+      [
+        14.013,
+        20.0
+      ],
+      [
+        15.191,
+        20.119
+      ],
+      [
+        18.252,
+        18.81
+      ],
+      [
+        19.312,
+        17.976
+      ],
+      [
+        20.607,
+        18.095
+      ],
+      [
+        21.667,
+        18.69
+      ],
+      [
+        22.609,
+        18.571
+      ],
+      [
+        23.08,
+        18.333
+      ],
+      [
+        23.787,
+        18.333
+      ],
+      [
+        24.258,
+        18.81
+      ],
+      [
+        24.847,
+        18.81
+      ],
+      [
+        25.436,
+        18.452
+      ],
+      [
+        25.907,
+        18.452
+      ],
+      [
+        26.26,
+        18.69
+      ],
+      [
+        29.321,
+        18.81
+      ],
+      [
+        30.264,
+        19.167
+      ],
+      [
+        31.206,
+        19.881
+      ],
+      [
+        31.794,
+        20.0
+      ],
+      [
+        33.796,
+        19.881
+      ],
+      [
+        34.856,
+        19.643
+      ],
+      [
+        35.563,
+        19.167
+      ],
+      [
+        36.74,
+        19.167
+      ],
+      [
+        37.8,
+        19.405
+      ],
+      [
+        38.389,
+        20.0
+      ],
+      [
+        38.507,
+        20.595
+      ],
+      [
+        39.095,
+        21.429
+      ],
+      [
+        40.037,
+        21.548
+      ],
+      [
+        40.508,
+        22.024
+      ],
+      [
+        41.804,
+        22.738
+      ],
+      [
+        42.981,
+        22.738
+      ],
+      [
+        44.277,
+        22.024
+      ],
+      [
+        45.101,
+        21.19
+      ],
+      [
+        45.572,
+        21.19
+      ],
+      [
+        46.396,
+        22.143
+      ],
+      [
+        47.338,
+        22.381
+      ],
+      [
+        48.398,
+        23.333
+      ],
+      [
+        49.458,
+        23.69
+      ],
+      [
+        49.929,
+        24.524
+      ],
+      [
+        50.636,
+        25.0
+      ],
+      [
+        52.049,
+        24.881
+      ],
+      [
+        52.755,
+        24.167
+      ],
+      [
+        53.226,
+        23.214
+      ],
+      [
+        53.815,
+        23.214
+      ],
+      [
+        53.933,
+        23.571
+      ],
+      [
+        54.875,
+        24.286
+      ],
+      [
+        55.699,
+        24.405
+      ],
+      [
+        56.17,
+        24.167
+      ],
+      [
+        56.641,
+        24.167
+      ],
+      [
+        56.877,
+        24.405
+      ],
+      [
+        57.583,
+        24.524
+      ],
+      [
+        58.996,
+        24.048
+      ],
+      [
+        59.585,
+        23.452
+      ],
+      [
+        60.409,
+        23.452
+      ],
+      [
+        61.116,
+        23.81
+      ],
+      [
+        61.469,
+        23.81
+      ],
+      [
+        63.0,
+        22.857
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "ornate",
+      "faceCrownMm": 3,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": false,
+      "catalogueTraceAgreement": "conflicts",
+      "verifiedFeatures": [
+        "Deep ornate carved relief (floral, scroll and foliate motifs) visible across black, silver, gold, white and brown finish variants",
+        "Mitered chevron corner joint visible on the leftmost black frame sample",
+        "Rebate / mat-well confirmed by the framed abstract artwork with white mat (stated rebate 14 mm)",
+        "Substantial profile depth consistent with the 63 x 25 mm envelope and 'angled' label"
+      ],
+      "rejectedTraceFeatures": [
+        "Scalloped / wavy top edge in the right-hand profile guide (treated as a segmentation or background artifact, not a real bead)",
+        "Flat planar face implied by the rectangular body of the guide (contradicted by the deep carved relief in the photographs)"
+      ],
+      "observations": [
+        "Supplier photographs show the same ornate profile rendered in multiple finishes (black, silver, gold, white, dark brown), confirming a single carved geometry rather than a flat moulding",
+        "The framed artwork on the right independently confirms the rebate and mat fit within the 63 x 25 mm envelope",
+        "The extracted profile guide (height 25 mm, bumpy top) does not reproduce the carved relief and is therefore treated as an unverified, partially false trace",
+        "No clean isolated cross-section photograph is present; geometry is reconstructed from oblique, chevron and framed views"
+      ],
+      "concerns": [
+        "Catalogue/extracted trace conflicts with the visible carved relief and should not be used to add ridges or a flat face",
+        "Lighting, perspective and finish variation differ between supplier shots, so relief depth is estimated rather than measured",
+        "The 'angled' profile label is not independently corroborated by a clean section view and remains a hypothesis"
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.4,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Series of rounded perimeter ridges along the top edge",
+        "Interior hollows/valleys between ridges",
+        "Low flat plateau segment mid-profile"
+      ],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "Supplier photographs show heavily carved, gilded/painted ornate frame borders (floral and scroll relief), not a clean physical section with a simple wavy bead profile, so individual ridges and hollows in the candidate cannot be independently confirmed.",
+        "The candidate's undulating top edge (multiple lobes plus a long low plateau) is more irregular than the small scalloped catalogue trace at top right, which shows only a few rounded lobes.",
+        "The 14 mm rebate and 25 mm height are consistent with the stated dimensions, but the perimeter ridge geometry is not verifiable against a flat photographed face.",
+        "Risk that the wavy perimeter ridge is an extracted-trace artefact rather than a genuine moulding feature, since no oblique/chevron photo clearly resolves a repeating wavy bead."
+      ],
+      "concerns": [
+        "Cannot distinguish intentional carved relief in the photos from a true wavy cross-section; the candidate may be adding a perimeter ridge to a face that is flat in the photographs.",
+        "Catalogue trace and candidate disagree on the number and spacing of top lobes.",
+        "No clean physical-section or chevron photograph is available to verify each ridge, bead, hollow and step."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v3",
+  "outputVariant": "review-20260911143302-7f265a48",
+  "referenceImages": [
+    "public/assets/mouldings/3826BK/product-section.jpg",
+    "public/assets/mouldings/3826BK/chevron.jpg",
+    "public/assets/mouldings/3826BK/macro.jpg",
+    "public/assets/mouldings/3826BK/framed-reference.jpg",
+    "public/assets/mouldings/3826BK/profile-source.png",
+    "public/assets/mouldings/3826BK/base-texture.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.85,
+    "contrast": 1.05,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 175.0,
+    "roughness_detail": 0.55,
+    "bump_detail": 2.4
+  },
+  "bestMetrics": {
+    "colourDeltaE": 1.9616,
+    "colourSpreadError": 0.0304,
+    "seamError": 0.0739,
+    "maximumAutocorrelation": 0.4218,
+    "detailError": 0.1556,
+    "clippedPixels": 0.2505
+  },
+  "bestFailedGates": [
+    "seamError",
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 3.2
+      },
+      "metrics": {
+        "colourDeltaE": 3.1497,
+        "colourSpreadError": 0.1351,
+        "seamError": 0.0997,
+        "maximumAutocorrelation": 0.5318,
+        "detailError": 0.0557,
+        "clippedPixels": 0.1326
+      },
+      "deterministicScore": 64.8,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 62,
+        "colourMatch": 70,
+        "textureMatch": 64,
+        "repetition": 68,
+        "seam": 58,
+        "finishMatch": 65,
+        "blockers": [
+          "Candidate cross-section shows more stacked bands (wavy bead + dentil row + flat band + second wavy band) than the supplier trace, which reads as a single wavy top edge over a flat body with a rebate; the extra lower bands are not independently confirmed in the supplier photographs.",
+          "A vertical discontinuity/seam is visible near the centre of the fixed-light preview where the wavy bead and dentil phase appear to reset.",
+          "The wavy bead and dentil row repeat with a single rigid period across the whole strip, reading as a tiled macro repeat rather than the varied carved relief seen on the supplier frames."
+        ],
+        "observations": [
+          "Supplier references are a mixed set of ornate carved frames (black, silver, gold, white) plus a tan-filled cross-section trace marked '25'; the trace is treated as an unverified guide and the wavy top edge is the only profile feature clearly supported.",
+          "The candidate is a near-black finish with bronze/gold flecking in the wavy bead, broadly consistent with the dark supplier frame under warm light, but the gold is more saturated in the candidate than visible on the reference black frame.",
+          "Directional relief in the candidate (vertical flutes/dentils) is regular and uniform; the supplier carved frames show irregular, non-periodic ornament, so the candidate's relief scale and variety do not fully match.",
+          "Gloss in the fixed-light preview is moderate with specular highlights along the bead crest, plausible for a lacquered/veneer frame but slightly too uniform.",
+          "The flat band between the two wavy rows in the candidate has no clear counterpart in the supplier cross-section, suggesting unsupported geometry."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.05,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 175,
+          "roughness_detail": 0.55,
+          "bump_detail": 2.4
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.05,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 1.9616,
+        "colourSpreadError": 0.0304,
+        "seamError": 0.0739,
+        "maximumAutocorrelation": 0.4218,
+        "detailError": 0.1556,
+        "clippedPixels": 0.2505
+      },
+      "deterministicScore": 71.5,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 54,
+        "colourMatch": 62,
+        "textureMatch": 60,
+        "repetition": 34,
+        "seam": 46,
+        "finishMatch": 58,
+        "blockers": [
+          "Strong periodic tiling: the same scroll/leaf macro motif and the wavy bead row recur at near-identical regular intervals across the strip, reading as a tiled repeat rather than a continuous moulding.",
+          "Profile/geometry risk: the rendered candidate shows deep, elaborate carved relief that is not clearly corroborated by the supplier cross-section trace (which reads as a simpler face with limited edge treatment); some geometry may be unsupported.",
+          "Visible horizontal seam/banding in the atlas and fixed-light preview breaks the continuity of the moulding face."
+        ],
+        "observations": [
+          "Supplier references show multiple ornate carved frames (black, silver, gold, white) plus a framed artwork and a 25-unit cross-section trace; the black chevron corner confirms a carved profile exists, but the trace suggests a flatter face than the candidate's deep relief.",
+          "The fixed-light preview is very dark with low overall contrast; bronze/gold highlights sit only in the wavy bead, leaving the upper scroll field nearly black and losing detail.",
+          "The repeating unit is highly regular in both the unlit atlas and the lit preview, indicating a short tile width rather than natural variation.",
+          "A horizontal lighter band (seam) is visible mid-strip in both the atlas and the preview.",
+          "Directional grain/brushing is not evident; surface reads as uniform carved relief with a soft sheen."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.55,
+          "contrast": 1.04,
+          "patch_width": 512,
+          "overlap": 160,
+          "roughness_mid": 185,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.6
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.55,
+        "contrast": 1.04,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 3.1497,
+        "colourSpreadError": 0.1665,
+        "seamError": 0.0937,
+        "maximumAutocorrelation": 0.6081,
+        "detailError": 0.0743,
+        "clippedPixels": 0.1856
+      },
+      "deterministicScore": 61.5,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 48,
+        "colourMatch": 62,
+        "textureMatch": 55,
+        "repetition": 25,
+        "seam": 55,
+        "finishMatch": 60,
+        "blockers": [
+          "Strong tiled repeat: the wavy bead and the vertical fluting/leaf motifs recur at regular intervals across the entire strip in both the unlit atlas and the fixed-light preview.",
+          "Texture motif mismatch: candidate shows a simple wavy bead plus a row of vertical fluting, whereas the supplier frames display deep ornate scrollwork and foliate carving; the relief scale and motif do not correspond.",
+          "A horizontal flat band / seam line runs through the atlas, breaking the vertical continuity of the profile."
+        ],
+        "observations": [
+          "Supplier references are a set of ornate picture frames (silver, gold, distressed white, dark carved) plus a tan cross-section trace with a scalloped/wavy crest and a flat face, dimensioned 25.",
+          "The wavy/scalloped crest in the candidate is supported by the carved bottom edge of the dark frame in the supplier photos, so that profile feature is not purely trace-derived.",
+          "The flat face of the moulding is consistent with the planar frame faces shown; no extra rebate or step is visible in the photos, so none should be added.",
+          "Colour is a near-black body with bronze/gold highlights in the wave troughs; this is closest to the dark carved frame but is more uniform and darker than the varied supplier set.",
+          "Fixed-light preview shows a semi-gloss specular response along the wave crest with metallic gold in the troughs; supplier finishes range from matte to high-gloss gold, so gloss is only partially matched.",
+          "The repeating macro features (bead period and fluting period) are regular and evenly spaced, indicating a tiled texture rather than natural variation.",
+          "A horizontal band of flat, low-relief material separates the upper and lower carved rows, reading as a seam or profile step."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.7,
+          "contrast": 1.0,
+          "patch_width": 512,
+          "overlap": 192,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "patch_width": 512,
+        "overlap": 192,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 2.7859,
+        "colourSpreadError": 0.0908,
+        "seamError": 0.0888,
+        "maximumAutocorrelation": 0.4908,
+        "detailError": 0.0437,
+        "clippedPixels": 0.2163
+      },
+      "deterministicScore": 67.6,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 57,
+        "textureMatch": 64,
+        "repetition": 82,
+        "seam": 70,
+        "finishMatch": 59,
+        "blockers": [
+          "Profile cross-section is not independently confirmed in the supplier photographs; the tan catalogue trace (wavy top + flat body, dim 25) conflicts with the candidate's added fluting/dentil row and double carved-motif bands, which are supported only by the trace and must be omitted or re-verified against a physical section photo.",
+          "Candidate body is rendered near-black with gilded troughs, but the supplier set also includes bright silver, white and gold finishes; the dark base risks over-darkening the face and is not clearly matched to a single reference finish."
+        ],
+        "observations": [
+          "Supplier references show ornate carved frames (black, silver, gold, white) and a black carved corner; the candidate's carved relief and scalloped bead are broadly consistent with that carved family.",
+          "The scalloped/wavy bead with bronze-gold highlights in the troughs recurs at a regular interval, which is an intentional continuous moulding repeat rather than a tiled texture defect.",
+          "A horizontal flat band runs through the middle of the atlas (seamError 0.0888, maxAutoCorrelation 0.4908); it reads as a possible seam/planar break that should be blended.",
+          "Fixed-light preview shows the gilded accents lighting up correctly in the troughs while the body stays matte-dark, giving a plausible two-tone carved finish.",
+          "colourDeltaE 2.7859 indicates a moderate but non-trivial colour offset from the reference finish."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.7,
+          "contrast": 1.05,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "satin",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "deep carved relief with floral/scroll motifs",
+        "brushed gold-leaf accents embedded in the carving",
+        "linear brushed grain running along the moulding length",
+        "matte-black base with soft satin sheen",
+        "horizontal ridge/bead lines visible in close-up"
+      ],
+      "risks": [
+        "PROFILE: cross-section trace shows a scalloped/wavy top edge and a 12-unit step that are not confirmed by the physical photos; the visible face is largely planar with edge beads only \u2014 do not add unsupported wavy geometry",
+        "PROFILE: rebate/step depth (12) and overall 25x63 envelope must be matched to the chevron and oblique views, not the extracted outline",
+        "TEXTURE: risk of tiling the carved relief into a regular repeat; the relief is a continuous hand-carved pattern",
+        "TEXTURE: over-smoothing would erase the fine brush lines and gold flecks",
+        "GLOSS: do not classify as gloss from bright edge highlights on curved beads; body sheen is satin"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "roughness_mid": 175,
+        "roughness_detail": 0.55,
+        "bump_detail": 3.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "The candidate preview shows the same wavy scallop/bead row duplicated vertically (top half and bottom half are near-identical), which is characteristic of a tiled texture repeat rather than a single moulding cross-section.",
+        "A flat horizontal band runs across the middle of the candidate, reading as a seam/step that does not correspond to any visible feature in the supplier cross-section or frame photographs.",
+        "The supplier cross-section (labelled 25) depicts a single stepped profile with one scalloped crest; the candidate instead presents two stacked crest rows, i.e. unsupported geometry.",
+        "Colour/finish mismatch: the supplier cross-section is a light tan and the reference frames are predominantly silver/gold/white with one dark frame, whereas the candidate is a near-black surface with scattered gold flecks and a gloss that does not clearly match any single supplier finish.",
+        "Texture scale and relief in the candidate (fine speckled grain plus large scallops) do not align with the smooth carved relief seen in the supplier frame close-ups."
+      ],
+      "concerns": [
+        "Obvious vertical repeat of the bead pattern (tiled texture).",
+        "Visible horizontal seam/flat band in the middle of the preview.",
+        "Profile geometry contains a duplicated crest row not present in the verified supplier cross-section.",
+        "Colour and gloss appear darker and more metallic-flecked than the supplier tan cross-section and light reference frames.",
+        "Texture scale/relief inconsistent with the carved supplier mouldings."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "2f04e07a3e29e19d799baf1feaa3de7564836c5635bea00361a542c366f782ed",
+      "roughness.jpg": "773ca17fb79a3c1a5260045709100ab6695344c40c74b41d46026206b58becdc",
+      "bump.jpg": "9507d7ab68aac5fbff2047278e067ce6763c14b12aca1d01b1dda9de2926339e"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

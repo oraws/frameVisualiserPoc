@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4875",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "ornate",
+  "widthMm": 97.0,
+  "depthMm": 49.0,
+  "rebateMm": 16.0,
+  "points": [
+    [
+      0.0,
+      15.0
+    ],
+    [
+      2.0,
+      15.0
+    ],
+    [
+      3.5,
+      21.0
+    ],
+    [
+      5.0,
+      26.0
+    ],
+    [
+      7.0,
+      27.0
+    ],
+    [
+      9.0,
+      22.0
+    ],
+    [
+      12.0,
+      19.0
+    ],
+    [
+      16.0,
+      19.0
+    ],
+    [
+      20.0,
+      25.0
+    ],
+    [
+      24.0,
+      32.0
+    ],
+    [
+      29.0,
+      38.0
+    ],
+    [
+      34.0,
+      43.0
+    ],
+    [
+      40.0,
+      46.0
+    ],
+    [
+      46.0,
+      48.0
+    ],
+    [
+      51.0,
+      48.0
+    ],
+    [
+      56.0,
+      45.0
+    ],
+    [
+      61.0,
+      40.0
+    ],
+    [
+      66.0,
+      34.0
+    ],
+    [
+      71.0,
+      29.0
+    ],
+    [
+      75.0,
+      28.0
+    ],
+    [
+      79.0,
+      32.0
+    ],
+    [
+      83.0,
+      35.0
+    ],
+    [
+      86.0,
+      31.0
+    ],
+    [
+      89.0,
+      25.0
+    ],
+    [
+      92.0,
+      22.0
+    ],
+    [
+      95.0,
+      17.0
+    ],
+    [
+      97.0,
+      16.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "ornate",
+    "faceCrownMm": 3.0,
+    "innerEdgeRadiusMm": 1.2,
+    "outerEdgeRadiusMm": 1.4,
+    "flatFaceConfirmed": false,
+    "catalogueTraceAgreement": "uncertain",
+    "verifiedFeatures": [
+      "High-relief carved leaf and scroll motif on the central field",
+      "Stippled / dotted ground texture behind the carving",
+      "Vertical fluting (parallel reeded grooves) on the left edge",
+      "Beaded / rope-moulded edge on the right side",
+      "Glossy dark finish with strong specular highlights on raised edges"
+    ],
+    "rejectedTraceFeatures": [
+      "Grey speckled foreground mass at the bottom (segmentation / background artifact, not a profile ridge)",
+      "No independent flat planar face confirmed; not reclassified as flat"
+    ],
+    "observations": [
+      "Lower panel is a catalogue/extracted image showing an ornate carved moulding, not a flat sample",
+      "Relief is multi-level: raised scrolls, recessed stippled ground, fluted and beaded margins",
+      "Dark, high-gloss surface; directional highlights follow the carved contours",
+      "Stated envelope 97 x 49 mm with 16 mm rebate preserved"
+    ],
+    "concerns": [
+      "Top-row supplier cross-section / rotation photographs are largely cropped or illegible, limiting independent confirmation of the true section",
+      "Foreground grey object obscures the lower profile, so rebate and base geometry cannot be fully verified",
+      "No clear red extracted trace present to compare; catalogue agreement left uncertain"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.42,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "central smooth convex hump (candidate shows a rounded bulge where the photograph shows a flat stippled panel with carved leaf relief)",
+      "left perimeter peak/ridge at the inner sight edge",
+      "right perimeter peak/ridge at the outer edge",
+      "rebate drop of 16 mm (no clear rebate step visible in the oblique photograph)"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate cross-section is a smooth, continuous convex hump in the centre, but the supplier photograph shows a relatively flat central face carrying a stippled/dotted ground and a carved acanthus/scroll motif, not a uniform rounded convex profile.",
+      "The left and right vertical bands in the photograph (fluted rib on the left, repeating bead/oval row on the right) are discrete moulded strips, whereas the candidate renders them as small isolated peaks on a single continuous curve; the relationship between these strips and the central face is not confirmed by a true section or chevron view.",
+      "The 16 mm rebate drop is annotated on the guide but no corresponding step or rebate is independently visible in the oblique photograph.",
+      "No supplier profile label is supplied and no clean physical-section or chevron rotation is provided, so the candidate geometry cannot be independently verified against a true cross-section."
+    ],
+    "concerns": [
+      "A flat photographed face (central stippled panel) appears to have gained a convex perimeter/central ridge in the candidate trace.",
+      "The foreground grey plaster-like mass and the small white cut-out in the photograph obscure the lower edge and rebate, preventing confirmation of the stated 97 x 49 mm and 16 mm rebate dimensions.",
+      "Lighting is low-key and the surface is dark, making relief depth (convex vs flat) hard to confirm; the candidate's smooth hump may be an artefact of the extracted trace rather than real geometry.",
+      "Recommend obtaining a true physical-section or chevron/oblique rotation photograph before approving the candidate profile."
+    ]
+  }
+}

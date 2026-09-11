@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-4211",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-10T12:20:05.574041+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Rebuild the physical moulding cross-section, including the flat or curved face, inner sight edge, outer edge, rebate and stated dimensions. Compare a rendered candidate with the supplier evidence and correct geometry that creates ridges, hollows or bevels absent from the real moulding.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-4211",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 54.0,
+    "depthMm": 20.0,
+    "rebateMm": 14.0,
+    "points": [
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.147,
+        19.825
+      ],
+      [
+        0.35,
+        20.0
+      ],
+      [
+        27.05,
+        20.0
+      ],
+      [
+        53.75,
+        20.0
+      ],
+      [
+        54.0,
+        19.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "observations": [
+        "Supplier profile label is 'flat' and the rotation photographs show a uniform planar face with no ridge, hollow, bevel or crown; the face reads as a single flat plane.",
+        "Cross-section (lower panel) confirms a flat front face over a straight vertical body, consistent with a 54 x 20 mm flat stock with a 14 mm rebate at the back.",
+        "Finish is a light oak/ash veneer with fine, tight directional grain; grain runs horizontally in the rotation shots and vertically in the face shot, which is only an orientation difference, not a texture change.",
+        "Surface relief is minimal (low gloss, near-flat veneer); no moulded profile features are present to model.",
+        "A greenish speckled band is visible beneath the veneer in the cross-section, consistent with the substrate/core or rebate backing rather than a moulded edge."
+      ],
+      "concerns": [
+        "Do not introduce any crown, bevel, or hollow in the candidate; the real moulding is a flat face with square (or minimally broken) sight edges, so faceCrownMm is held at 0 and edge radii at the 0.2 mm minimum.",
+        "The green speckled region in the cross-section is substrate/rebate backing, not a coloured moulding edge; the candidate must keep the visible face as the light oak veneer only.",
+        "The top row is a three-panel tiled rotation capture; remove the panel seams and tiling while retaining the natural fine grain variation.",
+        "Preserve the supplied envelope (54 x 20 mm, 14 mm rebate) and do not let lighting/perspective in the supplier photos be misread as a curved profile."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.7,
+      "reasons": [
+        "Supplier profile label is 'flat' and the candidate cross-section shows a flat rectangular face with no ridges, hollows or bevels, matching a flat moulding.",
+        "A rebate is present on the inner sight edge in the candidate, consistent with the supplier's stated rebate of 14 mm.",
+        "The overall rectangular outline is consistent with flat 54 x 20 mm stock rather than a shaped profile.",
+        "No extra geometry (curves, coves, beads) is introduced that would be absent from the real flat moulding."
+      ],
+      "concerns": [
+        "The 'REBATE DROP 14 mm' dimension line visually spans close to the full depth of the section, making it hard to confirm the 14 mm rebate against the 20 mm depth from the diagram alone.",
+        "The candidate cross-section is rendered as a solid tan block, so finish, grain direction, gloss and surface relief cannot be verified from it; texture must be judged from the supplier photos separately.",
+        "Supplier photos show differing grain orientations (horizontal in the top strip, vertical in the lower-left sample), which is likely just rotation but should be confirmed against the intended install direction."
+      ]
+    }
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "review-20260910120700-368d9572",
+  "referenceImages": [
+    "source-material/mainline/POL-4211/spin/img20.jpg",
+    "source-material/mainline/POL-4211/spin/img21.jpg",
+    "source-material/mainline/POL-4211/spin/img22.jpg",
+    "source-material/mainline/POL-4211/spin/img23.jpg",
+    "source-material/mainline/POL-4211/spin/img24.jpg",
+    "source-material/mainline/POL-4211/spin/img25.jpg",
+    "source-material/mainline/POL-4211/spin/img26.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 3,
+    "colour_strength": 0.9,
+    "contrast": 1.0,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.0
+  },
+  "bestMetrics": {
+    "colourDeltaE": 0.3697,
+    "colourSpreadError": 0.2602,
+    "seamError": 0.0386,
+    "maximumAutocorrelation": 0.2132,
+    "detailError": 0.0037,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 0.9348,
+        "colourSpreadError": 0.3068,
+        "seamError": 0.0361,
+        "maximumAutocorrelation": 0.412,
+        "detailError": 0.0321,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 83.7,
+      "failedGates": [],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 84,
+        "textureMatch": 58,
+        "repetition": 44,
+        "seam": 56,
+        "finishMatch": 69,
+        "blockers": [
+          "Distinctive quarter-sawn / arched grain motif repeats at regular horizontal intervals in both the unlit atlas and the fixed-light preview, reading as a tiled pattern rather than natural wood.",
+          "Vertical seam lines are visible across the unlit atlas (column boundaries), indicating incomplete tiling / seam blending.",
+          "No 3D moulding cross-section is present in the candidate; the profile review (sight edge, rebate, bevel) cannot be verified against supplier cross-section photos."
+        ],
+        "observations": [
+          "Supplier crops show a pale, low-contrast oak/ash with fine, mostly straight horizontal grain and subtle natural variation.",
+          "Candidate colour is a close match (low DeltaE) but slightly warmer/more saturated than the supplier's neutral tan.",
+          "The candidate's grain figure is more pronounced and periodic than the supplier's, with a repeating wavy 'cat's-eye' band that does not appear in the references.",
+          "Fixed-light preview shows a left-to-right brightness gradient consistent with lighting, not a material defect.",
+          "Surface relief in the candidate is stronger than the flat, low-relief finish implied by the supplier photos."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.88,
+          "contrast": 0.98,
+          "patch_width": 576,
+          "overlap": 192,
+          "roughness_mid": 175,
+          "roughness_detail": 0.45,
+          "bump_detail": 1.6
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.88,
+        "contrast": 0.98,
+        "patch_width": 576,
+        "overlap": 192,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.45,
+        "bump_detail": 1.6
+      },
+      "metrics": {
+        "colourDeltaE": 0.5151,
+        "colourSpreadError": 0.3022,
+        "seamError": 0.0347,
+        "maximumAutocorrelation": 0.1824,
+        "detailError": 0.0165,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 90.2,
+      "failedGates": [],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 78,
+        "textureMatch": 68,
+        "repetition": 38,
+        "seam": 44,
+        "finishMatch": 70,
+        "blockers": [
+          "Distinctive wavy/curved grain motif repeats at regular horizontal intervals across the atlas (visible tiling), not present as a periodic pattern in the supplier crops.",
+          "Vertical seam lines are visible at regular column boundaries in both the unlit atlas and the fixed-light preview.",
+          "No 3D moulding cross-section (sight edge, rebate, bevel, curved face) is present in the candidate; only a flat texture is rendered, so the requested profile geometry cannot be validated and any expected ridges/hollows are absent."
+        ],
+        "observations": [
+          "Supplier references show a pale tan oak/ash with fine, predominantly straight horizontal grain and low relief; the candidate's grain is more wavy and patterned than the reference.",
+          "The fixed-light preview exhibits a strong top-to-bottom luminance gradient (darker upper band) that is a lighting/preview artifact rather than a material colour property; it exaggerates perceived colour mismatch.",
+          "Colour hue and value of the atlas are broadly consistent with the supplier pale-oak tone under neutral light.",
+          "Texture scale (grain line spacing) is in the right ballpark, but the directional character is less straight and more undulating than the supplier finish.",
+          "Surface relief/bump appears low and uniform, matching a flat sanded wood face rather than a moulded profile."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 640,
+          "overlap": 240,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 640,
+        "overlap": 240,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 0.3731,
+        "colourSpreadError": 0.2669,
+        "seamError": 0.0359,
+        "maximumAutocorrelation": 0.3486,
+        "detailError": 0.0031,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 86.9,
+      "failedGates": [],
+      "agentReview": {
+        "score": 76,
+        "colourMatch": 92,
+        "textureMatch": 84,
+        "repetition": 68,
+        "seam": 88,
+        "finishMatch": 80,
+        "blockers": [
+          "No moulding cross-section geometry is present in the candidate preview; only a flat wood face is shown, so the required sight edge, rebate and outer edge cannot be verified against the supplier profile.",
+          "Faint vertical atlas seams are visible in the unlit atlas (e.g. near the left edge and right third), indicating patch boundaries that may read as seams at scale."
+        ],
+        "observations": [
+          "Colour is a consistent light honey/tan with low deltaE (0.3731) and low spread error (0.2689), matching the supplier crops well.",
+          "Grain is fine, horizontal and directional, consistent with the supplier finish; this is intentional brushing/grain rather than a tiled macro repeat.",
+          "maximumAutocorrelation of 0.3486 indicates moderate periodicity in the fine grain, but no distinctive knot or macro feature repeats at a regular interval.",
+          "Fixed-light preview shows a left-to-right lighting gradient (darker right), which is a lighting artifact, not a material defect.",
+          "seamError 0.0359 and detailError 0.0031 are low, supporting a clean tiling at the sampled scale.",
+          "Surface relief/bump appears subtle; gloss and relief are plausible for a flat wood veneer but cannot be confirmed for a moulded profile."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.0
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 0.3697,
+        "colourSpreadError": 0.2602,
+        "seamError": 0.0386,
+        "maximumAutocorrelation": 0.2132,
+        "detailError": 0.0037,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 90.4,
+      "failedGates": [],
+      "agentReview": {
+        "score": 71,
+        "colourMatch": 78,
+        "textureMatch": 74,
+        "repetition": 62,
+        "seam": 66,
+        "finishMatch": 72,
+        "blockers": [
+          "Visible vertical tile seams in the unlit atlas (middle panel) break the surface into ~4 columns; these read as hard edges under fixed light.",
+          "Horizontal grain bands in the atlas show a quasi-periodic wavy repeat across tiles, risking a tiled look on large surfaces.",
+          "Fixed-light preview shows a strong top-to-bottom luminance gradient (darker top and bottom, brighter mid-band) that is a lighting/shading artifact and can be mistaken for a moulding hollow or bevel."
+        ],
+        "observations": [
+          "No moulding cross-section, sight edge, rebate or bevel is present in any panel; the candidate is a flat wood surface, so the reported 'ridges/hollows/bevels' profile fault is not corroborated by visible evidence.",
+          "Base hue and value of the candidate (pale tan oak/ash) align well with the supplier crops; the fixed-light gradient is the main colour deviation.",
+          "Grain direction (horizontal) and fine scale match the supplier references; the fine directional grain is intentional and should not be removed.",
+          "Supplier crops show natural tonal variation and occasional figure; the candidate is comparatively uniform, reducing realism.",
+          "Seam metric is limited by the atlas tiling rather than by a true material seam; overlap/patch blending is the likely fix."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.9,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 168,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.0
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "natural light-oak/ash veneer, fine linear grain, low relief",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "fine horizontal grain lines",
+        "light warm tan base tone",
+        "subtle low-contrast tonal banding",
+        "uniform matte surface without specular hotspots"
+      ],
+      "risks": [
+        "raising contrast or colour_strength may flatten the delicate grain into a uniform wash",
+        "excessive bump_detail can invent ridges or hollows not present in the flat face",
+        "high gloss would create false sheen inconsistent with the diffuse supplier surface",
+        "fine directional grain must not be mistaken for a tiled repeat; avoid periodic tiling artifacts"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "Overall hue and warm oak tone of the candidate are close to the supplier references (low colourDeltaE ~0.39), and the fine horizontal directional grain in the upper band is consistent with the supplier finish.",
+        "Surface relief and gloss under fixed lighting appear plausible and free of clipped highlights (clippedPixels 0.0).",
+        "No gross geometry or moulding profile is visible in this flat texture preview, so the profile fault cannot be confirmed from this image alone."
+      ],
+      "concerns": [
+        "A faint vertical discontinuity/seam is visible near the left edge of the candidate panel, indicating a tiling boundary rather than a continuous surface.",
+        "The lower half of the candidate shows a wavy grain arc pattern that recurs at fairly regular horizontal intervals, a distinctive macro feature not present in the same form in the supplier swatches, suggesting a tiled repeat rather than natural variation.",
+        "Texture irregularity and grain scale in the candidate are more uniform/periodic than the more random, finer striations seen across the three supplier references, reducing natural variation.",
+        "The bottom comparison strip is noticeably darker, raising a question about colour stability under different lighting that should be verified against the supplier's neutral reference."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "7012235b74b5c847701ddff6e919551f4401725351aebdb5b1d8ac6e867f2a8b",
+      "roughness.jpg": "38cc063901e07d67e10d80578055ff2f47f729809078bbced02605fa52f2ad56",
+      "bump.jpg": "13e8d4e052d31ba0b90fb58632b674ad825d1b4a55e000b56be6ecc44e432679"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

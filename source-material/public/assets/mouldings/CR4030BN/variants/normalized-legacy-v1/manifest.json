@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR4030BN",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/CR4030BN/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg"
+  ]
+}

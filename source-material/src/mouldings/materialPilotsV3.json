@@ -1,0 +1,17 @@
+{
+  "HS9": {
+    "variant": "supplier-derived-v3",
+    "physicalLengthMm": 1600,
+    "finishClass": "stochastic"
+  },
+  "3826BK": {
+    "variant": "supplier-derived-v3",
+    "physicalLengthMm": 1200,
+    "finishClass": "ornamental"
+  },
+  "POL-4875": {
+    "variant": "supplier-derived-v3",
+    "physicalLengthMm": 1200,
+    "finishClass": "ornamental"
+  }
+}

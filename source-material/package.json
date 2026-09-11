@@ -14,6 +14,8 @@
     "batch:mainline": "node tools/mainline-batch-importer/index.mjs && node tools/mainline-batch-importer/build-catalog-module.mjs && .venv/bin/python tools/mainline-profile-analyser/build_mainline_multiframe_material.py && node tools/validate-moulding-assets.mjs",
     "batch:mainline:fetch": "node tools/mainline-batch-importer/index.mjs",
     "materials:mainline": ".venv/bin/python tools/mainline-profile-analyser/build_mainline_multiframe_material.py",
+    "materials:pilot-v3": ".venv/bin/python tools/moulding-material-pilot/build_v3.py",
+    "materials:quality": ".venv/bin/python tools/moulding-material-pilot/quality_pipeline.py",
     "validate:moulding-assets": "node tools/validate-moulding-assets.mjs",
     "catalog:mainline": "node tools/mainline-batch-importer/build-catalog-module.mjs",
     "analyse:mainline-profile": "python3 tools/mainline-profile-analyser/analyse.py",
@@ -31,7 +33,9 @@
     "build:mainline-trace-editors": "node tools/mainline-profile-analyser/build_manual_trace_editors.mjs",
     "test:profile-pipeline": "python3 tools/mainline-profile-analyser/test_profile_pipeline.py",
     "test:geometry": "node tools/test-profile-geometry.mjs",
-    "calibrate:stock-room": ".venv-sam2/bin/python tools/room-calibrator/analyse_room.py --image source-material/rooms/stock-pilot/room.jpg --output public/assets/rooms/stock-pilot/calibration --wall-left 0.05 --wall-top 0.25 --wall-right 0.40 --wall-bottom 0.74 --quad-tl-x 0.08 --quad-tl-y 0.34 --quad-tr-x 0.35 --quad-tr-y 0.39 --quad-br-x 0.35 --quad-br-y 0.69 --quad-bl-x 0.08 --quad-bl-y 0.78"
+    "calibrate:stock-room": ".venv-sam2/bin/python tools/room-calibrator/analyse_room.py --image source-material/rooms/stock-pilot/room.jpg --output public/assets/rooms/stock-pilot/calibration --wall-left 0.05 --wall-top 0.25 --wall-right 0.40 --wall-bottom 0.74 --quad-tl-x 0.08 --quad-tl-y 0.34 --quad-tr-x 0.35 --quad-tr-y 0.39 --quad-br-x 0.35 --quad-br-y 0.69 --quad-bl-x 0.08 --quad-bl-y 0.78",
+    "room:enhance": ".venv-comfy/bin/python tools/ai-room-enhancer/run_workflow.py",
+    "room:enhance:validate": ".venv-comfy/bin/python tools/ai-room-enhancer/validate_output.py"
   },
   "dependencies": {
     "@astrojs/react": "latest",

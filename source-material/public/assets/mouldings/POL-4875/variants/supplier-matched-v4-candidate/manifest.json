@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4875",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "inputVariant": "supplier-derived-v3",
+  "outputVariant": "supplier-matched-v4-candidate",
+  "referenceImages": [
+    "public/assets/mouldings/POL-4875/source-product.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.84,
+    "contrast": 1.01,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 188,
+    "roughness_detail": 0.58,
+    "bump_detail": 3.2
+  },
+  "bestMetrics": {
+    "colourDeltaE": 11.0204,
+    "colourSpreadError": 0.383,
+    "seamError": 0.0312,
+    "maximumAutocorrelation": 0.1807,
+    "detailError": 0.1588,
+    "clippedPixels": 0.112
+  },
+  "bestFailedGates": [
+    "colourDeltaE",
+    "colourSpreadError",
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.72,
+        "contrast": 1.02,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 188,
+        "roughness_detail": 0.58,
+        "bump_detail": 3.2
+      },
+      "metrics": {
+        "colourDeltaE": 19.2539,
+        "colourSpreadError": 0.4278,
+        "seamError": 0.0388,
+        "maximumAutocorrelation": 0.1955,
+        "detailError": 0.2866,
+        "clippedPixels": 0.0572
+      },
+      "deterministicScore": 45.1,
+      "failedGates": [
+        "colourDeltaE",
+        "colourSpreadError",
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.84,
+        "contrast": 1.01,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 188,
+        "roughness_detail": 0.58,
+        "bump_detail": 3.2
+      },
+      "metrics": {
+        "colourDeltaE": 11.0204,
+        "colourSpreadError": 0.383,
+        "seamError": 0.0312,
+        "maximumAutocorrelation": 0.1807,
+        "detailError": 0.1588,
+        "clippedPixels": 0.112
+      },
+      "deterministicScore": 55.3,
+      "failedGates": [
+        "colourDeltaE",
+        "colourSpreadError",
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": false,
+    "model": null,
+    "connectionError": null,
+    "analyst": null,
+    "reviewer": null
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "5c27872bba1a272a85d2e204c455a41f7a6adc0323f6e6a9d6a6bb3d4ff01251",
+      "roughness.jpg": "0568efb9c6f59f79b28731717da069a26f18f0679c76ad2632ea52e38f9dd29b",
+      "bump.jpg": "8e0b84576f38ad744f8b9470dc975f48ae7d4c2819e7a92e544a8258fc94d706"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}
