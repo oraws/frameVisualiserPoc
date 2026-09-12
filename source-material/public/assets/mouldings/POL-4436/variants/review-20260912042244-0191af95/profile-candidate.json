@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4436",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 30.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      20.0
+    ],
+    [
+      0.147,
+      29.79
+    ],
+    [
+      0.35,
+      30.0
+    ],
+    [
+      14.975,
+      30.0
+    ],
+    [
+      29.6,
+      30.0
+    ],
+    [
+      30.0,
+      29.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.4,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar brushed-gold face confirmed across all EXACT SKU rotation photographs",
+      "Fine directional brushing/grain running along the length (intentional finish, not a tiled repeat)",
+      "Outer sight edge with a small rounded break and a 10 mm rebate notch visible in the lower section",
+      "Stated envelope 30 x 30 mm with 10 mm rebate consistent with the visible cross-section"
+    ],
+    "rejectedTraceFeatures": [
+      "Vertical bright line near the right edge of the lower guide treated as a specular highlight on a flat face, not a ridge or bead",
+      "No hollow, bead, or stepped profile accepted, as none is independently visible in the rotation photographs"
+    ],
+    "observations": [
+      "Top rotation strip shows a uniform matte-to-satin brushed brass/gold surface with consistent directional grain and no macro ridges",
+      "Lower catalogue/section image shows a flat face seated on a dark substrate with a white rebate cut-out at the lower right, matching the stated 10 mm rebate",
+      "Colour is a warm yellow-gold; gloss is low (brushed), with natural tonal variation rather than tiling seams",
+      "Supplier profile label 'flat' is corroborated by the physical rotation evidence"
+    ],
+    "concerns": [
+      "The vertical highlight in the lower guide could be misread as a bevel or ridge; it is interpreted as a lighting highlight on a planar face",
+      "Top-strip lighting and perspective vary slightly between rotation frames; grain direction appears consistent, so no repeat fault is concluded",
+      "Edge radii are estimated from the small section image and are not independently measurable to high precision"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate_drop_10mm_dimension",
+      "inner_sight_edge_step"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Top rotation strip and left vertical photo both show a single flat brushed-gold face with fine directional grain and no perimeter ridge, which is consistent with the candidate's planar top face.",
+      "The left vertical photo shows a vertical groove/step near the right edge (edge treatment) that the candidate represents only as a flat edge plus a left-side rebate tab; the exact correspondence of that vertical feature to the candidate's inner sight edge is not unambiguous.",
+      "The 10 mm rebate drop is taken from the advisory guide; the dark substrate notch at the base of the left photo suggests a rebate exists but does not independently confirm the 10 mm value or the precise step geometry.",
+      "No true physical cross-section or chevron photo of the exact SKU is present (the chevron image is labelled context-only), so the rebate and sight-edge step cannot be fully verified against visible evidence."
+    ],
+    "concerns": [
+      "Candidate may be omitting or misplacing the vertical edge bead/step visible in the left supplier photo.",
+      "Rebate depth (10 mm) and inner sight-edge step are guide-derived and not independently confirmed in a clear section photograph.",
+      "Texture in the candidate is a flat tan fill rather than the brushed directional grain seen in the supplier photos; finish/brushing match should be re-checked under neutral lighting."
+    ]
+  }
+}

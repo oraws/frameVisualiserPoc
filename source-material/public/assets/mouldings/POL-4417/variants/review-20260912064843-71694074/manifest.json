@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-4417",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T06:55:32.485902+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-4417",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 30.0,
+    "depthMm": 16.0,
+    "rebateMm": 10.0,
+    "points": [
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.147,
+        15.825
+      ],
+      [
+        0.35,
+        16.0
+      ],
+      [
+        15.05,
+        16.0
+      ],
+      [
+        29.75,
+        16.0
+      ],
+      [
+        30.0,
+        15.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "Single planar face across all exact-SKU rotation photographs",
+        "Fine directional grain / brushing running along the panel length",
+        "Uniform dark charcoal colour with natural tonal variation",
+        "Rebate of 10 mm per supplier dimension envelope (50 x 16 mm)"
+      ],
+      "rejectedTraceFeatures": [
+        "Green base block in lower catalogue trace (segmentation/background, not a physical step)",
+        "White notch at lower-right of catalogue trace (background cut-out, not a rebate or hollow)",
+        "Any implied ridge, bead, bevel or step suggested only by the extracted profile outline"
+      ],
+      "observations": [
+        "Top-row exact-SKU rotation images present a flat, continuous face with only fine vertical grain; no macro relief, crown, or step is visible at any rotation angle",
+        "Supplier profile label explicitly states 'flat', consistent with the photographic evidence",
+        "Lighting and perspective in supplier shots are even; no highlight or shadow can be read as a moulded ridge",
+        "Lower panel is a catalogue/extracted guide and contains non-physical elements (green base, white notch) that do not appear in any authoritative photograph"
+      ],
+      "concerns": [
+        "Catalogue trace must not be used to introduce geometry; it conflicts with the flat photographic evidence and is treated as an unverified hypothesis",
+        "Edge radii are not independently measurable from the supplied flat-face photographs; minimum values retained as a nominal edge break only",
+        "If a rebate is required, it is taken from the supplier dimension text, not from any visible step in the images"
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.7,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "Supplier rotation photographs show a single flat charcoal/charcoal-grey brushed face with fine vertical directional grain; the candidate cross-section renders one planar face consistent with that, with no added bead, ridge or hollow.",
+        "The only non-planar element in the candidate is the 10 mm rebate drop on the inner sight edge and the thin outer-edge line, which represent legitimate edge treatment of a flat board rather than a perimeter ridge on a flat photographed face.",
+        "The directional grain in the candidate is fine and continuous; no regular-interval macro feature or tiled repeat is present, so the brushing is not a false repeat.",
+        "The catalogue/extracted guide (left) is advisory and its notch corresponds to the rebate step; no feature in the candidate is supported solely by the trace."
+      ],
+      "concerns": [
+        "The 10 mm rebate depth is a stated dimension and is not directly measurable from the flat rotation photographs, so it rests on the supplier spec rather than independent visual confirmation.",
+        "The guide's greenish base and white notch are background/annotation artifacts and should not be read as physical profile features."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "review-20260912064843-71694074",
+  "referenceImages": [
+    "source-material/mainline/POL-4417/spin/img20.jpg",
+    "source-material/mainline/POL-4417/spin/img21.jpg",
+    "source-material/mainline/POL-4417/spin/img22.jpg",
+    "source-material/mainline/POL-4417/spin/img23.jpg",
+    "source-material/mainline/POL-4417/spin/img24.jpg",
+    "source-material/mainline/POL-4417/spin/img25.jpg",
+    "source-material/mainline/POL-4417/spin/img26.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/mainline/outline/catalogue-p086-1.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.5,
+    "contrast": 1.0,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 1.5
+  },
+  "bestMetrics": {
+    "colourDeltaE": 4.0819,
+    "colourSpreadError": 0.1467,
+    "seamError": 0.0056,
+    "maximumAutocorrelation": 0.3191,
+    "detailError": 0.1594,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 210.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.6
+      },
+      "metrics": {
+        "colourDeltaE": 3.9794,
+        "colourSpreadError": 0.1178,
+        "seamError": 0.0094,
+        "maximumAutocorrelation": 0.486,
+        "detailError": 0.1347,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 87.8,
+      "failedGates": [],
+      "agentReview": {
+        "score": 74,
+        "colourMatch": 82,
+        "textureMatch": 74,
+        "repetition": 70,
+        "seam": 78,
+        "finishMatch": 76,
+        "blockers": [],
+        "observations": [
+          "Supplier crops (top) show a flat charcoal-grey planar face with vertical panel joints; no ridges, beads, bevels, hollows or steps are visible, so the candidate correctly retains a single planar face without added moulding geometry.",
+          "The pop-art inset is labelled 'ASSEMBLED/FAMILY REFERENCE (CONTEXT ONLY)' and was excluded from material matching.",
+          "Candidate fixed-light preview (bottom) shows a horizontal light/dark gradient band across the mid-height of each panel; this reads as a lighting/roughness gradient rather than a physical profile step, but it risks being misread as a bevel and should be flattened if a true flat face is intended.",
+          "Vertical seams recur at regular intervals consistent with the panel layout in the supplier evidence; the fine horizontal grain is directional brushing, not a tiled repeat.",
+          "Colour and value of the candidate closely match the supplier charcoal tone under neutral light; minor difference in perceived gloss/contrast between unlit atlas and fixed-light preview.",
+          "No obvious tiling artefact or hard seam line is visible in the candidate beyond the intended vertical joints."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.5,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.5,
+          "bump_detail": 1.5
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 4.0819,
+        "colourSpreadError": 0.1467,
+        "seamError": 0.0056,
+        "maximumAutocorrelation": 0.3191,
+        "detailError": 0.1594,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 91.2,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "matte brushed charcoal with fine horizontal directional grain",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "fine horizontal directional grain / brush lines",
+        "dark charcoal-grey base colour with subtle tonal variation",
+        "soft diffuse sheen without sharp specular highlights",
+        "natural low-relief surface texture",
+        "genuine panel joint / seam character where present in the physical section"
+      ],
+      "risks": [
+        "misreading the vertical panel seams as a tiled macro repeat",
+        "over-smoothing or tiling the fine brush grain into an artificial pattern",
+        "classifying the surface as satin/gloss from edge light catch rather than true reflection",
+        "colour drift toward pure black or warm brown under neutral lighting",
+        "losing the subtle directional grain when removing seams"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "roughness_mid": 210,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.6
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "Vertical panel seams are visible at regular intervals across the candidate, contradicting the 'no visible seam' requirement.",
+        "Strong horizontal light/dark banding repeats across the width, indicating a tiled or periodic texture rather than natural irregular variation.",
+        "maximumAutocorrelation of 0.3191 confirms a measurable periodic repeat in the surface pattern.",
+        "The dark charcoal finish and directional grain are broadly plausible, but the regular banding and panel divisions are not consistent with a seamless natural material."
+      ],
+      "concerns": [
+        "Regular horizontal gradient banding suggests tiling/repeat that should be removed while retaining natural variation.",
+        "Vertical seam lines between panels are visible and need to be eliminated.",
+        "colourDeltaE of 4.0819 is borderline and should be re-verified against the exact SKU supplier colour under neutral lighting.",
+        "The Marilyn Monroe thumbnail is labelled family/context reference only and was not used to override the exact SKU evidence."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "e5eeab1d8a14a5fc1af29c5a94b05a270247847046044f36a8d5fd4cbc1b9e5b",
+      "roughness.jpg": "f3b0bdacce8583251cbd75cb32b6df8b9c70f43522927c8726b463f32c55498a",
+      "bump.jpg": "acb9741f16b6aa9925e6197efbcb5629e75dddbf1f1b96fc12b3167624461e59"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

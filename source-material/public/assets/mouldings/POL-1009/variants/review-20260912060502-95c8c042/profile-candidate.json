@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-1009",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 28.0,
+  "depthMm": 16.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      15.825
+    ],
+    [
+      0.35,
+      16.0
+    ],
+    [
+      14.05,
+      16.0
+    ],
+    [
+      27.75,
+      16.0
+    ],
+    [
+      28.0,
+      15.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face across all rotation photographs",
+      "Fine vertical directional grain / brushing consistent across the strip",
+      "Uniform charcoal / dark grey colour with low surface relief"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel, hollow or step confirmed in any physical section or rotation photograph",
+      "Speckled grey area in the lower catalogue panel not treated as a profile feature (likely background/segmentation, not geometry)"
+    ],
+    "observations": [
+      "Top rotation strip shows a flat face with intentional fine vertical grain; this is directional brushing, not a tiled macro repeat",
+      "Supplier profile label states 'flat' and dimensions 28 x 16 mm with a 10 mm rebate, consistent with a flat board",
+      "Lighting and perspective vary slightly across the rotation frames but do not introduce any visible crown or step",
+      "Lower-left catalogue image shows the same dark vertical-grain face with a white border, matching the flat classification"
+    ],
+    "concerns": [
+      "The stated 10 mm rebate is not independently visible as a step in the rotation photographs; treated as a back-face feature not affecting the visible flat face",
+      "Lower panel speckled region is ambiguous (concrete-like background vs. trace) and was not used to infer geometry",
+      "Edge radii are not directly measurable from the supplied photographs; minimum values assumed for a square-edged flat board"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Perimeter ridge / continuous top-edge line on the outer edge",
+      "Rebate drop of 10 mm on the inner sight edge"
+    ],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier rotation strip and the vertical face photograph both show a single planar charcoal face with fine vertical directional grain and no visible step, bead, bevel or rebate.",
+      "The candidate cross-section introduces a 10 mm rebate drop and a thin continuous line along the top (outer) edge that are not independently visible in any physical, chevron or oblique supplier photograph.",
+      "Per the review rule, a flat photographed face must remain one planar face; the candidate has gained a perimeter ridge and a rebate that are supported only by the extracted catalogue trace, not by visible evidence.",
+      "The tan face colour in the candidate does not match the dark charcoal finish shown in the supplier photographs, indicating the section is a generic guide fill rather than a verified physical moulding."
+    ],
+    "concerns": [
+      "The top brown line may be a trace/outline artifact rather than a real moulded ridge.",
+      "The 10 mm rebate dimension is advisory and cannot be confirmed from the flat-face photographs.",
+      "Colour and grain in the candidate (smooth tan) conflict with the brushed charcoal supplier finish, so texture/colour match is also unverified.",
+      "Lighting and perspective in the supplier images could in principle hide a shallow rebate, but no oblique or chevron view confirms it, so it must be treated as unsupported."
+    ]
+  }
+}

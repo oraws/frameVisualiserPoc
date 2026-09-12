@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 2,
+  "sku": "0219WH",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T23:03:58.644826+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "0219WH",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 20.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "points": [
+      [
+        0.0,
+        10.57
+      ],
+      [
+        0.401,
+        11.577
+      ],
+      [
+        0.952,
+        12.081
+      ],
+      [
+        7.469,
+        14.95
+      ],
+      [
+        19.799,
+        14.95
+      ],
+      [
+        20.0,
+        14.799
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "single planar flat face",
+        "rebate / step at the front edge (supplier rebate 8.4 mm)",
+        "angled (chevron) joint geometry in assembled view",
+        "fine directional grain / brush lines along the face"
+      ],
+      "rejectedTraceFeatures": [
+        "protruding top lip shown in the profile-source guide (not independently confirmed in the physical section or chevron)",
+        "any convex bead or hollow suggested only by the extracted outline"
+      ],
+      "observations": [
+        "Physical product-section shows a flat top face with a vertical front face and a bottom rebate, consistent with a stepped/angled profile",
+        "Chevron photograph confirms two flat faces meeting at an angle with no raised bead",
+        "Finish is a light natural wood / veneer tone with low gloss and visible horizontal grain",
+        "Supplied envelope 20 x 15 mm with 8.4 mm rebate is geometrically consistent with the visible step"
+      ],
+      "concerns": [
+        "profile-source (middle) guide orientation is ambiguous and shows a top lip not clearly present in the authoritative section; treated as unverified",
+        "lighting and perspective in supplier photos may exaggerate edge shadows; edge radii estimated conservatively",
+        "rebate depth (8.4 mm) read from text label, not directly measurable from the section image"
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.8,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "agree",
+      "reasons": [
+        "The candidate's flat top face matches the planar face seen in the product-section and chevron photographs; no perimeter ridge or bead has been added to a flat face.",
+        "The rebate/step at the left edge (labelled rebate drop 8.4 mm) corresponds to the visible notch/step at the end of the moulding in the product-section oblique photo.",
+        "The small chamfer at the upper-left corner of the candidate matches the angled corner visible in the product-section photo.",
+        "The chevron photograph confirms two flat mitred faces with no hidden hollow, bead or ridge, consistent with the simple flat-face-plus-rebate profile in the candidate.",
+        "The profile-source silhouette (tan block with a single step) is consistent with a flat face plus one rebate step, agreeing with the candidate geometry."
+      ],
+      "concerns": [
+        "The profile-source silhouette shows the step on the top-right while the candidate places the rebate on the left; this is interpreted as a rotation/orientation difference rather than a conflict, but orientation should be confirmed against the SKU spec.",
+        "Grain/brushing in the product-section photo is faint and directional; ensure the rendered texture retains natural variation without tiling, as the candidate cross-section is a flat colour fill and does not itself encode texture."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": true,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260911225723-0bcd2b6a",
+  "referenceImages": [
+    "public/assets/mouldings/0219WH/product-section.jpg",
+    "public/assets/mouldings/0219WH/profile-source.png",
+    "public/assets/mouldings/0219WH/chevron.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.45,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 190.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 1.4
+  },
+  "bestMetrics": {
+    "colourDeltaE": 1.9348,
+    "colourSpreadError": 0.0545,
+    "seamError": 0.0091,
+    "maximumAutocorrelation": 0.3962,
+    "detailError": 0.1809,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.45,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 190.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.4
+      },
+      "metrics": {
+        "colourDeltaE": 1.9348,
+        "colourSpreadError": 0.0545,
+        "seamError": 0.0091,
+        "maximumAutocorrelation": 0.3962,
+        "detailError": 0.1809,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 93.2,
+      "failedGates": [],
+      "agentReview": {
+        "score": 78,
+        "colourMatch": 82,
+        "textureMatch": 74,
+        "repetition": 85,
+        "seam": 80,
+        "finishMatch": 76,
+        "blockers": [
+          "Candidate is a flat material preview only; the rebate/step visible in the supplier profile-source crop is not represented as 3D geometry, so profile correctness cannot be confirmed from the candidate."
+        ],
+        "observations": [
+          "Supplier product-section and chevron crops show a thin, essentially flat white-painted board with a single planar face and a small rebate/step at the edge; the candidate face texture is consistent with a flat moulding and does not invent extra beads or hollows.",
+          "Directional diagonal grain/brushing is present in both the supplier crops and the candidate; this reads as intentional fine brushing rather than a tiled macro repeat, so repetition is judged low.",
+          "A few small dark specks and faint diagonal streaks recur in the atlas; they are sparse and irregular, not a regular interval pattern, so they are treated as natural variation rather than tiling.",
+          "A horizontal lighter band crosses the middle of the unlit atlas and a vertical gradient appears in the fixed-light preview; these are lighting/atlas artifacts rather than a hard seam, but they slightly reduce seam confidence.",
+          "Colour is a light warm white/cream in the supplier photos versus a slightly cooler light grey in the candidate; close but the candidate is marginally less warm.",
+          "Finish reads as matte painted wood in both; gloss and relief are broadly consistent."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.2
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "painted-flat-matte",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "single flat planar face with no beads, hollows or ridges",
+        "rebate/step edge treatment visible at the section end",
+        "light off-white / cream face colour",
+        "tan natural end-grain tone at the cut edge",
+        "faint fine horizontal directional grain, non-repeating",
+        "soft diffuse matte sheen with no sharp specular highlights",
+        "crisp clean miter in the chevron joint"
+      ],
+      "risks": [
+        "adding moulding geometry (beads, hollows, ogee) that is not present in the supplier cross-section",
+        "treating the tan profile-source fill as the face colour instead of the off-white face",
+        "over-stating gloss from bright edge catches on the rebate",
+        "introducing tiled/repeated grain or seams where only natural faint variation exists",
+        "misreading the rebate/step as a full profile leg"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.45,
+        "contrast": 1.0,
+        "roughness_mid": 190,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.4
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Supplier chevron and profile-source photographs show a non-planar moulding (angled chevron faces and a flat face with a rebate/step), but the candidate preview renders only a single flat planar face with no visible ridge, bevel, rebate or step, so the physical profile is not represented.",
+        "The candidate texture exhibits a regular horizontal recurrence of the same diagonal streak clusters and isolated dark vertical specks at near-equal spacing, consistent with a tiled repeat rather than the more randomly distributed specks in the supplier evidence.",
+        "A strong top-to-bottom luminance gradient is present in the candidate that is not present in the neutral supplier evidence, indicating a lighting/preview artifact rather than true material variation.",
+        "Colour and finish family (off-white painted surface with faint directional brushing) are broadly consistent with the exact SKU product-section, so the issue is profile geometry and repeat, not base colour."
+      ],
+      "concerns": [
+        "Profile geometry (chevron peak, rebate/step, sight edge) from the supplier cross-section and chevron photos is missing from the candidate; an extracted trace must not be used to add or omit features without photographic confirmation.",
+        "Possible macro-level tiling of the grain/speck pattern; maximumAutocorrelation of 0.3962 supports a non-negligible repeat.",
+        "Vertical shading gradient may mask or exaggerate surface relief and should be re-evaluated under neutral fixed lighting.",
+        "Family-context band must not override the exact SKU section/chevron evidence when reconstructing the moulding profile."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "394e0441351949ab9bf40b03b707b0b4958b6ea92bc853a0eb507abaa03780bd",
+      "roughness.jpg": "5e8f8cf180e3e7a8ff3461d5f706e8c52b6623023243e00e3440fcbe80158a01",
+      "bump.jpg": "2b4d3d350538865bd2888e4632e2ea3d3fa2d1e156cb39334bc2f8fc58f2daca"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

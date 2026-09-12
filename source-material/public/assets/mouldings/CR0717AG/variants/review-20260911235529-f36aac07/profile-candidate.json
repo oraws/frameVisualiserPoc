@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0717AG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 17.0,
+  "depthMm": 17.0,
+  "rebateMm": 9.5,
+  "points": [
+    [
+      0.0,
+      14.854
+    ],
+    [
+      0.258,
+      16.828
+    ],
+    [
+      0.429,
+      17.0
+    ],
+    [
+      17.0,
+      16.914
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar front face (flat)",
+      "rebate / step on one edge (notch visible in product-section and macro top edge)",
+      "square inner and outer sight edges"
+    ],
+    "rejectedTraceFeatures": [
+      "no convex bead",
+      "no concave hollow",
+      "no ornate profile"
+    ],
+    "observations": [
+      "product-section shows a flat rectangular strip with light oak/tan directional grain and a small rebate notch on the left edge",
+      "profile-source confirms a flat face with a 5 mm rebate at the base and 17 mm height",
+      "chevron photograph shows the same flat-faced stock cut into a V joint, consistent with a flat/stepped profile",
+      "macro family row shows the same flat-faced, rebated cross-section repeated across many colours",
+      "finish is a matte-to-satin wood grain, no gloss highlight ridge, no surface relief beyond the rebate"
+    ],
+    "concerns": [
+      "dimension envelope conflict: supplier states 17 x 17 mm with 9.5 mm rebate, but profile-source annotates 13 mm width and 5 mm rebate; verify true width and rebate depth on a calibrated section",
+      "supplier profile label reads 'flat' while a rebate step is visible; classified as stepped to reflect the genuine rebate, confirm intended label",
+      "edge radii not directly measurable from images; assumed sharp (0.2 mm) pending a magnified section"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.6,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "angled bevel at top of inner sight edge"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier product-section and chevron photos show a single flat planar face with one rectangular rebate step at the end, consistent with a flat moulding rather than a multi-feature profile.",
+      "The candidate's flat face and single rebate drop match the visible step in the product-section photo.",
+      "The candidate introduces a small angled bevel at the top of the sight edge that is not clearly resolvable in any supplier photograph; it may be trace-derived.",
+      "Rebate dimension conflicts: profile-source states a 5 mm step while the candidate labels a 9.5 mm rebate drop, so the step depth is not independently confirmed."
+    ],
+    "concerns": [
+      "Rebate depth (5 mm vs 9.5 mm) is inconsistent between catalogue guide and candidate; needs confirmation against a dimensioned photo.",
+      "The top-left bevel on the candidate is not distinctly visible in the flat/chevron photos and may be an unsupported trace feature.",
+      "Lighting and perspective in the macro/chevron shots make fine edge treatment hard to verify."
+    ]
+  }
+}

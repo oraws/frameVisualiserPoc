@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-1336",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 38.0,
+  "depthMm": 28.0,
+  "rebateMm": 22.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.168,
+      27.72
+    ],
+    [
+      0.4,
+      28.0
+    ],
+    [
+      19.0,
+      28.0
+    ],
+    [
+      37.6,
+      28.0
+    ],
+    [
+      38.0,
+      27.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face across all seven exact-SKU rotation photographs",
+      "Fine directional grain / brushing running parallel to the long axis (horizontal in rotations, vertical in catalogue view)",
+      "Uniform charcoal-grey wood-look finish with natural tonal variation"
+    ],
+    "rejectedTraceFeatures": [
+      "Textured lower block in the catalogue/extracted guide (treated as background or segmentation edge, not a real step or bead)",
+      "Any implied ridge, bead, bevel, hollow or step \u2014 none independently visible in the physical rotation photographs"
+    ],
+    "observations": [
+      "Supplier profile label states 'flat' and dimensions 38 x 28 mm with a 22 mm rebate; the rotation photographs are consistent with a single flat face and show no crown, hollow or step.",
+      "The horizontal lines in the rotation images are fine directional grain/brushing, not a tiled macro repeat; no distinctive macro feature recurs at regular intervals.",
+      "The assembled-family reference (context only) shows a dark vertical element in a frame and does not override the flat geometry seen in the exact-SKU photos.",
+      "The lower catalogue panel shows a flat grained face above a coarse textured region; that textured region is not corroborated by any physical section or oblique rotation and is therefore not accepted as profile geometry."
+    ],
+    "concerns": [
+      "Rebate depth (22 mm) is stated but not directly verifiable from the provided flat-face photographs.",
+      "Supplier images carry lighting and perspective variation; edge radii are estimated small breaks rather than measured features.",
+      "The textured region in the catalogue guide is ambiguous (background vs. material) and should not be modelled as a step without a confirming physical section."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.5,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rebate drop / step on inner sight edge (22 mm)"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The main face in the candidate cross-section is a single planar surface, which matches the flat, directionally-grained charcoal face shown across the seven EXACT SKU rotation photographs; no perimeter ridge or bead has been added to a flat photographed face.",
+      "The fine horizontal/vertical directional grain and brushing in the photographs are intentional surface texture, not a tiled repeat, so the face treatment is consistent with supplier evidence.",
+      "The candidate's inner-sight-edge rebate drop (22 mm step) is not independently visible in the rotation photographs, which are flat face-on views; the only edge evidence is the rough/textured lower edge in the catalogue/extracted image, which is ambiguous and could be a sawn or broken edge rather than a defined rebate.",
+      "Because the rebate step is supported primarily by the extracted guide/dimension rather than a clear physical-section or oblique photograph, it cannot be confirmed and the candidate is held for review rather than approved."
+    ],
+    "concerns": [
+      "Rebate depth of 22 mm and the presence of a true step on the inner sight edge are not verifiable from the supplied flat-face rotation photographs.",
+      "The textured edge in the lower-left catalogue image is ambiguous (sawn/broken edge vs. rebate) and does not clearly confirm the candidate's inner-edge step.",
+      "A physical-section, chevron or oblique photograph showing the inner sight edge to outer edge profile is needed to confirm or remove the rebate feature."
+    ]
+  }
+}

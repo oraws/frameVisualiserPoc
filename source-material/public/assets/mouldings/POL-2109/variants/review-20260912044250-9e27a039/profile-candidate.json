@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-2109",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 40.0,
+  "depthMm": 21.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      11.0
+    ],
+    [
+      0.168,
+      20.72
+    ],
+    [
+      0.4,
+      21.0
+    ],
+    [
+      20.0,
+      21.0
+    ],
+    [
+      39.6,
+      21.0
+    ],
+    [
+      40.0,
+      20.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0.5,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "conflicts",
+    "verifiedFeatures": [
+      "Single planar face with continuous directional horizontal grain/brushing visible across all rotation photographs",
+      "Inner sight edge indicated by a consistent darker shading line at the top of the rotation strip",
+      "Outer sight edge indicated by a consistent shading/transition line at the bottom of the rotation strip",
+      "Gold/bronze metallic finish with natural tonal variation and fine directional brush lines"
+    ],
+    "rejectedTraceFeatures": [
+      "Multiple vertical flutes/ribs shown in the lower catalogue/extracted profile guide are not independently confirmed in any rotation, chevron or oblique photograph and are therefore rejected as geometry",
+      "The black silhouette and white rectangle at the base of the lower panel are treated as segmentation/background artefacts, not as ridges or steps"
+    ],
+    "observations": [
+      "Top row of EXACT SKU rotation photographs shows a predominantly flat, brushed face; the dominant texture is fine horizontal directional grain, not a repeating macro flute",
+      "Vertical seams between the tiled rotation segments are visible and are interpreted as image tiling boundaries, not as profile features",
+      "The lower-left panel is a catalogue/extracted profile guide showing vertical ribbing; per protocol this is an unverified hypothesis and conflicts with the flat face seen in the authoritative rotation photographs",
+      "Supplier metadata states 40 x 21 mm with a 10 mm rebate and a 'scoop' label; the visible photographs support a flat face with edge treatment rather than a clearly concave scoop or fluted section",
+      "Assembled family context images show the moulding used as a frame rail in a gold/bronze finish, consistent with the colour and finish of the exact SKU photographs"
+    ],
+    "concerns": [
+      "The supplier profile label 'scoop' and the catalogue trace (fluted) are not corroborated by the rotation photographs, which read as a flat brushed face; geometry is therefore held to flat with edge treatment only",
+      "Lighting and perspective in the rotation row create horizontal banding that could be mistaken for bevels; only the consistent top and bottom edge shading lines are accepted as edge treatment",
+      "Tiling seams in the rotation strip must not be interpreted as repeating profile features",
+      "If a true scoop or fluted section is intended, additional chevron/oblique photographs showing the cross-section relief are required before any concave or ornate geometry is accepted"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Supplier rotation photographs show a single planar face with fine directional grain/brushing running along the length, not a series of discrete beads or flutes.",
+      "The candidate cross-section reproduces this as one flat face with only a genuine edge treatment (the rebate/step at the inner sight edge), matching the visible flat photographed face.",
+      "The 10 mm rebate drop at the left edge corresponds to the darker edge band visible at the top of the rotation photographs, so the step is photo-supported.",
+      "No perimeter ridge or bead has been added to the flat face in the candidate, satisfying the rule that a flat photographed face must remain planar.",
+      "The vertical ridges/fluting shown in the lower-left catalogue/extracted guide are not corroborated by any physical, chevron or oblique supplier photograph and are therefore treated as an unverified advisory trace, not as required geometry."
+    ],
+    "concerns": [
+      "The catalogue/extracted profile guide (lower left) depicts vertical fluting/beads that do not appear in the supplier rotation photographs, creating a trace-vs-photo conflict that should be resolved with the supplier.",
+      "Rotation photographs are subject to lighting and perspective; the horizontal lines could be misread as beads, so the flat-face interpretation relies on the absence of any macro relief in the oblique views.",
+      "Confirm the intended finish (brushed directional grain vs. fluted relief) before final release, since the guide and the photos disagree on surface relief."
+    ]
+  }
+}

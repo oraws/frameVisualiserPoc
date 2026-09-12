@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR2253WH",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/CR2253WH/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg"
+  ]
+}

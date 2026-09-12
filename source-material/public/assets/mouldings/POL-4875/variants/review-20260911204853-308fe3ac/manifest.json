@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-4875",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T20:56:31.491394+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-4875",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "ornate",
+    "widthMm": 97.0,
+    "depthMm": 49.0,
+    "rebateMm": 16.0,
+    "points": [
+      [
+        0.0,
+        15.0
+      ],
+      [
+        2.0,
+        15.0
+      ],
+      [
+        3.5,
+        21.0
+      ],
+      [
+        5.0,
+        26.0
+      ],
+      [
+        7.0,
+        27.0
+      ],
+      [
+        9.0,
+        22.0
+      ],
+      [
+        12.0,
+        19.0
+      ],
+      [
+        16.0,
+        19.0
+      ],
+      [
+        20.0,
+        25.0
+      ],
+      [
+        24.0,
+        32.0
+      ],
+      [
+        29.0,
+        38.0
+      ],
+      [
+        34.0,
+        43.0
+      ],
+      [
+        40.0,
+        46.0
+      ],
+      [
+        46.0,
+        48.0
+      ],
+      [
+        51.0,
+        48.0
+      ],
+      [
+        56.0,
+        45.0
+      ],
+      [
+        61.0,
+        40.0
+      ],
+      [
+        66.0,
+        34.0
+      ],
+      [
+        71.0,
+        29.0
+      ],
+      [
+        75.0,
+        28.0
+      ],
+      [
+        79.0,
+        32.0
+      ],
+      [
+        83.0,
+        35.0
+      ],
+      [
+        86.0,
+        31.0
+      ],
+      [
+        89.0,
+        25.0
+      ],
+      [
+        92.0,
+        22.0
+      ],
+      [
+        95.0,
+        17.0
+      ],
+      [
+        97.0,
+        16.0
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "ornate",
+      "faceCrownMm": 3.5,
+      "innerEdgeRadiusMm": 1.0,
+      "outerEdgeRadiusMm": 1.2,
+      "flatFaceConfirmed": false,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "Ornate carved leaf/scroll relief on the face",
+        "Stippled / dotted ground between relief elements",
+        "Beaded outer edge",
+        "Reeded / fluted vertical band on the inner side"
+      ],
+      "rejectedTraceFeatures": [
+        "White segmentation box in the lower-right of the guide (background/segmentation artifact, not a ridge)",
+        "Any flat planar face interpretation (face is a carved relief field, not a single plane)"
+      ],
+      "observations": [
+        "Supplier dimensions 97 x 49 mm with a 16 mm rebate; profile label not supplied.",
+        "Assembled family references (chevron corners in black, dark, cream and gold) confirm a shared ornate carved shape family with beaded outer edges.",
+        "Lower panel is a close-up catalogue/extracted guide showing the same carved leaf motif, dotted ground, reeded band and beaded edge.",
+        "Finish/colour varies across the family references, so no single SKU colour can be asserted from the board."
+      ],
+      "concerns": [
+        "Exact SKU supplier photograph is too small to read the full cross-section geometry independently.",
+        "Profile label is missing, so the cross-section must be inferred from the close-up guide and family chevrons.",
+        "The guide is a cropped close-up containing a segmentation artifact; full cross-section (face, inner sight edge, outer edge, rebate) cannot be fully confirmed from a single image.",
+        "Relief depth (faceCrownMm) is an estimate within the 0..6 mm envelope, not a measured value."
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Broad central rounded hump dominating the section",
+        "Small left-hand peak/step ahead of the rebate",
+        "Right-hand secondary peak before the outer edge",
+        "Smooth undulating slope between peaks (no fluting or beading)"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "The oblique/chevron supplier photos show a flat face carrying surface relief (leaf/scroll carving, stippled ground) plus discrete edge treatments: a fluted/ribbed band and a beaded/rope band. The candidate cross-section instead shows a continuous smooth hump with two small peaks and none of the visible ribs or beads.",
+        "A flat photographed face with surface carving should read as essentially planar in section; the candidate has gained a large perimeter hump and peaks that are not visible as section ridges in any photo.",
+        "The 'REBATE DROP 16 mm' marker is plausible for a picture-frame sight edge, but the surrounding profile geometry does not match the visible inner/outer edge treatment in the family reference photo.",
+        "The catalogue/extracted outline is advisory and the candidate appears to follow an unverified trace rather than the physical section, so the broad hump and peaks are treated as unsupported."
+      ],
+      "concerns": [
+        "Supplier detail/dimensions block is low-resolution and not independently legible, so stated dimensions could not be cross-checked.",
+        "Relief carving on the face is surface texture, not section profile; risk of mis-reading it as a cross-section hump.",
+        "Fluted and beaded edge bands visible in the close-up are absent from the candidate section, indicating missing genuine features.",
+        "Lighting and perspective in the dark close-up may exaggerate edge depth; a neutral fixed-lighting comparison is needed before approval."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v3",
+  "outputVariant": "review-20260911204853-308fe3ac",
+  "referenceImages": [
+    "public/assets/mouldings/POL-4875/source-product.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/mainline/verona/catalogue-p106-1.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.55,
+    "contrast": 1.02,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 175.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.4
+  },
+  "bestMetrics": {
+    "colourDeltaE": 4.1501,
+    "colourSpreadError": 0.0748,
+    "seamError": 0.0393,
+    "maximumAutocorrelation": 0.2007,
+    "detailError": 0.0988,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 200.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 4.14,
+        "colourSpreadError": 0.0765,
+        "seamError": 0.0499,
+        "maximumAutocorrelation": 0.2018,
+        "detailError": 0.0962,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 86.9,
+      "failedGates": [],
+      "agentReview": {
+        "score": 58,
+        "colourMatch": 40,
+        "textureMatch": 72,
+        "repetition": 60,
+        "seam": 45,
+        "finishMatch": 55,
+        "blockers": [
+          "Vertical lighting/seam banding visible in the fixed-light preview (lighter vertical stripes break the otherwise continuous relief)",
+          "Candidate is a neutral grey base and does not match any specific supplier finish (black / dark-green / cream / gold Verona family)"
+        ],
+        "observations": [
+          "Top beaded/oval band and central acanthus-leaf motif in the candidate correspond to the carved profile seen in the supplier Verona family frames, so the macro relief is supported by visible evidence rather than an unverified trace.",
+          "The leaf motif repeats at a regular horizontal interval; this is consistent with a continuous moulding pattern but the over-regular spacing plus the vertical banding reads as a tiled texture seam rather than natural variation.",
+          "Fixed-light preview shows strong directional relief with a matte-to-satin response; supplier frames read as a semi-gloss painted finish with finer surface detail, so gloss and micro-roughness are not yet aligned.",
+          "Colour is unassigned (neutral grey), so colourMatch cannot be confirmed against any single supplier crop; a target finish must be selected before colour grading.",
+          "No unsupported flat-face features were added; the profile stays within the visible carved section, satisfying the 'omit trace-only geometry' rule."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.55,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 175,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.4
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 4.1501,
+        "colourSpreadError": 0.0748,
+        "seamError": 0.0393,
+        "maximumAutocorrelation": 0.2007,
+        "detailError": 0.0988,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 89.9,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "ornate-carved-relief-painted",
+      "directional": false,
+      "gloss": "satin",
+      "preserve": [
+        "sculpted floral and scroll relief on the face",
+        "soft broad highlights on carved ridges without mirror reflection",
+        "deep charcoal-black base colour with subtle tonal variation in the relief",
+        "natural micro-variation and slight surface texture within the carved detail",
+        "single planar face with only genuinely visible edge treatment"
+      ],
+      "risks": [
+        "over-sharpening or over-bumping the carved relief making it look plastic",
+        "introducing tiled repeat of the ornamental motif where none is present",
+        "misclassifying the satin sheen as gloss from bright edge catches",
+        "adding profile beads, hollows or steps supported only by the extracted trace",
+        "pushing colour to pure black and losing the relief tonal depth",
+        "sampling the gold/cream family members' finish onto the black exact SKU"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "roughness_mid": 200,
+        "roughness_detail": 0.55,
+        "bump_detail": 3.0
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "reasons": [
+        "Candidate finish is a dark charcoal/grey that is consistent with the exact-SKU supplier frame and the Verona family context, so colour family is plausible.",
+        "The ornate leaf-and-scroll relief in the candidate matches the carved profile style shown in the supplier family reference, indicating the correct motif family.",
+        "No hard vertical seam line is visible across the candidate band; the recurring leaf motif is the intended continuous moulding design rather than an obvious tiled repeat."
+      ],
+      "concerns": [
+        "The exact-SKU supplier page is low-resolution, so individual ridges, beads, bevels, hollows and the rebate/face plan cannot be independently confirmed against the candidate profile; the fault report requires this verification before approval.",
+        "Soft vertical light/dark banding runs across the candidate, which may be fixed-lighting shading but could also indicate a tiling or UV-repeat artifact that needs a neutral-light recheck.",
+        "Texture scale and surface relief depth in the candidate appear shallower/more uniform than the deep carving implied by the family frames, so the relief scale should be re-verified against the physical section photographs.",
+        "Directional grain/brushing and gloss level cannot be reliably matched from the available supplier images, leaving finish irregularity unconfirmed."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "8d313653ee5fec406ebd4c3cf4f0541203e2e6f5554054321e416c2ef65cb7d3",
+      "roughness.jpg": "0cb0a752b6ae6884874576e9ac82e10a0ef296f7d11addadee85742015674daa",
+      "bump.jpg": "56557c3ddfd18262ad433f8e9c1b9928d59fcd8e1f8cf4ca7976e357f5bbb579"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

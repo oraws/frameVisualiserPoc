@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "sku": "0472CM",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 52.0,
+  "depthMm": 35.0,
+  "rebateMm": 19.6,
+  "points": [
+    [
+      0.0,
+      17.256
+    ],
+    [
+      1.944,
+      18.329
+    ],
+    [
+      2.624,
+      19.011
+    ],
+    [
+      2.916,
+      19.986
+    ],
+    [
+      3.305,
+      20.376
+    ],
+    [
+      3.985,
+      20.669
+    ],
+    [
+      6.123,
+      20.669
+    ],
+    [
+      6.609,
+      21.058
+    ],
+    [
+      6.901,
+      21.741
+    ],
+    [
+      7.193,
+      22.033
+    ],
+    [
+      8.067,
+      22.521
+    ],
+    [
+      8.845,
+      22.716
+    ],
+    [
+      9.622,
+      22.716
+    ],
+    [
+      10.692,
+      22.423
+    ],
+    [
+      12.052,
+      21.253
+    ],
+    [
+      12.538,
+      20.376
+    ],
+    [
+      12.733,
+      19.694
+    ],
+    [
+      12.733,
+      18.816
+    ],
+    [
+      12.927,
+      18.621
+    ],
+    [
+      33.047,
+      18.719
+    ],
+    [
+      33.436,
+      19.986
+    ],
+    [
+      34.116,
+      20.864
+    ],
+    [
+      35.379,
+      21.643
+    ],
+    [
+      36.546,
+      22.033
+    ],
+    [
+      37.421,
+      23.398
+    ],
+    [
+      38.684,
+      24.568
+    ],
+    [
+      40.531,
+      25.153
+    ],
+    [
+      40.725,
+      26.031
+    ],
+    [
+      41.6,
+      27.396
+    ],
+    [
+      42.28,
+      27.786
+    ],
+    [
+      43.641,
+      27.883
+    ],
+    [
+      43.836,
+      28.078
+    ],
+    [
+      43.836,
+      28.565
+    ],
+    [
+      44.224,
+      29.833
+    ],
+    [
+      44.905,
+      31.198
+    ],
+    [
+      45.779,
+      32.368
+    ],
+    [
+      47.14,
+      33.635
+    ],
+    [
+      48.598,
+      34.513
+    ],
+    [
+      49.862,
+      35.0
+    ],
+    [
+      50.931,
+      35.0
+    ],
+    [
+      52.0,
+      34.415
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 2.0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.8,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "broad planar top face visible in product-section, chevron and both detail views",
+      "single small step/rebate at the lower sight edge (vertical drop to a narrower bottom face) in product-detail-1 and product-detail-2",
+      "mitred 45-degree chevron corner confirming a flat face with mitered edges",
+      "light cream/off-white matte finish with faint directional grain"
+    ],
+    "rejectedTraceFeatures": [
+      "rounded bead/bump on the right side of the profile-source silhouette (not present in any physical section or detail photo)",
+      "smooth curved descent on the left side of the profile-source silhouette (photos show a near-vertical step, not a curve)"
+    ],
+    "observations": [
+      "Supplier dimensions read 52 x 35 mm with a 19.6 mm rebate; supplier profile label is 'angled'.",
+      "product-section and product-detail-1/2 consistently show one flat face with a single small step at the bottom edge, matching a stepped/angled profile rather than an ornate one.",
+      "The chevron view confirms the face is planar and the corner is a clean miter, with no additional ridges or beads.",
+      "The macro family strip shows the same shape in multiple colours, supporting a shared flat-with-step shape family.",
+      "Finish is a low-gloss cream with subtle linear grain; no tiling or repeat pattern is visible in the exact SKU photos."
+    ],
+    "concerns": [
+      "The extracted profile-source silhouette contains a right-hand bead and a left-hand curve that are not corroborated by any physical photograph; these are treated as trace artefacts and excluded.",
+      "Lighting and perspective in the oblique detail shots could exaggerate the depth of the bottom step; the step is retained only because it appears in two independent views.",
+      "The 'angled' supplier label is ambiguous between a bevel and a step; the photos favour a small step, so the profile is classified stepped rather than a pure bevel."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.72,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The rounded bead on the inner-sight-edge side of the candidate is independently visible in the profile-source silhouette and as a small raised edge in the oblique detail photos.",
+      "The long smooth ogee/shoulder rising to the rounded outer edge in the candidate matches the curved shoulder shown in the profile-source silhouette.",
+      "The flat central face in the candidate is consistent with the planar diamond face seen in the chevron (mitered corner) photo and the flat top face in product-detail-1/2.",
+      "The rebate/step at the inner sight edge (annotated 19.6 mm) corresponds to the visible step-down at the edge in the detail photographs and the profile-source silhouette.",
+      "No perimeter ridge or bead appears on a face that is photographed as flat; the chevron and detail views confirm a single planar face with only genuine edge treatment."
+    ],
+    "concerns": [
+      "Detail photos are taken under warm directional lighting with perspective, so the exact depth of the ogee and the 19.6 mm rebate should be re-confirmed against a calibrated section before production.",
+      "The bead is small and could be over- or under-stated in height relative to the flat face; verify its radius against the macro photo."
+    ]
+  }
+}

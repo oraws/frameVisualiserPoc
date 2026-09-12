@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR1090BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 35.0,
+  "depthMm": 15.0,
+  "rebateMm": 8.4,
+  "points": [
+    [
+      0.0,
+      6.6
+    ],
+    [
+      0.168,
+      14.72
+    ],
+    [
+      0.4,
+      15.0
+    ],
+    [
+      17.5,
+      15.0
+    ],
+    [
+      34.6,
+      15.0
+    ],
+    [
+      35.0,
+      14.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0.0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar black face (no crown, no bead, no hollow)",
+      "Rebate / back step visible in physical section (tan core notch) and in profile-source (15 mm to 11 mm step)",
+      "Fine directional brushed grain running across the face",
+      "Chevron shows consistent dark textured finish on both legs"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel or convex/concave relief accepted; profile-source step interpreted only as the stated rebate, not as a moulded profile"
+    ],
+    "observations": [
+      "Product-section shows a flat black face with a light tan substrate and a cut-out rebate at one edge",
+      "Profile-source is a simple rectangle with a single step (15 mm full height, 11 mm at rebate), matching a flat board with a rebate",
+      "Supplier dimensions 35 x 15 mm, rebate 8.4 mm; supplier profile label 'flat' is consistent with the photographs",
+      "Black face exhibits horizontal brushing / grain streaks; gloss appears low to satin under the lighting"
+    ],
+    "concerns": [
+      "Dark finish and lighting may mask very fine surface relief; rely on the flat label plus planar section rather than trace highlights",
+      "Do not interpret the 15-to-11 step as a decorative profile; it is the rebate edge treatment only"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's only non-planar feature is a single rebate/step on the inner sight edge, which is independently visible in the profile-source supplier photo (15 mm total height with a 11 mm lower leg, i.e. a stepped rebate) and consistent with the tan core offset seen at the left edge of the product-section photo.",
+      "The product-section and chevron photos both show a flat, directionally brushed black face with no bead, ridge, bevel or hollow on the visible face; the candidate correctly keeps the face planar and does not invent a perimeter ridge (the brown stroke is the section boundary, not a moulded bead).",
+      "No feature in the candidate exists solely in the extracted guide: the flat face and the single rebate are both corroborated by the authoritative supplier photographs."
+    ],
+    "concerns": [
+      "Rebate depth mismatch: the candidate labels the rebate drop as 8.4 mm, but the profile-source dimensioning (15 mm vs 11 mm) implies a ~4 mm step; the feature type is supported but the magnitude conflicts with the supplier dimensioning.",
+      "The 'SUP' markers on the left edge of the candidate are not explained by any visible supplier annotation and should be reconciled before approval.",
+      "Texture/colour of the candidate (plain tan) does not reflect the black brushed finish shown in the product-section and chevron photos; finish mapping should be verified under neutral lighting."
+    ]
+  }
+}

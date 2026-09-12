@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR8005OA",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 40.0,
+  "depthMm": 30.0,
+  "rebateMm": 16.8,
+  "points": [
+    [
+      0.0,
+      13.2
+    ],
+    [
+      0.147,
+      29.825
+    ],
+    [
+      0.35,
+      30.0
+    ],
+    [
+      20.05,
+      30.0
+    ],
+    [
+      39.75,
+      30.0
+    ],
+    [
+      40.0,
+      29.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar veneered face",
+      "rebate / step on one edge (stated 16.8 mm, visible notch in profile-source guide)",
+      "linear directional grain / brushed veneer texture",
+      "sharp 90-degree assembled corner in chevron view"
+    ],
+    "rejectedTraceFeatures": [
+      "no ridge, bead, bevel or hollow accepted; none independently visible in section or chevron photographs"
+    ],
+    "observations": [
+      "Supplier profile label reads 'flat' and supplier dimensions read 40 x 30 mm with a 16.8 mm rebate.",
+      "Product-section photograph shows a flat, planar face with diagonal linear grain; no raised or recessed profile feature is visible on the face.",
+      "Profile-source guide shows a flat rectangle with a single rectangular notch (rebate) on one side, consistent with a flat face plus edge rebate.",
+      "Chevron photograph shows two flat pieces meeting at a clean 90-degree mitered corner with matching grain, confirming a flat face family.",
+      "Edge treatment appears sharp (veneer), so small radii are assumed rather than rounded beads."
+    ],
+    "concerns": [
+      "Lighting and perspective in supplier photos may exaggerate grain contrast; treat as texture, not geometry.",
+      "The rebate is confirmed by the stated dimension and the profile-source notch, but it is not clearly resolvable in the product-section photo alone; rely on the dimension label plus guide.",
+      "No red catalogue trace is present in the lower panel (text only), so trace agreement is inferred from the profile-source guide and label rather than an explicit outline."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's main face is a single planar surface, matching the flat grain face seen in the product-section and chevron supplier photographs; no bead, ridge, hollow or bevel has been added to that face.",
+      "The single edge step/rebate shown on the candidate's left edge corresponds to the visible notch/step on the right edge of the profile-source supplier photo, so the rebate is independently supported by a physical-section view.",
+      "The chevron (oblique) view confirms a flat board with directional grain and no moulded profile, consistent with the candidate being a flat face plus one rebate rather than a multi-feature moulding.",
+      "The thin outline stroke on the candidate is the browser geometry line, not a physical ridge, so it is not counted as an unsupported feature."
+    ],
+    "concerns": [
+      "The stated rebate drop of 16.8 mm cannot be directly read off the supplier's 30 and 22 dimensions, so the exact rebate depth is only partially corroborated.",
+      "Supplier photographs are low resolution and show diagonal/brushed grain; the cross-section fill is a solid tan colour, which is acceptable for a section but means texture scale and gloss could not be fully verified.",
+      "The 22 dimension in profile-source appears to relate to the rebate step height rather than the rebate depth, leaving the 16.8 mm value unconfirmed against a labelled supplier measurement."
+    ]
+  }
+}

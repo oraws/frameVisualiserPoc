@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-4540",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T04:55:20.862410+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-4540",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 25.0,
+    "depthMm": 18.0,
+    "rebateMm": 11.0,
+    "points": [
+      [
+        0.0,
+        7.0
+      ],
+      [
+        0.147,
+        17.79
+      ],
+      [
+        0.35,
+        18.0
+      ],
+      [
+        12.525,
+        18.0
+      ],
+      [
+        24.7,
+        18.0
+      ],
+      [
+        25.0,
+        17.835
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.3,
+      "outerEdgeRadiusMm": 0.3,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "Single planar face with no crowned or hollowed ridge in the rotation photographs",
+        "Horizontal directional grain / brushing running along the length of the strip",
+        "Rust-orange mottled finish over a cream/white base, consistent across all seven rotation views",
+        "Thin bright sight-edge highlight line at the upper edge (edge treatment, not a bead)",
+        "Rebate step consistent with the stated 11 mm rebate and 'reverse' profile label"
+      ],
+      "rejectedTraceFeatures": [
+        "Green textured region at the base of the lower catalogue image (background / segmentation artifact, not a moulding feature)",
+        "White rectangle at the lower-right of the lower catalogue image (background, not geometry)"
+      ],
+      "observations": [
+        "All seven EXACT SKU rotation photographs show the same flat, brushed, rust-over-cream surface; no repeating macro ridge or bead is present, only fine directional grain.",
+        "The lower catalogue image is a vertical flat strip of the same finish and shows no ridge, bead or hollow, supporting a flat face with edge/rebate treatment only.",
+        "Stated envelope 25 x 18 mm with 11 mm rebate and 'reverse' label is consistent with a flat face plus a single rebate step rather than an ornate profile.",
+        "Lighting and perspective vary slightly between rotation frames but do not introduce any new profile feature."
+      ],
+      "concerns": [
+        "The 11 mm rebate step is taken from the stated dimensions and profile label; it is not unambiguously resolved as a discrete step in the flat rotation photographs, so it should be confirmed against a true cross-section cut.",
+        "The lower catalogue image contains background/segmentation artifacts (green base, white block) that must not be read as ridges or steps.",
+        "The rust-orange mottling is a finish/texture characteristic, not a surface relief; do not model it as geometry."
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "inner sight edge rebate step (left-edge notch in candidate)",
+        "rebate drop 11 mm depth"
+      ],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "Supplier photographs show a single flat textured face with fine directional grain/brushing; this flat planar face is consistent with the candidate's main face.",
+        "The candidate's left-edge notch (inner sight edge rebate) and the 11 mm rebate drop are not independently confirmed in any chevron, oblique, or physical cross-section photograph; the horizontal strips only show a faint horizontal edge line that could be a rebate or a seam.",
+        "No perimeter ridge or bead has been added to the flat face, so the candidate does not violate the flat-face rule, but the rebate geometry remains trace-derived rather than photo-verified.",
+        "Texture/colour (weathered cream with rust streaks, vertical brushing in the upright strip) matches the supplier evidence and shows no obvious tiling or repeat."
+      ],
+      "concerns": [
+        "Rebate depth (11 mm) and the exact inner-sight-edge step cannot be measured or confirmed from the provided flat-face photographs.",
+        "The horizontal edge line in the top-row photos is ambiguous between a rebate edge and a photographic seam/lighting line.",
+        "A dedicated oblique or chevron view of the inner sight edge is needed to approve the rebate step before final sign-off."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "review-20260912044908-091a0072",
+  "referenceImages": [
+    "source-material/mainline/POL-4540/spin/img20.jpg",
+    "source-material/mainline/POL-4540/spin/img21.jpg",
+    "source-material/mainline/POL-4540/spin/img22.jpg",
+    "source-material/mainline/POL-4540/spin/img23.jpg",
+    "source-material/mainline/POL-4540/spin/img24.jpg",
+    "source-material/mainline/POL-4540/spin/img25.jpg",
+    "source-material/mainline/POL-4540/spin/img26.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/mainline/watercolour/catalogue-p084-1.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.6,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 1.6
+  },
+  "bestMetrics": {
+    "colourDeltaE": 4.1091,
+    "colourSpreadError": 0.1293,
+    "seamError": 0.0159,
+    "maximumAutocorrelation": 0.2149,
+    "detailError": 0.0349,
+    "clippedPixels": 0.0022
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.6,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.6
+      },
+      "metrics": {
+        "colourDeltaE": 4.1091,
+        "colourSpreadError": 0.1293,
+        "seamError": 0.0159,
+        "maximumAutocorrelation": 0.2149,
+        "detailError": 0.0349,
+        "clippedPixels": 0.0022
+      },
+      "deterministicScore": 95.5,
+      "failedGates": [],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 78,
+        "textureMatch": 63,
+        "repetition": 52,
+        "seam": 48,
+        "finishMatch": 70,
+        "blockers": [
+          "Regularly spaced vertical dark ticks in the atlas and fixed-light preview indicate a tiled repeat / seam artifact rather than natural grain.",
+          "Horizontal rust band is rendered as a near-uniform stripe; the supplier crops show more irregular, broken speckle that is not fully reproduced."
+        ],
+        "observations": [
+          "Base cream/ivory tone and the rust-tan horizontal streak band are consistent with the supplier finish crops.",
+          "Directional horizontal grain is present in the candidate, matching the brushing direction in the supplier photos.",
+          "The moulding reads as a single planar face with edge treatment, which is consistent with the supplier evidence; no unsupported beads or hollows are visible in the render.",
+          "Vertical seam ticks recur at a fixed interval across the width, a classic tiling signature that should be broken up.",
+          "Fixed-light preview is fairly flat and low-contrast, slightly mutting the surface relief seen in the supplier crops."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.92,
+          "contrast": 1.05,
+          "patch_width": 512,
+          "overlap": 192,
+          "roughness_mid": 175,
+          "roughness_detail": 0.55,
+          "bump_detail": 2.4
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.92,
+        "contrast": 1.05,
+        "patch_width": 512,
+        "overlap": 192,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 4.4351,
+        "colourSpreadError": 0.1633,
+        "seamError": 0.0222,
+        "maximumAutocorrelation": 0.3384,
+        "detailError": 0.1617,
+        "clippedPixels": 0.0374
+      },
+      "deterministicScore": 82.1,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.92,
+        "contrast": 1.05,
+        "patch_width": 512,
+        "overlap": 192,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 4.3395,
+        "colourSpreadError": 0.1693,
+        "seamError": 0.0208,
+        "maximumAutocorrelation": 0.2586,
+        "detailError": 0.1654,
+        "clippedPixels": 0.0363
+      },
+      "deterministicScore": 85.2,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.92,
+        "contrast": 1.05,
+        "patch_width": 512,
+        "overlap": 192,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 4.3204,
+        "colourSpreadError": 0.1613,
+        "seamError": 0.0244,
+        "maximumAutocorrelation": 0.2151,
+        "detailError": 0.1552,
+        "clippedPixels": 0.0378
+      },
+      "deterministicScore": 85.8,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "directional brushed-grain, cream base with horizontal brown/tan streaking",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "long horizontal directional grain/brush lines running left-right",
+        "cream/off-white base tone broken by irregular brown and tan streaks",
+        "soft, diffuse sheen without sharp mirror highlights",
+        "natural tonal variation and streak density across the face",
+        "genuinely visible edge treatment only; flat face remains planar"
+      ],
+      "risks": [
+        "the bright band in the oblique/curved view is a profile edge catching light, not a glossy surface; do not raise gloss from it",
+        "horizontal streaks may read as a tiled repeat if over-regularized; keep them as natural directional grain, not a seamless tile",
+        "over-sharpening or contrast boost will turn soft satin streaks into harsh brush lines",
+        "do not sample the framed artwork, mount, wall or family-member finish for colour or sheen",
+        "do not add beads, hollows or rebates to the profile that are not independently visible in the cross-section photographs"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.6,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.6
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "Candidate is a single planar face with only edge treatment, consistent with a visibly flat moulding; no unsupported 3D profile geometry is introduced.",
+        "The horizontal cream field with a central reddish-brown veined band in the candidate matches the dominant strata seen across the exact-SKU supplier photographs.",
+        "Texture scale (broad horizontal banding with fine reddish veining) is broadly comparable to the supplier evidence under neutral fixed lighting."
+      ],
+      "concerns": [
+        "Faint vertical seam lines recur at regular intervals across the candidate band, indicating tiling rather than continuous natural stone.",
+        "colourDeltaE of 4.1091 exceeds a tight colour-match tolerance, suggesting the candidate's neutral tone is not the exact SKU colour.",
+        "The veined band in the candidate reads more periodic/uniform than the irregular, tile-to-tile variation shown in the supplier rotations, hinting at an obvious repeat.",
+        "Supplier photographs show stronger natural irregularity and directional variation that is not fully preserved in the candidate preview."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "904f78da592dfee4b52de3e5b2642d8d165a54ddce158f25f0420702131a1547",
+      "roughness.jpg": "d3536ca13085370efe9dc186ddd97051a836678707c822cd981bdfdaa18502aa",
+      "bump.jpg": "8fa7abd94b4f4c669f57f1fbc01c97f93ce14cb077170906a8e6e40673b945c0"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

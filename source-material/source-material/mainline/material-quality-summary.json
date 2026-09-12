@@ -7,15 +7,12 @@
   },
   "results": [
     {
-      "sku": "3826BK",
+      "sku": "POL-4875",
       "status": "human-review-required",
-      "attempts": 4,
-      "score": 71.5,
-      "failedGates": [
-        "seamError",
-        "clippedPixels"
-      ],
-      "output": "public/assets/mouldings/3826BK/variants/review-20260911143302-7f265a48"
+      "attempts": 3,
+      "score": 83.2,
+      "failedGates": [],
+      "output": "public/assets/mouldings/POL-4875/variants/review-20260912083453-df763bbb"
     }
   ]
 }

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR3330AG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 33.0,
+  "depthMm": 30.0,
+  "rebateMm": 16.8,
+  "points": [
+    [
+      0.0,
+      13.2
+    ],
+    [
+      0.147,
+      29.79
+    ],
+    [
+      0.35,
+      30.0
+    ],
+    [
+      16.525,
+      30.0
+    ],
+    [
+      32.7,
+      30.0
+    ],
+    [
+      33.0,
+      29.835
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.3,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "uncertain",
+    "verifiedFeatures": [
+      "Single planar face with no ridge, bead, bevel, hollow or step visible in product-section, chevron or macro photographs",
+      "Directional wood grain / brushing running across the face (light oak/ash tone)",
+      "Chevron view shows two flat faces meeting at a corner apex, consistent with a flat profile",
+      "Macro view shows flat vertical bars in multiple colour finishes with planar faces",
+      "Stated rebate of 16.8 mm within the 33 x 30 mm envelope (dimensional data, not a visible raised feature)"
+    ],
+    "rejectedTraceFeatures": [
+      "Curved/loop gold line traces in framed-reference and family-context panels interpreted as background props or segmentation artefacts, not profile geometry",
+      "No raised crown, bead or hollow accepted from any trace, as no physical section, chevron or rotation photograph shows such relief"
+    ],
+    "observations": [
+      "Supplier profile label explicitly reads 'flat', matching the planar faces seen in all exact-SKU photographs",
+      "Product-section and profile-source panels show a uniform flat face with directional grain and no cross-section relief",
+      "Lighting and perspective in supplier shots produce highlights and shadows along edges; these are not treated as ridges",
+      "Colour/finish varies across macro samples (red, grey, brass, blue, wood) indicating a multi-finish family, but geometry remains flat"
+    ],
+    "concerns": [
+      "The thin gold line traces in the reference panels are ambiguous and could be mistaken for an ornate profile; they are rejected as unsupported by any physical section",
+      "Rebate depth (16.8 mm) is taken from supplier text and is not independently verifiable as a visible step in the provided photographs",
+      "Edge radii are estimated small breaks since no oblique rotation photograph clearly resolves the sight-edge rounding"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.6,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "rebate drop depth of 16.8 mm (not directly dimensioned in supplier photos; labels read 30 and 24)"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's main face is a single planar surface, matching the flat wood-grain face in the product-section photo and the flat tan face in the profile-source photo.",
+      "The chevron (45\u00b0) and macro photographs show flat-faced boards with simple square edges and no beads, ridges or hollows, consistent with a flat-face profile.",
+      "A rebate/step is visible in the profile-source photo (the lighter recessed band labelled 24), so the candidate's left-edge rebate is a genuinely photographed feature rather than a trace-only addition.",
+      "No perimeter ridge, bead or bevel has been added to the flat face in the candidate; the only edge treatment is the rebate and the thin top edge line, both consistent with a flat-faced board."
+    ],
+    "concerns": [
+      "The candidate's stated rebate drop of 16.8 mm does not obviously reconcile with the supplier labels 30 and 24; the exact rebate depth is not independently verifiable from the photos.",
+      "The chevron and macro views do not clearly expose the rebate depth, so the step dimension rests on the advisory trace.",
+      "Directional grain in the product-section photo is fine horizontal brushing; ensure the candidate texture retains this natural variation without tiling."
+    ]
+  }
+}

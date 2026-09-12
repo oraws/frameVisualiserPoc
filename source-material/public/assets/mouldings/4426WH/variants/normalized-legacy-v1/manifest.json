@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sku": "4426WH",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/4426WH/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg"
+  ]
+}

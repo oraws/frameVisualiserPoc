@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4100",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 41.0,
+  "depthMm": 13.0,
+  "rebateMm": 9.0,
+  "points": [
+    [
+      0.0,
+      4.0
+    ],
+    [
+      0.147,
+      12.825
+    ],
+    [
+      0.35,
+      13.0
+    ],
+    [
+      20.55,
+      13.0
+    ],
+    [
+      40.75,
+      13.0
+    ],
+    [
+      41.0,
+      12.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face confirmed across all EXACT SKU rotation photographs",
+      "Fine directional brushed/wood-grain texture running vertically on the face",
+      "Dark charcoal-grey matte finish consistent across rotations",
+      "Rebate/backing step (9 mm) indicated by the lighter rear strip in the catalogue panel and stated in supplier dimensions"
+    ],
+    "rejectedTraceFeatures": [
+      "White corner cutout in the lower catalogue panel treated as a segmentation/background artifact, not a ridge or bead",
+      "No convex crown, bead, hollow or step on the face supported by any rotation photograph"
+    ],
+    "observations": [
+      "Supplier profile label is explicitly 'flat' and the rotation photographs show one continuous planar face with no macro ridge recurring at intervals",
+      "The directional grain is intentional fine brushing, not a tiled repeat",
+      "The 41 x 13 mm envelope with a 9 mm rebate is consistent with a flat panel plus a rear backing step, not a moulded profile",
+      "Neutral appearance: matte dark grey with subtle tonal variation, no gloss highlights forming false geometry"
+    ],
+    "concerns": [
+      "Rebate depth (9 mm) is taken from the stated dimensional envelope; a dedicated physical section/chevron photograph confirming the step height is not clearly isolated in the board",
+      "Lighting and perspective in the rotation strip could exaggerate edge shadows; these were not interpreted as bevels",
+      "The white corner in the catalogue image is a segmentation edge and must not be read as an outer edge radius or step"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Perimeter brown stroke on top and left edges of the candidate cross-section reads as a thin raised bead/ridge that is not visible as a raised feature in the flat rotation photographs",
+      "Rebate drop of 9 mm on the inner sight edge is only evidenced by the advisory catalogue notch, not by an independent chevron/oblique physical-section photograph"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier rotation photographs (top row) and the lower-left catalogue image show a single flat charcoal face with fine directional grain/brushing; no raised perimeter bead or ridge is visible on that face.",
+      "The candidate cross-section is a flat tan body with a left-edge rebate step, which is broadly consistent with a flat board plus rebate, but the thin brown outline on the top and left edges could be misread as a perimeter ridge that the photographs do not support.",
+      "No true physical cross-section, chevron or oblique edge photograph is present to independently confirm the 9 mm rebate depth or the absence/presence of an edge bead; the only rebate evidence is the advisory white notch in the catalogue guide.",
+      "Colour/finish in the candidate (raw tan core) does not match the dark charcoal brushed finish shown in the supplier photographs, so the cross-section cannot be confirmed as the same finished product without a finished-section photo."
+    ],
+    "concerns": [
+      "Distinguish the brown outline stroke (material boundary) from a genuine raised perimeter bead; if it is a bead, it is unsupported by the flat-face photographs and must be removed.",
+      "The 9 mm rebate is unverified by an independent physical-section photograph and currently relies on the advisory catalogue trace.",
+      "Texture/colour mismatch between the tan schematic and the charcoal brushed supplier finish prevents full verification of the candidate as the exact SKU.",
+      "Recommend obtaining a chevron/oblique edge photograph to confirm the rebate and to confirm the face is a single planar surface with no added perimeter ridge before approval."
+    ]
+  }
+}

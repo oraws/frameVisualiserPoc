@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-1334",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T06:23:04.364453+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-1334",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 38.0,
+    "depthMm": 28.0,
+    "rebateMm": 22.0,
+    "points": [
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.147,
+        27.825
+      ],
+      [
+        0.35,
+        28.0
+      ],
+      [
+        19.05,
+        28.0
+      ],
+      [
+        37.75,
+        28.0
+      ],
+      [
+        38.0,
+        27.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "single planar face (no crown, bead, hollow or step visible in rotation photographs)",
+        "rebate of 22 mm consistent with supplier dimensions 38 x 28 mm",
+        "directional grain / brushed finish running along the face",
+        "light silvery-grey wood tone with natural tonal variation"
+      ],
+      "rejectedTraceFeatures": [
+        "no ridge, bead, bevel or hollow accepted; trace shows only a flat face plus rebate, no extra geometry to reject"
+      ],
+      "observations": [
+        "Top rotation strip shows one continuous flat face with horizontal directional grain; no repeating macro feature, only fine brush lines",
+        "Lower catalogue/profile image shows a flat vertical face with a white rebate zone at the bottom, matching the 22 mm rebate label",
+        "Supplier profile label is 'flat' and the physical rotation evidence supports a single planar face",
+        "Edge treatment appears sharp (no visible rounding) in the available views"
+      ],
+      "concerns": [
+        "Assembled family reference is a dark context and is not used to override the exact SKU colour/finish",
+        "Rotation photographs contain lighting and perspective variation; grain direction appears horizontal there vs vertical in the catalogue image, consistent with rotation rather than a tiled repeat",
+        "Edge radii are not clearly resolvable in the supplied views; minimal radius assumed for a flat rebate profile"
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Rebate drop step (22 mm) on inner sight edge is not independently visible in any flat-face, chevron or oblique supplier photograph; it appears only as a stated dimension and a schematic notch in the candidate outline."
+      ],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "The supplier rotation photographs (top row) show a single flat planar face with fine horizontal directional grain/brushing and no ridge, bead, bevel or hollow, which is consistent with the candidate's flat face.",
+        "The candidate cross-section adds a rebate drop step on the inner sight edge; this edge treatment is plausible from the stated 22 mm dimension but is not confirmable from the provided flat-face images, so it cannot be marked photo-verified.",
+        "The candidate face is rendered as a uniform solid tan/ochre fill, whereas the supplier evidence shows a weathered grey-white wood texture with directional grain; the cross-section schematic does not carry that texture, so texture/colour agreement is unconfirmed.",
+        "No perimeter ridge has been added to the flat photographed face, so the candidate does not violate the flat-face rule, but the rebate step remains an unverified edge feature."
+      ],
+      "concerns": [
+        "Lack of a physical-section, chevron or oblique photograph to confirm the rebate drop step and the inner sight edge geometry.",
+        "Texture and colour of the candidate face (solid tan) do not visibly match the weathered directional-grain finish in the supplier photographs; finish, gloss and surface relief are not verifiable from the schematic.",
+        "The assembled family reference (dark blue/teal corner moulding) is a different product family and should not be used to validate this SKU's profile."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "review-20260912061726-90945c05",
+  "referenceImages": [
+    "source-material/mainline/POL-1334/spin/img20.jpg",
+    "source-material/mainline/POL-1334/spin/img21.jpg",
+    "source-material/mainline/POL-1334/spin/img22.jpg",
+    "source-material/mainline/POL-1334/spin/img23.jpg",
+    "source-material/mainline/POL-1334/spin/img24.jpg",
+    "source-material/mainline/POL-1334/spin/img25.jpg",
+    "source-material/mainline/POL-1334/spin/img26.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/mainline/nelson/catalogue-p144-1.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.55,
+    "contrast": 0.9,
+    "patch_width": 640,
+    "overlap": 220,
+    "roughness_mid": 190.0,
+    "roughness_detail": 0.4,
+    "bump_detail": 1.0
+  },
+  "bestMetrics": {
+    "colourDeltaE": 4.5123,
+    "colourSpreadError": 0.0708,
+    "seamError": 0.0484,
+    "maximumAutocorrelation": 0.2963,
+    "detailError": 0.1925,
+    "clippedPixels": 0.0001
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 195.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 4.4608,
+        "colourSpreadError": 0.0804,
+        "seamError": 0.0534,
+        "maximumAutocorrelation": 0.2126,
+        "detailError": 0.3469,
+        "clippedPixels": 0.0002
+      },
+      "deterministicScore": 79.0,
+      "failedGates": [],
+      "agentReview": {
+        "score": 34,
+        "colourMatch": 58,
+        "textureMatch": 38,
+        "repetition": 88,
+        "seam": 32,
+        "finishMatch": 52,
+        "blockers": [
+          "Candidate shows a distinctive pointed-arch / chevron relief motif repeating at regular horizontal intervals; this macro feature is absent from the supplier flat finish crops, which display only horizontal directional grain. Unsupported geometry must be removed.",
+          "Strong horizontal tiling repeat of the mottled pattern and arch motif across the fixed-light preview.",
+          "Candidate is rendered darker and higher-contrast than the light, washed, low-contrast supplier finish."
+        ],
+        "observations": [
+          "Supplier crops (top) show a pale cream/grey washed surface with fine horizontal brushing/grain and no repeating arch or bead relief.",
+          "Family context thumbnail shows a dark moulding in situ, but no cross-section/rotation photo is provided to confirm any ridge, bead, rebate or step; per the brief, no profile feature may be added without visible photographic evidence.",
+          "Fixed-light preview (bottom) exhibits vertical banding plus a recurring pointed-arch shape at roughly equal spacing, indicating a tiled texture rather than natural variation.",
+          "Colour hue is broadly in the grey family but the candidate's mid-grey mottling and contrast exceed the supplier's lighter, flatter wash.",
+          "No hard seam line is clearly visible, but the periodic motif reads as a repeat seam."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.55,
+          "contrast": 0.9,
+          "patch_width": 640,
+          "overlap": 220,
+          "roughness_mid": 190,
+          "roughness_detail": 0.4,
+          "bump_detail": 1.0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.55,
+        "contrast": 0.9,
+        "patch_width": 640,
+        "overlap": 220,
+        "roughness_mid": 190.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.0
+      },
+      "metrics": {
+        "colourDeltaE": 4.5123,
+        "colourSpreadError": 0.0708,
+        "seamError": 0.0484,
+        "maximumAutocorrelation": 0.2963,
+        "detailError": 0.1925,
+        "clippedPixels": 0.0001
+      },
+      "deterministicScore": 82.0,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "limed_whitewashed_wood",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "horizontal directional grain and fine brush lines",
+        "natural tonal variation (light limed patches over darker wood)",
+        "soft diffuse surface relief without mirror highlights",
+        "light, desaturated whitewashed colour"
+      ],
+      "risks": [
+        "introducing a tiled or repeating grain pattern where only natural variation exists",
+        "over-smoothing that erases the fine directional brush lines",
+        "raising gloss or contrast so the limed surface reads glossy or saturated",
+        "sampling the dark family frame/artwork in the context reference instead of the exact SKU board",
+        "adding moulding profile features (beads, rebates, hollows) not visible in the flat supplier face"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "roughness_mid": 195,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.82,
+      "reasons": [
+        "The candidate preview shows a distinctive macro feature (a pointed-arch / leaf-shaped relief motif) recurring at regular horizontal intervals across the surface, which is a clear tiled repeat rather than natural variation.",
+        "The supplier SKU photographs (top row) display only fine horizontal directional grain and washed mottling; they do not contain the arch/leaf motifs seen in the candidate, so that geometry is unsupported by the exact SKU evidence.",
+        "Texture scale and irregularity differ: the supplier shows tight horizontal brushing, whereas the candidate shows broader vertical streaking plus the repeating arch pattern, failing the 'no obvious repeat' and 'retain texture scale' criteria.",
+        "Colour/finish is close in tone (light washed grey) but the candidate reads slightly cooler and more uniform, with the repeat creating banding not present in the supplier."
+      ],
+      "concerns": [
+        "Obvious periodic repeat of the arch/leaf motif across the candidate surface.",
+        "Arch/leaf relief feature has no counterpart in the supplier SKU photographs and must be removed.",
+        "Directional grain orientation and scale do not match the supplier's horizontal brushing.",
+        "Family context image (dark moulding profile) is context only and was not used to override the SKU texture evidence."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "5dffa362773356c5819374de0575ab5a7f6c6d89f2f1468f30939539ec22ee05",
+      "roughness.jpg": "a772802418a4244e479218f70e11b843835b2299a9384b25a796868421c31380",
+      "bump.jpg": "1085b026bd50b07ece5408dabb14742e9d011dd2b86343f8cf656de5cecd24c6"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

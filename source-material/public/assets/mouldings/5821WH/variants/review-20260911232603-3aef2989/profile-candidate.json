@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "sku": "5821WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 58.0,
+  "depthMm": 21.0,
+  "rebateMm": 11.8,
+  "points": [
+    [
+      0.0,
+      19.409
+    ],
+    [
+      50.632,
+      19.409
+    ],
+    [
+      51.053,
+      19.939
+    ],
+    [
+      51.158,
+      21.0
+    ],
+    [
+      58.0,
+      21.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar top face (flat, no crown or bead)",
+      "Rebate / step on the outer edge, confirmed in product-section, product-detail-1, product-detail-2 and macro",
+      "Square inner sight edge with no visible bevel or hollow"
+    ],
+    "rejectedTraceFeatures": [
+      "Small top-left micro-step shown in the profile-source guide: not independently visible in any physical section, chevron or rotation photo, treated as a trace/segmentation artifact"
+    ],
+    "observations": [
+      "Supplier dimensions preserved: 58 x 21 mm with an 11.8 mm rebate; supplier profile label reads 'flat'.",
+      "The dominant face is one continuous planar surface across all exact-SKU photos; no convex, concave or ornate relief is present.",
+      "The only genuine non-planar feature is the rebate step on the outer edge, visible as a notch in the white and grey boards (macro, detail-1, detail-2) and in the section photo.",
+      "Finish is a light cream/oak directional grain with low gloss; grain runs linearly and shows natural variation without tiling or seams.",
+      "Chevron photo confirms two flat faces meeting at a joint, consistent with a flat-faced board rather than a moulded profile."
+    ],
+    "concerns": [
+      "Supplier label 'flat' conflicts with the confirmed rebate step; classified as 'stepped' because the rebate is a real, dimensioned (11.8 mm) and photo-confirmed feature, while the main face remains flat.",
+      "Edge radii appear sharp/square in photos; values set to the 0.2 mm floor as no measurable rounding is visible.",
+      "The top-left step in the extracted guide is unconfirmed and should not be rendered as geometry."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.78,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The candidate cross-section shows a single planar face with only one edge treatment: a rebate/step at the outer edge (top-right), which is independently visible in the supplier macro, product-detail-1 and product-detail-2 photographs as a small step/notch on the board edge.",
+      "The chevron and product-section photographs confirm a flat, single-face board with no beads, ridges, hollows or additional moulding, matching the candidate's flat face.",
+      "No perimeter ridge or bead has been added to the flat photographed face; the only geometry beyond the flat face is the rebate step that is genuinely present in the photos.",
+      "The profile-source outline (advisory) also depicts a flat face with a step on the right edge, consistent with the candidate's rebate."
+    ],
+    "concerns": [
+      "The candidate's stated rebate drop of 11.8 mm does not clearly reconcile with the profile-source dimension callouts (21 / 15); exact millimetre depth cannot be confirmed from the photographs, so the numeric value is taken from the advisory trace.",
+      "Texture/colour (pale directional grain, gloss) cannot be fully verified from a solid-filled cross-section; only the flat-face finish is inferable from the photos.",
+      "Supplier images are subject to lighting and perspective, so the rebate depth and edge sharpness are approximate."
+    ]
+  }
+}

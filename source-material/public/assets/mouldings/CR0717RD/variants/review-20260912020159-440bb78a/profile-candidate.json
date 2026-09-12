@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0717RD",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 17.0,
+  "depthMm": 17.0,
+  "rebateMm": 9.5,
+  "points": [
+    [
+      0.0,
+      14.854
+    ],
+    [
+      0.258,
+      16.828
+    ],
+    [
+      0.429,
+      17.0
+    ],
+    [
+      17.0,
+      16.914
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "uncertain",
+    "verifiedFeatures": [
+      "Single planar main face (flat) confirmed in product-section and macro photographs",
+      "Rebate / step at one edge visible as the smaller beige square in the product-section",
+      "Fine horizontal directional grain / brushing on the red face (intentional texture, not a tiled repeat)"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel, hollow or crown confirmed; none present in any physical section, chevron or macro view",
+      "Chevron outline treated as assembled-family context only, not as cross-section geometry"
+    ],
+    "observations": [
+      "Product-section shows a flat red/orange bar with a small beige rebate notch at the left end, consistent with a flat profile plus a rebate step",
+      "Profile-source dimensions read 17 (overall) with a 13 x 5 rebate region; supplier envelope states 17 x 17 mm with 9.5 mm rebate",
+      "Macro row shows the colour family as flat, slightly oblique faces with edge highlights only \u2014 no moulded profile",
+      "Colour is a saturated red/orange with visible horizontal grain; finish appears matte-to-satin"
+    ],
+    "concerns": [
+      "Supplier profile label reads 'flat' while the product-section shows a genuine rebate step; classified as stepped with a confirmed flat main face to preserve the visible rebate",
+      "Lower panel contains no drawn catalogue trace to compare, so catalogueTraceAgreement is left uncertain rather than asserted",
+      "Rebate depth (9.5 mm vs 5 mm in profile-source) is ambiguous across the two dimension callouts; supplied 17 x 17 / rebate 9.5 envelope preserved"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The product-section and macro photographs show a single planar face with one rebate/step at the edge; the candidate cross-section reproduces exactly that flat face plus a single rebate notch and adds no extra ridge, bead, bevel or hollow.",
+      "The chevron image is only a mitered corner view of the same flat board and introduces no new profile feature, so it does not contradict the candidate.",
+      "No perimeter ridge has been added to a photographed flat face; the candidate's only edge treatment (the rebate drop) is independently visible in the supplier section and macro shots.",
+      "Finish/colour in the candidate (flat matte beige) is consistent with the supplier's flat brushed board finish shown in the profile-source and macro images."
+    ],
+    "concerns": [
+      "Rebate depth is labelled 9.5 mm in the candidate but the profile-source guide marks the step as 5 mm; the exact depth cannot be confirmed from the photographs, so the dimension is only partially agreed.",
+      "Directional grain/brushing scale and gloss are not fully verifiable from the low-resolution supplier images, so texture match is approximate."
+    ]
+  }
+}

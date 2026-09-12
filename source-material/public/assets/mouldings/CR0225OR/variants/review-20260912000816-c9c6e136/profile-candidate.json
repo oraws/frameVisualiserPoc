@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225OR",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      9.7
+    ],
+    [
+      0.147,
+      21.825
+    ],
+    [
+      0.35,
+      22.0
+    ],
+    [
+      10.55,
+      22.0
+    ],
+    [
+      20.75,
+      22.0
+    ],
+    [
+      21.0,
+      21.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar flat face (orange) in product-section and profile-source panels",
+      "Rebate / step cut on the inner edge (tan region, ~12.3 mm per supplier dimensions)",
+      "Straight sight edges with no visible bead, ridge, bevel or hollow"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel, hollow or step beyond the rebate is supported by any physical photograph; none introduced"
+    ],
+    "observations": [
+      "Product-section panel shows a flat orange rectangular face with a lighter tan rebate on the left edge; number 22 marks the 22 mm dimension.",
+      "Profile-source panel is a plain tan rectangle (number 17), consistent with a flat face and no crowned profile.",
+      "Chevron panel shows two flat bars joined at an angle to form a V; this is assembled family context, not a profile feature.",
+      "Lower panel states supplier dimensions 21 x 22 mm with rebate 12.3 mm and supplier profile label 'flat', matching the photographs.",
+      "Finish is a matte orange with a tan rebate; no directional brushing or tiling repeat is evident in the flat face."
+    ],
+    "concerns": [
+      "Chevron angle must not be misread as a profile crown or bevel; it is assembly geometry only.",
+      "The rebate is a cut-out step, not a moulded profile feature; keep the face itself planar.",
+      "Edge radii are not visibly rounded in the photographs; defaulting to minimal 0.2 mm sharp edges."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.78,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Product-section photo (left) shows a single planar orange face with a tan rebate/step block on the inner edge; the candidate's only non-planar feature is the 12.3 mm rebate drop on the inner sight edge, which matches this visible step.",
+      "Profile-source photo (middle) is a flat tan face with no ridges, beads or hollows; the candidate's main face is rendered as one flat plane, consistent with the photograph.",
+      "Chevron photo (right) shows flat mitered faces with no added perimeter ridge or bead; the candidate does not introduce any ridge on the flat face.",
+      "No feature in the candidate (ridge, bead, bevel, hollow) exists solely in the extracted trace; the rebate step is independently visible in the product-section photograph.",
+      "The flat photographed face has not gained an unsupported perimeter ridge in the candidate cross-section."
+    ],
+    "concerns": [
+      "The exact rebate depth (12.3 mm) and the 22/17 dimension callouts cannot be independently measured from the photographs; they are taken from the advisory catalogue trace.",
+      "Orientation of the rebate step relative to the sight edge is inferred from the product-section photo and may differ by rotation; the step itself is present in the evidence."
+    ]
+  }
+}

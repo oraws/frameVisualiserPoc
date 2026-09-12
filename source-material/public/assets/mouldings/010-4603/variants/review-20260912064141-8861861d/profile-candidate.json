@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sku": "010-4603",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 27.0,
+  "depthMm": 40.0,
+  "rebateMm": 33.0,
+  "points": [
+    [
+      0.0,
+      7.0
+    ],
+    [
+      0.147,
+      39.825
+    ],
+    [
+      0.35,
+      40.0
+    ],
+    [
+      13.55,
+      40.0
+    ],
+    [
+      26.75,
+      40.0
+    ],
+    [
+      27.0,
+      39.862
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face across all seven exact-SKU rotation photographs",
+      "Fine horizontal directional grain / brushing on the face",
+      "Dark near-black matte finish with low surface relief"
+    ],
+    "rejectedTraceFeatures": [
+      "Tan lower block in the catalogue guide (treated as segmentation edge / background, not a step)",
+      "White notch on the right of the guide (treated as background / shadow, not a rebate or hollow)"
+    ],
+    "observations": [
+      "Supplier profile label reads 'flat' and supplier dimensions are 27 x 40 mm with a 33 mm rebate.",
+      "All rotation photographs show one continuous flat face; no ridge, bead, bevel, hollow or step is independently visible in any physical section, chevron or oblique shot.",
+      "The directional grain is fine and horizontal, consistent with intentional brushing rather than a tiled repeat.",
+      "The lower catalogue/extracted guide is dominated by a black face block plus a tan region and a white cut-out that read as segmentation/background rather than confirmed geometry."
+    ],
+    "concerns": [
+      "Lighting in the rotation photographs is dim, which could mask a shallow rebate or edge break; the stated 33 mm rebate is not independently confirmed in the visible evidence.",
+      "The catalogue trace contains regions (tan block, white notch) that are not corroborated by any physical photograph and are therefore excluded from the rebuilt profile.",
+      "Edge radii are set to the minimum (0.2 mm) as a placeholder for square/broken edges because no distinct edge treatment is visible in the photographs."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.5,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate drop 33 mm",
+      "inner sight edge step / notch on left edge"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier photographs (top row) are flat-face shots showing only a fine directional brushed grain; they confirm a single planar face with no macro ridge, bead or hollow, which the candidate's flat tan face also reproduces.",
+      "The candidate cross-section adds a 'REBATE DROP 33 mm' depth and a small step on the inner sight edge that are not independently visible in any flat-face, chevron or oblique supplier photograph provided.",
+      "The lower-left catalogue/extracted guide shows a notched profile; the candidate's left-edge step partially mirrors it, but because the guide is advisory and the photos do not confirm the notch, it cannot be treated as verified.",
+      "No perimeter ridge has been added to the photographed flat face, so the face itself is consistent with the supplier evidence."
+    ],
+    "concerns": [
+      "Rebate depth (33 mm) and the inner-edge step are supported only by the candidate/guide, not by a physical-section or oblique photograph; a true cross-section or chevron photo is needed to confirm them.",
+      "If the rebate/step are not present on the physical product, the candidate over-models the profile and should be reduced to a flat face with only the visible edge thickness.",
+      "Texture match (brushed grain, dark top vs tan face) should be re-checked under neutral lighting, as the supplier face appears darker than the candidate's tan fill."
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "HS9",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 31.0,
+  "depthMm": 27.0,
+  "rebateMm": 15.1,
+  "points": [
+    [
+      0.0,
+      11.9
+    ],
+    [
+      0.147,
+      26.825
+    ],
+    [
+      0.35,
+      27.0
+    ],
+    [
+      15.55,
+      27.0
+    ],
+    [
+      30.75,
+      27.0
+    ],
+    [
+      31.0,
+      26.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face (flat) confirmed in product-section and base-texture",
+      "rebate / sight edge visible as the lower diagonal band in product-section, consistent with stated 15.1 mm rebate",
+      "square inner and outer edges (no bead, hollow or crown)"
+    ],
+    "rejectedTraceFeatures": [
+      "slanted right edge in profile-source interpreted as a bevel/ridge \u2014 rejected, it is the rebate cut, not a profile feature",
+      "diagonal highlight/shadow band in product-section \u2014 rejected as geometry, it is lighting on a flat face"
+    ],
+    "observations": [
+      "supplier profile label reads 'flat' and dimensions 31 x 27 mm with 15.1 mm rebate",
+      "base-texture shows fine horizontal directional grain / brushing, natural variation, no tiled repeat",
+      "product-section shows one continuous planar face with a rebate at the bottom edge",
+      "colour is a light natural oak / pale tan, low gloss, no visible surface relief beyond grain"
+    ],
+    "concerns": [
+      "profile-source slant must not be promoted to a bevel in the rendered candidate; keep face flat with rebate only",
+      "verify rebate depth 15.1 mm against the section before finalising edge geometry"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rebate drop of 15.1 mm on the left (inner sight) edge",
+      "Two small step/notch protrusions on the left edge (marked SUP)",
+      "Perimeter ridge/step added to an otherwise flat photographed face"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The supplier product-section and base-texture images show a single flat pale-wood planar face with no rebate, bead, hollow or step.",
+      "The profile-source image shows only one clean angled bevel/chamfer on a single edge, not a multi-step rebate drop.",
+      "The candidate cross-section introduces a 15.1 mm rebate drop and two small left-edge steps that have no counterpart in any supplier photograph.",
+      "Per the review rule, a flat photographed face must not gain a perimeter ridge; the candidate's left-edge geometry is supported only by the extracted trace, not by visible evidence.",
+      "The dimension '27' and the flat-face evidence are consistent with a simple bevelled board, not the stepped rebate shown in the candidate."
+    ],
+    "concerns": [
+      "Candidate left-edge steps (SUP) appear to be artefacts of the catalogue/extracted outline rather than real moulding features.",
+      "The 15.1 mm rebate drop is not corroborated by the oblique/chevron or section photographs.",
+      "Risk of over-modelling: a genuinely flat face with a single bevel has been rendered as a profiled rebate section.",
+      "Texture/colour of the candidate face is broadly consistent with the pale wood base-texture, but the geometry mismatch dominates the review."
+    ]
+  }
+}

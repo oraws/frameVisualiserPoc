@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "sku": "4426WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "convex",
+  "widthMm": 44.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "points": [
+    [
+      0.0,
+      9.201
+    ],
+    [
+      0.42,
+      9.708
+    ],
+    [
+      1.26,
+      9.708
+    ],
+    [
+      1.763,
+      10.805
+    ],
+    [
+      2.939,
+      11.649
+    ],
+    [
+      10.748,
+      13.169
+    ],
+    [
+      11.42,
+      14.351
+    ],
+    [
+      12.008,
+      15.026
+    ],
+    [
+      13.603,
+      16.039
+    ],
+    [
+      15.786,
+      16.461
+    ],
+    [
+      18.221,
+      16.461
+    ],
+    [
+      20.656,
+      16.714
+    ],
+    [
+      24.687,
+      17.643
+    ],
+    [
+      27.038,
+      18.487
+    ],
+    [
+      30.733,
+      20.26
+    ],
+    [
+      33.168,
+      21.695
+    ],
+    [
+      35.435,
+      23.299
+    ],
+    [
+      37.115,
+      24.987
+    ],
+    [
+      38.71,
+      25.831
+    ],
+    [
+      39.466,
+      26.0
+    ],
+    [
+      41.229,
+      26.0
+    ],
+    [
+      42.069,
+      25.831
+    ],
+    [
+      42.824,
+      25.409
+    ],
+    [
+      44.0,
+      24.058
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "convex",
+    "faceCrownMm": 2.5,
+    "innerEdgeRadiusMm": 1.0,
+    "outerEdgeRadiusMm": 1.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single convex scoop face (rounded crown) visible in the product-section photograph",
+      "Planar flat face with fine horizontal directional grain/brushing",
+      "Rebate/step at the back edge consistent with the 7 mm dimension in the profile-source silhouette",
+      "Chevron (V) assembly showing two mitred members meeting at an angle"
+    ],
+    "rejectedTraceFeatures": [
+      "No additional beads, ridges, hollows or double steps are present in the physical section; only the single convex scoop and one rebate step are confirmed"
+    ],
+    "observations": [
+      "Product-section photo shows a tan/beige textured rounded edge on the left transitioning to a lighter off-white flat face with fine linear grain",
+      "Profile-source silhouette is a simple convex scoop with a small rear step (7 mm) and overall height 26 mm",
+      "Chevron view confirms the member is used in a V/chevron assembly with a light neutral finish",
+      "Supplier dimensions 44 x 26 mm with rebate 14.6 mm and profile label 'scoop' are consistent with a single convex profile"
+    ],
+    "concerns": [
+      "Crown height (faceCrownMm) is estimated from the silhouette curvature and is approximate",
+      "The rebate/step is read from the profile-source guide and dimension callout rather than a clearly resolved edge in the section photo, so catalogueTraceAgreement is held at partial",
+      "Supplier lighting and perspective may exaggerate the texture relief on the rounded edge; treat fine grain as directional brushing, not a tiled repeat"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "Rebate drop annotated as 14.6 mm, whereas the supplier profile-source dimension reads 7 mm for the same step",
+      "Small secondary bump/notch at the rebate end is only weakly resolved in the supplier profile and not independently confirmable in the chevron or product-section photos"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "After a horizontal flip (candidate is labelled inner-sight-edge to outer-edge, supplier profile-source is oriented the opposite way), the overall moulding shape \u2014 one rounded high end, a long gentle concave slope, and a small step at the low end \u2014 is consistent with the supplier profile-source outline.",
+      "The product-section photo shows a single flat planar face with directional grain/brushing and no perimeter ridge, which the candidate preserves as a flat bottom face; no spurious face ridge was added.",
+      "The chevron photo confirms a mitered corner with a plain face, consistent with a simple profile rather than a multi-bead moulding.",
+      "The rebate/step dimension in the candidate (14.6 mm) does not match the supplier's stated 7 mm, so the step depth is not independently verified."
+    ],
+    "concerns": [
+      "Dimension conflict: candidate rebate drop 14.6 mm vs supplier 7 mm; the step depth cannot be confirmed from the photographs.",
+      "The exact curvature of the long slope and the small end bump are only visible in the 2D profile-source line drawing, not in a true oblique/3D rotation photo, so their depth is unverified.",
+      "Orientation of the candidate (inner-to-outer) is assumed to be a mirror of the supplier profile; if the supplier profile is already inner-to-outer, the high/low ends would be reversed and the candidate would be wrong."
+    ]
+  }
+}

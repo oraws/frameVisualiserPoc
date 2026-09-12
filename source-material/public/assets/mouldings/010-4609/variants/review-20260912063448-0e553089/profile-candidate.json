@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "010-4609",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 27.0,
+  "depthMm": 40.0,
+  "rebateMm": 33.0,
+  "points": [
+    [
+      0.0,
+      7.0
+    ],
+    [
+      0.147,
+      39.825
+    ],
+    [
+      0.35,
+      40.0
+    ],
+    [
+      13.55,
+      40.0
+    ],
+    [
+      26.75,
+      40.0
+    ],
+    [
+      27.0,
+      39.862
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar front face across all exact-SKU rotation photographs",
+      "Uniform off-white painted finish with faint directional grain",
+      "Stated rebate of 33 mm within the 27 x 40 mm envelope (dimensional, not a visible front-face feature)"
+    ],
+    "rejectedTraceFeatures": [
+      "White notch/step visible in the lower catalogue guide (no corresponding step in any rotation photo)",
+      "Tan/beige lower block in the guide (interpreted as substrate or segmentation background, not a profile face)",
+      "Any implied ridge, bead, bevel or hollow from the extracted trace (none present in physical sections)"
+    ],
+    "observations": [
+      "Top row of exact-SKU rotation images shows a flat white rectangular section with only perspective and lighting variation; no macro ridge, bead, hollow or step recurs at any interval.",
+      "Supplier profile label explicitly reads 'flat', consistent with the planar faces in the photographs.",
+      "Fine directional grain/brush lines are present but are intentional finish texture, not a tiled repeat or moulded profile.",
+      "Lower-left panel is a catalogue/extracted guide containing a white upper field and a tan lower field with a white notch; these read as colour swatch and segmentation edges rather than confirmed geometry.",
+      "Edge treatment in the rotation photos appears square to minimally broken; no measurable crown or radius is visible."
+    ],
+    "concerns": [
+      "The lower guide's notch and tan region could be misread as a stepped profile; rejected in favour of the flat exact-SKU photographs.",
+      "Rebate depth (33 mm) is a stated back-side dimension and cannot be independently confirmed from the front-face rotation images shown.",
+      "Lighting and perspective in the supplier images create highlight/shadow gradients that must not be interpreted as surface relief."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.48,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "left-edge step/ridge line in candidate cross-section not clearly resolvable in supplier photographs"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier photographs (top row) show a flat cream/white face with a single vertical side edge, broadly consistent with a flat-faced board carrying a rebate, but resolution is too low to independently confirm the stated 33 mm rebate drop or the exact edge treatment.",
+      "The candidate cross-section (lower right) is essentially one planar face plus a left-edge rebate step, which matches the flat-face intent of the photographs and the advisory catalogue guide (lower left).",
+      "The thin brown vertical line on the candidate's left edge reads as a small step/ridge that cannot be positively confirmed as a real moulded feature in the photographs; it may be an extracted-trace artefact rather than visible geometry.",
+      "No elaborate bead, hollow, or chevron profile is present in either the candidate or the photographs, so no multi-feature moulding needs to be reconciled."
+    ],
+    "concerns": [
+      "Photographs are low-detail white blocks; the rebate dimension (33 mm) and the precise inner-sight-edge-to-outer-edge profile cannot be independently verified from visible evidence.",
+      "The candidate's left-edge line could represent an unsupported perimeter ridge if the photographed side is in fact a single flat rebate face.",
+      "Texture/colour in the candidate (uniform tan) does not clearly match the pale, lightly grained finish visible in the supplier photographs, suggesting a finish mismatch to be checked under neutral lighting."
+    ]
+  }
+}

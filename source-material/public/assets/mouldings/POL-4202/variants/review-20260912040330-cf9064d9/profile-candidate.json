@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4202",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 16.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      15.825
+    ],
+    [
+      0.35,
+      16.0
+    ],
+    [
+      15.05,
+      16.0
+    ],
+    [
+      29.75,
+      16.0
+    ],
+    [
+      30.0,
+      15.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face (supplier profile label: flat)",
+      "Fine directional grain / linear brushing across the face",
+      "Dark charcoal-grey matte finish"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel, hollow or step independently confirmed in rotation photographs",
+      "Grey base and white square in lower catalogue panel treated as rebate backing / segmentation background, not a profile ridge"
+    ],
+    "observations": [
+      "Top-row EXACT SKU rotation photographs show a uniform dark grey face with consistent fine directional grain; no macro ridge or step recurs at regular intervals.",
+      "Lower catalogue panel shows a flat brushed vertical face above a grey concrete-like base with a white square, consistent with a flat profile plus rebate backing rather than an ornate cross-section.",
+      "Supplier dimensions 50 x 16 mm with 10 mm rebate are preserved as the dimensional envelope.",
+      "Lighting is low-key and directional; surface relief appears flat with only grain-driven highlight variation."
+    ],
+    "concerns": [
+      "Rotation photographs are dark and oblique; subtle edge rounding (inner/outer radius) cannot be independently measured, so minimum 0.2 mm values are assumed.",
+      "The white square and grey base in the catalogue image may be segmentation edges or background and must not be read as geometry.",
+      "No clear chevron/physical cross-section is visible to confirm rebate depth; rebate taken from supplier text only."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate drop 10 mm (inner sight edge to outer edge)"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The top rotation photographs and the left vertical panel show a single flat, dark charcoal face with fine directional brushing/grain; no ridges, beads, bevels, hollows or steps are visible, and the candidate correctly does not add any such profile features to that flat face.",
+      "The candidate cross-section is essentially one planar face with a thin edge line and a labelled rebate, which is consistent with a flat photographed face rather than an invented perimeter ridge.",
+      "The fine vertical lines in the supplier images are intentional directional grain/brushing, not a tiled repeat, so no tiling artefact needs to be removed.",
+      "The 'REBATE DROP 10 mm' is a profile/depth feature that is not independently visible in the supplied flat-face rotation photographs; it is supported only by the dimension label/extracted guide, so it cannot be confirmed as a physical step."
+    ],
+    "concerns": [
+      "The 10 mm rebate depth and the inner-sight-edge-to-outer-edge step are not verifiable from the available flat rotation photos; a chevron/oblique or true section photograph is needed to confirm the rebate exists and its depth.",
+      "The candidate section is rendered in a tan substrate colour while the photographed face finish is dark brushed charcoal; this is acceptable for a section drawing but the face finish must be matched separately in the texture review.",
+      "The small framed-pictures image is context-only and provides no profile evidence."
+    ]
+  }
+}

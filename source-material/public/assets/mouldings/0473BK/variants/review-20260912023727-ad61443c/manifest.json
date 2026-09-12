@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 2,
+  "sku": "0473BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T02:44:41.364259+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "0473BK",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 84.0,
+    "depthMm": 40.0,
+    "rebateMm": 22.4,
+    "points": [
+      [
+        0.0,
+        23.764
+      ],
+      [
+        1.466,
+        23.764
+      ],
+      [
+        2.199,
+        24.059
+      ],
+      [
+        3.518,
+        25.387
+      ],
+      [
+        3.958,
+        26.421
+      ],
+      [
+        4.838,
+        27.306
+      ],
+      [
+        5.424,
+        27.601
+      ],
+      [
+        6.89,
+        27.601
+      ],
+      [
+        7.77,
+        27.159
+      ],
+      [
+        8.356,
+        27.159
+      ],
+      [
+        9.089,
+        29.225
+      ],
+      [
+        10.702,
+        31.439
+      ],
+      [
+        11.581,
+        32.03
+      ],
+      [
+        13.047,
+        32.62
+      ],
+      [
+        14.806,
+        32.62
+      ],
+      [
+        16.272,
+        31.882
+      ],
+      [
+        17.445,
+        30.554
+      ],
+      [
+        18.471,
+        28.192
+      ],
+      [
+        19.058,
+        25.535
+      ],
+      [
+        20.084,
+        25.387
+      ],
+      [
+        21.11,
+        24.945
+      ],
+      [
+        22.136,
+        23.469
+      ],
+      [
+        53.215,
+        23.469
+      ],
+      [
+        54.827,
+        25.092
+      ],
+      [
+        56.733,
+        25.24
+      ],
+      [
+        57.759,
+        27.011
+      ],
+      [
+        58.639,
+        27.897
+      ],
+      [
+        60.105,
+        28.487
+      ],
+      [
+        60.691,
+        28.339
+      ],
+      [
+        68.461,
+        28.339
+      ],
+      [
+        71.539,
+        32.62
+      ],
+      [
+        74.178,
+        35.277
+      ],
+      [
+        75.791,
+        36.605
+      ],
+      [
+        77.55,
+        37.786
+      ],
+      [
+        81.948,
+        39.852
+      ],
+      [
+        83.267,
+        40.0
+      ],
+      [
+        84.0,
+        39.41
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.3,
+      "outerEdgeRadiusMm": 0.3,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "Single planar dark front face (confirmed in chevron and oblique detail views)",
+        "Angled/chamfered sight edge transitioning to the back (consistent with 'angled' label)",
+        "Rebate step offset from the front face (supplier rebate 22.4 mm)",
+        "Mitered 45-degree chevron corner with clean flat face"
+      ],
+      "rejectedTraceFeatures": [
+        "Rounded bead/bump on the right of the extracted profile guide (no distinct rounded bead visible in physical section or detail photos)",
+        "Sloped top-left ridge in the extracted silhouette (interpreted as the rebate/edge, not a separate raised ridge)"
+      ],
+      "observations": [
+        "Supplier dimensions preserved: 84 x 40 mm; rebate 22.4 mm; profile label 'angled'.",
+        "Product-section photo shows a flat black front face with a cream back/rebate strip and a small top notch (rebate cut).",
+        "Chevron photo confirms a flat, non-crowned face with mitered edges and no convex crown.",
+        "Oblique detail photos show the flat dark face and the offset cream rebate, supporting a stepped/angled profile rather than an ornate one.",
+        "Macro family row shows the same flat-faced profile in multiple colours, confirming a shared flat-face shape family.",
+        "Finish is a matte/satin dark (near-black) with subtle directional grain; no gloss highlight interpreted as geometry."
+      ],
+      "concerns": [
+        "The extracted profile guide's right-hand rounded bump is not independently confirmed as a bead; treated as a trace artefact and rejected.",
+        "Lighting and perspective in oblique shots could exaggerate the edge angle; radius values kept minimal (0.3 mm) to reflect a near-sharp angled edge.",
+        "Cream back/rebate colour is a substrate/backing tone, not a finish face; do not read it as a second coloured face."
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Right-hand long continuous bevel rising to a sharp outer point (supplier oblique/detail photos and the profile-source silhouette show a rounded bead/edge, not a long straight bevel to a sharp tip)",
+        "Left-hand perimeter bead/step above the flat face (not clearly resolvable as a discrete ridge in the flat-face and macro photographs; may be trace-only)"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "The candidate's outer edge is rendered as a long smooth bevel terminating in a sharp point, whereas the supplier oblique views (product-detail-1/2) and the profile-source silhouette depict a rounded bead/edge treatment; this is a shape conflict, not a match.",
+        "The left-side bead/step in the candidate is not independently confirmable as a discrete ridge in the flat-face, macro or chevron photographs, so it risks being a trace-only feature added to an otherwise flat face.",
+        "The 22.4 mm 'rebate drop' dimension is a measurement annotation, not a verified physical rebate; no clear rebate hollow is visible in the photographs."
+      ],
+      "concerns": [
+        "Outer-edge geometry (bevel-to-point vs rounded bead) is inconsistent between the candidate and the supplier evidence; rebuild the outer edge from the oblique photographs before approval.",
+        "Confirm whether the left edge is a true bead or a flat face with only edge treatment; do not retain a perimeter ridge that is not visible in the physical-section photos.",
+        "Verify the stated 22.4 mm dimension against a physical measurement or a clearly visible rebate in the photographs; treat it as advisory until confirmed."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912023727-ad61443c",
+  "referenceImages": [
+    "public/assets/mouldings/0473BK/product-section.jpg",
+    "public/assets/mouldings/0473BK/profile-source.png",
+    "public/assets/mouldings/0473BK/chevron.jpg",
+    "public/assets/mouldings/0473BK/macro.jpg",
+    "public/assets/mouldings/0473BK/product-detail-1.jpg",
+    "public/assets/mouldings/0473BK/product-detail-2.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.5,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 185.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.2
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.9577,
+    "colourSpreadError": 0.0836,
+    "seamError": 0.0102,
+    "maximumAutocorrelation": 0.2393,
+    "detailError": 0.1216,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 3.9577,
+        "colourSpreadError": 0.0836,
+        "seamError": 0.0102,
+        "maximumAutocorrelation": 0.2393,
+        "detailError": 0.1216,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 95.5,
+      "failedGates": [],
+      "agentReview": {
+        "score": 74,
+        "colourMatch": 90,
+        "textureMatch": 80,
+        "repetition": 86,
+        "seam": 68,
+        "finishMatch": 82,
+        "blockers": [
+          "Profile relief (cove, bead, rebate) is not independently confirmable in the flat fixed-light preview; the candidate reads as a single planar face with an edge highlight, so any moulding geometry must be validated against the supplier cross-section before release.",
+          "A distinct lighter horizontal band runs across both the unlit atlas and the fixed-light preview and reads as a seam/tiling line rather than natural grain."
+        ],
+        "observations": [
+          "Supplier product-detail crops show a dark charcoal moulding with fine horizontal directional grain and a small rounded bead plus a flat face at the outer edge; the cream end-caps confirm a simple profile with one cove/curve, a flat face, a bead and a rebate step.",
+          "Candidate colour is a near-black charcoal that matches the supplier dark finish under neutral light; no obvious hue shift.",
+          "Directional grain in the candidate is horizontal and fine, consistent with the supplier's brushed/striated surface, so it should be retained as intentional grain rather than removed as a repeat.",
+          "The horizontal highlight line in the fixed-light preview is too regular and continuous to be natural variation; it is the most likely seam/tiling artifact.",
+          "Gloss/relief in the candidate is low and matte, broadly consistent with the supplier's low-sheen dark finish."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.2
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 4.4164,
+        "colourSpreadError": 0.2843,
+        "seamError": 0.0121,
+        "maximumAutocorrelation": 0.2735,
+        "detailError": 0.3302,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 82.7,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "painted_lacquered_wood_grain",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "fine directional grain/brushing running along the moulding length",
+        "low-sheen matte-to-satin surface with soft diffuse highlights",
+        "dark charcoal/near-black colour with subtle tonal variation",
+        "physical profile: curved top, small bead/ogee, flat face, right-hand step/rebate",
+        "natural grain scale and irregular variation (no perfect repeat)"
+      ],
+      "risks": [
+        "grain tiling or visible repeat seams along the length",
+        "over-smoothing that erases the directional brush texture",
+        "sheen rendered too glossy (mirror highlights on the face)",
+        "colour over-saturated or shifted away from the dark charcoal reference",
+        "adding profile beads/hollows supported only by an extracted trace, not visible in the cross-section",
+        "losing the visible raw cut-end contrast at the profile edge"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "roughness_mid": 185,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "reasons": [
+        "Main face colour and matte finish of the candidate are broadly consistent with the dark charcoal exact-SKU samples in the supplier macro and detail photographs.",
+        "Texture scale and fine directional grain in the candidate match the supplier evidence band; no distinctive macro feature repeats at regular intervals, so no obvious tiling is detected.",
+        "The lighter horizontal line in the candidate corresponds to an edge/bead treatment that is also present in the supplier evidence, so it is not automatically a seam."
+      ],
+      "concerns": [
+        "Edge/line colour mismatch: the exact-SKU detail photographs (product-detail-1, product-detail-2) show a cream/beige raw edge, whereas the candidate's lighter line reads grey-white, suggesting the edge colour is not faithfully retained.",
+        "Profile geometry cannot be independently verified: the supplier cross-section and chevron show a multi-feature moulding (curved face, step, bead, rebate), but the flat fixed-light candidate preview does not expose these ridges/beads, so unsupported or missing profile features cannot be ruled out.",
+        "The horizontal lighter line could alternatively be a render seam rather than the intended edge treatment; this is ambiguous under the given lighting.",
+        "Supplier images are subject to lighting/perspective, and the user's profile fault report is treated as a hypothesis that the current preview does not conclusively resolve."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "846bae8ee64261d1db957c996b2ba138d94a73bee4521eac3d3c941bf12ab4a1",
+      "roughness.jpg": "cc49921214d2b52bb5f54b81075c8de7ab827c44f23a96aacd89e04abbed540c",
+      "bump.jpg": "118fc1ba98f7f0239503cc06a757ceef7b58e5dabd0aa6804f0a0bb4a4f8086b"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sku": "2650BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 50.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "points": [
+    [
+      0.0,
+      11.4
+    ],
+    [
+      0.147,
+      25.825
+    ],
+    [
+      0.35,
+      26.0
+    ],
+    [
+      25.05,
+      26.0
+    ],
+    [
+      49.75,
+      26.0
+    ],
+    [
+      50.0,
+      25.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face (flat) confirmed in product-section, chevron and macro photographs",
+      "Rebate / mounting step on one sight edge visible in profile-source diagram and macro section",
+      "Fine directional grain / brush texture on the face (intentional, not a tiled repeat)",
+      "Sharp 90-degree sight edges in macro and chevron views",
+      "Mitered 45-degree chevron corner consistent with a flat face"
+    ],
+    "rejectedTraceFeatures": [
+      "No bead, ridge, bevel, hollow or crown present; any such feature would be unsupported by photographs and is rejected",
+      "No ornate or convex/concave profile element confirmed"
+    ],
+    "observations": [
+      "Supplier profile label is 'flat' and the physical section shows one planar face with a rebate step, matching the label",
+      "Exact SKU colour/finish is a dark (black) textured face with a tan/wood backing; this is authoritative over the white 'Alberta' family reference",
+      "Directional grain runs horizontally across the face and is uniform, consistent with brushed/wood-grain texture rather than a repeated tile",
+      "Chevron and macro views show clean flat faces meeting at sharp edges, supporting a flat classification"
+    ],
+    "concerns": [
+      "Dimensional inconsistency: supplier text states 50 x 26 mm with rebate 14.6 mm, but the profile-source diagram reads 30 mm face width, 6 mm edges and 17 mm rebate; these do not reconcile and need supplier clarification",
+      "Family reference (Alberta) is white while the exact SKU is black; ensure the rendered candidate uses the exact SKU black finish, not the family white",
+      "Edge radii are not directly measurable from the images; values set to the minimum allowed (0.2 mm) reflecting the visually sharp edges"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Supplier photographs (product-section, chevron, macro) show a single flat planar face with only a thin edge/rebate treatment; no bead, ridge, hollow or multi-step profile is visible, so the candidate's flat face is consistent with the photos.",
+      "The candidate cross-section is a flat rectangle with a left-side rebate drop, which matches the flat-face + inner-sight-edge evidence in the chevron and macro shots.",
+      "The catalogue/extracted profile-source guide shows a 17 mm right-hand step and 6 mm lips that are not reproduced in the candidate; because the photos do not clearly confirm a 17 mm step, the candidate's omission is acceptable but the dimensional agreement is poor."
+    ],
+    "concerns": [
+      "Rebate drop in the candidate is stated as 1.46 mm, which conflicts with the 17 mm step dimension in the catalogue profile-source; this large mismatch needs reconciliation against the physical section.",
+      "The 6 mm lip features in the catalogue trace are not represented in the candidate and are not unambiguously visible in the macro/chevron photos, so their presence/absence is uncertain.",
+      "Texture in the product-section photo is a fine directional brushed grain on a dark face; the candidate is rendered as a flat tan face, so finish/colour and grain direction should be re-checked under neutral lighting before approval."
+    ]
+  }
+}

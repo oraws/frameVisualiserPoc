@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-4541",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T05:21:04.738642+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-4541",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 25.0,
+    "depthMm": 18.0,
+    "rebateMm": 11.0,
+    "points": [
+      [
+        0.0,
+        7.0
+      ],
+      [
+        0.168,
+        17.72
+      ],
+      [
+        0.4,
+        18.0
+      ],
+      [
+        12.5,
+        18.0
+      ],
+      [
+        24.6,
+        18.0
+      ],
+      [
+        25.0,
+        17.78
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "Single planar face confirmed across rotation photographs",
+        "Light golden/oak directional grain running along the length",
+        "Slightly rounded/bevelled inner and outer sight edges",
+        "Consistent 25 x 18 mm dimensional envelope with stated 11 mm rebate"
+      ],
+      "rejectedTraceFeatures": [
+        "Greenish mass at the base of the lower catalogue image (segmentation/background, not a ridge or bead)",
+        "Any implied bead, hollow, step or ornate profile not present in the physical rotation sections"
+      ],
+      "observations": [
+        "Top rotation strip shows a flat face with a central highlight attributable to lighting, not a convex crown",
+        "Lower catalogue panel shows the same flat face with vertical grain and natural knot/streak variation",
+        "No repeating macro feature at regular intervals; fine directional grain is intentional and not a tiled repeat",
+        "Edge treatment is limited to small radii on the sight edges; no independent confirmation of additional moulded profiles"
+      ],
+      "concerns": [
+        "The 11 mm rebate is a back-side feature not directly visible in the supplied face/rotation photographs",
+        "Profile label 'reverse' orientation should be confirmed against installation direction",
+        "Catalogue image contains a green segmentation edge that must not be interpreted as geometry"
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "flat planar face (supplier front photographs show a reeded/grooved face with multiple parallel ridges, not a single flat plane)"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "The supplier rotation photographs (top strip) clearly show a face with several parallel horizontal ridges/grooves (reeding), whereas the candidate cross-section renders the face as a single flat plane with no ridges, beads or hollows.",
+        "The candidate only depicts an inner-sight-edge rebate step (11 mm drop) and a flat outer face; this omits the reeded profile that is the dominant visible feature in the physical photographs.",
+        "The left vertical supplier image shows a curved/hollow lower profile and vertical grain relief that is not represented in the candidate's rectangular section.",
+        "Because the photographed face is grooved, a flat candidate face is not a 'flat photographed face gaining a ridge' but rather a flat candidate that fails to reproduce visible grooves \u2014 a mismatch that must be resolved against the physical evidence before approval."
+      ],
+      "concerns": [
+        "Candidate cross-section is materially simpler than the supplier photographs; the reeded/grooved face is missing.",
+        "The 11 mm rebate drop and inner sight edge step cannot be independently confirmed as the only edge treatment given the conflicting face geometry.",
+        "Texture/colour: supplier photos show strong directional grain and warm golden finish with surface relief; the candidate's flat tan fill does not convey the groove relief or grain scale.",
+        "Recommend rebuilding the section to include the visible parallel ridges/hollows and re-verifying the rebate against an oblique/chevron photograph."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "review-20260912051514-5bda7a45",
+  "referenceImages": [
+    "source-material/mainline/POL-4541/spin/img20.jpg",
+    "source-material/mainline/POL-4541/spin/img21.jpg",
+    "source-material/mainline/POL-4541/spin/img22.jpg",
+    "source-material/mainline/POL-4541/spin/img23.jpg",
+    "source-material/mainline/POL-4541/spin/img24.jpg",
+    "source-material/mainline/POL-4541/spin/img25.jpg",
+    "source-material/mainline/POL-4541/spin/img26.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/mainline/watercolour/catalogue-p084-1.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 3,
+    "colour_strength": 0.85,
+    "contrast": 1.06,
+    "patch_width": 512,
+    "overlap": 168,
+    "roughness_mid": 182.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.6
+  },
+  "bestMetrics": {
+    "colourDeltaE": 5.9564,
+    "colourSpreadError": 0.1578,
+    "seamError": 0.0196,
+    "maximumAutocorrelation": 0.2241,
+    "detailError": 0.0417,
+    "clippedPixels": 0.0741
+  },
+  "bestFailedGates": [
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 6.0215,
+        "colourSpreadError": 0.108,
+        "seamError": 0.0183,
+        "maximumAutocorrelation": 0.4997,
+        "detailError": 0.029,
+        "clippedPixels": 0.0116
+      },
+      "deterministicScore": 80.2,
+      "failedGates": [],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 68,
+        "textureMatch": 72,
+        "repetition": 55,
+        "seam": 52,
+        "finishMatch": 66,
+        "blockers": [
+          "Periodic vertical dark lines recur at regular intervals across the atlas and fixed-light preview; these are tiling seams, not present in any supplier crop, and read as a tiled repeat of a macro feature.",
+          "Flat field of the candidate is over-bright and desaturated (pale cream) relative to the warmer, more saturated brass/gold in the supplier photographs."
+        ],
+        "observations": [
+          "Profile: supplier crops show a single planar face carrying a band of parallel horizontal reeds/beads with simple edge treatment; the candidate reproduces this horizontal reeded band, so the core profile is supported and no extra trace-only geometry is visible.",
+          "Grain direction is correct (horizontal/linear) and matches the brushed directional grain in the supplier evidence.",
+          "The vertical periodic lines in the middle atlas and bottom preview are not in the supplier photos and indicate a tile seam / panel joint artifact rather than real moulding detail.",
+          "Colour in the recessed reeds is closer to the supplier brass, but the broad flat areas are washed out, lowering overall colour match.",
+          "Surface relief of the reeds is plausible but slightly too uniform/regular compared with the natural mottling in the supplier crops."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.06,
+          "patch_width": 512,
+          "overlap": 168,
+          "roughness_mid": 182,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.6
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.06,
+        "patch_width": 512,
+        "overlap": 168,
+        "roughness_mid": 182.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 5.9651,
+        "colourSpreadError": 0.1588,
+        "seamError": 0.0204,
+        "maximumAutocorrelation": 0.2187,
+        "detailError": 0.0434,
+        "clippedPixels": 0.0747
+      },
+      "deterministicScore": 82.2,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.85,
+        "contrast": 1.06,
+        "patch_width": 512,
+        "overlap": 168,
+        "roughness_mid": 182.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 5.9706,
+        "colourSpreadError": 0.1589,
+        "seamError": 0.0212,
+        "maximumAutocorrelation": 0.3108,
+        "detailError": 0.0421,
+        "clippedPixels": 0.0766
+      },
+      "deterministicScore": 79.1,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.85,
+        "contrast": 1.06,
+        "patch_width": 512,
+        "overlap": 168,
+        "roughness_mid": 182.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 5.9564,
+        "colourSpreadError": 0.1578,
+        "seamError": 0.0196,
+        "maximumAutocorrelation": 0.2241,
+        "detailError": 0.0417,
+        "clippedPixels": 0.0741
+      },
+      "deterministicScore": 82.3,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "brushed metallic gold (satin)",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "horizontal brushed/linear grain running along the moulding length",
+        "parallel ridge and bead relief with soft rounded highlights",
+        "natural tonal variation and subtle mottling across the gold surface",
+        "soft, diffuse highlight band on the upper ridge (non-mirror)",
+        "fine surface relief consistent with a brushed metal, not a flat paint"
+      ],
+      "risks": [
+        "tiling or repeating the directional grain into a visible pattern",
+        "over-smoothing that erases the brushed lines and ridge relief",
+        "misclassifying the satin sheen as gloss because curved ridge edges catch light",
+        "importing profile geometry (rebate, hollow, step) from an extracted trace that is not visible in the supplier cross-section",
+        "sampling colour from the artwork, mount, wall or a sibling frame instead of the exact SKU band",
+        "excessive saturation/contrast that turns the muted gold into a bright chrome-like tone"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.5,
+        "bump_detail": 2.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "Candidate preserves the supplier's gold/brass metallic colour and the horizontal ridge-and-bead structure seen in the authoritative supplier photographs.",
+        "Directional horizontal grain/brushing and overall texture scale in the candidate are broadly consistent with the supplier finish under neutral fixed lighting.",
+        "Family context images were treated as non-authoritative and did not override the exact-SKU supplier evidence."
+      ],
+      "concerns": [
+        "Faint vertical seam lines recur at regular horizontal intervals across the candidate, indicating a tiled repeat rather than a continuous natural surface.",
+        "Natural macro irregularity present in the supplier photos is partially lost in the candidate, giving a more uniform, repeated banding.",
+        "clippedPixels of 0.0741 suggests some highlight clipping on the bright bead faces, slightly altering perceived gloss.",
+        "seamError (0.0196) and maximumAutocorrelation (0.2241) are non-zero, supporting the presence of a periodic repeat that should be removed before approval."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "b98f7820a2f383363b4cf43b3407167518840ac03b05d40eb5298063fbf56fe8",
+      "roughness.jpg": "27353626385c91947d29f4f616c8c65ca33fbfdd655452b68021787fee7c5871",
+      "bump.jpg": "4ebe83ab864f6ec6f47de393613e930884f7bb0d38a1c5a3c0b3234718ac027c"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

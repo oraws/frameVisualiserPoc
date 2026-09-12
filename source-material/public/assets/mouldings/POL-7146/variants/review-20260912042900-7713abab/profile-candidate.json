@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-7146",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 10.0,
+  "depthMm": 45.0,
+  "rebateMm": 33.0,
+  "points": [
+    [
+      0.0,
+      12.0
+    ],
+    [
+      0.21,
+      44.65
+    ],
+    [
+      0.5,
+      45.0
+    ],
+    [
+      5.0,
+      45.0
+    ],
+    [
+      9.5,
+      45.0
+    ],
+    [
+      10.0,
+      44.725
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar broad face in a flat white painted finish",
+      "Right-angle rebate return forming an L-shape (edge line visible in the rotation photographs)"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead, concave hollow or ornate ridge is present in either the trace or the photographs"
+    ],
+    "observations": [
+      "The top exact-SKU rotation strip shows a flat white face with a faint vertical edge line consistent with the L return rather than a moulded profile",
+      "The lower catalogue/extracted guide shows an L corner (two perpendicular white faces) set against a speckled tan background that is not part of the moulding",
+      "Supplier dimensions 10 x 45 mm with a 33 mm rebate and the 'L shape' label support a flat strip with a 90-degree rebate",
+      "Finish is a flat white paint with no visible directional grain, brushing or surface relief"
+    ],
+    "concerns": [
+      "The rebate/step is most clearly resolved in the catalogue guide; in the rotation photographs it appears only as a faint edge line, so its confirmation is partial",
+      "The speckled tan region in the lower image is background, not moulding material, and must not be read as texture or colour of the product",
+      "Faint vertical lines in the top strip may include tiling seams and have not been interpreted as profile features"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.5,
+    "photoVerified": false,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Candidate cross-section is a single planar face with one rebate step (33 mm) at the inner sight edge and a thin outer edge line; this matches the extracted guide (lower-left) which shows a flat white face with a speckled edge/rebate.",
+      "No perimeter ridge, bead, or hollow has been added to the flat photographed face; the rotation photographs (top strip) show a flat white surface without a raised profile.",
+      "The faint vertical lines in the top rotation images read as panel seams/joints rather than a moulded ridge, so they do not contradict a flat-face profile."
+    ],
+    "concerns": [
+      "No independent chevron or oblique physical photograph clearly confirms the 33 mm rebate depth; the rebate is currently supported mainly by the extracted guide, so photoVerified is false.",
+      "Candidate face is rendered tan/ochre while all supplier photographs show a white finish; cross-section colour is likely schematic but should be reconciled with the white supplier evidence.",
+      "Texture/finish (gloss, grain, speckle scale) cannot be confirmed from the flat-on rotation shots; the speckled edge in the guide is not clearly visible in the top photographs."
+    ]
+  }
+}

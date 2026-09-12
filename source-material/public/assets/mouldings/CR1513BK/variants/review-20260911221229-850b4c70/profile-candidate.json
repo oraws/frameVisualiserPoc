@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR1513BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 23.0,
+  "depthMm": 13.0,
+  "rebateMm": 7.3,
+  "points": [
+    [
+      0.0,
+      11.833
+    ],
+    [
+      2.76,
+      12.389
+    ],
+    [
+      5.791,
+      12.778
+    ],
+    [
+      12.339,
+      13.0
+    ],
+    [
+      17.967,
+      12.722
+    ],
+    [
+      23.0,
+      11.722
+    ]
+  ],
+  "analysis": {},
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.4,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "7.3 mm rebate drop on inner sight edge (supplier dimensioned profile shows a ~3 mm step, 13 vs 10)",
+      "Continuous curved top face without the right-hand step/notch present in the supplier profile-source"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The candidate cross-section introduces a 7.3 mm rebate drop that is not supported by the supplier dimensioned profile, which reads 13 total height against a 10 step (\u22483 mm).",
+      "The supplier profile-source shows a distinct right-side step/notch; the candidate renders a single smooth curved top with no such step, so the two geometries do not match.",
+      "The only true photograph (left, black oblique section with tan end cap) does not clearly resolve the cross-section step or rebate, so the candidate's edge features cannot be independently confirmed in a physical photo.",
+      "Per the brief, a flat photographed face must not gain a perimeter ridge or rebate supported only by the extracted trace; here the rebate magnitude and the missing step are trace-derived and conflict with the supplier guide."
+    ],
+    "concerns": [
+      "Rebate dimension mismatch (7.3 mm candidate vs ~3 mm supplier) needs reconciliation against the physical moulding.",
+      "Presence/absence of the right-hand step is inconsistent between candidate and supplier profile-source.",
+      "Insufficient photographic evidence of the cross-section to approve the rendered geometry.",
+      "Chevron view is a vector outline and does not confirm the rebate or step in a physical rotation photo."
+    ]
+  }
+}

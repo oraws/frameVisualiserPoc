@@ -25,6 +25,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_ROOT = ROOT / "source-material/mainline"
 PUBLIC_ROOT = ROOT / "public/assets/mouldings"
+FAMILY_REFERENCE_MANIFEST = ROOT / "public/assets/moulding-families/manifest.json"
 INPUT_VARIANTS = ("supplier-derived-v3", "supplier-derived-v2")
 NORMALIZED_INPUT_VARIANT = "normalized-legacy-v1"
 DEFAULT_OUTPUT_VARIANT = "supplier-matched-v4-candidate"
@@ -146,7 +147,25 @@ def trim_studio_background(image: Image.Image) -> Image.Image:
     return image.crop((x0 + inset_x, y0 + inset_y, x1 - inset_x, y1 - inset_y))
 
 
-def reference_board(sku: str, manifest: dict[str, Any]) -> tuple[Image.Image, list[str]]:
+def _captioned_panel(image: Image.Image, caption: str, family: bool = False) -> Image.Image:
+    panel = ImageOps.fit(image.convert("RGB"), (384, 192))
+    draw = ImageDraw.Draw(panel)
+    draw.rectangle((0, 164, 384, 192), fill="#6c4a21" if family else "#151515")
+    draw.text((10, 172), caption[:58], fill="white")
+    return panel
+
+
+def _family_references(sku: str) -> list[dict[str, Any]]:
+    if not FAMILY_REFERENCE_MANIFEST.exists():
+        return []
+    try:
+        payload = json.loads(FAMILY_REFERENCE_MANIFEST.read_text())
+        return list(payload.get("bySku", {}).get(sku, []))
+    except (OSError, json.JSONDecodeError, TypeError):
+        return []
+
+
+def reference_board(sku: str, manifest: dict[str, Any]) -> tuple[Image.Image, list[str], list[str]]:
     paths: list[Path] = []
     panels: list[Image.Image] = []
     crops = manifest.get("crops", {})
@@ -162,27 +181,45 @@ def reference_board(sku: str, manifest: dict[str, Any]) -> tuple[Image.Image, li
         # Spin photographs stand the rail vertically. The material atlas runs
         # along a horizontal rail, so compare both in the same orientation.
         image = image.rotate(90, expand=True)
-        panels.append(ImageOps.fit(image, (384, 192)))
+        panels.append(_captioned_panel(image, "EXACT SKU · rotation"))
         paths.append(path)
     for filename in manifest.get("referenceFiles", []):
         path = PUBLIC_ROOT / sku / filename
         if not path.exists() or path in paths:
             continue
-        panels.append(ImageOps.fit(Image.open(path).convert("RGB"), (384, 192)))
+        panels.append(_captioned_panel(Image.open(path), f"EXACT SKU · {Path(filename).stem}"))
         paths.append(path)
     if not panels:
         for name in ("source-product.jpg", "product-section.jpg", "chevron.jpg", "macro.jpg",
                      "framed-reference.jpg", "profile-source.jpg", "profile-source.png", "base-texture.jpg"):
             path = PUBLIC_ROOT / sku / name
             if path.exists():
-                panels.append(ImageOps.fit(Image.open(path).convert("RGB"), (384, 192)))
+                panels.append(_captioned_panel(Image.open(path), f"EXACT SKU · {path.stem}"))
                 paths.append(path)
     if not panels:
         raise FileNotFoundError(f"No supplier reference imagery found for {sku}")
-    board = Image.new("RGB", (384 * len(panels), 192), "white")
+    family_panels: list[Image.Image] = []
+    family_paths: list[Path] = []
+    for reference in _family_references(sku):
+        url = str(reference.get("url", ""))
+        path = ROOT / "public" / url.lstrip("/")
+        if not url or not path.exists() or path in family_paths:
+            continue
+        family = str(reference.get("family", "family"))
+        family_panels.append(_captioned_panel(Image.open(path), f"FAMILY CONTEXT · {family}", True))
+        family_paths.append(path)
+    width = 384 * max(len(panels), len(family_panels), 1)
+    height = 222 + (222 if family_panels else 0)
+    board = Image.new("RGB", (width, height), "#171717")
+    ImageDraw.Draw(board).text((10, 8), "EXACT SKU SUPPLIER PHOTOGRAPHS — AUTHORITATIVE", fill="white")
     for index, panel in enumerate(panels):
-        board.paste(panel, (index * 384, 0))
-    return board, [str(path.relative_to(ROOT)) for path in paths]
+        board.paste(panel, (index * 384, 30))
+    if family_panels:
+        ImageDraw.Draw(board).text((10, 230), "ASSEMBLED FAMILY REFERENCES — CONTEXT ONLY", fill="#e9b36f")
+        for index, panel in enumerate(family_panels):
+            board.paste(panel, (index * 384, 252))
+    return (board, [str(path.relative_to(ROOT)) for path in paths],
+            [str(path.relative_to(ROOT)) for path in family_paths])
 
 
 def quilt(source: Image.Image, settings: Settings, width: int = 4096) -> Image.Image:
@@ -298,14 +335,15 @@ def fixed_light_preview(base: Image.Image, roughness: Image.Image, bump: Image.I
 
 def make_review_board(reference: Image.Image, base: Image.Image, preview: Image.Image,
                       values: dict[str, float], attempt: int) -> Image.Image:
-    board = Image.new("RGB", (1600, 940), "#171717")
-    board.paste(ImageOps.fit(reference, (1600, 280)), (0, 0))
-    board.paste(base.resize((1600, 320)), (0, 300))
-    board.paste(preview, (0, 640))
+    board = Image.new("RGB", (1600, 1080), "#171717")
+    contained = ImageOps.contain(reference, (1600, 390))
+    board.paste(contained, ((1600 - contained.width) // 2, 0))
+    board.paste(base.resize((1600, 320)), (0, 420))
+    board.paste(preview, (0, 760))
     draw = ImageDraw.Draw(board)
-    draw.text((18, 282), "SUPPLIER REFERENCES", fill="white")
-    draw.text((18, 622), f"CANDIDATE {attempt} / FIXED-LIGHT MATERIAL PREVIEW", fill="white")
-    draw.text((18, 912), "  ".join(f"{key}: {value}" for key, value in values.items()), fill="white")
+    draw.text((18, 398), "SUPPLIER EVIDENCE: EXACT SKU ABOVE FAMILY CONTEXT", fill="white")
+    draw.text((18, 742), f"CANDIDATE {attempt} / FIXED-LIGHT MATERIAL PREVIEW", fill="white")
+    draw.text((18, 1052), "  ".join(f"{key}: {value}" for key, value in values.items()), fill="white")
     return board
 
 
@@ -332,19 +370,22 @@ def build_profile_candidate(sku: str, reference: Image.Image, output: Path,
     supplier_shape = str(metadata.get("details", {}).get("profile",
                          supplier_profile.get("profileType", fallback.get("profileType", "")))).lower()
     catalogue = PUBLIC_ROOT / sku / "catalogue" / "source.png"
-    evidence = Image.new("RGB", (1600, 760), "#171717")
-    evidence.paste(ImageOps.fit(reference, (1600, 300)), (0, 0))
+    evidence = Image.new("RGB", (1600, 900), "#171717")
+    contained = ImageOps.contain(reference, (1600, 400))
+    evidence.paste(contained, ((1600 - contained.width) // 2, 0))
     if catalogue.exists():
-        evidence.paste(ImageOps.contain(Image.open(catalogue).convert("RGB"), (700, 420)), (40, 325))
+        evidence.paste(ImageOps.contain(Image.open(catalogue).convert("RGB"), (700, 420)), (40, 430))
     draw = ImageDraw.Draw(evidence)
-    draw.text((780, 345), f"SUPPLIER DIMENSIONS: {width:g} x {depth:g} mm; rebate {rebate:g} mm", fill="white")
-    draw.text((780, 380), f"SUPPLIER PROFILE LABEL: {supplier_shape or 'not supplied'}", fill="white")
-    draw.text((40, 725), "CATALOGUE / EXTRACTED PROFILE GUIDE — VERIFY EVERY FEATURE IN PHOTOGRAPHS", fill="#e9b36f")
+    draw.text((780, 450), f"SUPPLIER DIMENSIONS: {width:g} x {depth:g} mm; rebate {rebate:g} mm", fill="white")
+    draw.text((780, 485), f"SUPPLIER PROFILE LABEL: {supplier_shape or 'not supplied'}", fill="white")
+    draw.text((40, 865), "CATALOGUE / EXTRACTED PROFILE GUIDE — VERIFY EVERY FEATURE IN EXACT PHOTOGRAPHS", fill="#e9b36f")
     evidence_path = output / "profile-evidence.jpg"
     evidence.save(evidence_path, quality=94)
     progress(12, f"Analysing the physical profile with {agents.model or 'supplier metadata'}…")
     profile_analysis = agents.ask("moulding profile analyst",
-        "The top row contains supplier photographs of the real moulding. The lower panel contains a catalogue image or an extracted profile guide when available. "
+        "The evidence board explicitly labels exact SKU photographs and assembled family context. Exact SKU photographs and physical sections are authoritative. "
+        "Family references show the intended assembled appearance and may support a shared shape family, but never use them to override exact SKU colour, finish or cross-section geometry. "
+        "The lower panel contains a catalogue image or an extracted profile guide when available. "
         "Treat the lower profile as an unverified hypothesis: it can suggest geometry, but it may include segmentation edges, shadows or background as false ridges. "
         "For every ridge, bead, bevel, hollow or step, require independent confirmation in a physical section, chevron or oblique rotation photograph. "
         "When the guide conflicts with photographs, the photographs win. A flat sample must remain one planar face; do not turn a highlight, shadow or red trace fluctuation into geometry. "
@@ -545,7 +586,7 @@ def process(sku: str, output_variant: str, max_attempts: int,
             fast_review: bool = False) -> dict[str, Any]:
     progress(8, f"Preparing supplier references for {sku}…")
     input_root, source_manifest = locate_input(sku)
-    reference, reference_paths = reference_board(sku, source_manifest)
+    reference, reference_paths, family_reference_paths = reference_board(sku, source_manifest)
     output, attempts_root = PUBLIC_ROOT / sku / "variants" / output_variant, PUBLIC_ROOT / sku / "variants" / output_variant / "attempts"
     attempts_root.mkdir(parents=True, exist_ok=True)
     reference.save(output / "supplier-reference-board.jpg", quality=94, subsampling=0)
@@ -566,7 +607,8 @@ def process(sku: str, output_variant: str, max_attempts: int,
                   "requestedFault": fault, "reviewScopes": list(review_scopes), "profile": profile,
                   "profileGate": {"passed": approved, "requiresPhotoVerification": True},
                   "inputVariant": input_root.name, "outputVariant": output_variant,
-                  "referenceImages": reference_paths, "limits": limits, "bestSettings": {},
+                  "referenceImages": reference_paths, "familyReferenceImages": family_reference_paths,
+                  "limits": limits, "bestSettings": {},
                   "bestMetrics": {}, "bestFailedGates": [], "attempts": [],
                   "agents": {"enabled": agents.enabled, "model": agents.model,
                              "connectionError": agents.error, "analyst": (profile or {}).get("analysis"),
@@ -584,6 +626,8 @@ def process(sku: str, output_variant: str, max_attempts: int,
     fault_context = f" The user reports this fault: {fault}. Prioritise diagnosing and correcting it." if fault else ""
     analyst = agents.ask("supplier-reference analyst",
         "Return keys finishClass, directional, gloss (matte|satin|gloss), preserve (array), risks (array), and suggestedSettings. "
+        "The board labels exact SKU photographs separately from assembled family references. Use family references for intended presentation and broad family character only. "
+        "Exact SKU photographs control colour, texture, sheen and profile; never sample artwork, mount, wall, furniture or another family member's finish. "
         "Classify gloss from highlight width, edge softness and reflection clarity across the available views. Do not call a material glossy merely because curved profile edges catch a bright light. "
         "Allowed settings and ranges: colour_strength 0..1, contrast .86..1.18, roughness_mid 135..220, roughness_detail .15..1.1, bump_detail .8..5.5." + fault_context,
         output / "supplier-reference-board.jpg")
@@ -632,7 +676,8 @@ def process(sku: str, output_variant: str, max_attempts: int,
     Image.open(best_board).save(output / "material-diagnostic.jpg", quality=94)
     progress(86, "Running the final sales-quality review…")
     reviewer = agents.ask("final material reviewer",
-        "Approve only if the candidate retains supplier colour, finish, texture scale and irregularity with no visible seam or obvious repeat. Return decision (approve|review), confidence (0-1), reasons (array), concerns (array)." + fault_context,
+        "Approve only if the candidate retains the exact SKU supplier colour, finish, texture scale and irregularity with no visible seam or obvious repeat. "
+        "Family images are labelled context and must not override exact SKU evidence. Return decision (approve|review), confidence (0-1), reasons (array), concerns (array)." + fault_context,
         output / "material-diagnostic.jpg")
     reviewer_approved = bool(reviewer and reviewer.get("decision") == "approve" and float(reviewer.get("confidence", 0)) >= .72)
     final_score = score_metrics(best_values, limits)[0]
@@ -646,7 +691,8 @@ def process(sku: str, output_variant: str, max_attempts: int,
               "reviewScopes": list(review_scopes), "profile": profile,
               "profileGate": {"passed": profile_approved, "requiresPhotoVerification": bool(profile)},
               "inputVariant": input_root.name, "outputVariant": output_variant,
-              "referenceImages": reference_paths, "limits": limits, "bestSettings": asdict(best_settings),
+              "referenceImages": reference_paths, "familyReferenceImages": family_reference_paths,
+              "limits": limits, "bestSettings": asdict(best_settings),
               "bestMetrics": best_values, "bestFailedGates": best_failures, "attempts": attempts,
               "agents": {"enabled": agents.enabled, "model": agents.model, "connectionError": agents.error,
                          "analyst": analyst, "reviewer": reviewer},

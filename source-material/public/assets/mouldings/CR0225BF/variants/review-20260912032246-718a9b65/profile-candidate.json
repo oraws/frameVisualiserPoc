@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225BF",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      9.7
+    ],
+    [
+      0.147,
+      21.825
+    ],
+    [
+      0.35,
+      22.0
+    ],
+    [
+      10.55,
+      22.0
+    ],
+    [
+      20.75,
+      22.0
+    ],
+    [
+      21.0,
+      21.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar flat face (supplier label 'flat' confirmed by product-section and macro)",
+      "Rebate / mounting step on one side (visible ledge in product-section; supplier rebate 12.3 mm)",
+      "Crisp near-square sight edges (no bead, no hollow, no crown)",
+      "Chevron (V) mitered assembly in EXACT SKU chevron photo",
+      "Directional wood-grain finish running along the face"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel or hollow present in any exact photograph; none added from trace",
+      "No decorative step beyond the single rebate; grain lines not interpreted as profile ridges"
+    ],
+    "observations": [
+      "Product-section shows a flat top face with a horizontal wood-grain texture and a single lower ledge (rebate) on the left; consistent with a flat board + rebate, not a crowned or ornate profile.",
+      "Profile-source swatch is a uniform medium tan, matching the face colour family.",
+      "Chevron photo shows two flat faces meeting at a 90\u00b0 miter, confirming planar faces.",
+      "Macro photo shows assembled mouldings in light and dark wood tones with flat faces and clean miters; no relief moulding visible.",
+      "Finish appears matte-to-satin with natural grain variation; no obvious tiling or seam in the supplied crops.",
+      "Dimensional envelope preserved: 21 x 22 mm, rebate 12.3 mm."
+    ],
+    "concerns": [
+      "Supplier photographs include lighting and perspective; edge sharpness (0.2 mm radii) is an estimate from crisp miters, not a measured value.",
+      "Rebate depth (12.3 mm) is taken from supplier text; the section image is small, so exact rebate geometry should be re-verified against a higher-resolution section.",
+      "Grain direction and tone vary between light and dark variants in the macro; confirm the exact SKU colour (medium brown) is the one to render, not the lighter/darker family members."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The chevron and macro photographs show a single planar face with only edge treatment; the candidate's flat tan face matches this and adds no fabricated bead, ridge, or hollow.",
+      "The product-section photograph displays a visible step/notch at the end, which corresponds to the candidate's rebate drop on the inner sight edge, so the step is physically supported rather than trace-only.",
+      "The candidate's perimeter line is a thin outer-edge thickness, not a raised ridge, so a flat photographed face has not gained an unsupported perimeter ridge.",
+      "Colour and finish (warm tan/beige face with wood-grain end) are consistent across the profile-source swatch, chevron, and macro images."
+    ],
+    "concerns": [
+      "Exact numeric dimensions (22, 17, rebate drop 12.3 mm) cannot be independently measured from the supplier photographs and rely on the advisory catalogue trace.",
+      "Supplier images show lighting and perspective variation; the rebate depth in the product-section shot is approximate.",
+      "The macro panel shows multiple mouldings in different tones; the exact SKU face tone should be confirmed against the profile-source swatch under neutral lighting."
+    ]
+  }
+}

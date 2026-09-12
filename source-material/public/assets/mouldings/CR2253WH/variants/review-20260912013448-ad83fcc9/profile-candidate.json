@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR2253WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 22.0,
+  "depthMm": 53.0,
+  "rebateMm": 29.7,
+  "points": [
+    [
+      0.0,
+      23.3
+    ],
+    [
+      0.147,
+      52.825
+    ],
+    [
+      0.35,
+      53.0
+    ],
+    [
+      11.05,
+      53.0
+    ],
+    [
+      21.75,
+      53.0
+    ],
+    [
+      22.0,
+      52.862
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face (flat board)",
+      "rectangular rebate notch at one edge (~29.7 mm)",
+      "uniform straight sight edges"
+    ],
+    "rejectedTraceFeatures": [
+      "no ridge, bead, bevel, hollow or step beyond the rebate is visible in any authoritative photo; any such feature in a trace is rejected"
+    ],
+    "observations": [
+      "Product-section (authoritative) shows one flat tan face with a single rectangular rebate cut into the lower edge; no crown, bead or hollow.",
+      "Profile-source (authoritative) shows a uniform vertical rectangle with 53 / 48 mm height marks, consistent with a flat board of 22 x 53 mm.",
+      "Chevron (authoritative) shows a flat board forming a corner with a small tan end piece; no directional moulding profile.",
+      "Supplier label reads 'flat' and dimensions 22 x 53 mm with rebate 29.7 mm, matching the visible planar face plus rebate.",
+      "Finish is a light tan/oak tone with fine directional grain; gloss is low and surface relief is essentially none."
+    ],
+    "concerns": [
+      "Edge shadows and the rebate notch could be misread as a stepped profile; treated as a flat face with a single rebate only.",
+      "Lighting/perspective in supplier photos may exaggerate edge definition; no independent confirmation of any curved or beaded feature exists.",
+      "The faint white area beside the product-section is background/second piece, not a profile feature."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier product-section and profile-source photographs show a single planar tan face with no bead, hollow, or continuous perimeter ridge; the candidate cross-section likewise renders one flat face, so no trace-only profile feature has been added.",
+      "A step/notch (rebate) is visible in the product-section photograph and is dimensioned in the candidate as a 29.7 mm rebate drop from inner sight edge to outer edge; this edge treatment is therefore supported by visible evidence rather than by the advisory trace alone.",
+      "The chevron photograph confirms a directional chevron veneer pattern on the face, which is a surface/colour attribute and does not require any additional moulding geometry in the cross-section.",
+      "No ridge, bead, bevel, or hollow appears in the candidate that is absent from the supplier photographs, so the flat-face-plus-rebate reconstruction is consistent with the physical section."
+    ],
+    "concerns": [
+      "Supplier photographs are low-contrast and the chevron pattern is faint, limiting certainty on exact texture scale and gloss.",
+      "The rebate appears on the bottom edge in the product-section photo but on the left edge in the candidate; this is treated as a rotation difference, but the exact rebate orientation should be confirmed against the installation orientation.",
+      "The thin darker band at the candidate's left edge could be misread as a perimeter ridge; it is interpreted here as the rebate step, but a higher-resolution oblique photo would remove this ambiguity."
+    ]
+  }
+}

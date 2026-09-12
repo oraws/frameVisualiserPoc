@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-7150",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 69.0,
+  "depthMm": 40.0,
+  "rebateMm": 18.0,
+  "points": [
+    [
+      0.0,
+      22.0
+    ],
+    [
+      0.168,
+      39.72
+    ],
+    [
+      0.4,
+      40.0
+    ],
+    [
+      34.5,
+      40.0
+    ],
+    [
+      68.6,
+      40.0
+    ],
+    [
+      69.0,
+      39.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar white/cream face visible across all EXACT SKU rotation photographs",
+      "Fine directional grain / light brushing on the face (intentional, not a tiled repeat)",
+      "Stated rebate of 18 mm within the 68 x 40 mm envelope (back feature, not a front ridge)",
+      "Slight edge break on the visible sight edge"
+    ],
+    "rejectedTraceFeatures": [
+      "Concave 'scoop' profile from supplier label \u2014 no hollow or concave relief visible in any rotation photograph",
+      "Vertical legs / U-channel in the lower extracted guide \u2014 consistent with green speckled background and segmentation edges, not a physical ridge",
+      "Any bead, bevel or hollow implied by the trace \u2014 not independently confirmed in physical sections"
+    ],
+    "observations": [
+      "Top row of EXACT SKU rotation photographs shows a uniform flat white face with vertical seams between segments; no macro ridge, bead or hollow recurs at regular intervals",
+      "Lower-left panel is a catalogue/extracted profile guide on a green speckled background; the white top face is flat and agrees with the photographs, but the side legs read as background/segmentation rather than moulding geometry",
+      "Supplier dimensions 68 x 40 mm with 18 mm rebate are preserved as the dimensional envelope",
+      "Finish is a matte-to-satin white/cream with subtle directional texture; no gloss highlight or red trace fluctuation is being interpreted as relief"
+    ],
+    "concerns": [
+      "Supplier profile label 'scoop' is not corroborated by any visible concave relief in the authoritative rotation photographs; treated as a hypothesis and rejected",
+      "The extracted guide's U-shape may be a segmentation/background artefact; it must not override the flat-face photographic evidence",
+      "Lighting and perspective in supplier images could exaggerate edge shadows; only the planar face is confirmed"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.5,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate drop 18 mm on inner sight edge"
+    ],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier face photographs (top row) show a single flat planar white/cream face with fine vertical grain and panel joints; no perimeter ridge or bead is present on the face, so the candidate's flat face is consistent with the photos.",
+      "The candidate's only non-planar feature is the 18 mm rebate drop on the inner sight edge (left brown tab), which matches the step shown in the lower-left catalogue/extracted guide, so the trace and candidate agree.",
+      "However, the rebate/step is not independently confirmable in the supplied physical, chevron or oblique photographs; the top images are face-on and the edge treatment is not resolved, so the rebate remains trace-supported rather than photo-verified."
+    ],
+    "concerns": [
+      "The 18 mm rebate drop on the inner sight edge is asserted by the catalogue trace and candidate but lacks a clear oblique/edge photograph to confirm its depth and presence.",
+      "Top supplier photographs are face-on with vertical panel seams; lighting and perspective prevent verification of any edge step, so the rebate could be a guide-only feature.",
+      "Recommend obtaining an oblique or edge-on supplier photograph that resolves the inner sight edge before approving the rebate geometry."
+    ]
+  }
+}

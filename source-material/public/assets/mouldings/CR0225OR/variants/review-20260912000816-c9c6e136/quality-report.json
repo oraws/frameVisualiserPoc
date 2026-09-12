@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 2,
+  "sku": "CR0225OR",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T00:14:24.410227+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "CR0225OR",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "points": [
+      [
+        0.0,
+        9.7
+      ],
+      [
+        0.147,
+        21.825
+      ],
+      [
+        0.35,
+        22.0
+      ],
+      [
+        10.55,
+        22.0
+      ],
+      [
+        20.75,
+        22.0
+      ],
+      [
+        21.0,
+        21.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "Single planar flat face (orange) in product-section and profile-source panels",
+        "Rebate / step cut on the inner edge (tan region, ~12.3 mm per supplier dimensions)",
+        "Straight sight edges with no visible bead, ridge, bevel or hollow"
+      ],
+      "rejectedTraceFeatures": [
+        "No ridge, bead, bevel, hollow or step beyond the rebate is supported by any physical photograph; none introduced"
+      ],
+      "observations": [
+        "Product-section panel shows a flat orange rectangular face with a lighter tan rebate on the left edge; number 22 marks the 22 mm dimension.",
+        "Profile-source panel is a plain tan rectangle (number 17), consistent with a flat face and no crowned profile.",
+        "Chevron panel shows two flat bars joined at an angle to form a V; this is assembled family context, not a profile feature.",
+        "Lower panel states supplier dimensions 21 x 22 mm with rebate 12.3 mm and supplier profile label 'flat', matching the photographs.",
+        "Finish is a matte orange with a tan rebate; no directional brushing or tiling repeat is evident in the flat face."
+      ],
+      "concerns": [
+        "Chevron angle must not be misread as a profile crown or bevel; it is assembly geometry only.",
+        "The rebate is a cut-out step, not a moulded profile feature; keep the face itself planar.",
+        "Edge radii are not visibly rounded in the photographs; defaulting to minimal 0.2 mm sharp edges."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.78,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "agree",
+      "reasons": [
+        "Product-section photo (left) shows a single planar orange face with a tan rebate/step block on the inner edge; the candidate's only non-planar feature is the 12.3 mm rebate drop on the inner sight edge, which matches this visible step.",
+        "Profile-source photo (middle) is a flat tan face with no ridges, beads or hollows; the candidate's main face is rendered as one flat plane, consistent with the photograph.",
+        "Chevron photo (right) shows flat mitered faces with no added perimeter ridge or bead; the candidate does not introduce any ridge on the flat face.",
+        "No feature in the candidate (ridge, bead, bevel, hollow) exists solely in the extracted trace; the rebate step is independently visible in the product-section photograph.",
+        "The flat photographed face has not gained an unsupported perimeter ridge in the candidate cross-section."
+      ],
+      "concerns": [
+        "The exact rebate depth (12.3 mm) and the 22/17 dimension callouts cannot be independently measured from the photographs; they are taken from the advisory catalogue trace.",
+        "Orientation of the rebate step relative to the sight edge is inferred from the product-section photo and may differ by rotation; the step itself is present in the evidence."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": true,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912000816-c9c6e136",
+  "referenceImages": [
+    "public/assets/mouldings/CR0225OR/product-section.jpg",
+    "public/assets/mouldings/CR0225OR/profile-source.png",
+    "public/assets/mouldings/CR0225OR/chevron.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.85,
+    "contrast": 1.02,
+    "patch_width": 512,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.4,
+    "bump_detail": 1.5
+  },
+  "bestMetrics": {
+    "colourDeltaE": 7.5892,
+    "colourSpreadError": 0.0,
+    "seamError": 0.0032,
+    "maximumAutocorrelation": 0.2204,
+    "detailError": 0.069,
+    "clippedPixels": 1.0
+  },
+  "bestFailedGates": [
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 200.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.0
+      },
+      "metrics": {
+        "colourDeltaE": 7.9745,
+        "colourSpreadError": 0.0,
+        "seamError": 0.0031,
+        "maximumAutocorrelation": 0.2949,
+        "detailError": 0.0284,
+        "clippedPixels": 1.0
+      },
+      "deterministicScore": 74.7,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 58,
+        "textureMatch": 62,
+        "repetition": 70,
+        "seam": 88,
+        "finishMatch": 64,
+        "blockers": [
+          "Colour drift: candidate reads as a muted brown-orange, especially in the lower half, versus the saturated pure orange in the supplier product-section and chevron crops (colourDeltaE ~7.97 is a perceptible mismatch).",
+          "Unwanted vertical banding/streaks in the fixed-light preview that are not present in the supplier face; risk of being read as a tiled repeat rather than natural grain.",
+          "Strong top-to-bottom luminance gradient in the candidate that has no counterpart in the flat, evenly-lit supplier orange face."
+        ],
+        "observations": [
+          "Supplier product-section shows a single flat orange face with one small rebate/step on the left edge (beige L-shape) and a '22' dimension; no multi-bead or hollow profile is visible, so the candidate's single planar face is geometrically consistent and no trace-only ridges should be added.",
+          "Supplier chevron crop confirms a flat chevron face with a small tan tip; profile-source tan rectangle is the face/source colour, not a separate moulded feature.",
+          "Candidate fixed-light preview is a flat plane (correct for a flat moulding) but carries a vertical gradient and faint vertical streaks absent from the supplier evidence.",
+          "maximumAutocorrelation 0.2949 and low seamError 0.0031 indicate only mild periodicity; the vertical streaks are borderline between directional grain and a soft repeat.",
+          "colourSpreadError 0.0 and detailError 0.0284 are low, so the issue is overall hue/saturation and the gradient, not local detail noise."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.02,
+          "patch_width": 512,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.4,
+          "bump_detail": 1.5
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.02,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 7.5892,
+        "colourSpreadError": 0.0,
+        "seamError": 0.0032,
+        "maximumAutocorrelation": 0.2204,
+        "detailError": 0.069,
+        "clippedPixels": 1.0
+      },
+      "deterministicScore": 78.3,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.85,
+        "contrast": 1.02,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 7.9966,
+        "colourSpreadError": 0.0,
+        "seamError": 0.0028,
+        "maximumAutocorrelation": 0.2653,
+        "detailError": 0.0142,
+        "clippedPixels": 1.0
+      },
+      "deterministicScore": 75.6,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.85,
+        "contrast": 1.02,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 7.9962,
+        "colourSpreadError": 0.0487,
+        "seamError": 0.0035,
+        "maximumAutocorrelation": 0.4602,
+        "detailError": 0.1091,
+        "clippedPixels": 1.0
+      },
+      "deterministicScore": 69.6,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "matte-solid-paint",
+      "directional": false,
+      "gloss": "matte",
+      "preserve": [
+        "single planar orange face with no moulding ridge, bead, bevel or hollow",
+        "square 90-degree sight edges (flat profile, not a shaped moulding)",
+        "mitred chevron joint with two flat bars meeting at the apex",
+        "uniform saturated orange face colour",
+        "fine speckled tan backing/end-grain visible only at cut ends and vertex",
+        "soft, low-contrast surface with no sharp specular reflection"
+      ],
+      "risks": [
+        "rendered candidate may add unsupported profile geometry (ridges/beads/rebate) not present in the flat supplier section",
+        "extracted red outline or catalogue trace may imply a moulding that the photographs do not show",
+        "tiling or seam repetition of the tan speckle backing",
+        "over-stating gloss from bright edge highlights on the chevron",
+        "colour drift of the orange face toward yellow or brown under warm lighting"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "roughness_mid": 200,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.0
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "Candidate orange hue and matte, non-glossy finish are consistent with the authoritative exact-SKU supplier photographs (product-section and chevron).",
+        "No visible tiling, seam, or regular macro repeat is present in the candidate; surface reads as a uniform matte plane.",
+        "Texture scale and lack of directional grain in the candidate match the flat, grain-free orange face shown in the supplier evidence."
+      ],
+      "concerns": [
+        "The authoritative supplier product-section shows a rebate/step (beige substrate edge) on one side and the chevron image shows angled bevelled edges, i.e. the physical moulding is not a single flat plane.",
+        "The candidate is rendered as a flat planar material preview with only a lighting gradient and does not represent the rebate, sight edge, or chevron bevel, so the profile geometry from the exact-SKU evidence is not retained.",
+        "Because the fault report is a PROFILE REVIEW and the candidate omits the visible rebate/chevron profile, the geometry cannot be confirmed as matching the supplier cross-section."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "011bf05742a334b7f2702150258acdf120635b39e817183c946e67cadc7fa6ab",
+      "roughness.jpg": "d84fe37bc4309602fcafa94b7522699103ee78699a83f2cdd222548c937fda52",
+      "bump.jpg": "581c9491846c32e64b4601198c3dd5d0e0b32ff1fbfc7efce21b16a926077355"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

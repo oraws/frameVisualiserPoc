@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-1334",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 38.0,
+  "depthMm": 28.0,
+  "rebateMm": 22.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      27.825
+    ],
+    [
+      0.35,
+      28.0
+    ],
+    [
+      19.05,
+      28.0
+    ],
+    [
+      37.75,
+      28.0
+    ],
+    [
+      38.0,
+      27.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face (no crown, bead, hollow or step visible in rotation photographs)",
+      "rebate of 22 mm consistent with supplier dimensions 38 x 28 mm",
+      "directional grain / brushed finish running along the face",
+      "light silvery-grey wood tone with natural tonal variation"
+    ],
+    "rejectedTraceFeatures": [
+      "no ridge, bead, bevel or hollow accepted; trace shows only a flat face plus rebate, no extra geometry to reject"
+    ],
+    "observations": [
+      "Top rotation strip shows one continuous flat face with horizontal directional grain; no repeating macro feature, only fine brush lines",
+      "Lower catalogue/profile image shows a flat vertical face with a white rebate zone at the bottom, matching the 22 mm rebate label",
+      "Supplier profile label is 'flat' and the physical rotation evidence supports a single planar face",
+      "Edge treatment appears sharp (no visible rounding) in the available views"
+    ],
+    "concerns": [
+      "Assembled family reference is a dark context and is not used to override the exact SKU colour/finish",
+      "Rotation photographs contain lighting and perspective variation; grain direction appears horizontal there vs vertical in the catalogue image, consistent with rotation rather than a tiled repeat",
+      "Edge radii are not clearly resolvable in the supplied views; minimal radius assumed for a flat rebate profile"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rebate drop step (22 mm) on inner sight edge is not independently visible in any flat-face, chevron or oblique supplier photograph; it appears only as a stated dimension and a schematic notch in the candidate outline."
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The supplier rotation photographs (top row) show a single flat planar face with fine horizontal directional grain/brushing and no ridge, bead, bevel or hollow, which is consistent with the candidate's flat face.",
+      "The candidate cross-section adds a rebate drop step on the inner sight edge; this edge treatment is plausible from the stated 22 mm dimension but is not confirmable from the provided flat-face images, so it cannot be marked photo-verified.",
+      "The candidate face is rendered as a uniform solid tan/ochre fill, whereas the supplier evidence shows a weathered grey-white wood texture with directional grain; the cross-section schematic does not carry that texture, so texture/colour agreement is unconfirmed.",
+      "No perimeter ridge has been added to the flat photographed face, so the candidate does not violate the flat-face rule, but the rebate step remains an unverified edge feature."
+    ],
+    "concerns": [
+      "Lack of a physical-section, chevron or oblique photograph to confirm the rebate drop step and the inner sight edge geometry.",
+      "Texture and colour of the candidate face (solid tan) do not visibly match the weathered directional-grain finish in the supplier photographs; finish, gloss and surface relief are not verifiable from the schematic.",
+      "The assembled family reference (dark blue/teal corner moulding) is a different product family and should not be used to validate this SKU's profile."
+    ]
+  }
+}

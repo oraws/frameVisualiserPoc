@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 2,
+  "sku": "4924BG",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T03:43:22.407528+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "4924BG",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 30.0,
+    "depthMm": 20.0,
+    "rebateMm": 11.2,
+    "points": [
+      [
+        0.0,
+        12.757
+      ],
+      [
+        0.132,
+        14.286
+      ],
+      [
+        0.33,
+        14.618
+      ],
+      [
+        4.559,
+        16.013
+      ],
+      [
+        6.013,
+        16.877
+      ],
+      [
+        7.269,
+        18.007
+      ],
+      [
+        8.855,
+        18.405
+      ],
+      [
+        9.581,
+        19.468
+      ],
+      [
+        9.978,
+        19.801
+      ],
+      [
+        10.441,
+        20.0
+      ],
+      [
+        11.101,
+        20.0
+      ],
+      [
+        11.894,
+        19.668
+      ],
+      [
+        30.0,
+        7.973
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 2.5,
+      "innerEdgeRadiusMm": 0.3,
+      "outerEdgeRadiusMm": 0.3,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "Single planar black face (flat sight face)",
+        "Angled/beveled outer edge carrying a gold/brass trim line",
+        "Rebate step on the inner side (consistent with 11.2 mm rebate)",
+        "Gold inner sight-edge line visible in chevron and macro rotations"
+      ],
+      "rejectedTraceFeatures": [
+        "No convex bead or rounded crown present in any physical section",
+        "No concave hollow or second ridge beyond the single bevel + rebate"
+      ],
+      "observations": [
+        "Product-section shows a flat black face with a grainy brushed-gold bevel on one edge and a thin gold line along the bottom edge.",
+        "Profile-source trace (20 mm height, 10 mm rebate width) matches the photographed bevel-plus-rebate geometry.",
+        "Chevron and macro oblique rotations confirm a black face bounded by a continuous gold trim line at the mitred corner.",
+        "Framed reference and Bergen family context show the same angled black-and-gold frame family in assembled use.",
+        "Finish reads as matte/satin black face with metallic brushed-gold edges; no directional tiling or repeat pattern detected."
+      ],
+      "concerns": [
+        "Family reference frames appear predominantly gold, whereas the exact SKU photographs show a black face with gold edges; exact SKU colour/finish takes priority.",
+        "Edge radii are inferred as near-sharp from the angled bevel; true radius could not be measured from the supplied images.",
+        "Lighting and perspective in the macro/chevron shots may exaggerate the gold line width; treat as a thin trim rather than a wide face."
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Sloped top edge profile (inclined face from inner sight edge to outer edge)",
+        "Small raised ridge/bump near the top of the profile",
+        "Uniform tan/wood face colour across the whole section (photographs show a flat black face with a thin gold/brass edge line)"
+      ],
+      "catalogueTraceAgreement": "agree",
+      "reasons": [
+        "The candidate cross-section closely matches the extracted catalogue trace (profile-source outline with sloped top and rebate step), so it is trace-consistent.",
+        "However, the supplier product-section, chevron and macro photographs show a flat black face with only a thin gold/brass edge line and a tan rebate on the inner side; they do not show a sloped tan face or a raised ridge.",
+        "The sloped top edge and the small ridge/bump present in the candidate are not independently visible in any physical-section, chevron or oblique photograph and therefore appear to be supported only by the advisory trace.",
+        "Per the review rule, a visibly flat moulding must remain a single planar face with only genuinely visible edge treatment; the candidate adds perimeter profile geometry (slope + ridge) that the photographs do not confirm."
+      ],
+      "concerns": [
+        "Colour/finish mismatch: candidate is rendered as a solid tan/wood profile, whereas the photographs show a black face with a gold edge strip and a separate tan rebate.",
+        "The 'REBATE DROP 11.2 mm' annotation and the rebate step are plausible, but the surrounding sloped face and top ridge are unverified.",
+        "Lighting and perspective in supplier shots could hide fine edge detail, but no photograph displays the broad sloped face or the small top ridge seen in the candidate."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912033601-9acab71d",
+  "referenceImages": [
+    "public/assets/mouldings/4924BG/product-section.jpg",
+    "public/assets/mouldings/4924BG/profile-source.png",
+    "public/assets/mouldings/4924BG/chevron.jpg",
+    "public/assets/mouldings/4924BG/macro.jpg",
+    "public/assets/mouldings/4924BG/framed-reference.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/centrado/bergen/4924BG-framed-reference.jpg",
+    "public/assets/moulding-families/centrado/bergen/4925BG-framed-reference.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.55,
+    "contrast": 1.02,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.6
+  },
+  "bestMetrics": {
+    "colourDeltaE": 1.1772,
+    "colourSpreadError": 0.0301,
+    "seamError": 0.0079,
+    "maximumAutocorrelation": 0.3023,
+    "detailError": 0.2047,
+    "clippedPixels": 0.0329
+  },
+  "bestFailedGates": [
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.45,
+        "bump_detail": 1.2
+      },
+      "metrics": {
+        "colourDeltaE": 2.689,
+        "colourSpreadError": 0.0457,
+        "seamError": 0.007,
+        "maximumAutocorrelation": 0.2592,
+        "detailError": 0.3009,
+        "clippedPixels": 0.0333
+      },
+      "deterministicScore": 89.0,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 63,
+        "colourMatch": 78,
+        "textureMatch": 64,
+        "repetition": 14,
+        "seam": 22,
+        "finishMatch": 72,
+        "blockers": [
+          "Profile rebate/step (the 10-unit rebate in the cross-section) is not independently resolvable in the fixed-light preview; the face reads as a single flat plane, so the moulding relief cannot be confirmed against the supplier section."
+        ],
+        "observations": [
+          "Supplier chevron and macro crops show a matte black face with a thin brushed-gold inner sight edge; the preview reproduces this as a single horizontal gold line, consistent with the inner edge seen edge-on.",
+          "The deep matte black tone and the warm gold accent in the preview align with the supplier finish crops and the framed reference, so colour and finish are broadly matched.",
+          "The preview shows a few broad horizontal tonal bands and a faint bright line; these read as lighting/gradient artifacts rather than a regular macro tile repeat, so no true tiling defect is evident.",
+          "Texture scale and gloss in the preview (smooth, low-sheen black) are plausible for the supplier matte finish, but surface relief detail is too low to validate the bevel/hollow features shown in the macro crop.",
+          "Because the candidate is viewed head-on under fixed light, the stepped profile (face, rebate, outer edge) is not visually distinguishable; this is a verification gap rather than confirmed wrong geometry."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.55,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.6
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 1.1772,
+        "colourSpreadError": 0.0301,
+        "seamError": 0.0079,
+        "maximumAutocorrelation": 0.3023,
+        "detailError": 0.2047,
+        "clippedPixels": 0.0329
+      },
+      "deterministicScore": 90.4,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 1.1617,
+        "colourSpreadError": 0.0339,
+        "seamError": 0.007,
+        "maximumAutocorrelation": 0.3592,
+        "detailError": 0.2056,
+        "clippedPixels": 0.0339
+      },
+      "deterministicScore": 88.4,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.55,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 1.2511,
+        "colourSpreadError": 0.0398,
+        "seamError": 0.0073,
+        "maximumAutocorrelation": 0.333,
+        "detailError": 0.1983,
+        "clippedPixels": 0.0334
+      },
+      "deterministicScore": 89.5,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "flat_rebate_moulding_black_face_gold_inner_edge",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "single_planar_black_face",
+        "gold_brushed_inner_rebate_edge",
+        "20x10_profile_dimensions",
+        "low_sheen_matte_to_satin_black",
+        "subtle_brushed_metallic_grain_on_gold_edge"
+      ],
+      "risks": [
+        "unsupported_bead_hollow_or_ridge_added_from_extracted_trace",
+        "black_face_rendered_too_glossy_or_mirror",
+        "brushed_gold_grain_tiled_or_seamed",
+        "rebate_depth_or_inner_edge_colour_mismatched",
+        "profile_geometry_conflicting_with_flat_section_evidence"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "roughness_mid": 185,
+        "roughness_detail": 0.45,
+        "bump_detail": 1.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "A faint horizontal line/seam is visible across the mid-black field of the candidate, which conflicts with the 'no visible seam' requirement and may indicate a tiled repeat boundary.",
+        "The candidate's black face reads as a uniform flat field with little of the natural micro-variation/irregularity seen in the supplier macro and framed-reference shots, so texture scale and irregularity are not clearly retained.",
+        "The gold/brass edge in the supplier cross-section and chevron is a discrete edge strip with directional brushed grain; in the candidate it appears as a thin, fairly uniform horizontal line whose position (mid-field with black above and below) does not unambiguously map to the single outer edge shown in the section.",
+        "The supplier profile source shows a sloped face plus a step/rebate (10 mm) and a 20 mm height; the flat candidate preview does not provide independent visible confirmation of the rebate/step, so profile geometry cannot be verified against the trace."
+      ],
+      "concerns": [
+        "Possible seam or repeat line in the black field that should be removed or confirmed as a lighting artifact.",
+        "Insufficient visible surface relief/irregularity to confirm the supplier's brushed finish and texture scale.",
+        "Profile features (rebate, step, inner sight edge) are not independently confirmable in the candidate and may be relying on the unverified catalogue trace.",
+        "Gold edge placement and width in the candidate do not clearly correspond to the single outer edge strip in the supplier cross-section."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "f5bf8d93d52d41217829cc071bd1153807d27b568cb9f06eef6fc6f237af51a2",
+      "roughness.jpg": "6f67c964c040db479b0a0e346e7e12a8332ab022a3cfc23e64c1920957fd77e6",
+      "bump.jpg": "dcfcc80d7a63f136a31dc98e17ed62b727a8d328c637b775e43a955143d4cee3"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

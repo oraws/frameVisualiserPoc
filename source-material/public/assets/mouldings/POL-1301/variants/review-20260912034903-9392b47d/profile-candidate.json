@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-1301",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 35.0,
+  "depthMm": 15.0,
+  "rebateMm": 7.0,
+  "points": [
+    [
+      0.0,
+      8.0
+    ],
+    [
+      0.168,
+      14.72
+    ],
+    [
+      0.4,
+      15.0
+    ],
+    [
+      17.5,
+      15.0
+    ],
+    [
+      34.6,
+      15.0
+    ],
+    [
+      35.0,
+      14.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "conflicts",
+    "verifiedFeatures": [
+      "Single planar face in the exact-SKU rotation strip",
+      "Fine directional (brushed/linear) grain running along the length",
+      "Dark charcoal stain over a wood substrate",
+      "Uniform surface relief with no visible ridge, bead or hollow in the rotation photograph"
+    ],
+    "rejectedTraceFeatures": [
+      "Concave 'scoop' recess implied by the supplier profile label and the lower catalogue guide",
+      "Raised side cheeks / vertical wood-toned edges shown in the lower profile guide",
+      "Any stepped geometry beyond the stated rebate that is not visible in the rotation photograph"
+    ],
+    "observations": [
+      "Top band is the authoritative exact-SKU rotation photograph: a thin dark face with horizontal fine grain and no discernible concave highlight gradient, consistent with a flat planar face.",
+      "Lower-left image is a catalogue / extracted profile guide showing a recessed dark centre flanked by lighter vertical wood strips on a grey base with a rebate cut-out; this is treated as an unverified hypothesis.",
+      "Supplier dimensions read 35 x 15 mm with a 7 mm rebate and a 'scoop' profile label; the scoop is not independently confirmed in the rotation photograph.",
+      "The fine linear texture in the rotation strip is intentional directional grain, not a tiled repeat or a series of ridges."
+    ],
+    "concerns": [
+      "Supplier 'scoop' label and the recessed face in the catalogue guide conflict with the flat appearance of the rotation photograph; per policy the photograph is taken as authoritative, so the face is held flat.",
+      "The lighter vertical strips in the lower guide may be segmentation edges, shadows or background rather than genuine raised cheeks.",
+      "Lighting and perspective in the supplier images could exaggerate or hide a shallow concave; a physical chevron/oblique view would be needed to confirm or refute the scoop.",
+      "The 7 mm rebate is dimension-stated but not clearly resolved in the rotation strip; verify against a physical section before modelling as a step."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "top perimeter edge line / bevel",
+      "rebate drop 7 mm (inner sight edge step)"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier top-strip and left-lower photographs show a single flat face with fine vertical directional grain; the candidate's planar face is consistent with that flatness.",
+      "The candidate face is rendered in a light tan wood tone, whereas the supplier photographs show a dark charred/brushed finish; the cross-section colour does not match the visible face finish.",
+      "The candidate carries a thin top perimeter line that reads as a bevel/ridge; the photographed face appears flat, so this edge treatment is not clearly supported by visible evidence.",
+      "The 7 mm rebate drop and the inner-sight-edge step are taken from the extracted guide and are not independently confirmed in a chevron or oblique rotation photograph."
+    ],
+    "concerns": [
+      "Colour/finish mismatch between the candidate cross-section face and the dark supplier face.",
+      "Possible unsupported perimeter ridge/bevel added to an otherwise flat photographed face.",
+      "Rebate dimension and sight-edge step rely on the advisory catalogue trace rather than a verified physical-section photo."
+    ]
+  }
+}

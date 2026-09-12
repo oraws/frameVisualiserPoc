@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-7149",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "concave",
+  "widthMm": 69.0,
+  "depthMm": 40.0,
+  "rebateMm": 18.0,
+  "points": [
+    [
+      0.0,
+      22.0
+    ],
+    [
+      0.42,
+      39.3
+    ],
+    [
+      1.0,
+      40.0
+    ],
+    [
+      9.375,
+      41.148
+    ],
+    [
+      17.75,
+      42.121
+    ],
+    [
+      26.125,
+      42.772
+    ],
+    [
+      34.5,
+      43.0
+    ],
+    [
+      42.875,
+      42.772
+    ],
+    [
+      51.25,
+      42.121
+    ],
+    [
+      59.625,
+      41.148
+    ],
+    [
+      68.0,
+      40.0
+    ],
+    [
+      69.0,
+      39.45
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "concave",
+    "faceCrownMm": 3.0,
+    "innerEdgeRadiusMm": 1.0,
+    "outerEdgeRadiusMm": 1.0,
+    "flatFaceConfirmed": false,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Fine directional brushed grain running along the length of the profile",
+      "Concave (scoop) face indicated by a consistent horizontal highlight band across multiple oblique rotations",
+      "Rebate / sight-edge step line visible near the lower edge in several rotation frames",
+      "Dark near-black matte finish with low gloss"
+    ],
+    "rejectedTraceFeatures": [
+      "Deep U-shaped scoop depth shown in the catalogue guide (visible relief in photos is shallower)",
+      "White rectangular block at lower-right of the guide (segmentation/background artifact, not a ridge)",
+      "Yellow field surrounding the guide (background, not a physical step or bead)"
+    ],
+    "observations": [
+      "Supplier dimensions preserved: 68 x 40 mm with an 18 mm rebate.",
+      "Supplier profile label reads 'scoop', consistent with a concave face.",
+      "Top-row exact-SKU rotation photographs show a dark brushed face with a faint horizontal highlight band and a lower rebate line; no pronounced convex bead or ornate detail is visible.",
+      "The lower catalogue/extracted trace depicts a concave U sitting in a yellow background with a white block; these non-profile elements are treated as artifacts.",
+      "Assembled family reference (stained-glass panel context) is used only to confirm the shared shape family, not to override the exact-SKU colour or cross-section."
+    ],
+    "concerns": [
+      "Low-key lighting and very dark finish make the depth of the concave face hard to measure precisely from the rotation photographs.",
+      "The horizontal band in the rotations could alternatively be read as a flat face with a rebate highlight; the concave classification relies on the supplier 'scoop' label plus the catalogue trace plus the highlight band, so it is rated partial agreement rather than full.",
+      "Edge radii are estimated from the visible break in the highlight and are not directly measurable from the supplied images."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "Crowned/convex outer face (long gentle arc on the top edge of the candidate cross-section) not present in any authoritative supplier photograph, which show a single planar brushed face"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The authoritative supplier photographs (top row) and the catalogue/extracted guide (lower left) both depict the moulding face as a flat, planar surface with fine directional brushing/grain and no crown.",
+      "The candidate cross-section (lower right) renders the outer face as a long convex arc spanning the inner sight edge to the outer edge, i.e. a crowned profile feature that is not visible in any physical-section, chevron or oblique photograph.",
+      "Per the review rule, a visibly flat photographed face must remain one planar face; the candidate has added unsupported curvature to that face.",
+      "The rebate drop (18 mm) and the inner sight edge / rebate wall on the left are consistent with the U-shaped rebate shown in the catalogue guide and the thin edge highlight in the photos, so those features are supported.",
+      "No genuine perimeter ridge or bead is visible in the photographs, yet the candidate's top edge is not a straight planar line, creating a trace-only feature."
+    ],
+    "concerns": [
+      "Supplier photos are subject to lighting and perspective; the apparent flatness of the face should be confirmed with a true orthogonal cross-section photograph before final approval.",
+      "The convex arc on the candidate top edge may be a rendering/trace artifact rather than real moulding geometry.",
+      "Texture/colour match (dark brushed linear grain, low gloss) appears consistent, but the profile geometry conflict must be resolved first."
+    ]
+  }
+}

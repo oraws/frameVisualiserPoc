@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 2,
+  "sku": "CR4530BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T00:21:52.775614+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "CR4530BK",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "points": [
+      [
+        0.0,
+        9.7
+      ],
+      [
+        0.147,
+        21.825
+      ],
+      [
+        0.35,
+        22.0
+      ],
+      [
+        10.55,
+        22.0
+      ],
+      [
+        20.75,
+        22.0
+      ],
+      [
+        21.0,
+        21.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "Single planar dark charcoal front face (flat, no crown)",
+        "Rebate / mounting step visible at the substrate in the cross-section",
+        "Two-tone build: dark charcoal face over light tan wood core (chevron tip exposes core)",
+        "Fine directional grain / brushing on the dark face; natural grain on tan core"
+      ],
+      "rejectedTraceFeatures": [
+        "No convex bead, concave hollow, or ornate ridge present in any photograph",
+        "No additional step or bevel beyond the single visible rebate"
+      ],
+      "observations": [
+        "Left product-section shows a flat dark face with a light tan substrate that steps down (rebate) at the bottom; height annotated 22 mm.",
+        "Middle profile-source shows the tan substrate with a rectangular notch (rebate) and a 17 mm vertical annotation.",
+        "Chevron view shows flat dark bands forming the V with the tan core only at the inner tip, confirming a flat face with no moulded profile.",
+        "Surface finish is a matte/satin dark charcoal with subtle horizontal directional grain; no gloss highlights or relief ridges.",
+        "Supplier profile label in the lower panel reads 'flat', consistent with the photographic evidence."
+      ],
+      "concerns": [
+        "Dimension envelope stated as 21 x 22 mm with rebate 12.3 mm, but the section annotations read 22 and 17; the 17 mm rebate annotation does not match the 12.3 mm rebate text \u2014 verify rebate depth against the physical section.",
+        "Lighting/perspective in the chevron could exaggerate edge sharpness; edge radii assumed minimal (sharp) based on visible crisp edges.",
+        "No oblique rotation photograph provided; flat-face confirmation relies on the section and chevron views only."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.72,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "Supplier product-section (top-left) shows a single planar face with one step/rebate at the edge; the candidate reproduces exactly one flat face plus a single rebate drop and no extra beads, ridges or hollows.",
+        "The photographed face is flat and planar (dark charcoal with fine directional grain); the candidate keeps it as one planar face and does not add a perimeter ridge to that flat face.",
+        "Chevron view confirms the section is a simple flat-faced profile joined at an angle, consistent with a flat face plus edge rebate rather than a multi-bead moulding.",
+        "No feature in the candidate (face, inner sight edge, outer edge, rebate) is present only in the extracted trace; each corresponds to a visible edge/step in the supplier photographs."
+      ],
+      "concerns": [
+        "The candidate's rebate drop is annotated 12.3 mm, while the supplier dimension callouts read 22 and 17; the rebate value is not independently labelled in the photos, so the exact step depth is only partially cross-checked.",
+        "Candidate is rendered in substrate tan whereas the photographed face is dark charcoal; this is a finish/colour matter for the texture review, but it means the profile drawing does not visually confirm the face finish.",
+        "Fine directional grain/brushing on the dark face is a real surface texture, not a tiled repeat; ensure it is not mistaken for a profile feature in downstream rendering."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912001424-e29689a9",
+  "referenceImages": [
+    "public/assets/mouldings/CR4530BK/product-section.jpg",
+    "public/assets/mouldings/CR4530BK/profile-source.png",
+    "public/assets/mouldings/CR4530BK/chevron.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.8,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 200.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 1.5
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.8721,
+    "colourSpreadError": 0.0245,
+    "seamError": 0.0211,
+    "maximumAutocorrelation": 0.2243,
+    "detailError": 0.2334,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.8,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 200.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 3.8721,
+        "colourSpreadError": 0.0245,
+        "seamError": 0.0211,
+        "maximumAutocorrelation": 0.2243,
+        "detailError": 0.2334,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 93.0,
+      "failedGates": [],
+      "agentReview": {
+        "score": 78,
+        "colourMatch": 85,
+        "textureMatch": 80,
+        "repetition": 15,
+        "seam": 10,
+        "finishMatch": 82,
+        "blockers": [],
+        "observations": [
+          "Supplier cross-section (left) shows a single planar dark-charcoal face with one rebate/step exposing the light substrate on the left edge; dimensions 22 x 17 are consistent with a flat rebate moulding, not a multi-bead profile.",
+          "Profile-source (centre) confirms a step cut (tall face + lower rebate) with no ridges, beads, hollows or additional bevels; the chevron (right) shows the dark face with the light core visible only at the miter tip, corroborating a flat face with edge rebate.",
+          "Therefore the physical section must be rebuilt as one planar face plus a genuine rebate step; any extracted trace suggesting extra ridges or beads is unsupported and should be omitted.",
+          "The fixed-light candidate (bottom) is a flat charcoal surface with fine directional grain/brushing and soft mottling, which matches the supplier face's matte charcoal finish and grain direction; no extraneous 3D profile geometry is present to conflict with the flat+rebate section.",
+          "Colour reads as a neutral dark charcoal in both supplier crops and the candidate, with only minor lighting-driven value shift in the preview; acceptable match.",
+          "Texture scale and directional grain in the candidate align with the supplier's fine brushing; the mottled patches are natural variation rather than a regular tiled macro feature.",
+          "No distinctive macro feature repeats at regular intervals and no visible seam line is detected across the atlas or preview, so tiling/seam are not a fault here."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.5,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.0
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "wood-veneer",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "fine horizontal directional grain / brushing on the dark face",
+        "dark charcoal face colour with subtle natural variation",
+        "light tan/cream plywood core visible only at end grain and inner chevron corner",
+        "single planar face with one genuine step/rebate at the lower edge (no extra beads or hollows)"
+      ],
+      "risks": [
+        "tiling or repeating the fine grain pattern into a visible seam",
+        "over-smoothing that erases the directional brush lines",
+        "misreading the bright chevron/edge highlight as a glossy face",
+        "adding profile ridges, beads or hollows supported only by the extracted trace rather than the photographs",
+        "colour shift of the dark face toward brown or pure black under neutral lighting"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.8,
+        "contrast": 1.0,
+        "roughness_mid": 200,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Supplier profile-source and product-section show a flat planar face with a light-wood core and a single rebate step; the candidate is a flat material preview with no unsupported moulded ridges, beads or hollows, consistent with a flat moulding.",
+        "Candidate face colour is dark charcoal, broadly matching the authoritative supplier face, with no obvious tiled repeat (maximum autocorrelation 0.2243) and no visible seam.",
+        "Directional horizontal grain is present in both supplier and candidate, so the finish family is retained."
+      ],
+      "concerns": [
+        "Colour DeltaE of 3.8721 is above a tight match tolerance, indicating a perceptible shift in the charcoal tone under fixed lighting.",
+        "Candidate texture shows larger blotchy mottling and irregular relief that is coarser than the supplier's finer, more uniform brushed grain, suggesting a texture-scale/irregularity mismatch.",
+        "The reported PROFILE REVIEW fault cannot be fully cleared from a flat material preview alone; the rebate/step geometry on the light-wood back is not verifiable in the candidate render."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "3f99a0082c4d6880d5ec949ba4150cda4f1b267150bcb37b09d188fcb48a63db",
+      "roughness.jpg": "4ecbd2d3674e21b3276138244100fbe461ca2b38102b6457181c7cf76aea39ed",
+      "bump.jpg": "e757777190d37902736e31cae49257020a104aef2b0ac82cd7e0364edb558b9f"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "sku": "0219BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 20.0,
+  "depthMm": 15.0,
+  "rebateMm": 8.4,
+  "points": [
+    [
+      0.0,
+      10.57
+    ],
+    [
+      0.401,
+      11.577
+    ],
+    [
+      0.952,
+      12.081
+    ],
+    [
+      7.469,
+      14.95
+    ],
+    [
+      19.799,
+      14.95
+    ],
+    [
+      20.0,
+      14.799
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar dark face (flat, no crown)",
+      "Visible rebate/step at the inner sight edge in the cut cross-section",
+      "Square (sharp) outer edge, no bead or convex crown",
+      "Fine directional grain / brushed texture running along the length",
+      "Mitered chevron joint forming an angled peak in assembled context"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead, hollow or ornate ridge is present in any physical photograph; such features are not confirmed and are omitted",
+      "No independent red/extracted trace ridge is visible to add geometry beyond the flat face + rebate"
+    ],
+    "observations": [
+      "product-section: horizontal bar with a tan cut face on the left showing a small bottom rebate; long face is dark charcoal with fine horizontal brush grain",
+      "profile-source: tan L-shaped silhouette on black, consistent with a flat face plus a rebate step (no crown)",
+      "chevron: black mitered V-peak on white, confirming the profile is used to form an angle but the section itself remains flat-with-rebate",
+      "Supplier dimensions read 20 x 15 mm with rebate 8.4 mm; supplier profile label 'angled'",
+      "Lower panel contains only dimension/label text; no verifiable red outline trace is rendered to cross-check"
+    ],
+    "concerns": [
+      "Profile-source silhouette is ambiguous under black background; relied on the cut cross-section for the rebate",
+      "No extracted red trace image is actually visible in the lower panel, so catalogue agreement is only partial",
+      "Edge radii are inferred as near-sharp (0.2 mm) from the square cut face; true radius not measurable from these images",
+      "Lighting on the dark face may exaggerate the brush grain; treat as natural directional texture, not a tiled repeat"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Sloped bevel on the inner sight edge (diagonal transition from low left edge to flat top)",
+      "Rebate drop 8.4 mm rendered as a long diagonal slope rather than a vertical step"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The flat top face on the right of the candidate matches the planar tan face seen in the product-section and chevron photographs.",
+      "The chevron view shows two flat diagonal bars meeting at the apex, consistent with a flat-faced moulding and not with a pronounced sloped bevel.",
+      "The product-section photo shows a small discrete step/notch at the lower-left of the tan face, not the long continuous diagonal slope drawn in the candidate cross-section.",
+      "The profile-source outline shows a rectangular block with a single tab/step, which does not clearly corroborate the candidate's inclined rebate face.",
+      "The 8.4 mm rebate drop is dimensioned in the guide but the corresponding vertical step is not unambiguously visible in any supplier photograph."
+    ],
+    "concerns": [
+      "The candidate introduces a perimeter slope/bevel on the inner sight edge that is not independently visible in the physical-section, chevron or oblique photographs; this may be a trace-only feature.",
+      "Supplier images are low-resolution with strong black/white contrast, making the rebate edge and any small step hard to confirm.",
+      "If the photographed face is truly flat, the candidate's diagonal rebate face should be reduced to a vertical step or removed to avoid adding unsupported geometry."
+    ]
+  }
+}

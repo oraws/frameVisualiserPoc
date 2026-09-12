@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "3042BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 27.0,
+  "depthMm": 42.0,
+  "rebateMm": 23.5,
+  "points": [
+    [
+      0.0,
+      18.5
+    ],
+    [
+      0.147,
+      41.825
+    ],
+    [
+      0.35,
+      42.0
+    ],
+    [
+      13.55,
+      42.0
+    ],
+    [
+      26.75,
+      42.0
+    ],
+    [
+      27.0,
+      41.862
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "uncertain",
+    "verifiedFeatures": [
+      "Single planar black-finished top face (flat, no crown or bead)",
+      "Rebate / step on the lower edge (visible notch in product-section and oblique detail views)",
+      "Square, near-sharp sight edges (no visible rounding beyond a small break)",
+      "Natural pale wood end grain exposed at the cut ends",
+      "Two-tone construction: dark finished face over light wood substrate"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead or rounded crown (none visible in any rotation or chevron view)",
+      "No concave hollow or cove (face is planar in all oblique shots)",
+      "No ornate profile or multiple ridges (cross-section is a simple flat bar with one rebate)"
+    ],
+    "observations": [
+      "product-section shows a flat black face adjacent to a pale wood block with a single lower step, consistent with a flat bar carrying a rebate.",
+      "profile-source dimension callouts read 42 and 37, matching the stated 27 x 42 mm envelope with a 23.5 mm rebate.",
+      "chevron view confirms a straight, flat black face meeting at a mitered corner with no moulded relief.",
+      "product-detail-1 and product-detail-2 oblique rotations show a uniform planar black top and square wood end grain, with no directional brush lines or tiled repeat.",
+      "Supplier profile label is 'flat', which agrees with the planar face seen in the photographs.",
+      "Lower panel contains only dimension text and the 'flat' label on a dark field; no independent red/extracted trace outline is visible to cross-check."
+    ],
+    "concerns": [
+      "No visible extracted catalogue trace in the lower panel, so trace agreement is recorded as uncertain rather than confirmed.",
+      "Strong specular highlight on the black face in the oblique shots could mask a very small edge radius; edges are read as near-square (0.2 mm) pending a closer section.",
+      "The rebate depth (23.5 mm) is taken from the supplier text and is consistent with the step in the section photo but not independently measured."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.72,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier product-section and oblique detail photographs show a single planar tan/cream face with a contrasting dark edge band; no ridge, bead, bevel or hollow is visible on the face, matching the candidate's flat face.",
+      "The chevron photograph confirms a mitered corner with the same dark edge treatment on both legs, consistent with an edge band / rebate rather than a profiled moulding.",
+      "The candidate cross-section's only non-planar feature is the left-side rebate step (REBATE DROP 23.5 mm), which corresponds to the visible edge band / sight-edge offset in the photographs; no perimeter ridge has been added to the flat face.",
+      "The thin brown outline in the candidate is the browser geometry stroke, not a physical ridge, so it does not constitute an unsupported feature."
+    ],
+    "concerns": [
+      "The stated rebate drop of 23.5 mm and the catalogue numbers 42 / 37 cannot be independently measured from the photographs; dimensional agreement is inferred, not verified.",
+      "The dark edge band in the photographs is rendered as a near-black strip, whereas the candidate shows it as a thin brown line; the exact edge colour/finish should be confirmed against the supplier finish sample.",
+      "Lighting and perspective in the supplier images make the depth of the rebate step ambiguous, so the step height is accepted on catalogue guidance rather than direct photographic measurement."
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "sku": "4924BG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 30.0,
+  "depthMm": 20.0,
+  "rebateMm": 11.2,
+  "points": [
+    [
+      0.0,
+      12.757
+    ],
+    [
+      0.132,
+      14.286
+    ],
+    [
+      0.33,
+      14.618
+    ],
+    [
+      4.559,
+      16.013
+    ],
+    [
+      6.013,
+      16.877
+    ],
+    [
+      7.269,
+      18.007
+    ],
+    [
+      8.855,
+      18.405
+    ],
+    [
+      9.581,
+      19.468
+    ],
+    [
+      9.978,
+      19.801
+    ],
+    [
+      10.441,
+      20.0
+    ],
+    [
+      11.101,
+      20.0
+    ],
+    [
+      11.894,
+      19.668
+    ],
+    [
+      30.0,
+      7.973
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 2.5,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.3,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar black face (flat sight face)",
+      "Angled/beveled outer edge carrying a gold/brass trim line",
+      "Rebate step on the inner side (consistent with 11.2 mm rebate)",
+      "Gold inner sight-edge line visible in chevron and macro rotations"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead or rounded crown present in any physical section",
+      "No concave hollow or second ridge beyond the single bevel + rebate"
+    ],
+    "observations": [
+      "Product-section shows a flat black face with a grainy brushed-gold bevel on one edge and a thin gold line along the bottom edge.",
+      "Profile-source trace (20 mm height, 10 mm rebate width) matches the photographed bevel-plus-rebate geometry.",
+      "Chevron and macro oblique rotations confirm a black face bounded by a continuous gold trim line at the mitred corner.",
+      "Framed reference and Bergen family context show the same angled black-and-gold frame family in assembled use.",
+      "Finish reads as matte/satin black face with metallic brushed-gold edges; no directional tiling or repeat pattern detected."
+    ],
+    "concerns": [
+      "Family reference frames appear predominantly gold, whereas the exact SKU photographs show a black face with gold edges; exact SKU colour/finish takes priority.",
+      "Edge radii are inferred as near-sharp from the angled bevel; true radius could not be measured from the supplied images.",
+      "Lighting and perspective in the macro/chevron shots may exaggerate the gold line width; treat as a thin trim rather than a wide face."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Sloped top edge profile (inclined face from inner sight edge to outer edge)",
+      "Small raised ridge/bump near the top of the profile",
+      "Uniform tan/wood face colour across the whole section (photographs show a flat black face with a thin gold/brass edge line)"
+    ],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The candidate cross-section closely matches the extracted catalogue trace (profile-source outline with sloped top and rebate step), so it is trace-consistent.",
+      "However, the supplier product-section, chevron and macro photographs show a flat black face with only a thin gold/brass edge line and a tan rebate on the inner side; they do not show a sloped tan face or a raised ridge.",
+      "The sloped top edge and the small ridge/bump present in the candidate are not independently visible in any physical-section, chevron or oblique photograph and therefore appear to be supported only by the advisory trace.",
+      "Per the review rule, a visibly flat moulding must remain a single planar face with only genuinely visible edge treatment; the candidate adds perimeter profile geometry (slope + ridge) that the photographs do not confirm."
+    ],
+    "concerns": [
+      "Colour/finish mismatch: candidate is rendered as a solid tan/wood profile, whereas the photographs show a black face with a gold edge strip and a separate tan rebate.",
+      "The 'REBATE DROP 11.2 mm' annotation and the rebate step are plausible, but the surrounding sloped face and top ridge are unverified.",
+      "Lighting and perspective in supplier shots could hide fine edge detail, but no photograph displays the broad sloped face or the small top ridge seen in the candidate."
+    ]
+  }
+}

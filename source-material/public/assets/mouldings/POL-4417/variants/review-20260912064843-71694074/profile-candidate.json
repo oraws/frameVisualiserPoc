@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4417",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 16.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      15.825
+    ],
+    [
+      0.35,
+      16.0
+    ],
+    [
+      15.05,
+      16.0
+    ],
+    [
+      29.75,
+      16.0
+    ],
+    [
+      30.0,
+      15.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face across all exact-SKU rotation photographs",
+      "Fine directional grain / brushing running along the panel length",
+      "Uniform dark charcoal colour with natural tonal variation",
+      "Rebate of 10 mm per supplier dimension envelope (50 x 16 mm)"
+    ],
+    "rejectedTraceFeatures": [
+      "Green base block in lower catalogue trace (segmentation/background, not a physical step)",
+      "White notch at lower-right of catalogue trace (background cut-out, not a rebate or hollow)",
+      "Any implied ridge, bead, bevel or step suggested only by the extracted profile outline"
+    ],
+    "observations": [
+      "Top-row exact-SKU rotation images present a flat, continuous face with only fine vertical grain; no macro relief, crown, or step is visible at any rotation angle",
+      "Supplier profile label explicitly states 'flat', consistent with the photographic evidence",
+      "Lighting and perspective in supplier shots are even; no highlight or shadow can be read as a moulded ridge",
+      "Lower panel is a catalogue/extracted guide and contains non-physical elements (green base, white notch) that do not appear in any authoritative photograph"
+    ],
+    "concerns": [
+      "Catalogue trace must not be used to introduce geometry; it conflicts with the flat photographic evidence and is treated as an unverified hypothesis",
+      "Edge radii are not independently measurable from the supplied flat-face photographs; minimum values retained as a nominal edge break only",
+      "If a rebate is required, it is taken from the supplier dimension text, not from any visible step in the images"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier rotation photographs show a single flat charcoal/charcoal-grey brushed face with fine vertical directional grain; the candidate cross-section renders one planar face consistent with that, with no added bead, ridge or hollow.",
+      "The only non-planar element in the candidate is the 10 mm rebate drop on the inner sight edge and the thin outer-edge line, which represent legitimate edge treatment of a flat board rather than a perimeter ridge on a flat photographed face.",
+      "The directional grain in the candidate is fine and continuous; no regular-interval macro feature or tiled repeat is present, so the brushing is not a false repeat.",
+      "The catalogue/extracted guide (left) is advisory and its notch corresponds to the rebate step; no feature in the candidate is supported solely by the trace."
+    ],
+    "concerns": [
+      "The 10 mm rebate depth is a stated dimension and is not directly measurable from the flat rotation photographs, so it rests on the supplier spec rather than independent visual confirmation.",
+      "The guide's greenish base and white notch are background/annotation artifacts and should not be read as physical profile features."
+    ]
+  }
+}

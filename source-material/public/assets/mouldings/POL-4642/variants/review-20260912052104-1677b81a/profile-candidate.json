@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4642",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 31.0,
+  "depthMm": 15.0,
+  "rebateMm": 7.0,
+  "points": [
+    [
+      0.0,
+      8.0
+    ],
+    [
+      0.168,
+      14.72
+    ],
+    [
+      0.4,
+      15.0
+    ],
+    [
+      15.5,
+      15.0
+    ],
+    [
+      30.6,
+      15.0
+    ],
+    [
+      31.0,
+      14.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face confirmed across all seven EXACT SKU rotation photographs",
+      "Fine directional horizontal grain / brush lines consistent with a flat milled face",
+      "Rebate of 7 mm within the 31 x 15 mm dimensional envelope (supplier-stated)"
+    ],
+    "rejectedTraceFeatures": [
+      "Vertical highlight line in the lower catalogue/extracted profile guide interpreted as a lighting highlight, not a confirmed ridge or bead",
+      "Dark base band and white square in the lower panel treated as background / segmentation artifacts, not geometry"
+    ],
+    "observations": [
+      "All rotation strips present a uniform planar surface with only fine directional grain; no recurring macro ridge, bead, bevel, hollow or step is visible at regular intervals",
+      "Supplier profile label is 'flat', consistent with the rotation evidence",
+      "The lower catalogue trace shows a vertical bright line that, under neutral lighting, reads as a specular highlight on a flat face rather than a raised profile",
+      "No chevron or oblique rotation photograph independently confirms any non-flat feature, so none is added"
+    ],
+    "concerns": [
+      "The vertical line in the catalogue trace could be misread as a bead/ridge; it is rejected as unsupported by physical photographs",
+      "Directional grain must not be mistaken for a tiled repeat or for profile relief"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.8,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier rotation photographs (top strip) and the catalogue/extracted guide (lower left) both show a single planar face with fine directional grain/brushing and no decorative ridge, bead, hollow or step.",
+      "The candidate cross-section (lower right) is a flat tan face with only a thin perimeter edge line and a labelled 'REBATE DROP 7 mm' inner-sight-edge-to-outer-edge step, which is genuine edge treatment rather than an added profile feature.",
+      "No feature in the candidate exists solely in the extracted trace; the flat face has not gained a perimeter ridge, bead or hollow that is absent from the physical photographs.",
+      "Texture/colour is consistent: light oak/yellow tone with directional grain in the photos; the cross-section uses a neutral solid fill appropriate for a section view."
+    ],
+    "concerns": [
+      "The thin brown perimeter line on the top and left of the candidate should be confirmed as the rebate/edge thickness and not misread as a decorative ridge; it is consistent with the stated 7 mm rebate drop.",
+      "Vertical seams between the top supplier photo tiles are tiling artifacts, not a tiled macro repeat; natural grain variation is retained."
+    ]
+  }
+}

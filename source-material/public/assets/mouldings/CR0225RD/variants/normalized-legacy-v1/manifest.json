@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225RD",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/CR0225RD/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg"
+  ]
+}

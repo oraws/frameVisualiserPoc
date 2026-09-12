@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-2104",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 70.0,
+  "depthMm": 30.0,
+  "rebateMm": 15.0,
+  "points": [
+    [
+      0.0,
+      15.0
+    ],
+    [
+      0.168,
+      29.72
+    ],
+    [
+      0.4,
+      30.0
+    ],
+    [
+      35.0,
+      30.0
+    ],
+    [
+      69.6,
+      30.0
+    ],
+    [
+      70.0,
+      29.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "conflicts",
+    "verifiedFeatures": [
+      "single planar face",
+      "directional wood-grain / brushed texture",
+      "bronze-gold finish with natural tonal variation"
+    ],
+    "rejectedTraceFeatures": [
+      "scoop / concave hollow (supplier label not confirmed in exact SKU rotations)",
+      "vertical flutes / ribs shown in lower catalogue image",
+      "irregular black blob at base of lower panel (segmentation/shadow artifact, not a profile)"
+    ],
+    "observations": [
+      "Top row of EXACT SKU rotation photographs presents a continuous planar face with horizontal/vertical grain streaks and no resolvable ridge, bead, bevel or hollow.",
+      "Tonal banding in the rotation shots is consistent with grain and lighting, not with a repeating macro flute; no regular-interval distinctive feature is present.",
+      "Lower panel catalogue image depicts a fluted pilaster and carries a black extracted trace that is an irregular segmentation blob, not a clean cross-section; treated as unverified guide only.",
+      "Assembled family frames (Contemporary Classics) are context only and do not establish the exact SKU cross-section.",
+      "Supplier dimensional envelope preserved: 70 x 30 mm, rebate 15 mm."
+    ],
+    "concerns": [
+      "Supplier profile label 'scoop' is not independently corroborated by the authoritative exact SKU photographs, which read as flat; flagged as a conflict to be resolved on the physical section.",
+      "If a true scoop or flute exists, it is below the resolution of the supplied rotation images and cannot be confirmed; do not model it from the catalogue trace.",
+      "Lower catalogue fluting may belong to a different SKU/variant in the family and should not be transferred to this exact SKU."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Supplier rotation photographs (top row) show a single planar brushed-wood face with directional grain and no ridges, beads, bevels or hollows; the candidate cross-section likewise presents one flat tan face, so no perimeter ridge has been added to a flat photographed face.",
+      "The candidate's only edge treatment is the left-hand rebate step (inner sight edge to outer edge, REBATE DROP 15 mm), which is consistent with a frame moulding and is not contradicted by the flat-face supplier evidence.",
+      "The extracted catalogue silhouette (lower-left black profile) depicts a wavy/curved profile that is absent from both the candidate and the supplier photographs; per the brief this trace is an unverified guide and is therefore not used to add geometry to the candidate.",
+      "No candidate feature is supported solely by the extracted trace; the candidate's geometry is bounded by the flat face and the rebate, both of which are compatible with the physical photographs."
+    ],
+    "concerns": [
+      "The catalogue/extracted profile guide (wavy black silhouette) conflicts with the flat candidate section; the guide should be discarded in favour of the supplier photographs.",
+      "The 15 mm rebate drop is a stated dimension not directly measurable from the supplied rotation images; it is accepted as advisory but should be confirmed against a true cross-section photograph if available.",
+      "Supplier images show lighting and perspective variation across rotations; grain direction and tone should be matched under neutral fixed lighting in the texture pass."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4416",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 16.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      15.825
+    ],
+    [
+      0.35,
+      16.0
+    ],
+    [
+      15.05,
+      16.0
+    ],
+    [
+      29.75,
+      16.0
+    ],
+    [
+      30.0,
+      15.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face across all rotation photographs",
+      "fine directional grain / brushing running along the board length",
+      "uniform grey mid-tone finish with natural tonal variation",
+      "stated rebate of 10 mm within 50 x 16 mm envelope (label only, not independently resolvable in photos)"
+    ],
+    "rejectedTraceFeatures": [
+      "no ridge, bead, bevel, hollow or step confirmed in any physical section or rotation view",
+      "dark band in lower catalogue panel treated as shadow/segmentation, not a moulded step"
+    ],
+    "observations": [
+      "Top-row EXACT SKU rotation images show one continuous flat face with horizontal grain; no crown, no concave/convex relief",
+      "Lower-left catalogue image shows vertical grain on a flat face; the darker lower region is low-contrast and consistent with edge shadow/background rather than a profile",
+      "Supplier profile label 'flat' is consistent with the visible planar evidence",
+      "Finish is matte-to-satin grey with linear brushing; no gloss hotspots indicating a curved surface"
+    ],
+    "concerns": [
+      "Rebate (10 mm) is stated in text but not independently visible as a cut edge in the supplied rotation photographs",
+      "Lower cross-section panel is low-contrast and partially obscured by a white background corner, so edge radius could not be measured directly; defaulting to near-square (0.2 mm)",
+      "Directional grain is fine and continuous; ensure it is not mistaken for a tiled repeat during texture matching"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate drop 10 mm on inner sight edge"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The exact SKU rotation photographs show only a flat grey wood-grain face with fine directional brushing; no chevron, oblique or physical-section view is provided that exposes a rebate or edge step.",
+      "The 10 mm rebate drop in the candidate cross-section is corroborated only by the left-hand image, which is itself captioned as a catalogue / extracted profile guide, not an exact photograph.",
+      "Per the review rule, a feature that exists only in the advisory guide and not in a verified physical-section photo must not be treated as confirmed, so the rebate cannot be approved as photo-verified geometry.",
+      "No perimeter ridge, bead, hollow or bevel has been added to the flat face, so the candidate does not violate the flat-face rule; the only open item is the unverified rebate."
+    ],
+    "concerns": [
+      "Rebate depth (10 mm) and its location (inner sight edge vs outer edge) are not independently confirmable from the supplied rotation photos.",
+      "The candidate section is filled with a uniform tan tone that does not reflect the grey directional-grain finish seen in the supplier photographs; this is acceptable only if treated as a schematic section fill, but it should not be read as the face finish.",
+      "No physical cross-section, chevron or oblique photograph is present to settle the rebate, so the profile remains advisory-level rather than photo-verified."
+    ]
+  }
+}

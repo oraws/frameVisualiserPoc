@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "sku": "8054BG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "ornate",
+  "widthMm": 80.0,
+  "depthMm": 54.0,
+  "rebateMm": 26.0,
+  "points": [
+    [
+      0.0,
+      31.806
+    ],
+    [
+      0.989,
+      32.372
+    ],
+    [
+      2.12,
+      32.372
+    ],
+    [
+      3.251,
+      32.796
+    ],
+    [
+      3.816,
+      33.644
+    ],
+    [
+      4.382,
+      34.068
+    ],
+    [
+      5.088,
+      34.209
+    ],
+    [
+      6.643,
+      34.068
+    ],
+    [
+      8.057,
+      35.058
+    ],
+    [
+      8.763,
+      35.058
+    ],
+    [
+      9.329,
+      35.34
+    ],
+    [
+      9.894,
+      36.047
+    ],
+    [
+      10.035,
+      37.037
+    ],
+    [
+      10.742,
+      37.743
+    ],
+    [
+      12.721,
+      38.592
+    ],
+    [
+      14.558,
+      38.592
+    ],
+    [
+      15.406,
+      38.168
+    ],
+    [
+      16.254,
+      37.319
+    ],
+    [
+      16.82,
+      36.188
+    ],
+    [
+      17.244,
+      35.764
+    ],
+    [
+      26.714,
+      35.623
+    ],
+    [
+      30.106,
+      36.188
+    ],
+    [
+      32.509,
+      37.037
+    ],
+    [
+      34.205,
+      37.885
+    ],
+    [
+      36.608,
+      39.44
+    ],
+    [
+      39.293,
+      41.984
+    ],
+    [
+      40.848,
+      44.246
+    ],
+    [
+      41.979,
+      45.094
+    ],
+    [
+      43.816,
+      45.377
+    ],
+    [
+      44.806,
+      44.812
+    ],
+    [
+      46.219,
+      44.812
+    ],
+    [
+      48.763,
+      47.356
+    ],
+    [
+      50.318,
+      48.487
+    ],
+    [
+      52.58,
+      49.759
+    ],
+    [
+      56.82,
+      51.314
+    ],
+    [
+      59.647,
+      51.738
+    ],
+    [
+      62.049,
+      51.738
+    ],
+    [
+      63.18,
+      52.728
+    ],
+    [
+      63.322,
+      53.152
+    ],
+    [
+      63.887,
+      53.717
+    ],
+    [
+      64.594,
+      54.0
+    ],
+    [
+      65.724,
+      36.471
+    ],
+    [
+      65.724,
+      33.927
+    ],
+    [
+      66.007,
+      32.513
+    ],
+    [
+      66.148,
+      38.45
+    ],
+    [
+      66.996,
+      30.11
+    ],
+    [
+      68.127,
+      42.974
+    ],
+    [
+      68.127,
+      28.555
+    ],
+    [
+      69.541,
+      27.141
+    ],
+    [
+      69.823,
+      53.859
+    ],
+    [
+      70.53,
+      53.293
+    ],
+    [
+      70.53,
+      26.435
+    ],
+    [
+      70.671,
+      47.497
+    ],
+    [
+      71.095,
+      52.304
+    ],
+    [
+      71.095,
+      48.911
+    ],
+    [
+      72.085,
+      25.869
+    ],
+    [
+      73.64,
+      24.88
+    ],
+    [
+      74.205,
+      23.89
+    ],
+    [
+      74.77,
+      23.325
+    ],
+    [
+      76.042,
+      22.618
+    ],
+    [
+      77.032,
+      21.628
+    ],
+    [
+      77.456,
+      20.78
+    ],
+    [
+      77.597,
+      19.366
+    ],
+    [
+      79.435,
+      18.66
+    ],
+    [
+      80.0,
+      18.094
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "ornate",
+    "faceCrownMm": 2.0,
+    "innerEdgeRadiusMm": 1.6,
+    "outerEdgeRadiusMm": 0.8,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "single planar flat face (crown) at the top of the section",
+      "concave scoop / cove hollow running from the face toward the rebate",
+      "small convex bead / step at the foot of the scoop",
+      "vertical rebate (26 mm) forming the inner sight edge",
+      "overall 80 x 54 mm envelope with 26 mm rebate"
+    ],
+    "rejectedTraceFeatures": [
+      "no additional ridges, beads or steps beyond the single scoop + bead + rebate are confirmed; any extra trace undulations are treated as segmentation/shadow artefacts"
+    ],
+    "observations": [
+      "product-section photograph shows a light flat face adjacent to a black section with a clear concave scoop and a rounded outer edge, consistent with an ornate-scoop profile",
+      "profile-source extracted outline (54 mm height, 26 mm rebate) shows flat face -> concave cove -> small bead -> rebate, matching the physical section",
+      "chevron photograph confirms the profile in 3D with a mitred corner and a gold inner lining (lining is not part of the moulding geometry)",
+      "macro photograph shows the black/white mouldings with a stepped, beaded profile consistent with the scoop + bead interpretation",
+      "framed-reference and Wentworth family context show the assembled appearance only and are not used to override exact-SKU colour/finish/geometry",
+      "finish appears as a dark (black) painted/veneer surface with fine directional grain; cream/tan tones in the section are the substrate or a separate light sample, not the finished colour"
+    ],
+    "concerns": [
+      "supplier images contain strong highlights and shadows that could be mistaken for extra ridges; only the scoop, bead and rebate are independently confirmed",
+      "the gold lining visible in chevron and framed references is a separate component and must not be modelled as moulding geometry",
+      "exact bead radius and face crown width are estimated from the extracted guide and limited macro detail; treat as approximate within the stated envelope",
+      "colour/finish of the exact SKU (dark) differs from the light substrate shown in the section; do not conflate the two"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Long convex rising sweep from the face to the outer edge",
+      "Jagged multi-spike cluster at the right/outer edge",
+      "Perimeter ridge/step on a face that appears planar in the macro and chevron photographs"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The supplier profile-source and product-section photographs show a concave cove/hollow with a small bead and a 26 mm rebate drop, not the long convex quarter-round sweep rendered in the candidate.",
+      "The jagged spike cluster at the outer edge of the candidate has no counterpart in any physical-section, chevron, macro or framed-reference photograph; it appears to be an extraction artifact.",
+      "The macro and chevron rotations show flat, finely grained beveled faces with no added ridge or bead, contradicting the candidate's raised perimeter geometry.",
+      "Only the 26 mm rebate step and the general sight-edge-to-face relationship are corroborated by the dimensioned profile-source image; the rest of the candidate outline is unsupported."
+    ],
+    "concerns": [
+      "Candidate orientation and feature set do not align with the supplier cross-section; the convex sweep and spikes are likely trace artifacts rather than real moulding geometry.",
+      "A visibly flat photographed face has gained a perimeter ridge in the candidate, which the brief requires to be rejected.",
+      "Texture/colour cannot be fully confirmed because the candidate is a flat tan fill with no grain, gloss or relief evidence to compare against the black-grained and cream supplier finishes."
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sku": "5819WH",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/5819WH/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg",
+    "product-detail-1.jpg",
+    "product-detail-2.jpg"
+  ]
+}

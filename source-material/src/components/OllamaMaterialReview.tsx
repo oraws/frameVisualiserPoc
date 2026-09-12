@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import FramedArtwork from "../renderer/FramedArtwork";
+import { mouldings } from "../mouldings/catalog";
 
 type ReviewResult = {
   sku?: string;
@@ -20,6 +22,8 @@ type ReviewResult = {
   reviewer?: { decision?: string; confidence?: number; reasons?: string[]; concerns?: string[] };
   model?: string;
   reviewScopes?: string[];
+  referenceImages?: string[];
+  familyReferenceImages?: string[];
   profile?: {
     points?: Array<[number, number]>;
     shapeClass?: string;
@@ -106,6 +110,31 @@ function queuedPrompt(value: string, scopes: string[]) {
 const savedJobKey = "frame-visualiser:material-review-job";
 const savedBatchKey = "frame-visualiser:material-review-batch";
 
+function MiniFramePreview({ sku, result, mode }: {
+  sku: string;
+  result?: ReviewResult | null;
+  mode: "before" | "after";
+}) {
+  const moulding = mouldings.find(item => item.sku === sku);
+  if (!moulding) return <div className="batch-preview-empty">Moulding data unavailable</div>;
+  const variant = mode === "after" && result
+    ? result.outputVariant
+    : result?.inputVariant || "supplier-derived-v2";
+  return <FramedArtwork
+    moulding={moulding} artWidth={700} artHeight={500} mount={50}
+    mountColor="#e9e2d3" innerMount={0} innerMountColor="#1e201f"
+    glass="None" lighting="Studio Soft" lightStrength={1} ambientFill={1}
+    exposure={1} wallColour="#a7aaa8" view="Slight Angle" debug={false}
+    artwork="/assets/artwork/img1.jpg" artworkColourMode="Source colours"
+    geometryMode="Profile" materialMode="Texture" displayMode="Inspect"
+    wallPreset="Studio" wallPositionX={0} wallPositionY={0} wallScale={1}
+    wallShadow={1} roomMatchStrength={0} materialVariant={variant}
+    materialRevision={result?.revision || 0}
+    reviewProfile={mode === "after" ? result?.profile?.points : undefined}
+    profileVariant="Current"
+  />;
+}
+
 export default function OllamaMaterialReview({
   sku,
   name,
@@ -138,6 +167,10 @@ export default function OllamaMaterialReview({
   const [batch, setBatch] = useState<BatchJob | null>(null);
   const [batchWorkspace, setBatchWorkspace] = useState(false);
   const [batchResults, setBatchResults] = useState<BatchResult[]>([]);
+  const [batchInspector, setBatchInspector] = useState<BatchQueueItem | null>(null);
+  const [batchInspectorResult, setBatchInspectorResult] = useState<ReviewResult | null>(null);
+  const [batchInspectorTab, setBatchInspectorTab] = useState<"compare" | "evidence">("compare");
+  const [batchInspectorLoading, setBatchInspectorLoading] = useState(false);
   const [comparisonSku, setComparisonSku] = useState(sku);
   const completed = useRef<string | null>(null);
   const completedBatch = useRef<string | null>(null);
@@ -153,6 +186,23 @@ export default function OllamaMaterialReview({
         sku: item.sku, name: item.name, result: { ...item.result!, sku: item.sku },
       })));
     }
+  }, []);
+
+  const inspectBatchItem = useCallback(async (item: BatchQueueItem) => {
+    setBatchInspector(item);
+    setBatchInspectorResult(item.result ? { ...item.result, sku: item.sku } : null);
+    setBatchInspectorTab("compare");
+    setBatchInspectorLoading(true);
+    try {
+      const response = await fetch(`/api/material-review?sku=${encodeURIComponent(item.sku)}`, { cache: "no-store" });
+      const data = await response.json();
+      if (response.ok) {
+        const latest = item.result || data.history?.[0] || data.existing || null;
+        setBatchInspectorResult(latest ? { ...latest, sku: item.sku } : null);
+      }
+    } catch {
+      // The queue item still contains all retained batch information.
+    } finally { setBatchInspectorLoading(false); }
   }, []);
 
   const check = useCallback(async () => {
@@ -227,6 +277,14 @@ export default function OllamaMaterialReview({
     completedBatch.current = batch.id;
     onStatusesChanged(); void check();
   }, [batch?.id, batch?.status, onStatusesChanged, check]);
+
+  useEffect(() => {
+    if (!batchInspector || !batch) return;
+    const refreshed = batch.items.find(item => item.sku === batchInspector.sku);
+    if (!refreshed) return;
+    setBatchInspector(refreshed);
+    if (refreshed.result) setBatchInspectorResult({ ...refreshed.result, sku: refreshed.sku });
+  }, [batch, batchInspector?.sku]);
 
   useEffect(() => {
     if (!selectedBatchItems.length || batch?.id) {
@@ -381,6 +439,25 @@ export default function OllamaMaterialReview({
   const supplierBatchCount = batchItems.filter(item => item.eligible !== false &&
     (batchSupplier === "All" || item.supplier === batchSupplier) &&
     assetStatuses[item.sku]?.assetStatus !== "accepted").length;
+  const plannedBatchItems: BatchQueueItem[] = batchItems.filter(item => item.eligible !== false &&
+    (batchSupplier === "All" || item.supplier === batchSupplier) &&
+    assetStatuses[item.sku]?.assetStatus !== "accepted").map(item => {
+      const itemScopes = item.scopes?.length ? item.scopes : (scopes.length ? scopes : ["profile", "material"]);
+      return { ...item, scopes: itemScopes as Array<"profile" | "material">,
+        prompt: queuedPrompt(fault, itemScopes), status: "queued", progress: 0,
+        message: "Planned · prepare this queue to save it" };
+    });
+  const workspaceItems = batch?.items || plannedBatchItems;
+  const openBatchWorkspace = () => {
+    setBatchWorkspace(true);
+    const preferred = batchInspector && workspaceItems.find(item => item.sku === batchInspector.sku);
+    const first = preferred || workspaceItems[0];
+    if (first) void inspectBatchItem(first);
+  };
+  const publicAssetUrl = (path: string) => path.startsWith("public/") ? `/${path.slice(7)}` : null;
+  const inspectorMoulding = batchInspector ? mouldings.find(item => item.sku === batchInspector.sku) : null;
+  const inspectorVariantRoot = batchInspectorResult
+    ? `/assets/mouldings/${batchInspector?.sku}/variants/${batchInspectorResult.outputVariant}` : "";
   const toggleScope = (scope: "profile" | "material", prompt: string) => {
     if (scopes.includes(scope)) {
       setScopes(current => current.filter(value => value !== scope));
@@ -491,9 +568,10 @@ export default function OllamaMaterialReview({
       <div className="batch-review">
         <label>Batch processing</label>
         <p className="review-note">The queue is saved on this computer. You can close the page, reopen the laptop, then resume from the first unfinished moulding. Pause takes effect after the current moulding completes safely.</p>
-        {batch && <button type="button" className="batch-workspace-open" onClick={() => setBatchWorkspace(true)}>
-          Open batch workspace · {batch.status}
-        </button>}
+        <button type="button" className="batch-workspace-open" onClick={openBatchWorkspace}
+          disabled={!workspaceItems.length}>
+          {batch ? `Open saved batch workspace · ${batch.status}` : `Review planned queue · ${plannedBatchItems.length} frames`}
+        </button>
         {!!selectedBatchItems.length && <div className="selected-batch-summary">
           <div><strong>Grid selection · {selectedBatchItems.length}</strong>
             <button type="button" onClick={onClearSelectedBatch} disabled={busy}>Clear selection</button></div>
@@ -503,7 +581,7 @@ export default function OllamaMaterialReview({
           </li>)}</ul>
           <button type="button" className="process-selected-batch"
             disabled={busy || batchResumable || !modelChoice || !selectedBatchItems.some(item => item.eligible !== false && item.scopes?.length)}
-            onClick={() => void runBatch(undefined, selectedBatchItems)}>Process selected queue</button>
+            onClick={() => void runBatch(undefined, selectedBatchItems)}>Prepare selected queue</button>
           <p className="review-note">The selected queue includes accepted mouldings. Each item uses its Profile and Texture choices from the grid.</p>
         </div>}
         <select aria-label="Batch supplier" value={batchSupplier} onChange={event => setBatchSupplier(event.target.value)} disabled={busy}>
@@ -511,9 +589,9 @@ export default function OllamaMaterialReview({
         </select>
         <div className="batch-actions">
           <button type="button" disabled={busy || batchResumable || !modelChoice || availability?.available === false}
-            onClick={() => void runBatch()}>Process all non-accepted ({automaticBatchCount})</button>
+            onClick={() => void runBatch()}>Prepare all non-accepted ({automaticBatchCount})</button>
           <button type="button" disabled={busy || batchResumable || !modelChoice || availability?.available === false}
-            onClick={() => void runBatch(batchSupplier)}>Process supplier queue ({supplierBatchCount})</button>
+            onClick={() => void runBatch(batchSupplier)}>Prepare supplier queue ({supplierBatchCount})</button>
         </div>
         <p className="review-note">
           {scopes.length
@@ -532,7 +610,7 @@ export default function OllamaMaterialReview({
               {batch.status === "pausing" ? "Pausing…" : "Pause after current"}
             </button>}
             {batch.status === "paused" && <button type="button" className="approve" onClick={() => void controlBatch("resume")}>Resume batch</button>}
-            <button type="button" onClick={() => setBatchWorkspace(true)}>Full workspace</button>
+            <button type="button" onClick={openBatchWorkspace}>Full workspace</button>
           </div>
         </div>}
         {!!batchResults.length && <div className="batch-result-list">
@@ -556,48 +634,89 @@ export default function OllamaMaterialReview({
           </article>)}
         </div>}
       </div>
-      {batchWorkspace && batch && <div className="batch-workspace" role="dialog" aria-modal="true" aria-label="Batch processing workspace">
+      {batchWorkspace && <div className="batch-workspace" role="dialog" aria-modal="true" aria-label="Batch processing workspace">
         <header>
-          <div><span>Ollama batch</span><h2>{batch.status === "complete" ? "Batch complete" : "Saved processing queue"}</h2>
-            <p>{batch.model} · started {new Date(batch.createdAt).toLocaleString()}</p></div>
+          <div><span>Ollama batch admin</span><h2>{batch ? batch.status === "complete" ? "Batch complete" : "Saved processing queue" : "Review next queue"}</h2>
+            <p>{batch ? `${batch.model} · prepared ${new Date(batch.createdAt).toLocaleString()}` : `${modelChoice || "Choose a model"} · nothing will run until you prepare and start the batch`}</p></div>
           <div className="batch-workspace-actions">
-            {batchRunning && <button type="button" onClick={() => void controlBatch("pause")} disabled={batch.status === "pausing"}>{batch.status === "pausing" ? "Pausing…" : "Pause after current"}</button>}
-            {batch.status === "paused" && <button type="button" className="approve" onClick={() => void controlBatch("resume")}>Resume</button>}
+            {batchRunning && <button type="button" onClick={() => void controlBatch("pause")} disabled={batch?.status === "pausing"}>{batch?.status === "pausing" ? "Pausing…" : "Pause after current"}</button>}
+            {batch?.status === "paused" && <button type="button" className="approve" onClick={() => void controlBatch("resume")}>{batch.current ? "Resume batch" : "Start batch"}</button>}
+            {!batch && <button type="button" className="approve" disabled={!modelChoice || !plannedBatchItems.length}
+              onClick={() => void runBatch(batchSupplier)}>Prepare this queue</button>}
             <button type="button" onClick={() => setBatchWorkspace(false)}>Close</button>
           </div>
         </header>
         <section className="batch-workspace-summary">
-          <progress max={Math.max(1, batch.total)} value={batchCompleted + batchFailed} />
-          <strong>{batch.message}</strong>
-          <span>{batchCompleted + batchFailed}/{batch.total} finished</span><span>{batchPassed} passed</span>
+          <progress max={Math.max(1, batch?.total || plannedBatchItems.length)} value={batch ? batchCompleted + batchFailed : 0} />
+          <strong>{batch?.message || `${plannedBatchItems.length} non-accepted frames in the planned queue`}</strong>
+          <span>{batch ? `${batchCompleted + batchFailed}/${batch.total} finished` : "Not started"}</span><span>{batchPassed} passed</span>
           <span>{batchNeedsInspection} need inspection</span><span>{batchFailed} failed</span>
         </section>
         <div className="batch-workspace-columns">
-          <section className="batch-prompt-panel">
-            <label>Prompt used for this batch</label>
-            <textarea readOnly value={batch.prompt || "Each frame uses its selected Profile and/or Texture & colour prompt shown in the queue."} />
-            <p>The exact per-frame prompt and review scope are retained with every queue item.</p>
-          </section>
           <section className="batch-queue-panel">
-            <label>Frames in this batch</label>
-            <div className="batch-queue-list">{batch.items.map((item, index) => <article className={item.status} key={`${item.sku}-${index}`}>
-              <div className="batch-item-heading"><strong>{index + 1}. {item.sku}</strong><span>{item.name}</span><em>{item.status === "complete" ? item.result?.status === "automated-approved-candidate" ? "Passed" : "Inspect" : item.status}</em></div>
-              <progress max={100} value={item.progress || (item.status === "complete" ? 100 : 0)} />
-              <small>{item.message}</small>
-              <details><summary>Prompt and scope</summary><p>{(item.scopes || []).map(scope => scope === "material" ? "Texture & colour" : "Profile").join(" + ")}</p><pre>{item.prompt}</pre></details>
-              {item.result && <details><summary>Review outcome</summary>
-                {!!item.result.bestFailedGates?.length && <p>Image checks: {item.result.bestFailedGates.join(", ")}</p>}
-                {!!item.result.reviewer?.reasons?.length && <ul>{item.result.reviewer.reasons.map((reason, reasonIndex) => <li key={`reason-${reasonIndex}`}>{reason}</li>)}</ul>}
-                {!!item.result.reviewer?.concerns?.length && <ul>{item.result.reviewer.concerns.map((concern, concernIndex) => <li key={`concern-${concernIndex}`}>{concern}</li>)}</ul>}
-              </details>}
-              {item.result && <div className="batch-item-review">
-                <button type="button" onClick={() => { showBefore({ ...item.result!, sku: item.sku }); setBatchWorkspace(false); }}>View before</button>
-                <button type="button" onClick={() => { showAfter({ ...item.result!, sku: item.sku }); setBatchWorkspace(false); }}>View after</button>
-                <button type="button" className="approve" onClick={() => void decide({ ...item.result!, sku: item.sku }, "accepted")}>Accept</button>
-                <button type="button" onClick={() => void decide({ ...item.result!, sku: item.sku }, "rejected")}>Reject</button>
-              </div>}
+            <label>{batch ? "Frames in this saved batch" : "Frames planned for the next batch"}</label>
+            <div className="batch-queue-list">{workspaceItems.map((item, index) => <article className={`${item.status} ${batchInspector?.sku === item.sku ? "selected" : ""}`} key={`${item.sku}-${index}`}>
+              <button type="button" className="batch-item-select" onClick={() => void inspectBatchItem(item)}>
+                <div className="batch-item-heading"><strong>{index + 1}. {item.sku}</strong><span>{item.name}</span><em>{item.status === "complete" ? item.result?.status === "automated-approved-candidate" ? "Passed" : "Inspect" : item.status}</em></div>
+                <progress max={100} value={item.progress || (item.status === "complete" ? 100 : 0)} />
+                <small>{item.message}</small>
+              </button>
             </article>)}</div>
           </section>
+          <aside className="batch-inspector-panel">
+            {!batchInspector ? <div className="batch-inspector-empty">Select a frame to inspect its preview, evidence and prompt.</div> : <>
+              <header><div><span>{batchInspector.supplier}</span><h3>{batchInspector.sku} · {batchInspector.name}</h3></div>
+                <em className={batchInspector.status}>{batchInspector.status}</em></header>
+              <div className="batch-inspector-tabs">
+                <button type="button" className={batchInspectorTab === "compare" ? "active" : ""} onClick={() => setBatchInspectorTab("compare")}>Before and after</button>
+                <button type="button" className={batchInspectorTab === "evidence" ? "active" : ""} onClick={() => setBatchInspectorTab("evidence")}>Assets and model prompt</button>
+              </div>
+              {batchInspectorTab === "compare" ? <div className="batch-inspector-compare">
+                <div className="batch-preview-grid">
+                  <figure><figcaption>Before · {batchInspectorResult?.inputVariant || "current supplier version"}</figcaption>
+                    <div className="batch-mini-viewer"><MiniFramePreview sku={batchInspector.sku} result={batchInspectorResult} mode="before" /></div></figure>
+                  <figure><figcaption>After · {batchInspectorResult?.outputVariant || "awaiting processing"}</figcaption>
+                    <div className="batch-mini-viewer">{batchInspectorResult
+                      ? <MiniFramePreview sku={batchInspector.sku} result={batchInspectorResult} mode="after" />
+                      : <div className="batch-preview-empty">No processed candidate yet</div>}</div></figure>
+                </div>
+                {batchInspectorLoading && <p className="review-note">Loading retained versions…</p>}
+                {batchInspectorResult ? <>
+                  <dl className="batch-result-facts">
+                    <div><dt>Model</dt><dd>{batchInspectorResult.model || batch?.model || "Local checks"}</dd></div>
+                    <div><dt>Scope</dt><dd>{batchInspectorResult.reviewScopes?.map(value => value === "material" ? "Texture & colour" : "Profile").join(" + ")}</dd></div>
+                    <div><dt>Attempts</dt><dd>{batchInspectorResult.attempts?.length || 0}</dd></div>
+                    <div><dt>Decision</dt><dd>{batchInspectorResult.reviewer?.decision || batchInspectorResult.status}</dd></div>
+                  </dl>
+                  {!!batchInspectorResult.bestFailedGates?.length && <p className="batch-inspector-warning"><strong>Checks needing attention</strong>{batchInspectorResult.bestFailedGates.join(", ")}</p>}
+                  {!!batchInspectorResult.reviewer?.reasons?.length && <p className="ollama-summary"><strong>What the model found</strong>{batchInspectorResult.reviewer.reasons.join(" ")}</p>}
+                  {!!batchInspectorResult.reviewer?.concerns?.length && <p className="ollama-summary"><strong>Remaining concerns</strong>{batchInspectorResult.reviewer.concerns.join(" ")}</p>}
+                  <div className="review-actions decision-actions">
+                    <button type="button" className="approve" onClick={() => void decide(batchInspectorResult, "accepted")}>Accept this version</button>
+                    <button type="button" onClick={() => void decide(batchInspectorResult, "rejected")}>Reject changes</button>
+                  </div>
+                </> : <p className="review-note">This queue entry has not produced an After version. You can still inspect everything the model will receive in the Assets and model prompt tab.</p>}
+              </div> : <div className="batch-inspector-evidence">
+                <section><label>Exact prompt and review scope</label>
+                  <p>{(batchInspector.scopes || []).map(scope => scope === "material" ? "Texture & colour" : "Profile").join(" + ")} · {batchInspectorResult?.model || batch?.model || modelChoice}</p>
+                  <pre>{batchInspector.prompt}</pre></section>
+                {!!inspectorMoulding?.supplierImages?.length && <section><label>Supplier and family images available to the pipeline</label>
+                  <div className="batch-evidence-thumbs">{inspectorMoulding.supplierImages.map(image => <figure key={image.url}>
+                    <img src={image.url} alt={image.label} /><figcaption>{image.label}</figcaption>
+                  </figure>)}</div></section>}
+                {batchInspectorResult && <section><label>Generated evidence and checks</label>
+                  <div className="batch-evidence-boards">
+                    {[['supplier-reference-board.jpg','Evidence board sent to Ollama'], ['profile-evidence.jpg','Profile evidence'], ['profile-diagnostic.jpg','Profile comparison'], ['material-diagnostic.jpg','Material comparison']].map(([file,label]) =>
+                      <figure key={file}><img src={`${inspectorVariantRoot}/${file}`} alt={label} onError={event => { event.currentTarget.closest('figure')?.classList.add('missing'); }} /><figcaption>{label}</figcaption></figure>)}
+                  </div>
+                  <details><summary>Source files recorded in this result</summary><ul>
+                    {[...(batchInspectorResult.referenceImages || []), ...(batchInspectorResult.familyReferenceImages || [])].map(path => {
+                      const url = publicAssetUrl(path); return <li key={path}>{url ? <a href={url} target="_blank" rel="noreferrer">{path}</a> : path}</li>;
+                    })}</ul></details>
+                </section>}
+              </div>}
+            </>}
+          </aside>
         </div>
       </div>}
     </div>

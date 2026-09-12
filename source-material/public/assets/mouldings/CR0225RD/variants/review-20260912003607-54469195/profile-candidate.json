@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225RD",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      9.7
+    ],
+    [
+      0.147,
+      21.825
+    ],
+    [
+      0.35,
+      22.0
+    ],
+    [
+      10.55,
+      22.0
+    ],
+    [
+      20.75,
+      22.0
+    ],
+    [
+      21.0,
+      21.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face (supplier profile label: flat; profile-source panel is a plain rectangle)",
+      "rebate step on inner edge, stated 12.3 mm, visible as the notched beige step in the product-section panel",
+      "square outer sight edge (no bead, ridge or bevel visible in any exact panel)",
+      "mitred chevron corner in the chevron panel consistent with a flat face joined at 45 degrees"
+    ],
+    "rejectedTraceFeatures": [
+      "no convex crown, concave hollow, bead or ornate profile is present in any exact photograph; none are introduced from the guide"
+    ],
+    "observations": [
+      "Supplier dimensions read 21 x 22 mm with a 12.3 mm rebate; the product-section red block height matches the 22 mm envelope and the rebate notch matches the 12.3 mm step",
+      "Material finish is a light tan/beige with fine directional grain visible in the rebate area and the profile-source rectangle; surface appears matte to low gloss with no relief",
+      "The red fill in the product-section and the red chevron outline are SKU highlight/trace overlays, not the physical finish colour; the underlying material is the beige wood tone",
+      "Chevron panel shows a clean mitered V with uniform face width, supporting a flat (non-profiled) member",
+      "No repeating macro feature at regular intervals; the fine grain is intentional directional texture, not a tiled repeat"
+    ],
+    "concerns": [
+      "Red overlay could be misread as a coloured finish or as a profile edge; it is treated as a non-geometric highlight",
+      "The rebate is the only non-planar feature; if downstream tooling expects a fully square bar, confirm whether the 12.3 mm rebate is required for this SKU",
+      "Lower panel contains only dimension/label text and no independent extracted trace image, so agreement is based on the supplier 'flat' label and the exact photographs"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.62,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate cross-section is a single planar tan face with only a left-edge rebate/step (inner sight edge to outer edge, rebate drop 12.3 mm), which matches the stepped tan block visible in the authoritative product-section photograph.",
+      "No perimeter ridge, bead, or hollow has been added to the flat photographed face; the candidate keeps the moulding as one planar face with genuine edge treatment only.",
+      "The red chevron in the top-right panel is an extracted trace on a blank field, not a photographed physical feature, and it is not represented as geometry in the candidate cross-section, so it does not introduce unsupported profile geometry.",
+      "Stated dimensions (22 and 17) are consistent with a simple flat section plus a rebate step and do not require additional moulded features."
+    ],
+    "concerns": [
+      "The product-section photograph is low resolution and the left rebate step is small; the 12.3 mm rebate drop could not be independently measured from the photo, only its presence confirmed.",
+      "The chevron panel contains only an extracted red outline with no physical chevron/oblique photograph, so any surface pattern it implies remains unverified (not a cross-section feature, but noted for the texture review).",
+      "The catalogue red trace in the product-section extends slightly beyond the visible tan block, so trace-to-photo alignment is approximate rather than exact."
+    ]
+  }
+}

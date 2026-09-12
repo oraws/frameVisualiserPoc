@@ -21,3 +21,12 @@ The extractor uses seeded GrabCut material separation, retains the substrate
 component connected to the lower edge, snaps its visible upper boundary to the
 strongest local LAB transition, and calibrates the result to the supplier width,
 depth, and rebate dimensions. Existing profiles are not overwritten.
+
+## Assembled family references
+
+Run `npm run extract:moulding-family-references` to extract the high-resolution
+built-frame photographs from the Mainline PDF and rebuild the shared family
+manifest. The same command copies the available Centrado framed photographs
+into the family library. The manifest explicitly marks these images as family
+context: exact SKU photographs and physical sections remain authoritative for
+colour, surface finish, and profile geometry in the Ollama review pipeline.

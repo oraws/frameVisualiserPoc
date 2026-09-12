@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "sku": "5821WH",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/5821WH/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg",
+    "macro.jpg",
+    "product-detail-1.jpg",
+    "product-detail-2.jpg"
+  ]
+}

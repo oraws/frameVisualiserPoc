@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 2,
+  "sku": "CR0225BF",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T03:29:39.083046+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "CR0225BF",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "points": [
+      [
+        0.0,
+        9.7
+      ],
+      [
+        0.147,
+        21.825
+      ],
+      [
+        0.35,
+        22.0
+      ],
+      [
+        10.55,
+        22.0
+      ],
+      [
+        20.75,
+        22.0
+      ],
+      [
+        21.0,
+        21.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "Single planar flat face (supplier label 'flat' confirmed by product-section and macro)",
+        "Rebate / mounting step on one side (visible ledge in product-section; supplier rebate 12.3 mm)",
+        "Crisp near-square sight edges (no bead, no hollow, no crown)",
+        "Chevron (V) mitered assembly in EXACT SKU chevron photo",
+        "Directional wood-grain finish running along the face"
+      ],
+      "rejectedTraceFeatures": [
+        "No ridge, bead, bevel or hollow present in any exact photograph; none added from trace",
+        "No decorative step beyond the single rebate; grain lines not interpreted as profile ridges"
+      ],
+      "observations": [
+        "Product-section shows a flat top face with a horizontal wood-grain texture and a single lower ledge (rebate) on the left; consistent with a flat board + rebate, not a crowned or ornate profile.",
+        "Profile-source swatch is a uniform medium tan, matching the face colour family.",
+        "Chevron photo shows two flat faces meeting at a 90\u00b0 miter, confirming planar faces.",
+        "Macro photo shows assembled mouldings in light and dark wood tones with flat faces and clean miters; no relief moulding visible.",
+        "Finish appears matte-to-satin with natural grain variation; no obvious tiling or seam in the supplied crops.",
+        "Dimensional envelope preserved: 21 x 22 mm, rebate 12.3 mm."
+      ],
+      "concerns": [
+        "Supplier photographs include lighting and perspective; edge sharpness (0.2 mm radii) is an estimate from crisp miters, not a measured value.",
+        "Rebate depth (12.3 mm) is taken from supplier text; the section image is small, so exact rebate geometry should be re-verified against a higher-resolution section.",
+        "Grain direction and tone vary between light and dark variants in the macro; confirm the exact SKU colour (medium brown) is the one to render, not the lighter/darker family members."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.7,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "agree",
+      "reasons": [
+        "The chevron and macro photographs show a single planar face with only edge treatment; the candidate's flat tan face matches this and adds no fabricated bead, ridge, or hollow.",
+        "The product-section photograph displays a visible step/notch at the end, which corresponds to the candidate's rebate drop on the inner sight edge, so the step is physically supported rather than trace-only.",
+        "The candidate's perimeter line is a thin outer-edge thickness, not a raised ridge, so a flat photographed face has not gained an unsupported perimeter ridge.",
+        "Colour and finish (warm tan/beige face with wood-grain end) are consistent across the profile-source swatch, chevron, and macro images."
+      ],
+      "concerns": [
+        "Exact numeric dimensions (22, 17, rebate drop 12.3 mm) cannot be independently measured from the supplier photographs and rely on the advisory catalogue trace.",
+        "Supplier images show lighting and perspective variation; the rebate depth in the product-section shot is approximate.",
+        "The macro panel shows multiple mouldings in different tones; the exact SKU face tone should be confirmed against the profile-source swatch under neutral lighting."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912032246-718a9b65",
+  "referenceImages": [
+    "public/assets/mouldings/CR0225BF/product-section.jpg",
+    "public/assets/mouldings/CR0225BF/profile-source.png",
+    "public/assets/mouldings/CR0225BF/chevron.jpg",
+    "public/assets/mouldings/CR0225BF/macro.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.85,
+    "contrast": 1.0,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.5
+  },
+  "bestMetrics": {
+    "colourDeltaE": 5.6989,
+    "colourSpreadError": 0.1757,
+    "seamError": 0.0696,
+    "maximumAutocorrelation": 0.1749,
+    "detailError": 0.2424,
+    "clippedPixels": 0.0002
+  },
+  "bestFailedGates": [
+    "seamError"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 5.7113,
+        "colourSpreadError": 0.1374,
+        "seamError": 0.0802,
+        "maximumAutocorrelation": 0.2158,
+        "detailError": 0.1998,
+        "clippedPixels": 0.0001
+      },
+      "deterministicScore": 70.9,
+      "failedGates": [
+        "seamError"
+      ],
+      "agentReview": {
+        "score": 71,
+        "colourMatch": 78,
+        "textureMatch": 72,
+        "repetition": 63,
+        "seam": 70,
+        "finishMatch": 70,
+        "blockers": [],
+        "observations": [
+          "Supplier cross-section, chevron and macro all show a flat-faced frame with only a simple rebate/edge step; no beads, hollows or raised moulding are present. The candidate correctly keeps a single planar face, so no unsupported profile geometry is introduced.",
+          "Colour is a medium warm brown that broadly matches the supplier oak/walnut family, but the fixed-light preview reads slightly darker and more saturated than the unlit atlas and the lighter supplier swatch (label 17).",
+          "Directional horizontal grain and scattered dark flecks are present in both atlas and preview, consistent with the supplier's brushed grain, though the fleck clusters form faint horizontal rows that look mildly periodic across the panel.",
+          "Seam and tiling are not strongly visible; maxAutocorrelation 0.2158 and seamError 0.0802 indicate only mild repetition rather than an obvious tile boundary.",
+          "Surface relief under fixed light is modest and matte-to-satin, in line with the supplier finish; no glossy or beaded highlights that would contradict the flat profile."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 5.6989,
+        "colourSpreadError": 0.1757,
+        "seamError": 0.0696,
+        "maximumAutocorrelation": 0.1749,
+        "detailError": 0.2424,
+        "clippedPixels": 0.0002
+      },
+      "deterministicScore": 71.6,
+      "failedGates": [
+        "seamError"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 5.6755,
+        "colourSpreadError": 0.1741,
+        "seamError": 0.0733,
+        "maximumAutocorrelation": 0.2394,
+        "detailError": 0.2422,
+        "clippedPixels": 0.0002
+      },
+      "deterministicScore": 70.0,
+      "failedGates": [
+        "seamError"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 5.6758,
+        "colourSpreadError": 0.1746,
+        "seamError": 0.0761,
+        "maximumAutocorrelation": 0.2288,
+        "detailError": 0.2443,
+        "clippedPixels": 0.0002
+      },
+      "deterministicScore": 69.5,
+      "failedGates": [
+        "seamError"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "woodgrain",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "horizontal directional grain with natural tonal variation",
+        "single planar face with only a simple edge bevel/step (no beads or hollows)",
+        "mitered chevron corner joint",
+        "soft low-contrast sheen consistent with a satin wood finish",
+        "natural end-grain character at the section cut"
+      ],
+      "risks": [
+        "introducing unsupported profile geometry (beads, hollows, rebates) not visible in the section/chevron photographs",
+        "tiled or repeating grain pattern instead of continuous natural variation",
+        "over-sharpening or excessive bump that fakes relief",
+        "gloss misclassification: bright curved-edge highlights must not be read as a glossy face",
+        "colour drift toward the tan profile-source swatch or toward other family members' tones",
+        "visible seams or banding across the face"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Supplier cross-section (22) and chevron show a flat moulding with only a small end rebate/step; the candidate is a flat planar surface, so no unsupported beaded/hollow geometry is introduced.",
+        "Supplier product-section and swatch (17) show a fine, low-contrast directional grain in a light tan-to-medium brown; the candidate displays a coarser, higher-contrast texture with prominent dark horizontal dash/fleck clusters, indicating a texture-scale and irregularity mismatch.",
+        "Candidate colour reads darker and more saturated brown than the supplier's lighter tan-brown reference, suggesting a finish/colour deviation under the fixed-light preview.",
+        "Dark dash clusters recur at roughly regular horizontal intervals across both preview panels, consistent with a tiled repeat rather than purely natural grain."
+      ],
+      "concerns": [
+        "Possible horizontal tiling repeat of the dark fleck/dash pattern (regular spacing of dash clusters).",
+        "Texture scale and contrast appear coarser than the supplier's fine grain; natural variation may be lost or exaggerated.",
+        "Colour/finish appears darker and more saturated than the exact-SKU swatch and product-section reference.",
+        "A horizontal discontinuity is visible at the mid-panel boundary, which may be a seam rather than only the label divider."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "303c2038df4c1be2689becf89196e20c5d7769a7d474b0b711a143f8c312a432",
+      "roughness.jpg": "d153606a0ecce80ceae8866991b931a87165ae4da3f04528608e52f15db45da1",
+      "bump.jpg": "b60e2a5749b10797756153742cc0297a65a612c14102f4ca5ad5d74be98bb307"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

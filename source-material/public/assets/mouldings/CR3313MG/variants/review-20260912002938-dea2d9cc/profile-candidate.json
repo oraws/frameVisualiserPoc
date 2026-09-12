@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR3313MG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 33.0,
+  "depthMm": 13.0,
+  "rebateMm": 7.3,
+  "points": [
+    [
+      0.0,
+      5.7
+    ],
+    [
+      0.147,
+      12.825
+    ],
+    [
+      0.35,
+      13.0
+    ],
+    [
+      16.55,
+      13.0
+    ],
+    [
+      32.75,
+      13.0
+    ],
+    [
+      33.0,
+      12.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face (supplier profile label: flat)",
+      "Rebate / step on one edge, ~7.3 mm deep (visible notch in product-section and 13 vs 9 step in profile-source)",
+      "Square inner sight edge (right-angle in profile-source)",
+      "Square outer edge (right-angle in profile-source)",
+      "Dimensional envelope 33 x 13 mm with 7.3 mm rebate"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel or hollow present; none added from trace",
+      "No crown or convex/concave face; face kept planar"
+    ],
+    "observations": [
+      "Product-section shows a flat tan/gold board with fine directional grain/brush texture and a small rebate notch at the lower-left corner.",
+      "Profile-source line drawing confirms a flat face of 13 mm height with a 9 mm rebate step on one side, consistent with a flat profile plus edge rebate.",
+      "Chevron image shows two flat boards meeting at 90 degrees, confirming a flat face family with no moulded profile.",
+      "Colour is a warm tan/gold with subtle natural variation; left edge shows a lighter highlight consistent with lighting rather than a separate face."
+    ],
+    "concerns": [
+      "Rebate orientation (which edge) should be confirmed against installation direction before final sign-off.",
+      "Lighter patch on the left of the product-section is interpreted as edge lighting/finish variation, not a separate planar face."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Perimeter ridge / raised bead along the outer (top) edge of the flat face",
+      "Rebate drop of 7.3 mm (supplier profile-source shows 13 to 9, i.e. a 4 mm step)"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The chevron photograph shows a single flat mitered face with no raised bead or ridge at the outer edge; the candidate adds a full-width perimeter ridge that is not visible in any supplier photo.",
+      "The product-section photograph shows a planar tan face with only a lighter inner sight-edge strip; there is no outer-edge bead to support the candidate's top ridge line.",
+      "The profile-source line drawing defines the section as 13 high stepping down to 9 (a 4 mm rebate), whereas the candidate cross-section labels the rebate drop as 7.3 mm, a dimensional conflict.",
+      "Per the review rule, a flat photographed face must not gain a perimeter ridge supported only by the extracted trace; the candidate's top ridge is trace-only."
+    ],
+    "concerns": [
+      "Candidate geometry introduces a bead/ridge on a face that is visibly flat in the chevron and section photos.",
+      "Rebate depth value (7.3 mm) does not match the 13/9 dimension pair in the supplier profile.",
+      "Left-edge stepped rebate in the candidate is plausible from the sight-edge strip, but its exact depth is unverified against the 4 mm catalogue step."
+    ]
+  }
+}

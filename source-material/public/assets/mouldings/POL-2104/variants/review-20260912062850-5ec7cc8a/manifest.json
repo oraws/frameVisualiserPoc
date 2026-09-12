@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-2104",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T06:34:48.115533+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-2104",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 70.0,
+    "depthMm": 30.0,
+    "rebateMm": 15.0,
+    "points": [
+      [
+        0.0,
+        15.0
+      ],
+      [
+        0.168,
+        29.72
+      ],
+      [
+        0.4,
+        30.0
+      ],
+      [
+        35.0,
+        30.0
+      ],
+      [
+        69.6,
+        30.0
+      ],
+      [
+        70.0,
+        29.78
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "conflicts",
+      "verifiedFeatures": [
+        "single planar face",
+        "directional wood-grain / brushed texture",
+        "bronze-gold finish with natural tonal variation"
+      ],
+      "rejectedTraceFeatures": [
+        "scoop / concave hollow (supplier label not confirmed in exact SKU rotations)",
+        "vertical flutes / ribs shown in lower catalogue image",
+        "irregular black blob at base of lower panel (segmentation/shadow artifact, not a profile)"
+      ],
+      "observations": [
+        "Top row of EXACT SKU rotation photographs presents a continuous planar face with horizontal/vertical grain streaks and no resolvable ridge, bead, bevel or hollow.",
+        "Tonal banding in the rotation shots is consistent with grain and lighting, not with a repeating macro flute; no regular-interval distinctive feature is present.",
+        "Lower panel catalogue image depicts a fluted pilaster and carries a black extracted trace that is an irregular segmentation blob, not a clean cross-section; treated as unverified guide only.",
+        "Assembled family frames (Contemporary Classics) are context only and do not establish the exact SKU cross-section.",
+        "Supplier dimensional envelope preserved: 70 x 30 mm, rebate 15 mm."
+      ],
+      "concerns": [
+        "Supplier profile label 'scoop' is not independently corroborated by the authoritative exact SKU photographs, which read as flat; flagged as a conflict to be resolved on the physical section.",
+        "If a true scoop or flute exists, it is below the resolution of the supplied rotation images and cannot be confirmed; do not model it from the catalogue trace.",
+        "Lower catalogue fluting may belong to a different SKU/variant in the family and should not be transferred to this exact SKU."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.7,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "Supplier rotation photographs (top row) show a single planar brushed-wood face with directional grain and no ridges, beads, bevels or hollows; the candidate cross-section likewise presents one flat tan face, so no perimeter ridge has been added to a flat photographed face.",
+        "The candidate's only edge treatment is the left-hand rebate step (inner sight edge to outer edge, REBATE DROP 15 mm), which is consistent with a frame moulding and is not contradicted by the flat-face supplier evidence.",
+        "The extracted catalogue silhouette (lower-left black profile) depicts a wavy/curved profile that is absent from both the candidate and the supplier photographs; per the brief this trace is an unverified guide and is therefore not used to add geometry to the candidate.",
+        "No candidate feature is supported solely by the extracted trace; the candidate's geometry is bounded by the flat face and the rebate, both of which are compatible with the physical photographs."
+      ],
+      "concerns": [
+        "The catalogue/extracted profile guide (wavy black silhouette) conflicts with the flat candidate section; the guide should be discarded in favour of the supplier photographs.",
+        "The 15 mm rebate drop is a stated dimension not directly measurable from the supplied rotation images; it is accepted as advisory but should be confirmed against a true cross-section photograph if available.",
+        "Supplier images show lighting and perspective variation across rotations; grain direction and tone should be matched under neutral fixed lighting in the texture pass."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "review-20260912062850-5ec7cc8a",
+  "referenceImages": [
+    "source-material/mainline/POL-2104/spin/img20.jpg",
+    "source-material/mainline/POL-2104/spin/img21.jpg",
+    "source-material/mainline/POL-2104/spin/img22.jpg",
+    "source-material/mainline/POL-2104/spin/img23.jpg",
+    "source-material/mainline/POL-2104/spin/img24.jpg",
+    "source-material/mainline/POL-2104/spin/img25.jpg",
+    "source-material/mainline/POL-2104/spin/img26.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-1.jpg",
+    "public/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-2.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 2,
+    "colour_strength": 0.85,
+    "contrast": 1.0,
+    "patch_width": 640,
+    "overlap": 240,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.4,
+    "bump_detail": 1.2
+  },
+  "bestMetrics": {
+    "colourDeltaE": 5.9689,
+    "colourSpreadError": 0.1204,
+    "seamError": 0.0432,
+    "maximumAutocorrelation": 0.481,
+    "detailError": 0.1482,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.8,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 200.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 5.9916,
+        "colourSpreadError": 0.1485,
+        "seamError": 0.0397,
+        "maximumAutocorrelation": 0.3377,
+        "detailError": 0.1874,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 77.8,
+      "failedGates": [],
+      "agentReview": {
+        "score": 46,
+        "colourMatch": 78,
+        "textureMatch": 52,
+        "repetition": 32,
+        "seam": 44,
+        "finishMatch": 58,
+        "blockers": [
+          "Distinctive damask/figured macro motif repeats at regular intervals across the full width in both the unlit atlas and the fixed-light preview, indicating a tiled repeat rather than natural wood figure.",
+          "A continuous horizontal seam/step line is visible mid-height in the atlas and persists in the lit preview, breaking the surface.",
+          "The candidate's surface relief is dominated by the periodic pattern, which is not present in the supplier finish crops that show only directional grain and streaks."
+        ],
+        "observations": [
+          "Supplier crops (top row) show a warm golden-amber finish with fine horizontal directional grain and irregular dark streaks; no periodic damask motif is visible there.",
+          "The unlit atlas (middle) introduces a row of repeating diamond/leaf motifs at a fixed spacing, which is a macro feature recurring at regular intervals and therefore a tiling artifact.",
+          "The fixed-light preview (bottom) preserves the same periodic motif and a horizontal seam, so the repeat is not a lighting or perspective effect.",
+          "Colour and overall value of the candidate are close to the supplier amber, so colour is not the primary fault.",
+          "Family-context frames confirm a moulded profile family, but no verified cross-section trace is present in the evidence to support additional ridge/bead geometry; the candidate should not invent profile features.",
+          "Gloss/roughness in the preview looks broadly consistent with the supplier finish, but the relief pattern is wrong."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "patch_width": 640,
+          "overlap": 240,
+          "roughness_mid": 180,
+          "roughness_detail": 0.4,
+          "bump_detail": 1.2
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 640,
+        "overlap": 240,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.2
+      },
+      "metrics": {
+        "colourDeltaE": 5.9952,
+        "colourSpreadError": 0.125,
+        "seamError": 0.042,
+        "maximumAutocorrelation": 0.5196,
+        "detailError": 0.1494,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 73.2,
+      "failedGates": [],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 640,
+        "overlap": 240,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.2
+      },
+      "metrics": {
+        "colourDeltaE": 5.9689,
+        "colourSpreadError": 0.1204,
+        "seamError": 0.0432,
+        "maximumAutocorrelation": 0.481,
+        "detailError": 0.1482,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 74.3,
+      "failedGates": [],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 640,
+        "overlap": 240,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.2
+      },
+      "metrics": {
+        "colourDeltaE": 5.9891,
+        "colourSpreadError": 0.1267,
+        "seamError": 0.0428,
+        "maximumAutocorrelation": 0.4931,
+        "detailError": 0.1509,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 73.8,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "brushed_wood",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "strong horizontal directional grain / brushing",
+        "natural tonal variation from honey-amber to dark brown streaks",
+        "soft diffuse sheen without sharp specular highlights",
+        "fine linear brush texture running parallel to the board length"
+      ],
+      "risks": [
+        "vertical seams between the three supplier panels must not be read as a tiled repeat of the grain",
+        "over-smoothing or blur could erase the fine directional brush lines",
+        "risk of misreading broad soft highlights as gloss; sheen is matte",
+        "do not sample colour or sheen from the picture-frame family references below"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.8,
+        "contrast": 1.0,
+        "roughness_mid": 200,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "Candidate colour and metallic bronze finish match the EXACT SKU supplier rotation photographs (golden/bronze with horizontal directional brushing).",
+        "Texture scale and directional grain are consistent with the supplier evidence; the fine horizontal brush lines are intentional directional grain, not a tiled repeat.",
+        "The candidate presents as a single planar face with no extruded ridge, bead, bevel or rebate, which is consistent with a visibly flat moulding and contains no trace-only unsupported geometry."
+      ],
+      "concerns": [
+        "A distinct horizontal seam line is visible across the lower portion of the upper block and again in the lower block, indicating a tiling seam rather than natural surface variation.",
+        "The darker mottled band of patches in the middle of the upper block reappears at a similar scale and position in the lower block, suggesting a repeating tile rather than continuous natural variation.",
+        "maximumAutocorrelation of 0.481 and detailError of 0.1482 support the presence of a non-trivial repeat that should be removed while retaining natural variation.",
+        "Supplier rotation photos show lighting/perspective variation; the candidate's fixed-light preview should be re-checked to confirm the mottled band is not an artefact of the repeat before approval."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "37eef01a546404fc54b09b7868805c57a6ed5bad13a4b23867ace2c22ca6a31d",
+      "roughness.jpg": "96b24e8dd156487ca858a4a82b88b096aa49af779d494adf3eba608e67ad497e",
+      "bump.jpg": "3ae2b0a2393ac4a3eec4cae18a35b22da829d5d87e60bf44dc186dfce87ddcc2"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

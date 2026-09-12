@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-4506",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T05:51:45.111870+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-4506",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 53.0,
+    "depthMm": 30.0,
+    "rebateMm": 13.0,
+    "points": [
+      [
+        0.0,
+        17.0
+      ],
+      [
+        0.147,
+        29.79
+      ],
+      [
+        0.35,
+        30.0
+      ],
+      [
+        26.525,
+        30.0
+      ],
+      [
+        52.7,
+        30.0
+      ],
+      [
+        53.0,
+        29.835
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.3,
+      "outerEdgeRadiusMm": 0.3,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "single planar face with fine directional vertical grain",
+        "light grey / off-white brushed finish",
+        "rear rebate step consistent with stated 13 mm rebate"
+      ],
+      "rejectedTraceFeatures": [
+        "ridge",
+        "bead",
+        "bevel",
+        "hollow",
+        "ornate profile"
+      ],
+      "observations": [
+        "Top rotation strip shows one continuous flat face with subtle vertical grain; no repeating macro ridge or bead at regular intervals.",
+        "Oblique family photograph shows a flat black face with a red trace outlining a flat panel and a rear rebate, not a crowned or beaded profile.",
+        "Lower catalogue/extracted guide shows a flat vertical-grain face above a dark speckled background and a white rebate edge; the dark speckled region is background, not profile material.",
+        "Supplier profile label reads 'flat' and dimensions 53 x 30 mm with 13 mm rebate, consistent with a flat panel plus mounting rebate.",
+        "Directional grain is fine and continuous, characteristic of brushed/wood-grain finish rather than a tiled repeat."
+      ],
+      "concerns": [
+        "The dark speckled area in the lower guide is segmentation/background and must not be read as a second face or step.",
+        "The white vertical strip in the lower guide is the rebate/sight edge, not a separate bead.",
+        "No physical chevron or oblique photograph shows a crown, bead or bevel; any such feature in a candidate render would be unsupported and should be omitted.",
+        "Lighting and perspective in supplier images may exaggerate grain contrast; treat as flat under neutral lighting."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.72,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "agree",
+      "reasons": [
+        "Rotation photographs (top row) show a single flat planar face with fine directional brushing and no ridges, beads, hollows or steps on the face.",
+        "The oblique/physical section photograph (lower left) confirms a flat brushed face meeting a stepped rebate/core at the back edge, matching the candidate's rebate drop.",
+        "The candidate cross-section retains one flat face plus a single rebate step and a thin outer-edge line; it does not introduce any bead, ridge or hollow that is absent from the photographs.",
+        "The stated rebate drop (13 mm) corresponds to the visible step between the face and the darker substrate in the oblique photo."
+      ],
+      "concerns": [
+        "The thin uniform line along the top of the candidate could be misread as a perimeter ridge; it is interpreted here as the board edge thickness, consistent with the rotation photos.",
+        "The middle-row 'Harley 14 / Paramount' images are family reference context, not the exact SKU, and were not used as primary evidence.",
+        "Supplier lighting and perspective vary across the rotation set, so edge treatment was judged conservatively."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "review-20260912054544-80b36f05",
+  "referenceImages": [
+    "source-material/mainline/POL-4506/spin/img20.jpg",
+    "source-material/mainline/POL-4506/spin/img21.jpg",
+    "source-material/mainline/POL-4506/spin/img22.jpg",
+    "source-material/mainline/POL-4506/spin/img23.jpg",
+    "source-material/mainline/POL-4506/spin/img24.jpg",
+    "source-material/mainline/POL-4506/spin/img25.jpg",
+    "source-material/mainline/POL-4506/spin/img26.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/mainline/paramount/catalogue-p092-1.jpg",
+    "public/assets/moulding-families/mainline/paramount/catalogue-p093-2.jpg",
+    "public/assets/moulding-families/mainline/paramount/catalogue-p093-3.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.5,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 185.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 1.6
+  },
+  "bestMetrics": {
+    "colourDeltaE": 4.2229,
+    "colourSpreadError": 0.0438,
+    "seamError": 0.0108,
+    "maximumAutocorrelation": 0.2144,
+    "detailError": 0.0784,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.6
+      },
+      "metrics": {
+        "colourDeltaE": 4.2229,
+        "colourSpreadError": 0.0438,
+        "seamError": 0.0108,
+        "maximumAutocorrelation": 0.2144,
+        "detailError": 0.0784,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 95.4,
+      "failedGates": [],
+      "agentReview": {
+        "score": 78,
+        "colourMatch": 80,
+        "textureMatch": 82,
+        "repetition": 86,
+        "seam": 80,
+        "finishMatch": 81,
+        "blockers": [
+          "A faint horizontal tonal band runs across the fixed-light preview (just below the candidate label bar); verify it is a lighting gradient and not an unintended seam or profile step, since the supplier evidence shows a single flat planar face.",
+          "Family-context references (red/black 'HARLEY 14' jersey and chevron/arrow moulding samples) must not be interpreted as the product profile; the actual supplier finish crops show a flat textured panel, so no ridge/bead/rebate geometry should be added."
+        ],
+        "observations": [
+          "Supplier finish crops (top) show a light warm-grey surface with fine horizontal directional grain/brushing and low gloss; the candidate fixed-light preview reproduces this flat, matte, horizontally-grained appearance.",
+          "The moulding is effectively a single planar face with only edge treatment; no independent ridge, bead, bevel, hollow or rebate is visible in the supplier photographs, so the candidate correctly omits trace-only profile features.",
+          "maximumAutocorrelation 0.2144 and the visible grain are consistent with intentional fine directional brushing rather than a tiled macro repeat; no regular repeating distinctive feature is detected.",
+          "colourDeltaE 4.22 is acceptable but slightly high; the candidate grey is marginally cooler/darker than the supplier crops under neutral light.",
+          "seamError 0.0108 is low, but the horizontal band in the preview warrants a lighting/UV-seam check before sign-off.",
+          "detailError 0.0784 and clippedPixels 0.0 indicate good micro-detail fidelity and no HDR clipping."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.0
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "directional",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "fine horizontal directional grain / brushing",
+        "light cream-to-off-white base tone with subtle tonal variation",
+        "soft diffuse sheen without sharp specular highlights",
+        "natural low-scale surface relief"
+      ],
+      "risks": [
+        "imposing a moulded profile (bead, rebate, hollow, step) that is not visible in the authoritative flat-face SKU photo",
+        "sampling colour or sheen from the assembled family frames or the HARLEY 14 artwork instead of the exact SKU surface",
+        "tiling or repeating the directional grain into a regular pattern",
+        "over-smoothing the grain and losing the fine brush lines",
+        "misclassifying the finish as satin/gloss from edge catch-light on curved family profiles"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "roughness_mid": 185,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.6
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "Candidate preview is a neutral light-grey/white surface with fine horizontal brushing, which does not match the exact SKU supplier evidence showing a saturated red face with a black border (HARLEY 14 panel).",
+        "No obvious tiled repeat or visible seam is present in the candidate; the texture reads as a continuous directional grain rather than a regular macro repeat.",
+        "Family-context moulding profiles are explicitly labelled context and therefore do not override the exact SKU red-face evidence."
+      ],
+      "concerns": [
+        "Exact SKU colour (red with black edge) is not retained in the candidate, which appears grey/white under fixed lighting.",
+        "Profile/section geometry (face, sight edge, rebate, bevel) cannot be independently confirmed from a flat candidate preview; the supplier rotation photos show a red face with black edge treatment that the candidate does not reproduce.",
+        "The candidate's horizontal grain may be intentional brushing, but its scale and surface relief are not clearly consistent with the supplier photographs."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "02c57ab5ce844a151d7a216b10a0838496c6206bb421394edad69832df7ae42d",
+      "roughness.jpg": "95dcc93fd978b4cdddc284f359fae2b0e1db9f5cc1e8260610808c0102684ac0",
+      "bump.jpg": "96f5f6a16a3a04d58279b8bcb9c80888cc4ac8f06a4e3e4f265e49faf36a6d36"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

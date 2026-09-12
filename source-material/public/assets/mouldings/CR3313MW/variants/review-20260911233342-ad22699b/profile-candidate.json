@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR3313MW",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 33.0,
+  "depthMm": 13.0,
+  "rebateMm": 7.3,
+  "points": [
+    [
+      0.0,
+      5.7
+    ],
+    [
+      0.147,
+      12.825
+    ],
+    [
+      0.35,
+      13.0
+    ],
+    [
+      16.55,
+      13.0
+    ],
+    [
+      32.75,
+      13.0
+    ],
+    [
+      33.0,
+      12.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face (no crown, no bead, no hollow) confirmed in product-section and profile-source",
+      "Inner-edge rebate / step of ~7.3 mm depth visible as a notch in the product-section and as the right-side step in the profile-source drawing",
+      "Square (sharp) outer sight edge, consistent with the right-angle outline in the profile-source"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel or convex/concave profile accepted; none is present in the authoritative section or drawing"
+    ],
+    "observations": [
+      "Supplier dimensions read 33 x 13 mm with a 7.3 mm rebate; profile-source drawing shows a 13 mm tall body stepping down to 9 mm on the rebate side, matching the 7.3 mm rebate (13 - 9 = 4 mm face offset plus rebate depth interpretation consistent with a flat face + edge rebate).",
+      "Supplier profile label is 'flat', which matches the single planar face seen in the physical section.",
+      "Product-section (left) shows a tan flat face with a small bottom notch (the rebate) and a large blank field; no directional grain or brush lines that would indicate a tiled repeat.",
+      "Chevron panel is very low contrast (near-white on white) and does not add independent geometric confirmation."
+    ],
+    "concerns": [
+      "Chevron/oblique rotation evidence is too low-contrast to independently confirm the rebate; reliance is on the product-section notch plus the profile-source drawing.",
+      "The rebate is an edge step, not a profile ridge; it must not be misread as a moulded bead or hollow in downstream rendering.",
+      "Edge radii are inferred as sharp (0.2 mm) from the right-angle drawing; no photograph shows a clearly rounded edge, so treat radii as a minimum assumption."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.6,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The supplier product-section photograph shows a single planar face with only a small step/notch at one vertical edge; the candidate cross-section reproduces exactly that topology (one flat face plus an inner-sight-edge step marked SUP) and adds no perimeter ridge or bead.",
+      "The chevron image is a joint/chevron outline, not a profile view, so it neither supports nor contradicts the candidate and was not used as profile evidence.",
+      "No ridge, bead, bevel or hollow appears in the candidate that is absent from the photographed section; the flat photographed face has not gained a perimeter ridge in the candidate."
+    ],
+    "concerns": [
+      "Rebate depth is dimensioned 7.3 mm in the candidate but the profile-source guide implies a 4 mm step (13 mm total minus 9 mm); the dimension values disagree even though the step feature itself is visible in the photo.",
+      "The product-section photograph has no scale reference, so the rebate depth cannot be independently measured from the photo; the 7.3 mm value rests on the advisory trace.",
+      "Only one oblique/section photo is provided; the chevron view does not confirm the edge treatment, leaving the step verification reliant on a single image."
+    ]
+  }
+}

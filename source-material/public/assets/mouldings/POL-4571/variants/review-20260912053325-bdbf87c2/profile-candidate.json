@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4571",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 16.0,
+  "depthMm": 15.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      5.0
+    ],
+    [
+      0.147,
+      14.825
+    ],
+    [
+      0.35,
+      15.0
+    ],
+    [
+      8.05,
+      15.0
+    ],
+    [
+      15.75,
+      15.0
+    ],
+    [
+      16.0,
+      14.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face with no crown, bead, hollow or step",
+      "fine directional grain running along the length",
+      "pale oak/ash tone with natural light-to-mid tan variation",
+      "square sight edges consistent with a flat board"
+    ],
+    "rejectedTraceFeatures": [
+      "no ridge, bead, bevel or hollow is visible in any rotation photograph, so none are added",
+      "white block and green speckled area at the base of the catalogue strip are treated as background/segmentation, not profile geometry"
+    ],
+    "observations": [
+      "All six EXACT SKU rotation frames show the same flat, grain-textured face with no change in cross-section silhouette",
+      "Supplier profile label explicitly states 'flat' and dimensions 18 x 15 mm with a 10 mm rebate, matching a planar board",
+      "Grain is fine and directional; no tiling or repeated macro feature is present, only natural wood variation",
+      "Gloss appears low to matte under the supplier lighting"
+    ],
+    "concerns": [
+      "Lighting and perspective differ slightly across the rotation frames, which can exaggerate grain contrast but does not indicate geometry",
+      "The rebate (10 mm) is a stated dimension and is not independently confirmable as a cut feature from the visible face photographs; it is retained only as part of the supplied dimensional envelope"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate drop 10 mm (inner sight edge step) \u2014 present in candidate cross-section and dimension label but not independently visible in the flat-face supplier photographs"
+    ],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier photographs (top row) show a single flat planar face with fine horizontal directional grain/brushing in a light blonde oak tone; the candidate cross-section correctly retains one flat face and adds no perimeter ridge, bead, bevel or hollow.",
+      "Colour, gloss and texture scale of the candidate face are consistent with the supplier photographs under neutral lighting; no tiled repeat or seam is introduced.",
+      "The candidate's only non-planar feature is the 10 mm rebate drop on the inner sight edge, which matches the stated dimension and the extracted guide, so the candidate does not conflict with the catalogue trace.",
+      "No physical-section, chevron or oblique photograph is provided that independently shows the rebate step, so the rebate cannot be confirmed against visible evidence and remains guide-supported."
+    ],
+    "concerns": [
+      "The 10 mm rebate drop is asserted by the dimension label and guide outline but is not visible in any flat-face or angled supplier photo; an oblique/section shot is needed to confirm the step depth and the inner sight edge treatment.",
+      "The lower-left guide strip contains an unexplained green/white patch at its base that does not correspond to any supplier photograph and should be clarified before approval.",
+      "Because the only edge feature (rebate) lacks independent photographic confirmation, the candidate is held at review rather than approved."
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "0403BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 20.0,
+  "depthMm": 14.0,
+  "rebateMm": 7.8,
+  "points": [
+    [
+      0.0,
+      12.605
+    ],
+    [
+      1.683,
+      13.086
+    ],
+    [
+      4.712,
+      13.663
+    ],
+    [
+      9.375,
+      14.0
+    ],
+    [
+      15.481,
+      13.759
+    ],
+    [
+      17.933,
+      13.423
+    ],
+    [
+      20.0,
+      12.942
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "single planar front face with directional grain",
+      "rebate/step at the lower sight edge (cut face notch)",
+      "dark charcoal/black stained finish",
+      "rectangular 20 x 14 mm body with 7.8 mm rebate"
+    ],
+    "rejectedTraceFeatures": [
+      "cushion curve / rounded crown (label only, not visible in section or chevron)",
+      "any bead, hollow or bevel not present in photographs"
+    ],
+    "observations": [
+      "Product-section shows a flat bar; the left cut face reveals a small bottom rebate/step, confirming a stepped rather than pure flat profile.",
+      "Chevron view confirms the dark stained finish and the same flat face meeting at the joint; no rounded cushion profile is visible.",
+      "Directional grain/brushing runs lengthwise and is consistent across section and chevron; no tiled repeat detected.",
+      "The middle tan silhouette is an extracted guide showing a step that matches the rebate, but the 'cushion' label implies a curve that the photographs do not support."
+    ],
+    "concerns": [
+      "Supplier profile label 'cushion' conflicts with the visibly flat + rebate geometry; photographs taken as authoritative.",
+      "Edge radii appear near-sharp; small rounding cannot be precisely measured from the supplied resolution.",
+      "Lighting on the dark finish may exaggerate grain contrast; treat as finish variation, not relief."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.58,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The product-section and chevron photographs show a single flat, dark-stained face with directional grain and no bead, hollow, or perimeter ridge; the candidate's flat face is consistent with this.",
+      "A single step/rebate is visible at the cut end in the product-section photo and as a notch in the profile-source silhouette, which supports the candidate's 7.8 mm rebate drop at the inner sight edge.",
+      "The candidate's top edge renders with a slight convex crown across the width, whereas the supplier profile-source top edge reads as straight/flat; this subtle crown is not clearly corroborated by the photographs.",
+      "The step appears on the right in the profile-source silhouette but on the left (inner sight edge) in the candidate; orientation relative to inner/outer edge is not unambiguously confirmed."
+    ],
+    "concerns": [
+      "Possible unsupported slight crown/curve on the otherwise flat top face.",
+      "Step orientation (inner vs outer edge) needs confirmation against the labelled inner-sight-edge direction.",
+      "Texture/colour in the candidate is shown as a flat tan section fill; the dark stained finish and grain scale from the photos are not represented in the cross-section view, so finish matching is unverified here."
+    ]
+  }
+}

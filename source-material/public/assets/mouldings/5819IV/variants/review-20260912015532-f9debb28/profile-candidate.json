@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "sku": "5819IV",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 58.0,
+  "depthMm": 19.0,
+  "rebateMm": 10.6,
+  "points": [
+    [
+      0.0,
+      12.557
+    ],
+    [
+      7.411,
+      19.0
+    ],
+    [
+      58.0,
+      19.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0.0,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.3,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar front face (confirmed in product-section and both oblique detail photos)",
+      "Angled/chamfered top sight edge (profile-source guide, consistent with 'angled' label and oblique highlight on top edge)",
+      "Back rebate / step of ~10.6 mm (profile-source notch, consistent with vertical tan edge strip in product-section and end-grain thickness in detail photos)",
+      "Straight end-grain edge (visible tan cut face in product-detail-1 and product-detail-2)"
+    ],
+    "rejectedTraceFeatures": [
+      "No bead, hollow, or convex/concave ridge present in any photograph; none added",
+      "No second step or ornate profile supported by evidence; omitted"
+    ],
+    "observations": [
+      "product-section shows a flat cream textured face with a vertical tan edge strip, consistent with a flat face plus a back rebate rather than a crowned or beaded profile",
+      "profile-source 2D guide shows a rectangular body with a chamfered top-right corner and a bottom-right notch (rebate), matching the 'angled' supplier label and 19 mm height / 11 mm step annotation",
+      "chevron photo shows two flat boards meeting at 90 degrees with no visible moulded bead or hollow on the exposed faces",
+      "product-detail-1 and product-detail-2 oblique views show a flat face with a uniform tan end-grain edge and a faint top-edge highlight consistent with a single angled bevel, not a curved crown",
+      "finish is a light cream/ivory matte surface with fine directional grain/brushing and natural tonal variation; no tiling or repeat pattern detected"
+    ],
+    "concerns": [
+      "Exact bevel angle of the top edge is not directly dimensioned in the photographs; inferred from the profile-source guide and 'angled' label",
+      "Rebate depth read as 10.6 mm from supplier text vs 11 mm annotation on the guide; minor discrepancy, supplier text retained",
+      "Edge radii are not measurable from the images; near-sharp values assumed from the crisp corner rendering in the guide and detail photos"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.8,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The oblique product-detail photographs show a single planar face with only a small step/rebate at one edge and a chamfered corner, matching the candidate's flat face + chamfer + rebate geometry.",
+      "The chevron photograph confirms two flat faces meeting at a corner with no bead, ridge, or hollow, consistent with the candidate having no perimeter ridge.",
+      "The product-section photograph shows a flat pale-wood face with fine directional grain/brushing and no raised profile, so the candidate's single planar face is supported.",
+      "The rebate step visible in the end-grain of the oblique photos corresponds to the candidate's rebate drop (~10.6 mm), and the chamfered corner matches the profile-source outline.",
+      "No ridge, bead, bevel, or hollow in the candidate is unsupported by the photographs; all features are visible in the physical-section or oblique evidence."
+    ],
+    "concerns": [
+      "Rebate drop is labelled 10.6 mm in the candidate versus 11 mm in the profile-source dimension; minor discrepancy likely within tolerance but worth noting.",
+      "The cross-section fill is a flat tan colour and does not itself display the fine directional grain/brushing seen in the product-section photo; texture must be carried by the material map rather than the section geometry.",
+      "Supplier images show lighting and perspective variation; the rebate depth is read from end-grain and may be slightly exaggerated by angle."
+    ]
+  }
+}

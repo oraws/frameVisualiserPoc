@@ -166,6 +166,8 @@ export default function mouldingMaterialReview() {
     reviewer: report.agents?.reviewer,
     model: report.agents?.model,
     reviewScopes: report.reviewScopes || ['material'],
+    referenceImages: report.referenceImages || [],
+    familyReferenceImages: report.familyReferenceImages || [],
     profile: report.profile,
     profileGate: report.profileGate,
     revision: Date.now(),
@@ -339,10 +341,10 @@ export default function mouldingMaterialReview() {
       }).filter(item => /^[A-Z0-9-]{2,32}$/.test(item.sku) && eligible(item.sku) && item.scopes.length && item.prompt.length >= 4);
       if (!items.length) return send(res, 400, { error: 'No eligible mouldings with a review prompt were supplied.' });
       const id = randomUUID();
-      const batch = { id, status: 'running', model, prompt: String(body.prompt || ''),
+      const batch = { id, status: 'paused', model, prompt: String(body.prompt || ''),
         createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), current: 0,
-        message: 'Preparing saved batch…', items };
-      saveBatch(batch); continueBatch(batch);
+        message: 'Queue prepared. Inspect the frames and prompts, then press Start batch.' , items };
+      saveBatch(batch);
       return send(res, 202, publicBatch(batch));
     }
     const batchAction = path.match(/^\/api\/material-review\/batch\/([a-f0-9-]{36})\/(pause|resume)$/);

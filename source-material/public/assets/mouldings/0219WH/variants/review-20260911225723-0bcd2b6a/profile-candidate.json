@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sku": "0219WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 20.0,
+  "depthMm": 15.0,
+  "rebateMm": 8.4,
+  "points": [
+    [
+      0.0,
+      10.57
+    ],
+    [
+      0.401,
+      11.577
+    ],
+    [
+      0.952,
+      12.081
+    ],
+    [
+      7.469,
+      14.95
+    ],
+    [
+      19.799,
+      14.95
+    ],
+    [
+      20.0,
+      14.799
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "single planar flat face",
+      "rebate / step at the front edge (supplier rebate 8.4 mm)",
+      "angled (chevron) joint geometry in assembled view",
+      "fine directional grain / brush lines along the face"
+    ],
+    "rejectedTraceFeatures": [
+      "protruding top lip shown in the profile-source guide (not independently confirmed in the physical section or chevron)",
+      "any convex bead or hollow suggested only by the extracted outline"
+    ],
+    "observations": [
+      "Physical product-section shows a flat top face with a vertical front face and a bottom rebate, consistent with a stepped/angled profile",
+      "Chevron photograph confirms two flat faces meeting at an angle with no raised bead",
+      "Finish is a light natural wood / veneer tone with low gloss and visible horizontal grain",
+      "Supplied envelope 20 x 15 mm with 8.4 mm rebate is geometrically consistent with the visible step"
+    ],
+    "concerns": [
+      "profile-source (middle) guide orientation is ambiguous and shows a top lip not clearly present in the authoritative section; treated as unverified",
+      "lighting and perspective in supplier photos may exaggerate edge shadows; edge radii estimated conservatively",
+      "rebate depth (8.4 mm) read from text label, not directly measurable from the section image"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.8,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The candidate's flat top face matches the planar face seen in the product-section and chevron photographs; no perimeter ridge or bead has been added to a flat face.",
+      "The rebate/step at the left edge (labelled rebate drop 8.4 mm) corresponds to the visible notch/step at the end of the moulding in the product-section oblique photo.",
+      "The small chamfer at the upper-left corner of the candidate matches the angled corner visible in the product-section photo.",
+      "The chevron photograph confirms two flat mitred faces with no hidden hollow, bead or ridge, consistent with the simple flat-face-plus-rebate profile in the candidate.",
+      "The profile-source silhouette (tan block with a single step) is consistent with a flat face plus one rebate step, agreeing with the candidate geometry."
+    ],
+    "concerns": [
+      "The profile-source silhouette shows the step on the top-right while the candidate places the rebate on the left; this is interpreted as a rotation/orientation difference rather than a conflict, but orientation should be confirmed against the SKU spec.",
+      "Grain/brushing in the product-section photo is faint and directional; ensure the rendered texture retains natural variation without tiling, as the candidate cross-section is a flat colour fill and does not itself encode texture."
+    ]
+  }
+}

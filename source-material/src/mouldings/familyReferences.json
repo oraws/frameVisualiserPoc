@@ -1,0 +1,1107 @@
+{
+  "schemaVersion": 1,
+  "guidance": "Family references show intended assembled appearance. Exact SKU photographs and physical sections remain authoritative for colour, finish and geometry.",
+  "families": [
+    {
+      "id": "fletcher-wood",
+      "label": "Fletcher Wood",
+      "skus": [
+        "010-1009"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Fletcher Wood",
+          "url": "/assets/moulding-families/mainline/fletcher-wood/catalogue-p029-1.jpg",
+          "kind": "family",
+          "family": "Fletcher Wood",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 29,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "l-shapes",
+      "label": "L Shapes",
+      "skus": [
+        "POL-7145",
+        "POL-7146"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 L Shapes",
+          "url": "/assets/moulding-families/mainline/l-shapes/catalogue-p082-1.jpg",
+          "kind": "family",
+          "family": "L Shapes",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 82,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "watercolour",
+      "label": "Watercolour",
+      "skus": [
+        "POL-4540",
+        "POL-4541"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Watercolour",
+          "url": "/assets/moulding-families/mainline/watercolour/catalogue-p084-1.jpg",
+          "kind": "family",
+          "family": "Watercolour",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 84,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "outline",
+      "label": "Outline",
+      "skus": [
+        "POL-4417",
+        "POL-4446"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Outline",
+          "url": "/assets/moulding-families/mainline/outline/catalogue-p086-1.jpg",
+          "kind": "family",
+          "family": "Outline",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 86,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "flats",
+      "label": "Flats",
+      "skus": [
+        "POL-4721",
+        "POL-4100",
+        "POL-4202",
+        "POL-4211",
+        "POL-4415",
+        "POL-4416",
+        "POL-4418",
+        "POL-4571"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Flats",
+          "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+          "kind": "family",
+          "family": "Flats",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 87,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "paramount",
+      "label": "Paramount",
+      "skus": [
+        "POL-4506",
+        "POL-4508"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Paramount",
+          "url": "/assets/moulding-families/mainline/paramount/catalogue-p092-1.jpg",
+          "kind": "family",
+          "family": "Paramount",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 92,
+          "evidenceUse": "assembly-and-family-appearance"
+        },
+        {
+          "label": "Family reference \u00b7 Paramount",
+          "url": "/assets/moulding-families/mainline/paramount/catalogue-p093-2.jpg",
+          "kind": "family",
+          "family": "Paramount",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 93,
+          "evidenceUse": "assembly-and-family-appearance"
+        },
+        {
+          "label": "Family reference \u00b7 Paramount",
+          "url": "/assets/moulding-families/mainline/paramount/catalogue-p093-3.jpg",
+          "kind": "family",
+          "family": "Paramount",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 93,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "box",
+      "label": "Box",
+      "skus": [
+        "POL-4344"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Box",
+          "url": "/assets/moulding-families/mainline/box/catalogue-p094-1.jpg",
+          "kind": "family",
+          "family": "Box",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 94,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "edge",
+      "label": "Edge",
+      "skus": [
+        "POL-1129",
+        "POL-4313",
+        "POL-4436"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Edge",
+          "url": "/assets/moulding-families/mainline/edge/catalogue-p096-1.jpg",
+          "kind": "family",
+          "family": "Edge",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 96,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "verona",
+      "label": "Verona",
+      "skus": [
+        "POL-4875"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Verona",
+          "url": "/assets/moulding-families/mainline/verona/catalogue-p106-1.jpg",
+          "kind": "family",
+          "family": "Verona",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 106,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "hockney",
+      "label": "Hockney",
+      "skus": [
+        "POL-7149",
+        "POL-7150"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Hockney",
+          "url": "/assets/moulding-families/mainline/hockney/catalogue-p112-1.jpg",
+          "kind": "family",
+          "family": "Hockney",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 112,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "contemporary-classics",
+      "label": "Contemporary Classics",
+      "skus": [
+        "POL-2104",
+        "POL-2109",
+        "POL-2190"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Contemporary Classics",
+          "url": "/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-1.jpg",
+          "kind": "family",
+          "family": "Contemporary Classics",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 123,
+          "evidenceUse": "assembly-and-family-appearance"
+        },
+        {
+          "label": "Family reference \u00b7 Contemporary Classics",
+          "url": "/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-2.jpg",
+          "kind": "family",
+          "family": "Contemporary Classics",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 123,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "fletcher-polcore",
+      "label": "Fletcher Polcore Basics",
+      "skus": [
+        "POL-7026"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Fletcher Polcore Basics",
+          "url": "/assets/moulding-families/mainline/fletcher-polcore/catalogue-p132-1.jpg",
+          "kind": "family",
+          "family": "Fletcher Polcore Basics",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 132,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "basic-flats",
+      "label": "Basics Flats",
+      "skus": [
+        "POL-1009"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Basics Flats",
+          "url": "/assets/moulding-families/mainline/basic-flats/catalogue-p139-1.jpg",
+          "kind": "family",
+          "family": "Basics Flats",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 139,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "nelson",
+      "label": "Nelson",
+      "skus": [
+        "POL-1334",
+        "POL-1336"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Nelson",
+          "url": "/assets/moulding-families/mainline/nelson/catalogue-p144-1.jpg",
+          "kind": "family",
+          "family": "Nelson",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 144,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "naples",
+      "label": "Naples",
+      "skus": [
+        "POL-4640",
+        "POL-4642",
+        "POL-4643"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Naples",
+          "url": "/assets/moulding-families/mainline/naples/catalogue-p145-1.jpg",
+          "kind": "family",
+          "family": "Naples",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 145,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "starling",
+      "label": "Starling",
+      "skus": [
+        "POL-1301"
+      ],
+      "supplier": "Mainline",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Starling",
+          "url": "/assets/moulding-families/mainline/starling/catalogue-p146-1.jpg",
+          "kind": "family",
+          "family": "Starling",
+          "supplier": "Mainline",
+          "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+          "sourcePage": 146,
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "alberta",
+      "label": "Alberta",
+      "skus": [
+        "2650BK",
+        "2650WH"
+      ],
+      "supplier": "Centrado",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Alberta",
+          "url": "/assets/moulding-families/centrado/alberta/2650WH-framed-reference.jpg",
+          "kind": "family",
+          "family": "Alberta",
+          "supplier": "Centrado",
+          "sourceSku": "2650WH",
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "kashmir",
+      "label": "Kashmir",
+      "skus": [
+        "3825BK",
+        "3826BK"
+      ],
+      "supplier": "Centrado",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Kashmir",
+          "url": "/assets/moulding-families/centrado/kashmir/3825BK-framed-reference.jpg",
+          "kind": "family",
+          "family": "Kashmir",
+          "supplier": "Centrado",
+          "sourceSku": "3825BK",
+          "evidenceUse": "assembly-and-family-appearance"
+        },
+        {
+          "label": "Family reference \u00b7 Kashmir",
+          "url": "/assets/moulding-families/centrado/kashmir/3826BK-framed-reference.jpg",
+          "kind": "family",
+          "family": "Kashmir",
+          "supplier": "Centrado",
+          "sourceSku": "3826BK",
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "bergen",
+      "label": "Bergen",
+      "skus": [
+        "4924BG",
+        "4925BG"
+      ],
+      "supplier": "Centrado",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Bergen",
+          "url": "/assets/moulding-families/centrado/bergen/4924BG-framed-reference.jpg",
+          "kind": "family",
+          "family": "Bergen",
+          "supplier": "Centrado",
+          "sourceSku": "4924BG",
+          "evidenceUse": "assembly-and-family-appearance"
+        },
+        {
+          "label": "Family reference \u00b7 Bergen",
+          "url": "/assets/moulding-families/centrado/bergen/4925BG-framed-reference.jpg",
+          "kind": "family",
+          "family": "Bergen",
+          "supplier": "Centrado",
+          "sourceSku": "4925BG",
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "wentworth",
+      "label": "Wentworth",
+      "skus": [
+        "8054BG"
+      ],
+      "supplier": "Centrado",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Wentworth",
+          "url": "/assets/moulding-families/centrado/wentworth/8054BG-framed-reference.jpg",
+          "kind": "family",
+          "family": "Wentworth",
+          "supplier": "Centrado",
+          "sourceSku": "8054BG",
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    },
+    {
+      "id": "create-3330",
+      "label": "Create 33 \u00d7 30",
+      "skus": [
+        "CR3330AG"
+      ],
+      "supplier": "Centrado",
+      "references": [
+        {
+          "label": "Family reference \u00b7 Create 33 \u00d7 30",
+          "url": "/assets/moulding-families/centrado/create-3330/CR3330AG-framed-reference.jpg",
+          "kind": "family",
+          "family": "Create 33 \u00d7 30",
+          "supplier": "Centrado",
+          "sourceSku": "CR3330AG",
+          "evidenceUse": "assembly-and-family-appearance"
+        }
+      ]
+    }
+  ],
+  "bySku": {
+    "010-1009": [
+      {
+        "label": "Family reference \u00b7 Fletcher Wood",
+        "url": "/assets/moulding-families/mainline/fletcher-wood/catalogue-p029-1.jpg",
+        "kind": "family",
+        "family": "Fletcher Wood",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 29,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-7145": [
+      {
+        "label": "Family reference \u00b7 L Shapes",
+        "url": "/assets/moulding-families/mainline/l-shapes/catalogue-p082-1.jpg",
+        "kind": "family",
+        "family": "L Shapes",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 82,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-7146": [
+      {
+        "label": "Family reference \u00b7 L Shapes",
+        "url": "/assets/moulding-families/mainline/l-shapes/catalogue-p082-1.jpg",
+        "kind": "family",
+        "family": "L Shapes",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 82,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4540": [
+      {
+        "label": "Family reference \u00b7 Watercolour",
+        "url": "/assets/moulding-families/mainline/watercolour/catalogue-p084-1.jpg",
+        "kind": "family",
+        "family": "Watercolour",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 84,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4541": [
+      {
+        "label": "Family reference \u00b7 Watercolour",
+        "url": "/assets/moulding-families/mainline/watercolour/catalogue-p084-1.jpg",
+        "kind": "family",
+        "family": "Watercolour",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 84,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4417": [
+      {
+        "label": "Family reference \u00b7 Outline",
+        "url": "/assets/moulding-families/mainline/outline/catalogue-p086-1.jpg",
+        "kind": "family",
+        "family": "Outline",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 86,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4446": [
+      {
+        "label": "Family reference \u00b7 Outline",
+        "url": "/assets/moulding-families/mainline/outline/catalogue-p086-1.jpg",
+        "kind": "family",
+        "family": "Outline",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 86,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4721": [
+      {
+        "label": "Family reference \u00b7 Flats",
+        "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+        "kind": "family",
+        "family": "Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 87,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4100": [
+      {
+        "label": "Family reference \u00b7 Flats",
+        "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+        "kind": "family",
+        "family": "Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 87,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4202": [
+      {
+        "label": "Family reference \u00b7 Flats",
+        "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+        "kind": "family",
+        "family": "Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 87,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4211": [
+      {
+        "label": "Family reference \u00b7 Flats",
+        "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+        "kind": "family",
+        "family": "Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 87,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4415": [
+      {
+        "label": "Family reference \u00b7 Flats",
+        "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+        "kind": "family",
+        "family": "Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 87,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4416": [
+      {
+        "label": "Family reference \u00b7 Flats",
+        "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+        "kind": "family",
+        "family": "Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 87,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4418": [
+      {
+        "label": "Family reference \u00b7 Flats",
+        "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+        "kind": "family",
+        "family": "Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 87,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4571": [
+      {
+        "label": "Family reference \u00b7 Flats",
+        "url": "/assets/moulding-families/mainline/flats/catalogue-p087-1.jpg",
+        "kind": "family",
+        "family": "Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 87,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4506": [
+      {
+        "label": "Family reference \u00b7 Paramount",
+        "url": "/assets/moulding-families/mainline/paramount/catalogue-p092-1.jpg",
+        "kind": "family",
+        "family": "Paramount",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 92,
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Paramount",
+        "url": "/assets/moulding-families/mainline/paramount/catalogue-p093-2.jpg",
+        "kind": "family",
+        "family": "Paramount",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 93,
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Paramount",
+        "url": "/assets/moulding-families/mainline/paramount/catalogue-p093-3.jpg",
+        "kind": "family",
+        "family": "Paramount",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 93,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4508": [
+      {
+        "label": "Family reference \u00b7 Paramount",
+        "url": "/assets/moulding-families/mainline/paramount/catalogue-p092-1.jpg",
+        "kind": "family",
+        "family": "Paramount",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 92,
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Paramount",
+        "url": "/assets/moulding-families/mainline/paramount/catalogue-p093-2.jpg",
+        "kind": "family",
+        "family": "Paramount",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 93,
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Paramount",
+        "url": "/assets/moulding-families/mainline/paramount/catalogue-p093-3.jpg",
+        "kind": "family",
+        "family": "Paramount",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 93,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4344": [
+      {
+        "label": "Family reference \u00b7 Box",
+        "url": "/assets/moulding-families/mainline/box/catalogue-p094-1.jpg",
+        "kind": "family",
+        "family": "Box",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 94,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-1129": [
+      {
+        "label": "Family reference \u00b7 Edge",
+        "url": "/assets/moulding-families/mainline/edge/catalogue-p096-1.jpg",
+        "kind": "family",
+        "family": "Edge",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 96,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4313": [
+      {
+        "label": "Family reference \u00b7 Edge",
+        "url": "/assets/moulding-families/mainline/edge/catalogue-p096-1.jpg",
+        "kind": "family",
+        "family": "Edge",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 96,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4436": [
+      {
+        "label": "Family reference \u00b7 Edge",
+        "url": "/assets/moulding-families/mainline/edge/catalogue-p096-1.jpg",
+        "kind": "family",
+        "family": "Edge",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 96,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4875": [
+      {
+        "label": "Family reference \u00b7 Verona",
+        "url": "/assets/moulding-families/mainline/verona/catalogue-p106-1.jpg",
+        "kind": "family",
+        "family": "Verona",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 106,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-7149": [
+      {
+        "label": "Family reference \u00b7 Hockney",
+        "url": "/assets/moulding-families/mainline/hockney/catalogue-p112-1.jpg",
+        "kind": "family",
+        "family": "Hockney",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 112,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-7150": [
+      {
+        "label": "Family reference \u00b7 Hockney",
+        "url": "/assets/moulding-families/mainline/hockney/catalogue-p112-1.jpg",
+        "kind": "family",
+        "family": "Hockney",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 112,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-2104": [
+      {
+        "label": "Family reference \u00b7 Contemporary Classics",
+        "url": "/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-1.jpg",
+        "kind": "family",
+        "family": "Contemporary Classics",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 123,
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Contemporary Classics",
+        "url": "/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-2.jpg",
+        "kind": "family",
+        "family": "Contemporary Classics",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 123,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-2109": [
+      {
+        "label": "Family reference \u00b7 Contemporary Classics",
+        "url": "/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-1.jpg",
+        "kind": "family",
+        "family": "Contemporary Classics",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 123,
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Contemporary Classics",
+        "url": "/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-2.jpg",
+        "kind": "family",
+        "family": "Contemporary Classics",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 123,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-2190": [
+      {
+        "label": "Family reference \u00b7 Contemporary Classics",
+        "url": "/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-1.jpg",
+        "kind": "family",
+        "family": "Contemporary Classics",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 123,
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Contemporary Classics",
+        "url": "/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-2.jpg",
+        "kind": "family",
+        "family": "Contemporary Classics",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 123,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-7026": [
+      {
+        "label": "Family reference \u00b7 Fletcher Polcore Basics",
+        "url": "/assets/moulding-families/mainline/fletcher-polcore/catalogue-p132-1.jpg",
+        "kind": "family",
+        "family": "Fletcher Polcore Basics",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 132,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-1009": [
+      {
+        "label": "Family reference \u00b7 Basics Flats",
+        "url": "/assets/moulding-families/mainline/basic-flats/catalogue-p139-1.jpg",
+        "kind": "family",
+        "family": "Basics Flats",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 139,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-1334": [
+      {
+        "label": "Family reference \u00b7 Nelson",
+        "url": "/assets/moulding-families/mainline/nelson/catalogue-p144-1.jpg",
+        "kind": "family",
+        "family": "Nelson",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 144,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-1336": [
+      {
+        "label": "Family reference \u00b7 Nelson",
+        "url": "/assets/moulding-families/mainline/nelson/catalogue-p144-1.jpg",
+        "kind": "family",
+        "family": "Nelson",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 144,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4640": [
+      {
+        "label": "Family reference \u00b7 Naples",
+        "url": "/assets/moulding-families/mainline/naples/catalogue-p145-1.jpg",
+        "kind": "family",
+        "family": "Naples",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 145,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4642": [
+      {
+        "label": "Family reference \u00b7 Naples",
+        "url": "/assets/moulding-families/mainline/naples/catalogue-p145-1.jpg",
+        "kind": "family",
+        "family": "Naples",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 145,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-4643": [
+      {
+        "label": "Family reference \u00b7 Naples",
+        "url": "/assets/moulding-families/mainline/naples/catalogue-p145-1.jpg",
+        "kind": "family",
+        "family": "Naples",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 145,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "POL-1301": [
+      {
+        "label": "Family reference \u00b7 Starling",
+        "url": "/assets/moulding-families/mainline/starling/catalogue-p146-1.jpg",
+        "kind": "family",
+        "family": "Starling",
+        "supplier": "Mainline",
+        "sourceDocument": "source-material/mainline/ml_catalogue.pdf",
+        "sourcePage": 146,
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "2650BK": [
+      {
+        "label": "Family reference \u00b7 Alberta",
+        "url": "/assets/moulding-families/centrado/alberta/2650WH-framed-reference.jpg",
+        "kind": "family",
+        "family": "Alberta",
+        "supplier": "Centrado",
+        "sourceSku": "2650WH",
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "2650WH": [
+      {
+        "label": "Family reference \u00b7 Alberta",
+        "url": "/assets/moulding-families/centrado/alberta/2650WH-framed-reference.jpg",
+        "kind": "family",
+        "family": "Alberta",
+        "supplier": "Centrado",
+        "sourceSku": "2650WH",
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "3825BK": [
+      {
+        "label": "Family reference \u00b7 Kashmir",
+        "url": "/assets/moulding-families/centrado/kashmir/3825BK-framed-reference.jpg",
+        "kind": "family",
+        "family": "Kashmir",
+        "supplier": "Centrado",
+        "sourceSku": "3825BK",
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Kashmir",
+        "url": "/assets/moulding-families/centrado/kashmir/3826BK-framed-reference.jpg",
+        "kind": "family",
+        "family": "Kashmir",
+        "supplier": "Centrado",
+        "sourceSku": "3826BK",
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "3826BK": [
+      {
+        "label": "Family reference \u00b7 Kashmir",
+        "url": "/assets/moulding-families/centrado/kashmir/3825BK-framed-reference.jpg",
+        "kind": "family",
+        "family": "Kashmir",
+        "supplier": "Centrado",
+        "sourceSku": "3825BK",
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Kashmir",
+        "url": "/assets/moulding-families/centrado/kashmir/3826BK-framed-reference.jpg",
+        "kind": "family",
+        "family": "Kashmir",
+        "supplier": "Centrado",
+        "sourceSku": "3826BK",
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "4924BG": [
+      {
+        "label": "Family reference \u00b7 Bergen",
+        "url": "/assets/moulding-families/centrado/bergen/4924BG-framed-reference.jpg",
+        "kind": "family",
+        "family": "Bergen",
+        "supplier": "Centrado",
+        "sourceSku": "4924BG",
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Bergen",
+        "url": "/assets/moulding-families/centrado/bergen/4925BG-framed-reference.jpg",
+        "kind": "family",
+        "family": "Bergen",
+        "supplier": "Centrado",
+        "sourceSku": "4925BG",
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "4925BG": [
+      {
+        "label": "Family reference \u00b7 Bergen",
+        "url": "/assets/moulding-families/centrado/bergen/4924BG-framed-reference.jpg",
+        "kind": "family",
+        "family": "Bergen",
+        "supplier": "Centrado",
+        "sourceSku": "4924BG",
+        "evidenceUse": "assembly-and-family-appearance"
+      },
+      {
+        "label": "Family reference \u00b7 Bergen",
+        "url": "/assets/moulding-families/centrado/bergen/4925BG-framed-reference.jpg",
+        "kind": "family",
+        "family": "Bergen",
+        "supplier": "Centrado",
+        "sourceSku": "4925BG",
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "8054BG": [
+      {
+        "label": "Family reference \u00b7 Wentworth",
+        "url": "/assets/moulding-families/centrado/wentworth/8054BG-framed-reference.jpg",
+        "kind": "family",
+        "family": "Wentworth",
+        "supplier": "Centrado",
+        "sourceSku": "8054BG",
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ],
+    "CR3330AG": [
+      {
+        "label": "Family reference \u00b7 Create 33 \u00d7 30",
+        "url": "/assets/moulding-families/centrado/create-3330/CR3330AG-framed-reference.jpg",
+        "kind": "family",
+        "family": "Create 33 \u00d7 30",
+        "supplier": "Centrado",
+        "sourceSku": "CR3330AG",
+        "evidenceUse": "assembly-and-family-appearance"
+      }
+    ]
+  }
+}

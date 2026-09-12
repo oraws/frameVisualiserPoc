@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225BN",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 22.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      9.7
+    ],
+    [
+      0.147,
+      21.825
+    ],
+    [
+      0.35,
+      22.0
+    ],
+    [
+      11.05,
+      22.0
+    ],
+    [
+      21.75,
+      22.0
+    ],
+    [
+      22.0,
+      21.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face (flat) confirmed in product-section photograph",
+      "Rebate / step on one edge (lighter notch) visible in product-section, consistent with stated rebate 12.3 mm",
+      "Chevron (V) assembly pattern shown in chevron photograph",
+      "Dark walnut-toned directional grain on the face"
+    ],
+    "rejectedTraceFeatures": [
+      "No bead, hollow, bevel or crown accepted; none visible in any physical section, chevron or rotation photograph"
+    ],
+    "observations": [
+      "Supplier dimensions read 22 x 22 mm with rebate 12.3 mm; supplier profile label is 'flat'",
+      "Product-section shows a flat dark face with a single lighter rebate step on the left edge",
+      "Profile-source panel is a plain tan swatch (17 mm) and does not add profile geometry",
+      "Chevron panel confirms the pieces are mitered into a V, not a curved or beaded profile",
+      "Edges appear square/sharp with no visible rounding"
+    ],
+    "concerns": [
+      "Rebate depth (12.3 mm) is taken from the text label; the section image does not carry an independent dimension callout for the rebate",
+      "Profile-source panel is a colour/texture swatch rather than a true cross-section, so it cannot confirm edge radii",
+      "Edge radii set to minimum (0.2 mm) because edges look sharp; no photograph confirms a deliberate rounding"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "top perimeter ridge / bevel line along the upper edge of the candidate face"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The supplier 'profile-source' photograph shows a single flat tan planar face with no raised ridge, bead or bevel on its top edge, yet the candidate cross-section adds a continuous brown perimeter line/ridge along the top.",
+      "The 'product-section' photograph shows a flat dark reddish-brown face with a single stepped/notched end (lighter end-grain step); this step is plausibly the rebate/step, but no corresponding top ridge is visible in any physical, chevron or oblique view.",
+      "The chevron photograph only confirms the V-arrangement of dark brown boards and provides no evidence of a top ridge or additional profile feature.",
+      "Colour/finish is inconsistent across the candidate: the candidate face is rendered tan (matching profile-source) while the photographed product face and chevron are dark reddish-brown, so the candidate's face colour is not independently confirmed against the primary product-section photo."
+    ],
+    "concerns": [
+      "A flat photographed face (profile-source) appears to have gained a perimeter ridge in the candidate, which is a reject condition per the review rules.",
+      "The 12.3 mm rebate drop on the left is plausible from the stepped end in product-section, but its exact depth and the top edge treatment are not verifiable from the supplied images.",
+      "Gloss, grain direction and surface relief cannot be fully matched because the candidate face is a flat tan fill with no visible directional grain, whereas the product-section face shows distinct horizontal grain."
+    ]
+  }
+}

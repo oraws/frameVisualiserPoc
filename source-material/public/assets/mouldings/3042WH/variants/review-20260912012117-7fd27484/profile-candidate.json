@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "3042WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 27.0,
+  "depthMm": 42.0,
+  "rebateMm": 23.5,
+  "points": [
+    [
+      0.0,
+      18.5
+    ],
+    [
+      0.147,
+      41.825
+    ],
+    [
+      0.35,
+      42.0
+    ],
+    [
+      13.55,
+      42.0
+    ],
+    [
+      26.75,
+      42.0
+    ],
+    [
+      27.0,
+      41.862
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar top face (flat)",
+      "rebate / step cut into one edge (supplier rebate 23.5 mm)",
+      "square outer sight edge",
+      "square inner sight edge"
+    ],
+    "rejectedTraceFeatures": [
+      "no convex bead, hollow, or ornate ridge present in any physical section, chevron, or oblique rotation photo"
+    ],
+    "observations": [
+      "Supplier profile label reads 'flat' and the section, chevron, and two oblique detail photos all show one continuous planar face with no crown, bead, or hollow.",
+      "The only genuine cross-section feature is a rebate/step on one edge, consistent with the stated 27 x 42 mm envelope and 23.5 mm rebate.",
+      "Top face is a light cream/white finish with fine directional grain/brush lines running along the length; this is intentional fine grain, not a tiled repeat.",
+      "Side/sight edges show a natural tan wood tone, contrasting with the lighter face; variation is natural and continuous across the oblique views.",
+      "Edges appear sharp/square in the section and detail photos, supporting minimal edge radii.",
+      "No periodic macro feature recurring at regular intervals; no tiling seam or repeated motif detected."
+    ],
+    "concerns": [
+      "Lower panel is a text-only catalogue/label block (no visible red trace line), so trace agreement is inferred from the 'flat' label rather than a drawn outline.",
+      "Stated rebate of 23.5 mm against a 27 mm width is a deep step; confirm rebate depth and position against the physical section before release.",
+      "Supplier images contain perspective and lighting gradients on the white face; do not interpret the highlight/shadow band as a ridge or bevel."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.72,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Oblique/detail photographs show a single planar white face with a wood-grain edge, consistent with the candidate's flat face and outer edge line; no moulded bead, hollow or ridge is visible in any photo.",
+      "The L-shaped product-section swatch shows a genuine step/rebate, supporting the candidate's inner-sight-edge rebate drop (23.5 mm) rather than a trace-only feature.",
+      "The chevron view shows a flat angled face with a lighter inner edge, matching a flat-face profile with edge treatment and no extra perimeter ridge.",
+      "No feature in the candidate (flat face, outer edge, rebate step) is absent from the supplier photographs; the candidate does not add geometry to a flat photographed face."
+    ],
+    "concerns": [
+      "Rebate depth of 23.5 mm is stated in the guide but not directly measurable from the photographs; accepted as plausible given the L-shaped section.",
+      "Supplier images show lighting and perspective variation; the white face vs tan edge is interpreted as face-plus-edge treatment rather than a colour mismatch.",
+      "Chevron orientation is ambiguous but remains consistent with a flat-face profile; no conflicting moulded detail observed."
+    ]
+  }
+}

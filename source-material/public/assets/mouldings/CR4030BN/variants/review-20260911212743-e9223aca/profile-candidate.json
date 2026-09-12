@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR4030BN",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 40.0,
+  "depthMm": 30.0,
+  "rebateMm": 16.8,
+  "points": [
+    [
+      0.0,
+      29.355
+    ],
+    [
+      0.805,
+      30.0
+    ],
+    [
+      39.276,
+      30.0
+    ],
+    [
+      40.0,
+      29.435
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face (flat, no crown or bead)",
+      "rebate / step at one edge (supplier rebate 16.8 mm, profile-source step dimensioned 20)"
+    ],
+    "rejectedTraceFeatures": [
+      "no ridge, bead, bevel or hollow beyond the single rebate step is visible in any photograph"
+    ],
+    "observations": [
+      "product-section: light tan planar face on the left with a small step/notch at the lower-left; darker rough-textured region on the right reads as the rebate side / back face, not a separate profile feature",
+      "profile-source: flat tan face with a single rectangular step cut at the lower-right, dimensioned 20, consistent with a rebate",
+      "chevron: two flat faces meeting in an assembled mitered joint, confirming a flat face with no crown",
+      "supplier dimensions 40 x 30 mm with rebate 16.8 mm and profile label 'flat' are consistent with a flat face plus one rebate step",
+      "no recurring macro feature at regular intervals; fine directional grain/brushing is intentional texture, not a tiled repeat"
+    ],
+    "concerns": [
+      "the darker textured area in product-section could be the back/rebate face under raking light; do not interpret as a second moulded profile",
+      "edge radii are not directly measurable from the photographs; sharp (0.2 mm) assumed pending a closer section shot",
+      "confirm the rebate depth (16.8 mm) against the 20 mm step dimension, as the two may refer to different reference planes"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Top perimeter ridge/line added to an otherwise flat face (not visible in product-section, profile-source or chevron photographs)",
+      "Rebate drop of 16.8 mm on the left edge (supplier profile-source shows a step/rebate of 20 and product-section shows 30; no 16.8 feature is visible)"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The candidate cross-section is a single flat tan face with a thin darker line running along its top edge, i.e. a perimeter ridge. None of the supplier photographs (flat product-section face, flat profile-source face, flat mitered chevron faces) show such a ridge; the photographed faces are planar.",
+      "The candidate's stated rebate drop of 16.8 mm does not match the supplier dimension markers, which read 20 (profile-source step) and 30 (product-section). The rebate magnitude and placement are not corroborated by visible evidence.",
+      "Per the review rule, a flat photographed face must not gain a perimeter ridge, and any feature present only in the extracted guide must be rejected; both conditions are violated here."
+    ],
+    "concerns": [
+      "Top edge line in the candidate may be an artefact of the extracted catalogue trace rather than a real moulded bead.",
+      "Dimension mismatch (16.8 vs 20/30) suggests the candidate geometry was derived from an unverified outline rather than the physical section.",
+      "Orientation of the rebate (left in candidate vs right in profile-source) is inconsistent and unconfirmed by an oblique/rotation photo."
+    ]
+  }
+}

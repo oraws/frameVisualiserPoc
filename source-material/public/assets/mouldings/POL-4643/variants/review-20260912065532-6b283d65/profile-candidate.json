@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4643",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 31.0,
+  "depthMm": 15.0,
+  "rebateMm": 7.0,
+  "points": [
+    [
+      0.0,
+      8.0
+    ],
+    [
+      0.147,
+      14.79
+    ],
+    [
+      0.35,
+      15.0
+    ],
+    [
+      15.525,
+      15.0
+    ],
+    [
+      30.7,
+      15.0
+    ],
+    [
+      31.0,
+      14.835
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.3,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face with no crown, bead, hollow or step on the visible working face",
+      "Fine directional grain / brushing running parallel to the length of the piece",
+      "Light whitewashed / pale wood colour with subtle tonal variation",
+      "Rebate (7 mm) consistent with stated 31 x 15 mm envelope, seen as a back step in the catalogue view"
+    ],
+    "rejectedTraceFeatures": [
+      "White square block at lower-right of catalogue image treated as a segmentation/background artifact, not a profile feature",
+      "Dark band at the base of the catalogue image treated as shadow/background, not a ridge or bead",
+      "Directional grain and brush lines not interpreted as repeating ridges or a tiled pattern"
+    ],
+    "observations": [
+      "All seven EXACT SKU rotation photographs show a uniform planar band with horizontal directional grain and a soft sheen; no macro ridge, bead or hollow recurs at regular intervals",
+      "Catalogue image shows the same pale face with a contrasting yellow/gold side edge and a flat working face; the only step is the back rebate",
+      "Supplier profile label 'flat' and the 31 x 15 mm / rebate 7 mm envelope are consistent with a single planar face plus a back rebate",
+      "Grain orientation appears horizontal in the rotation strip and vertical in the catalogue view, consistent with the same piece photographed at different rotations"
+    ],
+    "concerns": [
+      "Lighting and perspective in supplier photos may exaggerate sheen; neutral fixed lighting should be used when matching the candidate",
+      "The catalogue white square and dark base are segmentation/shadow artifacts and must not be carried into the rendered profile",
+      "Fine directional grain must be retained as texture only, not converted into geometric ridges or a tiled repeat"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.5,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "Rebate drop 7 mm step on inner sight edge (not independently visible in the top-down rotation photographs; only implied by the catalogue edge view)"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The seven rotation photographs show a single planar face with fine horizontal directional grain/brushing and no ridge, bead, hollow or perimeter ridge; the candidate's large flat tan face matches this planar evidence.",
+      "The candidate does not add any unsupported perimeter ridge or bead around the photographed flat face, so the flat-face requirement is satisfied.",
+      "The only non-face feature in the candidate is the 7 mm rebate drop on the inner sight edge; this edge step is not clearly resolved in the top-view rotation photos and is supported mainly by the catalogue/extracted guide, so it cannot be fully confirmed from physical evidence.",
+      "Colour/finish in the photos is a light cream/white with subtle warm streaks; the candidate's tan face is a neutral rendering placeholder and is not in conflict, but exact tone should be matched to the supplier finish."
+    ],
+    "concerns": [
+      "Confirm the 7 mm rebate drop with an oblique/chevron or edge-on supplier photograph before approving; if no physical photo shows the step, reduce the candidate to a single planar face with plain edge.",
+      "Verify the fine directional grain is retained as natural variation without tiling or seams in the final texture.",
+      "Confirm gloss level and surface relief against the supplier finish under neutral lighting."
+    ]
+  }
+}

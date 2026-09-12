@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sku": "0471WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      11.0
+    ],
+    [
+      0.168,
+      24.72
+    ],
+    [
+      0.4,
+      25.0
+    ],
+    [
+      15.0,
+      25.0
+    ],
+    [
+      29.6,
+      25.0
+    ],
+    [
+      30.0,
+      24.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar front face (flat board) confirmed in product-section, chevron and both oblique detail photos",
+      "Rebate / mounting step at the back edge consistent with the stated 14 mm rebate and the light wood core visible in product-detail-1/2",
+      "Small crisp edge break / bevel on the sight edges visible in the chevron and oblique views (matches 'angled' label)"
+    ],
+    "rejectedTraceFeatures": [
+      "No decorative bead, ridge, hollow or convex crown is visible in any physical section, chevron or rotation photo; the rounded bump in the profile-source silhouette is interpreted as the rebate edge in silhouette, not a moulded bead",
+      "No concave hollow or ornate profile is supported by the photographs"
+    ],
+    "observations": [
+      "Front face reads as one continuous planar surface with a matte/satin light-cream finish and faint directional grain; no tiling or repeat pattern detected",
+      "Oblique detail photos show the back core in a lighter natural tone, confirming the rebate is a structural step rather than a decorative profile",
+      "Chevron (mitred corner) shows clean 45-degree join with only a thin edge bevel, reinforcing a flat-face classification",
+      "Colour is a uniform pale cream/white across the exact SKU photos; the macro family row shows the same shape in other colourways, supporting a shared flat shape family"
+    ],
+    "concerns": [
+      "The extracted/source silhouette shows a small rounded protrusion on one side that is not independently confirmed as a bead in the physical photos; treated as a rebate-edge artefact and not added to the profile",
+      "Lighting and perspective in the oblique shots create highlight bands along the top edge; these were not interpreted as a crown or ridge",
+      "Exact edge radii are not directly measurable from the supplied images; values are conservative estimates within the allowed envelope"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's single planar face is corroborated by the oblique product-detail-1 and product-detail-2 photographs, which show a flat moulding face with only a small edge step and no added perimeter ridge.",
+      "The left-edge rebate/step in the candidate (labelled 'REBATE DROP 14 mm', inner sight edge to outer edge) matches the visible step/rebate at the edge in the product-section, macro and detail photographs.",
+      "No bead, hollow, ogee or ridge present in the candidate is found only in the extracted guide; the geometry is conservative and consistent with the physical section photos.",
+      "The macro photograph of multiple coloured sections confirms a flat face with a simple edge treatment, supporting the candidate's flat-face-plus-rebate construction."
+    ],
+    "concerns": [
+      "The chevron photograph suggests a slight rounding/ogee on the outer edge that is not explicitly modelled in the candidate; this may be lighting/perspective, so the outer edge treatment is only partially confirmed.",
+      "The profile-source silhouette shows a small top bump and a right-side notch that do not appear in the candidate; these are treated as unverified guide features and are not present in the physical photos, so they were correctly omitted.",
+      "The 14 mm rebate drop dimension is taken from the advisory guide and could not be independently measured from the photographs."
+    ]
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 2,
+  "sku": "CR1013BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T23:47:50.632733+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "CR1013BK",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 14.0,
+    "depthMm": 13.0,
+    "rebateMm": 7.3,
+    "points": [
+      [
+        0.0,
+        12.026
+      ],
+      [
+        0.783,
+        12.513
+      ],
+      [
+        1.664,
+        12.805
+      ],
+      [
+        4.112,
+        13.0
+      ],
+      [
+        12.238,
+        12.951
+      ],
+      [
+        13.413,
+        12.61
+      ],
+      [
+        14.0,
+        12.075
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "single planar front face (flat, no crown)",
+        "rebate / step on one sight edge (depth ~7.3 mm)",
+        "square inner sight edge",
+        "square outer edge",
+        "overall envelope 14 x 13 mm with 10 mm rebate-side height"
+      ],
+      "rejectedTraceFeatures": [
+        "convex 'cushion' crown (supplier label only, not present in section or chevron)",
+        "any bead, ridge, bevel or hollow beyond the single rebate step"
+      ],
+      "observations": [
+        "Product-section photo shows a flat black bar with a tan end cap that carries one small notch (the rebate) at the lower corner; no rounded crown is visible.",
+        "Profile-source guide shows a flat vertical face of 13 mm with a right-hand step down to 10 mm and a dashed rebate depth line, consistent with a flat face + rebate.",
+        "Chevron outline is a simple triangle consistent with a flat-faced member, not a cushioned/convex profile.",
+        "Supplier dimensions 14 x 13 mm and rebate 7.3 mm are preserved in the rebuilt section.",
+        "Edges render as sharp/square in both the photo end cap and the guide; no visible radii."
+      ],
+      "concerns": [
+        "Supplier profile label 'cushion' implies a convex crown that is not supported by the authoritative section or chevron; treated as a mislabel and rejected.",
+        "Lower catalogue panel contains only text (no visible red trace image), so trace agreement is inferred from the top profile-source guide rather than a separate lower trace.",
+        "Edge radii are not visually resolvable; minimum 0.2 mm assumed for sharp edges."
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Domed/curved top perimeter ridge on the candidate face (not present in the flat supplier product-section photo)",
+        "Rebate drop of 7.3 mm step as drawn in the candidate (supplier profile-source shows a 13/10 L-step, not a 7.3 mm rebate)",
+        "Chevron/triangular profile implied by supplier chevron photo is absent from the candidate rectangle"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "The authoritative supplier profile-source depicts a clear L-shaped cross-section with a 13 mm total height and a 10 mm step, whereas the candidate cross-section is rendered as a near-flat rectangle with a gently domed top edge and no corresponding step.",
+        "The supplier product-section photograph shows a single flat face with a thin edge treatment; the candidate adds a perimeter top ridge/curve that is not visible in any physical photo.",
+        "The supplier chevron photograph shows a triangular chevron geometry that the candidate does not reproduce.",
+        "The candidate's stated 'REBATE DROP 7.3 mm' is not corroborated by the 13/10 dimensions in the supplier profile and appears to be an extracted-trace artefact."
+      ],
+      "concerns": [
+        "Candidate geometry (flat face + domed top + 7.3 mm rebate) conflicts with the authoritative L-step supplier profile; treat the extracted outline as unverified.",
+        "A flat photographed face appears to have gained a perimeter ridge in the candidate, which must be removed.",
+        "Chevron pattern present in supplier evidence is missing from the candidate cross-section."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260911234105-5e02605f",
+  "referenceImages": [
+    "public/assets/mouldings/CR1013BK/product-section.jpg",
+    "public/assets/mouldings/CR1013BK/profile-source.png",
+    "public/assets/mouldings/CR1013BK/chevron.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.55,
+    "contrast": 1.05,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 170.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.2
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.6307,
+    "colourSpreadError": 0.1173,
+    "seamError": 0.0038,
+    "maximumAutocorrelation": 0.2994,
+    "detailError": 0.0278,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 205.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 3.6307,
+        "colourSpreadError": 0.0655,
+        "seamError": 0.0032,
+        "maximumAutocorrelation": 0.2418,
+        "detailError": 0.1602,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 95.8,
+      "failedGates": [],
+      "agentReview": {
+        "score": 22,
+        "colourMatch": 28,
+        "textureMatch": 18,
+        "repetition": 15,
+        "seam": 60,
+        "finishMatch": 24,
+        "blockers": [
+          "Fixed-light preview is a near-uniform dark gradient and does not display the chevron pattern shown in the supplier chevron crop.",
+          "The tan/beige rebate and inner sight edge visible at the left end of the supplier product-section are absent from the candidate preview.",
+          "No 3D moulding profile (hook/step cross-section with 13 and 10 dimensions) is rendered; the candidate reads as a flat dark field rather than the physical section.",
+          "Directional grain / brushing present in the supplier black face is not visible in the candidate, so finish cannot be confirmed."
+        ],
+        "observations": [
+          "Supplier product-section shows a long black face with a small tan rebate at the left end, consistent with an inner sight edge / rebate.",
+          "Supplier profile-source shows a hook-like cross-section with overall height 13 and a step of 10, i.e. a genuine rebate/step rather than a flat face.",
+          "Supplier chevron crop shows a bold black chevron (triangle) outline, indicating a repeating chevron motif on the face.",
+          "Candidate fixed-light preview is essentially empty/dark with only a soft vertical gradient; no chevron, no rebate, no grain, no relief.",
+          "Because the candidate lacks the distinctive macro chevron feature at regular intervals, repetition cannot be validated and is scored low.",
+          "No obvious tiled seam is visible in the candidate, but this is due to absence of content rather than a clean seamless match."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.55,
+          "contrast": 1.05,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 170,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.2
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.55,
+        "contrast": 1.05,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 170.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 3.6307,
+        "colourSpreadError": 0.1173,
+        "seamError": 0.0038,
+        "maximumAutocorrelation": 0.2994,
+        "detailError": 0.0278,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 94.7,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "matte",
+      "directional": false,
+      "gloss": "matte",
+      "preserve": [
+        "single flat planar face on the black body (no moulded bead, ridge, hollow or bevel)",
+        "one genuine step/rebate on the profile (13 outer height stepping to 10 inner height) as the only edge treatment",
+        "porous speckled aggregate / cork-like end-grain texture visible on the tan end cap",
+        "uniform matte sheen with no specular highlight band on the face",
+        "neutral tan/beige end colour distinct from the black face"
+      ],
+      "risks": [
+        "introducing moulded beads, ridges or hollows that are not visible in the section or rotation photographs",
+        "misreading the 13-to-10 step as a double rebate or a hollow channel",
+        "tiling or repeating the speckled end-grain texture into an artificial pattern",
+        "classifying the finish as satin/gloss from bright light catching the curved profile edge",
+        "sampling colour or sheen from the chevron outline or other family members instead of the exact SKU section"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "roughness_mid": 205,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "The authoritative product-section shows a black body with a fine speckled/textured surface and a tan end face, but the candidate fixed-light preview is a smooth near-black gradient with no discernible texture scale, grain, or surface irregularity.",
+        "The supplier profile-source defines a stepped cross-section (overall 13, step/rebate 10) and the chevron defines a peaked profile; the candidate preview is a flat planar swatch and provides no visible evidence of the step, rebate, bevel or ridge, so the profile geometry cannot be confirmed against the candidate.",
+        "Under neutral fixed lighting the candidate reads as a dark grey with a horizontal gloss gradient rather than the flat, uniform black of the supplier bar, indicating a possible finish/gloss mismatch."
+      ],
+      "concerns": [
+        "Texture scale and natural irregularity present in the supplier photograph are not retained in the candidate preview (appears over-smoothed).",
+        "Profile features (13/10 step, rebate, chevron peak) are not independently verifiable in the candidate render; risk of an unsupported or flattened geometry.",
+        "Colour/finish under fixed light deviates toward grey with a directional gloss band, which may not match the exact SKU black finish.",
+        "No clear evidence either way of tiling/seam, but the lack of texture makes repeat detection unreliable."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "8e9ba4cdba7d64969507cef4989f012c2927f25024a4599c19481cb1bc7a7dd6",
+      "roughness.jpg": "62594d947f451780ffd2b8d4e611229966ff82b09db696bb5c98ecd0e0fadf43",
+      "bump.jpg": "c709091958579de283107836e1da93881a8eaac978ecf22cccc5bd5781176267"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

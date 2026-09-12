@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "sku": "0473BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 84.0,
+  "depthMm": 40.0,
+  "rebateMm": 22.4,
+  "points": [
+    [
+      0.0,
+      23.764
+    ],
+    [
+      1.466,
+      23.764
+    ],
+    [
+      2.199,
+      24.059
+    ],
+    [
+      3.518,
+      25.387
+    ],
+    [
+      3.958,
+      26.421
+    ],
+    [
+      4.838,
+      27.306
+    ],
+    [
+      5.424,
+      27.601
+    ],
+    [
+      6.89,
+      27.601
+    ],
+    [
+      7.77,
+      27.159
+    ],
+    [
+      8.356,
+      27.159
+    ],
+    [
+      9.089,
+      29.225
+    ],
+    [
+      10.702,
+      31.439
+    ],
+    [
+      11.581,
+      32.03
+    ],
+    [
+      13.047,
+      32.62
+    ],
+    [
+      14.806,
+      32.62
+    ],
+    [
+      16.272,
+      31.882
+    ],
+    [
+      17.445,
+      30.554
+    ],
+    [
+      18.471,
+      28.192
+    ],
+    [
+      19.058,
+      25.535
+    ],
+    [
+      20.084,
+      25.387
+    ],
+    [
+      21.11,
+      24.945
+    ],
+    [
+      22.136,
+      23.469
+    ],
+    [
+      53.215,
+      23.469
+    ],
+    [
+      54.827,
+      25.092
+    ],
+    [
+      56.733,
+      25.24
+    ],
+    [
+      57.759,
+      27.011
+    ],
+    [
+      58.639,
+      27.897
+    ],
+    [
+      60.105,
+      28.487
+    ],
+    [
+      60.691,
+      28.339
+    ],
+    [
+      68.461,
+      28.339
+    ],
+    [
+      71.539,
+      32.62
+    ],
+    [
+      74.178,
+      35.277
+    ],
+    [
+      75.791,
+      36.605
+    ],
+    [
+      77.55,
+      37.786
+    ],
+    [
+      81.948,
+      39.852
+    ],
+    [
+      83.267,
+      40.0
+    ],
+    [
+      84.0,
+      39.41
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.3,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar dark front face (confirmed in chevron and oblique detail views)",
+      "Angled/chamfered sight edge transitioning to the back (consistent with 'angled' label)",
+      "Rebate step offset from the front face (supplier rebate 22.4 mm)",
+      "Mitered 45-degree chevron corner with clean flat face"
+    ],
+    "rejectedTraceFeatures": [
+      "Rounded bead/bump on the right of the extracted profile guide (no distinct rounded bead visible in physical section or detail photos)",
+      "Sloped top-left ridge in the extracted silhouette (interpreted as the rebate/edge, not a separate raised ridge)"
+    ],
+    "observations": [
+      "Supplier dimensions preserved: 84 x 40 mm; rebate 22.4 mm; profile label 'angled'.",
+      "Product-section photo shows a flat black front face with a cream back/rebate strip and a small top notch (rebate cut).",
+      "Chevron photo confirms a flat, non-crowned face with mitered edges and no convex crown.",
+      "Oblique detail photos show the flat dark face and the offset cream rebate, supporting a stepped/angled profile rather than an ornate one.",
+      "Macro family row shows the same flat-faced profile in multiple colours, confirming a shared flat-face shape family.",
+      "Finish is a matte/satin dark (near-black) with subtle directional grain; no gloss highlight interpreted as geometry."
+    ],
+    "concerns": [
+      "The extracted profile guide's right-hand rounded bump is not independently confirmed as a bead; treated as a trace artefact and rejected.",
+      "Lighting and perspective in oblique shots could exaggerate the edge angle; radius values kept minimal (0.3 mm) to reflect a near-sharp angled edge.",
+      "Cream back/rebate colour is a substrate/backing tone, not a finish face; do not read it as a second coloured face."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Right-hand long continuous bevel rising to a sharp outer point (supplier oblique/detail photos and the profile-source silhouette show a rounded bead/edge, not a long straight bevel to a sharp tip)",
+      "Left-hand perimeter bead/step above the flat face (not clearly resolvable as a discrete ridge in the flat-face and macro photographs; may be trace-only)"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The candidate's outer edge is rendered as a long smooth bevel terminating in a sharp point, whereas the supplier oblique views (product-detail-1/2) and the profile-source silhouette depict a rounded bead/edge treatment; this is a shape conflict, not a match.",
+      "The left-side bead/step in the candidate is not independently confirmable as a discrete ridge in the flat-face, macro or chevron photographs, so it risks being a trace-only feature added to an otherwise flat face.",
+      "The 22.4 mm 'rebate drop' dimension is a measurement annotation, not a verified physical rebate; no clear rebate hollow is visible in the photographs."
+    ],
+    "concerns": [
+      "Outer-edge geometry (bevel-to-point vs rounded bead) is inconsistent between the candidate and the supplier evidence; rebuild the outer edge from the oblique photographs before approval.",
+      "Confirm whether the left edge is a true bead or a flat face with only edge treatment; do not retain a perimeter ridge that is not visible in the physical-section photos.",
+      "Verify the stated 22.4 mm dimension against a physical measurement or a clearly visible rebate in the photographs; treat it as advisory until confirmed."
+    ]
+  }
+}

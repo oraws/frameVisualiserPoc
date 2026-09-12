@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4506",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 53.0,
+  "depthMm": 30.0,
+  "rebateMm": 13.0,
+  "points": [
+    [
+      0.0,
+      17.0
+    ],
+    [
+      0.147,
+      29.79
+    ],
+    [
+      0.35,
+      30.0
+    ],
+    [
+      26.525,
+      30.0
+    ],
+    [
+      52.7,
+      30.0
+    ],
+    [
+      53.0,
+      29.835
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.3,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar face with fine directional vertical grain",
+      "light grey / off-white brushed finish",
+      "rear rebate step consistent with stated 13 mm rebate"
+    ],
+    "rejectedTraceFeatures": [
+      "ridge",
+      "bead",
+      "bevel",
+      "hollow",
+      "ornate profile"
+    ],
+    "observations": [
+      "Top rotation strip shows one continuous flat face with subtle vertical grain; no repeating macro ridge or bead at regular intervals.",
+      "Oblique family photograph shows a flat black face with a red trace outlining a flat panel and a rear rebate, not a crowned or beaded profile.",
+      "Lower catalogue/extracted guide shows a flat vertical-grain face above a dark speckled background and a white rebate edge; the dark speckled region is background, not profile material.",
+      "Supplier profile label reads 'flat' and dimensions 53 x 30 mm with 13 mm rebate, consistent with a flat panel plus mounting rebate.",
+      "Directional grain is fine and continuous, characteristic of brushed/wood-grain finish rather than a tiled repeat."
+    ],
+    "concerns": [
+      "The dark speckled area in the lower guide is segmentation/background and must not be read as a second face or step.",
+      "The white vertical strip in the lower guide is the rebate/sight edge, not a separate bead.",
+      "No physical chevron or oblique photograph shows a crown, bead or bevel; any such feature in a candidate render would be unsupported and should be omitted.",
+      "Lighting and perspective in supplier images may exaggerate grain contrast; treat as flat under neutral lighting."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.72,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Rotation photographs (top row) show a single flat planar face with fine directional brushing and no ridges, beads, hollows or steps on the face.",
+      "The oblique/physical section photograph (lower left) confirms a flat brushed face meeting a stepped rebate/core at the back edge, matching the candidate's rebate drop.",
+      "The candidate cross-section retains one flat face plus a single rebate step and a thin outer-edge line; it does not introduce any bead, ridge or hollow that is absent from the photographs.",
+      "The stated rebate drop (13 mm) corresponds to the visible step between the face and the darker substrate in the oblique photo."
+    ],
+    "concerns": [
+      "The thin uniform line along the top of the candidate could be misread as a perimeter ridge; it is interpreted here as the board edge thickness, consistent with the rotation photos.",
+      "The middle-row 'Harley 14 / Paramount' images are family reference context, not the exact SKU, and were not used as primary evidence.",
+      "Supplier lighting and perspective vary across the rotation set, so edge treatment was judged conservatively."
+    ]
+  }
+}

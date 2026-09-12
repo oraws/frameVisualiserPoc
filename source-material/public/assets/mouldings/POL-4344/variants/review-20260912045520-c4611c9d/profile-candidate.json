@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4344",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 43.0,
+  "depthMm": 32.0,
+  "rebateMm": 26.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      31.825
+    ],
+    [
+      0.35,
+      32.0
+    ],
+    [
+      21.55,
+      32.0
+    ],
+    [
+      42.75,
+      32.0
+    ],
+    [
+      43.0,
+      31.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face with no visible ridge, bead, bevel, hollow or step in the exact SKU photographs",
+      "Fine, regular directional grain / brush lines running across the face (intentional finish, not a tiled repeat)",
+      "Light cream/white colour with low surface relief under neutral lighting"
+    ],
+    "rejectedTraceFeatures": [
+      "Green carpet-like region in the lower catalogue panel treated as background, not a profile step or hollow",
+      "White cutout / segmentation edge in the lower panel treated as a mask boundary, not a rebate or bead",
+      "Vertical grain lines not interpreted as a repeating moulded rib or fluting"
+    ],
+    "observations": [
+      "Supplier profile label is 'flat' and the exact SKU photographs show one continuous planar face, consistent with a flat sample",
+      "Stated dimensional envelope preserved: 48 x 32 mm with a 26 mm rebate; the rebate is a dimensional/mounting spec and is not visible as a front-face profile feature in the photographs",
+      "The assembled-family thumbnail is context only and was not used to override the exact SKU colour, finish or cross-section",
+      "Surface shows natural tonal variation and directional brushing rather than a periodic macro feature"
+    ],
+    "concerns": [
+      "The lower panel is a catalogue / extracted guide and may contain segmentation edges, shadows or background that could be misread as geometry; it was not used to add profile features",
+      "Lighting and perspective in supplier images could exaggerate or hide edge treatment; no independent chevron/oblique rotation photograph was available to confirm any edge radius beyond a minimal square edge",
+      "Directional grain must not be confused with a tiled repeat when rendering the candidate"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.4,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate drop 26 mm",
+      "inner sight edge step / notch"
+    ],
+    "catalogueTraceAgreement": "uncertain",
+    "reasons": [
+      "No physical cross-section, chevron or oblique rotation photograph is present; the top 'EXACT SKU rotation' slots are empty black bars.",
+      "The only face photograph (left) shows a flat planar surface with vertical grain and a separate green speckled texture, with no visible rebate, bead, bevel or edge step.",
+      "The candidate's 26 mm rebate drop and left-edge step therefore cannot be independently confirmed in supplier evidence and may derive only from the advisory extracted outline.",
+      "The flat photographed face is consistent with a single planar face, so adding a perimeter rebate/step in the candidate is not supported by visible geometry."
+    ],
+    "concerns": [
+      "Rebate and inner sight edge step lack photographic verification; treat as unverified guide geometry.",
+      "Texture reference (light vertical grain over green speckle) does not clearly correspond to the uniform tan face rendered in the candidate.",
+      "Insufficient rotation evidence to confirm edge treatment; recommend obtaining a true cross-section or oblique photo before approval."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sku": "4426CM",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/4426CM/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg"
+  ]
+}

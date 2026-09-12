@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-7145",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 10.0,
+  "depthMm": 45.0,
+  "rebateMm": 33.0,
+  "points": [
+    [
+      0.0,
+      12.0
+    ],
+    [
+      0.21,
+      44.65
+    ],
+    [
+      0.5,
+      45.0
+    ],
+    [
+      5.0,
+      45.0
+    ],
+    [
+      9.5,
+      45.0
+    ],
+    [
+      10.0,
+      44.725
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "single planar face with no measurable crown",
+      "fine directional grain / brushing running along the face",
+      "dark charcoal-grey matte finish",
+      "thin bright top edge line consistent with a flat sight edge under raking light"
+    ],
+    "rejectedTraceFeatures": [],
+    "observations": [
+      "Supplier dimensions preserved: 10 x 45 mm with a 33 mm rebate; supplier profile label reads 'L shape'.",
+      "Top-row 'EXACT SKU rotation' photographs show a flat dark face with fine linear grain; no convex bead, hollow or ornate relief is visible.",
+      "The lower-left image is an extracted catalogue profile guide (L / rebate cross-section) and is treated as an unverified hypothesis, not as proof of the rebate.",
+      "The 'ASSEMBLED FAMILY REFERENCE' panel is a framed portrait on a wall (context only) and was excluded from all geometry and finish judgments."
+    ],
+    "concerns": [
+      "The 33 mm rebate / step is stated in the supplier label and shown in the extracted guide, but it is not clearly resolved in the dark rotation photographs, so the step is accepted only at the level of the supplier label and remains partially unconfirmed.",
+      "Rotation photographs are low-key and high-contrast; edge radii and the rebate depth could not be measured directly and the small radii values are estimates.",
+      "Fine directional grain in the face must not be mistaken for a tiled repeat or for a profile ridge; it is treated as surface finish only."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier front-on photographs (top strip) show a single flat planar face with fine directional brushed grain and no perimeter ridge, bead or hollow; the candidate cross-section correctly keeps the face as one planar surface and adds no fabricated ridge.",
+      "The candidate's only profile feature is the inner-sight-edge rebate (annotated REBATE DROP 33 mm), which matches the L-shaped catalogue/extracted guide at lower left, so the candidate and the advisory trace agree geometrically.",
+      "No chevron or oblique supplier photograph is present that independently confirms the rebate step; the top images are flat front views where the inner sight-edge rebate is not visible, so the rebate remains guide-supported rather than photo-verified."
+    ],
+    "concerns": [
+      "The 33 mm rebate / inner sight-edge step is evidenced only by the advisory catalogue trace and is not independently visible in any oblique or chevron supplier photo; it should be confirmed against a physical-section photograph before approval.",
+      "The candidate cross-section fill is a flat tan swatch, whereas the supplier photographs show a dark charcoal finish with fine linear grain; this is acceptable as a geometry fill but the texture/colour match must be validated separately under neutral lighting.",
+      "The fine directional grain in the supplier images is intentional brushing, not a tiled repeat; ensure the texture pass does not introduce seams or tiling while preserving this natural linear variation."
+    ]
+  }
+}

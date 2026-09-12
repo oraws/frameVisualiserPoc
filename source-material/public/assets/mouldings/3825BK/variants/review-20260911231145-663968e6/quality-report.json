@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 2,
+  "sku": "3825BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T23:18:02.240015+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "3825BK",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "ornate",
+    "widthMm": 38.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "points": [
+      [
+        0.0,
+        15.512
+      ],
+      [
+        0.375,
+        16.114
+      ],
+      [
+        0.974,
+        16.491
+      ],
+      [
+        3.448,
+        16.566
+      ],
+      [
+        3.972,
+        17.244
+      ],
+      [
+        4.272,
+        18.449
+      ],
+      [
+        4.947,
+        18.524
+      ],
+      [
+        5.396,
+        18.901
+      ],
+      [
+        6.821,
+        18.75
+      ],
+      [
+        7.045,
+        18.976
+      ],
+      [
+        7.645,
+        19.051
+      ],
+      [
+        8.02,
+        18.599
+      ],
+      [
+        8.769,
+        18.524
+      ],
+      [
+        9.294,
+        18.976
+      ],
+      [
+        9.369,
+        19.352
+      ],
+      [
+        9.968,
+        19.729
+      ],
+      [
+        10.043,
+        20.256
+      ],
+      [
+        10.343,
+        20.482
+      ],
+      [
+        11.243,
+        20.407
+      ],
+      [
+        12.966,
+        18.599
+      ],
+      [
+        13.416,
+        18.449
+      ],
+      [
+        14.091,
+        18.599
+      ],
+      [
+        14.615,
+        19.352
+      ],
+      [
+        15.44,
+        18.825
+      ],
+      [
+        16.264,
+        18.825
+      ],
+      [
+        16.789,
+        19.428
+      ],
+      [
+        16.939,
+        19.428
+      ],
+      [
+        17.014,
+        19.051
+      ],
+      [
+        19.712,
+        19.352
+      ],
+      [
+        20.686,
+        19.88
+      ],
+      [
+        22.036,
+        20.181
+      ],
+      [
+        22.71,
+        20.783
+      ],
+      [
+        24.059,
+        21.31
+      ],
+      [
+        24.809,
+        22.139
+      ],
+      [
+        25.408,
+        22.063
+      ],
+      [
+        25.858,
+        22.59
+      ],
+      [
+        28.556,
+        23.117
+      ],
+      [
+        29.755,
+        23.117
+      ],
+      [
+        30.655,
+        23.795
+      ],
+      [
+        31.254,
+        23.72
+      ],
+      [
+        31.554,
+        23.87
+      ],
+      [
+        32.379,
+        24.774
+      ],
+      [
+        32.903,
+        25.0
+      ],
+      [
+        33.353,
+        25.0
+      ],
+      [
+        34.028,
+        24.473
+      ],
+      [
+        35.377,
+        21.913
+      ],
+      [
+        36.126,
+        19.654
+      ],
+      [
+        36.501,
+        19.277
+      ],
+      [
+        37.475,
+        19.127
+      ],
+      [
+        38.0,
+        18.75
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "ornate",
+      "faceCrownMm": 1.5,
+      "innerEdgeRadiusMm": 0.6,
+      "outerEdgeRadiusMm": 0.8,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "Planar front face carrying raised carved floral/scroll relief with gold inlay",
+        "Stepped cross-section: flat face transitioning via a short bevel/step to a recessed rebate",
+        "Rebate (rabbet) for glass/backing, consistent with stated 14 mm rebate",
+        "Mitered 45-degree corner joint (chevron) with continuous gold line inlay",
+        "Dark bronze/black painted finish with metallic gold accents"
+      ],
+      "rejectedTraceFeatures": [
+        "No additional convex bead or hollow supported by photographs beyond the single visible step; the beige profile silhouette is treated as a guide only and not used to add ridges",
+        "No concave hollow confirmed in the physical section; omitted"
+      ],
+      "observations": [
+        "Product detail 1 and 2 oblique views confirm a flat face with a single bevel/step down to a light-wood rebate backing",
+        "Macro and framed references confirm ornate carved relief and gold detailing on the face",
+        "Chevron confirms mitered corner with matching finish and gold line",
+        "Supplier envelope 38 x 25 mm with 14 mm rebate is preserved; profile label 'angled' consistent with the bevelled step"
+      ],
+      "concerns": [
+        "Profile source image is a filled silhouette, not a true measured cross-section; exact step depth and rebate width rely on the stated 14 mm rebate",
+        "Relief depth (faceCrownMm) is an estimate from oblique views under supplier lighting; verify against a physical section",
+        "Edge radii are small and partly obscured by shadow/gold inlay; treat as approximate"
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Tall outer-edge peak/ridge on the right of the candidate top profile",
+        "Series of small ridges/beads along the top face between the rebate and the outer edge",
+        "Wavy multi-lobed top contour not present in the oblique product-detail photos"
+      ],
+      "catalogueTraceAgreement": "agree",
+      "reasons": [
+        "The candidate cross-section closely mirrors the extracted catalogue/profile-source trace (wavy top with a right-hand hump and a left rebate drop), so it is trace-driven rather than photo-driven.",
+        "The oblique product-detail photographs (detail 1 and detail 2) and the chevron corner show the moulding edge as a single flat beveled face with the gold-leafed face on top, not a multi-ridge profile.",
+        "A flat photographed face has effectively gained a perimeter ridge/peak in the candidate, which the instruction requires to be rejected.",
+        "The 25 mm and 12 mm / 14 mm rebate dimensions are plausible, but the intermediate ridges have no independent photographic support."
+      ],
+      "concerns": [
+        "Relief carving and gold-leaf texture on the face may have been misinterpreted as cross-sectional ridges in the extracted trace.",
+        "Lighting and perspective in the supplier photos make the exact edge bevel angle uncertain; the true profile is likely a simpler flat-face-with-bevel-and-rebate section.",
+        "The candidate should be rebuilt to a single planar face with only the visible bevel and rebate until a clear physical-section photo confirms any additional bead or hollow."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260911231145-663968e6",
+  "referenceImages": [
+    "public/assets/mouldings/3825BK/product-section.jpg",
+    "public/assets/mouldings/3825BK/profile-source.png",
+    "public/assets/mouldings/3825BK/chevron.jpg",
+    "public/assets/mouldings/3825BK/macro.jpg",
+    "public/assets/mouldings/3825BK/framed-reference.jpg",
+    "public/assets/mouldings/3825BK/product-detail-1.jpg",
+    "public/assets/mouldings/3825BK/product-detail-2.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/centrado/kashmir/3825BK-framed-reference.jpg",
+    "public/assets/moulding-families/centrado/kashmir/3826BK-framed-reference.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.7,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 200.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 4.0
+  },
+  "bestMetrics": {
+    "colourDeltaE": 5.0328,
+    "colourSpreadError": 0.0494,
+    "seamError": 0.1201,
+    "maximumAutocorrelation": 0.1665,
+    "detailError": 0.2122,
+    "clippedPixels": 0.2644
+  },
+  "bestFailedGates": [
+    "seamError",
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 200.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 4.0
+      },
+      "metrics": {
+        "colourDeltaE": 5.0328,
+        "colourSpreadError": 0.0494,
+        "seamError": 0.1201,
+        "maximumAutocorrelation": 0.1665,
+        "detailError": 0.2122,
+        "clippedPixels": 0.2644
+      },
+      "deterministicScore": 66.5,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 82,
+        "colourMatch": 88,
+        "textureMatch": 84,
+        "repetition": 80,
+        "seam": 78,
+        "finishMatch": 86,
+        "blockers": [],
+        "observations": [
+          "Supplier cross-section (profile source, 25 x 12) and the oblique product-detail crops show a essentially flat black face with a single rear rebate/step; the candidate's thin gold edge line at the bottom is consistent with that rebate catching light, so no unsupported deep profile geometry is visible in the render.",
+          "The acanthus/scroll relief is a surface moulding motif that repeats at regular intervals in both the supplier atlas and the candidate; this is an intentional repeating moulding pattern, not a tiling artefact, so it is retained.",
+          "Colour and finish agree well: matte near-black ground with broken metallic gold leafing, low gloss, matching the supplier macro and framed references.",
+          "Texture scale and relief depth of the gold-leafed scrolls in the candidate closely track the supplier evidence; the candidate reads marginally flatter/darker in the black ground under fixed light.",
+          "A faint vertical discontinuity is perceptible in the lower-left of the candidate preview, likely a tiling/patch seam; it is subtle and not present as a hard line in the supplier crops.",
+          "Chevron/corner evidence confirms the profile is a flat bar with edge treatment only; the candidate does not introduce extra beads or hollows, which is correct."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.72,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.6
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.72,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 4.4606,
+        "colourSpreadError": 0.0622,
+        "seamError": 0.1169,
+        "maximumAutocorrelation": 0.1788,
+        "detailError": 0.24,
+        "clippedPixels": 0.2723
+      },
+      "deterministicScore": 67.6,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.72,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 4.1804,
+        "colourSpreadError": 0.0646,
+        "seamError": 0.1117,
+        "maximumAutocorrelation": 0.2086,
+        "detailError": 0.2477,
+        "clippedPixels": 0.2742
+      },
+      "deterministicScore": 68.3,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.72,
+        "contrast": 1.02,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.6
+      },
+      "metrics": {
+        "colourDeltaE": 4.2329,
+        "colourSpreadError": 0.0357,
+        "seamError": 0.1139,
+        "maximumAutocorrelation": 0.1203,
+        "detailError": 0.2343,
+        "clippedPixels": 0.2628
+      },
+      "deterministicScore": 68.5,
+      "failedGates": [
+        "seamError",
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "carved-painted-gilt",
+      "directional": false,
+      "gloss": "satin",
+      "preserve": [
+        "deep matte-to-satin black painted ground",
+        "gold-leaf (gilt) accents seated in carved recesses",
+        "high-relief ornamental scrollwork and bead detailing",
+        "stepped/layered profile with flat face and inner sight edge",
+        "raw wood rebate visible at the back edge"
+      ],
+      "risks": [
+        "over-smoothing or flattening the carved relief and gold-leaf pockets",
+        "misreading the cross-section trace and adding ridges/beads not present in the physical section",
+        "tiling the ornate scroll pattern into a regular repeat",
+        "classifying the finish as glossy from bright edge highlights on the curved profile",
+        "sampling colour from the artwork, mount, or other family members instead of the black-gilt frame"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "roughness_mid": 200,
+        "roughness_detail": 0.6,
+        "bump_detail": 4.0
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "Base colour (near-black) and gilded gold/bronze accent palette in the candidate match the exact-SKU supplier photographs.",
+        "Background texture scale (fine cross-hatch/scale grain) and surface relief are consistent with the supplier macro and detail images.",
+        "The distinctive macro motif (paired gold leaves with curling stem and lower scroll) recurs at regular horizontal intervals across the candidate strip, indicating a tiled repeat rather than natural variation.",
+        "A vertical alignment/seam is visible where the repeat tile joins, which the approval criteria explicitly exclude.",
+        "The candidate presents only the face texture; the cross-section, rebate, sight edge and stated 25/12 dimensions cannot be independently confirmed from the rendered strips, so profile geometry remains unverified."
+      ],
+      "concerns": [
+        "Obvious periodic repeat of the gold leaf/scroll macro feature (tiled texture) rather than continuous natural pattern.",
+        "Visible seam/tile boundary in the candidate preview.",
+        "Profile cross-section (face, inner sight edge, outer edge, rebate) not demonstrably reproduced; risk of unsupported or missing geometry relative to the supplier section trace.",
+        "Top and bottom candidate strips are near-identical, reinforcing the impression of a single repeated tile."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "bc0a0ca8faf74487d9837b8dd72c4a6dea683e239401d2903d355cb244c176d8",
+      "roughness.jpg": "95ab3ca49b73361d5a4ae28f82653596e1ef5ed2539d36c398d28ef0999cfcb6",
+      "bump.jpg": "0cf8df7c1b048e8db9c596ac245496370ecc1a0be915ca6fbbb39ad3e6f94358"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

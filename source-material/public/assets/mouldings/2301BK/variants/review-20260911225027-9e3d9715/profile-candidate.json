@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sku": "2301BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 15.0,
+  "depthMm": 20.0,
+  "rebateMm": 11.2,
+  "points": [
+    [
+      0.0,
+      15.114
+    ],
+    [
+      4.116,
+      19.132
+    ],
+    [
+      5.213,
+      20.0
+    ],
+    [
+      15.0,
+      19.954
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar dark face (flat, no crown or bead)",
+      "Rebate / step on one side exposing light natural-wood edge",
+      "Sharp near-square outer and inner sight edges",
+      "Chevron (angled) assembly use at a corner peak",
+      "Consistent flat face across oblique rotation detail shots"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex crown or bead (not present in any physical section)",
+      "No concave hollow or cove (no shadowed recess in section or detail)",
+      "No ornate profile; only a flat face plus one rebate step"
+    ],
+    "observations": [
+      "Section photo shows a flat dark top face with a light-wood rebate on the left, matching the profile-source step drawing",
+      "Detail-1 and detail-2 oblique rotations confirm a single flat face with a light-wood rebate edge on the right",
+      "Chevron image confirms the piece is intended for angled/corner use, not a curved profile",
+      "Macro row shows the same flat-faced section in multiple colour finishes",
+      "Finish is a dark low-to-mid gloss with subtle directional grain; rebate face is raw light wood",
+      "Supplier envelope preserved: 15 x 20 mm, rebate 11.2 mm, label 'angled'"
+    ],
+    "concerns": [
+      "Supplier label 'angled' refers to corner/chevron application, not a curved cross-section; cross-section remains flat+rebate",
+      "Rebate depth 11.2 mm is large relative to 15 mm width; verify rebate orientation against installation side",
+      "Lower panel contains no visible red trace to compare; agreement inferred from top-row section and detail photos"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's core geometry (one planar face plus a single rebate/step on the inner sight edge) is independently visible in the oblique supplier photographs, which show a flat top face meeting a square light-coloured rebate edge.",
+      "The chevron (V) view confirms a flat-faced section with no bead, hollow or additional ridge, consistent with the candidate's flat profile.",
+      "No perimeter ridge or bead has been added to the photographed flat face; the thin top line in the candidate is the section boundary, not an unsupported moulded feature.",
+      "The rebate step present in the candidate is supported by the visible step in the supplier cross-section diagram and the light vertical rebate face in the oblique photos."
+    ],
+    "concerns": [
+      "Colour/finish mismatch: the candidate renders the wide face as a flat uniform tan, whereas the supplier oblique photos show the wide face as a dark brown directional wood grain with the light tan reserved for the rebate edge; the candidate appears to have swapped or flattened the face colour and grain.",
+      "Texture: the candidate face lacks the directional grain/brushing and surface relief visible in the supplier photographs.",
+      "Dimension discrepancy: candidate rebate drop is 11.2 mm while the supplier cross-section guide states 12 mm (overall 20 mm); treat as advisory but flag for confirmation.",
+      "The macro strip in the supplier set reads as a colour-swatch rack rather than the product face, so face colour should be re-verified against the oblique photos under neutral lighting."
+    ]
+  }
+}

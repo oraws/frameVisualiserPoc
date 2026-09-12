@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0717DR",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/CR0717DR/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg",
+    "macro.jpg"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "sku": "5819BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 58.0,
+  "depthMm": 19.0,
+  "rebateMm": 10.6,
+  "points": [
+    [
+      0.0,
+      12.557
+    ],
+    [
+      7.411,
+      19.0
+    ],
+    [
+      58.0,
+      19.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar dark face (58 mm wide) confirmed flat in product-detail-1 and product-detail-2 oblique views",
+      "Rebate/step on one vertical edge (approx 10.6-11 mm) visible as a notch in profile-source and as a step on the lower edge in product-detail-2",
+      "Square inner sight edge (light wood core exposed at end grain in detail photos)",
+      "Square outer edge with no bead, hollow or crown",
+      "Light natural wood substrate core visible behind dark face in product-section and detail photos"
+    ],
+    "rejectedTraceFeatures": [
+      "No crown, bead, fillet or hollow present; any such feature would be unsupported by the photographs and is omitted",
+      "No convex or concave face curvature; the face is a single flat plane"
+    ],
+    "observations": [
+      "product-section shows a vertical split: light tan wood core on the left and a uniform dark charcoal face on the right, consistent with a veneered/laminated flat board",
+      "profile-source is a 2D tan outline of a rectangle with a rectangular notch cut from the lower-right corner, dimensioned 19 (height) and 11 (rebate), matching a flat face plus one rebate step",
+      "chevron shows two pieces mitered at 45 degrees forming a clean V, confirming square edges and a flat face with no profiled bead",
+      "product-detail-1 oblique view shows a flat dark top face with a straight light-wood end grain edge; no ridge or bevel on the face",
+      "product-detail-2 oblique view shows the same flat dark face with a small step/notch on the lower edge, consistent with the rebate",
+      "Lower panel states supplier dimensions 58 x 19 mm, rebate 10.6 mm, profile label 'angled', which aligns with a flat board carrying one angled rebate step"
+    ],
+    "concerns": [
+      "Supplier profile label 'angled' could be misread as a bevelled face; photographs show the face is flat and the angle is confined to the rebate step",
+      "Rebate dimension differs slightly between the drawing (11) and the text (10.6 mm); treat 10.6 mm as the stated supplier value",
+      "Edge radii are not directly measurable from the images; 0.2 mm is used as the minimum sharp-edge value, so confirm true edge break on a physical sample",
+      "Dark face gloss and grain direction are limited by lighting in the supplier photos; verify finish under neutral fixed lighting before final sign-off"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "top-edge chamfer/bevel (present in candidate and profile-source drawing but not unambiguously resolved in the oblique/chevron photographs)"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The rebate/step is independently visible as a notch on the lower edge in product-detail-2, supporting the candidate's rebate feature.",
+      "The candidate's flat planar face with only edge treatment (chamfer + rebate) does not add a spurious perimeter ridge, consistent with the flat dark face seen in product-detail-1/2.",
+      "The chamfered corner is shown in the profile-source drawing and candidate but cannot be confirmed with confidence in the chevron or oblique photos, where the outer edge reads as a near-sharp line.",
+      "Rebate dimension differs: candidate states 10.6 mm drop while the profile-source drawing annotates 11 mm, a minor but real discrepancy.",
+      "Face colour in the candidate (uniform tan) conflicts with the dark/black broad face shown in the oblique photographs and chevron; the tan tone appears only in the product-section strip, suggesting a two-sided or lighting-dependent finish that the candidate does not represent."
+    ],
+    "concerns": [
+      "Finish/colour mismatch between the tan candidate face and the dark photographed face; verify which side is the intended visible face.",
+      "Chamfer/bevel geometry is guide-supported only and needs confirmation against a higher-resolution oblique shot.",
+      "Rebate depth annotation inconsistency (10.6 mm vs 11 mm) should be reconciled with the authoritative drawing."
+    ]
+  }
+}

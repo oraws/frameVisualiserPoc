@@ -1,0 +1,1621 @@
+{
+  "id": "b9856e25-277e-4482-9289-a8ce8d4cc2d5",
+  "status": "paused",
+  "model": "qwen3.8:27b",
+  "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "createdAt": "2026-09-12T08:34:53.499Z",
+  "updatedAt": "2026-09-12T08:43:54.332Z",
+  "current": 1,
+  "total": 88,
+  "message": "Paused after the current moulding completed.",
+  "items": [
+    {
+      "sku": "POL-4875",
+      "name": "Verona Black",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "complete",
+      "progress": 100,
+      "message": "Review finished. The candidate needs your inspection.",
+      "jobId": "df763bbb-26c1-43d1-a49a-8591fb89b835",
+      "result": {
+        "sku": "POL-4875",
+        "status": "human-review-required",
+        "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+        "inputVariant": "supplier-derived-v3",
+        "outputVariant": "review-20260912083453-df763bbb",
+        "bestMetrics": {
+          "colourDeltaE": 4.6897,
+          "colourSpreadError": 0.1119,
+          "seamError": 0.051,
+          "maximumAutocorrelation": 0.2345,
+          "detailError": 0.1724,
+          "clippedPixels": 0.001
+        },
+        "bestFailedGates": [],
+        "bestSettings": {
+          "seed": 2,
+          "colour_strength": 0.82,
+          "contrast": 1.06,
+          "patch_width": 480,
+          "overlap": 168,
+          "roughness_mid": 182,
+          "roughness_detail": 0.62,
+          "bump_detail": 2.6
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "deterministicScore": 87.8,
+            "failedGates": [],
+            "observations": [
+              "The acanthus/leaf relief motif in the candidate closely matches the ornate 'Verona' family frames shown in the supplier context image, so the macro carving style is well supported.",
+              "The dark charcoal tone under fixed light is plausible for the black frame in the supplier set, though it sits slightly lighter and less saturated than the true black reference.",
+              "Relief depth and shadowing of the leaf carving look consistent with a painted semi-gloss frame, supporting the texture match.",
+              "The repeating leaf pattern is an intentional design repeat (as seen on the supplier frames) and should not be mistaken for a tiling defect; the genuine concern is the over-regular bead row and the central vertical seam.",
+              "Supplier product-card text and dimensions are too small to read reliably, so profile dimensions could not be independently confirmed and the flat-face-plus-edge treatment is the safest interpretation."
+            ],
+            "blockers": [
+              "A soft vertical blur/gradient band runs down the centre of both the unlit and fixed-light bands, reading as a seam or lighting discontinuity rather than a physical feature of the moulding.",
+              "The top row of small oval beads repeats with near-perfect periodicity across the full width, which is consistent with a tiled texture tile rather than a continuous hand-carved frame edge; this should be verified against the supplier cross-section before being kept as profile geometry.",
+              "The profile shows a flat face plus a single top bead/edge line only; no rebate, sight-edge step or inner bevel is visible in the render, so any such features present in the extracted trace must be omitted unless independently confirmed in the supplier photographs."
+            ],
+            "agentScore": 61
+          },
+          {
+            "attempt": 2,
+            "deterministicScore": 82.1,
+            "failedGates": [
+              "seamError"
+            ],
+            "observations": [],
+            "blockers": []
+          },
+          {
+            "attempt": 3,
+            "deterministicScore": 83.2,
+            "failedGates": [],
+            "observations": [],
+            "blockers": []
+          }
+        ],
+        "analyst": {
+          "finishClass": "painted carved-relief ornate frame (Verona family, black SKU)",
+          "directional": false,
+          "gloss": "matte",
+          "preserve": [
+            "deep recessed matte-black ground in the carved hollows",
+            "raised floral/scroll relief with soft broad highlights",
+            "single planar face with only genuinely visible edge beading",
+            "ornate corner and mid-rail motif as a continuous carved pattern",
+            "natural variation in relief depth across the rail"
+          ],
+          "risks": [
+            "PROFILE: adding ridges, beads, steps or a rebate that appear only in the extracted red trace and not in the supplier cross-section/rotation photos",
+            "PROFILE: misreading a flat face as a multi-bead section; a visibly flat moulding must stay one planar face with only visible edge treatment",
+            "TEXTURE: tiling the carved floral motif into a regular repeat or introducing seams instead of a continuous ornate pattern",
+            "GLOSS: classifying the soft edge highlights on curved profile as glossy; surface reads matte/satin",
+            "COLOUR: oversaturating or warming the black ground; recesses should stay deep neutral black",
+            "CONTRAST: flattening the relief so the carved depth is lost under neutral lighting"
+          ],
+          "suggestedSettings": {
+            "colour_strength": 0.35,
+            "contrast": 1.06,
+            "roughness_mid": 205,
+            "roughness_detail": 0.6,
+            "bump_detail": 4.2
+          }
+        },
+        "reviewer": {
+          "decision": "review",
+          "confidence": 0.82,
+          "reasons": [
+            "Exact SKU supplier photograph (authoritative) shows a pale cream / light greenish frame finish, whereas the candidate render is a dark charcoal/grey; this is a clear colour and finish mismatch with the authoritative SKU evidence.",
+            "The candidate displays the same distinctive acanthus/leaf macro motif recurring at regular intervals across the width, indicating an obvious tiled repeat rather than natural variation.",
+            "The dark tone of the candidate aligns with the 'Verona' family context frames (black/dark teal) which are explicitly labelled context-only and must not override the exact SKU colour.",
+            "Profile geometry (face, sight edge, rebate, bevels) cannot be independently confirmed from the supplied evidence, which shows only assembled frame corners rather than a clear cross-section or rotation photograph; the rendered profile therefore lacks verified support."
+          ],
+          "concerns": [
+            "Authoritative exact-SKU thumbnail is small and low-resolution, making precise colour/finish matching difficult; a higher-resolution SKU photo is needed.",
+            "Candidate colour appears biased toward the dark family-context frames instead of the pale exact-SKU finish.",
+            "Regular macro-motif repeat and visible banding/seam lines across the strip suggest tiling that should be removed.",
+            "No supplier cross-section or chevron/oblique rotation photograph is clearly available to validate the moulding profile, so unsupported profile features may be present."
+          ]
+        },
+        "model": "qwen3.8:27b",
+        "reviewScopes": [
+          "profile",
+          "material"
+        ],
+        "profile": {
+          "schemaVersion": 1,
+          "sku": "POL-4875",
+          "source": "supplier-metadata-and-vision-review",
+          "shapeClass": "ornate",
+          "widthMm": 97,
+          "depthMm": 49,
+          "rebateMm": 16,
+          "points": [
+            [
+              0,
+              15
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              3.5,
+              21
+            ],
+            [
+              5,
+              26
+            ],
+            [
+              7,
+              27
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              16,
+              19
+            ],
+            [
+              20,
+              25
+            ],
+            [
+              24,
+              32
+            ],
+            [
+              29,
+              38
+            ],
+            [
+              34,
+              43
+            ],
+            [
+              40,
+              46
+            ],
+            [
+              46,
+              48
+            ],
+            [
+              51,
+              48
+            ],
+            [
+              56,
+              45
+            ],
+            [
+              61,
+              40
+            ],
+            [
+              66,
+              34
+            ],
+            [
+              71,
+              29
+            ],
+            [
+              75,
+              28
+            ],
+            [
+              79,
+              32
+            ],
+            [
+              83,
+              35
+            ],
+            [
+              86,
+              31
+            ],
+            [
+              89,
+              25
+            ],
+            [
+              92,
+              22
+            ],
+            [
+              95,
+              17
+            ],
+            [
+              97,
+              16
+            ]
+          ],
+          "analysis": {
+            "shapeClass": "ornate",
+            "faceCrownMm": 3,
+            "innerEdgeRadiusMm": 1,
+            "outerEdgeRadiusMm": 1,
+            "flatFaceConfirmed": false,
+            "catalogueTraceAgreement": "partial",
+            "verifiedFeatures": [
+              "Ornate raised floral/leaf and scroll relief across the field",
+              "Stippled / dotted recessed ground between relief elements",
+              "Rebate / sight-edge step (stated 16 mm) visible at the assembled chevron corners"
+            ],
+            "rejectedTraceFeatures": [
+              "Vertical fluting on the left edge - present only in the catalogue image, not independently confirmed in a chevron/oblique photograph",
+              "Beaded / rope outer edge on the right - present only in the catalogue image, not independently confirmed",
+              "Grey speckled mass along the bottom of the lower panel - interpreted as segmentation edge / background / shadow, not a real ridge"
+            ],
+            "observations": [
+              "Authoritative SKU screenshot is too low-resolution to read precise cross-section geometry; relied on the assembled family chevrons for shape family.",
+              "Family chevrons (Verona) confirm an ornate, high-relief floral profile with a stepped rebate, consistent with the catalogue relief.",
+              "Catalogue lower panel shows the same ornate leaf/scroll motif and stippled ground, supporting the ornate classification.",
+              "Lower panel contains a white cutout square (bottom-right) and a grey speckled band (bottom) that are background/segmentation artefacts, not profile geometry.",
+              "Supplier dimensions 97 x 49 mm with 16 mm rebate are preserved as the dimensional envelope; profile label not supplied."
+            ],
+            "concerns": [
+              "Authoritative exact-SKU photograph is unreadable at provided resolution, so fine edge radii (inner/outer) are estimates, not measured.",
+              "Fluting and beaded edge appear only in the unverified catalogue image and lack independent chevron/oblique confirmation; treat as unconfirmed until a physical section photo is supplied.",
+              "The grey lower band in the catalogue image risks being misread as a flat face or ridge; it should be excluded from the rebuilt cross-section.",
+              "No supplier profile label is provided, so the rebuilt geometry is a hypothesis pending a clear physical cross-section photograph."
+            ]
+          },
+          "reviewer": {
+            "decision": "review",
+            "confidence": 0.62,
+            "photoVerified": false,
+            "unsupportedFeatures": [
+              "Broad central rounded dome (main face bulge) not visible as a convex profile in the supplier photo, which shows a relatively flat stippled field with a carved leaf relief",
+              "Secondary right-hand peak/hump in the candidate profile with no corresponding discrete ridge in the photographed section",
+              "Left-edge perimeter step/ridge not confirmable as a genuine feature versus a flat sight edge"
+            ],
+            "catalogueTraceAgreement": "partial",
+            "reasons": [
+              "The supplier close-up shows a fluted/ribbed member, a stippled (pebble-dash) central field with a carved scroll/leaf, and a rope/bead edge; the candidate cross-section instead renders a single smooth broad dome plus a small hump, which does not reproduce the flutes or the bead string as discrete ridges.",
+              "The central face in the photograph reads as a near-planar stippled relief, not the large convex dome drawn in the candidate, so the dome is an unsupported bulge.",
+              "The 16 mm rebate drop is dimensioned but the surrounding profile geometry cannot be independently confirmed from the oblique corner view provided.",
+              "Per instruction, a flat photographed face must not gain a perimeter ridge; the candidate's left-edge step is not verifiable and is treated as suspect."
+            ],
+            "concerns": [
+              "Only an oblique/chevron corner photograph is available; no clean straight-on cross-section or rotation set is present to confirm each ridge, bead, bevel and hollow.",
+              "White square artifact and strong directional lighting in the supplier photo reduce confidence in reading the true profile.",
+              "Candidate profile appears to be a generic smoothed trace rather than a feature-matched reconstruction of the visible fluting and beading."
+            ]
+          }
+        },
+        "profileGate": {
+          "passed": false,
+          "requiresPhotoVerification": true
+        },
+        "revision": 1789202634332,
+        "versionId": "review-20260912083453-df763bbb",
+        "createdAt": "2026-09-12T08:43:54.308553+00:00"
+      }
+    },
+    {
+      "sku": "POL-4100",
+      "name": "Brushed Black",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4508",
+      "name": "Paramount Black & Silver",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4211",
+      "name": "Flat Oak",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "8054BG",
+      "name": "Luxe Wentworth Black/Gold Scoop",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "3826BK",
+      "name": "Kashmir Decorative Black Bevel",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR4030BN",
+      "name": "Create Brown Flat - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0225MG",
+      "name": "Create Matt Gold Flat",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR1513BK",
+      "name": "Create Black Cushion - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0219BK",
+      "name": "Black Bevel - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "2650BK",
+      "name": "Alberta Black Open Grain Flat",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "HS9",
+      "name": "Raw Pine Stretcher FSC ®",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0472WH",
+      "name": "Casterbridge White Step - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "2301BK",
+      "name": "New Orleans Black Bevel",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0219WH",
+      "name": "White Bevel - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR1090WH",
+      "name": "Create White Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "3825BK",
+      "name": "Kashmir Decorative Black Bevel",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0471DB",
+      "name": "Casterbridge Dark Brown Step - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "5821WH",
+      "name": "Ancona White Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR3313MW",
+      "name": "Create Matt White Flat - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR1013BK",
+      "name": "Create Black Cushion - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "4426WH",
+      "name": "White Scoop - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0717AG",
+      "name": "Create Lustre Antique Gold Flat",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0225BN",
+      "name": "Create Brown Flat - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0225OR",
+      "name": "Create Orange Flat - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR4530BK",
+      "name": "Create Black Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR3313MB",
+      "name": "Create Matt Black Flat - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR3313MG",
+      "name": "Create Matt Gold Flat",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0225RD",
+      "name": "Create Red Flat - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0471WH",
+      "name": "Casterbridge White Step - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0471BK",
+      "name": "Casterbridge Black Step - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "2650WH",
+      "name": "Alberta White Open Grain Flat",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "3042IV",
+      "name": "Ivory Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "3042BK",
+      "name": "Black Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "3042WH",
+      "name": "White Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "5819WH",
+      "name": "Ravenna White Bevel - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR2253WH",
+      "name": "Create White Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0717YW",
+      "name": "Create Yellow Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0403BK",
+      "name": "Black Cushion - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "5819IV",
+      "name": "Ravenna Ivory Bevel - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0717RD",
+      "name": "Create Red Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR1090BK",
+      "name": "Create Black Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR8005OA",
+      "name": "Create Oak Flat - Closed Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0717OR",
+      "name": "Create Orange Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0717MD",
+      "name": "Create Midnight Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0473BK",
+      "name": "Casterbridge Black Step - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "5819BK",
+      "name": "Ravenna Black Bevel - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "0472CM",
+      "name": "Casterbridge Cream Step - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0717DR",
+      "name": "Create Dark Red Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0717NY",
+      "name": "Create Navy Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "4426CM",
+      "name": "Cream Scoop - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR0225BF",
+      "name": "Create Brown Foil Flat - Open Grain",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "CR3330AG",
+      "name": "Create Lustre Antique Gold Flat",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "4924BG",
+      "name": "Bergen Black and Gold Angled",
+      "supplier": "Centrado",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4721",
+      "name": "30mm Flats Oak Woodgrain Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4415",
+      "name": "30mm Flats Brushed Bronze Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-1301",
+      "name": "Starling 35mm Brushed Black Bronze Sides Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-1336",
+      "name": "Nelson 38mm Distressed Black Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4202",
+      "name": "30mm Flats Brushed Black Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4446",
+      "name": "Outline 30mm Brushed Black Gold Edges Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4313",
+      "name": "Edge 43mm Brushed Silver SSE Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4436",
+      "name": "Edge 30mm Brushed Gold GSE Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-7146",
+      "name": "L Shape 10mm White Woodgrain Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4416",
+      "name": "30mm Flats Brushed Gunmetal Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-2109",
+      "name": "Contemporary Classics 40mm Antique Gold Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4540",
+      "name": "Watercolour 25mm Antique Silver Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4344",
+      "name": "43mm Box Limed White Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-7145",
+      "name": "L Shape 10mm Black Woodgrain Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-7150",
+      "name": "Hockney 69mm Brushed White Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4541",
+      "name": "Watercolour 25mm Gold Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4642",
+      "name": "Naples 31mm Gold Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4640",
+      "name": "Naples 48mm Gold Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4571",
+      "name": "16mm Flats Brushed Oak Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-2169",
+      "name": "79mm Gold Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4506",
+      "name": "Paramount 53mm Brushed Gunmetal with Silver Slip Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-7149",
+      "name": "Hockney 69mm Brushed Black Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-2190",
+      "name": "Contemporary Classics 70mm Black Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-1009",
+      "name": "28mm Flats Brushed Black Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-1129",
+      "name": "Edge 30mm Brushed Silver Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-1334",
+      "name": "Nelson 38mm Distressed Walnut Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-7026",
+      "name": "Fletcher 30mm Walnut Woodgrain Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-2104",
+      "name": "Contemporary Classics 70mm Antique Gold Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "010-1009",
+      "name": "Fletcher 53mm White Woodgrain Wood Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "010-4609",
+      "name": "Deep Rebate 27mm White Woodgrain Wood Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "019-1272",
+      "name": "Richmond 12mm Antique Gold Wood Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "010-4603",
+      "name": "Deep Rebate 27mm Black Woodgrain Wood Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4417",
+      "name": "Outline 30mm Brushed Black Silver Edges Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    },
+    {
+      "sku": "POL-4643",
+      "name": "Naples 31mm Silver Polcore Moulding",
+      "supplier": "Mainline",
+      "scopes": [
+        "profile",
+        "material"
+      ],
+      "prompt": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+      "status": "queued",
+      "progress": 0,
+      "message": "Queued",
+      "jobId": null,
+      "result": null
+    }
+  ]
+}

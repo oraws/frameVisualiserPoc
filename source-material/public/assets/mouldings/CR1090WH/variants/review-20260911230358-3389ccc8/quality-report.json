@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 2,
+  "sku": "CR1090WH",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T23:11:45.489465+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "CR1090WH",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 35.0,
+    "depthMm": 15.0,
+    "rebateMm": 8.4,
+    "points": [
+      [
+        0.0,
+        6.6
+      ],
+      [
+        0.147,
+        14.825
+      ],
+      [
+        0.35,
+        15.0
+      ],
+      [
+        17.55,
+        15.0
+      ],
+      [
+        34.75,
+        15.0
+      ],
+      [
+        35.0,
+        14.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "single planar cream/off-white face",
+        "rebate (step/notch) on one vertical edge, visible in product-section and profile-source"
+      ],
+      "rejectedTraceFeatures": [
+        "no ridge, bead, bevel or hollow present; none added from trace"
+      ],
+      "observations": [
+        "product-section shows a flat cream face with a tan/gold speckled edge band on the left and a small rebate notch at the lower-left",
+        "profile-source line drawing depicts a flat rectangle with a single rectangular notch (rebate) on the lower-right, overall height 15, body height 11",
+        "chevron panel shows two flat faces meeting in a V joint, consistent with a flat profile",
+        "supplier profile label reads 'flat'; supplier dimensions read 35 x 15 mm with a rebate"
+      ],
+      "concerns": [
+        "rebate depth is inconsistent: profile-source geometry implies 15-11 = 4 mm, but the text states rebate 8.4 mm; physical section should be re-measured",
+        "the tan/gold speckled strip on the left of the product-section may be an edge band or separate material rather than the face finish; confirm face colour under neutral lighting",
+        "no oblique rotation photograph is provided to independently confirm the rebate depth, so the step is taken from the section and drawing only"
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "The candidate's main body is a single planar face with no added perimeter ridge or bead, matching the flat white face and flat mitered chevron in the supplier photographs.",
+        "The single rebate/step on the inner sight edge of the candidate corresponds to the visible notch/step on the tan strip in the product-section photograph and to the stepped outline in the profile-source drawing, so the rebate feature is physically supported rather than trace-only.",
+        "The overall topology (flat face + one rebate step) is consistent across the product-section, profile-source and chevron images."
+      ],
+      "concerns": [
+        "Rebate depth conflict: the candidate labels the rebate drop as 8.4 mm, but the profile-source dimensioning implies a step of 15 - 11 = 4 mm; the photographs provide no scale to confirm which value is correct.",
+        "No oblique or rotation photograph with a measurable reference is present to independently verify the 8.4 mm rebate depth or the 15 mm overall height.",
+        "The chevron image shows a clean mitered corner with no visible ridge, which is consistent with a flat face but does not confirm the rebate lip thickness shown on the candidate's left edge."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260911230358-3389ccc8",
+  "referenceImages": [
+    "public/assets/mouldings/CR1090WH/product-section.jpg",
+    "public/assets/mouldings/CR1090WH/profile-source.png",
+    "public/assets/mouldings/CR1090WH/chevron.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.6,
+    "contrast": 1.0,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 2.0
+  },
+  "bestMetrics": {
+    "colourDeltaE": 0.9919,
+    "colourSpreadError": 0.0,
+    "seamError": 0.0021,
+    "maximumAutocorrelation": 0.2857,
+    "detailError": 0.1062,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 200.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 0.9919,
+        "colourSpreadError": 0.0,
+        "seamError": 0.0013,
+        "maximumAutocorrelation": 0.3108,
+        "detailError": 0.1113,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 97.1,
+      "failedGates": [],
+      "agentReview": {
+        "score": 71,
+        "colourMatch": 82,
+        "textureMatch": 62,
+        "repetition": 70,
+        "seam": 90,
+        "finishMatch": 70,
+        "blockers": [
+          "Strong vertical light-to-grey gradient in the fixed-light preview makes the lower third read as a different material tone than the warm cream face in the supplier crops; this is a lighting/contrast artifact, not a true colour fault.",
+          "Faint regular horizontal banding in both the unlit atlas and the preview risks reading as a tiled repeat rather than natural grain; it is not present in the supplier face evidence."
+        ],
+        "observations": [
+          "Profile verified as FLAT: the chevron crop shows a plain mitered corner with no bead, ridge, bevel or hollow, and the product-section crop shows a single planar face with only a tan core/edge. The 15/11 stepped line drawing is treated as an unverified catalogue trace and is correctly NOT built into the candidate; the candidate's single planar face matches the photographic evidence.",
+          "Supplier face colour is a warm off-white/cream; the candidate face matches this hue (colourDeltaE ~0.99, colourSpreadError 0.0), so base colour is well matched.",
+          "The supplier edge/core shows a fine granular speckle (gold-tan grain). The candidate face instead shows very faint horizontal streaks; the granular micro-texture is under-represented on the visible face.",
+          "seamError is very low (0.0013) and clippedPixels 0.0, so no hard seam or clipping is detected; the horizontal banding is subtle and likely a low-amplitude tiling/grain artifact.",
+          "maximumAutocorrelation 0.31 indicates mild periodicity consistent with the faint horizontal banding rather than a hard tile seam.",
+          "Finish reads as a low-gloss matte, broadly consistent with the flat, non-reflective supplier face."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.6,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.5,
+          "bump_detail": 2.0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.6,
+        "contrast": 1.0,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 0.9919,
+        "colourSpreadError": 0.0,
+        "seamError": 0.0021,
+        "maximumAutocorrelation": 0.2857,
+        "detailError": 0.1062,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 97.9,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "matte speckled-texture board with stepped sight edge",
+      "directional": false,
+      "gloss": "matte",
+      "preserve": [
+        "Stepped cross-section: upper face of height 15 stepping down to a lower sight edge of height 11 (single planar face plus one genuine step, no extra beads or hollows)",
+        "Tan/gold granular speckled texture visible on the face edge in the product-section view",
+        "Mitered chevron corner with predominantly white face and faint tan texture at the lower edge",
+        "Diffuse matte sheen with soft, low-contrast edges and no sharp specular highlights"
+      ],
+      "risks": [
+        "PROFILE: importing unsupported ridges, beads, bevels or a rebate from an extracted trace that is not visible in the physical section/chevron photographs",
+        "PROFILE: misreading the 15-to-11 step as a deeper rebate or as a flat single face; the step must remain a single vertical drop with two planar faces",
+        "TEXTURE: tiling or repeating the tan speckle into a regular pattern, or introducing seams across the face",
+        "TEXTURE: mistaking the granular mottle for a directional brush grain and adding false linear streaks",
+        "GLOSS: over-stating sheen because curved/stepped edges catch bright light; the body finish is matte"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "roughness_mid": 200,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.6,
+      "reasons": [
+        "Candidate base colour is a near-white cream that is close to the supplier product-section and chevron fields; reported colourDeltaE 0.9919 is within a tight tolerance and colourSpreadError is 0.0.",
+        "No obvious tiled repeat is evident: seamError 0.0021 is low and maximumAutocorrelation 0.2857 is only moderate, consistent with fine directional grain rather than a macro repeat.",
+        "The supplier photographs (product-section swatch and chevron) read as a planar face with no clearly visible ridge, bead or rebate; the candidate's flat single-plane surface is therefore consistent with the photographic evidence, and the 15/11 stepped profile in the profile-source panel is a 2D trace that should not override the photos."
+      ],
+      "concerns": [
+        "The profile-source diagram depicts a stepped rebate (overall 15 vs step 11) that is not represented in the candidate and is not independently confirmed by any visible ridge/step in the supplier photographs; this geometry conflict needs verification before approval.",
+        "The supplier product-section shows a distinct tan/gold speckled texture on one region that is absent from the candidate, which is a uniform cream; it is unclear whether that speckled area is part of the exact SKU face or a separate element.",
+        "The candidate fixed-light preview shows a noticeable gradient (darker toward the lower-right) that may be a lighting artifact or an unmodelled colour/relief variation and should be confirmed under neutral lighting.",
+        "Faint horizontal streaks in the candidate resemble the family-context streaks; while likely intentional grain, they should be confirmed not to be a low-contrast repeat."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "bd51957aec185a5e4c6bf4d2a31b0eb9a3bf995cc36a6fb0ad0731cf9c8620c9",
+      "roughness.jpg": "ef738fcc8ad323371c844750399ceab786227190676a9df54db59dd31a73ce94",
+      "bump.jpg": "8a4749c2551a3dbfe7ae492fc27fd985b2847a280f6510e1e7c8877fa0bbab42"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

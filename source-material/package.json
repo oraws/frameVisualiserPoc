@@ -28,6 +28,7 @@
     "review:mainline-profiles": "node tools/mainline-profile-analyser/build_review_index.mjs",
     "import:mainline-catalogue-pilot": "/Users/stephenorawe/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/mainline-catalogue-importer/import_catalogue_panels.py --pdf source-material/mainline/ml_catalogue.pdf --output source-material/mainline/catalogue-profiles --pdftoppm /Users/stephenorawe/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/poppler/bin/pdftoppm --catalog-json src/mouldings/invoiceMouldings.json",
     "extract:mainline-catalogue-pilot": ".venv/bin/python tools/mainline-catalogue-importer/extract_profiles.py --root source-material/mainline/catalogue-profiles --public public/assets/mouldings --typescript-json src/mouldings/mainlineCatalogueProfiles.json",
+    "extract:moulding-family-references": "/Users/stephenorawe/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/mainline-catalogue-importer/extract_family_references.py",
     "batch:mainline-catalogue": "npm run import:mainline-catalogue-pilot && npm run extract:mainline-catalogue-pilot",
     "extract:mainline-gemma-profile": "python3 tools/mainline-profile-analyser/extract_gemma_profile.py",
     "build:mainline-trace-editors": "node tools/mainline-profile-analyser/build_manual_trace_editors.mjs",

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-2169",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 79.0,
+  "depthMm": 27.0,
+  "rebateMm": 15.0,
+  "points": [
+    [
+      0.0,
+      12.0
+    ],
+    [
+      0.168,
+      26.72
+    ],
+    [
+      0.4,
+      27.0
+    ],
+    [
+      39.5,
+      27.0
+    ],
+    [
+      78.6,
+      27.0
+    ],
+    [
+      79.0,
+      26.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face across the exact SKU rotation strip",
+      "Fine horizontal directional grain / brushing on the face",
+      "Stated rebate of 15 mm within the 78 x 27 mm envelope"
+    ],
+    "rejectedTraceFeatures": [
+      "Vertical reeded / ribbed edge shown in the lower catalogue image",
+      "Small ridge / bump in the extracted black profile trace",
+      "Step / drop in the extracted profile trace"
+    ],
+    "observations": [
+      "Top exact-SKU rotation photographs show a uniform flat golden-brass face with subtle horizontal brush lines and no recurring macro ridge, bead or hollow.",
+      "The lower panel is a catalogue / extracted-profile guide; its right-hand ribbed strip and the black silhouette's small bump are not reproduced in the authoritative rotation photographs.",
+      "Supplier profile label reads 'flat', consistent with the planar face seen in the exact SKU images.",
+      "Lighting and perspective in the catalogue image create highlight/shadow bands that could be misread as reeding."
+    ],
+    "concerns": [
+      "The ribbed edge and trace ridge lack independent confirmation in a physical section, chevron or oblique rotation photo, so they are treated as unsupported and omitted.",
+      "If the ribbed edge is a genuine part of the assembled family, it is not present on this exact SKU and must not be added to the flat profile.",
+      "Fine directional grain in the rotation strip is intentional brushing, not a tiled repeat, and should be preserved as texture rather than geometry."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate drop 15 mm at inner sight edge",
+      "thin outer-edge line / perimeter bevel at top of cross-section"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The supplier photographs (top strip) show a single flat planar face with fine directional grain/brushing and no reeded or fluted relief, which the candidate cross-section correctly preserves as a flat face.",
+      "The catalogue/extracted guide (lower left) depicts a reeded/fluted edge treatment that does not appear in the supplier photographs; the candidate rightly omits this guide-only feature rather than adding a perimeter ridge to a flat face.",
+      "The 15 mm rebate drop and the thin outer-edge line in the candidate are not independently confirmed in any physical-section, chevron or oblique supplier photograph; only flat-face views are provided.",
+      "Vertical seams and tonal shifts in the top strip are tile/lighting artefacts, not profile features, and were not interpreted as ridges."
+    ],
+    "concerns": [
+      "No true cross-section or oblique supplier photograph is available to verify the rebate depth (15 mm) or the outer-edge treatment; these rely on the advisory catalogue trace.",
+      "The reeded edge in the catalogue guide conflicts with the flat-face supplier evidence, so the guide cannot be used to confirm any edge relief.",
+      "Gloss, texture scale and grain direction should be re-checked under neutral fixed lighting before approval, as the top strip shows lighting/perspective variation across tiles."
+    ]
+  }
+}

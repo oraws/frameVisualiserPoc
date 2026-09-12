@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0717NY",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 17.0,
+  "depthMm": 17.0,
+  "rebateMm": 9.5,
+  "points": [
+    [
+      0.0,
+      7.5
+    ],
+    [
+      0.147,
+      16.79
+    ],
+    [
+      0.35,
+      17.0
+    ],
+    [
+      8.525,
+      17.0
+    ],
+    [
+      16.7,
+      17.0
+    ],
+    [
+      17.0,
+      16.835
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.3,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face confirmed by supplier profile label 'flat' and the uniform product-section photograph",
+      "Rebate of 9.5 mm consistent with the 17 mm height dimension in the profile-source view",
+      "Fine directional/pebbled surface texture visible on the dark face (intentional finish, not a profile ridge)",
+      "Straight sight edges with only minimal break, no bead, hollow or step"
+    ],
+    "rejectedTraceFeatures": [
+      "Chevron inverted-V outline interpreted as a profile ridge (it is a layout/pattern reference, not cross-section geometry)",
+      "Any crown, bead or hollow implied by the macro color-strip row (family context only, no profile evidence)"
+    ],
+    "observations": [
+      "Supplier dimensions 17 x 17 mm with 9.5 mm rebate preserved",
+      "Product-section shows a dark textured face with a small light/tan edge chip at the left, consistent with a flat board edge",
+      "Profile-source view is a plain rectangle (17 high, 13/5 sub-dimensions) with no raised profile",
+      "Macro panel is a multi-color family reference against an orange backdrop, not an exact-SKU color authority",
+      "Surface relief is fine grain/brushing scale, uniform, with no periodic macro repeat"
+    ],
+    "concerns": [
+      "Chevron graphic could be misread as a peaked profile; it is rejected as layout reference",
+      "Exact-SKU color/finish must be taken from the dark textured product-section, not the macro family strip",
+      "Lighting on the macro panel is warm/orange and should not influence finish judgment"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate cross-section is a single planar face with one rebate/step on the inner sight edge; this matches the supplier product-section (top-left) which shows a flat textured face with a tan rebate block on one edge, and the macro strip photo (top-right) which shows flat vertical faces with only edge treatment.",
+      "No perimeter ridge, bead, hollow or extra bevel has been added to the flat photographed face in the candidate, so the rejection trigger for an unsupported ridge is not met.",
+      "The chevron (triangle) outline in the supplier row is a generic profile-source marker, not evidence of a peaked moulding; the candidate correctly does not introduce a peak.",
+      "The candidate's stated rebate drop of 9.5 mm is not clearly corroborated by the low-resolution supplier section, where the rebate appears proportionally smaller relative to the 17 mm height, and the catalogue dimension reads 5 mm, so the rebate magnitude is uncertain."
+    ],
+    "concerns": [
+      "Rebate drop value (9.5 mm) conflicts with the catalogue guide (5 mm) and is not independently measurable from the supplied photographs.",
+      "Supplier photographs are low resolution with strong lighting/perspective, limiting precise verification of edge bevels and the exact rebate geometry.",
+      "Texture/colour of the candidate (uniform tan) cannot be fully matched to the dark textured face shown in the product-section photo; finish and grain scale remain unverified."
+    ]
+  }
+}

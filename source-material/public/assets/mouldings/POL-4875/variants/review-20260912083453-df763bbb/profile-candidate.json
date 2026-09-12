@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4875",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "ornate",
+  "widthMm": 97.0,
+  "depthMm": 49.0,
+  "rebateMm": 16.0,
+  "points": [
+    [
+      0.0,
+      15.0
+    ],
+    [
+      2.0,
+      15.0
+    ],
+    [
+      3.5,
+      21.0
+    ],
+    [
+      5.0,
+      26.0
+    ],
+    [
+      7.0,
+      27.0
+    ],
+    [
+      9.0,
+      22.0
+    ],
+    [
+      12.0,
+      19.0
+    ],
+    [
+      16.0,
+      19.0
+    ],
+    [
+      20.0,
+      25.0
+    ],
+    [
+      24.0,
+      32.0
+    ],
+    [
+      29.0,
+      38.0
+    ],
+    [
+      34.0,
+      43.0
+    ],
+    [
+      40.0,
+      46.0
+    ],
+    [
+      46.0,
+      48.0
+    ],
+    [
+      51.0,
+      48.0
+    ],
+    [
+      56.0,
+      45.0
+    ],
+    [
+      61.0,
+      40.0
+    ],
+    [
+      66.0,
+      34.0
+    ],
+    [
+      71.0,
+      29.0
+    ],
+    [
+      75.0,
+      28.0
+    ],
+    [
+      79.0,
+      32.0
+    ],
+    [
+      83.0,
+      35.0
+    ],
+    [
+      86.0,
+      31.0
+    ],
+    [
+      89.0,
+      25.0
+    ],
+    [
+      92.0,
+      22.0
+    ],
+    [
+      95.0,
+      17.0
+    ],
+    [
+      97.0,
+      16.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "ornate",
+    "faceCrownMm": 3,
+    "innerEdgeRadiusMm": 1,
+    "outerEdgeRadiusMm": 1,
+    "flatFaceConfirmed": false,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Ornate raised floral/leaf and scroll relief across the field",
+      "Stippled / dotted recessed ground between relief elements",
+      "Rebate / sight-edge step (stated 16 mm) visible at the assembled chevron corners"
+    ],
+    "rejectedTraceFeatures": [
+      "Vertical fluting on the left edge - present only in the catalogue image, not independently confirmed in a chevron/oblique photograph",
+      "Beaded / rope outer edge on the right - present only in the catalogue image, not independently confirmed",
+      "Grey speckled mass along the bottom of the lower panel - interpreted as segmentation edge / background / shadow, not a real ridge"
+    ],
+    "observations": [
+      "Authoritative SKU screenshot is too low-resolution to read precise cross-section geometry; relied on the assembled family chevrons for shape family.",
+      "Family chevrons (Verona) confirm an ornate, high-relief floral profile with a stepped rebate, consistent with the catalogue relief.",
+      "Catalogue lower panel shows the same ornate leaf/scroll motif and stippled ground, supporting the ornate classification.",
+      "Lower panel contains a white cutout square (bottom-right) and a grey speckled band (bottom) that are background/segmentation artefacts, not profile geometry.",
+      "Supplier dimensions 97 x 49 mm with 16 mm rebate are preserved as the dimensional envelope; profile label not supplied."
+    ],
+    "concerns": [
+      "Authoritative exact-SKU photograph is unreadable at provided resolution, so fine edge radii (inner/outer) are estimates, not measured.",
+      "Fluting and beaded edge appear only in the unverified catalogue image and lack independent chevron/oblique confirmation; treat as unconfirmed until a physical section photo is supplied.",
+      "The grey lower band in the catalogue image risks being misread as a flat face or ridge; it should be excluded from the rebuilt cross-section.",
+      "No supplier profile label is provided, so the rebuilt geometry is a hypothesis pending a clear physical cross-section photograph."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Broad central rounded dome (main face bulge) not visible as a convex profile in the supplier photo, which shows a relatively flat stippled field with a carved leaf relief",
+      "Secondary right-hand peak/hump in the candidate profile with no corresponding discrete ridge in the photographed section",
+      "Left-edge perimeter step/ridge not confirmable as a genuine feature versus a flat sight edge"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The supplier close-up shows a fluted/ribbed member, a stippled (pebble-dash) central field with a carved scroll/leaf, and a rope/bead edge; the candidate cross-section instead renders a single smooth broad dome plus a small hump, which does not reproduce the flutes or the bead string as discrete ridges.",
+      "The central face in the photograph reads as a near-planar stippled relief, not the large convex dome drawn in the candidate, so the dome is an unsupported bulge.",
+      "The 16 mm rebate drop is dimensioned but the surrounding profile geometry cannot be independently confirmed from the oblique corner view provided.",
+      "Per instruction, a flat photographed face must not gain a perimeter ridge; the candidate's left-edge step is not verifiable and is treated as suspect."
+    ],
+    "concerns": [
+      "Only an oblique/chevron corner photograph is available; no clean straight-on cross-section or rotation set is present to confirm each ridge, bead, bevel and hollow.",
+      "White square artifact and strong directional lighting in the supplier photo reduce confidence in reading the true profile.",
+      "Candidate profile appears to be a generic smoothed trace rather than a feature-matched reconstruction of the visible fluting and beading."
+    ]
+  }
+}

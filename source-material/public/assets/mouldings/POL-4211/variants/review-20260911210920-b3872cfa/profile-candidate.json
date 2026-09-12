@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4211",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 54.0,
+  "depthMm": 20.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      19.825
+    ],
+    [
+      0.35,
+      20.0
+    ],
+    [
+      27.05,
+      20.0
+    ],
+    [
+      53.75,
+      20.0
+    ],
+    [
+      54.0,
+      19.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face with no ridge, bead, bevel, hollow or step visible in rotation photographs",
+      "Directional wood grain (light oak/ash) running along the panel length",
+      "Flat profile label consistent with the planar face seen in exact SKU rotations"
+    ],
+    "rejectedTraceFeatures": [
+      "White rectangular block at lower-right of catalogue panel (segmentation edge / background, not a profile step)",
+      "Greenish carpet/floor area at base of catalogue panel (background, not a rebate or bead)",
+      "Fine directional grain lines interpreted as tiling or ridges (intentional grain, not repeat geometry)"
+    ],
+    "observations": [
+      "Supplier dimensions 54 x 20 mm with 14 mm rebate; profile label 'flat'",
+      "Top rotation strip shows a uniform light oak/ash tone with horizontal grain and no cross-section relief",
+      "Lower catalogue panel shows the same flat face with vertical grain; surrounding carpet and white block are context/segmentation artifacts",
+      "No chevron or oblique section photograph reveals a crowned, concave or stepped face; the face reads as one planar surface"
+    ],
+    "concerns": [
+      "Rebate (14 mm) is taken from the supplier label; no physical section photograph independently confirms the rebate edge geometry",
+      "Grain orientation differs between the top strip (horizontal) and lower panel (vertical) due to rotation, which could be misread as a tiled repeat",
+      "Catalogue panel contains background (carpet) and a white segmentation block that must not be promoted to profile features"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rebate drop 14 mm step on inner sight edge (left edge of candidate cross-section)"
+    ],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "All supplier photographs (top rotation strip and lower-left catalogue face view) show a single planar wood face with fine directional grain and no visible edge step, bead, ridge or hollow.",
+      "No chevron, oblique or physical-section photograph is present that independently confirms the 14 mm rebate drop shown on the left edge of the candidate cross-section.",
+      "The candidate therefore adds a perimeter step/rebate to an otherwise flat photographed face, which is supported only by the advisory extracted trace and not by visible evidence.",
+      "Texture and colour (light oak/ash, horizontal brushing, matte finish) are consistent between candidate face and supplier photos, but the profile geometry is not verified."
+    ],
+    "concerns": [
+      "Rebate drop of 14 mm may be a trace-only feature; if the real product is a flat board, the candidate over-models the section.",
+      "Lack of an oblique/edge-on supplier photo prevents confirmation of inner sight edge vs outer edge treatment.",
+      "Vertical seams between top photo tiles are tiling artifacts and should not be read as profile features."
+    ]
+  }
+}

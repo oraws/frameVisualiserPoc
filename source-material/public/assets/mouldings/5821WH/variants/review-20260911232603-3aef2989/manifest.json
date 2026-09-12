@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "sku": "5821WH",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T23:33:42.263384+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "5821WH",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 58.0,
+    "depthMm": 21.0,
+    "rebateMm": 11.8,
+    "points": [
+      [
+        0.0,
+        19.409
+      ],
+      [
+        50.632,
+        19.409
+      ],
+      [
+        51.053,
+        19.939
+      ],
+      [
+        51.158,
+        21.0
+      ],
+      [
+        58.0,
+        21.0
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "Single planar top face (flat, no crown or bead)",
+        "Rebate / step on the outer edge, confirmed in product-section, product-detail-1, product-detail-2 and macro",
+        "Square inner sight edge with no visible bevel or hollow"
+      ],
+      "rejectedTraceFeatures": [
+        "Small top-left micro-step shown in the profile-source guide: not independently visible in any physical section, chevron or rotation photo, treated as a trace/segmentation artifact"
+      ],
+      "observations": [
+        "Supplier dimensions preserved: 58 x 21 mm with an 11.8 mm rebate; supplier profile label reads 'flat'.",
+        "The dominant face is one continuous planar surface across all exact-SKU photos; no convex, concave or ornate relief is present.",
+        "The only genuine non-planar feature is the rebate step on the outer edge, visible as a notch in the white and grey boards (macro, detail-1, detail-2) and in the section photo.",
+        "Finish is a light cream/oak directional grain with low gloss; grain runs linearly and shows natural variation without tiling or seams.",
+        "Chevron photo confirms two flat faces meeting at a joint, consistent with a flat-faced board rather than a moulded profile."
+      ],
+      "concerns": [
+        "Supplier label 'flat' conflicts with the confirmed rebate step; classified as 'stepped' because the rebate is a real, dimensioned (11.8 mm) and photo-confirmed feature, while the main face remains flat.",
+        "Edge radii appear sharp/square in photos; values set to the 0.2 mm floor as no measurable rounding is visible.",
+        "The top-left step in the extracted guide is unconfirmed and should not be rendered as geometry."
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.78,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "agree",
+      "reasons": [
+        "The candidate cross-section shows a single planar face with only one edge treatment: a rebate/step at the outer edge (top-right), which is independently visible in the supplier macro, product-detail-1 and product-detail-2 photographs as a small step/notch on the board edge.",
+        "The chevron and product-section photographs confirm a flat, single-face board with no beads, ridges, hollows or additional moulding, matching the candidate's flat face.",
+        "No perimeter ridge or bead has been added to the flat photographed face; the only geometry beyond the flat face is the rebate step that is genuinely present in the photos.",
+        "The profile-source outline (advisory) also depicts a flat face with a step on the right edge, consistent with the candidate's rebate."
+      ],
+      "concerns": [
+        "The candidate's stated rebate drop of 11.8 mm does not clearly reconcile with the profile-source dimension callouts (21 / 15); exact millimetre depth cannot be confirmed from the photographs, so the numeric value is taken from the advisory trace.",
+        "Texture/colour (pale directional grain, gloss) cannot be fully verified from a solid-filled cross-section; only the flat-face finish is inferable from the photos.",
+        "Supplier images are subject to lighting and perspective, so the rebate depth and edge sharpness are approximate."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": true,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260911232603-3aef2989",
+  "referenceImages": [
+    "public/assets/mouldings/5821WH/product-section.jpg",
+    "public/assets/mouldings/5821WH/profile-source.png",
+    "public/assets/mouldings/5821WH/chevron.jpg",
+    "public/assets/mouldings/5821WH/macro.jpg",
+    "public/assets/mouldings/5821WH/product-detail-1.jpg",
+    "public/assets/mouldings/5821WH/product-detail-2.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.5,
+    "contrast": 0.95,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 195.0,
+    "roughness_detail": 0.45,
+    "bump_detail": 1.4
+  },
+  "bestMetrics": {
+    "colourDeltaE": 2.2681,
+    "colourSpreadError": 0.0575,
+    "seamError": 0.0065,
+    "maximumAutocorrelation": 0.2506,
+    "detailError": 0.0799,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.5,
+        "contrast": 0.95,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 195.0,
+        "roughness_detail": 0.45,
+        "bump_detail": 1.4
+      },
+      "metrics": {
+        "colourDeltaE": 2.2681,
+        "colourSpreadError": 0.0575,
+        "seamError": 0.0065,
+        "maximumAutocorrelation": 0.2506,
+        "detailError": 0.0799,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 99.0,
+      "failedGates": [],
+      "agentReview": {
+        "score": 74,
+        "colourMatch": 76,
+        "textureMatch": 80,
+        "repetition": 84,
+        "seam": 92,
+        "finishMatch": 74,
+        "blockers": [
+          "Candidate face reads slightly cooler/greyer than the warm cream supplier face (colourDeltaE 2.27); warm the base tone before final sign-off.",
+          "Profile geometry is not represented in the flat candidate; confirm the single planar face plus the genuinely visible rebate/step (product-detail-2) is the only edge treatment and that no trace-only bevel or hollow is added."
+        ],
+        "observations": [
+          "Supplier product-detail-2 and the profile-source diagram both show a real step/rebate on one edge; the chevron crop confirms a clean mitered sight edge, so the cross-section is a flat face with one rebate, not a multi-bead moulding.",
+          "The macro and detail crops show a pale painted/cream face over a yellow core; the candidate's cream tone is close but a touch desaturated.",
+          "Directional fine grain and sparse dark specks (knot/brush marks) in the supplier face are reproduced in the candidate as faint horizontal streaks and small dark dots, matching scale and orientation.",
+          "maximumAutocorrelation 0.2506 and seamError 0.0086 indicate no obvious tiling or visible seam; the grain variation looks natural rather than a regular repeat.",
+          "Fixed-light preview shows a low-gloss, low-relief matte finish consistent with the supplier's flat painted surface; no clipped pixels."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 3.169,
+        "colourSpreadError": 0.227,
+        "seamError": 0.0073,
+        "maximumAutocorrelation": 0.2543,
+        "detailError": 0.2912,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 90.2,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "wood-grain laminate / thin veneer over particleboard core",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "fine linear directional grain on the face, low contrast and evenly spaced",
+        "broad soft diffuse highlight with no tight specular reflection (matte sheen)",
+        "pale cream / off-white face colour with subtle warm undertone",
+        "single flat planar face with one visible step/rebate at the lower edge exposing the yellowish particleboard core",
+        "soft edge treatment only; no raised beads, ridges or hollows beyond the one step",
+        "natural grain variation without periodic tiling"
+      ],
+      "risks": [
+        "PROFILE: the extracted trace must not introduce extra beads, ridges or hollows; supplier detail-1/detail-2 show only a flat face plus a single step/rebate (21 to 15), so any additional moulding geometry is unsupported and must be rejected",
+        "PROFILE: do not let the catalogue trace override the visible single-step section; confirm the step height and rebate independently from the oblique photographs",
+        "TEXTURE: risk of tiling/repeating the fine grain at regular intervals; grain is intentional directional brushing, not a tiled pattern",
+        "TEXTURE: over-sharpening or over-contrast that turns the matte face into a satin/gloss look",
+        "COLOUR: drift toward pure white or toward the yellow core colour; face is a pale warm off-white distinct from the core",
+        "SHEEN: misclassifying the bright catch on the curved/stepped edge as gloss; the face itself is diffuse"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.5,
+        "contrast": 0.95,
+        "roughness_mid": 195,
+        "roughness_detail": 0.45,
+        "bump_detail": 1.4
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Face colour of the candidate (light cream/off-white) is broadly consistent with the supplier product-section and product-detail photographs.",
+        "Faint horizontal directional grain and sparse dark figured specks are present in the candidate, matching the general character of the supplier face texture.",
+        "The supplier profile-source and product-detail images show a stepped cross-section with a rebate (21 x 15 mm) and yellowish end grain; the candidate is a flat fixed-light preview and does not independently confirm that stepped geometry, so the profile cannot be approved from this evidence."
+      ],
+      "concerns": [
+        "A faint horizontal seam line is visible across the middle of the candidate preview, which the brief requires to be absent.",
+        "The dark specks and short grain dashes in the candidate appear to recur at regular vertical intervals, indicating a likely tiled repeat rather than the irregular, sparse distribution seen in the supplier product-section.",
+        "Texture scale and relief in the candidate look slightly more uniform/brushed than the natural variation in the supplier photographs.",
+        "Profile geometry (face, sight edge, rebate, step) is not verifiable from a flat material preview; the supplier cross-section and rotation photos must be matched against an actual 3D profile render before approval."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "91d9c59e5ef70a06dac4cebe19f7e64b3861e4fbd64a164ff351f73d04fc4135",
+      "roughness.jpg": "c3039a617e79a25706af55ae968165e3b943be8e145b5cfa77ccb1c31e676ef9",
+      "bump.jpg": "ab90ec4971f2e6637f6f40b99d2cc32c510fb689017419049bc0c78375a3b2f3"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-2190",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 70.0,
+  "depthMm": 30.0,
+  "rebateMm": 15.0,
+  "points": [
+    [
+      0.0,
+      15.0
+    ],
+    [
+      0.168,
+      29.72
+    ],
+    [
+      0.4,
+      30.0
+    ],
+    [
+      35.0,
+      30.0
+    ],
+    [
+      69.6,
+      30.0
+    ],
+    [
+      70.0,
+      29.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "conflicts",
+    "verifiedFeatures": [
+      "Single planar brushed face across all seven exact-SKU rotation photographs",
+      "Fine horizontal directional brushing/grain (intentional finish, not a tiled repeat)",
+      "Narrow bright edge highlight at the section boundary indicating a small edge break/bevel"
+    ],
+    "rejectedTraceFeatures": [
+      "Irregular wavy grey mass at the base of the extracted profile guide (segmentation/shadow artifact, not a real ridge or scoop)",
+      "Vertical flutes/ridges visible in the catalogue background image (not present in any exact-SKU rotation photo)",
+      "Concave 'scoop' hollow implied by the supplier profile label (no hollow or crown visible in the physical rotation sections)"
+    ],
+    "observations": [
+      "All seven exact-SKU rotation images show a consistent brushed silver/grey metallic finish with a uniform horizontal grain and a flat reflective face.",
+      "The only geometry visible in the physical sections is the flat face plus a thin edge highlight; no bead, hollow, step or crown is independently confirmed.",
+      "The lower catalogue/extracted profile guide contains a coarse wavy trace and a fluted background that do not match the smooth flat brushed face seen in the authoritative rotation photographs.",
+      "Family-context images depict ornate assembled picture frames and are used only as shape-family reference; they do not override the flat brushed finish of this exact SKU.",
+      "Supplied dimensional envelope preserved: 70 x 30 mm with 15 mm rebate."
+    ],
+    "concerns": [
+      "Supplier profile label 'scoop' is not supported by any visible hollow or crown in the exact-SKU rotation photographs; treat as unverified.",
+      "The extracted red/grey trace and catalogue fluting appear to be segmentation and background artifacts and should not be modelled as geometry.",
+      "Edge radius values are estimated from the thin highlight line only; a true bevel could not be measured from the available views."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.5,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "15 mm rebate drop at inner sight edge not independently resolvable in the supplier rotation photographs",
+      "fluted/ribbed vertical profile and wavy extracted outline shown in the catalogue guide are absent from the candidate cross-section"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Top supplier photographs show a single flat brushed-metal face with horizontal directional grain and a faint top edge highlight, which is broadly consistent with a planar face plus edge treatment.",
+      "The candidate cross-section is a flat face with a single 15 mm rebate step at the inner sight edge; this rebate is not clearly distinguishable from a plain edge in the oblique supplier shots.",
+      "The lower-left catalogue/extracted guide depicts a vertically fluted surface with a wavy extracted outline, which does not match the flat-with-rebate candidate, creating a trace-vs-candidate conflict.",
+      "Because the catalogue guide and the candidate disagree on the presence of ridges/flutes, and the rebate cannot be confirmed from the photos alone, the candidate cannot be fully approved on visible evidence."
+    ],
+    "concerns": [
+      "Supplier images are affected by lighting and perspective, making the rebate depth and edge treatment hard to verify.",
+      "The catalogue/extracted outline (fluted, wavy) conflicts with the candidate's flat geometry; it is treated as advisory but the discrepancy is unresolved.",
+      "No chevron or oblique photograph clearly isolates the inner sight edge rebate to confirm the stated 15 mm dimension."
+    ]
+  }
+}

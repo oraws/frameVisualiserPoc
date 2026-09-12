@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 2,
+  "sku": "HS9",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-11T22:42:59.169113+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "HS9",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 31.0,
+    "depthMm": 27.0,
+    "rebateMm": 15.1,
+    "points": [
+      [
+        0.0,
+        11.9
+      ],
+      [
+        0.147,
+        26.825
+      ],
+      [
+        0.35,
+        27.0
+      ],
+      [
+        15.55,
+        27.0
+      ],
+      [
+        30.75,
+        27.0
+      ],
+      [
+        31.0,
+        26.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "single planar face (flat) confirmed in product-section and base-texture",
+        "rebate / sight edge visible as the lower diagonal band in product-section, consistent with stated 15.1 mm rebate",
+        "square inner and outer edges (no bead, hollow or crown)"
+      ],
+      "rejectedTraceFeatures": [
+        "slanted right edge in profile-source interpreted as a bevel/ridge \u2014 rejected, it is the rebate cut, not a profile feature",
+        "diagonal highlight/shadow band in product-section \u2014 rejected as geometry, it is lighting on a flat face"
+      ],
+      "observations": [
+        "supplier profile label reads 'flat' and dimensions 31 x 27 mm with 15.1 mm rebate",
+        "base-texture shows fine horizontal directional grain / brushing, natural variation, no tiled repeat",
+        "product-section shows one continuous planar face with a rebate at the bottom edge",
+        "colour is a light natural oak / pale tan, low gloss, no visible surface relief beyond grain"
+      ],
+      "concerns": [
+        "profile-source slant must not be promoted to a bevel in the rendered candidate; keep face flat with rebate only",
+        "verify rebate depth 15.1 mm against the section before finalising edge geometry"
+      ]
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Rebate drop of 15.1 mm on the left (inner sight) edge",
+        "Two small step/notch protrusions on the left edge (marked SUP)",
+        "Perimeter ridge/step added to an otherwise flat photographed face"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "The supplier product-section and base-texture images show a single flat pale-wood planar face with no rebate, bead, hollow or step.",
+        "The profile-source image shows only one clean angled bevel/chamfer on a single edge, not a multi-step rebate drop.",
+        "The candidate cross-section introduces a 15.1 mm rebate drop and two small left-edge steps that have no counterpart in any supplier photograph.",
+        "Per the review rule, a flat photographed face must not gain a perimeter ridge; the candidate's left-edge geometry is supported only by the extracted trace, not by visible evidence.",
+        "The dimension '27' and the flat-face evidence are consistent with a simple bevelled board, not the stepped rebate shown in the candidate."
+      ],
+      "concerns": [
+        "Candidate left-edge steps (SUP) appear to be artefacts of the catalogue/extracted outline rather than real moulding features.",
+        "The 15.1 mm rebate drop is not corroborated by the oblique/chevron or section photographs.",
+        "Risk of over-modelling: a genuinely flat face with a single bevel has been rendered as a profiled rebate section.",
+        "Texture/colour of the candidate face is broadly consistent with the pale wood base-texture, but the geometry mismatch dominates the review."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v3",
+  "outputVariant": "review-20260911223722-a6afbfc1",
+  "referenceImages": [
+    "public/assets/mouldings/HS9/product-section.jpg",
+    "public/assets/mouldings/HS9/profile-source.png",
+    "public/assets/mouldings/HS9/base-texture.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.62,
+    "contrast": 1.02,
+    "patch_width": 512,
+    "overlap": 168,
+    "roughness_mid": 185.0,
+    "roughness_detail": 0.45,
+    "bump_detail": 1.6
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.7787,
+    "colourSpreadError": 0.1113,
+    "seamError": 0.0283,
+    "maximumAutocorrelation": 0.5165,
+    "detailError": 0.2778,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 200.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.2
+      },
+      "metrics": {
+        "colourDeltaE": 3.797,
+        "colourSpreadError": 0.0516,
+        "seamError": 0.0334,
+        "maximumAutocorrelation": 0.4228,
+        "detailError": 0.1903,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 84.8,
+      "failedGates": [],
+      "agentReview": {
+        "score": 46,
+        "colourMatch": 68,
+        "textureMatch": 38,
+        "repetition": 24,
+        "seam": 78,
+        "finishMatch": 52,
+        "blockers": [
+          "Atlas and fixed-light preview show a regular grid of small discrete dashes in horizontal rows at fixed vertical intervals; this is a tiled repeat, not the fine continuous directional grain seen in the supplier base-texture.",
+          "The fixed-light preview imposes a strong top-to-bottom vertical gradient (light top, dark bottom) that does not correspond to any neutral supplier finish and reads as a lighting artefact rather than material.",
+          "The profile-source trace shows a slanted bevel/step (labelled 27) that is not independently confirmed by the product-section or base-texture photographs, which show a flat planar face with a square corner edge; the candidate correctly omits the unsupported bevel but also lacks any visible edge/rebate treatment, leaving the section ambiguous."
+        ],
+        "observations": [
+          "Supplier base-texture is a light cream wood with fine, near-horizontal grain and subtle tonal variation; no discrete dash marks are present.",
+          "Supplier product-section shows a 90-degree corner of a flat panel (diagonal grain on one face, horizontal on the other) over a grey floor, consistent with a single planar face and square edge.",
+          "The unlit atlas repeats a row of small darker dashes at a constant vertical pitch across the whole tile, indicating procedural tiling rather than natural grain.",
+          "The fixed-light preview adds a vertical luminance gradient and slightly desaturates the lower half, diverging from the even neutral tone of the supplier crops.",
+          "colourDeltaE 3.797 and colourSpreadError 0.0516 indicate the base hue is close to supplier, so colour is the strongest match axis.",
+          "maximumAutocorrelation 0.4228 corroborates a measurable periodic repeat in the texture."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.62,
+          "contrast": 1.02,
+          "patch_width": 512,
+          "overlap": 168,
+          "roughness_mid": 185,
+          "roughness_detail": 0.45,
+          "bump_detail": 1.6
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.62,
+        "contrast": 1.02,
+        "patch_width": 512,
+        "overlap": 168,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.45,
+        "bump_detail": 1.6
+      },
+      "metrics": {
+        "colourDeltaE": 3.7787,
+        "colourSpreadError": 0.1113,
+        "seamError": 0.0283,
+        "maximumAutocorrelation": 0.5165,
+        "detailError": 0.2778,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 81.0,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "natural-wood-grain",
+      "directional": true,
+      "gloss": "matte",
+      "preserve": [
+        "pale tan / light honey wood colour",
+        "fine horizontal directional grain in base texture",
+        "diagonal grain visible on the mitered section corner",
+        "soft diffuse matte sheen with no sharp highlights",
+        "single planar face with one genuinely visible slanted (bevelled) edge only"
+      ],
+      "risks": [
+        "profile over-build: adding beads, hollows, rebates or ridges that are not visible in the supplier section/rotation photos",
+        "treating the slanted edge as a complex moulding when it is a single flat bevel",
+        "grain tiling or visible seams in the base texture",
+        "excessive gloss or specular highlights not present in the matte supplier finish",
+        "over-saturation or over-contrast of the pale wood colour",
+        "excessive bump/emboss relief on a face that is essentially flat"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.5,
+        "contrast": 1.0,
+        "roughness_mid": 200,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.82,
+      "reasons": [
+        "Candidate texture displays a regular grid of small chevron/triangle motifs arranged in evenly spaced horizontal rows, which is a tiled repeat rather than the natural directional grain seen in the supplier base-texture and product-section images.",
+        "Supplier evidence (top-left product-section and top-right base-texture) shows continuous, irregular wood grain with diagonal and horizontal brushing, not the periodic triangular pattern present in the candidate preview.",
+        "Texture scale and surface irregularity in the candidate do not match the exact SKU supplier photographs; the repeat interval is too regular to be natural variation.",
+        "The profile-source trace shows a slanted bevel/edge, but the candidate is a flat fixed-light preview that does not independently confirm that bevel, rebate or sight-edge geometry, so the profile cannot be approved from visible evidence."
+      ],
+      "concerns": [
+        "Obvious periodic repeat (rows of identical triangular marks) violates the no-visible-repeat requirement.",
+        "Candidate pattern is absent from the authoritative supplier base-texture, suggesting an incorrect or synthetic texture map.",
+        "Profile geometry (slanted edge, rebate, face plan) is not verifiable in the flat candidate render and may rely on an unverified trace.",
+        "Fixed-light preview colour is pale yellowish and only approximately matches supplier; lighting/perspective differences prevent a confident colour match."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "007fa2d5c88e9e730fac2f976eb9864142c750466984488a2a267818f1b3b111",
+      "roughness.jpg": "7b892013419b4efb5691d75bd82692e0e76be10601719b00318958522f8e1e58",
+      "bump.jpg": "a602ce656df7b74e73afba5fa80934a1a787cba7b63afb6b5ac7882fcb2fafd1"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

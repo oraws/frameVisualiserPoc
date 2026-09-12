@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "sku": "5819WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 58.0,
+  "depthMm": 19.0,
+  "rebateMm": 10.6,
+  "points": [
+    [
+      0.0,
+      12.557
+    ],
+    [
+      7.411,
+      19.0
+    ],
+    [
+      58.0,
+      19.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar top face (flat, no crown or bead)",
+      "Angled/chamfered corner at the outer top edge (supplier label 'angled')",
+      "Rebate / step cut into the bottom edge (~10.6-11 mm), visible as a notch in profile-source and as a step in product-detail-1/2"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead, hollow, or ornate ridge is present; none are supported by any physical photograph"
+    ],
+    "observations": [
+      "profile-source 2D drawing shows a flat top, a chamfered top-right corner, and a bottom-right rebate; dimensions 19 (height) and 11 (rebate) annotated",
+      "product-detail-1 and product-detail-2 oblique views confirm a flat white top face with a tan/wood side edge and a visible bottom step (rebate)",
+      "chevron image shows two boards meeting at 90 degrees, consistent with a flat-faced board used in a corner",
+      "product-section shows a flat board edge against a white textured background",
+      "Finish is a light/white painted or primed surface with a natural tan wood edge; no directional brushing or tiling repeat evident",
+      "Lower panel supplies only text (58 x 19 mm, rebate 10.6 mm, label 'angled'); no rendered red trace to conflict with photographs"
+    ],
+    "concerns": [
+      "Minor dimensional discrepancy: drawing annotates rebate 11 mm while text states 10.6 mm; treat 10.6 mm as authoritative per supplier text",
+      "No rendered candidate trace is present in the lower panel to compare, so agreement is inferred from the 2D profile-source drawing only",
+      "Edge radii are not visibly rounded in photographs; values set to minimum (0.2 mm) to represent near-sharp/chamfered edges rather than true radii"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The candidate's main body is a single planar face, which matches the chevron and both oblique detail photographs showing a flat board with no bead, hollow, or perimeter ridge.",
+      "The rebate/step at one edge in the candidate is independently visible as a thin lip/step in product-detail-1 and product-detail-2, so the rebate is photo-supported rather than trace-only.",
+      "The chamfered corner in the candidate is consistent with the authoritative profile-source drawing (chamfered corner with 19 mm height and 11 mm rebate), and the candidate's rebate drop of 10.6 mm is within tolerance of the stated 11 mm.",
+      "No feature in the candidate (ridge, bead, hollow, step) is added to a flat photographed face; the flat face remains one planar surface with only edge treatment.",
+      "Texture/colour of the candidate is a uniform tan that is compatible with the tan strip in product-section under neutral lighting, with no obvious tiling or seams."
+    ],
+    "concerns": [
+      "The 45-degree chamfer is clearly shown only in the profile-source drawing; it is not unambiguously visible in the chevron or oblique photographs, so it relies on the authoritative source rather than a direct photo view.",
+      "The speckled/lighter surface seen beside the tan strip in product-section is not represented in the candidate, which is a single uniform tone; this may be a separate substrate rather than the moulding face, but it is worth confirming.",
+      "Supplier oblique shots are affected by lighting and perspective, making the exact rebate depth (10.6 vs 11 mm) and chamfer angle approximate."
+    ]
+  }
+}

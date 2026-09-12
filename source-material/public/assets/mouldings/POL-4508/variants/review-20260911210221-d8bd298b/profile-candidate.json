@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4508",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 30.0,
+  "rebateMm": 13.0,
+  "points": [
+    [
+      0.0,
+      17.0
+    ],
+    [
+      0.168,
+      29.72
+    ],
+    [
+      0.4,
+      30.0
+    ],
+    [
+      15.0,
+      30.0
+    ],
+    [
+      29.6,
+      30.0
+    ],
+    [
+      30.0,
+      29.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face (flat) confirmed across rotation photographs",
+      "Fine directional grain / brushing running along the face",
+      "Rebate of ~13 mm visible in oblique rotation and catalogue guide",
+      "Inner sight edge present as a near-vertical return"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead or crown (face is planar, highlight band is lighting only)",
+      "No concave hollow or cove",
+      "No ornate/stepped profile beyond the single rebate",
+      "Red trace fluctuation in oblique view not treated as a ridge"
+    ],
+    "observations": [
+      "Top rotation strip shows a uniform charcoal/dark-grey face with consistent fine vertical grain; the bright band at the top of several panels is a specular highlight on a flat face, not a bead.",
+      "Oblique (middle-right) view shows a flat black face with a single rebate step, matching the 30x30 mm / 13 mm rebate envelope.",
+      "Lower catalogue guide shows a flat vertical face, a light inner sight edge and a speckled rebate pocket; the speckled region reads as substrate/background rather than a moulded relief.",
+      "Family reference chevrons (multi-colour) and the HARLEY 14 label are context only and do not override the exact-SKU dark finish or flat geometry."
+    ],
+    "concerns": [
+      "The light/white inner edge in the catalogue guide may be background or a different family member; exact-SKU photographs show a dark face, so edge colour is taken from the exact SKU, not the guide.",
+      "The speckled grey area in the lower guide could be segmentation/background rather than a real rebate face; the rebate is accepted only because it is independently visible in the oblique rotation.",
+      "Lighting and perspective in the rotation strip create apparent tonal bands; these were not interpreted as profile relief."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate_drop_13mm",
+      "top_perimeter_edge_line"
+    ],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The top-row supplier rotation photographs show a flat charcoal brushed face with fine directional grain and no clearly resolvable cross-section step, rebate or bead.",
+      "The candidate cross-section's 13 mm rebate drop and the thin top edge line are traceable to the lower-left catalogue/extracted guide but are not independently confirmed in any physical cross-section, chevron or oblique photograph.",
+      "Per the review rule, a flat photographed face must not gain a perimeter ridge or rebate supported only by the extracted trace; here the rebate and top edge rest on the advisory guide rather than visible physical evidence."
+    ],
+    "concerns": [
+      "Rebate drop of 13 mm appears only in the catalogue/extracted outline and the candidate, not in the supplier rotation photos.",
+      "The candidate's top edge line may represent a perimeter ridge that is not visible on the flat photographed face.",
+      "Directional grain in the top photos is intentional fine brushing and must not be mistaken for a tiled repeat, but it also provides no profile-depth evidence to confirm the rebate."
+    ]
+  }
+}

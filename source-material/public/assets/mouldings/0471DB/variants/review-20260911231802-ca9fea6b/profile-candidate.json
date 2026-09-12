@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sku": "0471DB",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      11.0
+    ],
+    [
+      0.168,
+      24.72
+    ],
+    [
+      0.4,
+      25.0
+    ],
+    [
+      15.0,
+      25.0
+    ],
+    [
+      29.6,
+      25.0
+    ],
+    [
+      30.0,
+      24.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.8,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "uncertain",
+    "verifiedFeatures": [
+      "Single planar dark-grey wood-grain face (flat, no crown)",
+      "Rebate / L-leg exposing lighter beige core (stated 14 mm)",
+      "Small rounded outer sight edge",
+      "Mitre/chevron joint continuity across the face"
+    ],
+    "rejectedTraceFeatures": [],
+    "observations": [
+      "product-section shows a flat charcoal face with a directional horizontal grain and a lighter core forming the rebate leg",
+      "profile-source silhouette confirms a flat top face, a left rebate notch and a small right-edge round",
+      "chevron image shows two mitered pieces meeting at 90 deg with a continuous flat face",
+      "product-detail-1 and product-detail-2 oblique views confirm a planar face and a rebate with exposed core, no bead or hollow",
+      "macro image is family context only (multiple colours) and does not alter the exact-SKU geometry",
+      "finish is matte/low-gloss with fine directional grain, no tiling or repeat pattern visible"
+    ],
+    "concerns": [
+      "Lower panel contains only text (dimensions 30 x 25 mm, rebate 14 mm; label 'angled') and no visible extracted red trace, so trace agreement is uncertain",
+      "Supplier label 'angled' is interpreted as a flat face with a rebate; no independent evidence of a true angled/convex face was found",
+      "Outer-edge round is small and partly inferred from the silhouette; treat radius as approximate"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "thin dark perimeter line along the top (outer) edge of the flat face",
+      "small step/notch at the lower end of the left inner-sight-edge strip"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier oblique and section photos (product-section, product-detail-1/2) show a single planar charcoal face with directional grain and one rebate step on the inner sight edge; the candidate's flat tan face and left rebate strip are consistent with this.",
+      "The candidate's top edge is rendered as a separate thin dark line above the face, which reads as a perimeter ridge; the photographed outer edge is a flat cut boundary with no raised bead, so this line is not independently confirmed.",
+      "The lower-left notch on the inner-edge strip is not clearly resolvable in the macro/chevron photos and may derive only from the extracted trace.",
+      "Rebate drop dimension (14 mm) is plausible against the visible step but cannot be measured from the supplied images."
+    ],
+    "concerns": [
+      "Possible unsupported perimeter ridge on the flat face (top edge line).",
+      "Inner-edge notch detail may be trace-only.",
+      "Colour/finish in candidate is a flat tan, whereas supplier photos show a dark charcoal brushed face; finish match is uncertain under the candidate's neutral lighting."
+    ]
+  }
+}

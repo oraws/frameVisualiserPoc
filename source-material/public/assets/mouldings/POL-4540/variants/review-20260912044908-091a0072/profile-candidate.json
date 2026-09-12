@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4540",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 25.0,
+  "depthMm": 18.0,
+  "rebateMm": 11.0,
+  "points": [
+    [
+      0.0,
+      7.0
+    ],
+    [
+      0.147,
+      17.79
+    ],
+    [
+      0.35,
+      18.0
+    ],
+    [
+      12.525,
+      18.0
+    ],
+    [
+      24.7,
+      18.0
+    ],
+    [
+      25.0,
+      17.835
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.3,
+    "outerEdgeRadiusMm": 0.3,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face with no crowned or hollowed ridge in the rotation photographs",
+      "Horizontal directional grain / brushing running along the length of the strip",
+      "Rust-orange mottled finish over a cream/white base, consistent across all seven rotation views",
+      "Thin bright sight-edge highlight line at the upper edge (edge treatment, not a bead)",
+      "Rebate step consistent with the stated 11 mm rebate and 'reverse' profile label"
+    ],
+    "rejectedTraceFeatures": [
+      "Green textured region at the base of the lower catalogue image (background / segmentation artifact, not a moulding feature)",
+      "White rectangle at the lower-right of the lower catalogue image (background, not geometry)"
+    ],
+    "observations": [
+      "All seven EXACT SKU rotation photographs show the same flat, brushed, rust-over-cream surface; no repeating macro ridge or bead is present, only fine directional grain.",
+      "The lower catalogue image is a vertical flat strip of the same finish and shows no ridge, bead or hollow, supporting a flat face with edge/rebate treatment only.",
+      "Stated envelope 25 x 18 mm with 11 mm rebate and 'reverse' label is consistent with a flat face plus a single rebate step rather than an ornate profile.",
+      "Lighting and perspective vary slightly between rotation frames but do not introduce any new profile feature."
+    ],
+    "concerns": [
+      "The 11 mm rebate step is taken from the stated dimensions and profile label; it is not unambiguously resolved as a discrete step in the flat rotation photographs, so it should be confirmed against a true cross-section cut.",
+      "The lower catalogue image contains background/segmentation artifacts (green base, white block) that must not be read as ridges or steps.",
+      "The rust-orange mottling is a finish/texture characteristic, not a surface relief; do not model it as geometry."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "inner sight edge rebate step (left-edge notch in candidate)",
+      "rebate drop 11 mm depth"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier photographs show a single flat textured face with fine directional grain/brushing; this flat planar face is consistent with the candidate's main face.",
+      "The candidate's left-edge notch (inner sight edge rebate) and the 11 mm rebate drop are not independently confirmed in any chevron, oblique, or physical cross-section photograph; the horizontal strips only show a faint horizontal edge line that could be a rebate or a seam.",
+      "No perimeter ridge or bead has been added to the flat face, so the candidate does not violate the flat-face rule, but the rebate geometry remains trace-derived rather than photo-verified.",
+      "Texture/colour (weathered cream with rust streaks, vertical brushing in the upright strip) matches the supplier evidence and shows no obvious tiling or repeat."
+    ],
+    "concerns": [
+      "Rebate depth (11 mm) and the exact inner-sight-edge step cannot be measured or confirmed from the provided flat-face photographs.",
+      "The horizontal edge line in the top-row photos is ambiguous between a rebate edge and a photographic seam/lighting line.",
+      "A dedicated oblique or chevron view of the inner sight edge is needed to approve the rebate step before final sign-off."
+    ]
+  }
+}

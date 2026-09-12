@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "3042IV",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 42.0,
+  "rebateMm": 23.5,
+  "points": [
+    [
+      0.0,
+      18.5
+    ],
+    [
+      0.147,
+      41.825
+    ],
+    [
+      0.35,
+      42.0
+    ],
+    [
+      15.05,
+      42.0
+    ],
+    [
+      29.75,
+      42.0
+    ],
+    [
+      30.0,
+      41.862
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar top face (no crown, bead or hollow) confirmed in product-section, chevron and both oblique detail photographs",
+      "Rebate / step on one edge, dimensioned 23.5 mm, visible as a genuine change of plane in product-section and product-detail-1/2",
+      "Square inner sight edge (vertical face) at 37 mm height",
+      "Square outer edge at 42 mm height",
+      "Overall envelope 30 x 42 mm with 23.5 mm rebate"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel or hollow accepted; none are present in the physical photographs and none are required by the supplier 'flat' label"
+    ],
+    "observations": [
+      "Supplier profile label is 'flat' and the physical section shows one flat working face with a rebate step, consistent with a flat-with-rebate profile",
+      "product-section shows the stepped cross-section with height markers 42 (outer) and 37 (inner sight edge)",
+      "product-detail-1 and product-detail-2 oblique views confirm a flat top plane and a single rebate step, with crisp near-square edges",
+      "Finish is a light cream/white painted or laminated face over a pale wood substrate; end grain in product-detail-2 shows natural pale wood with fine directional grain, not a tiled repeat",
+      "profile-source swatch is a uniform tan/peach tone representing the base material colour"
+    ],
+    "concerns": [
+      "Lower panel contains only text dimensions and a 'flat' label; no extracted red trace image is present to compare, so trace agreement is inferred from the label and dimensions",
+      "Edge radii are not directly measurable from the photographs; values set to the minimum (0.2 mm) reflecting the visually sharp, near-square edges",
+      "Lighting and perspective in the oblique detail shots could exaggerate the rebate depth; the 23.5 mm rebate dimension from the supplier text is taken as authoritative for the step width"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.58,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "Inner-sight-edge rebate step (23.5 mm) on the left edge is not clearly resolvable in the oblique/rotation photographs"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's main body is a single planar face, which matches the flat top face seen in both oblique supplier photographs and the flat field of the chevron.",
+      "The thin top edge line in the candidate corresponds to the thin lighter edge visible along the top of the oblique bars and the thin border line in the chevron, so it is not an added perimeter ridge.",
+      "The left-edge rebate/step (labelled 23.5 mm) is a stated dimension and is plausible for a sight-edge profile, but the low-resolution oblique photos do not let me independently confirm its depth or the small mid-left notch.",
+      "No tiled repeat or false brush-line pattern is present; the swatch grain is consistent with a natural directional finish."
+    ],
+    "concerns": [
+      "Supplier photographs are low resolution and the end-grain / rebate detail is not sharp enough to verify the 23.5 mm rebate drop independently.",
+      "The small notch on the left edge of the candidate could be an extracted-trace artefact rather than a visible physical feature; needs a clearer cross-section or rotation photo to confirm.",
+      "Colour/finish in the candidate (uniform tan) is broadly consistent with the profile-source swatch but the wood-grain swatch suggests more variation than the candidate shows."
+    ]
+  }
+}

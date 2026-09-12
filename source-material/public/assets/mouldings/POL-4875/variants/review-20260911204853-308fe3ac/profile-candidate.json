@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4875",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "ornate",
+  "widthMm": 97.0,
+  "depthMm": 49.0,
+  "rebateMm": 16.0,
+  "points": [
+    [
+      0.0,
+      15.0
+    ],
+    [
+      2.0,
+      15.0
+    ],
+    [
+      3.5,
+      21.0
+    ],
+    [
+      5.0,
+      26.0
+    ],
+    [
+      7.0,
+      27.0
+    ],
+    [
+      9.0,
+      22.0
+    ],
+    [
+      12.0,
+      19.0
+    ],
+    [
+      16.0,
+      19.0
+    ],
+    [
+      20.0,
+      25.0
+    ],
+    [
+      24.0,
+      32.0
+    ],
+    [
+      29.0,
+      38.0
+    ],
+    [
+      34.0,
+      43.0
+    ],
+    [
+      40.0,
+      46.0
+    ],
+    [
+      46.0,
+      48.0
+    ],
+    [
+      51.0,
+      48.0
+    ],
+    [
+      56.0,
+      45.0
+    ],
+    [
+      61.0,
+      40.0
+    ],
+    [
+      66.0,
+      34.0
+    ],
+    [
+      71.0,
+      29.0
+    ],
+    [
+      75.0,
+      28.0
+    ],
+    [
+      79.0,
+      32.0
+    ],
+    [
+      83.0,
+      35.0
+    ],
+    [
+      86.0,
+      31.0
+    ],
+    [
+      89.0,
+      25.0
+    ],
+    [
+      92.0,
+      22.0
+    ],
+    [
+      95.0,
+      17.0
+    ],
+    [
+      97.0,
+      16.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "ornate",
+    "faceCrownMm": 3.5,
+    "innerEdgeRadiusMm": 1.0,
+    "outerEdgeRadiusMm": 1.2,
+    "flatFaceConfirmed": false,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Ornate carved leaf/scroll relief on the face",
+      "Stippled / dotted ground between relief elements",
+      "Beaded outer edge",
+      "Reeded / fluted vertical band on the inner side"
+    ],
+    "rejectedTraceFeatures": [
+      "White segmentation box in the lower-right of the guide (background/segmentation artifact, not a ridge)",
+      "Any flat planar face interpretation (face is a carved relief field, not a single plane)"
+    ],
+    "observations": [
+      "Supplier dimensions 97 x 49 mm with a 16 mm rebate; profile label not supplied.",
+      "Assembled family references (chevron corners in black, dark, cream and gold) confirm a shared ornate carved shape family with beaded outer edges.",
+      "Lower panel is a close-up catalogue/extracted guide showing the same carved leaf motif, dotted ground, reeded band and beaded edge.",
+      "Finish/colour varies across the family references, so no single SKU colour can be asserted from the board."
+    ],
+    "concerns": [
+      "Exact SKU supplier photograph is too small to read the full cross-section geometry independently.",
+      "Profile label is missing, so the cross-section must be inferred from the close-up guide and family chevrons.",
+      "The guide is a cropped close-up containing a segmentation artifact; full cross-section (face, inner sight edge, outer edge, rebate) cannot be fully confirmed from a single image.",
+      "Relief depth (faceCrownMm) is an estimate within the 0..6 mm envelope, not a measured value."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Broad central rounded hump dominating the section",
+      "Small left-hand peak/step ahead of the rebate",
+      "Right-hand secondary peak before the outer edge",
+      "Smooth undulating slope between peaks (no fluting or beading)"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The oblique/chevron supplier photos show a flat face carrying surface relief (leaf/scroll carving, stippled ground) plus discrete edge treatments: a fluted/ribbed band and a beaded/rope band. The candidate cross-section instead shows a continuous smooth hump with two small peaks and none of the visible ribs or beads.",
+      "A flat photographed face with surface carving should read as essentially planar in section; the candidate has gained a large perimeter hump and peaks that are not visible as section ridges in any photo.",
+      "The 'REBATE DROP 16 mm' marker is plausible for a picture-frame sight edge, but the surrounding profile geometry does not match the visible inner/outer edge treatment in the family reference photo.",
+      "The catalogue/extracted outline is advisory and the candidate appears to follow an unverified trace rather than the physical section, so the broad hump and peaks are treated as unsupported."
+    ],
+    "concerns": [
+      "Supplier detail/dimensions block is low-resolution and not independently legible, so stated dimensions could not be cross-checked.",
+      "Relief carving on the face is surface texture, not section profile; risk of mis-reading it as a cross-section hump.",
+      "Fluted and beaded edge bands visible in the close-up are absent from the candidate section, indicating missing genuine features.",
+      "Lighting and perspective in the dark close-up may exaggerate edge depth; a neutral fixed-lighting comparison is needed before approval."
+    ]
+  }
+}

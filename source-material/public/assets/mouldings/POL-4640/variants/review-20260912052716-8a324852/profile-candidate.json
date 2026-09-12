@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4640",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 48.0,
+  "depthMm": 18.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      8.0
+    ],
+    [
+      0.168,
+      17.72
+    ],
+    [
+      0.4,
+      18.0
+    ],
+    [
+      24.0,
+      18.0
+    ],
+    [
+      47.6,
+      18.0
+    ],
+    [
+      48.0,
+      17.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face across all seven rotation photographs",
+      "Fine directional grain / brush lines running parallel to the long axis",
+      "Uniform light oak colour tone with natural variation",
+      "Stated rebate of 10 mm within the 48 x 18 mm envelope"
+    ],
+    "rejectedTraceFeatures": [
+      "Small protrusion / step visible in the dark rebate region of the lower catalogue guide (treated as a segmentation edge / false ridge, not confirmed in any physical rotation)",
+      "Vertical highlight line on the right of the lower guide (treated as a lighting highlight, not a bead or ridge)"
+    ],
+    "observations": [
+      "Supplier profile label is explicitly 'flat' and supplier dimensions are 48 x 18 mm with a 10 mm rebate",
+      "All top-row rotation photographs show one continuous flat face with horizontal grain and no crown, bead, hollow or step",
+      "Lower-left panel is a catalogue / extracted profile guide showing a flat vertical-grain face above a dark rebate/background region",
+      "Grain orientation differs between the top row (horizontal) and the lower guide (vertical) due to part orientation, not a surface fault",
+      "No tiled repeat or seam is evident; the directional lines are intentional fine grain, not a macro repeat"
+    ],
+    "concerns": [
+      "The lower guide contains a small bump in the rebate area that has no independent confirmation in the rotation photographs and is therefore rejected as geometry",
+      "Rebate depth (10 mm) is taken from the supplier dimension text and is not independently measurable from the supplied photographs",
+      "Lighting and perspective in the supplier images may exaggerate edge highlights; classification relies on the flat supplier label plus the planar rotation evidence"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.58,
+    "photoVerified": false,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate is a single planar face with a left-side rebate step and a thin top sight-edge line; this is consistent with the flat, finely grained faces shown in the top rotation strips and the lower-left guide, with no bead, hollow, or ridge added.",
+      "The lower-left catalogue/guide photograph shows a flat wood-grain face meeting a darker substrate base with a step, which is compatible with the candidate's rebate drop rather than a moulded profile.",
+      "No distinctive macro ridge or hollow recurs in the photographs, so the candidate correctly omits such features and does not introduce a perimeter ridge on a flat face."
+    ],
+    "concerns": [
+      "The top rotation photographs read as a continuous flat grain face and do not clearly resolve the rebate drop or the top edge treatment, so the 10 mm rebate and sight-edge line are not independently confirmed in a chevron/oblique view.",
+      "The thin brown line along the top of the candidate could be interpreted as a small edge bevel; its presence and depth are not unambiguously visible in the supplier photographs.",
+      "The 10 mm rebate dimension is taken from the guide label and is not directly measurable from the provided images, so it should be verified against a physical section before approval."
+    ]
+  }
+}

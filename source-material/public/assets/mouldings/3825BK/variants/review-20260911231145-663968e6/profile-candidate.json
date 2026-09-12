@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "sku": "3825BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "ornate",
+  "widthMm": 38.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      15.512
+    ],
+    [
+      0.375,
+      16.114
+    ],
+    [
+      0.974,
+      16.491
+    ],
+    [
+      3.448,
+      16.566
+    ],
+    [
+      3.972,
+      17.244
+    ],
+    [
+      4.272,
+      18.449
+    ],
+    [
+      4.947,
+      18.524
+    ],
+    [
+      5.396,
+      18.901
+    ],
+    [
+      6.821,
+      18.75
+    ],
+    [
+      7.045,
+      18.976
+    ],
+    [
+      7.645,
+      19.051
+    ],
+    [
+      8.02,
+      18.599
+    ],
+    [
+      8.769,
+      18.524
+    ],
+    [
+      9.294,
+      18.976
+    ],
+    [
+      9.369,
+      19.352
+    ],
+    [
+      9.968,
+      19.729
+    ],
+    [
+      10.043,
+      20.256
+    ],
+    [
+      10.343,
+      20.482
+    ],
+    [
+      11.243,
+      20.407
+    ],
+    [
+      12.966,
+      18.599
+    ],
+    [
+      13.416,
+      18.449
+    ],
+    [
+      14.091,
+      18.599
+    ],
+    [
+      14.615,
+      19.352
+    ],
+    [
+      15.44,
+      18.825
+    ],
+    [
+      16.264,
+      18.825
+    ],
+    [
+      16.789,
+      19.428
+    ],
+    [
+      16.939,
+      19.428
+    ],
+    [
+      17.014,
+      19.051
+    ],
+    [
+      19.712,
+      19.352
+    ],
+    [
+      20.686,
+      19.88
+    ],
+    [
+      22.036,
+      20.181
+    ],
+    [
+      22.71,
+      20.783
+    ],
+    [
+      24.059,
+      21.31
+    ],
+    [
+      24.809,
+      22.139
+    ],
+    [
+      25.408,
+      22.063
+    ],
+    [
+      25.858,
+      22.59
+    ],
+    [
+      28.556,
+      23.117
+    ],
+    [
+      29.755,
+      23.117
+    ],
+    [
+      30.655,
+      23.795
+    ],
+    [
+      31.254,
+      23.72
+    ],
+    [
+      31.554,
+      23.87
+    ],
+    [
+      32.379,
+      24.774
+    ],
+    [
+      32.903,
+      25.0
+    ],
+    [
+      33.353,
+      25.0
+    ],
+    [
+      34.028,
+      24.473
+    ],
+    [
+      35.377,
+      21.913
+    ],
+    [
+      36.126,
+      19.654
+    ],
+    [
+      36.501,
+      19.277
+    ],
+    [
+      37.475,
+      19.127
+    ],
+    [
+      38.0,
+      18.75
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "ornate",
+    "faceCrownMm": 1.5,
+    "innerEdgeRadiusMm": 0.6,
+    "outerEdgeRadiusMm": 0.8,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Planar front face carrying raised carved floral/scroll relief with gold inlay",
+      "Stepped cross-section: flat face transitioning via a short bevel/step to a recessed rebate",
+      "Rebate (rabbet) for glass/backing, consistent with stated 14 mm rebate",
+      "Mitered 45-degree corner joint (chevron) with continuous gold line inlay",
+      "Dark bronze/black painted finish with metallic gold accents"
+    ],
+    "rejectedTraceFeatures": [
+      "No additional convex bead or hollow supported by photographs beyond the single visible step; the beige profile silhouette is treated as a guide only and not used to add ridges",
+      "No concave hollow confirmed in the physical section; omitted"
+    ],
+    "observations": [
+      "Product detail 1 and 2 oblique views confirm a flat face with a single bevel/step down to a light-wood rebate backing",
+      "Macro and framed references confirm ornate carved relief and gold detailing on the face",
+      "Chevron confirms mitered corner with matching finish and gold line",
+      "Supplier envelope 38 x 25 mm with 14 mm rebate is preserved; profile label 'angled' consistent with the bevelled step"
+    ],
+    "concerns": [
+      "Profile source image is a filled silhouette, not a true measured cross-section; exact step depth and rebate width rely on the stated 14 mm rebate",
+      "Relief depth (faceCrownMm) is an estimate from oblique views under supplier lighting; verify against a physical section",
+      "Edge radii are small and partly obscured by shadow/gold inlay; treat as approximate"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Tall outer-edge peak/ridge on the right of the candidate top profile",
+      "Series of small ridges/beads along the top face between the rebate and the outer edge",
+      "Wavy multi-lobed top contour not present in the oblique product-detail photos"
+    ],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "The candidate cross-section closely mirrors the extracted catalogue/profile-source trace (wavy top with a right-hand hump and a left rebate drop), so it is trace-driven rather than photo-driven.",
+      "The oblique product-detail photographs (detail 1 and detail 2) and the chevron corner show the moulding edge as a single flat beveled face with the gold-leafed face on top, not a multi-ridge profile.",
+      "A flat photographed face has effectively gained a perimeter ridge/peak in the candidate, which the instruction requires to be rejected.",
+      "The 25 mm and 12 mm / 14 mm rebate dimensions are plausible, but the intermediate ridges have no independent photographic support."
+    ],
+    "concerns": [
+      "Relief carving and gold-leaf texture on the face may have been misinterpreted as cross-sectional ridges in the extracted trace.",
+      "Lighting and perspective in the supplier photos make the exact edge bevel angle uncertain; the true profile is likely a simpler flat-face-with-bevel-and-rebate section.",
+      "The candidate should be rebuilt to a single planar face with only the visible bevel and rebate until a clear physical-section photo confirms any additional bead or hollow."
+    ]
+  }
+}

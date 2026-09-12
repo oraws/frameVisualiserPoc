@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR4530BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      9.7
+    ],
+    [
+      0.147,
+      21.825
+    ],
+    [
+      0.35,
+      22.0
+    ],
+    [
+      10.55,
+      22.0
+    ],
+    [
+      20.75,
+      22.0
+    ],
+    [
+      21.0,
+      21.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar dark charcoal front face (flat, no crown)",
+      "Rebate / mounting step visible at the substrate in the cross-section",
+      "Two-tone build: dark charcoal face over light tan wood core (chevron tip exposes core)",
+      "Fine directional grain / brushing on the dark face; natural grain on tan core"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead, concave hollow, or ornate ridge present in any photograph",
+      "No additional step or bevel beyond the single visible rebate"
+    ],
+    "observations": [
+      "Left product-section shows a flat dark face with a light tan substrate that steps down (rebate) at the bottom; height annotated 22 mm.",
+      "Middle profile-source shows the tan substrate with a rectangular notch (rebate) and a 17 mm vertical annotation.",
+      "Chevron view shows flat dark bands forming the V with the tan core only at the inner tip, confirming a flat face with no moulded profile.",
+      "Surface finish is a matte/satin dark charcoal with subtle horizontal directional grain; no gloss highlights or relief ridges.",
+      "Supplier profile label in the lower panel reads 'flat', consistent with the photographic evidence."
+    ],
+    "concerns": [
+      "Dimension envelope stated as 21 x 22 mm with rebate 12.3 mm, but the section annotations read 22 and 17; the 17 mm rebate annotation does not match the 12.3 mm rebate text \u2014 verify rebate depth against the physical section.",
+      "Lighting/perspective in the chevron could exaggerate edge sharpness; edge radii assumed minimal (sharp) based on visible crisp edges.",
+      "No oblique rotation photograph provided; flat-face confirmation relies on the section and chevron views only."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.72,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier product-section (top-left) shows a single planar face with one step/rebate at the edge; the candidate reproduces exactly one flat face plus a single rebate drop and no extra beads, ridges or hollows.",
+      "The photographed face is flat and planar (dark charcoal with fine directional grain); the candidate keeps it as one planar face and does not add a perimeter ridge to that flat face.",
+      "Chevron view confirms the section is a simple flat-faced profile joined at an angle, consistent with a flat face plus edge rebate rather than a multi-bead moulding.",
+      "No feature in the candidate (face, inner sight edge, outer edge, rebate) is present only in the extracted trace; each corresponds to a visible edge/step in the supplier photographs."
+    ],
+    "concerns": [
+      "The candidate's rebate drop is annotated 12.3 mm, while the supplier dimension callouts read 22 and 17; the rebate value is not independently labelled in the photos, so the exact step depth is only partially cross-checked.",
+      "Candidate is rendered in substrate tan whereas the photographed face is dark charcoal; this is a finish/colour matter for the texture review, but it means the profile drawing does not visually confirm the face finish.",
+      "Fine directional grain/brushing on the dark face is a real surface texture, not a tiled repeat; ensure it is not mistaken for a profile feature in downstream rendering."
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "4426CM",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 44.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "points": [
+    [
+      0.0,
+      11.4
+    ],
+    [
+      0.168,
+      25.72
+    ],
+    [
+      0.4,
+      26.0
+    ],
+    [
+      22.0,
+      26.0
+    ],
+    [
+      43.6,
+      26.0
+    ],
+    [
+      44.0,
+      25.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "conflicts",
+    "verifiedFeatures": [
+      "Single planar face with fine horizontal directional grain/brushing (product-section)",
+      "Rebate / edge cut visible at the section edge (product-section left edge)",
+      "Chevron assembly of two flat faces meeting at an apex (chevron photo)"
+    ],
+    "rejectedTraceFeatures": [
+      "Convex curved top profile shown in the profile-source extracted trace",
+      "7 mm rebate step drawn in the trace (supplier dimension states 14.6 mm rebate)"
+    ],
+    "observations": [
+      "Product-section photograph shows a flat light-veneer face with consistent directional brushing, not a beaded or scooped relief",
+      "The darker textured region on the left of the section reads as the end/rebate edge, not a separate ridge",
+      "Chevron reference confirms flat-faced boards in the assembled family",
+      "Supplier profile label reads 'scoop', but no concave relief is independently visible in the physical section or chevron",
+      "Extracted trace overall height (26 mm) is consistent with the supplier 44 x 26 mm envelope"
+    ],
+    "concerns": [
+      "The curved (convex) profile in the extracted trace is not confirmed by any physical section, chevron or oblique rotation photo",
+      "Rebate dimension conflict: trace shows a 7 mm step while supplier states 14.6 mm rebate",
+      "Supplier 'scoop' label conflicts with the flat physical face; photographs are treated as authoritative, so the face is held flat",
+      "Lighting and perspective in supplier photos may exaggerate edge shading; no bead/hollow is accepted without independent confirmation"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The product-section and chevron photographs both show planar, flat board faces with no visible curved ridge, bead, hollow or sloping profile; this supports the candidate's flat rectangular cross-section.",
+      "The profile-source trace depicts a curved top profile with a 26 mm height and a 7 mm step, none of which is resolvable in the physical photographs, so the candidate correctly omits those trace-only features.",
+      "The candidate's only non-planar element is a 1.46 mm rebate drop at the inner sight edge, which is a minor edge treatment rather than a perimeter ridge, so it does not trigger an automatic reject.",
+      "Because the rebate is not clearly distinguishable in the supplier photos and the trace conflicts with the candidate shape, the geometry cannot be fully confirmed from visible evidence alone."
+    ],
+    "concerns": [
+      "The 1.46 mm rebate drop is not clearly visible in the product-section or chevron photographs and may be trace-derived.",
+      "The catalogue/extracted trace (curved profile, 26 mm and 7 mm dimensions) conflicts with the flat candidate outline; the trace should not be used to add geometry.",
+      "Candidate overall height/width dimensions are not stated, so the 26 mm trace dimension cannot be cross-checked against the rendered section."
+    ]
+  }
+}

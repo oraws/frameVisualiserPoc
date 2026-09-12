@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "sku": "POL-2109",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T04:49:08.799383+00:00",
+  "requestedFault": "PROFILE REVIEW\nStudy the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.\n\nTEXTURE AND COLOUR REVIEW\nStudy all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "POL-2109",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 40.0,
+    "depthMm": 21.0,
+    "rebateMm": 10.0,
+    "points": [
+      [
+        0.0,
+        11.0
+      ],
+      [
+        0.168,
+        20.72
+      ],
+      [
+        0.4,
+        21.0
+      ],
+      [
+        20.0,
+        21.0
+      ],
+      [
+        39.6,
+        21.0
+      ],
+      [
+        40.0,
+        20.78
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0.5,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "conflicts",
+      "verifiedFeatures": [
+        "Single planar face with continuous directional horizontal grain/brushing visible across all rotation photographs",
+        "Inner sight edge indicated by a consistent darker shading line at the top of the rotation strip",
+        "Outer sight edge indicated by a consistent shading/transition line at the bottom of the rotation strip",
+        "Gold/bronze metallic finish with natural tonal variation and fine directional brush lines"
+      ],
+      "rejectedTraceFeatures": [
+        "Multiple vertical flutes/ribs shown in the lower catalogue/extracted profile guide are not independently confirmed in any rotation, chevron or oblique photograph and are therefore rejected as geometry",
+        "The black silhouette and white rectangle at the base of the lower panel are treated as segmentation/background artefacts, not as ridges or steps"
+      ],
+      "observations": [
+        "Top row of EXACT SKU rotation photographs shows a predominantly flat, brushed face; the dominant texture is fine horizontal directional grain, not a repeating macro flute",
+        "Vertical seams between the tiled rotation segments are visible and are interpreted as image tiling boundaries, not as profile features",
+        "The lower-left panel is a catalogue/extracted profile guide showing vertical ribbing; per protocol this is an unverified hypothesis and conflicts with the flat face seen in the authoritative rotation photographs",
+        "Supplier metadata states 40 x 21 mm with a 10 mm rebate and a 'scoop' label; the visible photographs support a flat face with edge treatment rather than a clearly concave scoop or fluted section",
+        "Assembled family context images show the moulding used as a frame rail in a gold/bronze finish, consistent with the colour and finish of the exact SKU photographs"
+      ],
+      "concerns": [
+        "The supplier profile label 'scoop' and the catalogue trace (fluted) are not corroborated by the rotation photographs, which read as a flat brushed face; geometry is therefore held to flat with edge treatment only",
+        "Lighting and perspective in the rotation row create horizontal banding that could be mistaken for bevels; only the consistent top and bottom edge shading lines are accepted as edge treatment",
+        "Tiling seams in the rotation strip must not be interpreted as repeating profile features",
+        "If a true scoop or fluted section is intended, additional chevron/oblique photographs showing the cross-section relief are required before any concave or ornate geometry is accepted"
+      ]
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.7,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "Supplier rotation photographs show a single planar face with fine directional grain/brushing running along the length, not a series of discrete beads or flutes.",
+        "The candidate cross-section reproduces this as one flat face with only a genuine edge treatment (the rebate/step at the inner sight edge), matching the visible flat photographed face.",
+        "The 10 mm rebate drop at the left edge corresponds to the darker edge band visible at the top of the rotation photographs, so the step is photo-supported.",
+        "No perimeter ridge or bead has been added to the flat face in the candidate, satisfying the rule that a flat photographed face must remain planar.",
+        "The vertical ridges/fluting shown in the lower-left catalogue/extracted guide are not corroborated by any physical, chevron or oblique supplier photograph and are therefore treated as an unverified advisory trace, not as required geometry."
+      ],
+      "concerns": [
+        "The catalogue/extracted profile guide (lower left) depicts vertical fluting/beads that do not appear in the supplier rotation photographs, creating a trace-vs-photo conflict that should be resolved with the supplier.",
+        "Rotation photographs are subject to lighting and perspective; the horizontal lines could be misread as beads, so the flat-face interpretation relies on the absence of any macro relief in the oblique views.",
+        "Confirm the intended finish (brushed directional grain vs. fluted relief) before final release, since the guide and the photos disagree on surface relief."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "supplier-derived-v2",
+  "outputVariant": "review-20260912044250-9e27a039",
+  "referenceImages": [
+    "source-material/mainline/POL-2109/spin/img20.jpg",
+    "source-material/mainline/POL-2109/spin/img21.jpg",
+    "source-material/mainline/POL-2109/spin/img22.jpg",
+    "source-material/mainline/POL-2109/spin/img23.jpg",
+    "source-material/mainline/POL-2109/spin/img24.jpg",
+    "source-material/mainline/POL-2109/spin/img25.jpg",
+    "source-material/mainline/POL-2109/spin/img26.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-1.jpg",
+    "public/assets/moulding-families/mainline/contemporary-classics/catalogue-p123-2.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.82,
+    "contrast": 1.0,
+    "patch_width": 512,
+    "overlap": 192,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.4,
+    "bump_detail": 1.8
+  },
+  "bestMetrics": {
+    "colourDeltaE": 5.6454,
+    "colourSpreadError": 0.1167,
+    "seamError": 0.0237,
+    "maximumAutocorrelation": 0.2346,
+    "detailError": 0.0098,
+    "clippedPixels": 0.0196
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.72,
+        "contrast": 1.04,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 5.9146,
+        "colourSpreadError": 0.1835,
+        "seamError": 0.0247,
+        "maximumAutocorrelation": 0.2325,
+        "detailError": 0.0905,
+        "clippedPixels": 0.0194
+      },
+      "deterministicScore": 83.8,
+      "failedGates": [],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 78,
+        "textureMatch": 70,
+        "repetition": 52,
+        "seam": 48,
+        "finishMatch": 72,
+        "blockers": [
+          "Regular vertical tick/notch marks recur at near-constant spacing across the unlit atlas and fixed-light preview but are not clearly present in the supplier finish crops; this reads as a tiled repeat / seam rather than intentional grain.",
+          "Profile geometry in the candidate (a central groove/step between the upper and lower bands) is not independently confirmed in the supplier cross-section or rotation photos; per the fault report it must be treated as an unverified trace and removed unless visible."
+        ],
+        "observations": [
+          "Supplier crops show a warm gold/brass metallic with strong horizontal directional grain/brushing and a few stacked horizontal bands (top edge, face, lower band); the candidate's overall hue and horizontal grain direction are consistent with this.",
+          "The fixed-light preview shows a bright horizontal specular band and a darker lower band, which is plausible for a brushed metallic but the banding is more pronounced than in the supplier crops, suggesting over-strong relief/contrast.",
+          "Vertical tick marks appear at roughly regular intervals in both the middle atlas and bottom preview; the supplier photographs show continuous horizontal grain without such periodic vertical features, so these are likely a tiling/seam artifact to be blended out.",
+          "The family-context frames confirm a range of finishes (white, gold, dark, walnut, bronze); the gold candidate is in-family, but the rendered gold is slightly more saturated/yellow than the supplier's neutral brass.",
+          "No clear rebate or inner sight edge is verifiable from the supplier crops; the candidate should not invent a rebate or extra bead that is not visible."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.82,
+          "contrast": 1.0,
+          "patch_width": 512,
+          "overlap": 192,
+          "roughness_mid": 180,
+          "roughness_detail": 0.4,
+          "bump_detail": 1.8
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.82,
+        "contrast": 1.0,
+        "patch_width": 512,
+        "overlap": 192,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.4,
+        "bump_detail": 1.8
+      },
+      "metrics": {
+        "colourDeltaE": 5.6454,
+        "colourSpreadError": 0.1167,
+        "seamError": 0.0237,
+        "maximumAutocorrelation": 0.2346,
+        "detailError": 0.0098,
+        "clippedPixels": 0.0196
+      },
+      "deterministicScore": 86.6,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "brushed directional wood-grain veneer, warm tan/gold with darker brown streaks",
+      "directional": true,
+      "gloss": "satin",
+      "preserve": [
+        "horizontal directional grain and brush lines",
+        "natural tonal variation between light gold and dark brown streaks",
+        "soft broad highlight band indicating satin sheen",
+        "subtle surface relief / grain texture scale"
+      ],
+      "risks": [
+        "grain pattern tiling or visible repeat seams across the long strip",
+        "over-smoothing that erases directional brush lines and grain contrast",
+        "colour drift toward flat uniform tan losing the dark streaks",
+        "misreading the soft edge highlight as high gloss",
+        "adding profile ridges/beads not present in the flat face evidence"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.72,
+        "contrast": 1.04,
+        "roughness_mid": 185,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.2
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "reasons": [
+        "The candidate shows a row of bright yellowish dashes repeating at regular horizontal intervals, a distinctive macro feature that does not appear in the supplier exact-SKU photographs, indicating a tiled repeat rather than natural grain.",
+        "Texture scale and relief in the candidate are dominated by long horizontal streaks and banding, which do not match the finer, more irregular directional grain and natural variation visible in the supplier rotation photos.",
+        "Under fixed lighting the candidate exhibits strong horizontal banding and a regular dash pattern that read as a seam/repeat artifact, conflicting with the requirement to remove obvious tiling while retaining natural variation.",
+        "The supplier family-context frame images are labelled context only and do not override the exact-SKU evidence, which shows no such regular dash row."
+      ],
+      "concerns": [
+        "Profile geometry (face, sight edge, rebate, bevels) cannot be independently confirmed from these flat material previews; the rendered banding may be misrepresenting the moulding cross-section.",
+        "The evenly spaced bright dashes are a strong indicator of texture tiling that must be removed before approval.",
+        "Colour and gloss under neutral fixed lighting show banding and a regular pattern not present in the supplier photos, so finish match is unverified.",
+        "Need a re-render with the repeat/seam removed and grain scale matched to the supplier before a final approve decision."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "68581aa637d597a0603050d59ec636b39b42b56930e1b5afc4dc155795f3d82f",
+      "roughness.jpg": "4ac17b0b829f67439510047106d6d9626f3d8bfd6f1b7e379b49b4bb40855cb7",
+      "bump.jpg": "fda3f06f93b57e7377eab2e0d7af188881802022081f4223249eb97e442b3bb6"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR1013BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 14.0,
+  "depthMm": 13.0,
+  "rebateMm": 7.3,
+  "points": [
+    [
+      0.0,
+      12.026
+    ],
+    [
+      0.783,
+      12.513
+    ],
+    [
+      1.664,
+      12.805
+    ],
+    [
+      4.112,
+      13.0
+    ],
+    [
+      12.238,
+      12.951
+    ],
+    [
+      13.413,
+      12.61
+    ],
+    [
+      14.0,
+      12.075
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "single planar front face (flat, no crown)",
+      "rebate / step on one sight edge (depth ~7.3 mm)",
+      "square inner sight edge",
+      "square outer edge",
+      "overall envelope 14 x 13 mm with 10 mm rebate-side height"
+    ],
+    "rejectedTraceFeatures": [
+      "convex 'cushion' crown (supplier label only, not present in section or chevron)",
+      "any bead, ridge, bevel or hollow beyond the single rebate step"
+    ],
+    "observations": [
+      "Product-section photo shows a flat black bar with a tan end cap that carries one small notch (the rebate) at the lower corner; no rounded crown is visible.",
+      "Profile-source guide shows a flat vertical face of 13 mm with a right-hand step down to 10 mm and a dashed rebate depth line, consistent with a flat face + rebate.",
+      "Chevron outline is a simple triangle consistent with a flat-faced member, not a cushioned/convex profile.",
+      "Supplier dimensions 14 x 13 mm and rebate 7.3 mm are preserved in the rebuilt section.",
+      "Edges render as sharp/square in both the photo end cap and the guide; no visible radii."
+    ],
+    "concerns": [
+      "Supplier profile label 'cushion' implies a convex crown that is not supported by the authoritative section or chevron; treated as a mislabel and rejected.",
+      "Lower catalogue panel contains only text (no visible red trace image), so trace agreement is inferred from the top profile-source guide rather than a separate lower trace.",
+      "Edge radii are not visually resolvable; minimum 0.2 mm assumed for sharp edges."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Domed/curved top perimeter ridge on the candidate face (not present in the flat supplier product-section photo)",
+      "Rebate drop of 7.3 mm step as drawn in the candidate (supplier profile-source shows a 13/10 L-step, not a 7.3 mm rebate)",
+      "Chevron/triangular profile implied by supplier chevron photo is absent from the candidate rectangle"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The authoritative supplier profile-source depicts a clear L-shaped cross-section with a 13 mm total height and a 10 mm step, whereas the candidate cross-section is rendered as a near-flat rectangle with a gently domed top edge and no corresponding step.",
+      "The supplier product-section photograph shows a single flat face with a thin edge treatment; the candidate adds a perimeter top ridge/curve that is not visible in any physical photo.",
+      "The supplier chevron photograph shows a triangular chevron geometry that the candidate does not reproduce.",
+      "The candidate's stated 'REBATE DROP 7.3 mm' is not corroborated by the 13/10 dimensions in the supplier profile and appears to be an extracted-trace artefact."
+    ],
+    "concerns": [
+      "Candidate geometry (flat face + domed top + 7.3 mm rebate) conflicts with the authoritative L-step supplier profile; treat the extracted outline as unverified.",
+      "A flat photographed face appears to have gained a perimeter ridge in the candidate, which must be removed.",
+      "Chevron pattern present in supplier evidence is missing from the candidate cross-section."
+    ]
+  }
+}

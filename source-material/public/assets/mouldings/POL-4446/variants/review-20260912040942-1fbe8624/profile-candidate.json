@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4446",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 16.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      15.825
+    ],
+    [
+      0.35,
+      16.0
+    ],
+    [
+      15.05,
+      16.0
+    ],
+    [
+      29.75,
+      16.0
+    ],
+    [
+      30.0,
+      15.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face across all exact-SKU rotation photographs",
+      "Fine directional grain / brushing running along the panel length",
+      "Uniform dark grey (charcoal) colour with low surface relief",
+      "No ridge, bead, bevel, hollow or step visible in any rotation view"
+    ],
+    "rejectedTraceFeatures": [
+      "Light tan vertical strips at left/right of catalogue image (treated as background/segmentation edge or rebate boundary, not a profile ridge)",
+      "Dark lower block with white square in catalogue image (background/segmentation artifact, not geometry)",
+      "Any implied crown or bead from the extracted trace (not present in physical rotation evidence)"
+    ],
+    "observations": [
+      "Supplier profile label is 'flat' and the exact-SKU rotation set shows one continuous planar face, consistent with a flat classification.",
+      "Surface shows only fine directional grain and minor tonal variation; no macro relief that would indicate a moulded profile.",
+      "Stated envelope 50 x 16 mm with a 10 mm rebate is preserved; the rebate is a stated edge cut, not a visible crowned profile feature in the rotation photos.",
+      "Assembled family reference (pop-art panel with white flanks) is context only and was not used to infer geometry."
+    ],
+    "concerns": [
+      "The 10 mm rebate is stated in dimensions but not independently confirmed as a visible step in the provided rotation photographs; treat as a flat face with a square edge cut until a physical section/chevron view confirms it.",
+      "Catalogue tan side strips and lower dark block are ambiguous (background vs. rebate edge) and were not promoted to profile features.",
+      "Lighting and perspective in supplier images could exaggerate grain direction; neutral fixed-lighting comparison recommended before final sign-off."
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.68,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Supplier rotation photographs (top strip) and the left panel image both show a single planar face with fine vertical directional grain and no moulded ridges, beads or hollows; the candidate cross-section likewise renders one flat face, so no perimeter ridge has been added to a flat photographed face.",
+      "The only non-planar feature in the candidate is the 10 mm rebate drop at the inner sight edge, which corresponds to the thin light edge line visible at the panel boundary in the supplier photographs and the left guide, so it is not a trace-only invention.",
+      "No bead, bevel, hollow or step appears in the candidate that is absent from the photographic evidence; the candidate geometry is a subset of (or equal to) the visible edge treatment.",
+      "Texture/colour: the photographed face is a dark charcoal brushed/vertical-grain finish; the candidate cross-section is a profile view (material section colour) and does not introduce a tiled repeat or seam, consistent with the natural fine grain seen in the photos."
+    ],
+    "concerns": [
+      "The 10 mm rebate depth is a stated dimension from the guide and is not independently measurable from the supplied photographs; it is accepted as advisory but should be confirmed against a physical section if exact depth is critical.",
+      "The rotation photographs are dark and low-contrast, making the rebate step only weakly distinguishable from the sight-edge line; verification of the rebate relies partly on the catalogue trace.",
+      "Cross-section is shown in a neutral tan section colour rather than the charcoal finish; this is acceptable for a profile view but the finish colour must be matched separately in the texture review."
+    ]
+  }
+}

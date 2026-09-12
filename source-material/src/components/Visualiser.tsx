@@ -1080,7 +1080,7 @@ export default function Visualiser() {
                   title={image.label}
                 >
                   <img src={image.url} alt={image.label} />
-                  <small>{String(index + 1).padStart(2, "0")}</small>
+                  <small>{image.kind === "family" ? "FAM" : String(index + 1).padStart(2, "0")}</small>
                 </button>
               ))}
             </div>

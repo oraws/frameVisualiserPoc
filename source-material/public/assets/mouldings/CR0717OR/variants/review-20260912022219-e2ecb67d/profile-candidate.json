@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0717OR",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 17.0,
+  "depthMm": 17.0,
+  "rebateMm": 9.5,
+  "points": [
+    [
+      0.0,
+      7.5
+    ],
+    [
+      0.147,
+      16.825
+    ],
+    [
+      0.35,
+      17.0
+    ],
+    [
+      8.55,
+      17.0
+    ],
+    [
+      16.75,
+      17.0
+    ],
+    [
+      17.0,
+      16.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "uncertain",
+    "verifiedFeatures": [
+      "Single planar flat face (orange) in product-section",
+      "Genuine rebate step/notch at one edge (beige) in product-section",
+      "Chevron view shows two flat faces meeting at a joint, consistent with a flat profile",
+      "Macro view shows flat upright boards across many colours, no crowned or hollow face"
+    ],
+    "rejectedTraceFeatures": [
+      "No extracted red trace or catalogue outline is visible in the lower panel, so no trace-only ridge, bead, bevel or hollow was accepted"
+    ],
+    "observations": [
+      "Supplier dimensions stated as 17 x 17 mm with a 9.5 mm rebate; supplier profile label is 'flat'",
+      "Product-section shows a flat orange face with a smaller beige rebate square at the left end",
+      "Profile-source dimension callouts read 17 (overall), 13 and 5, which do not directly match the stated 9.5 mm rebate",
+      "Chevron (V) geometry is the expected mitered joint of two flat faces, not a moulded profile",
+      "Macro row confirms flat, board-like cross-sections with crisp edges and a subtle directional grain/brushing",
+      "Lower catalogue/extracted-profile panel is essentially empty (black), providing no verifiable trace"
+    ],
+    "concerns": [
+      "Rebate width is ambiguous: profile-source shows 5 mm while supplier text states 9.5 mm rebate",
+      "No visible extracted trace in the lower panel, so catalogue agreement cannot be confirmed (treated as uncertain)",
+      "Edge radii are inferred as near-sharp (0.2 mm) from crisp macro edges; no radius is explicitly dimensioned"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate keeps the main face as a single planar surface with no added perimeter ridge or bead, matching the flat orange face in the product-section photograph.",
+      "The left-edge rebate/step in the candidate corresponds to the visible beige notch at the left end of the product-section photo, so the rebate is photo-supported rather than trace-only.",
+      "No ridge, hollow, or bevel appears in the candidate that is absent from the supplier photographs; the chevron panel is a marker, not a profile feature, and the macro panel shows a row of boards with chamfered tops rather than a moulding bead."
+    ],
+    "concerns": [
+      "The annotated rebate drop of 9.5 mm in the candidate conflicts with the catalogue dimension of 5 mm; the product-section photo is too low-resolution to independently confirm which depth is correct.",
+      "The macro photograph shows a chamfered/beveled top edge on each board that is not clearly reproduced in the candidate cross-section, leaving the outer-edge treatment unverified.",
+      "The chevron image provides no cross-sectional evidence, so the rebate geometry rests on a single low-detail product-section view."
+    ]
+  }
+}

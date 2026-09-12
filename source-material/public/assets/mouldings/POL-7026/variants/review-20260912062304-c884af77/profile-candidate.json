@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-7026",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 20.0,
+  "rebateMm": 9.0,
+  "points": [
+    [
+      0.0,
+      11.0
+    ],
+    [
+      0.168,
+      19.72
+    ],
+    [
+      0.4,
+      20.0
+    ],
+    [
+      15.0,
+      20.0
+    ],
+    [
+      29.6,
+      20.0
+    ],
+    [
+      30.0,
+      19.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0.5,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face with horizontal directional grain / brushing",
+      "Beveled sight edges at top and bottom of the band",
+      "Dark walnut-brown finish with fine horizontal texture"
+    ],
+    "rejectedTraceFeatures": [
+      "Concave scoop hollow (supplier label 'scoop' not corroborated by authoritative photographs)",
+      "Any bead, ridge or step beyond the edge bevels"
+    ],
+    "observations": [
+      "Top authoritative strip shows a predominantly flat face with horizontal grain; vertical lines are tiling/seams, not profile ridges",
+      "Lower catalogue/extracted guide shows a flat face with beveled edges sitting on a sandy background with a white segmentation corner (artifact)",
+      "Supplier dimensions 50 x 20 mm with 9 mm rebate preserved as the dimensional envelope",
+      "No chevron or oblique rotation photograph is present to independently confirm a concave scoop"
+    ],
+    "concerns": [
+      "Supplier profile label 'scoop' conflicts with the flat appearance of the authoritative photographs; treated as unconfirmed",
+      "Absence of a physical cross-section or oblique rotation means the concavity cannot be verified; flat classification retained per photo-priority rule",
+      "Lighting and perspective in the top strip may mask a shallow concavity; recommend a true cross-section cut for final sign-off"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "perimeter ridge / outer-edge bead along the top of the candidate section",
+      "left-edge step beyond the stated 9 mm rebate"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The supplier rotation strip (top) shows a single flat planar face with fine directional grain/brushing and no clearly raised perimeter bead or ridge.",
+      "The catalogue/extracted guide (lower left) is advisory and shows a flat face with only minimal edge treatment; it does not independently confirm a continuous perimeter ridge.",
+      "The candidate cross-section (lower right) introduces a dark top edge line and a left vertical edge line that read as a perimeter ridge/step not clearly visible in the flat photographed face.",
+      "The 9 mm rebate drop is consistent with an inner sight edge and is the only dimension that aligns with the guide, but the surrounding edge geometry is not verified in a chevron/oblique physical-section photo."
+    ],
+    "concerns": [
+      "A flat photographed face may have gained a perimeter ridge in the candidate that is not present in the supplier evidence.",
+      "No clear physical cross-section, chevron or oblique photograph is available to confirm the outer-edge bead/step independently.",
+      "Directional grain in the top strip is intentional fine brushing and should not be mistaken for a tiled repeat, but the edge treatment remains unverified."
+    ]
+  }
+}

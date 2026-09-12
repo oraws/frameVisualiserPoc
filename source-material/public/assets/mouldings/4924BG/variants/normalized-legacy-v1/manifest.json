@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sku": "4924BG",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/4924BG/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg",
+    "macro.jpg",
+    "framed-reference.jpg"
+  ]
+}

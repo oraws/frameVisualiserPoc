@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR1513BK",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/CR1513BK/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg"
+  ]
+}

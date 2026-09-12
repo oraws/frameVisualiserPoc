@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "0471BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      11.0
+    ],
+    [
+      0.147,
+      24.825
+    ],
+    [
+      0.35,
+      25.0
+    ],
+    [
+      15.05,
+      25.0
+    ],
+    [
+      29.75,
+      25.0
+    ],
+    [
+      30.0,
+      24.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar (flat) top face confirmed in oblique product-detail-1 and product-detail-2",
+      "Angled edge bevel on the outer sight edge (consistent with supplier label 'angled')",
+      "Rebate / step on the back (stated 14 mm) visible as the tan core ledge in product-section",
+      "Mitered 45-degree chevron joint in chevron photograph confirming a flat-faced profile",
+      "Fine directional grain / brushing on the black face (intentional texture, not a tiled repeat)"
+    ],
+    "rejectedTraceFeatures": [
+      "Raised bead / small top notch in the profile-source silhouette not independently confirmed as a separate ridge in any physical section, chevron or oblique photo; treated as a segmentation/background artifact",
+      "No convex crown, hollow or ornate bead is supported by the photographs; omitted"
+    ],
+    "observations": [
+      "Face colour is a dark charcoal / near-black with a low-sheen matte finish and fine linear grain",
+      "Core / rebate backing appears light tan-cream, visible at the edges of product-section and product-detail shots",
+      "Macro family row shows the same flat-faced profile offered in a range of colours (dark, grey, light, white) against a yellow backdrop",
+      "Chevron shows a clean mitered corner of a flat face, supporting a single planar face rather than a crowned or stepped face",
+      "Stated envelope 30 x 25 mm with 14 mm rebate is preserved; the visible geometry (flat face + angled edge + back rebate) is consistent with that envelope"
+    ],
+    "concerns": [
+      "Oblique detail shots are subject to perspective and raking light; the angled edge could read as a step under some lighting, so it is classified as an edge bevel on a flat face",
+      "The 14 mm rebate is stated but not directly isolated in a clean cross-section photo; its exact position (back vs side) is inferred from product-section",
+      "The profile-source silhouette contains a small top protrusion that may be a background/segmentation edge rather than a real ridge; not promoted to a verified feature",
+      "No red extracted trace is clearly legible in the lower panel, so catalogue agreement is judged only against the tan silhouette guide and marked partial"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's large planar face is consistent with the chevron and oblique product-detail photographs, which show a single flat moulding face without a perimeter ridge.",
+      "The rebate/step at the left edge of the candidate corresponds to the visible cut edge and stepped profile seen in product-detail-1, product-detail-2 and the product-section image.",
+      "The small edge notch/step on the left strip is plausibly supported by the profile-source silhouette and the stepped product-section, so it is not treated as trace-only geometry.",
+      "No feature on the candidate appears to exist solely in the extracted guide; the flat face has not gained an unsupported ridge."
+    ],
+    "concerns": [
+      "Supplier photographs are low-resolution and lighting/perspective vary, making the fine edge notch and exact rebate geometry hard to confirm unambiguously.",
+      "The stated 'REBATE DROP 14 mm' dimension cannot be independently measured from the photographs and is therefore taken from the advisory catalogue trace.",
+      "Colour/finish in the candidate is rendered as a flat tan, whereas the supplier photos show a dark/black finish with directional grain; finish matching should be re-checked under neutral lighting."
+    ]
+  }
+}

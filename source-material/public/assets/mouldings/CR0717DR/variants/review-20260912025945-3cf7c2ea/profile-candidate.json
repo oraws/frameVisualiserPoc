@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0717DR",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 17.0,
+  "depthMm": 17.0,
+  "rebateMm": 9.5,
+  "points": [
+    [
+      0.0,
+      14.854
+    ],
+    [
+      0.258,
+      16.828
+    ],
+    [
+      0.429,
+      17.0
+    ],
+    [
+      17.0,
+      16.914
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar (flat) face on the long red bar in the product-section photograph",
+      "Genuine rebate/step (L-shaped notch) at the left end of the physical product-section, consistent with the stated rebate",
+      "Rectangular cross-section envelope of ~17 mm height shown in the profile-source diagram",
+      "Mitered chevron joint appearance in the chevron photograph (assembled family context)"
+    ],
+    "rejectedTraceFeatures": [
+      "No crown, bead, bevel, hollow or ornate ridge is visible in any physical photograph; none are introduced from the trace",
+      "No directional brush lines or fine grain are interpreted as a tiled repeat or as profile geometry"
+    ],
+    "observations": [
+      "Product-section shows a flat reddish-brown face with a small beige/tan rebate step at one end; the face is planar with no visible relief",
+      "Profile-source diagram marks a 17 mm overall height with a 13 mm face and a 5 mm rebate step",
+      "Chevron photograph confirms the board is used in a mitered V (chevron) layout, supporting a flat-faced board",
+      "Macro photograph shows the colour family (multiple hues) used as assembled context only; exact SKU colour is the reddish-brown bar",
+      "Surface appears matte/satin with subtle natural wood-grain variation, no gloss highlights forming false ridges"
+    ],
+    "concerns": [
+      "Dimensional inconsistency: supplier text states 17 x 17 mm with rebate 9.5 mm, but the profile-source diagram splits the height into 13 + 5 mm (=18 mm) and shows a 5 mm rebate; the rebate value (9.5 vs 5 mm) does not reconcile across sources",
+      "Lower panel contains only text (no extracted red outline), so catalogue trace agreement is based on the flat label and dimension text rather than a drawn profile",
+      "Exact SKU colour/finish must be taken from the reddish-brown product-section bar, not from the multi-colour macro family image"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.5,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "rebate drop 9.5 mm",
+      "top-left chamfer / bevel at sight edge"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier product-section and macro photographs show a single flat planar face with only a small end-grain edge; no clear physical cross-section photograph displays a 9.5 mm rebate step.",
+      "The profile-source guide lists dimensions 17, 13 and 5, none of which equals the candidate's stated 9.5 mm rebate drop, so the rebate depth is not corroborated by visible evidence.",
+      "The candidate's top-left chamfer/bevel is not independently visible in the chevron or oblique photographs; it appears to derive from the extracted trace rather than a photographed edge.",
+      "The chevron image shows a V-shaped layout pattern, not a moulding profile feature, so it does not confirm any ridge, bead or hollow on the section."
+    ],
+    "concerns": [
+      "The 9.5 mm rebate drop may be an unverified catalogue/trace value; if the photographed face is truly flat, this step should be removed.",
+      "The small chamfer at the sight edge needs confirmation in a true cross-section or oblique photo before approval.",
+      "Colour/finish in the candidate (uniform tan) does not match the reddish-brown grain face shown in the product-section photo, suggesting a texture/colour mismatch to resolve."
+    ]
+  }
+}

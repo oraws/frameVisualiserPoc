@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR3313MB",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 33.0,
+  "depthMm": 13.0,
+  "rebateMm": 7.3,
+  "points": [
+    [
+      0.0,
+      5.7
+    ],
+    [
+      0.147,
+      12.825
+    ],
+    [
+      0.35,
+      13.0
+    ],
+    [
+      16.55,
+      13.0
+    ],
+    [
+      32.75,
+      13.0
+    ],
+    [
+      33.0,
+      12.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face (38 x 13 mm envelope) confirmed in product-section photograph",
+      "Rebate / step of 7.3 mm on one sight edge, visible as the notch in the tan edge strip of the product-section and as the cut-out in the profile-source guide"
+    ],
+    "rejectedTraceFeatures": [],
+    "observations": [
+      "Product-section shows a flat black face with a narrow tan edge strip; the small notch at the lower-left of that strip is the rebate, matching the 7.3 mm rebate dimension.",
+      "Profile-source guide (13 mm full height, 9 mm rebate leg) is consistent with a flat face plus a single rebate step; no ridges, beads, bevels or hollows are present.",
+      "Chevron panel is assembled family context (two pieces meeting at an angle) and is not used to add profile geometry.",
+      "Finish in the exact photograph is a matte, low-gloss black face with a light tan/beige edge; no directional brushing or tiling is evident in the authoritative section."
+    ],
+    "concerns": [
+      "Supplier label reads 'flat' while the cross-section contains a genuine rebate step; classified as 'stepped' to reflect the confirmed rebate, with the main face remaining planar (flatFaceConfirmed = true).",
+      "Edge radii are assumed square (0.2 mm) because no rounding is visible in the section; verify against a higher-resolution oblique rotation if a small break is expected.",
+      "Chevron view is family context only and must not override the exact SKU colour/finish or cross-section."
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.42,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Perimeter ridge/bead encircling the entire face (brown outline) not present in the flat product-section or chevron photographs",
+      "Rebate drop of 7.3 mm on the left edge; profile-source dimensioning (13 vs 9) indicates a ~4 mm step, not 7.3 mm",
+      "Second 'SUP' edge marker / stepped sight-edge feature on the left not independently visible in the supplier section photo"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The product-section photograph shows a single flat face with edge treatment only on one side (a tan edge strip with a small bottom notch); it does not show a continuous perimeter ridge, yet the candidate renders a closed brown perimeter line around the whole rectangle.",
+      "The profile-source guide gives a full height of 13 and a lower height of 9, implying a 4 mm rebate/step, whereas the candidate cross-section labels a 7.3 mm rebate drop \u2014 a direct dimensional conflict with the authoritative supplier drawing.",
+      "The chevron view confirms a flat mitered face with no raised bead, contradicting the candidate's perimeter ridge interpretation.",
+      "Per the review rule, a visibly flat moulding must remain one planar face with only genuinely visible edge treatment; the candidate adds geometry (perimeter ridge, oversized rebate) supported only by the extracted trace."
+    ],
+    "concerns": [
+      "Rebate depth in the candidate (7.3 mm) does not match the supplier profile-source step (\u22484 mm); verify against the physical section before approval.",
+      "The closed perimeter line on the candidate may be misreading the browser outline as a physical bead; confirm no ridge exists on the photographed flat face.",
+      "The left-edge 'SUP' markers and stepped sight edge are not clearly resolvable in the low-detail product-section photo; an oblique/rotation photograph is needed to confirm or remove this feature."
+    ]
+  }
+}

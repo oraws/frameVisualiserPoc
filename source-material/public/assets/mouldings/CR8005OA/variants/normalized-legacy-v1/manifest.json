@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR8005OA",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/CR8005OA/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg"
+  ]
+}

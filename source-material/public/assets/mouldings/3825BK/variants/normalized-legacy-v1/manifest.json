@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "sku": "3825BK",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/3825BK/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg",
+    "macro.jpg",
+    "framed-reference.jpg",
+    "product-detail-1.jpg",
+    "product-detail-2.jpg"
+  ]
+}

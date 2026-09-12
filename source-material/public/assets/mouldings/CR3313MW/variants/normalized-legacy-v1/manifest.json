@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR3313MW",
+  "inputKind": "normalized-legacy",
+  "sourceMaterial": "public/assets/mouldings/CR3313MW/base-texture.jpg",
+  "referenceFiles": [
+    "product-section.jpg",
+    "profile-source.png",
+    "chevron.jpg"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR1090WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 35.0,
+  "depthMm": 15.0,
+  "rebateMm": 8.4,
+  "points": [
+    [
+      0.0,
+      6.6
+    ],
+    [
+      0.147,
+      14.825
+    ],
+    [
+      0.35,
+      15.0
+    ],
+    [
+      17.55,
+      15.0
+    ],
+    [
+      34.75,
+      15.0
+    ],
+    [
+      35.0,
+      14.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "single planar cream/off-white face",
+      "rebate (step/notch) on one vertical edge, visible in product-section and profile-source"
+    ],
+    "rejectedTraceFeatures": [
+      "no ridge, bead, bevel or hollow present; none added from trace"
+    ],
+    "observations": [
+      "product-section shows a flat cream face with a tan/gold speckled edge band on the left and a small rebate notch at the lower-left",
+      "profile-source line drawing depicts a flat rectangle with a single rectangular notch (rebate) on the lower-right, overall height 15, body height 11",
+      "chevron panel shows two flat faces meeting in a V joint, consistent with a flat profile",
+      "supplier profile label reads 'flat'; supplier dimensions read 35 x 15 mm with a rebate"
+    ],
+    "concerns": [
+      "rebate depth is inconsistent: profile-source geometry implies 15-11 = 4 mm, but the text states rebate 8.4 mm; physical section should be re-measured",
+      "the tan/gold speckled strip on the left of the product-section may be an edge band or separate material rather than the face finish; confirm face colour under neutral lighting",
+      "no oblique rotation photograph is provided to independently confirm the rebate depth, so the step is taken from the section and drawing only"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's main body is a single planar face with no added perimeter ridge or bead, matching the flat white face and flat mitered chevron in the supplier photographs.",
+      "The single rebate/step on the inner sight edge of the candidate corresponds to the visible notch/step on the tan strip in the product-section photograph and to the stepped outline in the profile-source drawing, so the rebate feature is physically supported rather than trace-only.",
+      "The overall topology (flat face + one rebate step) is consistent across the product-section, profile-source and chevron images."
+    ],
+    "concerns": [
+      "Rebate depth conflict: the candidate labels the rebate drop as 8.4 mm, but the profile-source dimensioning implies a step of 15 - 11 = 4 mm; the photographs provide no scale to confirm which value is correct.",
+      "No oblique or rotation photograph with a measurable reference is present to independently verify the 8.4 mm rebate depth or the 15 mm overall height.",
+      "The chevron image shows a clean mitered corner with no visible ridge, which is consistent with a flat face but does not confirm the rebate lip thickness shown on the candidate's left edge."
+    ]
+  }
+}

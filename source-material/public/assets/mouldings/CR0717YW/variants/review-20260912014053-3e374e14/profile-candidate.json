@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0717YW",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 17.0,
+  "depthMm": 17.0,
+  "rebateMm": 9.5,
+  "points": [
+    [
+      0.0,
+      7.5
+    ],
+    [
+      0.147,
+      16.825
+    ],
+    [
+      0.35,
+      17.0
+    ],
+    [
+      8.55,
+      17.0
+    ],
+    [
+      16.75,
+      17.0
+    ],
+    [
+      17.0,
+      16.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar flat face confirmed in product-section, profile-source and macro photographs",
+      "One rebate/step notch at the end of the section (visible as the tan step in product-section and the white notch in profile-source)",
+      "Mitered chevron joint in the chevron photograph consistent with a flat profile",
+      "Fine directional grain/brushing on the mustard-yellow face (intentional finish, not a tiled repeat)"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel, hollow or additional step is visible in any physical photograph; none added",
+      "No crown or convex/concave relief supported by evidence; face kept planar"
+    ],
+    "observations": [
+      "Supplier profile label reads 'flat' and matches the visible planar face",
+      "Supplied dimensional envelope preserved: 17 x 17 mm with rebate (top panels annotate 13 and 5 locally; lower panel states rebate 9.5 mm)",
+      "Colour is a saturated mustard-yellow with subtle horizontal brushing; macro panel shows the same flat shape offered in many colourways (gold, bronze, silver, black, white, red, yellow, green, blue)",
+      "Macro top edges show only a slight machining bevel, consistent with a flat bar, not a profiled bead"
+    ],
+    "concerns": [
+      "Dimension annotations are inconsistent across panels (13/5 in profile-source vs 17x17 / rebate 9.5 in the lower text); the supplied envelope was retained but the rebate width should be re-verified against a calibrated section",
+      "The tan step at the left of the product-section could be a rebate or a separate backing piece; treat as a single rebate pending a clearer section",
+      "Macro photograph is affected by strong side lighting and perspective; edge bevels there are not used to infer profile geometry"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.68,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate is a single planar face with one rebate step on the inner sight edge; this matches the flat board with a lighter rebate step visible on the left edge of the EXACT SKU product-section photograph.",
+      "No perimeter ridge, bead, hollow or extra bevel has been added to the flat photographed face; the candidate's outer and inner edges remain simple planar edges consistent with the macro and profile-source views.",
+      "The chevron image is a surface pattern illustration, not a cross-section feature, so it does not require a ridge or bead in the profile.",
+      "The rebate drop on the candidate corresponds to the stepped sight edge shown in the supplier section photo and the 5/13 dimension callouts, so the step is photo-supported rather than trace-only."
+    ],
+    "concerns": [
+      "Dimension callouts are inconsistent across the guide (17 in product-section, 13 in profile-source, 9.5 mm rebate drop in candidate); the profile shape is supported but exact depths should be re-verified against a measured section.",
+      "The macro photograph shows angled/beveled top edges on the standing samples; it is unclear whether this is a true edge bevel or simply the cut sample edge, so the candidate's flat top edge is accepted only provisionally.",
+      "Supplier lighting and perspective differ between the section, profile-source and macro shots, so edge treatment depth is judged from relative step visibility rather than absolute scale."
+    ]
+  }
+}

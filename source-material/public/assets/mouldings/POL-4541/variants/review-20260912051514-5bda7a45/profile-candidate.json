@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4541",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 25.0,
+  "depthMm": 18.0,
+  "rebateMm": 11.0,
+  "points": [
+    [
+      0.0,
+      7.0
+    ],
+    [
+      0.168,
+      17.72
+    ],
+    [
+      0.4,
+      18.0
+    ],
+    [
+      12.5,
+      18.0
+    ],
+    [
+      24.6,
+      18.0
+    ],
+    [
+      25.0,
+      17.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar face confirmed across rotation photographs",
+      "Light golden/oak directional grain running along the length",
+      "Slightly rounded/bevelled inner and outer sight edges",
+      "Consistent 25 x 18 mm dimensional envelope with stated 11 mm rebate"
+    ],
+    "rejectedTraceFeatures": [
+      "Greenish mass at the base of the lower catalogue image (segmentation/background, not a ridge or bead)",
+      "Any implied bead, hollow, step or ornate profile not present in the physical rotation sections"
+    ],
+    "observations": [
+      "Top rotation strip shows a flat face with a central highlight attributable to lighting, not a convex crown",
+      "Lower catalogue panel shows the same flat face with vertical grain and natural knot/streak variation",
+      "No repeating macro feature at regular intervals; fine directional grain is intentional and not a tiled repeat",
+      "Edge treatment is limited to small radii on the sight edges; no independent confirmation of additional moulded profiles"
+    ],
+    "concerns": [
+      "The 11 mm rebate is a back-side feature not directly visible in the supplied face/rotation photographs",
+      "Profile label 'reverse' orientation should be confirmed against installation direction",
+      "Catalogue image contains a green segmentation edge that must not be interpreted as geometry"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "flat planar face (supplier front photographs show a reeded/grooved face with multiple parallel ridges, not a single flat plane)"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The supplier rotation photographs (top strip) clearly show a face with several parallel horizontal ridges/grooves (reeding), whereas the candidate cross-section renders the face as a single flat plane with no ridges, beads or hollows.",
+      "The candidate only depicts an inner-sight-edge rebate step (11 mm drop) and a flat outer face; this omits the reeded profile that is the dominant visible feature in the physical photographs.",
+      "The left vertical supplier image shows a curved/hollow lower profile and vertical grain relief that is not represented in the candidate's rectangular section.",
+      "Because the photographed face is grooved, a flat candidate face is not a 'flat photographed face gaining a ridge' but rather a flat candidate that fails to reproduce visible grooves \u2014 a mismatch that must be resolved against the physical evidence before approval."
+    ],
+    "concerns": [
+      "Candidate cross-section is materially simpler than the supplier photographs; the reeded/grooved face is missing.",
+      "The 11 mm rebate drop and inner sight edge step cannot be independently confirmed as the only edge treatment given the conflicting face geometry.",
+      "Texture/colour: supplier photos show strong directional grain and warm golden finish with surface relief; the candidate's flat tan fill does not convey the groove relief or grain scale.",
+      "Recommend rebuilding the section to include the visible parallel ridges/hollows and re-verifying the rebate against an oblique/chevron photograph."
+    ]
+  }
+}

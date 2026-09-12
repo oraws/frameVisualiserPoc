@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sku": "2650WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 50.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "points": [
+    [
+      0.0,
+      11.4
+    ],
+    [
+      0.168,
+      25.72
+    ],
+    [
+      0.4,
+      26.0
+    ],
+    [
+      25.0,
+      26.0
+    ],
+    [
+      49.6,
+      26.0
+    ],
+    [
+      50.0,
+      25.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0.0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar front face (chevron and macro show one flat mitered surface)",
+      "Rebate / step on the back edge (dark recessed gap behind the white face in macro; step in profile-source)",
+      "Fine directional grain / brushing running along the length (product-section and macro)"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead, hollow, or ornate ridge present in any photograph; none added from the trace"
+    ],
+    "observations": [
+      "Colour is a light cream/off-white with a matte-to-satin finish under neutral lighting",
+      "Surface relief is essentially flat; only a faint linear grain is visible, consistent with veneer or brushed paint",
+      "Edges appear lightly broken (small radius), not sharp 90\u00b0",
+      "Chevron confirms a clean mitered flat face with no crown or bead",
+      "Dimensional envelope preserved: 50 x 26 mm with a 14.6 mm rebate"
+    ],
+    "concerns": [
+      "profile-source is a 2D drawing rather than a physical section photo; rebate depth (14.6 mm) is taken from the drawing and supplier label, not directly measured in a rotation photo",
+      "Directional grain could be misread as a tiled repeat; treated as natural linear texture, not a periodic macro feature",
+      "Supplier label 'flat' is consistent with the photographs; the rebate is the only non-planar element and is retained as an edge step"
+    ]
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.7,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier product-section and chevron photographs show a single planar white face with only a fine directional grain; the candidate's flat face matches this and adds no perimeter ridge or bead.",
+      "The candidate's left-edge step (rebate drop 1.46 mm) corresponds to the inner sight-edge rebate visible in the profile-source guide and is consistent with a flat moulding's edge treatment.",
+      "No macro or oblique photograph reveals a hollow, bead, or ridge that the candidate omits, nor does the candidate introduce geometry absent from the photographs.",
+      "Texture in the candidate is a uniform flat finish with subtle directional variation, consistent with the brushed/grained surface in the supplier photos under neutral lighting."
+    ],
+    "concerns": [
+      "The catalogue profile-source depicts a deeper multi-step rebate (17 mm / 30 mm / 6 mm legs) than the candidate's single 1.46 mm step; the two are different section orientations, so exact dimensional agreement could not be confirmed from the photos alone.",
+      "Lighting and perspective in the supplier macro shots make it difficult to fully exclude a very shallow edge bevel on the outer edge; the candidate's thin top edge line is retained as advisory.",
+      "Directional grain scale in the candidate is uniform; natural variation present in the product-section photo is only approximately reproduced."
+    ]
+  }
+}

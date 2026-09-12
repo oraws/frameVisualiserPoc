@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sku": "POL-4415",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 16.0,
+  "rebateMm": 10.0,
+  "points": [
+    [
+      0.0,
+      6.0
+    ],
+    [
+      0.147,
+      15.825
+    ],
+    [
+      0.35,
+      16.0
+    ],
+    [
+      15.05,
+      16.0
+    ],
+    [
+      29.75,
+      16.0
+    ],
+    [
+      30.0,
+      15.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar face confirmed across all EXACT SKU rotation photographs",
+      "Fine directional grain / brush lines running parallel to the face (horizontal in rotations, vertical in catalogue view)",
+      "Rebate of 10 mm consistent with stated 50 x 16 mm envelope",
+      "Square/minimal edge treatment at the rebate, no raised bead or hollow"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, bevel, hollow or step is visible in any physical section or rotation photograph; none are adopted",
+      "Highlight/shadow bands along the grain are treated as lighting, not as profile geometry"
+    ],
+    "observations": [
+      "Top rotation strip shows a uniform flat wood face with horizontal brushing and natural tonal variation; no repeating macro feature at regular intervals (not a tiled repeat)",
+      "Lower catalogue panel shows the same flat face with a dark rebate edge at the bottom and a white corner, matching a flat profile with rebate",
+      "Grain orientation differs between catalogue (vertical) and rotations (horizontal) due to sample rotation, not a different product",
+      "Supplier profile label 'flat' is consistent with the visible planar evidence"
+    ],
+    "concerns": [
+      "Edge radii are not directly measurable from the supplied images; 0.2 mm assumed as a square/minimal edge pending a true cross-section",
+      "Lighting and perspective in supplier photos may exaggerate grain contrast; neutral fixed-lighting render should be compared before final sign-off",
+      "Rebate depth (10 mm) is taken from the text label and not independently verified in a chevron/oblique section"
+    ]
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.5,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rebate drop 10 mm step on inner sight edge (no physical cross-section, chevron or oblique photograph independently confirms this step or its depth)"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Supplier rotation photographs (top strip) show a single planar face with fine directional wood-grain brushing; this matches the candidate's flat tan face and no extra ridge/bead/hollow is present in the candidate, so no trace-only profile feature has been added to a flat face.",
+      "The directional grain lines in the supplier photos are intentional fine brushing, not a tiled macro repeat; no periodic distinctive feature recurs at regular intervals, so no tiling fault is confirmed.",
+      "The candidate cross-section is essentially one planar face plus a single rebate step (10 mm) on the inner sight edge; this is the only non-planar feature and it is not independently verifiable from the supplied flat-face photographs.",
+      "The left vertical swatch (face over dark substrate with a white corner) is ambiguous and does not clearly resolve the rebate geometry or edge treatment."
+    ],
+    "concerns": [
+      "No physical-section, chevron or oblique photograph is provided to confirm the rebate drop depth, the inner sight edge treatment, or the outer edge bevel.",
+      "The 10 mm rebate step rests on the extracted/candidate guide rather than on visible photographic evidence, so it cannot be fully approved.",
+      "Colour/finish match is plausible (warm tan face with brown edge line) but gloss and surface relief cannot be confirmed under neutral fixed lighting from the supplied images."
+    ]
+  }
+}
