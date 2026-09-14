@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "sku": "4426WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "convex",
+  "widthMm": 44.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "points": [
+    [
+      0.0,
+      9.201
+    ],
+    [
+      0.42,
+      9.708
+    ],
+    [
+      1.26,
+      9.708
+    ],
+    [
+      1.763,
+      10.805
+    ],
+    [
+      2.939,
+      11.649
+    ],
+    [
+      10.748,
+      13.169
+    ],
+    [
+      11.42,
+      14.351
+    ],
+    [
+      12.008,
+      15.026
+    ],
+    [
+      13.603,
+      16.039
+    ],
+    [
+      15.786,
+      16.461
+    ],
+    [
+      18.221,
+      16.461
+    ],
+    [
+      20.656,
+      16.714
+    ],
+    [
+      24.687,
+      17.643
+    ],
+    [
+      27.038,
+      18.487
+    ],
+    [
+      30.733,
+      20.26
+    ],
+    [
+      33.168,
+      21.695
+    ],
+    [
+      35.435,
+      23.299
+    ],
+    [
+      37.115,
+      24.987
+    ],
+    [
+      38.71,
+      25.831
+    ],
+    [
+      39.466,
+      26.0
+    ],
+    [
+      41.229,
+      26.0
+    ],
+    [
+      42.069,
+      25.831
+    ],
+    [
+      42.824,
+      25.409
+    ],
+    [
+      44.0,
+      24.058
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "convex",
+    "faceCrownMm": 3.0,
+    "innerEdgeRadiusMm": 1.0,
+    "outerEdgeRadiusMm": 1.0,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single convex (scoop) face on the left of the product-section, matching the supplier 'scoop' label and the convex curve in the profile-source guide",
+      "One planar flat face on the right of the product-section (pale, fine horizontal directional grain/brushing)",
+      "Fine directional grain / brush lines on the flat face (intentional texture, not a tiled repeat)",
+      "45-degree mitered chevron joint in the assembled view, consistent with a shared shape family"
+    ],
+    "rejectedTraceFeatures": [
+      "The 7 mm step shown at the right edge of the profile-source guide is not independently confirmed in the physical product-section, which reads as a single flat face; treated as an unverified trace edge, not a real step",
+      "No additional ridges, beads, hollows or double curves are visible in the photographs and are therefore not added"
+    ],
+    "observations": [
+      "Product-section (left) shows a tan, textured convex band transitioning into a pale flat face with horizontal grain; this confirms a convex-plus-flat cross-section within the 44 x 26 mm envelope",
+      "Profile-source (centre) depicts a convex scoop descending to a flat top with a small 7 mm drop at the right; the convex portion agrees with the photo, the 7 mm drop does not",
+      "Chevron (right) shows two pale members meeting at a miter, supporting the assembled family but not overriding the exact-SKU colour/finish seen in the section",
+      "Supplier dimensions 44 x 26 mm and rebate 146 mm are preserved as the dimensional envelope"
+    ],
+    "concerns": [
+      "Colour/finish mismatch between the tan-textured convex face in the product-section and the pale members in the chevron view; exact-SKU section colour is taken as authoritative, but the chevron may reflect lighting or a different presentation finish",
+      "The 7 mm step in the extracted profile guide is unconfirmed and may be a segmentation/shadow edge; do not model it as geometry without a confirming oblique or rebate photograph",
+      "Crown height and edge radii are estimated from the 26 mm envelope and the visible curve; an oblique rotation photo would tighten these values"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "convex",
+      "faceCrownMm": 3.0,
+      "innerEdgeRadiusMm": 1.0,
+      "outerEdgeRadiusMm": 1.0,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "Single convex (scoop) face on the left of the product-section, matching the supplier 'scoop' label and the convex curve in the profile-source guide",
+        "One planar flat face on the right of the product-section (pale, fine horizontal directional grain/brushing)",
+        "Fine directional grain / brush lines on the flat face (intentional texture, not a tiled repeat)",
+        "45-degree mitered chevron joint in the assembled view, consistent with a shared shape family"
+      ],
+      "rejectedTraceFeatures": [
+        "The 7 mm step shown at the right edge of the profile-source guide is not independently confirmed in the physical product-section, which reads as a single flat face; treated as an unverified trace edge, not a real step",
+        "No additional ridges, beads, hollows or double curves are visible in the photographs and are therefore not added"
+      ]
+    },
+    "applied": {
+      "shapeClass": "convex",
+      "faceCrownMm": 3.0,
+      "innerEdgeRadiusMm": 1.0,
+      "outerEdgeRadiusMm": 1.0,
+      "widthMm": 44.0,
+      "depthMm": 26.0,
+      "rebateMm": 14.6,
+      "pointCount": 24
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.42,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rounded outer dome at the top-right of the candidate profile",
+      "14.6 mm rebate drop dimension (authoritative profile-source states 7 mm)",
+      "Absence of the 26 mm sight-edge height present in the profile-source"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The candidate cross-section is oriented with the high rounded point at the right and a 14.6 mm rebate on the left, whereas the authoritative profile-source places the 26 mm vertical sight edge on the left and a 7 mm rebate on the right; the two outlines are not the same shape.",
+      "The candidate's outer edge terminates in a convex rounded dome that is not present in the profile-source, which instead shows a small flat step/notch near the outer edge.",
+      "Dimension values disagree: candidate rebate drop 14.6 mm vs supplier 7 mm, and the 26 mm overall height is not represented in the candidate.",
+      "The product-section photograph shows a curved profile edge and a flat brushed face, but it does not independently confirm the candidate's specific dome or the 14.6 mm rebate, so those features remain unverified."
+    ],
+    "concerns": [
+      "Possible mirror/rotation mismatch between candidate and profile-source; orientation (inner sight edge to outer edge) must be reconciled before approval.",
+      "The rounded outer dome in the candidate may be an added feature not supported by the exact-SKU photographs.",
+      "Rebate depth (14.6 mm) conflicts with the stated 7 mm; one of the two is incorrect.",
+      "Chevron photograph shows a light/white finish that does not clearly match the tan fill of the candidate, so colour/finish agreement is unconfirmed."
+    ]
+  }
+}

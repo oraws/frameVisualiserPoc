@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sku": "3042IV",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 30.0,
+  "depthMm": 42.0,
+  "rebateMm": 23.5,
+  "points": [
+    [
+      0.0,
+      41.502
+    ],
+    [
+      0.831,
+      42.0
+    ],
+    [
+      29.169,
+      42.0
+    ],
+    [
+      29.723,
+      41.751
+    ],
+    [
+      30.0,
+      41.502
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 4.2,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "rebate"
+    ],
+    "rejectedTraceFeatures": [],
+    "observations": [
+      "Product-section image shows textured back area; product-detail images confirm rebate geometry"
+    ],
+    "concerns": [
+      "Supplier profile label 'flat' conflicts with visible step (rebate) in photographs"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 4.2,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "rebate"
+      ],
+      "rejectedTraceFeatures": []
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 4.2,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 30.0,
+      "depthMm": 42.0,
+      "rebateMm": 23.5,
+      "pointCount": 5
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 1.0,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "uncertain",
+    "reasons": [
+      "Rebate feature present in supplier's product-section photograph",
+      "No unsupported features detected in candidate cross-section"
+    ],
+    "concerns": []
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 2,
+  "sku": "4925BG",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T17:42:03.458803+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "4925BG",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 49.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "points": [
+      [
+        0.0,
+        17.829
+      ],
+      [
+        2.498,
+        18.702
+      ],
+      [
+        3.555,
+        19.38
+      ],
+      [
+        4.804,
+        20.543
+      ],
+      [
+        6.437,
+        22.965
+      ],
+      [
+        7.206,
+        25.0
+      ],
+      [
+        11.049,
+        25.0
+      ],
+      [
+        12.394,
+        22.868
+      ],
+      [
+        12.971,
+        22.481
+      ],
+      [
+        13.739,
+        22.674
+      ],
+      [
+        14.988,
+        24.031
+      ],
+      [
+        16.237,
+        24.031
+      ],
+      [
+        49.0,
+        9.981
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "single planar angled sight face (supplier label 'angled')",
+        "rebate / step of ~14 mm at the inner edge",
+        "gold inner bevel edge visible in chevron and macro views",
+        "black outer face / sight edge",
+        "overall envelope consistent with 49 x 25 mm"
+      ],
+      "rejectedTraceFeatures": [
+        "small top notch/step shown in the extracted profile guide (not independently confirmed in any physical section, chevron or oblique photo; treated as possible segmentation edge)",
+        "no additional beads, hollows or ridges beyond the angled face and rebate"
+      ],
+      "observations": [
+        "Physical section (top-left) shows a cream angled face, a recessed black rebate and a gold sight edge, matching a stepped/angled cross-section",
+        "Chevron and macro views confirm a two-tone construction: black outer with a gold inner bevel forming the angled face",
+        "The angled face reads as one planar surface; no crown or convexity is visible",
+        "Family framed references show the assembled presentation only and do not alter the exact-SKU geometry or colour"
+      ],
+      "concerns": [
+        "The top notch in the extracted profile guide is unverified and may be a segmentation/shadow artefact; do not model it as a real ridge",
+        "Gold edge gloss and black face sheen are affected by lighting and perspective in the supplier photos",
+        "Exact rebate depth (14 mm) and height (25 mm) taken from supplier text; cross-check against physical section before final release"
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "single planar angled sight face (supplier label 'angled')",
+          "rebate / step of ~14 mm at the inner edge",
+          "gold inner bevel edge visible in chevron and macro views",
+          "black outer face / sight edge",
+          "overall envelope consistent with 49 x 25 mm"
+        ],
+        "rejectedTraceFeatures": [
+          "small top notch/step shown in the extracted profile guide (not independently confirmed in any physical section, chevron or oblique photo; treated as possible segmentation edge)",
+          "no additional beads, hollows or ridges beyond the angled face and rebate"
+        ]
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 49.0,
+        "depthMm": 25.0,
+        "rebateMm": 14.0,
+        "pointCount": 13
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Rounded top bead/perimeter ridge on the upper face",
+        "Small hollow/notch immediately inboard of the top ridge"
+      ],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "Authoritative chevron and macro photographs show angular mitered black faces with a straight gold inner bevel line, not a rounded top bead; the candidate's rounded ridge is not visible in any exact-SKU photo.",
+        "The product-section photo shows a flat tan face with a black rebate and a thin gold strip, consistent with a flat bevelled profile rather than a beaded/hollowed top.",
+        "The 14 mm rebate drop and the long sloping outer bevel in the candidate are consistent with the profile-source guide and the framed reference, so the lower geometry is supported.",
+        "The small top notch/hollow in the candidate matches the advisory guide but cannot be independently confirmed in the chevron or macro images, which read as angular miters."
+      ],
+      "concerns": [
+        "A flat photographed face appears to have gained a perimeter ridge (rounded top bead) that is unsupported by the exact-SKU photographs.",
+        "The hollow/notch feature is only traceable to the advisory catalogue outline, not to a physical-section or oblique photograph.",
+        "Lighting and miter perspective in the macro/chevron shots make it difficult to confirm any rounded relief; treat the top profile as unverified."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912173504-f3f86ff1",
+  "referenceImages": [
+    "public/assets/mouldings/4925BG/product-section.jpg",
+    "public/assets/mouldings/4925BG/profile-source.png",
+    "public/assets/mouldings/4925BG/chevron.jpg",
+    "public/assets/mouldings/4925BG/macro.jpg",
+    "public/assets/mouldings/4925BG/framed-reference.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/centrado/bergen/4924BG-framed-reference.jpg",
+    "public/assets/moulding-families/centrado/bergen/4925BG-framed-reference.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.72,
+    "contrast": 1.06,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 185.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.4
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3.8:27b",
+    "profile": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "single planar angled sight face (supplier label 'angled')",
+          "rebate / step of ~14 mm at the inner edge",
+          "gold inner bevel edge visible in chevron and macro views",
+          "black outer face / sight edge",
+          "overall envelope consistent with 49 x 25 mm"
+        ],
+        "rejectedTraceFeatures": [
+          "small top notch/step shown in the extracted profile guide (not independently confirmed in any physical section, chevron or oblique photo; treated as possible segmentation edge)",
+          "no additional beads, hollows or ridges beyond the angled face and rebate"
+        ]
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 49.0,
+        "depthMm": 25.0,
+        "rebateMm": 14.0,
+        "pointCount": 13
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "painted-matte-with-metallic-accent",
+        "directional": false,
+        "gloss": "satin",
+        "targetColourDescription": "Diffuse matte-to-satin black painted face on the outer moulding, paired with a thin metallic gold/brass accent line on the inner chevron bevel; tan MDF core visible only in the cross-section. No strong directional brushing on the black face.",
+        "settings": {
+          "colour_strength": 0.8,
+          "contrast": 1.0,
+          "roughness_mid": 180,
+          "roughness_detail": 0.5,
+          "bump_detail": 1.5
+        }
+      },
+      "applied": {
+        "finishClass": "painted-matte-with-metallic-accent",
+        "directional": false,
+        "gloss": "satin",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.8,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 180.0,
+          "roughness_detail": 0.5,
+          "bump_detail": 1.5
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 1.9765,
+    "colourSpreadError": 0.1666,
+    "seamError": 0.0088,
+    "maximumAutocorrelation": 0.1653,
+    "detailError": 0.0366,
+    "clippedPixels": 0.0786
+  },
+  "bestFailedGates": [
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.8,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 2.0831,
+        "colourSpreadError": 0.0382,
+        "seamError": 0.0079,
+        "maximumAutocorrelation": 0.253,
+        "detailError": 0.103,
+        "clippedPixels": 0.0784
+      },
+      "deterministicScore": 92.9,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 46,
+        "colourMatch": 52,
+        "textureMatch": 61,
+        "repetition": 86,
+        "seam": 90,
+        "finishMatch": 48,
+        "blockers": [
+          "Fixed-light preview is a flat dark surface with no cross-section relief; the exact-SKU profile (sloped top, top notch, 14-unit rebate step, sight edge) is not represented.",
+          "Exact-SKU colour set (light tan/wood face + black top + thin gold accent line) is absent from the preview, which reads as a single dark grey/black tone.",
+          "The 14-unit rebate/step and the 25-unit overall height from the profile-source diagram are not visually confirmed in any rendered face."
+        ],
+        "observations": [
+          "Profile-source diagram defines a 25-high section with an upward-sloping top, a small top notch, and a 14-high rebate step on the right; this geometry must drive the reconstruction, not the catalogue traces.",
+          "Product-section crop shows a tan/wood angled face, a flat black top, and a thin gold line at the lower edge \u2014 three distinct material zones, not a single colour.",
+          "Chevron and macro crops confirm a black body with a fine gold inner line and fine directional surface lines; these are intentional grain/brushing, not a tiled repeat.",
+          "Fixed-light preview shows only a faint horizontal lighter band over a near-black field; maximumAutoCorrelation 0.253 and seamError 0.0079 indicate no obvious tiling or seam, so repetition/seam are acceptable.",
+          "colourDeltaE 2.0831 and clippedPixels 0.0784 suggest a moderate colour offset and some highlight clipping in the dark preview.",
+          "Family (Bergen) images are presentation context only and must not override the exact-SKU tan/black/gold colour or the diagrammed geometry."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.72,
+          "contrast": 1.06,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 185,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.4
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.72,
+        "contrast": 1.06,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 1.9765,
+        "colourSpreadError": 0.1666,
+        "seamError": 0.0088,
+        "maximumAutocorrelation": 0.1653,
+        "detailError": 0.0366,
+        "clippedPixels": 0.0786
+      },
+      "deterministicScore": 92.7,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.72,
+        "contrast": 1.06,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 1.9295,
+        "colourSpreadError": 0.1752,
+        "seamError": 0.0089,
+        "maximumAutocorrelation": 0.4153,
+        "detailError": 0.0365,
+        "clippedPixels": 0.0773
+      },
+      "deterministicScore": 86.3,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.72,
+        "contrast": 1.06,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.4
+      },
+      "metrics": {
+        "colourDeltaE": 1.7854,
+        "colourSpreadError": 0.1771,
+        "seamError": 0.0087,
+        "maximumAutocorrelation": 0.3945,
+        "detailError": 0.0376,
+        "clippedPixels": 0.0772
+      },
+      "deterministicScore": 86.9,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "painted-matte-with-metallic-accent",
+      "directional": false,
+      "gloss": "satin",
+      "targetColourDescription": "Diffuse matte-to-satin black painted face on the outer moulding, paired with a thin metallic gold/brass accent line on the inner chevron bevel; tan MDF core visible only in the cross-section. No strong directional brushing on the black face.",
+      "preserve": [
+        "matte black outer face with soft broad highlights",
+        "thin metallic gold/brass inner accent line (chevron bevel)",
+        "cross-section profile geometry approx 25 high x 14 deep with stepped rebate",
+        "sight edge and outer edge continuity",
+        "natural low-contrast surface variation without tiling"
+      ],
+      "risks": [
+        "misreading curved profile edge highlights as a glossy finish",
+        "over-saturating or over-brightening the gold accent line",
+        "introducing artificial directional grain or tiled repeat on the black face",
+        "sampling colour from artwork, mount, wall or another family member",
+        "adding unsupported ridges, beads or hollows to the profile",
+        "profile dimension mismatch against the 25x14 trace"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.8,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.5,
+        "bump_detail": 1.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Exact-SKU supplier photos (product-section, chevron, macro, framed-reference) consistently show a black frame with a distinct gold/brass inner chevron accent and a bevelled sight edge; the candidate fixed-light preview is a flat near-black textured surface that does not display this gold chevron or bevel.",
+        "The profile-source diagram defines a stepped cross-section (height 25, step/rebate 14) with a hollow and outer edge; the candidate preview presents no visible ridge, bead, bevel, hollow, step, sight edge or rebate, so the constrained profile reconstruction cannot be confirmed against the photographs.",
+        "Per benchmark rules, family 'Bergen' images are context-only and were not used to override the exact-SKU colour or geometry; the exact-SKU evidence itself shows a two-tone black+gold finish that the single-tone dark candidate does not match.",
+        "Colour metrics are borderline (DeltaE 1.9765, SpreadError 0.1686), and the preview's fine directional grain is acceptable as natural variation, but the absence of the gold accent is a material/finish mismatch rather than a lighting artefact."
+      ],
+      "concerns": [
+        "Gold/brass chevron accent line present in all exact-SKU views is missing from the candidate preview.",
+        "Profile geometry (step of 14, height 25, rebate, sight edge) is not visually represented in the candidate, so the PROFILE REVIEW fault cannot be cleared.",
+        "Two-tone black+gold finish of the exact SKU is not reproduced; candidate reads as a single dark tone.",
+        "Insufficient visible macro detail in the candidate to confirm texture scale and surface relief match the exact-SKU macro."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "d4be21cd649aca578059304070d8f7029e072d96087734b812baa1f276d88773",
+      "roughness.jpg": "0da7942f3aee8194d0079e8025267b312c36d808e2cafd3cb86de27f83a58813",
+      "bump.jpg": "00156cbf8ea5034d96550d9b4dd587a0241a179f1ac0acde0612cd411ede2f09"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

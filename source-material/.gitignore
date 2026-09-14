@@ -5,7 +5,10 @@
 tools/ai-room-enhancer/runtime/
 
 .render-jobs/
+*.blend1
 .material-review-jobs/
+.material-review-benchmarks/
+.material-review-routing-policy.json
 .material-review-state.json
 tools/high-res-render/__pycache__/
 tools/moulding-material-pilot/__pycache__/

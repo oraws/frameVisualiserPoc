@@ -5,7 +5,7 @@ import { homedir } from 'node:os';
 import { randomUUID } from 'node:crypto';
 
 export function validatePayload(data) {
-  if (!['generated-gallery', 'sofa-gallery'].includes(data.roomId)) throw new Error('Choose a prepared 3D room.');
+  if (!['generated-gallery', 'sofa-gallery', 'leaning-floor-gallery'].includes(data.roomId)) throw new Error('Choose a prepared 3D room.');
   if (!['Source colours', 'Room lighting'].includes(data.artworkColourMode)) throw new Error('Invalid colour mode.');
   if (!['None', 'Standard', 'Museum'].includes(data.glass)) throw new Error('Invalid glazing.');
   const glb = Buffer.from(data.glb || '', 'base64');

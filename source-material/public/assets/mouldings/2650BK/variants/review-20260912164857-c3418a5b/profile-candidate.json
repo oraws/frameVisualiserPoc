@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "sku": "2650BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 50.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "points": [
+    [
+      0.0,
+      11.4
+    ],
+    [
+      0.147,
+      25.825
+    ],
+    [
+      0.35,
+      26.0
+    ],
+    [
+      25.05,
+      26.0
+    ],
+    [
+      49.75,
+      26.0
+    ],
+    [
+      50.0,
+      25.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar black face (flat) confirmed in physical section, chevron and macro photographs",
+      "Fine directional grain / brushing texture running along the length of the face",
+      "Mitered 45-degree chevron joint with continuous flat face",
+      "Straight sight edges with sharp (near-zero radius) corners",
+      "Rebate/joining edge consistent with stated 14.6 mm rebate dimension"
+    ],
+    "rejectedTraceFeatures": [
+      "Decorative ridge or bead (none visible in any exact-SKU photograph)",
+      "Bevel or chamfer on the face (face is planar)",
+      "Hollow or concave profile (no concavity visible)",
+      "Decorative step or multi-stage profile (only a joining rebate is indicated, not a visible moulded step)"
+    ],
+    "observations": [
+      "Supplier profile label is 'flat' and the physical section, chevron and macro images all show one flat textured face, supporting a flat classification.",
+      "The face carries a fine horizontal directional grain / brush texture with small speckle relief; this is surface finish, not a tiled repeat or moulded ridge.",
+      "The profile-source diagram in the top row depicts a U-shaped channel with two ~6 mm legs; this is interpreted as the joining rebate (14.6 mm) rather than a decorative profile, and no corresponding decorative ridge is visible in the photographs.",
+      "Chevron image confirms a clean mitered corner with a flat face and no crown or bead.",
+      "Macro image shows flat black and light (cream) faces with straight edges, consistent with a flat section."
+    ],
+    "concerns": [
+      "The profile-source cross-section drawing shows a channel/rebate geometry that is not independently visible as a decorative feature in the photographs; per the rule that photographs win, the face is treated as flat and the channel is read only as a joining rebate.",
+      "Lighting and perspective in the supplier photographs could exaggerate edge shadows; no ridge was confirmed, so none was added.",
+      "Directional grain must be preserved as natural finish variation and not mistaken for a tiled repeat or moulded line."
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "Single planar black face (flat) confirmed in physical section, chevron and macro photographs",
+        "Fine directional grain / brushing texture running along the length of the face",
+        "Mitered 45-degree chevron joint with continuous flat face",
+        "Straight sight edges with sharp (near-zero radius) corners",
+        "Rebate/joining edge consistent with stated 14.6 mm rebate dimension"
+      ],
+      "rejectedTraceFeatures": [
+        "Decorative ridge or bead (none visible in any exact-SKU photograph)",
+        "Bevel or chamfer on the face (face is planar)",
+        "Hollow or concave profile (no concavity visible)",
+        "Decorative step or multi-stage profile (only a joining rebate is indicated, not a visible moulded step)"
+      ]
+    },
+    "applied": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.25,
+      "outerEdgeRadiusMm": 0.25,
+      "widthMm": 50.0,
+      "depthMm": 26.0,
+      "rebateMm": 14.6,
+      "pointCount": 6
+    },
+    "constrained": [
+      {
+        "field": "innerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      },
+      {
+        "field": "outerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Left-edge rebate drop (1.46 mm) / sight-edge step not resolvable in the flat-face product-section, chevron or macro photographs",
+      "Guide U-shaped hollow/rebate (17 mm deep) present in profile-source but absent from both candidate and photographs"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Authoritative photographs (product-section, chevron, macro) show essentially flat dark/cream faces with a thin substrate edge; none provides a clear oblique or section view that confirms a discrete rebate step or perimeter ridge.",
+      "The candidate's only non-flat feature is a small left-edge step annotated 'REBATE DROP 1.46 mm'; this magnitude and presence cannot be independently verified against the flat photographed faces.",
+      "The profile-source guide depicts a deep U-shaped hollow (17 mm) that the candidate does not reproduce, so the guide and candidate disagree on the rebate geometry.",
+      "Per benchmark rules, a flat photographed face must not gain a perimeter ridge; the candidate's left step is therefore treated as unconfirmed rather than approved."
+    ],
+    "concerns": [
+      "No physical-section or oblique photograph confirms the rebate drop; the step may be an artefact of the extracted guide.",
+      "Directional grain/brushing on the dark face is visible, but surface relief (bead vs flat) is not distinguishable at the supplied resolution.",
+      "Recommend obtaining a true cross-section or 45-degree oblique photograph of the exact SKU before approving the rebate and sight-edge step."
+    ]
+  }
+}

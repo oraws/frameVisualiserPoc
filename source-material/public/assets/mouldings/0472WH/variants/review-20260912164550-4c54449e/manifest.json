@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 2,
+  "sku": "0472WH",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T16:48:57.144927+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "0472WH",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 52.0,
+    "depthMm": 35.0,
+    "rebateMm": 19.6,
+    "points": [
+      [
+        0.0,
+        17.256
+      ],
+      [
+        1.944,
+        18.329
+      ],
+      [
+        2.624,
+        19.011
+      ],
+      [
+        2.916,
+        19.986
+      ],
+      [
+        3.305,
+        20.376
+      ],
+      [
+        3.985,
+        20.669
+      ],
+      [
+        6.123,
+        20.669
+      ],
+      [
+        6.609,
+        21.058
+      ],
+      [
+        6.901,
+        21.741
+      ],
+      [
+        7.193,
+        22.033
+      ],
+      [
+        8.067,
+        22.521
+      ],
+      [
+        8.845,
+        22.716
+      ],
+      [
+        9.622,
+        22.716
+      ],
+      [
+        10.692,
+        22.423
+      ],
+      [
+        12.052,
+        21.253
+      ],
+      [
+        12.538,
+        20.376
+      ],
+      [
+        12.733,
+        19.694
+      ],
+      [
+        12.733,
+        18.816
+      ],
+      [
+        12.927,
+        18.621
+      ],
+      [
+        33.047,
+        18.719
+      ],
+      [
+        33.436,
+        19.986
+      ],
+      [
+        34.116,
+        20.864
+      ],
+      [
+        35.379,
+        21.643
+      ],
+      [
+        36.546,
+        22.033
+      ],
+      [
+        37.421,
+        23.398
+      ],
+      [
+        38.684,
+        24.568
+      ],
+      [
+        40.531,
+        25.153
+      ],
+      [
+        40.725,
+        26.031
+      ],
+      [
+        41.6,
+        27.396
+      ],
+      [
+        42.28,
+        27.786
+      ],
+      [
+        43.641,
+        27.883
+      ],
+      [
+        43.836,
+        28.078
+      ],
+      [
+        43.836,
+        28.565
+      ],
+      [
+        44.224,
+        29.833
+      ],
+      [
+        44.905,
+        31.198
+      ],
+      [
+        45.779,
+        32.368
+      ],
+      [
+        47.14,
+        33.635
+      ],
+      [
+        48.598,
+        34.513
+      ],
+      [
+        49.862,
+        35.0
+      ],
+      [
+        50.931,
+        35.0
+      ],
+      [
+        52.0,
+        34.415
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 2,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "rebate",
+        "crown",
+        "inner_edge_radius",
+        "outer_edge_radius",
+        "stepped_profile"
+      ],
+      "rejectedTraceFeatures": [],
+      "observations": [
+        "Supplier dimensions (52x35 mm, rebate 19.6 mm) match photographic evidence",
+        "Crown height (faceCrownMm) confirmed as 2 mm",
+        "Inner and outer edge radii confirmed as 0.5 mm each"
+      ],
+      "concerns": []
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 2,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "rebate",
+          "crown",
+          "inner_edge_radius",
+          "outer_edge_radius",
+          "stepped_profile"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 2.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 52.0,
+        "depthMm": 35.0,
+        "rebateMm": 19.6,
+        "pointCount": 41
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.95,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "uncertain",
+      "reasons": [
+        "Candidate cross-section features (rebate, step, outer edge) match supplier photographs (product-section, product-detail-1, product-detail-2)",
+        "All visible ridges, beads, bevels, hollows, and steps are present in supplier photographs"
+      ],
+      "concerns": []
+    }
+  },
+  "profileGate": {
+    "passed": true,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912164550-4c54449e",
+  "referenceImages": [
+    "public/assets/mouldings/0472WH/product-section.jpg",
+    "public/assets/mouldings/0472WH/profile-source.png",
+    "public/assets/mouldings/0472WH/chevron.jpg",
+    "public/assets/mouldings/0472WH/macro.jpg",
+    "public/assets/mouldings/0472WH/product-detail-1.jpg",
+    "public/assets/mouldings/0472WH/product-detail-2.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.85,
+    "contrast": 1.05,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.8,
+    "bump_detail": 3.5
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3-vl:30b",
+    "profile": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 2,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "rebate",
+          "crown",
+          "inner_edge_radius",
+          "outer_edge_radius",
+          "stepped_profile"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 2.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 52.0,
+        "depthMm": 35.0,
+        "rebateMm": 19.6,
+        "pointCount": 41
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "wood-based",
+        "directional": "horizontal",
+        "gloss": "matte",
+        "targetColourDescription": "light beige with subtle natural wood undertones",
+        "settings": {
+          "colour_strength": 0.9,
+          "contrast": 0.95,
+          "roughness_mid": 180,
+          "roughness_detail": 0.5,
+          "bump_detail": 3.0
+        }
+      },
+      "applied": {
+        "finishClass": "wood-based",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.9,
+          "contrast": 0.95,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 180.0,
+          "roughness_detail": 0.5,
+          "bump_detail": 3.0
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 4.2176,
+    "colourSpreadError": 0.1517,
+    "seamError": 0.0072,
+    "maximumAutocorrelation": 0.3754,
+    "detailError": 0.2979,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.9,
+        "contrast": 0.95,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 4.2176,
+        "colourSpreadError": 0.068,
+        "seamError": 0.005,
+        "maximumAutocorrelation": 0.2989,
+        "detailError": 0.118,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 92.9,
+      "failedGates": [],
+      "agentReview": {
+        "score": 30,
+        "colourMatch": 30,
+        "textureMatch": 40,
+        "repetition": 90,
+        "seam": 95,
+        "finishMatch": 35,
+        "blockers": [
+          "colourDelta exceeds acceptable threshold",
+          "texture direction mismatch"
+        ],
+        "observations": [
+          "Supplier's product-detail-1 shows distinct horizontal grain direction; candidate preview's texture lacks matching directional alignment",
+          "High colourDelta (4.2176) indicates significant colour deviation from supplier reference",
+          "No visible seams detected (seamError: 0.005)"
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.05,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.8,
+          "bump_detail": 3.5
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.05,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.8,
+        "bump_detail": 3.5
+      },
+      "metrics": {
+        "colourDeltaE": 4.2176,
+        "colourSpreadError": 0.1517,
+        "seamError": 0.0072,
+        "maximumAutocorrelation": 0.3754,
+        "detailError": 0.2979,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 85.1,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3-vl:30b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "wood-based",
+      "directional": "horizontal",
+      "gloss": "matte",
+      "targetColourDescription": "light beige with subtle natural wood undertones",
+      "preserve": [
+        "profile geometry",
+        "natural grain texture",
+        "light beige colour"
+      ],
+      "risks": [
+        "inconsistent grain direction in reproduction",
+        "over-smoothing texture leading to loss of detail",
+        "colour deviation from exact SKU"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.9,
+        "contrast": 0.95,
+        "roughness_mid": 180,
+        "roughness_detail": 0.5,
+        "bump_detail": 3.0
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.2,
+      "reasons": [
+        "Color mismatch: Supplier's product-section is white; candidate is light gray",
+        "Texture scale/irregularity inconsistent with supplier context images (e.g., product-detail-1/2)",
+        "Candidate texture shows potential tiled repeat (recurring macro pattern)",
+        "Profile features (ridge, bead, etc.) not visually confirmed in candidate image"
+      ],
+      "concerns": [
+        "Color deviation from exact SKU supplier evidence",
+        "Texture scale/irregularity does not match supplier context",
+        "Possible tiling in candidate texture",
+        "Profile features omitted in candidate preview"
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "c0e172dc57df8fd9cdcc19e1fa6491a142d280a6b514615550e06c9709828991",
+      "roughness.jpg": "96e55b48ee772fc54756b4bd907d6faafcd36d1331da740a51287164126e7f29",
+      "bump.jpg": "6779a4041940c8c4be57169f63ecc209624a2b882d0f26a0da3f1b2acc274389"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

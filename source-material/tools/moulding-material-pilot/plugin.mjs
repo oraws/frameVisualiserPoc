@@ -25,9 +25,19 @@ function publicJob(job) {
 function publicBatch(batch) {
   return {
     id: batch.id, status: batch.status, model: batch.model,
+    routingPolicy: batch.routingPolicy || null,
     prompt: batch.prompt, createdAt: batch.createdAt, updatedAt: batch.updatedAt,
     current: batch.current, total: batch.items.length, message: batch.message,
     items: batch.items,
+  };
+}
+
+function publicBenchmark(benchmark) {
+  return {
+    id: benchmark.id, status: benchmark.status, models: benchmark.models,
+    prompt: benchmark.prompt, createdAt: benchmark.createdAt, updatedAt: benchmark.updatedAt,
+    current: benchmark.current, total: benchmark.runs.length, message: benchmark.message,
+    runs: benchmark.runs, recommendation: benchmark.recommendation || null,
   };
 }
 
@@ -35,10 +45,13 @@ export default function mouldingMaterialReview() {
   const root = process.cwd();
   const jobs = new Map();
   const batches = new Map();
+  const benchmarks = new Map();
   let active = null;
   let modelCache = { at: 0, model: null, models: [], error: null };
   const jobsRoot = resolve(root, '.material-review-jobs');
   const batchesRoot = resolve(root, '.material-review-batches');
+  const benchmarksRoot = resolve(root, '.material-review-benchmarks');
+  const routingPolicyPath = resolve(root, '.material-review-routing-policy.json');
   const statePath = resolve(root, '.material-review-state.json');
   const python = join(root, '.venv/bin/python');
   const pipeline = join(root, 'tools/moulding-material-pilot/quality_pipeline.py');
@@ -99,6 +112,83 @@ export default function mouldingMaterialReview() {
       .sort((a, b) => statSync(join(batchesRoot, b.name)).mtimeMs - statSync(join(batchesRoot, a.name)).mtimeMs);
     return ids.length ? readBatch(ids[0].name) : null;
   };
+  const readRoutingPolicy = () => {
+    try { return JSON.parse(readFileSync(routingPolicyPath, 'utf8')); }
+    catch { return null; }
+  };
+  const benchmarkStats = benchmark => benchmark.models.map(model => {
+    const runs = benchmark.runs.filter(run => run.model === model && ['complete', 'failed'].includes(run.status));
+    const completed = runs.filter(run => run.status === 'complete' && run.result);
+    const average = values => values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
+    const imageScores = completed.map(run => Math.max(0, ...(run.result.attempts || []).map(attempt => Number(attempt.deterministicScore || 0))));
+    const confidences = completed.map(run => Number(run.result.reviewer?.confidence || 0) * 100);
+    const colourErrors = completed.map(run => Number(run.result.bestMetrics?.colourDeltaE)).filter(Number.isFinite);
+    const durations = completed.map(run => Number(run.durationMs)).filter(value => Number.isFinite(value) && value > 0);
+    const rated = completed.filter(run => ['accepted', 'rejected'].includes(run.humanDecision));
+    return { model, finished: runs.length, completed: completed.length,
+      passed: completed.filter(run => run.result.status === 'automated-approved-candidate').length,
+      humanRated: rated.length, humanAccepted: rated.filter(run => run.humanDecision === 'accepted').length,
+      averageImageScore: average(imageScores), averageConfidence: average(confidences),
+      averageColourDeltaE: average(colourErrors), averageDurationMs: average(durations) };
+  });
+  const recommendModels = benchmark => {
+    const stats = benchmarkStats(benchmark).filter(item => item.completed > 0);
+    if (!stats.length) return null;
+    const quality = [...stats].sort((a, b) =>
+      (b.humanRated ? b.humanAccepted / b.humanRated : b.passed / Math.max(1, b.completed)) -
+        (a.humanRated ? a.humanAccepted / a.humanRated : a.passed / Math.max(1, a.completed)) ||
+      Number(b.averageImageScore || 0) - Number(a.averageImageScore || 0) ||
+      Number(b.averageConfidence || 0) - Number(a.averageConfidence || 0));
+    const best = quality[0];
+    const qualityRate = item => item.humanRated ? item.humanAccepted / item.humanRated : item.passed / Math.max(1, item.completed);
+    const bestPassRate = qualityRate(best);
+    const primaryCandidates = stats.filter(item =>
+      qualityRate(item) >= Math.max(0, bestPassRate - .1));
+    const primary = [...primaryCandidates].sort((a, b) =>
+      Number(a.averageDurationMs || Infinity) - Number(b.averageDurationMs || Infinity))[0] || best;
+    return { primaryModel: primary.model, fallbackModel: best.model,
+      reason: primary.model === best.model
+        ? 'This model currently has the strongest combined pass rate and image score.'
+        : 'The primary is the fastest model within ten percentage points of the best pass rate; the fallback has the strongest quality result.' };
+  };
+  const saveBenchmark = benchmark => {
+    benchmark.updatedAt = new Date().toISOString();
+    benchmark.recommendation = recommendModels(benchmark);
+    const dir = join(benchmarksRoot, benchmark.id);
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(join(dir, 'benchmark.json'), JSON.stringify(publicBenchmark(benchmark), null, 2));
+    benchmarks.set(benchmark.id, benchmark);
+  };
+  const readBenchmark = id => {
+    const file = join(benchmarksRoot, id, 'benchmark.json');
+    if (benchmarks.has(id) && !existsSync(file)) {
+      benchmarks.delete(id);
+      return null;
+    }
+    if (benchmarks.has(id)) return benchmarks.get(id);
+    if (!existsSync(file)) return null;
+    try {
+      const benchmark = JSON.parse(readFileSync(file, 'utf8'));
+      if (['running', 'pausing'].includes(benchmark.status)) {
+        const interrupted = benchmark.runs.find(run => run.status === 'running');
+        if (interrupted) {
+          interrupted.status = 'queued'; interrupted.progress = 0;
+          interrupted.message = 'Ready to restart after the local server was reopened.';
+        }
+        benchmark.status = 'paused';
+        benchmark.message = 'Benchmark recovered. Press Resume to continue.';
+        saveBenchmark(benchmark);
+      }
+      benchmarks.set(id, benchmark);
+      return benchmark;
+    } catch { return null; }
+  };
+  const latestBenchmark = () => {
+    if (!existsSync(benchmarksRoot)) return null;
+    const ids = readdirSync(benchmarksRoot, { withFileTypes: true }).filter(entry => entry.isDirectory())
+      .sort((a, b) => statSync(join(benchmarksRoot, b.name)).mtimeMs - statSync(join(benchmarksRoot, a.name)).mtimeMs);
+    return ids.length ? readBenchmark(ids[0].name) : null;
+  };
   const readPersisted = id => {
     const file = join(jobsRoot, id, 'job.json');
     if (!existsSync(file)) return null;
@@ -154,6 +244,7 @@ export default function mouldingMaterialReview() {
     bestMetrics: report.bestMetrics,
     bestFailedGates: report.bestFailedGates,
     bestSettings: report.bestSettings,
+    correctionPlan: report.correctionPlan || null,
     attempts: (report.attempts || []).map(item => ({
       attempt: item.attempt,
       deterministicScore: item.deterministicScore,
@@ -253,9 +344,26 @@ export default function mouldingMaterialReview() {
     batch.current = batch.items.indexOf(item) + 1;
     batch.message = `${item.sku} · ${item.name}`; saveBatch(batch);
     try {
+      const selectedModel = item.nextModel || batch.routingPolicy?.primaryModel || batch.model;
+      item.activeModel = selectedModel;
       const job = launchReview({ sku: item.sku, fault: item.prompt, scopes: item.scopes,
-        model: batch.model, fastReview: true }, settled => {
+        model: selectedModel, fastReview: true }, settled => {
         item.jobId = settled.id; item.progress = settled.progress; item.message = settled.message;
+        item.modelRuns ||= [];
+        item.modelRuns.push({ model: selectedModel, jobId: settled.id, status: settled.status,
+          result: settled.result || null, completedAt: new Date().toISOString() });
+        const fallback = batch.routingPolicy?.fallbackModel;
+        const needsFallback = fallback && fallback !== selectedModel && selectedModel === batch.routingPolicy?.primaryModel &&
+          (settled.status !== 'complete' || settled.result?.status !== 'automated-approved-candidate');
+        if (needsFallback) {
+          item.status = 'queued'; item.progress = 0; item.result = null; item.nextModel = fallback;
+          item.message = `Primary model requested inspection. Escalated to ${fallback}.`;
+          if (batch.status === 'pausing') {
+            batch.status = 'paused'; batch.message = 'Paused before the fallback model.';
+            saveBatch(batch); return;
+          }
+          saveBatch(batch); setTimeout(() => continueBatch(batch), 25); return;
+        }
         item.status = settled.status; item.result = settled.result || null;
         if (batch.status === 'pausing') {
           batch.status = 'paused'; batch.message = 'Paused after the current moulding completed.';
@@ -272,6 +380,46 @@ export default function mouldingMaterialReview() {
     } catch (error) {
       item.status = 'failed'; item.message = error.message || 'Could not start review.';
       saveBatch(batch); setTimeout(() => continueBatch(batch), 25);
+    }
+  };
+
+  const continueBenchmark = benchmark => {
+    if (benchmark.status !== 'running' || active) return;
+    const run = benchmark.runs.find(candidate => candidate.status === 'queued');
+    if (!run) {
+      benchmark.status = 'complete'; benchmark.current = benchmark.runs.length;
+      const completed = benchmark.runs.filter(candidate => candidate.status === 'complete').length;
+      const passed = benchmark.runs.filter(candidate => candidate.result?.status === 'automated-approved-candidate').length;
+      benchmark.message = `Benchmark complete · ${completed}/${benchmark.runs.length} completed · ${passed} passed automatically.`;
+      saveBenchmark(benchmark); return;
+    }
+    run.status = 'running'; run.progress = 2; run.message = 'Starting benchmark run…';
+    run.startedAt = new Date().toISOString();
+    benchmark.current = benchmark.runs.indexOf(run) + 1;
+    benchmark.message = `${run.model} · ${run.sku}`; saveBenchmark(benchmark);
+    try {
+      const job = launchReview({ sku: run.sku, fault: run.prompt, scopes: run.scopes,
+        model: run.model, fastReview: true }, settled => {
+        run.jobId = settled.id; run.progress = settled.progress; run.message = settled.message;
+        run.status = settled.status; run.result = settled.result || null;
+        run.completedAt = new Date().toISOString();
+        run.durationMs = Math.max(0, Date.parse(run.completedAt) - Date.parse(run.startedAt));
+        if (benchmark.status === 'pausing') {
+          benchmark.status = 'paused'; benchmark.message = 'Paused after the current benchmark run completed.';
+          saveBenchmark(benchmark); return;
+        }
+        saveBenchmark(benchmark); setTimeout(() => continueBenchmark(benchmark), 25);
+      });
+      run.jobId = job.id;
+      const mirror = setInterval(() => {
+        if (job.status !== 'running') return clearInterval(mirror);
+        run.progress = job.progress; run.message = job.message; saveBenchmark(benchmark);
+      }, 1200);
+      saveBenchmark(benchmark);
+    } catch (error) {
+      run.status = 'failed'; run.message = error.message || 'Could not start benchmark run.';
+      run.completedAt = new Date().toISOString();
+      saveBenchmark(benchmark); setTimeout(() => continueBenchmark(benchmark), 25);
     }
   };
 
@@ -295,7 +443,8 @@ export default function mouldingMaterialReview() {
       const state = readState().mouldings?.[sku] || {};
       return send(res, 200, { available: !!model.model && existsSync(python) && existsSync(pipeline),
         model: model.model, models: model.models, error: model.error, busy: !!active, eligible: eligible(sku), existing,
-        history: historyFor(sku), assetStatus: state.assetStatus || 'pending', acceptedVersion: state.acceptedVersion || null });
+        history: historyFor(sku), assetStatus: state.assetStatus || 'pending', acceptedVersion: state.acceptedVersion || null,
+        routingPolicy: readRoutingPolicy() });
     }
     if (path === '/api/material-review/statuses' && req.method === 'GET') {
       const state = readState();
@@ -329,8 +478,14 @@ export default function mouldingMaterialReview() {
         body = JSON.parse(Buffer.concat(chunks).toString());
       } catch (error) { return send(res, 400, { error: error.message || 'Invalid batch request.' }); }
       const available = await localModels();
-      const model = available.models.find(item => item.name === String(body.model || ''))?.name;
-      if (!model) return send(res, 503, { error: available.error || 'Select an installed Ollama vision model.' });
+      const requestedModel = String(body.model || '');
+      const routingPolicy = requestedModel === '__tiered__' ? readRoutingPolicy() : null;
+      const model = requestedModel === '__tiered__'
+        ? routingPolicy?.primaryModel
+        : available.models.find(item => item.name === requestedModel)?.name;
+      const primaryAvailable = !routingPolicy?.primaryModel || available.models.some(item => item.name === routingPolicy.primaryModel);
+      const fallbackAvailable = !routingPolicy?.fallbackModel || available.models.some(item => item.name === routingPolicy.fallbackModel);
+      if (!model || !primaryAvailable || !fallbackAvailable) return send(res, 503, { error: available.error || 'Select an installed Ollama vision model.' });
       const incoming = Array.isArray(body.items) ? body.items.slice(0, 150) : [];
       const items = incoming.map(value => {
         const sku = String(value.sku || '').toUpperCase().trim();
@@ -341,7 +496,8 @@ export default function mouldingMaterialReview() {
       }).filter(item => /^[A-Z0-9-]{2,32}$/.test(item.sku) && eligible(item.sku) && item.scopes.length && item.prompt.length >= 4);
       if (!items.length) return send(res, 400, { error: 'No eligible mouldings with a review prompt were supplied.' });
       const id = randomUUID();
-      const batch = { id, status: 'paused', model, prompt: String(body.prompt || ''),
+      const batch = { id, status: 'paused', model: routingPolicy ? `Tiered · ${routingPolicy.primaryModel} → ${routingPolicy.fallbackModel}` : model,
+        routingPolicy, prompt: String(body.prompt || ''),
         createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), current: 0,
         message: 'Queue prepared. Inspect the frames and prompts, then press Start batch.' , items };
       saveBatch(batch);
@@ -356,6 +512,7 @@ export default function mouldingMaterialReview() {
         batch.status = running ? 'pausing' : 'paused';
         batch.message = running ? 'Pausing after the current moulding…' : 'Batch paused.';
       } else if (batch.status !== 'complete') {
+        if (active) return send(res, 409, { error: 'Another local review is currently running.' });
         batch.status = 'running'; batch.message = 'Resuming saved batch…';
         for (const item of batch.items) if (item.status === 'running') {
           item.status = 'queued'; item.progress = 0; item.message = 'Queued to restart';
@@ -364,6 +521,78 @@ export default function mouldingMaterialReview() {
       saveBatch(batch);
       if (batch.status === 'running') setTimeout(() => continueBatch(batch), 25);
       return send(res, 200, publicBatch(batch));
+    }
+    if (path === '/api/material-review/benchmark' && req.method === 'GET') {
+      const requested = url.searchParams.get('id');
+      const benchmark = requested ? readBenchmark(requested) : latestBenchmark();
+      return send(res, 200, { benchmark: benchmark ? publicBenchmark(benchmark) : null,
+        routingPolicy: readRoutingPolicy() });
+    }
+    if (path === '/api/material-review/benchmark' && req.method === 'POST') {
+      if (active) return send(res, 409, { error: 'The current moulding must finish before a benchmark can be prepared.' });
+      let body;
+      try {
+        const chunks = []; let size = 0;
+        for await (const chunk of req) { size += chunk.length; if (size > 300000) throw new Error('Benchmark request is too large.'); chunks.push(chunk); }
+        body = JSON.parse(Buffer.concat(chunks).toString());
+      } catch (error) { return send(res, 400, { error: error.message || 'Invalid benchmark request.' }); }
+      const available = await localModels();
+      const requestedModels = [...new Set(Array.isArray(body.models) ? body.models.map(String) : [])].slice(0, 6);
+      const models = requestedModels.filter(name => available.models.some(item => item.name === name));
+      if (!models.length) return send(res, 503, { error: available.error || 'Select at least one installed vision model.' });
+      const incoming = Array.isArray(body.items) ? body.items.slice(0, 60) : [];
+      const items = incoming.map(value => {
+        const sku = String(value.sku || '').toUpperCase().trim();
+        return { sku, name: String(value.name || sku), supplier: String(value.supplier || ''),
+          scopes: ['profile', 'material'], prompt: String(value.prompt || body.prompt || '').trim() };
+      }).filter(item => /^[A-Z0-9-]{2,32}$/.test(item.sku) && eligible(item.sku) && item.prompt.length >= 4);
+      if (!items.length) return send(res, 400, { error: 'No eligible benchmark mouldings were supplied.' });
+      const id = randomUUID();
+      const runs = items.flatMap(item => models.map(model => ({ ...item, model, status: 'queued',
+        progress: 0, message: 'Queued', jobId: null, result: null, durationMs: null })));
+      const benchmark = { id, status: 'paused', models, prompt: String(body.prompt || ''), runs,
+        createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), current: 0,
+        message: `Benchmark prepared · ${items.length} mouldings × ${models.length} models. Press Start benchmark.` };
+      saveBenchmark(benchmark);
+      return send(res, 202, publicBenchmark(benchmark));
+    }
+    const benchmarkAction = path.match(/^\/api\/material-review\/benchmark\/([a-f0-9-]{36})\/(pause|resume|adopt|rate)$/);
+    if (benchmarkAction && req.method === 'POST') {
+      const benchmark = readBenchmark(benchmarkAction[1]);
+      if (!benchmark) return send(res, 404, { error: 'Benchmark was not found.' });
+      const action = benchmarkAction[2];
+      if (action === 'rate') {
+        let body;
+        try { const chunks = []; for await (const chunk of req) chunks.push(chunk); body = JSON.parse(Buffer.concat(chunks).toString()); }
+        catch { return send(res, 400, { error: 'Invalid benchmark rating.' }); }
+        const run = benchmark.runs.find(item => item.sku === String(body.sku || '').toUpperCase() && item.model === String(body.model || ''));
+        if (!run || run.status !== 'complete' || !run.result || !['accepted', 'rejected', 'pending'].includes(body.decision))
+          return send(res, 400, { error: 'Choose a completed benchmark result and a valid decision.' });
+        run.humanDecision = body.decision;
+        saveBenchmark(benchmark);
+        return send(res, 200, publicBenchmark(benchmark));
+      }
+      if (action === 'adopt') {
+        if (benchmark.status !== 'complete') return send(res, 409, { error: 'Finish the benchmark before adopting its routing policy.' });
+        if (!benchmark.recommendation) return send(res, 409, { error: 'Complete at least one benchmark result before adopting a routing policy.' });
+        const policy = { ...benchmark.recommendation, benchmarkId: benchmark.id, createdAt: new Date().toISOString() };
+        writeFileSync(routingPolicyPath, JSON.stringify(policy, null, 2) + '\n');
+        return send(res, 200, { benchmark: publicBenchmark(benchmark), routingPolicy: policy });
+      }
+      if (action === 'pause') {
+        const running = benchmark.runs.some(run => run.status === 'running');
+        benchmark.status = running ? 'pausing' : 'paused';
+        benchmark.message = running ? 'Pausing after the current benchmark run…' : 'Benchmark paused.';
+      } else if (benchmark.status !== 'complete') {
+        if (active) return send(res, 409, { error: 'Another local review is currently running.' });
+        benchmark.status = 'running'; benchmark.message = 'Resuming benchmark…';
+        for (const run of benchmark.runs) if (run.status === 'running') {
+          run.status = 'queued'; run.progress = 0; run.message = 'Queued to restart';
+        }
+      }
+      saveBenchmark(benchmark);
+      if (benchmark.status === 'running') setTimeout(() => continueBenchmark(benchmark), 25);
+      return send(res, 200, publicBenchmark(benchmark));
     }
     const match = path.match(/^\/api\/material-review\/([a-f0-9-]{36})$/);
     if (match && req.method === 'GET') {

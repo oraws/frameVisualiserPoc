@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "sku": "4925BG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 49.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      17.829
+    ],
+    [
+      2.498,
+      18.702
+    ],
+    [
+      3.555,
+      19.38
+    ],
+    [
+      4.804,
+      20.543
+    ],
+    [
+      6.437,
+      22.965
+    ],
+    [
+      7.206,
+      25.0
+    ],
+    [
+      11.049,
+      25.0
+    ],
+    [
+      12.394,
+      22.868
+    ],
+    [
+      12.971,
+      22.481
+    ],
+    [
+      13.739,
+      22.674
+    ],
+    [
+      14.988,
+      24.031
+    ],
+    [
+      16.237,
+      24.031
+    ],
+    [
+      49.0,
+      9.981
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 25,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "rebate 14mm",
+      "face height 25mm",
+      "stepped profile",
+      "inner edge radius 0.5mm",
+      "outer edge radius 0.5mm"
+    ],
+    "rejectedTraceFeatures": [],
+    "observations": [
+      "Supplier dimensions (49x25mm, rebate 14mm) match profile source",
+      "Rebate step is clearly visible in profile source",
+      "Inner and outer edge radii confirmed in macro image",
+      "Assembled frame in family context matches profile geometry"
+    ],
+    "concerns": []
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 25,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "rebate 14mm",
+        "face height 25mm",
+        "stepped profile",
+        "inner edge radius 0.5mm",
+        "outer edge radius 0.5mm"
+      ],
+      "rejectedTraceFeatures": []
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 6.0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 49.0,
+      "depthMm": 25.0,
+      "rebateMm": 14.0,
+      "pointCount": 13
+    },
+    "constrained": [
+      {
+        "field": "faceCrownMm",
+        "requested": 25.0,
+        "applied": 6.0,
+        "reason": "Clamped to the safe range 0..6."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.9,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Rebate drop (14 mm) matches supplier profile-source dimension",
+      "Outer edge and sight edge align with product-section and framed-reference images",
+      "Chevron profile verified in macro and chevron images"
+    ],
+    "concerns": []
+  }
+}

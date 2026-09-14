@@ -108,6 +108,31 @@ npm run build
 
 Colour regression check: run Blender with `--background --factory-startup --python tools/high-res-render/test_colour.py`. A local `--smoke-test` flag after the job directory renders at 320 pixels for integration checks; the browser always requests 3200 pixels.
 
+## Leaning Floor Gallery
+
+**AI Enhanced · Leaning Floor Gallery** is a portrait catalogue set derived
+from an original fixed Blender scene. The frame is calculated from its current
+outer dimensions, rests on the authored floor height and leans six degrees
+against the wall. Changing artwork size or moulding depth therefore keeps the
+bottom edge planted instead of applying a flat screen overlay. Its wall and
+floor both receive live preview shadows; the high-resolution renderer imports
+the same transformed frame into `leaning-floor-gallery.blend` and renders the
+contact and broad right-hand daylight with Cycles.
+
+Regenerate the deterministic room and local reflection capture with:
+
+```sh
+/private/tmp/frame-room-blender/Blender.app/Contents/MacOS/Blender \
+  --background --factory-startup \
+  --python tools/room-template-generator/generate_leaning.py
+```
+
+The optional local Qwen Image Edit pass reads
+`public/assets/rooms/leaning-floor-gallery/enhancement.json`. It refines only
+the empty room plate and is stored as a separate dropdown option; it never sees
+or redraws the artwork or moulding. With ComfyUI running as described in the
+local enhancement README, run `npm run room:enhance:leaning`.
+
 ## Live frame / Cycles matching
 
 Generated-room frame and mount materials now use the full room environment

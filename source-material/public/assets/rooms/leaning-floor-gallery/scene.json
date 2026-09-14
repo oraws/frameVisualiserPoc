@@ -1,0 +1,21 @@
+{
+  "id": "leaning-floor-gallery",
+  "name": "3D · Leaning Floor Gallery",
+  "version": 1,
+  "image": "/assets/rooms/leaning-floor-gallery/room.jpg",
+  "environment": "/assets/rooms/leaning-floor-gallery/environment.exr",
+  "imageWidth": 1600,
+  "imageHeight": 1800,
+  "camera": { "position": [0, 0.15, 7.4], "target": [0, -0.28, 0.35], "fov": 34 },
+  "framePosition": [0, -0.8, 0.012],
+  "frameRotation": [-0.105, 0, 0],
+  "wallZ": 0,
+  "floorY": -1.65,
+  "placement": { "type": "floor-lean", "floorY": -1.65, "wallZ": 0, "tiltDegrees": 6, "rearClearanceMm": 3 },
+  "keyLight": { "position": [3.8, 4.4, 3.8], "target": [0, -0.35, 0.4], "intensity": 2.25, "color": "#fff8ee", "width": 4.2, "height": 4.8, "powerWatts": 1800 },
+  "fill": 0.2,
+  "environmentIntensity": 0.52,
+  "exposure": 0.85,
+  "wallColour": "#e4e0da",
+  "description": "Minimal portrait sales set with fine plaster, low skirting, warm oak flooring and a frame that rests on the floor and leans against the wall under broad daylight from the right."
+}

@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 2,
+  "sku": "8054BG",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T18:08:09.872717+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "8054BG",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "ornate",
+    "widthMm": 80.0,
+    "depthMm": 54.0,
+    "rebateMm": 26.0,
+    "points": [
+      [
+        0.0,
+        31.806
+      ],
+      [
+        0.989,
+        32.372
+      ],
+      [
+        2.12,
+        32.372
+      ],
+      [
+        3.251,
+        32.796
+      ],
+      [
+        3.816,
+        33.644
+      ],
+      [
+        4.382,
+        34.068
+      ],
+      [
+        5.088,
+        34.209
+      ],
+      [
+        6.643,
+        34.068
+      ],
+      [
+        8.057,
+        35.058
+      ],
+      [
+        8.763,
+        35.058
+      ],
+      [
+        9.329,
+        35.34
+      ],
+      [
+        9.894,
+        36.047
+      ],
+      [
+        10.035,
+        37.037
+      ],
+      [
+        10.742,
+        37.743
+      ],
+      [
+        12.721,
+        38.592
+      ],
+      [
+        14.558,
+        38.592
+      ],
+      [
+        15.406,
+        38.168
+      ],
+      [
+        16.254,
+        37.319
+      ],
+      [
+        16.82,
+        36.188
+      ],
+      [
+        17.244,
+        35.764
+      ],
+      [
+        26.714,
+        35.623
+      ],
+      [
+        30.106,
+        36.188
+      ],
+      [
+        32.509,
+        37.037
+      ],
+      [
+        34.205,
+        37.885
+      ],
+      [
+        36.608,
+        39.44
+      ],
+      [
+        39.293,
+        41.984
+      ],
+      [
+        40.848,
+        44.246
+      ],
+      [
+        41.979,
+        45.094
+      ],
+      [
+        43.816,
+        45.377
+      ],
+      [
+        44.806,
+        44.812
+      ],
+      [
+        46.219,
+        44.812
+      ],
+      [
+        48.763,
+        47.356
+      ],
+      [
+        50.318,
+        48.487
+      ],
+      [
+        52.58,
+        49.759
+      ],
+      [
+        56.82,
+        51.314
+      ],
+      [
+        59.647,
+        51.738
+      ],
+      [
+        62.049,
+        51.738
+      ],
+      [
+        63.18,
+        52.728
+      ],
+      [
+        63.322,
+        53.152
+      ],
+      [
+        63.887,
+        53.717
+      ],
+      [
+        64.594,
+        54.0
+      ],
+      [
+        65.724,
+        36.471
+      ],
+      [
+        65.724,
+        33.927
+      ],
+      [
+        66.007,
+        32.513
+      ],
+      [
+        66.148,
+        38.45
+      ],
+      [
+        66.996,
+        30.11
+      ],
+      [
+        68.127,
+        42.974
+      ],
+      [
+        68.127,
+        28.555
+      ],
+      [
+        69.541,
+        27.141
+      ],
+      [
+        69.823,
+        53.859
+      ],
+      [
+        70.53,
+        53.293
+      ],
+      [
+        70.53,
+        26.435
+      ],
+      [
+        70.671,
+        47.497
+      ],
+      [
+        71.095,
+        52.304
+      ],
+      [
+        71.095,
+        48.911
+      ],
+      [
+        72.085,
+        25.869
+      ],
+      [
+        73.64,
+        24.88
+      ],
+      [
+        74.205,
+        23.89
+      ],
+      [
+        74.77,
+        23.325
+      ],
+      [
+        76.042,
+        22.618
+      ],
+      [
+        77.032,
+        21.628
+      ],
+      [
+        77.456,
+        20.78
+      ],
+      [
+        77.597,
+        19.366
+      ],
+      [
+        79.435,
+        18.66
+      ],
+      [
+        80.0,
+        18.094
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "ornate",
+      "faceCrownMm": 5,
+      "innerEdgeRadiusMm": 1.2,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": false,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "rebate",
+        "ornate scoop profile",
+        "chevron corner"
+      ],
+      "rejectedTraceFeatures": [],
+      "observations": [
+        "Supplier dimensions 80x54mm rebate 28mm consistent with product-section",
+        "Ornate scoop profile confirmed in macro and product-section images"
+      ],
+      "concerns": [
+        "Catalogue trace may contain segmentation edges; physical section required for full verification"
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "ornate",
+        "faceCrownMm": 5,
+        "innerEdgeRadiusMm": 1.2,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": false,
+        "verifiedFeatures": [
+          "rebate",
+          "ornate scoop profile",
+          "chevron corner"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "ornate",
+        "faceCrownMm": 5.0,
+        "innerEdgeRadiusMm": 1.2,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 80.0,
+        "depthMm": 54.0,
+        "rebateMm": 26.0,
+        "pointCount": 65
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 1.0,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "agree",
+      "reasons": [
+        "Rebate drop (26 mm) matches profile-source dimension",
+        "All visible features (rebate, shape, chevron) confirmed in supplier photographs"
+      ],
+      "concerns": []
+    }
+  },
+  "profileGate": {
+    "passed": true,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912180513-4bb0f9a7",
+  "referenceImages": [
+    "public/assets/mouldings/8054BG/product-section.jpg",
+    "public/assets/mouldings/8054BG/profile-source.png",
+    "public/assets/mouldings/8054BG/chevron.jpg",
+    "public/assets/mouldings/8054BG/macro.jpg",
+    "public/assets/mouldings/8054BG/framed-reference.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/centrado/wentworth/8054BG-framed-reference.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 3,
+    "colour_strength": 0.9,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 176.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 2.0
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3-vl:30b",
+    "profile": {
+      "requested": {
+        "shapeClass": "ornate",
+        "faceCrownMm": 5,
+        "innerEdgeRadiusMm": 1.2,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": false,
+        "verifiedFeatures": [
+          "rebate",
+          "ornate scoop profile",
+          "chevron corner"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "ornate",
+        "faceCrownMm": 5.0,
+        "innerEdgeRadiusMm": 1.2,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 80.0,
+        "depthMm": 54.0,
+        "rebateMm": 26.0,
+        "pointCount": 65
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "satin",
+        "directional": "none",
+        "gloss": "satin",
+        "targetColourDescription": "black finish with gold inner trim; matte/satin sheen on black surface",
+        "settings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "roughness_mid": 150,
+          "roughness_detail": 0.5,
+          "bump_detail": 2.0
+        }
+      },
+      "applied": {
+        "finishClass": "satin",
+        "directional": true,
+        "gloss": "satin",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 150.0,
+          "roughness_detail": 0.5,
+          "bump_detail": 2.0
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 0.7948,
+    "colourSpreadError": 0.1847,
+    "seamError": 0.0154,
+    "maximumAutocorrelation": 0.2213,
+    "detailError": 0.2778,
+    "clippedPixels": 0.0952
+  },
+  "bestFailedGates": [
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 150.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 0.4366,
+        "colourSpreadError": 0.192,
+        "seamError": 0.0141,
+        "maximumAutocorrelation": 0.3834,
+        "detailError": 0.2809,
+        "clippedPixels": 0.0939
+      },
+      "deterministicScore": 82.7,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 85,
+        "colourMatch": 70,
+        "textureMatch": 85,
+        "repetition": 90,
+        "seam": 95,
+        "finishMatch": 85,
+        "blockers": [
+          "ColourDelta exceeds acceptable threshold (0.4366 > 0.3)"
+        ],
+        "observations": [
+          "Directional grain consistent with supplier profile-source",
+          "Seam error minimal (0.0141)",
+          "No visible tiling in texture",
+          "Colour slightly off from exact SKU"
+        ],
+        "suggestedSettings": [
+          "Adjust contrast to 1.05",
+          "Increase patch_width to 512 pixels"
+        ]
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 176.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 0.1757,
+        "colourSpreadError": 0.133,
+        "seamError": 0.0147,
+        "maximumAutocorrelation": 0.3222,
+        "detailError": 0.2847,
+        "clippedPixels": 0.1299
+      },
+      "deterministicScore": 86.3,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 176.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 0.4366,
+        "colourSpreadError": 0.1853,
+        "seamError": 0.0153,
+        "maximumAutocorrelation": 0.2491,
+        "detailError": 0.2673,
+        "clippedPixels": 0.0943
+      },
+      "deterministicScore": 87.4,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 176.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 2.0
+      },
+      "metrics": {
+        "colourDeltaE": 0.7948,
+        "colourSpreadError": 0.1847,
+        "seamError": 0.0154,
+        "maximumAutocorrelation": 0.2213,
+        "detailError": 0.2778,
+        "clippedPixels": 0.0952
+      },
+      "deterministicScore": 88.0,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3-vl:30b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "satin",
+      "directional": "none",
+      "gloss": "satin",
+      "targetColourDescription": "black finish with gold inner trim; matte/satin sheen on black surface",
+      "preserve": [
+        "chevron profile",
+        "black outer edge",
+        "gold inner trim",
+        "54mm/26mm dimensions"
+      ],
+      "risks": [
+        "incorrect gloss classification (misjudging as glossy)",
+        "profile dimension misalignment",
+        "inconsistent finish sheen across edges"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "roughness_mid": 150,
+        "roughness_detail": 0.5,
+        "bump_detail": 2.0
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.3,
+      "reasons": [
+        "Candidate texture shows potential obvious repeat (horizontal lines) which may not match SKU's natural irregularity",
+        "Color Delta (0.7948) indicates possible color deviation from exact SKU supplier color",
+        "Texture scale and finish may not fully match EXACT SKU macro reference due to uniformity of candidate texture"
+      ],
+      "concerns": [
+        "Obvious repeat in texture pattern",
+        "Color deviation from exact SKU supplier color",
+        "Texture scale and finish mismatch with EXACT SKU macro reference"
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "6e3ec7d2aabb47890038bb32da038063d112558798136c76f59998affa919db4",
+      "roughness.jpg": "ecec0394581a797e9651f2212cb4d006865cd530fa11c5bed402582e27207826",
+      "bump.jpg": "7e3729578726ed2e9ad0c35f68a5ed76d2bb4691142285f1661c8a39fe222d97"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

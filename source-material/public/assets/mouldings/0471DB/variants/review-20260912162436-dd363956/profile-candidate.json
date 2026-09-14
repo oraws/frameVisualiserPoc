@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "sku": "0471DB",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 30.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      14.706
+    ],
+    [
+      1.727,
+      16.368
+    ],
+    [
+      3.198,
+      16.496
+    ],
+    [
+      3.966,
+      17.263
+    ],
+    [
+      4.797,
+      17.583
+    ],
+    [
+      5.629,
+      17.519
+    ],
+    [
+      6.205,
+      17.199
+    ],
+    [
+      6.716,
+      16.624
+    ],
+    [
+      7.036,
+      15.729
+    ],
+    [
+      19.574,
+      15.729
+    ],
+    [
+      20.085,
+      17.072
+    ],
+    [
+      20.469,
+      17.391
+    ],
+    [
+      21.109,
+      17.455
+    ],
+    [
+      21.812,
+      18.478
+    ],
+    [
+      22.324,
+      18.926
+    ],
+    [
+      23.731,
+      19.565
+    ],
+    [
+      24.051,
+      19.885
+    ],
+    [
+      24.115,
+      20.524
+    ],
+    [
+      24.371,
+      20.972
+    ],
+    [
+      25.906,
+      21.867
+    ],
+    [
+      26.034,
+      22.506
+    ],
+    [
+      26.354,
+      23.082
+    ],
+    [
+      27.761,
+      24.488
+    ],
+    [
+      29.616,
+      25.0
+    ],
+    [
+      30.0,
+      24.744
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 4,
+    "innerEdgeRadiusMm": 1,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "conflicts",
+    "verifiedFeatures": [
+      "step",
+      "rebate depth 14mm",
+      "total height 30mm",
+      "width 25mm"
+    ],
+    "rejectedTraceFeatures": [
+      "angled"
+    ],
+    "observations": [
+      "Supplier profile label 'angled' conflicts with stepped profile in product-section image"
+    ],
+    "concerns": [
+      "Potential mislabeling of profile type in supplier documentation"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 4,
+      "innerEdgeRadiusMm": 1,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "step",
+        "rebate depth 14mm",
+        "total height 30mm",
+        "width 25mm"
+      ],
+      "rejectedTraceFeatures": [
+        "angled"
+      ]
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 4.0,
+      "innerEdgeRadiusMm": 1.0,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 30.0,
+      "depthMm": 25.0,
+      "rebateMm": 14.0,
+      "pointCount": 25
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.2,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "smooth rebate drop (1.4mm)"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Candidate's rebate drop (1.4mm) is smooth, but supplier product-section photo shows stepped rebate",
+      "Supplier's physical-section photo lacks the smooth rebate drop feature",
+      "Candidate cross-section does not match visible features in supplier photographs"
+    ],
+    "concerns": [
+      "Rebate shape mismatch between candidate and supplier photos",
+      "Potential addition of unsupported feature (smooth rebate drop) not present in supplier images"
+    ]
+  }
+}

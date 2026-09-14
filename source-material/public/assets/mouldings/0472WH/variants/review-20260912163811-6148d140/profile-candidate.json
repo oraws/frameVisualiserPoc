@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "sku": "0472WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 52.0,
+  "depthMm": 35.0,
+  "rebateMm": 19.6,
+  "points": [
+    [
+      0.0,
+      17.256
+    ],
+    [
+      1.944,
+      18.329
+    ],
+    [
+      2.624,
+      19.011
+    ],
+    [
+      2.916,
+      19.986
+    ],
+    [
+      3.305,
+      20.376
+    ],
+    [
+      3.985,
+      20.669
+    ],
+    [
+      6.123,
+      20.669
+    ],
+    [
+      6.609,
+      21.058
+    ],
+    [
+      6.901,
+      21.741
+    ],
+    [
+      7.193,
+      22.033
+    ],
+    [
+      8.067,
+      22.521
+    ],
+    [
+      8.845,
+      22.716
+    ],
+    [
+      9.622,
+      22.716
+    ],
+    [
+      10.692,
+      22.423
+    ],
+    [
+      12.052,
+      21.253
+    ],
+    [
+      12.538,
+      20.376
+    ],
+    [
+      12.733,
+      19.694
+    ],
+    [
+      12.733,
+      18.816
+    ],
+    [
+      12.927,
+      18.621
+    ],
+    [
+      33.047,
+      18.719
+    ],
+    [
+      33.436,
+      19.986
+    ],
+    [
+      34.116,
+      20.864
+    ],
+    [
+      35.379,
+      21.643
+    ],
+    [
+      36.546,
+      22.033
+    ],
+    [
+      37.421,
+      23.398
+    ],
+    [
+      38.684,
+      24.568
+    ],
+    [
+      40.531,
+      25.153
+    ],
+    [
+      40.725,
+      26.031
+    ],
+    [
+      41.6,
+      27.396
+    ],
+    [
+      42.28,
+      27.786
+    ],
+    [
+      43.641,
+      27.883
+    ],
+    [
+      43.836,
+      28.078
+    ],
+    [
+      43.836,
+      28.565
+    ],
+    [
+      44.224,
+      29.833
+    ],
+    [
+      44.905,
+      31.198
+    ],
+    [
+      45.779,
+      32.368
+    ],
+    [
+      47.14,
+      33.635
+    ],
+    [
+      48.598,
+      34.513
+    ],
+    [
+      49.862,
+      35.0
+    ],
+    [
+      50.931,
+      35.0
+    ],
+    [
+      52.0,
+      34.415
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0.0,
+    "innerEdgeRadiusMm": 0.4,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "planar sight face (product-section, product-detail-1, product-detail-2)",
+      "single angled bevel joining sight face to side (product-detail-1, product-detail-2, chevron)",
+      "rebate/step at rear edge consistent with 19.6 mm rebate (product-detail-1, product-detail-2)",
+      "sharp-to-slightly-rounded outer sight edge (product-detail-2)"
+    ],
+    "rejectedTraceFeatures": [
+      "small rounded bead/bump at right of profile-source silhouette (not visible in any exact-SKU section or oblique photo)",
+      "additional ridge/hollow implied by the tan source outline beyond the single bevel + rebate"
+    ],
+    "observations": [
+      "product-section shows a flat cream face with one angled cut at the left edge, no crown or bead",
+      "product-detail-1 and product-detail-2 show a flat top face, one bevel, and a rear step/rebate with exposed core; geometry matches an 'angled' stepped profile",
+      "chevron confirms two planar faces meeting at an angle, consistent with bevelled (not rounded) edges",
+      "macro row is family/presentation context only and was not used to set colour or geometry",
+      "colour/finish on exact-SKU photos is a light warm white/cream matte with faint directional grain; no gloss highlight interpreted as relief"
+    ],
+    "concerns": [
+      "profile-source silhouette contains a rounded element that is not corroborated by the physical sections; treated as unverified and excluded",
+      "chevron V-shape could be a presentation join rather than a true crown; relied on detail photos for edge radius",
+      "lighting on detail-1/detail-2 creates edge highlights that must not be read as extra ridges"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.4,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "planar sight face (product-section, product-detail-1, product-detail-2)",
+        "single angled bevel joining sight face to side (product-detail-1, product-detail-2, chevron)",
+        "rebate/step at rear edge consistent with 19.6 mm rebate (product-detail-1, product-detail-2)",
+        "sharp-to-slightly-rounded outer sight edge (product-detail-2)"
+      ],
+      "rejectedTraceFeatures": [
+        "small rounded bead/bump at right of profile-source silhouette (not visible in any exact-SKU section or oblique photo)",
+        "additional ridge/hollow implied by the tan source outline beyond the single bevel + rebate"
+      ]
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.4,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 52.0,
+      "depthMm": 35.0,
+      "rebateMm": 19.6,
+      "pointCount": 41
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.42,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Left-side perimeter bead (small rounded bump near the sight edge)",
+      "Rebate drop of 19.6 mm at the sight edge (vertical green dimension line)",
+      "Multi-step ogee rise on the outer edge that exceeds the simple cove shown in the profile-source silhouette"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The profile-source silhouette shows a tall coved left edge, a flat run, and a single bead on the right; the candidate places a bead on the left and a tall stepped ogee on the right, an orientation/feature mismatch that is not confirmed by any oblique or chevron photo.",
+      "The 19.6 mm rebate drop at the sight edge has no visible counterpart in product-detail-1 or product-detail-2, where the sight/back edge reads as a flat vertical face rather than a stepped rebate.",
+      "The stepped ogee on the candidate's outer edge is only loosely echoed by product-detail-2; the number of steps and the final rounded cap cannot be independently verified from the supplied macro/chevron images.",
+      "The left perimeter bead in the candidate is not present on the flat photographed faces, which would constitute an added ridge on a flat face."
+    ],
+    "concerns": [
+      "Possible added perimeter ridge on a flat photographed face (left bead).",
+      "Rebate dimension (19.6 mm) appears to come only from the advisory guide, not from a measurable photo feature.",
+      "Orientation of the bead vs. ogee is inconsistent between the profile-source trace and the candidate cross-section.",
+      "Lighting and end-grain colour in the detail photos make exact step counts on the ogee ambiguous."
+    ]
+  }
+}

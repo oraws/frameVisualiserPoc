@@ -1,0 +1,8 @@
+{
+  "seed": 12092026,
+  "denoise": 0.86,
+  "inputImage": "source-material/rooms/leaning-floor-gallery/style-reference.png",
+  "inputAspect": 0.8888888889,
+  "prompt": "Edit this supplier interior photograph into an empty reusable room plate. Completely remove the artwork, wooden picture frame and every part of their cast shadow. Reconstruct the missing wall, skirting and oak floor continuously and invisibly behind them. Preserve the photograph's exact camera, crop, softly warm pale-grey plaster, subtle real wall texture, painted skirting, detailed natural oak floorboards, realistic exposure, lens response and upper-right daylight. The finished image must contain only an empty wall, skirting and floor with no picture-shaped light patch or shadow; the application will add a different exact live frame and physically aligned shadow later. High-end art supplier catalogue photography with restrained highlights, natural midtone contrast and fine material detail.",
+  "negativePrompt": "painting, picture frame, artwork, canvas, poster, wall decoration, furniture, plant, lamp, window, curtain, shelf, object, prop, text, watermark, changed camera, curved wall, moved floor line, warped skirting, warped boards, broken perspective, tiled floor, oversized seams, dramatic sun pattern, hard shadow, yellow cast, pink cast, plastic material, overexposed wall"
+}

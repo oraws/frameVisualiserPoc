@@ -16,7 +16,7 @@ assert.ok(windowShadowRadius(80, 6, 3) > windowShadowRadius(20, 6, 3));
 assert.ok(windowShadowRadius(50, 6, 3) > windowShadowRadius(50, 6, 1));
 
 let comparisons = 0;
-for (const id of ['generated-gallery', 'sofa-gallery']) {
+for (const id of ['generated-gallery', 'sofa-gallery', 'leaning-floor-gallery']) {
 const root = new URL(`../public/assets/rooms/${id}/`, import.meta.url);
 const scene = JSON.parse(await readFile(new URL('scene.json', root), 'utf8'));
 const reference = JSON.parse(await readFile(new URL('projection.json', root), 'utf8'));

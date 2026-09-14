@@ -9,12 +9,58 @@ import uuid
 from pathlib import Path
 
 import requests
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[2]
 COMFY = ROOT / "tools" / "ai-room-enhancer" / "runtime" / "ComfyUI"
 SERVER = "http://127.0.0.1:8188"
 workflow = json.loads((ROOT / "tools" / "ai-room-enhancer" / "workflow.json").read_text())
+room_id = sys.argv[1] if len(sys.argv) > 1 else "sofa-gallery"
+room = ROOT / "public" / "assets" / "rooms" / room_id
+config_path = room / "enhancement.json"
+config = json.loads(config_path.read_text()) if config_path.exists() else {}
+input_name = f"{room_id}-empty.jpg"
+input_source = ROOT / config["inputImage"] if config.get("inputImage") else room / "room-empty.jpg"
+with Image.open(input_source) as prepared:
+    prepared = prepared.convert("RGB")
+    target_aspect = config.get("inputAspect")
+    if target_aspect:
+        source_aspect = prepared.width / prepared.height
+        if source_aspect < target_aspect:
+            target_height = round(prepared.width / target_aspect)
+            top = (prepared.height - target_height) // 2
+            prepared = prepared.crop((0, top, prepared.width, top + target_height))
+        elif source_aspect > target_aspect:
+            target_width = round(prepared.height * target_aspect)
+            left = (prepared.width - target_width) // 2
+            prepared = prepared.crop((left, 0, left + target_width, prepared.height))
+    prepared.save(COMFY / "input" / input_name, quality=96)
+with Image.open(COMFY / "input" / input_name) as source_image:
+    aspect = source_image.width / source_image.height
+if aspect >= 1:
+    width, height = 1152, round(1152 / aspect / 16) * 16
+else:
+    height, width = 1152, round(1152 * aspect / 16) * 16
+workflow["7"]["inputs"]["image"] = input_name
+workflow["8"]["inputs"].update({"width": width, "height": height})
+workflow["9"]["inputs"]["prompt"] = config.get("prompt", workflow["9"]["inputs"]["prompt"])
+workflow["10"]["inputs"]["prompt"] = config.get("negativePrompt", workflow["10"]["inputs"]["prompt"])
+reference_path = config.get("referenceImage")
+if reference_path:
+    reference_source = ROOT / reference_path
+    reference_name = f"{room_id}-style-reference{reference_source.suffix.lower()}"
+    shutil.copy2(reference_source, COMFY / "input" / reference_name)
+    workflow["15"] = {"class_type": "LoadImage", "inputs": {"image": reference_name}}
+    workflow["16"] = {"class_type": "ImageScale", "inputs": {
+        "image": ["15", 0], "upscale_method": "lanczos",
+        "width": width, "height": height, "crop": "center"
+    }}
+    workflow["9"]["inputs"]["image2"] = ["16", 0]
+    workflow["10"]["inputs"]["image2"] = ["16", 0]
+workflow["12"]["inputs"]["seed"] = config.get("seed", workflow["12"]["inputs"]["seed"])
+workflow["12"]["inputs"]["denoise"] = config.get("denoise", workflow["12"]["inputs"]["denoise"])
+workflow["14"]["inputs"]["filename_prefix"] = f"frame-visualiser/{room_id}-ai"
 client_id = str(uuid.uuid4())
 started = time.time()
 
@@ -40,7 +86,7 @@ while time.time() - started < 1800:
         if images:
             image = images[0]
             source = COMFY / "output" / image.get("subfolder", "") / image["filename"]
-            target = ROOT / "public" / "assets" / "rooms" / "sofa-gallery" / "room-ai-enhanced.png"
+            target = room / "room-ai-enhanced.png"
             shutil.copy2(source, target)
             report = {
                 "promptId": prompt_id,
@@ -52,6 +98,11 @@ while time.time() - started < 1800:
                 "source": str(source.relative_to(ROOT)),
                 "output": str(target.relative_to(ROOT)),
                 "prompt": workflow["9"]["inputs"]["prompt"],
+                "negativePrompt": workflow["10"]["inputs"]["prompt"],
+                "roomId": room_id,
+                "denoise": workflow["12"]["inputs"]["denoise"],
+                "referenceImage": reference_path,
+                "inputImage": config.get("inputImage"),
             }
             (target.parent / "ai-enhancement-report.json").write_text(json.dumps(report, indent=2))
             print(f"AI_ROOM_PROGRESS 100 Complete in {report['elapsedSeconds']} seconds", flush=True)

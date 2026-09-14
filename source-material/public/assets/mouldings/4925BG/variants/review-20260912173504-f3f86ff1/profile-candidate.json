@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "sku": "4925BG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 49.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      17.829
+    ],
+    [
+      2.498,
+      18.702
+    ],
+    [
+      3.555,
+      19.38
+    ],
+    [
+      4.804,
+      20.543
+    ],
+    [
+      6.437,
+      22.965
+    ],
+    [
+      7.206,
+      25.0
+    ],
+    [
+      11.049,
+      25.0
+    ],
+    [
+      12.394,
+      22.868
+    ],
+    [
+      12.971,
+      22.481
+    ],
+    [
+      13.739,
+      22.674
+    ],
+    [
+      14.988,
+      24.031
+    ],
+    [
+      16.237,
+      24.031
+    ],
+    [
+      49.0,
+      9.981
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "single planar angled sight face (supplier label 'angled')",
+      "rebate / step of ~14 mm at the inner edge",
+      "gold inner bevel edge visible in chevron and macro views",
+      "black outer face / sight edge",
+      "overall envelope consistent with 49 x 25 mm"
+    ],
+    "rejectedTraceFeatures": [
+      "small top notch/step shown in the extracted profile guide (not independently confirmed in any physical section, chevron or oblique photo; treated as possible segmentation edge)",
+      "no additional beads, hollows or ridges beyond the angled face and rebate"
+    ],
+    "observations": [
+      "Physical section (top-left) shows a cream angled face, a recessed black rebate and a gold sight edge, matching a stepped/angled cross-section",
+      "Chevron and macro views confirm a two-tone construction: black outer with a gold inner bevel forming the angled face",
+      "The angled face reads as one planar surface; no crown or convexity is visible",
+      "Family framed references show the assembled presentation only and do not alter the exact-SKU geometry or colour"
+    ],
+    "concerns": [
+      "The top notch in the extracted profile guide is unverified and may be a segmentation/shadow artefact; do not model it as a real ridge",
+      "Gold edge gloss and black face sheen are affected by lighting and perspective in the supplier photos",
+      "Exact rebate depth (14 mm) and height (25 mm) taken from supplier text; cross-check against physical section before final release"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "single planar angled sight face (supplier label 'angled')",
+        "rebate / step of ~14 mm at the inner edge",
+        "gold inner bevel edge visible in chevron and macro views",
+        "black outer face / sight edge",
+        "overall envelope consistent with 49 x 25 mm"
+      ],
+      "rejectedTraceFeatures": [
+        "small top notch/step shown in the extracted profile guide (not independently confirmed in any physical section, chevron or oblique photo; treated as possible segmentation edge)",
+        "no additional beads, hollows or ridges beyond the angled face and rebate"
+      ]
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 49.0,
+      "depthMm": 25.0,
+      "rebateMm": 14.0,
+      "pointCount": 13
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rounded top bead/perimeter ridge on the upper face",
+      "Small hollow/notch immediately inboard of the top ridge"
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "Authoritative chevron and macro photographs show angular mitered black faces with a straight gold inner bevel line, not a rounded top bead; the candidate's rounded ridge is not visible in any exact-SKU photo.",
+      "The product-section photo shows a flat tan face with a black rebate and a thin gold strip, consistent with a flat bevelled profile rather than a beaded/hollowed top.",
+      "The 14 mm rebate drop and the long sloping outer bevel in the candidate are consistent with the profile-source guide and the framed reference, so the lower geometry is supported.",
+      "The small top notch/hollow in the candidate matches the advisory guide but cannot be independently confirmed in the chevron or macro images, which read as angular miters."
+    ],
+    "concerns": [
+      "A flat photographed face appears to have gained a perimeter ridge (rounded top bead) that is unsupported by the exact-SKU photographs.",
+      "The hollow/notch feature is only traceable to the advisory catalogue outline, not to a physical-section or oblique photograph.",
+      "Lighting and miter perspective in the macro/chevron shots make it difficult to confirm any rounded relief; treat the top profile as unverified."
+    ]
+  }
+}

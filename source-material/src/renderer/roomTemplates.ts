@@ -1,5 +1,6 @@
 import sofaGallery from '../../public/assets/rooms/sofa-gallery/scene.json';
 import generatedGallery from '../../public/assets/rooms/generated-gallery/scene.json';
+import leaningFloorGallery from '../../public/assets/rooms/leaning-floor-gallery/scene.json';
 
 export type RoomTemplate={
  kind?: 'photograph' | 'generated';
@@ -19,9 +20,39 @@ export type RoomTemplate={
  tintOpacity:number;
  angleLabel:string;
  calibrationStatus:'approved-local'|'unverified'|'legacy';
+ placement?:{type:'floor-lean';floorY:number;wallZ:number;tiltDegrees:number;rearClearanceMm:number;yawDegrees?:number;bottomStandOffMm?:number};
 };
 
 export const roomPresets:Record<string,RoomTemplate>={
+ 'AI Enhanced · Leaning Floor Gallery':{
+   kind:'generated', sceneId:leaningFloorGallery.id,
+   image:'/assets/rooms/leaning-floor-gallery/room-ai-enhanced-v2.png', imageAspect:1142/1378,
+   framePosition:leaningFloorGallery.framePosition as [number,number,number], frameScale:1, frameRotation:[0,0,0],
+   camera:{position:leaningFloorGallery.camera.position as [number,number,number],fov:leaningFloorGallery.camera.fov,target:leaningFloorGallery.camera.target as [number,number,number]},
+   keyLight:{position:leaningFloorGallery.keyLight.position as [number,number,number],intensity:leaningFloorGallery.keyLight.intensity,color:leaningFloorGallery.keyLight.color},
+   ambient:leaningFloorGallery.fill,environment:leaningFloorGallery.environmentIntensity,
+   shadow:{opacity:.3,color:'#40352c',bias:-.00005,radius:6},
+   tintOpacity:0,angleLabel:'AI-refined floor set · soft daylight from right',calibrationStatus:'approved-local',
+   placement:{
+     ...(leaningFloorGallery.placement as NonNullable<RoomTemplate['placement']>),
+     floorY:-1.9,
+     tiltDegrees:6,
+     rearClearanceMm:2,
+     yawDegrees:0,
+     bottomStandOffMm:180,
+   },
+ },
+ [leaningFloorGallery.name]:{
+   kind:'generated', sceneId:leaningFloorGallery.id,
+   image:leaningFloorGallery.image, imageAspect:leaningFloorGallery.imageWidth/leaningFloorGallery.imageHeight,
+   framePosition:leaningFloorGallery.framePosition as [number,number,number], frameScale:1, frameRotation:[0,0,0],
+   camera:{position:leaningFloorGallery.camera.position as [number,number,number],fov:leaningFloorGallery.camera.fov,target:leaningFloorGallery.camera.target as [number,number,number]},
+   keyLight:{position:leaningFloorGallery.keyLight.position as [number,number,number],intensity:leaningFloorGallery.keyLight.intensity,color:leaningFloorGallery.keyLight.color},
+   ambient:leaningFloorGallery.fill,environment:leaningFloorGallery.environmentIntensity,
+   shadow:{opacity:.3,color:'#40352c',bias:-.00005,radius:6},
+   tintOpacity:0,angleLabel:'Floor-standing · soft daylight from right',calibrationStatus:'approved-local',
+   placement:leaningFloorGallery.placement as RoomTemplate['placement'],
+ },
  [generatedGallery.name]:{
    kind:'generated', sceneId:generatedGallery.id,
    image:generatedGallery.image, imageAspect:generatedGallery.imageWidth/generatedGallery.imageHeight,
@@ -66,4 +97,11 @@ export const roomPresets:Record<string,RoomTemplate>={
 export const roomPresetNames=Object.keys(roomPresets);
 export const fallbackRoom=roomPresets['Oblique Gallery Wall'];
 
-export const generatedScenes: Record<string, typeof generatedGallery> = { [generatedGallery.id]: generatedGallery, [sofaGallery.id]: sofaGallery };
+export type GeneratedScene = typeof generatedGallery & {
+  placement?: RoomTemplate['placement'];
+};
+export const generatedScenes: Record<string, GeneratedScene> = {
+  [generatedGallery.id]: generatedGallery,
+  [sofaGallery.id]: sofaGallery,
+  [leaningFloorGallery.id]: leaningFloorGallery as GeneratedScene,
+};

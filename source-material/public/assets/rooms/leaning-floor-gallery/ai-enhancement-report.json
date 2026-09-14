@@ -1,0 +1,14 @@
+{
+  "promptId": "9882d0fb-960d-474c-afb1-4d49f0c15a5a",
+  "model": "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+  "adapter": "Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors",
+  "seed": 12092026,
+  "steps": 4,
+  "elapsedSeconds": 282.47,
+  "source": "tools/ai-room-enhancer/runtime/ComfyUI/output/frame-visualiser/leaning-floor-gallery-ai_00001_.png",
+  "output": "public/assets/rooms/leaning-floor-gallery/room-ai-enhanced.png",
+  "prompt": "Refine this exact empty CGI set into a high-end photorealistic editorial art-catalogue backdrop. Preserve the exact fixed portrait camera, crop, perfectly straight wall, floor line, low skirting profile, floor perspective and all geometry. Keep the wall and floor completely empty for a live framed artwork to be composited later. Do not add a picture, frame, artwork, furniture, plant, lamp, window, curtain, shelf, prop, text or decoration. Improve only photographic material detail: subtle warm-white mineral plaster with very fine natural variation, restrained satin painted skirting, and premium warm pale-oak floorboards with believable continuous grain, narrow seams and gentle tonal variation. Keep broad neutral daylight arriving from the upper right, a natural commercial exposure, soft tonal roll-off and accurate warm-neutral colour. Quiet luxury art catalogue photography, fine material detail, realistic dynamic range, no CGI plastic appearance.",
+  "negativePrompt": "painting, picture frame, artwork, canvas, poster, wall decoration, furniture, plant, lamp, window, curtain, shelf, object, prop, text, watermark, changed camera, curved wall, moved floor line, warped skirting, warped boards, broken perspective, tiled floor, oversized seams, dramatic sun pattern, hard shadow, yellow cast, pink cast, plastic material, overexposed wall",
+  "roomId": "leaning-floor-gallery",
+  "denoise": 0.72
+}

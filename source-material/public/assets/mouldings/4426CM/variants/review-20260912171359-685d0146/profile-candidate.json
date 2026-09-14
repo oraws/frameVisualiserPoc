@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "sku": "4426CM",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "concave",
+  "widthMm": 44.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "points": [
+    [
+      0.0,
+      9.201
+    ],
+    [
+      0.42,
+      9.708
+    ],
+    [
+      1.26,
+      9.708
+    ],
+    [
+      1.763,
+      10.805
+    ],
+    [
+      2.939,
+      11.649
+    ],
+    [
+      10.748,
+      13.169
+    ],
+    [
+      11.42,
+      14.351
+    ],
+    [
+      12.008,
+      15.026
+    ],
+    [
+      13.603,
+      16.039
+    ],
+    [
+      15.786,
+      16.461
+    ],
+    [
+      18.221,
+      16.461
+    ],
+    [
+      20.656,
+      16.714
+    ],
+    [
+      24.687,
+      17.643
+    ],
+    [
+      27.038,
+      18.487
+    ],
+    [
+      30.733,
+      20.26
+    ],
+    [
+      33.168,
+      21.695
+    ],
+    [
+      35.435,
+      23.299
+    ],
+    [
+      37.115,
+      24.987
+    ],
+    [
+      38.71,
+      25.831
+    ],
+    [
+      39.466,
+      26.0
+    ],
+    [
+      41.229,
+      26.0
+    ],
+    [
+      42.069,
+      25.831
+    ],
+    [
+      42.824,
+      25.409
+    ],
+    [
+      44.0,
+      24.058
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "concave",
+    "faceCrownMm": 0.5,
+    "innerEdgeRadiusMm": 1.0,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Concave scoop curve on the working face (matches supplier label 'scoop')",
+      "Planar sight face with fine horizontal directional grain",
+      "Small step / rebate at the base (consistent with the 7 mm dimension in the guide)",
+      "Chevron assembly showing two flat faces meeting at a point"
+    ],
+    "rejectedTraceFeatures": [
+      "No additional ridge, bead or hollow beyond the single concave scoop is confirmed in the physical section"
+    ],
+    "observations": [
+      "Product-section photo shows a light natural wood/veneer with a textured, dotted grain on the concave region and a smoother brushed horizontal grain on the flat face; difference is likely lighting/angle rather than a separate feature",
+      "Profile-source guide (tan fill) depicts a single concave scoop descending to a small step, height 26 mm, step 7 mm, consistent with the physical section",
+      "Chevron image confirms the flat face presentation and shared shape family in assembled context",
+      "Supplier dimensions 44 x 26 mm with rebate 14.6 mm are preserved as the dimensional envelope"
+    ],
+    "concerns": [
+      "Orientation of the 7 mm step in the guide (right side) does not visually align with the step position in the product-section photo (left side); treated as a mirror/segmentation artifact, not a second feature",
+      "Texture contrast between scoop and flat face may be a highlight/shadow effect; not interpreted as a separate relief",
+      "Catalogue trace is an unverified guide; agreement rated partial pending an oblique rotation photo to confirm the step and edge radii"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "concave",
+      "faceCrownMm": 0.5,
+      "innerEdgeRadiusMm": 1.0,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "Concave scoop curve on the working face (matches supplier label 'scoop')",
+        "Planar sight face with fine horizontal directional grain",
+        "Small step / rebate at the base (consistent with the 7 mm dimension in the guide)",
+        "Chevron assembly showing two flat faces meeting at a point"
+      ],
+      "rejectedTraceFeatures": [
+        "No additional ridge, bead or hollow beyond the single concave scoop is confirmed in the physical section"
+      ]
+    },
+    "applied": {
+      "shapeClass": "concave",
+      "faceCrownMm": 0.5,
+      "innerEdgeRadiusMm": 1.0,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 44.0,
+      "depthMm": 26.0,
+      "rebateMm": 14.6,
+      "pointCount": 24
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.4,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rebate drop of 14.6 mm on the left sight edge (not present in the 26/7 mm supplier profile)",
+      "High/rounded peak placed on the right side, mirroring the supplier profile which is high on the left and low on the right",
+      "Long convex slope rising to a rounded top that does not match the concave high-left-to-low-right curve in the profile-source drawing"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Supplier profile-source shows a 26 mm tall profile with the high edge on the left sloping down to a 7 mm step on the right; the candidate is oriented the opposite way (high on the right).",
+      "The candidate's 14.6 mm rebate drop on the left has no counterpart in the stated 26/7 mm dimensions or in the product-section photograph.",
+      "The chevron photograph shows two flat faces meeting at the joint with no perimeter ridge on the flat face, but the candidate adds a rounded top ridge and a stepped rebate that are not independently confirmed in the oblique/chevron views.",
+      "Only the rounded outer edge is plausibly supported by the product-section photo; the rest of the candidate geometry appears derived from the advisory extracted trace rather than verified in the exact-SKU photographs."
+    ],
+    "concerns": [
+      "Orientation/mirror mismatch between candidate and supplier profile-source.",
+      "Rebate drop value (14.6 mm) is unsupported by the stated 7 mm step and not visible in the photographs.",
+      "Flat photographed faces (chevron) must not gain a perimeter ridge; the candidate's top ridge and left step need photographic confirmation before approval."
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225OR",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      9.7
+    ],
+    [
+      0.147,
+      21.825
+    ],
+    [
+      0.35,
+      22.0
+    ],
+    [
+      10.55,
+      22.0
+    ],
+    [
+      20.75,
+      22.0
+    ],
+    [
+      21.0,
+      21.863
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Planar front face (uniform orange rectangle in product-section, no crown or bead)",
+      "Rear rebate/step visible as the notched tan cross-section at left of product-section, consistent with stated 12.3 mm rebate",
+      "Flat-bar chevron: two straight mitred legs meeting at apex in chevron panel, confirming a single planar strip rather than a shaped profile"
+    ],
+    "rejectedTraceFeatures": [
+      "No ridge, bead, hollow or convex/concave face is present in any exact-SKU photograph; none added",
+      "Directional grain/brush lines not interpreted as a tiled repeat or as geometry"
+    ],
+    "observations": [
+      "product-section panel shows a flat orange face with a tan cross-section insert on the left carrying a single bottom-left step (rebate); callout '22' present",
+      "profile-source panel is a plain tan rectangle with callout '17', showing no profiled edge",
+      "chevron panel shows a clean V of two flat orange bars, consistent with a flat profile mitered at 45 degrees",
+      "Lower panel text states supplier dimensions 21 x 22 mm, rebate 12.3 mm, and supplier profile label 'flat', which matches the photographic evidence",
+      "Edge corners appear sharp in the cross-section, supporting minimal (near-zero) edge radii"
+    ],
+    "concerns": [
+      "No oblique/rotation photograph supplied to independently confirm sight-edge and rebate radii; radii set to minimum 0.2 mm as a conservative sharp-edge assumption",
+      "The tan block at left of product-section may be a separate cross-section insert; the step is read as the rebate per the supplier label, not as a decorative feature",
+      "Lower panel contains only dimension/label text and no extracted profile trace image, so trace agreement is based on the 'flat' label rather than a drawn outline",
+      "Lighting and perspective in supplier photos could exaggerate edge highlights; no highlight has been mistaken for a ridge"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "Planar front face (uniform orange rectangle in product-section, no crown or bead)",
+        "Rear rebate/step visible as the notched tan cross-section at left of product-section, consistent with stated 12.3 mm rebate",
+        "Flat-bar chevron: two straight mitred legs meeting at apex in chevron panel, confirming a single planar strip rather than a shaped profile"
+      ],
+      "rejectedTraceFeatures": [
+        "No ridge, bead, hollow or convex/concave face is present in any exact-SKU photograph; none added",
+        "Directional grain/brush lines not interpreted as a tiled repeat or as geometry"
+      ]
+    },
+    "applied": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.25,
+      "outerEdgeRadiusMm": 0.25,
+      "widthMm": 21.0,
+      "depthMm": 22.0,
+      "rebateMm": 12.3,
+      "pointCount": 6
+    },
+    "constrained": [
+      {
+        "field": "innerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      },
+      {
+        "field": "outerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.62,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate's left-edge rebate/step corresponds to the stepped notch visible on the sight edge of the product-section photograph, so the step is photo-supported rather than guide-only.",
+      "The large flat face of the candidate matches the plain flat face shown in the profile-source photograph; no perimeter ridge, bead or hollow has been added to a flat photographed face.",
+      "The chevron photograph shows the same small notch at the mitered tip, consistent with the rebate being a real edge feature rather than an artefact.",
+      "No ridge, bead, bevel or hollow in the candidate cross-section is absent from the supplier photographs, so the 'feature exists only in the guide' rejection condition is not triggered."
+    ],
+    "concerns": [
+      "Colour mismatch: the candidate face is rendered tan/beige, whereas the product-section and chevron photographs show a dominant orange face; only the profile-source and the sight-edge notch are tan, so the exact-SKU face colour is uncertain and needs confirmation.",
+      "The 12.3 mm rebate drop is taken from the catalogue/extracted trace and cannot be independently measured from the flat supplier photographs; the step's presence is visible but its depth is unverified.",
+      "The product-section orange region may be a selection/highlight overlay rather than the true material colour, which makes colour agreement ambiguous."
+    ]
+  }
+}

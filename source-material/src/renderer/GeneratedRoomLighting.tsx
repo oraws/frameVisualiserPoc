@@ -38,15 +38,16 @@ export default function GeneratedRoomLighting({ sceneId, strength, fill, shadow,
     <rectAreaLight ref={area} position={scene.keyLight.position as [number,number,number]} color={scene.keyLight.color}
       intensity={windowLuminance * strength} width={scene.keyLight.width} height={scene.keyLight.height} />
     <directionalLight position={scene.keyLight.position as [number,number,number]} target={target}
-      color={scene.keyLight.color} intensity={scene.keyLight.intensity * strength * .22} castShadow
+      color={scene.keyLight.color} intensity={scene.keyLight.intensity * strength * .22}
       shadow-mapSize={[2048,2048]} shadow-camera-left={-3.5} shadow-camera-right={3.5}
       shadow-camera-top={3.5} shadow-camera-bottom={-3.5} shadow-camera-near={.1} shadow-camera-far={18}
-      shadow-bias={-.00004} shadow-normalBias={.001} shadow-radius={shadowRadius} />
-    <mesh position={[0, .65, scene.wallZ]} receiveShadow>
+      shadow-bias={-.00004} shadow-normalBias={.001} shadow-radius={shadowRadius}
+      castShadow={scene.placement?.type !== 'floor-lean'} />
+    {scene.placement?.type !== 'floor-lean' && <mesh position={[0, .65, scene.wallZ]} receiveShadow>
       <planeGeometry args={[11,8]} />
       <shadowMaterial key="gaussian-window-wall" transparent color="#685132" opacity={Math.min(.65, .32 * shadow)} depthWrite={false}
         onBeforeCompile={softenWindowShadow} customProgramCacheKey={() => 'gaussian-window-wall-v2'} />
-    </mesh>
+    </mesh>}
     {/* Depth-only proxies keep a lowered frame behind foreground furnishings.
         The visible furniture is already in the room photograph. */}
     {sceneId === "generated-gallery" && <>

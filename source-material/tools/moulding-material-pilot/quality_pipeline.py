@@ -347,6 +347,28 @@ def make_review_board(reference: Image.Image, base: Image.Image, preview: Image.
     return board
 
 
+def constrained_number(raw: Any, fallback: float, minimum: float, maximum: float,
+                       field: str, constrained: list[dict[str, Any]]) -> float:
+    """Convert model output to a finite bounded number and record interventions."""
+    if raw is None:
+        return fallback
+    try:
+        value = float(raw)
+    except (TypeError, ValueError):
+        constrained.append({"field": field, "requested": raw, "applied": fallback,
+                            "reason": "The model returned a non-numeric value."})
+        return fallback
+    if not np.isfinite(value):
+        constrained.append({"field": field, "requested": str(raw), "applied": fallback,
+                            "reason": "The model returned a non-finite value."})
+        return fallback
+    applied = min(max(value, minimum), maximum)
+    if applied != value:
+        constrained.append({"field": field, "requested": value, "applied": applied,
+                            "reason": f"Clamped to the safe range {minimum:g}..{maximum:g}."})
+    return applied
+
+
 def build_profile_candidate(sku: str, reference: Image.Image, output: Path,
                             agents: "OllamaAgents", fault: str) -> dict[str, Any]:
     """Create a constrained physical cross-section and visually audit it.
@@ -394,15 +416,28 @@ def build_profile_candidate(sku: str, reference: Image.Image, output: Path,
         "verifiedFeatures (array), rejectedTraceFeatures (array), observations (array), and concerns (array). Preserve the supplied dimensional envelope. "
         f"User's editable request: {fault}", evidence_path) or {}
     requested_shape = str(profile_analysis.get("shapeClass", supplier_shape or "flat")).lower()
+    rejected_corrections: list[dict[str, Any]] = []
+    if requested_shape not in {"flat", "convex", "concave", "stepped", "ornate"}:
+        rejected_corrections.append({"field": "shapeClass", "requested": requested_shape,
+                                     "reason": "Unknown shape class; supplier metadata fallback used."})
     shape = requested_shape if requested_shape in {"flat", "convex", "concave", "stepped", "ornate"} else \
         ("flat" if "flat" in supplier_shape else "stepped")
-    crown = 0.0 if shape == "flat" else min(6., max(0., float(profile_analysis.get("faceCrownMm", 1.5))))
-    inner_radius = min(4., max(.25, float(profile_analysis.get("innerEdgeRadiusMm", .9))))
-    outer_radius = min(4., max(.25, float(profile_analysis.get("outerEdgeRadiusMm", .8))))
+    crown = 0.0 if shape == "flat" else constrained_number(profile_analysis.get("faceCrownMm"), 1.5, 0., 6.,
+                                                              "faceCrownMm", rejected_corrections)
+    inner_radius = constrained_number(profile_analysis.get("innerEdgeRadiusMm"), .9, .25, 4.,
+                                      "innerEdgeRadiusMm", rejected_corrections)
+    outer_radius = constrained_number(profile_analysis.get("outerEdgeRadiusMm"), .8, .25, 4.,
+                                      "outerEdgeRadiusMm", rejected_corrections)
     if shape == "flat":
         # Large radii make a genuinely flat face read as a raised perimeter ridge
         # under grazing light. Keep only a minimally broken edge unless the
         # photographs justify a shaped profile instead.
+        if inner_radius > .4:
+            rejected_corrections.append({"field": "innerEdgeRadiusMm", "requested": inner_radius,
+                                         "applied": .4, "reason": "Flat faces use a minimally broken edge."})
+        if outer_radius > .4:
+            rejected_corrections.append({"field": "outerEdgeRadiusMm", "requested": outer_radius,
+                                         "applied": .4, "reason": "Flat faces use a minimally broken edge."})
         inner_radius, outer_radius = min(inner_radius, .4), min(outer_radius, .4)
     rebate_floor = max(.5, depth - rebate)
     face_start = min(max(inner_radius, .35), width * .12)
@@ -428,7 +463,20 @@ def build_profile_candidate(sku: str, reference: Image.Image, output: Path,
                        [round(width, 3), round(max(rebate_floor, depth - outer_radius * .55), 3)]])
     candidate = {"schemaVersion": 1, "sku": sku, "source": "supplier-metadata-and-vision-review",
                  "shapeClass": shape, "widthMm": width, "depthMm": depth, "rebateMm": rebate,
-                 "points": points, "analysis": profile_analysis}
+                 "points": points, "analysis": profile_analysis,
+                 "correctionPlan": {
+                     "requested": {key: profile_analysis.get(key) for key in
+                                   ("shapeClass", "faceCrownMm", "innerEdgeRadiusMm", "outerEdgeRadiusMm",
+                                    "flatFaceConfirmed", "verifiedFeatures", "rejectedTraceFeatures")
+                                   if key in profile_analysis},
+                     "applied": {"shapeClass": shape, "faceCrownMm": round(crown, 3),
+                                 "innerEdgeRadiusMm": round(inner_radius, 3),
+                                 "outerEdgeRadiusMm": round(outer_radius, 3),
+                                 "widthMm": width, "depthMm": depth, "rebateMm": rebate,
+                                 "pointCount": len(points)},
+                     "constrained": rejected_corrections,
+                     "dimensionalAuthority": "supplier metadata and profile assets"
+                 }}
     (output / "profile-candidate.json").write_text(json.dumps(candidate, indent=2) + "\n")
 
     board = evidence.copy()
@@ -518,17 +566,28 @@ class OllamaAgents:
             return None
 
 
-def clamp_settings(raw: dict[str, Any], fallback: Settings) -> Settings:
+def constrained_settings(raw: dict[str, Any], fallback: Settings,
+                         gloss: str | None = None) -> tuple[Settings, list[dict[str, Any]]]:
     result = Settings(**asdict(fallback))
+    constrained: list[dict[str, Any]] = []
     ranges = {"colour_strength": (0, 1), "contrast": (.86, 1.18), "patch_width": (288, 640),
               "overlap": (96, 240), "roughness_mid": (135, 220), "roughness_detail": (.15, 1.1),
               "bump_detail": (.8, 5.5)}
     for name, bounds in ranges.items():
-        if name in raw and isinstance(raw[name], (int, float)):
-            value = min(max(float(raw[name]), bounds[0]), bounds[1])
-            setattr(result, name, int(value) if name in ("patch_width", "overlap") else value)
+        if name in raw:
+            value = constrained_number(raw[name], float(getattr(result, name)), bounds[0], bounds[1],
+                                       name, constrained)
+            setattr(result, name, int(round(value)) if name in ("patch_width", "overlap") else value)
+    # A visually classified finish must affect the actual PBR map. Explicit
+    # numeric model output remains authoritative within the safe bounds.
+    if "roughness_mid" not in raw and gloss in {"matte", "satin", "gloss"}:
+        result.roughness_mid = {"matte": 207., "satin": 176., "gloss": 145.}[gloss]
     result.seed = fallback.seed + 1
-    return result
+    return result, constrained
+
+
+def clamp_settings(raw: dict[str, Any], fallback: Settings, gloss: str | None = None) -> Settings:
+    return constrained_settings(raw, fallback, gloss)[0]
 
 
 def retry_settings(settings: Settings, values: dict[str, float], limits: dict[str, float]) -> Settings:
@@ -609,6 +668,8 @@ def process(sku: str, output_variant: str, max_attempts: int,
                   "inputVariant": input_root.name, "outputVariant": output_variant,
                   "referenceImages": reference_paths, "familyReferenceImages": family_reference_paths,
                   "limits": limits, "bestSettings": {},
+                  "correctionPlan": {"schemaVersion": 1, "model": agents.model,
+                                     "profile": (profile or {}).get("correctionPlan"), "material": None},
                   "bestMetrics": {}, "bestFailedGates": [], "attempts": [],
                   "agents": {"enabled": agents.enabled, "model": agents.model,
                              "connectionError": agents.error, "analyst": (profile or {}).get("analysis"),
@@ -622,16 +683,38 @@ def process(sku: str, output_variant: str, max_attempts: int,
         return {"sku": sku, "status": status, "attempts": 0, "score": None,
                 "failedGates": [], "output": str(output.relative_to(ROOT))}
     source = Image.open(input_root / "basecolor.jpg").convert("RGB")
-    progress(20, f"Analysing the supplier finish with {agents.model or 'deterministic checks'}…")
+    progress(20, f"Creating a constrained reconstruction plan with {agents.model or 'deterministic checks'}…")
     fault_context = f" The user reports this fault: {fault}. Prioritise diagnosing and correcting it." if fault else ""
-    analyst = agents.ask("supplier-reference analyst",
-        "Return keys finishClass, directional, gloss (matte|satin|gloss), preserve (array), risks (array), and suggestedSettings. "
+    analyst = agents.ask("supplier-grounded asset reconstruction controller",
+        "Produce a constrained material reconstruction specification. Return keys finishClass, directional, gloss (matte|satin|gloss), "
+        "targetColourDescription, preserve (array), risks (array), and suggestedSettings. suggestedSettings must contain only numeric values from the allowed list. "
         "The board labels exact SKU photographs separately from assembled family references. Use family references for intended presentation and broad family character only. "
         "Exact SKU photographs control colour, texture, sheen and profile; never sample artwork, mount, wall, furniture or another family member's finish. "
         "Classify gloss from highlight width, edge softness and reflection clarity across the available views. Do not call a material glossy merely because curved profile edges catch a bright light. "
+        "Describe colour in targetColourDescription, but do not invent an RGB value: the pipeline measures colour from the retained exact-SKU atlas. "
         "Allowed settings and ranges: colour_strength 0..1, contrast .86..1.18, roughness_mid 135..220, roughness_detail .15..1.1, bump_detail .8..5.5." + fault_context,
-        output / "supplier-reference-board.jpg")
-    settings = clamp_settings((analyst or {}).get("suggestedSettings", {}), Settings(seed=-1))
+        output / "supplier-reference-board.jpg") or {}
+    gloss = str(analyst.get("gloss", "")).lower()
+    if gloss not in {"matte", "satin", "gloss"}:
+        gloss = "unclassified"
+    requested_material_settings = analyst.get("suggestedSettings", {})
+    if not isinstance(requested_material_settings, dict):
+        requested_material_settings = {}
+    settings, material_constraints = constrained_settings(requested_material_settings, Settings(seed=-1), gloss)
+    material_plan = {
+        "requested": {
+            "finishClass": analyst.get("finishClass"), "directional": analyst.get("directional"),
+            "gloss": analyst.get("gloss"), "targetColourDescription": analyst.get("targetColourDescription"),
+            "settings": requested_material_settings,
+        },
+        "applied": {"finishClass": analyst.get("finishClass") or "unclassified",
+                    "directional": bool(analyst.get("directional", False)), "gloss": gloss,
+                    "settings": asdict(settings),
+                    "colourAuthority": "measured exact-SKU material atlas"},
+        "constrained": material_constraints,
+    }
+    correction_plan = {"schemaVersion": 1, "model": agents.model,
+                       "profile": (profile or {}).get("correctionPlan"), "material": material_plan}
     attempts: list[dict[str, Any]] = []
     best = None
     for attempt in range(1, max_attempts + 1):
@@ -668,7 +751,7 @@ def process(sku: str, output_variant: str, max_attempts: int,
         if not failures and score >= limits["minimumScore"] and (not critic or agent_score >= 78):
             break
         suggested = (critic or {}).get("suggestedSettings", {})
-        settings = clamp_settings(suggested, settings) if suggested else retry_settings(settings, values, limits)
+        settings = clamp_settings(suggested, settings, gloss) if suggested else retry_settings(settings, values, limits)
     assert best is not None
     _, base, roughness, bump, best_board, best_settings, best_values, best_failures = best
     for name, image in (("basecolor.jpg", base), ("roughness.jpg", roughness), ("bump.jpg", bump)):
@@ -693,6 +776,7 @@ def process(sku: str, output_variant: str, max_attempts: int,
               "inputVariant": input_root.name, "outputVariant": output_variant,
               "referenceImages": reference_paths, "familyReferenceImages": family_reference_paths,
               "limits": limits, "bestSettings": asdict(best_settings),
+              "correctionPlan": correction_plan,
               "bestMetrics": best_values, "bestFailedGates": best_failures, "attempts": attempts,
               "agents": {"enabled": agents.enabled, "model": agents.model, "connectionError": agents.error,
                          "analyst": analyst, "reviewer": reviewer},

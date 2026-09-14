@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225OR",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      21.637
+    ],
+    [
+      0.415,
+      22.0
+    ],
+    [
+      20.585,
+      22.0
+    ],
+    [
+      21.0,
+      21.689
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 6,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": false,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "rebate",
+      "step"
+    ],
+    "rejectedTraceFeatures": [],
+    "observations": [
+      "Supplier profile label 'flat' conflicts with visual evidence of stepped profile"
+    ],
+    "concerns": [
+      "Face crown exceeds maximum allowed value (9.7mm > 6mm); requires re-evaluation of dimensional envelope"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 6,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": false,
+      "verifiedFeatures": [
+        "rebate",
+        "step"
+      ],
+      "rejectedTraceFeatures": []
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 6.0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 21.0,
+      "depthMm": 22.0,
+      "rebateMm": 12.3,
+      "pointCount": 4
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "reject",
+    "confidence": 0.9,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "inner sight edge color variation (light wood)"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Candidate cross-section lacks visible inner sight edge color variation present in supplier photographs",
+      "Supplier's product-section shows two distinct material sections (light wood inner, orange outer) not reflected in candidate's single-color cross-section"
+    ],
+    "concerns": [
+      "Candidate cross-section does not visually match supplier photographs' material and profile features",
+      "Missing visible feature (inner sight edge color) from supplier photos"
+    ]
+  }
+}

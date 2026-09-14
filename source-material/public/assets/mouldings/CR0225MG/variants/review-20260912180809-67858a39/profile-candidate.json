@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225MG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      21.637
+    ],
+    [
+      0.415,
+      22.0
+    ],
+    [
+      20.585,
+      22.0
+    ],
+    [
+      21.0,
+      21.689
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar top face (flat crown, no bead/ridge/hollow)",
+      "Rebate / 90-degree step on the lower edge (supplier rebate 12.3 mm) visible in product-section",
+      "Rectangular cross-section envelope 21 x 22 mm",
+      "Fine horizontal directional grain / brushing on the face (intentional finish, not a tiled repeat)"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead, concave hollow, or ornate profile present in any exact-SKU photograph",
+      "Chevron arrow in the chevron panel is assembled family context only, not an exact-SKU cross-section feature"
+    ],
+    "observations": [
+      "Product-section (authoritative) shows a flat body with a single rebate notch at one lower corner; this is the only non-planar feature.",
+      "Profile-source panel shows a uniform tan face consistent with a flat, un-moulded surface.",
+      "Chevron panel depicts a herringbone/chevron trim family; used for presentation character only and does not alter exact-SKU geometry or colour.",
+      "Colour reads as warm golden-yellow on the main face with a lighter tan rebate/edge zone; treat as one SKU finish with lighting/edge variation.",
+      "Directional grain lines run parallel to the long axis and are uniform; no periodic macro feature recurring at regular intervals, so no tiled repeat is claimed."
+    ],
+    "concerns": [
+      "Supplier profile label reads 'flat' while the authoritative section shows a rebate step; classified as stepped to preserve the confirmed rebate, with the flat face retained.",
+      "Two-tone appearance (tan vs golden) in the product-section may be edge lighting rather than a true colour split; exact-SKU colour should be confirmed against a single-lit reference.",
+      "Edge radii are not directly measurable from the supplied images; sharp (0.2 mm) values assumed pending a magnified section."
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "Single planar top face (flat crown, no bead/ridge/hollow)",
+        "Rebate / 90-degree step on the lower edge (supplier rebate 12.3 mm) visible in product-section",
+        "Rectangular cross-section envelope 21 x 22 mm",
+        "Fine horizontal directional grain / brushing on the face (intentional finish, not a tiled repeat)"
+      ],
+      "rejectedTraceFeatures": [
+        "No convex bead, concave hollow, or ornate profile present in any exact-SKU photograph",
+        "Chevron arrow in the chevron panel is assembled family context only, not an exact-SKU cross-section feature"
+      ]
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.25,
+      "outerEdgeRadiusMm": 0.25,
+      "widthMm": 21.0,
+      "depthMm": 22.0,
+      "rebateMm": 12.3,
+      "pointCount": 4
+    },
+    "constrained": [
+      {
+        "field": "innerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      },
+      {
+        "field": "outerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.42,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "top perimeter ridge / bead line along the upper edge of the candidate slab",
+      "flat single-plane face (chevron photograph instead shows a two-slope peaked profile)"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The candidate cross-section draws a distinct brown ridge/bead along its top edge, but the authoritative product-section photograph shows a flat face with no such perimeter ridge; this is a feature added by the guide, not the photo.",
+      "The authoritative chevron photograph depicts a peaked, two-slope (chevron) profile, whereas the candidate is rendered as a flat rectangular slab with a top line, so the candidate's geometry does not match the photographed cross-section.",
+      "The left-side rebate/step (annotated 12.3 mm) is the only element with a plausible counterpart in the product-section notch, but it cannot be independently confirmed as a true section because no clean oblique section photo of that step is provided.",
+      "Per the benchmark rule, a flat photographed face must not gain a perimeter ridge; the candidate's top ridge violates this, so the candidate cannot be approved."
+    ],
+    "concerns": [
+      "Top perimeter ridge in the candidate is unsupported by any supplier photograph and appears to originate from the advisory catalogue trace.",
+      "Chevron (peaked) profile present in the authoritative photo is absent from the candidate flat-slab reconstruction.",
+      "Supplier images are subject to lighting and perspective; the rebate drop value (12.3 mm) is taken from the guide and not visually verified against a true section.",
+      "No oblique/section photograph independently confirms the sight edge, outer edge, or the rebate step, leaving the candidate's geometry unverified."
+    ]
+  }
+}

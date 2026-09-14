@@ -29,6 +29,7 @@ import mainlineMaterials from "../mouldings/mainlineMaterials.json";
 import materialPilotsV3 from "../mouldings/materialPilotsV3.json";
 import FrameWallContact from "./FrameWallContact";
 import GeneratedRoomLighting from "./GeneratedRoomLighting";
+import LeaningFrameShadow from "./LeaningFrameShadow";
 import { GLTFExporter } from "three/addons/exporters/GLTFExporter.js";
 import { fittedRoomFov } from "./generatedRoomMath";
 
@@ -1740,20 +1741,40 @@ function Scene(p: Props) {
   const rearClosureFace = Math.min(.008, artZ - .0005);
   let frameMatrix = new THREE.Matrix4();
   if (wall) {
+    const floorPlacement = room.placement?.type === "floor-lean" ? room.placement : null;
+    const scale = room.frameScale * p.wallScale;
+    const floorTilt = floorPlacement
+      ? floorPlacement.bottomStandOffMm
+        ? Math.asin(THREE.MathUtils.clamp(
+            ((floorPlacement.bottomStandOffMm - floorPlacement.rearClearanceMm) * mm) / Math.max(oh * scale, .001),
+            0,
+            .42,
+          ))
+        : THREE.MathUtils.degToRad(floorPlacement.tiltDegrees)
+      : 0;
+    const rotation = floorPlacement
+      ? new THREE.Euler(
+          -floorTilt,
+          THREE.MathUtils.degToRad(floorPlacement.yawDegrees ?? 0),
+          0,
+          'YXZ',
+        )
+      : new THREE.Euler(...room.frameRotation);
+    const position = floorPlacement
+      ? new THREE.Vector3(
+          room.framePosition[0] + p.wallPositionX * 1.35,
+          floorPlacement.floorY + oh * scale * Math.cos(Math.abs(rotation.x)) / 2 + p.wallPositionY * 0.8,
+          floorPlacement.wallZ + oh * scale * Math.sin(floorTilt) / 2 + floorPlacement.rearClearanceMm * mm,
+        )
+      : new THREE.Vector3(
+          room.framePosition[0] + p.wallPositionX * 1.35,
+          room.framePosition[1] + p.wallPositionY * 0.8,
+          room.framePosition[2],
+        );
     frameMatrix.compose(
-      new THREE.Vector3(
-        room.framePosition[0] + p.wallPositionX * 1.35,
-        room.framePosition[1] + p.wallPositionY * 0.8,
-        room.framePosition[2],
-      ),
-      new THREE.Quaternion().setFromEuler(
-        new THREE.Euler(...room.frameRotation),
-      ),
-      new THREE.Vector3(
-        room.frameScale * p.wallScale,
-        room.frameScale * p.wallScale,
-        room.frameScale * p.wallScale,
-      ),
+      position,
+      new THREE.Quaternion().setFromEuler(rotation),
+      new THREE.Vector3(scale, scale, scale),
     );
   }
   const approvedQuad = p.roomCalibration?.manualCalibration?.quadNormalised;
@@ -1858,13 +1879,21 @@ function Scene(p: Props) {
       {wall && !p.overlayOnly && (
         <RoomBackdrop room={room} tint={p.wallColour} />
       )}
-      {generatedRoom && <FrameWallContact matrix={frameMatrix} width={ow} height={oh} wallZ={generatedScenes[room.sceneId!].wallZ} strength={p.wallShadow} />}
+      {generatedRoom && !room.placement && <FrameWallContact matrix={frameMatrix} width={ow} height={oh} wallZ={generatedScenes[room.sceneId!].wallZ} strength={p.wallShadow} />}
+      {generatedRoom && room.placement?.type === "floor-lean" && <LeaningFrameShadow
+        matrix={frameMatrix}
+        width={ow}
+        height={oh}
+        wallZ={room.placement.wallZ}
+        floorY={room.placement.floorY}
+        strength={p.wallShadow}
+      />}
       <GeneratedMaterialContext.Provider value={generatedRoom}>
       <group ref={product} name="configured-frame"
         matrix={wall ? frameMatrix : new THREE.Matrix4()}
         matrixAutoUpdate={false}
       >
-        {generatedRoom && <mesh name="product-rear-closure"
+        {generatedRoom && !room.placement && <mesh name="product-rear-closure"
           position={[0, 0, (rearClosureFace + (generatedScenes[room.sceneId!].wallZ + .0002 - room.framePosition[2]) / (room.frameScale * p.wallScale)) / 2]}
           castShadow receiveShadow>
           {/* The swept profile ends at z=.008. Close the remaining stand-off
@@ -1872,7 +1901,7 @@ function Scene(p: Props) {
           <boxGeometry args={[ow - .001, oh - .001, rearClosureFace - (generatedScenes[room.sceneId!].wallZ + .0002 - room.framePosition[2]) / (room.frameScale * p.wallScale)]} />
           <RoomStandardMaterial color={m.baseColor} roughness={.95} />
         </mesh>}
-        {wall && !p.overlayOnly && (
+        {wall && !p.overlayOnly && !room.placement && (
           <SoftWallShadow
             width={ow}
             height={oh}

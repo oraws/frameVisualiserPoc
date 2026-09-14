@@ -603,7 +603,7 @@ export default function Visualiser() {
         />
         <div className="status">
           {displayMode === "Wall"
-            ? generatedRoom ? "3D room · Daylight from left · Fixed view" : `Photographic room · ${roomStatus}`
+            ? generatedRoom ? `3D room · ${activeRoom.angleLabel}` : `Photographic room · ${roomStatus}`
             : displayMode === "Review"
               ? "Approval view · right-drag to move"
               : "Drag to orbit · right-drag to move · scroll to zoom"}

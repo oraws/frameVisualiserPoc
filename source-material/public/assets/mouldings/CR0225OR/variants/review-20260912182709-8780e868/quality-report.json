@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 2,
+  "sku": "CR0225OR",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T18:32:08.568187+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "CR0225OR",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 21.0,
+    "depthMm": 22.0,
+    "rebateMm": 12.3,
+    "points": [
+      [
+        0.0,
+        21.637
+      ],
+      [
+        0.415,
+        22.0
+      ],
+      [
+        20.585,
+        22.0
+      ],
+      [
+        21.0,
+        21.689
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 6,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": false,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "rebate",
+        "step"
+      ],
+      "rejectedTraceFeatures": [],
+      "observations": [
+        "Supplier profile label 'flat' conflicts with visual evidence of stepped profile"
+      ],
+      "concerns": [
+        "Face crown exceeds maximum allowed value (9.7mm > 6mm); requires re-evaluation of dimensional envelope"
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 6,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": false,
+        "verifiedFeatures": [
+          "rebate",
+          "step"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 6.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 21.0,
+        "depthMm": 22.0,
+        "rebateMm": 12.3,
+        "pointCount": 4
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "reject",
+      "confidence": 0.9,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "inner sight edge color variation (light wood)"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "Candidate cross-section lacks visible inner sight edge color variation present in supplier photographs",
+        "Supplier's product-section shows two distinct material sections (light wood inner, orange outer) not reflected in candidate's single-color cross-section"
+      ],
+      "concerns": [
+        "Candidate cross-section does not visually match supplier photographs' material and profile features",
+        "Missing visible feature (inner sight edge color) from supplier photos"
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912182709-8780e868",
+  "referenceImages": [
+    "public/assets/mouldings/CR0225OR/product-section.jpg",
+    "public/assets/mouldings/CR0225OR/profile-source.png",
+    "public/assets/mouldings/CR0225OR/chevron.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 2,
+    "colour_strength": 0.92,
+    "contrast": 0.95,
+    "patch_width": 400,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 3.0
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3-vl:30b",
+    "profile": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 6,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": false,
+        "verifiedFeatures": [
+          "rebate",
+          "step"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 6.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 21.0,
+        "depthMm": 22.0,
+        "rebateMm": 12.3,
+        "pointCount": 4
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "wood",
+        "directional": "natural grain",
+        "gloss": "matte",
+        "targetColourDescription": "orange",
+        "settings": {
+          "colour_strength": 0.9,
+          "contrast": 1.05,
+          "roughness_mid": 170,
+          "roughness_detail": 0.3,
+          "bump_detail": 2.5
+        }
+      },
+      "applied": {
+        "finishClass": "wood",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.9,
+          "contrast": 1.05,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 170.0,
+          "roughness_detail": 0.3,
+          "bump_detail": 2.5
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 7.9966,
+    "colourSpreadError": 0.0,
+    "seamError": 0.0031,
+    "maximumAutocorrelation": 0.1582,
+    "detailError": 0.0451,
+    "clippedPixels": 1.0
+  },
+  "bestFailedGates": [
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.9,
+        "contrast": 1.05,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 170.0,
+        "roughness_detail": 0.3,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 8.0425,
+        "colourSpreadError": 0.0791,
+        "seamError": 0.0037,
+        "maximumAutocorrelation": 0.3467,
+        "detailError": 0.1724,
+        "clippedPixels": 1.0
+      },
+      "deterministicScore": 71.8,
+      "failedGates": [
+        "colourDeltaE",
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 25,
+        "colourMatch": 30,
+        "textureMatch": 20,
+        "repetition": 10,
+        "seam": 25,
+        "finishMatch": 25,
+        "blockers": [
+          "Missing wood edge step",
+          "Incorrect texture (no grain)",
+          "High colourDelta"
+        ],
+        "observations": [
+          "Supplier's product-section shows wood edge step not present in candidate",
+          "Candidate texture is smooth gradient vs supplier's wood grain",
+          "ColourDelta 8.0425 indicates significant colour mismatch",
+          "Profile geometry (step) not replicated"
+        ],
+        "suggestedSettings": {
+          "patch_width": 400,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.5,
+          "bump_detail": 3.0,
+          "contrast": 0.95,
+          "colour_strength": 0.8
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.8,
+        "contrast": 0.95,
+        "patch_width": 400,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 8.0174,
+        "colourSpreadError": 0.0,
+        "seamError": 0.0031,
+        "maximumAutocorrelation": 0.2841,
+        "detailError": 0.0201,
+        "clippedPixels": 1.0
+      },
+      "deterministicScore": 74.9,
+      "failedGates": [
+        "colourDeltaE",
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.92,
+        "contrast": 0.95,
+        "patch_width": 400,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 7.9966,
+        "colourSpreadError": 0.0,
+        "seamError": 0.0031,
+        "maximumAutocorrelation": 0.1582,
+        "detailError": 0.0451,
+        "clippedPixels": 1.0
+      },
+      "deterministicScore": 77.1,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.92,
+        "contrast": 0.95,
+        "patch_width": 400,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 8.1425,
+        "colourSpreadError": 0.0672,
+        "seamError": 0.0036,
+        "maximumAutocorrelation": 0.1612,
+        "detailError": 0.1097,
+        "clippedPixels": 1.0
+      },
+      "deterministicScore": 76.6,
+      "failedGates": [
+        "colourDeltaE",
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3-vl:30b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "wood",
+      "directional": "natural grain",
+      "gloss": "matte",
+      "targetColourDescription": "orange",
+      "preserve": [
+        "wood texture",
+        "orange color"
+      ],
+      "risks": [
+        "profile dimension mismatch",
+        "texture replication error"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.9,
+        "contrast": 1.05,
+        "roughness_mid": 170,
+        "roughness_detail": 0.3,
+        "bump_detail": 2.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.2,
+      "reasons": [
+        "Candidate texture lacks visible wood grain irregularity present in supplier's product-section",
+        "Candidate colour is a gradient, not matching supplier's solid orange specification",
+        "No visible step/edge detail matching supplier's product-section geometry"
+      ],
+      "concerns": [
+        "Texture scale and irregularity do not match exact SKU supplier evidence",
+        "Colour deviation from supplier's specified solid orange",
+        "Missing physical cross-section features (e.g., step) as per supplier's product-section"
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "4ed5236d1ca186c3aba21e998b89beb053435ca03bbd5760ee61f0ef934b38ec",
+      "roughness.jpg": "3100656a23d4bef83ab0427f2489e42ef7ddf55852bbb8c74fd9ed8b8666c78b",
+      "bump.jpg": "5aa393c7f7538bc70337b2637058b4e8dccfc8e5f9f9e0c7c88b615810b2326f"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

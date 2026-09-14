@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "sku": "0472WH",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 52.0,
+  "depthMm": 35.0,
+  "rebateMm": 19.6,
+  "points": [
+    [
+      0.0,
+      17.256
+    ],
+    [
+      1.944,
+      18.329
+    ],
+    [
+      2.624,
+      19.011
+    ],
+    [
+      2.916,
+      19.986
+    ],
+    [
+      3.305,
+      20.376
+    ],
+    [
+      3.985,
+      20.669
+    ],
+    [
+      6.123,
+      20.669
+    ],
+    [
+      6.609,
+      21.058
+    ],
+    [
+      6.901,
+      21.741
+    ],
+    [
+      7.193,
+      22.033
+    ],
+    [
+      8.067,
+      22.521
+    ],
+    [
+      8.845,
+      22.716
+    ],
+    [
+      9.622,
+      22.716
+    ],
+    [
+      10.692,
+      22.423
+    ],
+    [
+      12.052,
+      21.253
+    ],
+    [
+      12.538,
+      20.376
+    ],
+    [
+      12.733,
+      19.694
+    ],
+    [
+      12.733,
+      18.816
+    ],
+    [
+      12.927,
+      18.621
+    ],
+    [
+      33.047,
+      18.719
+    ],
+    [
+      33.436,
+      19.986
+    ],
+    [
+      34.116,
+      20.864
+    ],
+    [
+      35.379,
+      21.643
+    ],
+    [
+      36.546,
+      22.033
+    ],
+    [
+      37.421,
+      23.398
+    ],
+    [
+      38.684,
+      24.568
+    ],
+    [
+      40.531,
+      25.153
+    ],
+    [
+      40.725,
+      26.031
+    ],
+    [
+      41.6,
+      27.396
+    ],
+    [
+      42.28,
+      27.786
+    ],
+    [
+      43.641,
+      27.883
+    ],
+    [
+      43.836,
+      28.078
+    ],
+    [
+      43.836,
+      28.565
+    ],
+    [
+      44.224,
+      29.833
+    ],
+    [
+      44.905,
+      31.198
+    ],
+    [
+      45.779,
+      32.368
+    ],
+    [
+      47.14,
+      33.635
+    ],
+    [
+      48.598,
+      34.513
+    ],
+    [
+      49.862,
+      35.0
+    ],
+    [
+      50.931,
+      35.0
+    ],
+    [
+      52.0,
+      34.415
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 2,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "rebate",
+      "crown",
+      "inner_edge_radius",
+      "outer_edge_radius",
+      "stepped_profile"
+    ],
+    "rejectedTraceFeatures": [],
+    "observations": [
+      "Supplier dimensions (52x35 mm, rebate 19.6 mm) match photographic evidence",
+      "Crown height (faceCrownMm) confirmed as 2 mm",
+      "Inner and outer edge radii confirmed as 0.5 mm each"
+    ],
+    "concerns": []
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 2,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "rebate",
+        "crown",
+        "inner_edge_radius",
+        "outer_edge_radius",
+        "stepped_profile"
+      ],
+      "rejectedTraceFeatures": []
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 2.0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 52.0,
+      "depthMm": 35.0,
+      "rebateMm": 19.6,
+      "pointCount": 41
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.95,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "uncertain",
+    "reasons": [
+      "Candidate cross-section features (rebate, step, outer edge) match supplier photographs (product-section, product-detail-1, product-detail-2)",
+      "All visible ridges, beads, bevels, hollows, and steps are present in supplier photographs"
+    ],
+    "concerns": []
+  }
+}

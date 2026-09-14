@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "sku": "3042IV",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 30.0,
+  "depthMm": 42.0,
+  "rebateMm": 23.5,
+  "points": [
+    [
+      0.0,
+      18.5
+    ],
+    [
+      0.168,
+      41.72
+    ],
+    [
+      0.4,
+      42.0
+    ],
+    [
+      15.0,
+      42.0
+    ],
+    [
+      29.6,
+      42.0
+    ],
+    [
+      30.0,
+      41.78
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "flat",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "uncertain",
+    "verifiedFeatures": [
+      "single planar top face (product-detail-1, product-detail-2)",
+      "vertical sight/end edge (product-detail-1, product-detail-2)",
+      "rectangular bar cross-section (chevron shows clean 45\u00b0 miter of a flat stock)"
+    ],
+    "rejectedTraceFeatures": [
+      "apparent step/notch in product-section treated as rebate/segmentation edge, not a moulding ridge or bead (no independent confirmation in chevron or oblique views)"
+    ],
+    "observations": [
+      "Supplier profile label states 'flat'; supplier dimensions 30 x 42 mm with rebate 23.5 mm.",
+      "product-detail-1 and product-detail-2 show a flat rectangular bar with one planar top face and a vertical end face; no crown, bead, hollow or ornate profile visible.",
+      "chevron image is a clean V consistent with a flat stock mitered at 45\u00b0, with no repeating macro feature.",
+      "product-section shows a tan grained region and a lighter region separated by a vertical edge; this is read as the rebate/section boundary rather than a formed ridge.",
+      "Lower panel contains only text (dimensions and label); no extracted profile trace image is present to compare."
+    ],
+    "concerns": [
+      "The 23.5 mm rebate is stated in text but not independently confirmed as a visible step in the oblique or chevron photographs.",
+      "No catalogue/extracted profile trace image is supplied, so trace agreement cannot be verified.",
+      "Lighting and perspective in the oblique shots could mask a shallow rebate; treat geometry as flat per authoritative label and oblique evidence."
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "single planar top face (product-detail-1, product-detail-2)",
+        "vertical sight/end edge (product-detail-1, product-detail-2)",
+        "rectangular bar cross-section (chevron shows clean 45\u00b0 miter of a flat stock)"
+      ],
+      "rejectedTraceFeatures": [
+        "apparent step/notch in product-section treated as rebate/segmentation edge, not a moulding ridge or bead (no independent confirmation in chevron or oblique views)"
+      ]
+    },
+    "applied": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.4,
+      "outerEdgeRadiusMm": 0.4,
+      "widthMm": 30.0,
+      "depthMm": 42.0,
+      "rebateMm": 23.5,
+      "pointCount": 6
+    },
+    "constrained": [
+      {
+        "field": "innerEdgeRadiusMm",
+        "requested": 0.5,
+        "applied": 0.4,
+        "reason": "Flat faces use a minimally broken edge."
+      },
+      {
+        "field": "outerEdgeRadiusMm",
+        "requested": 0.5,
+        "applied": 0.4,
+        "reason": "Flat faces use a minimally broken edge."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.45,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Rebate drop 23.5 mm modelled as a vertical step on the inner sight edge; the authoritative detail photographs (product-detail-1, product-detail-2) show a chamfered/beveled edge rather than a vertical rebate, so the step geometry is not visually confirmed."
+    ],
+    "catalogueTraceAgreement": "partial",
+    "reasons": [
+      "The candidate cross-section is essentially a flat face with a single edge step; no ridge, bead, hollow or perimeter ridge has been added to a flat photographed face, which is consistent with the flat-board appearance in product-section and profile-source.",
+      "The edge treatment in the candidate (vertical rebate drop) does not clearly match the beveled/chamfered edge visible in product-detail-1 and product-detail-2, so the 23.5 mm rebate cannot be independently verified from the photographs.",
+      "Colour/texture of the candidate (uniform flat tan) matches the profile-source swatch (37) but conflicts with the light wood-grain and cream faces shown in the exact-SKU detail photographs, so the material specification is not fully confirmed.",
+      "No scale reference is present in the photographs to confirm the 23.5 mm rebate dimension."
+    ],
+    "concerns": [
+      "Distinguish whether the edge is a vertical rebate (as drawn) or a 45-degree chamfer/bevel (as photographed); the candidate may be misrepresenting the edge profile.",
+      "Surface finish in the candidate is flat and uniform, whereas the authoritative detail images show directional wood grain and a lighter cream face; texture/colour spec needs reconciliation with the exact-SKU photographs.",
+      "The 23.5 mm rebate dimension is advisory and not verifiable from the supplied images; confirm against a measured section before approval."
+    ]
+  }
+}

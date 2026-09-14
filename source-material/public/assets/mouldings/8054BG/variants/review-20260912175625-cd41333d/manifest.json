@@ -1,0 +1,679 @@
+{
+  "schemaVersion": 2,
+  "sku": "8054BG",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T18:05:13.671783+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "8054BG",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "ornate",
+    "widthMm": 80.0,
+    "depthMm": 54.0,
+    "rebateMm": 26.0,
+    "points": [
+      [
+        0.0,
+        31.806
+      ],
+      [
+        0.989,
+        32.372
+      ],
+      [
+        2.12,
+        32.372
+      ],
+      [
+        3.251,
+        32.796
+      ],
+      [
+        3.816,
+        33.644
+      ],
+      [
+        4.382,
+        34.068
+      ],
+      [
+        5.088,
+        34.209
+      ],
+      [
+        6.643,
+        34.068
+      ],
+      [
+        8.057,
+        35.058
+      ],
+      [
+        8.763,
+        35.058
+      ],
+      [
+        9.329,
+        35.34
+      ],
+      [
+        9.894,
+        36.047
+      ],
+      [
+        10.035,
+        37.037
+      ],
+      [
+        10.742,
+        37.743
+      ],
+      [
+        12.721,
+        38.592
+      ],
+      [
+        14.558,
+        38.592
+      ],
+      [
+        15.406,
+        38.168
+      ],
+      [
+        16.254,
+        37.319
+      ],
+      [
+        16.82,
+        36.188
+      ],
+      [
+        17.244,
+        35.764
+      ],
+      [
+        26.714,
+        35.623
+      ],
+      [
+        30.106,
+        36.188
+      ],
+      [
+        32.509,
+        37.037
+      ],
+      [
+        34.205,
+        37.885
+      ],
+      [
+        36.608,
+        39.44
+      ],
+      [
+        39.293,
+        41.984
+      ],
+      [
+        40.848,
+        44.246
+      ],
+      [
+        41.979,
+        45.094
+      ],
+      [
+        43.816,
+        45.377
+      ],
+      [
+        44.806,
+        44.812
+      ],
+      [
+        46.219,
+        44.812
+      ],
+      [
+        48.763,
+        47.356
+      ],
+      [
+        50.318,
+        48.487
+      ],
+      [
+        52.58,
+        49.759
+      ],
+      [
+        56.82,
+        51.314
+      ],
+      [
+        59.647,
+        51.738
+      ],
+      [
+        62.049,
+        51.738
+      ],
+      [
+        63.18,
+        52.728
+      ],
+      [
+        63.322,
+        53.152
+      ],
+      [
+        63.887,
+        53.717
+      ],
+      [
+        64.594,
+        54.0
+      ],
+      [
+        65.724,
+        36.471
+      ],
+      [
+        65.724,
+        33.927
+      ],
+      [
+        66.007,
+        32.513
+      ],
+      [
+        66.148,
+        38.45
+      ],
+      [
+        66.996,
+        30.11
+      ],
+      [
+        68.127,
+        42.974
+      ],
+      [
+        68.127,
+        28.555
+      ],
+      [
+        69.541,
+        27.141
+      ],
+      [
+        69.823,
+        53.859
+      ],
+      [
+        70.53,
+        53.293
+      ],
+      [
+        70.53,
+        26.435
+      ],
+      [
+        70.671,
+        47.497
+      ],
+      [
+        71.095,
+        52.304
+      ],
+      [
+        71.095,
+        48.911
+      ],
+      [
+        72.085,
+        25.869
+      ],
+      [
+        73.64,
+        24.88
+      ],
+      [
+        74.205,
+        23.89
+      ],
+      [
+        74.77,
+        23.325
+      ],
+      [
+        76.042,
+        22.618
+      ],
+      [
+        77.032,
+        21.628
+      ],
+      [
+        77.456,
+        20.78
+      ],
+      [
+        77.597,
+        19.366
+      ],
+      [
+        79.435,
+        18.66
+      ],
+      [
+        80.0,
+        18.094
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "ornate",
+      "faceCrownMm": 2.5,
+      "innerEdgeRadiusMm": 0.6,
+      "outerEdgeRadiusMm": 0.8,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "flat planar sight face (cream in product-section, white in macro)",
+        "concave scoop curve on the black section edge (product-section)",
+        "stepped ridges / bevels forming a layered profile (macro and chevron)",
+        "rebate / back step of ~26 mm (profile-source dimension and framed-reference)",
+        "outer sight edge with small break radius (macro)"
+      ],
+      "rejectedTraceFeatures": [
+        "fine directional brush lines in the black finish treated as surface texture, not as a tiled ridge",
+        "any extra bead/ridge implied by the extracted profile guide that is not independently visible in a physical section, chevron or macro",
+        "gold inner lining and red outer frame in framed-reference, which are separate components, not part of this SKU cross-section"
+      ],
+      "observations": [
+        "product-section shows a flat cream face adjacent to a black concave scoop, confirming a flat + scoop combination",
+        "macro and chevron show multiple concentric stepped faces (stepped/ornate character) consistent with the 'ornate-scoop' label",
+        "profile-source guide (54 mm height, 26 mm rebate) matches the stated 60 x 54 mm envelope and rebate dimension",
+        "framed-reference and family context (Wentworth) show presentation only; gold lining and red frame are not this moulding's geometry",
+        "lighting and miter perspective in chevron/macro create highlights that were not interpreted as additional ridges"
+      ],
+      "concerns": [
+        "exact ridge count in the macro/chevron is hard to resolve against the extracted guide, so catalogueTraceAgreement is held at partial",
+        "faceCrownMm and edge radii are estimates from the visible flat face and breaks, not directly measured",
+        "do not attribute the gold or red layers to this SKU's colour/finish; exact-SKU finish is the black/cream section shown"
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "ornate",
+        "faceCrownMm": 2.5,
+        "innerEdgeRadiusMm": 0.6,
+        "outerEdgeRadiusMm": 0.8,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "flat planar sight face (cream in product-section, white in macro)",
+          "concave scoop curve on the black section edge (product-section)",
+          "stepped ridges / bevels forming a layered profile (macro and chevron)",
+          "rebate / back step of ~26 mm (profile-source dimension and framed-reference)",
+          "outer sight edge with small break radius (macro)"
+        ],
+        "rejectedTraceFeatures": [
+          "fine directional brush lines in the black finish treated as surface texture, not as a tiled ridge",
+          "any extra bead/ridge implied by the extracted profile guide that is not independently visible in a physical section, chevron or macro",
+          "gold inner lining and red outer frame in framed-reference, which are separate components, not part of this SKU cross-section"
+        ]
+      },
+      "applied": {
+        "shapeClass": "ornate",
+        "faceCrownMm": 2.5,
+        "innerEdgeRadiusMm": 0.6,
+        "outerEdgeRadiusMm": 0.8,
+        "widthMm": 80.0,
+        "depthMm": 54.0,
+        "rebateMm": 26.0,
+        "pointCount": 65
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.5,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Jagged spiky ridge cluster at the outer (right) edge of the candidate cross-section",
+        "Long flat top face with a raised perimeter ridge that does not match the smooth cove/ogee curve seen in the exact-SKU product-section photo",
+        "Stepped drop immediately left of the spiky cluster (no corresponding step visible in the chevron or macro photographs)"
+      ],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "Rebate drop of 26 mm in the candidate matches the 26 dimension annotated on the profile-source guide, so the rebate depth is consistent.",
+        "The exact-SKU product-section photograph shows a single smooth concave (cove/ogee) curve, whereas the candidate renders a long flat face followed by a convex rise and a spiky terminus; the curve character and the flat-face ridge are not visually confirmed in any exact-SKU section, chevron or macro image.",
+        "The macro and chevron photographs show clean reeded/fluted mitered corners, but the candidate's right-hand feature is an irregular spiky artifact rather than a regular reed pattern, so it cannot be treated as a verified bead or reeding.",
+        "Per the benchmark rule, a flat photographed face must not gain a perimeter ridge; the candidate's flat top with a raised edge ridge is therefore an unsupported addition."
+      ],
+      "concerns": [
+        "The spiky cluster at the outer edge looks like an extraction/trace artifact rather than a real moulding feature and should be removed or re-derived from a clean exact-SKU section.",
+        "The overall profile silhouette (flat-then-curve) does not clearly reconcile with the smooth cove shown in the authoritative product-section photo; a physical-section or oblique photograph of the exact SKU is needed to confirm the true curve.",
+        "Colour/finish in the candidate (flat tan) is a placeholder and must be matched to the exact-SKU ivory/cream finish and any directional grain before approval.",
+        "Family-context (Wentworth) images are presentation only and were not used to justify any ridge or bead."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912175625-cd41333d",
+  "referenceImages": [
+    "public/assets/mouldings/8054BG/product-section.jpg",
+    "public/assets/mouldings/8054BG/profile-source.png",
+    "public/assets/mouldings/8054BG/chevron.jpg",
+    "public/assets/mouldings/8054BG/macro.jpg",
+    "public/assets/mouldings/8054BG/framed-reference.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/centrado/wentworth/8054BG-framed-reference.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.85,
+    "contrast": 1.05,
+    "patch_width": 512,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.5
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3.8:27b",
+    "profile": {
+      "requested": {
+        "shapeClass": "ornate",
+        "faceCrownMm": 2.5,
+        "innerEdgeRadiusMm": 0.6,
+        "outerEdgeRadiusMm": 0.8,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "flat planar sight face (cream in product-section, white in macro)",
+          "concave scoop curve on the black section edge (product-section)",
+          "stepped ridges / bevels forming a layered profile (macro and chevron)",
+          "rebate / back step of ~26 mm (profile-source dimension and framed-reference)",
+          "outer sight edge with small break radius (macro)"
+        ],
+        "rejectedTraceFeatures": [
+          "fine directional brush lines in the black finish treated as surface texture, not as a tiled ridge",
+          "any extra bead/ridge implied by the extracted profile guide that is not independently visible in a physical section, chevron or macro",
+          "gold inner lining and red outer frame in framed-reference, which are separate components, not part of this SKU cross-section"
+        ]
+      },
+      "applied": {
+        "shapeClass": "ornate",
+        "faceCrownMm": 2.5,
+        "innerEdgeRadiusMm": 0.6,
+        "outerEdgeRadiusMm": 0.8,
+        "widthMm": 80.0,
+        "depthMm": 54.0,
+        "rebateMm": 26.0,
+        "pointCount": 65
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "painted-wood-grain",
+        "directional": true,
+        "gloss": "satin",
+        "targetColourDescription": "Deep near-black with faint horizontal wood-grain streaks and subtle tonal variation; soft satin sheen, no mirror reflection. Gold inner liner is a separate component and not part of the black finish colour.",
+        "settings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      },
+      "applied": {
+        "finishClass": "painted-wood-grain",
+        "directional": true,
+        "gloss": "satin",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 180.0,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 0.1742,
+    "colourSpreadError": 0.1623,
+    "seamError": 0.0149,
+    "maximumAutocorrelation": 0.0588,
+    "detailError": 0.323,
+    "clippedPixels": 0.1293
+  },
+  "bestFailedGates": [
+    "clippedPixels"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 0.4366,
+        "colourSpreadError": 0.192,
+        "seamError": 0.0141,
+        "maximumAutocorrelation": 0.3834,
+        "detailError": 0.2809,
+        "clippedPixels": 0.0939
+      },
+      "deterministicScore": 82.7,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": {
+        "score": 58,
+        "colourMatch": 70,
+        "textureMatch": 64,
+        "repetition": 48,
+        "seam": 46,
+        "finishMatch": 62,
+        "blockers": [
+          "The fixed-light preview is a flat 2D texture only; no 3D cross-section is rendered, so the profile's ridges, beads, bevels, hollows, steps, sight edge and rebate cannot be visually confirmed against the supplier profile-source (54/26 stepped profile with curved top).",
+          "Bold horizontal dark bands recur at regular vertical intervals across the full width, indicating a tiled repeat / seam line rather than natural grain variation.",
+          "The 'unlit atlas' band is effectively black/empty in the supplied frame, so no independent albedo detail is available to validate colour or grain scale."
+        ],
+        "observations": [
+          "Supplier exact-SKU evidence shows a black finish with a gold inner reveal (chevron crop) and a fine directional grain in the macro crop; the preview's dark black tone is broadly consistent with the black SKU.",
+          "The preview grain runs horizontally and is reasonably directional, matching a brushed/wood-grain character, but the scale looks slightly coarse and the contrast between light and dark grain streaks is uneven.",
+          "Horizontal seam-like dark lines appear at roughly equal vertical spacing (multiple bands top-to-bottom), which reads as a tiled repeat and should be broken up.",
+          "Gloss in the preview appears low/matte; the supplier chevron and framed-reference suggest a semi-gloss black, so the finish level may be under-stated.",
+          "No profile geometry is present in the preview, so the PROFILE REVIEW fault (unverified cross-section) is not addressed by the current material render."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.05,
+          "patch_width": 512,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.05,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 0.1742,
+        "colourSpreadError": 0.1623,
+        "seamError": 0.0149,
+        "maximumAutocorrelation": 0.0588,
+        "detailError": 0.323,
+        "clippedPixels": 0.1293
+      },
+      "deterministicScore": 87.6,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 3,
+      "settings": {
+        "seed": 2,
+        "colour_strength": 0.85,
+        "contrast": 1.05,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 1.2019,
+        "colourSpreadError": 0.1364,
+        "seamError": 0.016,
+        "maximumAutocorrelation": 0.3184,
+        "detailError": 0.3286,
+        "clippedPixels": 0.2181
+      },
+      "deterministicScore": 85.1,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    },
+    {
+      "attempt": 4,
+      "settings": {
+        "seed": 3,
+        "colour_strength": 0.85,
+        "contrast": 1.05,
+        "patch_width": 512,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 0.1192,
+        "colourSpreadError": 0.166,
+        "seamError": 0.0157,
+        "maximumAutocorrelation": 0.2469,
+        "detailError": 0.3243,
+        "clippedPixels": 0.1298
+      },
+      "deterministicScore": 86.5,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "painted-wood-grain",
+      "directional": true,
+      "gloss": "satin",
+      "targetColourDescription": "Deep near-black with faint horizontal wood-grain streaks and subtle tonal variation; soft satin sheen, no mirror reflection. Gold inner liner is a separate component and not part of the black finish colour.",
+      "preserve": [
+        "directional horizontal grain / brush lines in the black finish",
+        "soft satin highlight width and edge softness on the chevron corner",
+        "profile ridges, beads, bevels and sight edge as shown in profile-source (54 x 26 trace, unverified guide)",
+        "natural grain tonal variation without tiling",
+        "separate gold liner edge as a distinct material boundary"
+      ],
+      "risks": [
+        "mistaking intentional fine directional grain for a tiled repeat",
+        "over-smoothing that erases the visible wood-grain relief",
+        "classifying the satin sheen as gloss because curved profile edges catch bright light",
+        "sampling artwork, mount, wall, red/gold family members or the beige substrate for the black finish colour",
+        "adding profile features (hollows, steps, rebates) not visually supported by the exact-SKU photographs"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Candidate base colour is a deep matte black consistent with the exact-SKU macro and chevron evidence (colour DeltaE 0.1742, low spread).",
+        "A directional horizontal grain/brushing is present, matching the brushed character seen in the exact-SKU macro.",
+        "seamError (0.0149) and maximumAutoCorrelation (0.0588) are low, indicating no strong periodic tiling or obvious macro repeat.",
+        "Family/context images (Wentworth red-and-gold presentation) were treated as context only and not used to override the exact-SKU black finish."
+      ],
+      "concerns": [
+        "Texture scale in the candidate reads coarser and more streaky than the fine directional grain in the exact-SKU macro, so texture scale/irregularity is not clearly retained.",
+        "Several distinct horizontal groove lines run across the preview and could be misread as seams or banding rather than natural grain.",
+        "detailError 0.323 and clippedPixels 0.1233 indicate measurable surface-relief and highlight deviation from the reference finish.",
+        "The supplied candidate is a fixed-light material preview only; the reported PROFILE fault (cross-section ridges/beads/rebate) is not verifiable from this image, so profile geometry remains unconfirmed."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "a6a3ba167cf8a1bf2a79d876a25edb5841af8e1fd37a1fbe832007d76f3402eb",
+      "roughness.jpg": "4a3224875db781faa1f97a135de8591e05c2eec63119458222b6795d14ea6ea9",
+      "bump.jpg": "5daf7d70ed362a54e645565574ece4694c2f6f4e35ac26ee1e55421395663f4e"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

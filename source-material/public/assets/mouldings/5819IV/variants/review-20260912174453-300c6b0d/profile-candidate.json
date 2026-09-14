@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "sku": "5819IV",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 58.0,
+  "depthMm": 19.0,
+  "rebateMm": 10.6,
+  "points": [
+    [
+      0.0,
+      12.557
+    ],
+    [
+      7.411,
+      19.0
+    ],
+    [
+      58.0,
+      19.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "Single planar (flat) main face confirmed in oblique product-detail-1 and product-detail-2 photographs",
+      "Angled bevel/chamfer on one sight edge, consistent with profile-source drawing and supplier label 'angled'",
+      "Rebate (step) on the opposite edge, visible as the lower step in profile-source and as the offset end in product-section",
+      "Exposed end grain (tan) on the cut faces in product-detail photographs",
+      "Fine directional grain / light brushing on the cream face"
+    ],
+    "rejectedTraceFeatures": [
+      "No convex bead or rounded crown present on the face",
+      "No concave hollow or cove present",
+      "No ornate or multi-ridge profile; only one bevel and one rebate"
+    ],
+    "observations": [
+      "Colour is a light cream / ivory on the face with a warmer tan end grain",
+      "Finish appears matte to low-satin with subtle directional texture, not high gloss",
+      "Assembled chevron shows two flat bars meeting at a right angle, consistent with a flat-faced profile",
+      "Profile-source 2D guide (19 mm height, ~11 mm rebate region) matches the physical oblique views",
+      "Lower panel supplies only text dimensions (58 x 19 mm; rebate 10.6 mm) and the label 'angled', no graphical trace"
+    ],
+    "concerns": [
+      "Minor dimensional discrepancy: profile-source suggests ~11 mm rebate region while text states rebate 10.6 mm; treat 10.6 mm as the stated supplier value",
+      "No graphical catalogue trace in the lower panel to cross-check; agreement is based on the profile-source drawing and photographs",
+      "Edge radii are not clearly resolvable in the photographs; sharp/square edges assumed (0.2 mm minimum) pending physical measurement"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "Single planar (flat) main face confirmed in oblique product-detail-1 and product-detail-2 photographs",
+        "Angled bevel/chamfer on one sight edge, consistent with profile-source drawing and supplier label 'angled'",
+        "Rebate (step) on the opposite edge, visible as the lower step in profile-source and as the offset end in product-section",
+        "Exposed end grain (tan) on the cut faces in product-detail photographs",
+        "Fine directional grain / light brushing on the cream face"
+      ],
+      "rejectedTraceFeatures": [
+        "No convex bead or rounded crown present on the face",
+        "No concave hollow or cove present",
+        "No ornate or multi-ridge profile; only one bevel and one rebate"
+      ]
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.25,
+      "outerEdgeRadiusMm": 0.25,
+      "widthMm": 58.0,
+      "depthMm": 19.0,
+      "rebateMm": 10.6,
+      "pointCount": 3
+    },
+    "constrained": [
+      {
+        "field": "innerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      },
+      {
+        "field": "outerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.55,
+    "photoVerified": true,
+    "unsupportedFeatures": [
+      "Rebate drop of 10.6 mm drawn as a chamfered corner: the oblique and chevron photographs show a beveled/chamfered edge, but no exact 10.6 mm value or rectangular rebate step is visible; the catalogue guide instead shows a square step of 11, which is not present in the photographs."
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The candidate's single chamfered edge is consistent with the beveled edge visible in product-detail-1, product-detail-2 and the chevron view, so no perimeter ridge has been added to a flat photographed face.",
+      "The catalogue/extracted guide depicts a rectangular step (height 19, step 11) at one end, whereas both the candidate and the photographs show a diagonal chamfer; the guide's square rebate is not supported by the physical images.",
+      "The candidate's 'REBATE DROP 10.6 mm' dimension is not derivable from the photographs and does not match the guide's 11 mm step, so the value and the rebate-vs-chamfer interpretation remain unverified."
+    ],
+    "concerns": [
+      "Terminology mismatch: the feature is labelled a rebate but drawn as a chamfer; photographs support a bevel, not a stepped rebate.",
+      "Numerical discrepancy between the candidate (10.6 mm) and the advisory guide (11 mm) with no photographic scale to arbitrate.",
+      "Only one beveled edge is confirmed; the opposite edge and the flat face thickness (19 mm in guide) cannot be independently measured from the supplied oblique shots."
+    ]
+  }
+}

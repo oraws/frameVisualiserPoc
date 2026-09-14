@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "sku": "5819IV",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 58.0,
+  "depthMm": 19.0,
+  "rebateMm": 10.6,
+  "points": [
+    [
+      0.0,
+      12.557
+    ],
+    [
+      7.411,
+      19.0
+    ],
+    [
+      58.0,
+      19.0
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 19,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "agree",
+    "verifiedFeatures": [
+      "step/rebate",
+      "19mm face height",
+      "58mm width",
+      "angled profile"
+    ],
+    "rejectedTraceFeatures": [],
+    "observations": [
+      "Product section shows natural wood grain variation",
+      "Profile source image confirms step geometry",
+      "Chevron image aligns with 'angled' profile label"
+    ],
+    "concerns": []
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 19,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "step/rebate",
+        "19mm face height",
+        "58mm width",
+        "angled profile"
+      ],
+      "rejectedTraceFeatures": []
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 6.0,
+      "innerEdgeRadiusMm": 0.25,
+      "outerEdgeRadiusMm": 0.25,
+      "widthMm": 58.0,
+      "depthMm": 19.0,
+      "rebateMm": 10.6,
+      "pointCount": 3
+    },
+    "constrained": [
+      {
+        "field": "faceCrownMm",
+        "requested": 19.0,
+        "applied": 6.0,
+        "reason": "Clamped to the safe range 0..6."
+      },
+      {
+        "field": "innerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      },
+      {
+        "field": "outerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "approve",
+    "confidence": 0.9,
+    "photoVerified": true,
+    "unsupportedFeatures": [],
+    "catalogueTraceAgreement": "agree",
+    "reasons": [
+      "Candidate's rebate drop (10.6 mm) aligns with supplier's profile source dimension (11 mm); all visible features (rebate, sight edge, outer edge) match supplier photographs; no unsupported features added"
+    ],
+    "concerns": [
+      "Minor dimension discrepancy (10.6 vs 11 mm) may indicate measurement tolerance or rounding, but within acceptable range for physical verification"
+    ]
+  }
+}

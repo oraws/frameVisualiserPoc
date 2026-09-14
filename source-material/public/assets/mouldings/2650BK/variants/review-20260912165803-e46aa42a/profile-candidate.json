@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sku": "2650BK",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "flat",
+  "widthMm": 50.0,
+  "depthMm": 26.0,
+  "rebateMm": 14.6,
+  "points": [
+    [
+      0.0,
+      11.4
+    ],
+    [
+      0.168,
+      25.72
+    ],
+    [
+      0.4,
+      26.0
+    ],
+    [
+      25.0,
+      26.0
+    ],
+    [
+      49.6,
+      26.0
+    ],
+    [
+      50.0,
+      25.78
+    ]
+  ],
+  "analysis": {},
+  "correctionPlan": {
+    "requested": {},
+    "applied": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.4,
+      "outerEdgeRadiusMm": 0.4,
+      "widthMm": 50.0,
+      "depthMm": 26.0,
+      "rebateMm": 14.6,
+      "pointCount": 6
+    },
+    "constrained": [
+      {
+        "field": "innerEdgeRadiusMm",
+        "requested": 0.9,
+        "applied": 0.4,
+        "reason": "Flat faces use a minimally broken edge."
+      },
+      {
+        "field": "outerEdgeRadiusMm",
+        "requested": 0.8,
+        "applied": 0.4,
+        "reason": "Flat faces use a minimally broken edge."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.2,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "chevron profile",
+      "black textured surface",
+      "wood edge"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Candidate cross-section lacks chevron feature present in EXACT SKU - chevron supplier photograph",
+      "Candidate color/texture (beige) does not match EXACT SKU supplier photographs (black textured surface with wood edge)",
+      "Rebate drop dimension (14.6 mm) does not correspond to supplier profile dimensions (e.g., 17 mm in EXACT SKU - profile source)"
+    ],
+    "concerns": [
+      "Critical profile features (chevron) absent in candidate",
+      "Material color and finish mismatch with supplier evidence",
+      "Dimensional discrepancy between candidate and supplier profile"
+    ]
+  }
+}

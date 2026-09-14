@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "sku": "CR0225MG",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 21.0,
+  "depthMm": 22.0,
+  "rebateMm": 12.3,
+  "points": [
+    [
+      0.0,
+      21.637
+    ],
+    [
+      0.415,
+      22.0
+    ],
+    [
+      20.585,
+      22.0
+    ],
+    [
+      21.0,
+      21.689
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 6,
+    "innerEdgeRadiusMm": 0.2,
+    "outerEdgeRadiusMm": 0.2,
+    "flatFaceConfirmed": false,
+    "catalogueTraceAgreement": "conflicts",
+    "verifiedFeatures": [
+      "step"
+    ],
+    "rejectedTraceFeatures": [
+      "flat face"
+    ],
+    "observations": [
+      "Product-section cross-section shows a step at 12.3mm from bottom (matching rebate dimension)",
+      "Supplier dimensions 21x22mm align with step geometry",
+      "Supplier profile label 'flat' contradicts physical step"
+    ],
+    "concerns": [
+      "faceCrownMm (6mm) exceeds supplier's total height (22mm) but is capped per allowed range",
+      "Supplier profile label 'flat' conflicts with verified step"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 6,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": false,
+      "verifiedFeatures": [
+        "step"
+      ],
+      "rejectedTraceFeatures": [
+        "flat face"
+      ]
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 6.0,
+      "innerEdgeRadiusMm": 0.25,
+      "outerEdgeRadiusMm": 0.25,
+      "widthMm": 21.0,
+      "depthMm": 22.0,
+      "rebateMm": 12.3,
+      "pointCount": 4
+    },
+    "constrained": [
+      {
+        "field": "innerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      },
+      {
+        "field": "outerEdgeRadiusMm",
+        "requested": 0.2,
+        "applied": 0.25,
+        "reason": "Clamped to the safe range 0.25..4."
+      }
+    ],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.9,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "step"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "Supplier's EXACT SKU - product-section photograph shows a distinct step feature not present in candidate cross-section",
+      "Candidate cross-section lacks visible step required by supplier's photographic evidence"
+    ],
+    "concerns": [
+      "Critical structural feature (step) missing from candidate, violating requirement to confirm all visible features in supplier photographs"
+    ]
+  }
+}

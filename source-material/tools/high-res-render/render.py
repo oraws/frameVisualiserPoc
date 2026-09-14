@@ -8,10 +8,16 @@ ROOT = Path(__file__).resolve().parents[2]
 JOB = Path(sys.argv[sys.argv.index('--') + 1]).resolve()
 settings = json.loads((JOB / 'settings.json').read_text())
 room = settings['roomId']
-assert room in ('generated-gallery', 'sofa-gallery')
-blend = 'daylight-gallery.blend' if room == 'generated-gallery' else 'sofa-gallery.blend'
+assert room in ('generated-gallery', 'sofa-gallery', 'leaning-floor-gallery')
+blend = {
+    'generated-gallery': 'daylight-gallery.blend',
+    'sofa-gallery': 'sofa-gallery.blend',
+    'leaning-floor-gallery': 'leaning-floor-gallery.blend',
+}[room]
 bpy.ops.wm.open_mainfile(filepath=str(ROOT / 'tools/room-template-generator' / blend))
 scene = bpy.context.scene
+scene.render.engine = 'CYCLES'
+scene.cycles.use_denoising = True
 print('RENDER_PROGRESS 8 Importing your frame and artwork', flush=True)
 bpy.ops.import_scene.gltf(filepath=str(JOB / 'frame.glb'))
 # Blender's importer does not implement Three's height-map extension. Restore

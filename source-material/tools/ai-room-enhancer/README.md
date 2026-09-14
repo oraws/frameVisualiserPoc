@@ -38,6 +38,13 @@ Then submit the four-step room workflow:
 .venv-comfy/bin/python tools/ai-room-enhancer/run_workflow.py
 ```
 
+Pass a room ID to use that room's `room-empty.jpg` and optional
+`enhancement.json`, while preserving the source aspect ratio. For example:
+
+```sh
+.venv-comfy/bin/python tools/ai-room-enhancer/run_workflow.py leaning-floor-gallery
+```
+
 Validate the fixed composition and clear hanging area before exposing it in the
 visualiser:
 

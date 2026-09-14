@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "sku": "0471DB",
+  "source": "supplier-metadata-and-vision-review",
+  "shapeClass": "stepped",
+  "widthMm": 30.0,
+  "depthMm": 25.0,
+  "rebateMm": 14.0,
+  "points": [
+    [
+      0.0,
+      14.706
+    ],
+    [
+      1.727,
+      16.368
+    ],
+    [
+      3.198,
+      16.496
+    ],
+    [
+      3.966,
+      17.263
+    ],
+    [
+      4.797,
+      17.583
+    ],
+    [
+      5.629,
+      17.519
+    ],
+    [
+      6.205,
+      17.199
+    ],
+    [
+      6.716,
+      16.624
+    ],
+    [
+      7.036,
+      15.729
+    ],
+    [
+      19.574,
+      15.729
+    ],
+    [
+      20.085,
+      17.072
+    ],
+    [
+      20.469,
+      17.391
+    ],
+    [
+      21.109,
+      17.455
+    ],
+    [
+      21.812,
+      18.478
+    ],
+    [
+      22.324,
+      18.926
+    ],
+    [
+      23.731,
+      19.565
+    ],
+    [
+      24.051,
+      19.885
+    ],
+    [
+      24.115,
+      20.524
+    ],
+    [
+      24.371,
+      20.972
+    ],
+    [
+      25.906,
+      21.867
+    ],
+    [
+      26.034,
+      22.506
+    ],
+    [
+      26.354,
+      23.082
+    ],
+    [
+      27.761,
+      24.488
+    ],
+    [
+      29.616,
+      25.0
+    ],
+    [
+      30.0,
+      24.744
+    ]
+  ],
+  "analysis": {
+    "shapeClass": "stepped",
+    "faceCrownMm": 0,
+    "innerEdgeRadiusMm": 0.5,
+    "outerEdgeRadiusMm": 0.5,
+    "flatFaceConfirmed": true,
+    "catalogueTraceAgreement": "partial",
+    "verifiedFeatures": [
+      "Single planar top face with fine directional wood-grain brushing",
+      "Rebate/step of ~14 mm on one vertical edge (lighter wood core exposed at the step)",
+      "Near-square outer sight edge with slight break",
+      "Mitered 45-degree chevron joint shown in corner view",
+      "Dark grey stained/wood-grain finish consistent across exact-SKU photos"
+    ],
+    "rejectedTraceFeatures": [
+      "Small rounded bead/protrusion on the right of the extracted silhouette (not confirmed as a discrete bead in any physical section; treated as rebate edge / segmentation)",
+      "Any convex crown on the top face (face is planar; highlight only)"
+    ],
+    "observations": [
+      "Exact-SKU section and oblique details show a flat-faced board with a single rebate step, matching the 30 x 25 mm envelope and 14 mm rebate",
+      "Directional grain runs lengthwise; no tiling or repeat macro feature detected",
+      "Family/macro image shows the same stepped shape in multiple colourways (presentation only)",
+      "Lower catalogue panel is empty/black, so no independent trace to cross-check"
+    ],
+    "concerns": [
+      "Supplier profile label 'angled' is ambiguous and not visually corroborated as an angled face; geometry reads as flat-with-rebate",
+      "Extracted silhouette suggests a rounded right-edge bump that the physical sections do not clearly confirm",
+      "No lower-panel catalogue trace available for independent verification"
+    ]
+  },
+  "correctionPlan": {
+    "requested": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "verifiedFeatures": [
+        "Single planar top face with fine directional wood-grain brushing",
+        "Rebate/step of ~14 mm on one vertical edge (lighter wood core exposed at the step)",
+        "Near-square outer sight edge with slight break",
+        "Mitered 45-degree chevron joint shown in corner view",
+        "Dark grey stained/wood-grain finish consistent across exact-SKU photos"
+      ],
+      "rejectedTraceFeatures": [
+        "Small rounded bead/protrusion on the right of the extracted silhouette (not confirmed as a discrete bead in any physical section; treated as rebate edge / segmentation)",
+        "Any convex crown on the top face (face is planar; highlight only)"
+      ]
+    },
+    "applied": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0.0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "widthMm": 30.0,
+      "depthMm": 25.0,
+      "rebateMm": 14.0,
+      "pointCount": 25
+    },
+    "constrained": [],
+    "dimensionalAuthority": "supplier metadata and profile assets"
+  },
+  "reviewer": {
+    "decision": "review",
+    "confidence": 0.72,
+    "photoVerified": false,
+    "unsupportedFeatures": [
+      "Long rising curved/sloped face on the right (outer) side of the candidate cross-section",
+      "Left-side 'REBATE DROP 1.4 mm' bump/step not clearly resolvable in the oblique product-detail photographs"
+    ],
+    "catalogueTraceAgreement": "conflicts",
+    "reasons": [
+      "The exact-SKU oblique photographs (product detail 1 and 2) and the chevron show a broad flat face terminated by a single small step/bead at the outer edge, not the long gradual rising slope drawn on the right of the candidate section.",
+      "The tan profile-source silhouette shows a flat top with a small right-hand bead, which does not correspond to the candidate's extended curved rise; the candidate has added a perimeter slope that is not present in any physical photograph.",
+      "The left sight edge in the photographs reads as a flat vertical face; the candidate's labelled 1.4 mm rebate bump is not independently confirmable in the supplied images and therefore is treated as an unverified guide feature.",
+      "Per the benchmark rule, a flat photographed face must not gain a perimeter ridge/slope; the candidate's right-side rise violates this."
+    ],
+    "concerns": [
+      "Candidate geometry appears to be derived from the advisory catalogue trace rather than from the exact-SKU photographs.",
+      "The right-side slope could be a misread of perspective/lighting in the oblique shots, but no photograph shows a continuous rising face, so it cannot be approved.",
+      "Rebate dimension (1.4 mm) is stated only in the guide and is not visually verifiable at the resolution of the supplied images."
+    ]
+  }
+}

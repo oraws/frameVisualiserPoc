@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 2,
+  "sku": "3042IV",
+  "status": "automated-approved-candidate",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T17:13:59.204100+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "3042IV",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 30.0,
+    "depthMm": 42.0,
+    "rebateMm": 23.5,
+    "points": [
+      [
+        0.0,
+        41.502
+      ],
+      [
+        0.831,
+        42.0
+      ],
+      [
+        29.169,
+        42.0
+      ],
+      [
+        29.723,
+        41.751
+      ],
+      [
+        30.0,
+        41.502
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 4.2,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "rebate"
+      ],
+      "rejectedTraceFeatures": [],
+      "observations": [
+        "Product-section image shows textured back area; product-detail images confirm rebate geometry"
+      ],
+      "concerns": [
+        "Supplier profile label 'flat' conflicts with visible step (rebate) in photographs"
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 4.2,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "rebate"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 4.2,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 30.0,
+        "depthMm": 42.0,
+        "rebateMm": 23.5,
+        "pointCount": 5
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 1.0,
+      "photoVerified": true,
+      "unsupportedFeatures": [],
+      "catalogueTraceAgreement": "uncertain",
+      "reasons": [
+        "Rebate feature present in supplier's product-section photograph",
+        "No unsupported features detected in candidate cross-section"
+      ],
+      "concerns": []
+    }
+  },
+  "profileGate": {
+    "passed": true,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912171059-433e59bd",
+  "referenceImages": [
+    "public/assets/mouldings/3042IV/product-section.jpg",
+    "public/assets/mouldings/3042IV/profile-source.png",
+    "public/assets/mouldings/3042IV/chevron.jpg",
+    "public/assets/mouldings/3042IV/product-detail-1.jpg",
+    "public/assets/mouldings/3042IV/product-detail-2.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.9,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 175.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 3.0
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3-vl:30b",
+    "profile": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 4.2,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "rebate"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 4.2,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 30.0,
+        "depthMm": 42.0,
+        "rebateMm": 23.5,
+        "pointCount": 5
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "matte",
+        "directional": "yes",
+        "gloss": "matte",
+        "targetColourDescription": "light beige with subtle warm undertones",
+        "settings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "roughness_mid": 175,
+          "roughness_detail": 0.6,
+          "bump_detail": 3.0
+        }
+      },
+      "applied": {
+        "finishClass": "matte",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 175.0,
+          "roughness_detail": 0.6,
+          "bump_detail": 3.0
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 5.2732,
+    "colourSpreadError": 0.018,
+    "seamError": 0.0126,
+    "maximumAutocorrelation": 0.4798,
+    "detailError": 0.0829,
+    "clippedPixels": 0.0003
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 5.2732,
+        "colourSpreadError": 0.018,
+        "seamError": 0.0126,
+        "maximumAutocorrelation": 0.4798,
+        "detailError": 0.0829,
+        "clippedPixels": 0.0003
+      },
+      "deterministicScore": 83.8,
+      "failedGates": [],
+      "agentReview": {
+        "score": 82,
+        "colourMatch": 70,
+        "textureMatch": 75,
+        "repetition": 90,
+        "seam": 95,
+        "finishMatch": 80,
+        "blockers": [
+          "Profile reconstruction not visible in candidate preview",
+          "Texture scale may not match supplier's exact specification"
+        ],
+        "observations": [
+          "Supplier's product-section shows distinct texture and color; candidate preview has similar tone but less detailed texture",
+          "Unlit atlas and fixed-light preview show continuous texture without obvious tiling",
+          "Profile details from supplier's 'profile-source' and 'chevron' images not visible in candidate preview"
+        ],
+        "suggestedSettings": {
+          "contrast": 0.95,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.7,
+          "bump_detail": 3.0
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3-vl:30b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "matte",
+      "directional": "yes",
+      "gloss": "matte",
+      "targetColourDescription": "light beige with subtle warm undertones",
+      "preserve": [
+        "texture",
+        "colour",
+        "profile"
+      ],
+      "risks": [
+        "texture mismatch",
+        "colour deviation"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "roughness_mid": 175,
+        "roughness_detail": 0.6,
+        "bump_detail": 3.0
+      }
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.95,
+      "reasons": [
+        "Texture scale and irregularity match exact SKU supplier evidence (e.g., product-section texture)",
+        "Colour and finish align with supplier's product-section and profile-source images",
+        "No visible seam or obvious repeat in candidate preview"
+      ],
+      "concerns": []
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "c10dd14c1988bb3fdbc401860ac147481a1b18db278e39ced893239624de135a",
+      "roughness.jpg": "e5f81921399fda8c39c51dd1c3eb3d3348350a844045394e43d17efc7811e82c",
+      "bump.jpg": "9397b9c076e184d09944cc19e7b7d97f72778fcf56c8192e60fddfbbc4085381"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

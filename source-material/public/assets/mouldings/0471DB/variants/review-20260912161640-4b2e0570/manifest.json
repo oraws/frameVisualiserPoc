@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 2,
+  "sku": "0471DB",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T16:24:36.650286+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "0471DB",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 30.0,
+    "depthMm": 25.0,
+    "rebateMm": 14.0,
+    "points": [
+      [
+        0.0,
+        14.706
+      ],
+      [
+        1.727,
+        16.368
+      ],
+      [
+        3.198,
+        16.496
+      ],
+      [
+        3.966,
+        17.263
+      ],
+      [
+        4.797,
+        17.583
+      ],
+      [
+        5.629,
+        17.519
+      ],
+      [
+        6.205,
+        17.199
+      ],
+      [
+        6.716,
+        16.624
+      ],
+      [
+        7.036,
+        15.729
+      ],
+      [
+        19.574,
+        15.729
+      ],
+      [
+        20.085,
+        17.072
+      ],
+      [
+        20.469,
+        17.391
+      ],
+      [
+        21.109,
+        17.455
+      ],
+      [
+        21.812,
+        18.478
+      ],
+      [
+        22.324,
+        18.926
+      ],
+      [
+        23.731,
+        19.565
+      ],
+      [
+        24.051,
+        19.885
+      ],
+      [
+        24.115,
+        20.524
+      ],
+      [
+        24.371,
+        20.972
+      ],
+      [
+        25.906,
+        21.867
+      ],
+      [
+        26.034,
+        22.506
+      ],
+      [
+        26.354,
+        23.082
+      ],
+      [
+        27.761,
+        24.488
+      ],
+      [
+        29.616,
+        25.0
+      ],
+      [
+        30.0,
+        24.744
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "Single planar top face with fine directional wood-grain brushing",
+        "Rebate/step of ~14 mm on one vertical edge (lighter wood core exposed at the step)",
+        "Near-square outer sight edge with slight break",
+        "Mitered 45-degree chevron joint shown in corner view",
+        "Dark grey stained/wood-grain finish consistent across exact-SKU photos"
+      ],
+      "rejectedTraceFeatures": [
+        "Small rounded bead/protrusion on the right of the extracted silhouette (not confirmed as a discrete bead in any physical section; treated as rebate edge / segmentation)",
+        "Any convex crown on the top face (face is planar; highlight only)"
+      ],
+      "observations": [
+        "Exact-SKU section and oblique details show a flat-faced board with a single rebate step, matching the 30 x 25 mm envelope and 14 mm rebate",
+        "Directional grain runs lengthwise; no tiling or repeat macro feature detected",
+        "Family/macro image shows the same stepped shape in multiple colourways (presentation only)",
+        "Lower catalogue panel is empty/black, so no independent trace to cross-check"
+      ],
+      "concerns": [
+        "Supplier profile label 'angled' is ambiguous and not visually corroborated as an angled face; geometry reads as flat-with-rebate",
+        "Extracted silhouette suggests a rounded right-edge bump that the physical sections do not clearly confirm",
+        "No lower-panel catalogue trace available for independent verification"
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "Single planar top face with fine directional wood-grain brushing",
+          "Rebate/step of ~14 mm on one vertical edge (lighter wood core exposed at the step)",
+          "Near-square outer sight edge with slight break",
+          "Mitered 45-degree chevron joint shown in corner view",
+          "Dark grey stained/wood-grain finish consistent across exact-SKU photos"
+        ],
+        "rejectedTraceFeatures": [
+          "Small rounded bead/protrusion on the right of the extracted silhouette (not confirmed as a discrete bead in any physical section; treated as rebate edge / segmentation)",
+          "Any convex crown on the top face (face is planar; highlight only)"
+        ]
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 30.0,
+        "depthMm": 25.0,
+        "rebateMm": 14.0,
+        "pointCount": 25
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.72,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Long rising curved/sloped face on the right (outer) side of the candidate cross-section",
+        "Left-side 'REBATE DROP 1.4 mm' bump/step not clearly resolvable in the oblique product-detail photographs"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "The exact-SKU oblique photographs (product detail 1 and 2) and the chevron show a broad flat face terminated by a single small step/bead at the outer edge, not the long gradual rising slope drawn on the right of the candidate section.",
+        "The tan profile-source silhouette shows a flat top with a small right-hand bead, which does not correspond to the candidate's extended curved rise; the candidate has added a perimeter slope that is not present in any physical photograph.",
+        "The left sight edge in the photographs reads as a flat vertical face; the candidate's labelled 1.4 mm rebate bump is not independently confirmable in the supplied images and therefore is treated as an unverified guide feature.",
+        "Per the benchmark rule, a flat photographed face must not gain a perimeter ridge/slope; the candidate's right-side rise violates this."
+      ],
+      "concerns": [
+        "Candidate geometry appears to be derived from the advisory catalogue trace rather than from the exact-SKU photographs.",
+        "The right-side slope could be a misread of perspective/lighting in the oblique shots, but no photograph shows a continuous rising face, so it cannot be approved.",
+        "Rebate dimension (1.4 mm) is stated only in the guide and is not visually verifiable at the resolution of the supplied images."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912161640-4b2e0570",
+  "referenceImages": [
+    "public/assets/mouldings/0471DB/product-section.jpg",
+    "public/assets/mouldings/0471DB/profile-source.png",
+    "public/assets/mouldings/0471DB/chevron.jpg",
+    "public/assets/mouldings/0471DB/macro.jpg",
+    "public/assets/mouldings/0471DB/product-detail-1.jpg",
+    "public/assets/mouldings/0471DB/product-detail-2.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.82,
+    "contrast": 1.06,
+    "patch_width": 512,
+    "overlap": 192,
+    "roughness_mid": 185.0,
+    "roughness_detail": 0.55,
+    "bump_detail": 2.2
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3.8:27b",
+    "profile": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "Single planar top face with fine directional wood-grain brushing",
+          "Rebate/step of ~14 mm on one vertical edge (lighter wood core exposed at the step)",
+          "Near-square outer sight edge with slight break",
+          "Mitered 45-degree chevron joint shown in corner view",
+          "Dark grey stained/wood-grain finish consistent across exact-SKU photos"
+        ],
+        "rejectedTraceFeatures": [
+          "Small rounded bead/protrusion on the right of the extracted silhouette (not confirmed as a discrete bead in any physical section; treated as rebate edge / segmentation)",
+          "Any convex crown on the top face (face is planar; highlight only)"
+        ]
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 30.0,
+        "depthMm": 25.0,
+        "rebateMm": 14.0,
+        "pointCount": 25
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "painted-wood-grain",
+        "directional": true,
+        "gloss": "matte",
+        "targetColourDescription": "Dark charcoal grey-brown (taupe-tinged) with subtle linear wood-grain modulation; not pure black, with slightly warmer mid-tones in the grain valleys.",
+        "settings": {
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      },
+      "applied": {
+        "finishClass": "painted-wood-grain",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.85,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 180.0,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.6887,
+    "colourSpreadError": 0.2505,
+    "seamError": 0.0188,
+    "maximumAutocorrelation": 0.4135,
+    "detailError": 0.3185,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 3.7193,
+        "colourSpreadError": 0.2307,
+        "seamError": 0.0178,
+        "maximumAutocorrelation": 0.2925,
+        "detailError": 0.3046,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 86.7,
+      "failedGates": [],
+      "agentReview": {
+        "score": 61,
+        "colourMatch": 68,
+        "textureMatch": 64,
+        "repetition": 52,
+        "seam": 48,
+        "finishMatch": 70,
+        "blockers": [
+          "Vertical seam visible in both atlas and fixed-light preview (right third of frame) where the grain tile repeats; not acceptable for a continuous moulding face.",
+          "Cross-section geometry cannot be verified: only a flat silhouette (profile-source) and two angled detail crops are supplied; no 3D model render showing bead, hollow, rebate or sight edge is present to confirm against the stated dimensions.",
+          "Supplier finish reads as a darker, more saturated charcoal than the medium-grey preview; hue/value drift is visible under fixed light."
+        ],
+        "observations": [
+          "Supplier crops (section, macro, detail-1/2) show a matte-to-satin painted charcoal with a fine directional grain running along the length and a stepped/ridged face; the light wood core is only visible at the back edge and must not appear on the finished face.",
+          "The unlit atlas and fixed-light preview both show horizontal brushed grain with scattered darker dash clusters; the dash clusters recur at near-regular spacing, indicating a tiled repeat rather than natural variation.",
+          "A straight vertical seam line is present in the preview, breaking the directional grain continuity.",
+          "Relief/bump in the preview is plausible for a brushed painted finish but the grain scale looks slightly coarse relative to the fine brushing in the supplier macro.",
+          "Colour in the preview is lighter and less neutral than the supplier's dark charcoal; value and saturation need tightening."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.82,
+          "contrast": 1.06,
+          "patch_width": 512,
+          "overlap": 192,
+          "roughness_mid": 185,
+          "roughness_detail": 0.55,
+          "bump_detail": 2.2
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.82,
+        "contrast": 1.06,
+        "patch_width": 512,
+        "overlap": 192,
+        "roughness_mid": 185.0,
+        "roughness_detail": 0.55,
+        "bump_detail": 2.2
+      },
+      "metrics": {
+        "colourDeltaE": 3.6887,
+        "colourSpreadError": 0.2505,
+        "seamError": 0.0188,
+        "maximumAutocorrelation": 0.4135,
+        "detailError": 0.3185,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 82.1,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "painted-wood-grain",
+      "directional": true,
+      "gloss": "matte",
+      "targetColourDescription": "Dark charcoal grey-brown (taupe-tinged) with subtle linear wood-grain modulation; not pure black, with slightly warmer mid-tones in the grain valleys.",
+      "preserve": [
+        "linear directional grain running along the moulding length",
+        "stepped/ogee top ridge and bead profile",
+        "bevelled face and sight edge",
+        "back rebate / mounting shoulder",
+        "natural grain variation and surface relief",
+        "soft matte sheen with diffuse edge highlights"
+      ],
+      "risks": [
+        "tiled or repeated grain pattern mistaken for natural variation",
+        "over-smoothing that erases the brushed directional texture",
+        "misclassifying bright curved-edge highlights as gloss",
+        "sampling colour from family-member or wall/mount backgrounds instead of the exact-SKU face",
+        "adding unsupported ridges, beads or hollows to the cross-section",
+        "seam lines at grain tile boundaries"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.85,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "The reported fault is a PROFILE REVIEW, but the candidate supplied is only a flat fixed-light material preview; none of the cross-section features visible in the exact-SKU supplier photos (stepped top, bevel/step edge, sight edge, pale core rebate) are present or verifiable in the candidate.",
+        "The exact-SKU profile source and product-detail images show a distinct stepped/stepped-bead cross-section with a pale (cream) core, which a 2D texture preview cannot confirm or reproduce; approving on texture alone would ignore the geometry fault.",
+        "The candidate texture exhibits a regular vertical rhythm of horizontal dash clusters and banding that is consistent with a tiled repeat rather than purely natural directional grain, conflicting with the 'no obvious repeat' requirement.",
+        "Colour tone (mid-grey) is broadly consistent with the exact-SKU face, but gloss/finish and surface relief cannot be validated from a fixed-light preview, so the finish match is unconfirmed."
+      ],
+      "concerns": [
+        "Cross-section geometry (ridge, bead, bevel, step, rebate, sight edge) is absent from the candidate and must be reconstructed and visually confirmed against the exact-SKU section and detail photos before approval.",
+        "Possible vertical tiling/repeat in the directional grain (recurring horizontal dash rows at near-regular intervals) should be checked and removed while retaining natural variation.",
+        "Finish/gloss and texture scale/relief are not verifiable in the fixed-light preview; a lit render or physical sample is needed to confirm match to the exact-SKU finish.",
+        "Family-context images (macro, multi-colour mouldings) must not be used to override the exact-SKU grey colour or the exact-SKU profile shape."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "06cb31ec9c2d7176a4f2e8f2a03fc9aca467a576d92112bef3af00c0c5e6d02b",
+      "roughness.jpg": "b5bed760041af99b043eb0a46327a3e01a8ad2087e179f791a97bff999d798a4",
+      "bump.jpg": "d32460c231955f593fb4cff689f9e38cedf51fd54aea5d5d6181506edaac2634"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

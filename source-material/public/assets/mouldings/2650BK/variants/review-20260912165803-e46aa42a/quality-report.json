@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 2,
+  "sku": "2650BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T17:02:47.364283+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "2650BK",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 50.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "points": [
+      [
+        0.0,
+        11.4
+      ],
+      [
+        0.168,
+        25.72
+      ],
+      [
+        0.4,
+        26.0
+      ],
+      [
+        25.0,
+        26.0
+      ],
+      [
+        49.6,
+        26.0
+      ],
+      [
+        50.0,
+        25.78
+      ]
+    ],
+    "analysis": {},
+    "correctionPlan": {
+      "requested": {},
+      "applied": {
+        "shapeClass": "flat",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.4,
+        "outerEdgeRadiusMm": 0.4,
+        "widthMm": 50.0,
+        "depthMm": 26.0,
+        "rebateMm": 14.6,
+        "pointCount": 6
+      },
+      "constrained": [
+        {
+          "field": "innerEdgeRadiusMm",
+          "requested": 0.9,
+          "applied": 0.4,
+          "reason": "Flat faces use a minimally broken edge."
+        },
+        {
+          "field": "outerEdgeRadiusMm",
+          "requested": 0.8,
+          "applied": 0.4,
+          "reason": "Flat faces use a minimally broken edge."
+        }
+      ],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.2,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "chevron profile",
+        "black textured surface",
+        "wood edge"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "Candidate cross-section lacks chevron feature present in EXACT SKU - chevron supplier photograph",
+        "Candidate color/texture (beige) does not match EXACT SKU supplier photographs (black textured surface with wood edge)",
+        "Rebate drop dimension (14.6 mm) does not correspond to supplier profile dimensions (e.g., 17 mm in EXACT SKU - profile source)"
+      ],
+      "concerns": [
+        "Critical profile features (chevron) absent in candidate",
+        "Material color and finish mismatch with supplier evidence",
+        "Dimensional discrepancy between candidate and supplier profile"
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912165803-e46aa42a",
+  "referenceImages": [
+    "public/assets/mouldings/2650BK/product-section.jpg",
+    "public/assets/mouldings/2650BK/profile-source.png",
+    "public/assets/mouldings/2650BK/chevron.jpg",
+    "public/assets/mouldings/2650BK/macro.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/centrado/alberta/2650WH-framed-reference.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.9,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 3.0
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3-vl:30b",
+    "profile": {
+      "requested": {},
+      "applied": {
+        "shapeClass": "flat",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.4,
+        "outerEdgeRadiusMm": 0.4,
+        "widthMm": 50.0,
+        "depthMm": 26.0,
+        "rebateMm": 14.6,
+        "pointCount": 6
+      },
+      "constrained": [
+        {
+          "field": "innerEdgeRadiusMm",
+          "requested": 0.9,
+          "applied": 0.4,
+          "reason": "Flat faces use a minimally broken edge."
+        },
+        {
+          "field": "outerEdgeRadiusMm",
+          "requested": 0.8,
+          "applied": 0.4,
+          "reason": "Flat faces use a minimally broken edge."
+        }
+      ],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "matte",
+        "directional": "subtle directional grain",
+        "gloss": "matte",
+        "targetColourDescription": "black",
+        "settings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "roughness_mid": 180,
+          "roughness_detail": 0.5,
+          "bump_detail": 3.0
+        }
+      },
+      "applied": {
+        "finishClass": "matte",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 180.0,
+          "roughness_detail": 0.5,
+          "bump_detail": 3.0
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 2.3483,
+    "colourSpreadError": 0.1496,
+    "seamError": 0.0319,
+    "maximumAutocorrelation": 0.2668,
+    "detailError": 0.1525,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 2.3483,
+        "colourSpreadError": 0.1496,
+        "seamError": 0.0319,
+        "maximumAutocorrelation": 0.2668,
+        "detailError": 0.1525,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 93.5,
+      "failedGates": [],
+      "agentReview": {
+        "score": 80,
+        "colourMatch": 80,
+        "textureMatch": 90,
+        "repetition": 95,
+        "seam": 98,
+        "finishMatch": 85,
+        "blockers": [
+          "Profile features not matching supplier's product section dimensions",
+          "ColourDelta exceeds ideal threshold"
+        ],
+        "observations": [
+          "Supplier's product section texture matches candidate's preview",
+          "No visible tiling or seams in candidate preview",
+          "Profile dimensions from supplier's 'profile source' image not fully reflected in candidate's preview"
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 400,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.7,
+          "bump_detail": 3.0
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3-vl:30b",
+    "connectionError": "timed out",
+    "analyst": {
+      "finishClass": "matte",
+      "directional": "subtle directional grain",
+      "gloss": "matte",
+      "targetColourDescription": "black",
+      "preserve": [
+        "texture",
+        "profile"
+      ],
+      "risks": [
+        "inconsistent texture replication",
+        "gloss misclassification"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.5,
+        "bump_detail": 3.0
+      }
+    },
+    "reviewer": {
+      "decision": "approve",
+      "confidence": 0.95,
+      "reasons": [
+        "Color delta (2.3483) and color spread error (0.1496) within acceptable limits for exact SKU color match",
+        "Texture scale and irregularity consistent with EXACT SKU product section reference",
+        "No visible seam or obvious repeat (detail error 0.1525, maximum autocorrelation 0.2668 indicate natural variation)"
+      ],
+      "concerns": []
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "97eeb2064b099baea2aa5fee7a3997c3ee0180b54f619cc67f0b79f6bb38ef76",
+      "roughness.jpg": "48bb19a4571cec16f3f8990e27894e12e4fed98bbc8c7563ea030f9a4ee24e4f",
+      "bump.jpg": "1acdc6856c041d32fda3c55ec13cd122925a912599b6e2035bf22000ccb402be"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

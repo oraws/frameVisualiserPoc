@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 2,
+  "sku": "5819IV",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T17:54:19.464193+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "5819IV",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 58.0,
+    "depthMm": 19.0,
+    "rebateMm": 10.6,
+    "points": [
+      [
+        0.0,
+        12.557
+      ],
+      [
+        7.411,
+        19.0
+      ],
+      [
+        58.0,
+        19.0
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "Single planar (flat) main face confirmed in oblique product-detail-1 and product-detail-2 photographs",
+        "Angled bevel/chamfer on one sight edge, consistent with profile-source drawing and supplier label 'angled'",
+        "Rebate (step) on the opposite edge, visible as the lower step in profile-source and as the offset end in product-section",
+        "Exposed end grain (tan) on the cut faces in product-detail photographs",
+        "Fine directional grain / light brushing on the cream face"
+      ],
+      "rejectedTraceFeatures": [
+        "No convex bead or rounded crown present on the face",
+        "No concave hollow or cove present",
+        "No ornate or multi-ridge profile; only one bevel and one rebate"
+      ],
+      "observations": [
+        "Colour is a light cream / ivory on the face with a warmer tan end grain",
+        "Finish appears matte to low-satin with subtle directional texture, not high gloss",
+        "Assembled chevron shows two flat bars meeting at a right angle, consistent with a flat-faced profile",
+        "Profile-source 2D guide (19 mm height, ~11 mm rebate region) matches the physical oblique views",
+        "Lower panel supplies only text dimensions (58 x 19 mm; rebate 10.6 mm) and the label 'angled', no graphical trace"
+      ],
+      "concerns": [
+        "Minor dimensional discrepancy: profile-source suggests ~11 mm rebate region while text states rebate 10.6 mm; treat 10.6 mm as the stated supplier value",
+        "No graphical catalogue trace in the lower panel to cross-check; agreement is based on the profile-source drawing and photographs",
+        "Edge radii are not clearly resolvable in the photographs; sharp/square edges assumed (0.2 mm minimum) pending physical measurement"
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0,
+        "innerEdgeRadiusMm": 0.2,
+        "outerEdgeRadiusMm": 0.2,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "Single planar (flat) main face confirmed in oblique product-detail-1 and product-detail-2 photographs",
+          "Angled bevel/chamfer on one sight edge, consistent with profile-source drawing and supplier label 'angled'",
+          "Rebate (step) on the opposite edge, visible as the lower step in profile-source and as the offset end in product-section",
+          "Exposed end grain (tan) on the cut faces in product-detail photographs",
+          "Fine directional grain / light brushing on the cream face"
+        ],
+        "rejectedTraceFeatures": [
+          "No convex bead or rounded crown present on the face",
+          "No concave hollow or cove present",
+          "No ornate or multi-ridge profile; only one bevel and one rebate"
+        ]
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.25,
+        "outerEdgeRadiusMm": 0.25,
+        "widthMm": 58.0,
+        "depthMm": 19.0,
+        "rebateMm": 10.6,
+        "pointCount": 3
+      },
+      "constrained": [
+        {
+          "field": "innerEdgeRadiusMm",
+          "requested": 0.2,
+          "applied": 0.25,
+          "reason": "Clamped to the safe range 0.25..4."
+        },
+        {
+          "field": "outerEdgeRadiusMm",
+          "requested": 0.2,
+          "applied": 0.25,
+          "reason": "Clamped to the safe range 0.25..4."
+        }
+      ],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "photoVerified": true,
+      "unsupportedFeatures": [
+        "Rebate drop of 10.6 mm drawn as a chamfered corner: the oblique and chevron photographs show a beveled/chamfered edge, but no exact 10.6 mm value or rectangular rebate step is visible; the catalogue guide instead shows a square step of 11, which is not present in the photographs."
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "The candidate's single chamfered edge is consistent with the beveled edge visible in product-detail-1, product-detail-2 and the chevron view, so no perimeter ridge has been added to a flat photographed face.",
+        "The catalogue/extracted guide depicts a rectangular step (height 19, step 11) at one end, whereas both the candidate and the photographs show a diagonal chamfer; the guide's square rebate is not supported by the physical images.",
+        "The candidate's 'REBATE DROP 10.6 mm' dimension is not derivable from the photographs and does not match the guide's 11 mm step, so the value and the rebate-vs-chamfer interpretation remain unverified."
+      ],
+      "concerns": [
+        "Terminology mismatch: the feature is labelled a rebate but drawn as a chamfer; photographs support a bevel, not a stepped rebate.",
+        "Numerical discrepancy between the candidate (10.6 mm) and the advisory guide (11 mm) with no photographic scale to arbitrate.",
+        "Only one beveled edge is confirmed; the opposite edge and the flat face thickness (19 mm in guide) cannot be independently measured from the supplied oblique shots."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912174453-300c6b0d",
+  "referenceImages": [
+    "public/assets/mouldings/5819IV/product-section.jpg",
+    "public/assets/mouldings/5819IV/profile-source.png",
+    "public/assets/mouldings/5819IV/chevron.jpg",
+    "public/assets/mouldings/5819IV/product-detail-1.jpg",
+    "public/assets/mouldings/5819IV/product-detail-2.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.85,
+    "contrast": 1.05,
+    "patch_width": 480,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 2.5
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3.8:27b",
+    "profile": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0,
+        "innerEdgeRadiusMm": 0.2,
+        "outerEdgeRadiusMm": 0.2,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "Single planar (flat) main face confirmed in oblique product-detail-1 and product-detail-2 photographs",
+          "Angled bevel/chamfer on one sight edge, consistent with profile-source drawing and supplier label 'angled'",
+          "Rebate (step) on the opposite edge, visible as the lower step in profile-source and as the offset end in product-section",
+          "Exposed end grain (tan) on the cut faces in product-detail photographs",
+          "Fine directional grain / light brushing on the cream face"
+        ],
+        "rejectedTraceFeatures": [
+          "No convex bead or rounded crown present on the face",
+          "No concave hollow or cove present",
+          "No ornate or multi-ridge profile; only one bevel and one rebate"
+        ]
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.25,
+        "outerEdgeRadiusMm": 0.25,
+        "widthMm": 58.0,
+        "depthMm": 19.0,
+        "rebateMm": 10.6,
+        "pointCount": 3
+      },
+      "constrained": [
+        {
+          "field": "innerEdgeRadiusMm",
+          "requested": 0.2,
+          "applied": 0.25,
+          "reason": "Clamped to the safe range 0.25..4."
+        },
+        {
+          "field": "outerEdgeRadiusMm",
+          "requested": 0.2,
+          "applied": 0.25,
+          "reason": "Clamped to the safe range 0.25..4."
+        }
+      ],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "light-painted-wood",
+        "directional": true,
+        "gloss": "matte",
+        "targetColourDescription": "Pale warm cream / off-white face with a faint horizontal grain, transitioning to a natural light tan end-grain at the cut edges; no saturated hue, low chroma, soft diffuse sheen.",
+        "settings": {
+          "colour_strength": 0.7,
+          "contrast": 1.0,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 1.5
+        }
+      },
+      "applied": {
+        "finishClass": "light-painted-wood",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.7,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 180.0,
+          "roughness_detail": 0.6,
+          "bump_detail": 1.5
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.0958,
+    "colourSpreadError": 0.1481,
+    "seamError": 0.0164,
+    "maximumAutocorrelation": 0.2147,
+    "detailError": 0.272,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.5
+      },
+      "metrics": {
+        "colourDeltaE": 3.0886,
+        "colourSpreadError": 0.0648,
+        "seamError": 0.0166,
+        "maximumAutocorrelation": 0.3239,
+        "detailError": 0.1558,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 95.1,
+      "failedGates": [],
+      "agentReview": {
+        "score": 68,
+        "colourMatch": 70,
+        "textureMatch": 78,
+        "repetition": 68,
+        "seam": 88,
+        "finishMatch": 75,
+        "blockers": [
+          "Profile geometry not verifiable in the fixed-light preview: the supplier profile-source and detail crops show a 45-degree top bevel, a 19-to-11 step/rebate on the right edge and a flat sight edge, but the candidate preview renders only a flat plane with no visible bevel, rebate or sight-edge relief, so the cross-section cannot be confirmed against the photographs.",
+          "Colour cast is slightly cool/grey relative to the supplier's warm cream-beige wood (reported colourDeltaE 3.09), so the exact-SKU tone is not yet matched."
+        ],
+        "observations": [
+          "Directional grain and fine fleck character in the candidate closely follow the supplier's horizontal brushed grain, supporting a good texture-character match.",
+          "seamError 0.0166 and clippedPixels 0.0 indicate a clean, non-clipped atlas with no obvious hard seam line.",
+          "maximumAutocorrelation 0.3239 shows mild periodicity in the grain field; not a blatant tile but enough regularity to warrant a wider patch and more overlap to break repetition.",
+          "detailError 0.1558 suggests surface relief/fleck scale is close but slightly soft versus the crisp flecks in the supplier crops.",
+          "Supplier profile-source dimensions (19 height, 11 step) and the chamfered corner are the authoritative geometry; the chevron and detail crops confirm a single bevel plus one rebate, with no additional beads or hollows to add.",
+          "Finish reads as matte/satin in both supplier and candidate, consistent with a low-gloss wood."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.85,
+          "contrast": 1.05,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 2.5
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.85,
+        "contrast": 1.05,
+        "patch_width": 480,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 3.0958,
+        "colourSpreadError": 0.1481,
+        "seamError": 0.0164,
+        "maximumAutocorrelation": 0.2147,
+        "detailError": 0.272,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 94.5,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "light-painted-wood",
+      "directional": true,
+      "gloss": "matte",
+      "targetColourDescription": "Pale warm cream / off-white face with a faint horizontal grain, transitioning to a natural light tan end-grain at the cut edges; no saturated hue, low chroma, soft diffuse sheen.",
+      "preserve": [
+        "Fine horizontal grain lines on the face (directional brushing)",
+        "Subtle low-relief surface texture without deep grooves",
+        "Chamfered (bevelled) top-right edge per the 19/11 cross-section",
+        "Single shallow rebate/step on the opposite sight edge (height ~11)",
+        "Natural light-tan end-grain tone at cut faces",
+        "Gentle natural colour variation across the board"
+      ],
+      "risks": [
+        "PROFILE: inventing a bead, ridge or hollow that is not present in the exact-SKU section; the only features are a flat face, one chamfer and one shallow step",
+        "PROFILE: mis-scaling the 19 overall height vs the 11 step height, or treating the chamfer as a rounded bead",
+        "Texture: tiling/repeating the grain pattern at regular intervals",
+        "Texture: over-smoothing that erases the fine directional grain",
+        "Colour: drifting the face toward yellow or grey; sampling the tan end-grain or the chevron family reference instead of the exact-SKU face",
+        "Gloss: over-stating sheen from bright highlights on the chamfered edge"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.7,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.6,
+        "bump_detail": 1.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.78,
+      "reasons": [
+        "Candidate preview shows a clear vertical seam/tonal break (darker grey column on the left half versus a lighter column on the right) and a horizontal seam line near the top, violating the no-visible-seam requirement.",
+        "Candidate colour reads cooler and greyer than the exact-SKU supplier photographs, which show a warm cream face with pale yellow saw-cut end grain; reported colourDeltaE of ~3.1 supports a perceptible shift.",
+        "Texture scale and fine horizontal grain direction are broadly consistent with the exact-SKU evidence, so the grain character itself is not the primary fault.",
+        "The profile source diagram (19/11 stepped profile with a single top-right bevel) is a 2D guide; no ridge, bead, hollow or rebate is visible in the supplier photos, so no extra feature should be added, but the candidate material panel does not confirm a clean sight edge either."
+      ],
+      "concerns": [
+        "Visible vertical and horizontal seams in the fixed-light candidate preview indicate tiling or a lighting gradient that must be removed.",
+        "Cool/grey colour cast relative to the warm cream exact-SKU reference; finish/gloss appears flatter than the supplier detail shots.",
+        "Risk of an obvious repeat in the grain field once the seam is corrected; natural variation should be retained without a tiled macro pattern.",
+        "Profile geometry (step, bevel, rebate) is not visually verifiable from the supplied photos and remains an unverified catalogue trace."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "a1fda3dd85281c5d49d3a786330d78d8fe8b41555d81dc78266ad58f93b3f8e4",
+      "roughness.jpg": "2a93c84d4f7f5159ba29513c84399adaf345d535af26f4316249ff5fc62a74d7",
+      "bump.jpg": "f80ca1e74a82828ef45d68c6f9e4d7c63a1cc4f6acb03c2e8363a8eaba18a2df"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "generator": "OpenAI built-in image generation",
+  "sourceReference": "source-material/rooms/leaning-floor-gallery/style-reference.png",
+  "output": "public/assets/rooms/leaning-floor-gallery/room-ai-enhanced-v2.png",
+  "purpose": "Empty photographic room plate derived from the supplied sales reference. Artwork, frame and baked frame shadow were removed so the live renderer can add the selected product.",
+  "livePlacement": {
+    "type": "floor-lean",
+    "floorY": -1.9,
+    "tiltDegreesFallback": 6,
+    "yawDegrees": 0,
+    "bottomStandOffMm": 180,
+    "lightDirection": "upper right"
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 2,
+  "sku": "0472CM",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T16:38:11.524666+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "0472CM",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "stepped",
+    "widthMm": 52.0,
+    "depthMm": 35.0,
+    "rebateMm": 19.6,
+    "points": [
+      [
+        0.0,
+        17.256
+      ],
+      [
+        1.944,
+        18.329
+      ],
+      [
+        2.624,
+        19.011
+      ],
+      [
+        2.916,
+        19.986
+      ],
+      [
+        3.305,
+        20.376
+      ],
+      [
+        3.985,
+        20.669
+      ],
+      [
+        6.123,
+        20.669
+      ],
+      [
+        6.609,
+        21.058
+      ],
+      [
+        6.901,
+        21.741
+      ],
+      [
+        7.193,
+        22.033
+      ],
+      [
+        8.067,
+        22.521
+      ],
+      [
+        8.845,
+        22.716
+      ],
+      [
+        9.622,
+        22.716
+      ],
+      [
+        10.692,
+        22.423
+      ],
+      [
+        12.052,
+        21.253
+      ],
+      [
+        12.538,
+        20.376
+      ],
+      [
+        12.733,
+        19.694
+      ],
+      [
+        12.733,
+        18.816
+      ],
+      [
+        12.927,
+        18.621
+      ],
+      [
+        33.047,
+        18.719
+      ],
+      [
+        33.436,
+        19.986
+      ],
+      [
+        34.116,
+        20.864
+      ],
+      [
+        35.379,
+        21.643
+      ],
+      [
+        36.546,
+        22.033
+      ],
+      [
+        37.421,
+        23.398
+      ],
+      [
+        38.684,
+        24.568
+      ],
+      [
+        40.531,
+        25.153
+      ],
+      [
+        40.725,
+        26.031
+      ],
+      [
+        41.6,
+        27.396
+      ],
+      [
+        42.28,
+        27.786
+      ],
+      [
+        43.641,
+        27.883
+      ],
+      [
+        43.836,
+        28.078
+      ],
+      [
+        43.836,
+        28.565
+      ],
+      [
+        44.224,
+        29.833
+      ],
+      [
+        44.905,
+        31.198
+      ],
+      [
+        45.779,
+        32.368
+      ],
+      [
+        47.14,
+        33.635
+      ],
+      [
+        48.598,
+        34.513
+      ],
+      [
+        49.862,
+        35.0
+      ],
+      [
+        50.931,
+        35.0
+      ],
+      [
+        52.0,
+        34.415
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "stepped",
+      "faceCrownMm": 6,
+      "innerEdgeRadiusMm": 1.0,
+      "outerEdgeRadiusMm": 0.5,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "agree",
+      "verifiedFeatures": [
+        "rebate",
+        "stepped profile",
+        "crown",
+        "inner edge radius",
+        "outer edge radius"
+      ],
+      "rejectedTraceFeatures": [],
+      "observations": [
+        "Supplier dimensions 52 x 35 mm, rebate 19.6 mm",
+        "Supplier profile label: angled",
+        "Product-section photograph confirms stepped cross-section with crown and rebate"
+      ],
+      "concerns": []
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 6,
+        "innerEdgeRadiusMm": 1.0,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "rebate",
+          "stepped profile",
+          "crown",
+          "inner edge radius",
+          "outer edge radius"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 6.0,
+        "innerEdgeRadiusMm": 1.0,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 52.0,
+        "depthMm": 35.0,
+        "rebateMm": 19.6,
+        "pointCount": 41
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.2,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "step feature",
+        "rebate profile shape"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "step feature not visible in supplier product-section or detail photos",
+        "rebate profile shape differs from supplier product-section photo"
+      ],
+      "concerns": [
+        "candidate includes step feature not present in supplier photographs",
+        "rebate drop dimension not verifiable from supplier photos but profile shape mismatch"
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912163550-c87fd907",
+  "referenceImages": [
+    "public/assets/mouldings/0472CM/product-section.jpg",
+    "public/assets/mouldings/0472CM/profile-source.png",
+    "public/assets/mouldings/0472CM/chevron.jpg",
+    "public/assets/mouldings/0472CM/macro.jpg",
+    "public/assets/mouldings/0472CM/product-detail-1.jpg",
+    "public/assets/mouldings/0472CM/product-detail-2.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.9,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.6,
+    "bump_detail": 3.0
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3-vl:30b",
+    "profile": {
+      "requested": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 6,
+        "innerEdgeRadiusMm": 1.0,
+        "outerEdgeRadiusMm": 0.5,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "rebate",
+          "stepped profile",
+          "crown",
+          "inner edge radius",
+          "outer edge radius"
+        ],
+        "rejectedTraceFeatures": []
+      },
+      "applied": {
+        "shapeClass": "stepped",
+        "faceCrownMm": 6.0,
+        "innerEdgeRadiusMm": 1.0,
+        "outerEdgeRadiusMm": 0.5,
+        "widthMm": 52.0,
+        "depthMm": 35.0,
+        "rebateMm": 19.6,
+        "pointCount": 41
+      },
+      "constrained": [],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "wood",
+        "directional": "grain",
+        "gloss": "matte",
+        "targetColourDescription": "light beige with subtle natural wood undertones",
+        "settings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "roughness_mid": 180,
+          "roughness_detail": 0.6,
+          "bump_detail": 3.0
+        }
+      },
+      "applied": {
+        "finishClass": "wood",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 180.0,
+          "roughness_detail": 0.6,
+          "bump_detail": 3.0
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.1477,
+    "colourSpreadError": 0.0845,
+    "seamError": 0.0096,
+    "maximumAutocorrelation": 0.4071,
+    "detailError": 0.2805,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 3.1477,
+        "colourSpreadError": 0.0845,
+        "seamError": 0.0096,
+        "maximumAutocorrelation": 0.4071,
+        "detailError": 0.2805,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 89.0,
+      "failedGates": [],
+      "agentReview": {
+        "score": 95,
+        "colourMatch": 95,
+        "textureMatch": 90,
+        "repetition": 95,
+        "seam": 98,
+        "finishMatch": 97,
+        "blockers": [],
+        "observations": [
+          "Supplier's profile-source shows directional grain; candidate preview matches grain direction and scale. No visible tiling or seams in fixed-light preview. ColourDelta 3.1477 indicates strong colour match."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 400,
+          "overlap": 150,
+          "roughness_mid": 180,
+          "roughness_detail": 0.5,
+          "bump_detail": 3.0
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3-vl:30b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "wood",
+      "directional": "grain",
+      "gloss": "matte",
+      "targetColourDescription": "light beige with subtle natural wood undertones",
+      "preserve": [
+        "bevel",
+        "step",
+        "rebate",
+        "profile contour"
+      ],
+      "risks": [
+        "potential texture inconsistency in grain direction",
+        "misinterpretation of gloss due to lighting in profile-source"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "roughness_mid": 180,
+        "roughness_detail": 0.6,
+        "bump_detail": 3.0
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.3,
+      "reasons": [
+        "texture scale matches supplier's directional grain pattern",
+        "no visible seams or tiled repeats"
+      ],
+      "concerns": [
+        "colour Delta E 3.1477 indicates visible colour deviation",
+        "texture scale may not fully match exact SKU's surface relief"
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "9ae8ee07e7ba94f5eced828754383f57c1efec36e2ad259277749e8bf64bc50b",
+      "roughness.jpg": "2978b78963b12da16d42b5bda0d51f2e85902fc14c079aef02fe09f188e8f753",
+      "bump.jpg": "bab1148e8e3e1b069930e704bc24172497a7784ca88baac24eb43d4f690cc978"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

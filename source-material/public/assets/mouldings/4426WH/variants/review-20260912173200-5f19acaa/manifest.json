@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "sku": "4426WH",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T17:35:03.942377+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "4426WH",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "convex",
+    "widthMm": 44.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "points": [
+      [
+        0.0,
+        9.201
+      ],
+      [
+        0.42,
+        9.708
+      ],
+      [
+        1.26,
+        9.708
+      ],
+      [
+        1.763,
+        10.805
+      ],
+      [
+        2.939,
+        11.649
+      ],
+      [
+        10.748,
+        13.169
+      ],
+      [
+        11.42,
+        14.351
+      ],
+      [
+        12.008,
+        15.026
+      ],
+      [
+        13.603,
+        16.039
+      ],
+      [
+        15.786,
+        16.461
+      ],
+      [
+        18.221,
+        16.461
+      ],
+      [
+        20.656,
+        16.714
+      ],
+      [
+        24.687,
+        17.643
+      ],
+      [
+        27.038,
+        18.487
+      ],
+      [
+        30.733,
+        20.26
+      ],
+      [
+        33.168,
+        21.695
+      ],
+      [
+        35.435,
+        23.299
+      ],
+      [
+        37.115,
+        24.987
+      ],
+      [
+        38.71,
+        25.831
+      ],
+      [
+        39.466,
+        26.0
+      ],
+      [
+        41.229,
+        26.0
+      ],
+      [
+        42.069,
+        25.831
+      ],
+      [
+        42.824,
+        25.409
+      ],
+      [
+        44.0,
+        24.058
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "convex",
+      "faceCrownMm": 26,
+      "innerEdgeRadiusMm": 0.5,
+      "outerEdgeRadiusMm": 1.0,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "conflicts",
+      "verifiedFeatures": [
+        "convex crown",
+        "step",
+        "flat face"
+      ],
+      "rejectedTraceFeatures": [
+        "rebate dimension 14.6 mm"
+      ],
+      "observations": [
+        "product-section shows consistent wood grain texture",
+        "profile-source confirms convex crown and step geometry"
+      ],
+      "concerns": [
+        "discrepancy between supplier dimensions (rebate 14.6 mm) and profile-source (7 mm)",
+        "catalogue trace may contain false ridges or segmentation edges"
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "convex",
+        "faceCrownMm": 26,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 1.0,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "convex crown",
+          "step",
+          "flat face"
+        ],
+        "rejectedTraceFeatures": [
+          "rebate dimension 14.6 mm"
+        ]
+      },
+      "applied": {
+        "shapeClass": "convex",
+        "faceCrownMm": 6.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 1.0,
+        "widthMm": 44.0,
+        "depthMm": 26.0,
+        "rebateMm": 14.6,
+        "pointCount": 24
+      },
+      "constrained": [
+        {
+          "field": "faceCrownMm",
+          "requested": 26.0,
+          "applied": 6.0,
+          "reason": "Clamped to the safe range 0..6."
+        }
+      ],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "reject",
+      "confidence": 0.0,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "rebate drop of 14.6 mm (supplier profile-source shows total height 26 mm with 7 mm step, implying 19 mm rebate depth)"
+      ],
+      "catalogueTraceAgreement": "conflicts",
+      "reasons": [
+        "Rebate drop measurement (14.6 mm) does not match supplier profile-source dimensions (26 mm total height - 7 mm step = 19 mm expected rebate depth)",
+        "Candidate cross-section shape does not visually align with supplier product-section/chevron photographs",
+        "No visible evidence of candidate's specific profile features in supplier photographs"
+      ],
+      "concerns": [
+        "Candidate cross-section introduces features not verified by supplier photographs",
+        "Dimensional mismatch between candidate and supplier evidence",
+        "Potential for incorrect feature interpretation due to guide reliance"
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912173200-5f19acaa",
+  "referenceImages": [
+    "public/assets/mouldings/4426WH/product-section.jpg",
+    "public/assets/mouldings/4426WH/profile-source.png",
+    "public/assets/mouldings/4426WH/chevron.jpg"
+  ],
+  "familyReferenceImages": [],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 1,
+    "colour_strength": 0.9,
+    "contrast": 1.0,
+    "patch_width": 400,
+    "overlap": 160,
+    "roughness_mid": 180.0,
+    "roughness_detail": 0.5,
+    "bump_detail": 3.0
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3-vl:30b",
+    "profile": {
+      "requested": {
+        "shapeClass": "convex",
+        "faceCrownMm": 26,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 1.0,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "convex crown",
+          "step",
+          "flat face"
+        ],
+        "rejectedTraceFeatures": [
+          "rebate dimension 14.6 mm"
+        ]
+      },
+      "applied": {
+        "shapeClass": "convex",
+        "faceCrownMm": 6.0,
+        "innerEdgeRadiusMm": 0.5,
+        "outerEdgeRadiusMm": 1.0,
+        "widthMm": 44.0,
+        "depthMm": 26.0,
+        "rebateMm": 14.6,
+        "pointCount": 24
+      },
+      "constrained": [
+        {
+          "field": "faceCrownMm",
+          "requested": 26.0,
+          "applied": 6.0,
+          "reason": "Clamped to the safe range 0..6."
+        }
+      ],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "matte",
+        "directional": true,
+        "gloss": "matte",
+        "targetColourDescription": "light cream with subtle directional wood grain, warm edge tone",
+        "settings": {
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "roughness_mid": 175,
+          "roughness_detail": 0.6,
+          "bump_detail": 3.0
+        }
+      },
+      "applied": {
+        "finishClass": "matte",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.9,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 175.0,
+          "roughness_detail": 0.6,
+          "bump_detail": 3.0
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 2.9013,
+    "colourSpreadError": 0.1588,
+    "seamError": 0.0171,
+    "maximumAutocorrelation": 0.3087,
+    "detailError": 0.1074,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 175.0,
+        "roughness_detail": 0.6,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 2.9367,
+        "colourSpreadError": 0.1806,
+        "seamError": 0.0189,
+        "maximumAutocorrelation": 0.4587,
+        "detailError": 0.1656,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 89.5,
+      "failedGates": [],
+      "agentReview": {
+        "score": 55,
+        "colourMatch": 70,
+        "textureMatch": 60,
+        "repetition": 40,
+        "seam": 50,
+        "finishMatch": 65,
+        "blockers": [
+          "Profile dimensions not visually confirmed",
+          "Tiled texture repetition",
+          "Seams in fixed-light preview"
+        ],
+        "observations": [
+          "Supplier's product-section shows directional grain; candidate's texture exhibits repeating pattern not matching intentional grain direction",
+          "Profile dimensions (26,7) not visually confirmed in candidate preview",
+          "Seams visible in fixed-light preview"
+        ],
+        "suggestedSettings": {
+          "patch_width": 400,
+          "overlap": 160,
+          "roughness_mid": 180,
+          "roughness_detail": 0.5,
+          "bump_detail": 3
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "settings": {
+        "seed": 1,
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "patch_width": 400,
+        "overlap": 160,
+        "roughness_mid": 180.0,
+        "roughness_detail": 0.5,
+        "bump_detail": 3.0
+      },
+      "metrics": {
+        "colourDeltaE": 2.9013,
+        "colourSpreadError": 0.1588,
+        "seamError": 0.0171,
+        "maximumAutocorrelation": 0.3087,
+        "detailError": 0.1074,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 95.8,
+      "failedGates": [],
+      "agentReview": null
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3-vl:30b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "matte",
+      "directional": true,
+      "gloss": "matte",
+      "targetColourDescription": "light cream with subtle directional wood grain, warm edge tone",
+      "preserve": [
+        "profile dimensions (26, 7)",
+        "directional grain pattern",
+        "texture scale (fine lines)",
+        "edge profile features"
+      ],
+      "risks": [
+        "texture scale mismatch (too coarse or too fine)",
+        "profile dimension deviation (e.g., step height not 7)",
+        "directional grain misalignment"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.9,
+        "contrast": 1.0,
+        "roughness_mid": 175,
+        "roughness_detail": 0.6,
+        "bump_detail": 3.0
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.3,
+      "reasons": [
+        "Texture scale and colour closely match supplier's EXACT SKU product-section"
+      ],
+      "concerns": [
+        "Visible repeat in texture pattern (distinctive macro features recurring at regular intervals), indicating potential tiling rather than natural variation"
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "e44a70a57a3c4b1bc5b78e8349d8bcf8c0a6e5aeb1d30098684c87670e44fd88",
+      "roughness.jpg": "3280339598b779c436720e4df4aa4514166afe3b6f78cf4aa100578a7a67c98f",
+      "bump.jpg": "3381aeca461b907c51cc840689e14477d054fa605372a61ff2dfcf9a44d7bebe"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

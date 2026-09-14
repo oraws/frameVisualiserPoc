@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 2,
+  "sku": "2650BK",
+  "status": "human-review-required",
+  "promotion": "not-promoted",
+  "createdAt": "2026-09-12T16:58:03.318908+00:00",
+  "requestedFault": "PROFILE REVIEW\nUse the exact SKU supplier photographs and stated dimensions to produce and apply a constrained reconstruction specification for the physical cross-section. Treat catalogue traces as unverified guides. Confirm every ridge, bead, bevel, hollow, step, outer edge, sight edge and rebate visually. Do not add a feature that is unsupported by the photographs.\n\nTEXTURE AND COLOUR REVIEW\nProduce and apply a constrained material specification matching the exact SKU colour, finish, gloss, directional grain or brushing, texture scale and surface relief. Family images show presentation character only and must never override exact-SKU colour or geometry. Remove obvious tiling and seams while retaining natural variation.\n\nBENCHMARK RULES\nThis is a controlled comparison. Judge only the supplied evidence, return the required structured fields, and use the same standards for every moulding and model.",
+  "reviewScopes": [
+    "profile",
+    "material"
+  ],
+  "profile": {
+    "schemaVersion": 1,
+    "sku": "2650BK",
+    "source": "supplier-metadata-and-vision-review",
+    "shapeClass": "flat",
+    "widthMm": 50.0,
+    "depthMm": 26.0,
+    "rebateMm": 14.6,
+    "points": [
+      [
+        0.0,
+        11.4
+      ],
+      [
+        0.147,
+        25.825
+      ],
+      [
+        0.35,
+        26.0
+      ],
+      [
+        25.05,
+        26.0
+      ],
+      [
+        49.75,
+        26.0
+      ],
+      [
+        50.0,
+        25.863
+      ]
+    ],
+    "analysis": {
+      "shapeClass": "flat",
+      "faceCrownMm": 0,
+      "innerEdgeRadiusMm": 0.2,
+      "outerEdgeRadiusMm": 0.2,
+      "flatFaceConfirmed": true,
+      "catalogueTraceAgreement": "partial",
+      "verifiedFeatures": [
+        "Single planar black face (flat) confirmed in physical section, chevron and macro photographs",
+        "Fine directional grain / brushing texture running along the length of the face",
+        "Mitered 45-degree chevron joint with continuous flat face",
+        "Straight sight edges with sharp (near-zero radius) corners",
+        "Rebate/joining edge consistent with stated 14.6 mm rebate dimension"
+      ],
+      "rejectedTraceFeatures": [
+        "Decorative ridge or bead (none visible in any exact-SKU photograph)",
+        "Bevel or chamfer on the face (face is planar)",
+        "Hollow or concave profile (no concavity visible)",
+        "Decorative step or multi-stage profile (only a joining rebate is indicated, not a visible moulded step)"
+      ],
+      "observations": [
+        "Supplier profile label is 'flat' and the physical section, chevron and macro images all show one flat textured face, supporting a flat classification.",
+        "The face carries a fine horizontal directional grain / brush texture with small speckle relief; this is surface finish, not a tiled repeat or moulded ridge.",
+        "The profile-source diagram in the top row depicts a U-shaped channel with two ~6 mm legs; this is interpreted as the joining rebate (14.6 mm) rather than a decorative profile, and no corresponding decorative ridge is visible in the photographs.",
+        "Chevron image confirms a clean mitered corner with a flat face and no crown or bead.",
+        "Macro image shows flat black and light (cream) faces with straight edges, consistent with a flat section."
+      ],
+      "concerns": [
+        "The profile-source cross-section drawing shows a channel/rebate geometry that is not independently visible as a decorative feature in the photographs; per the rule that photographs win, the face is treated as flat and the channel is read only as a joining rebate.",
+        "Lighting and perspective in the supplier photographs could exaggerate edge shadows; no ridge was confirmed, so none was added.",
+        "Directional grain must be preserved as natural finish variation and not mistaken for a tiled repeat or moulded line."
+      ]
+    },
+    "correctionPlan": {
+      "requested": {
+        "shapeClass": "flat",
+        "faceCrownMm": 0,
+        "innerEdgeRadiusMm": 0.2,
+        "outerEdgeRadiusMm": 0.2,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "Single planar black face (flat) confirmed in physical section, chevron and macro photographs",
+          "Fine directional grain / brushing texture running along the length of the face",
+          "Mitered 45-degree chevron joint with continuous flat face",
+          "Straight sight edges with sharp (near-zero radius) corners",
+          "Rebate/joining edge consistent with stated 14.6 mm rebate dimension"
+        ],
+        "rejectedTraceFeatures": [
+          "Decorative ridge or bead (none visible in any exact-SKU photograph)",
+          "Bevel or chamfer on the face (face is planar)",
+          "Hollow or concave profile (no concavity visible)",
+          "Decorative step or multi-stage profile (only a joining rebate is indicated, not a visible moulded step)"
+        ]
+      },
+      "applied": {
+        "shapeClass": "flat",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.25,
+        "outerEdgeRadiusMm": 0.25,
+        "widthMm": 50.0,
+        "depthMm": 26.0,
+        "rebateMm": 14.6,
+        "pointCount": 6
+      },
+      "constrained": [
+        {
+          "field": "innerEdgeRadiusMm",
+          "requested": 0.2,
+          "applied": 0.25,
+          "reason": "Clamped to the safe range 0.25..4."
+        },
+        {
+          "field": "outerEdgeRadiusMm",
+          "requested": 0.2,
+          "applied": 0.25,
+          "reason": "Clamped to the safe range 0.25..4."
+        }
+      ],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.55,
+      "photoVerified": false,
+      "unsupportedFeatures": [
+        "Left-edge rebate drop (1.46 mm) / sight-edge step not resolvable in the flat-face product-section, chevron or macro photographs",
+        "Guide U-shaped hollow/rebate (17 mm deep) present in profile-source but absent from both candidate and photographs"
+      ],
+      "catalogueTraceAgreement": "partial",
+      "reasons": [
+        "Authoritative photographs (product-section, chevron, macro) show essentially flat dark/cream faces with a thin substrate edge; none provides a clear oblique or section view that confirms a discrete rebate step or perimeter ridge.",
+        "The candidate's only non-flat feature is a small left-edge step annotated 'REBATE DROP 1.46 mm'; this magnitude and presence cannot be independently verified against the flat photographed faces.",
+        "The profile-source guide depicts a deep U-shaped hollow (17 mm) that the candidate does not reproduce, so the guide and candidate disagree on the rebate geometry.",
+        "Per benchmark rules, a flat photographed face must not gain a perimeter ridge; the candidate's left step is therefore treated as unconfirmed rather than approved."
+      ],
+      "concerns": [
+        "No physical-section or oblique photograph confirms the rebate drop; the step may be an artefact of the extracted guide.",
+        "Directional grain/brushing on the dark face is visible, but surface relief (bead vs flat) is not distinguishable at the supplied resolution.",
+        "Recommend obtaining a true cross-section or 45-degree oblique photograph of the exact SKU before approving the rebate and sight-edge step."
+      ]
+    }
+  },
+  "profileGate": {
+    "passed": false,
+    "requiresPhotoVerification": true
+  },
+  "inputVariant": "normalized-legacy-v1",
+  "outputVariant": "review-20260912164857-c3418a5b",
+  "referenceImages": [
+    "public/assets/mouldings/2650BK/product-section.jpg",
+    "public/assets/mouldings/2650BK/profile-source.png",
+    "public/assets/mouldings/2650BK/chevron.jpg",
+    "public/assets/mouldings/2650BK/macro.jpg"
+  ],
+  "familyReferenceImages": [
+    "public/assets/moulding-families/centrado/alberta/2650WH-framed-reference.jpg"
+  ],
+  "limits": {
+    "colourDeltaE": 8.0,
+    "colourSpreadError": 0.35,
+    "seamError": 0.055,
+    "maximumAutocorrelation": 0.62,
+    "detailError": 0.38,
+    "clippedPixels": 0.025,
+    "minimumScore": 76.0
+  },
+  "bestSettings": {
+    "seed": 0,
+    "colour_strength": 0.55,
+    "contrast": 1.0,
+    "patch_width": 448,
+    "overlap": 160,
+    "roughness_mid": 200.0,
+    "roughness_detail": 0.8,
+    "bump_detail": 2.5
+  },
+  "correctionPlan": {
+    "schemaVersion": 1,
+    "model": "qwen3.8:27b",
+    "profile": {
+      "requested": {
+        "shapeClass": "flat",
+        "faceCrownMm": 0,
+        "innerEdgeRadiusMm": 0.2,
+        "outerEdgeRadiusMm": 0.2,
+        "flatFaceConfirmed": true,
+        "verifiedFeatures": [
+          "Single planar black face (flat) confirmed in physical section, chevron and macro photographs",
+          "Fine directional grain / brushing texture running along the length of the face",
+          "Mitered 45-degree chevron joint with continuous flat face",
+          "Straight sight edges with sharp (near-zero radius) corners",
+          "Rebate/joining edge consistent with stated 14.6 mm rebate dimension"
+        ],
+        "rejectedTraceFeatures": [
+          "Decorative ridge or bead (none visible in any exact-SKU photograph)",
+          "Bevel or chamfer on the face (face is planar)",
+          "Hollow or concave profile (no concavity visible)",
+          "Decorative step or multi-stage profile (only a joining rebate is indicated, not a visible moulded step)"
+        ]
+      },
+      "applied": {
+        "shapeClass": "flat",
+        "faceCrownMm": 0.0,
+        "innerEdgeRadiusMm": 0.25,
+        "outerEdgeRadiusMm": 0.25,
+        "widthMm": 50.0,
+        "depthMm": 26.0,
+        "rebateMm": 14.6,
+        "pointCount": 6
+      },
+      "constrained": [
+        {
+          "field": "innerEdgeRadiusMm",
+          "requested": 0.2,
+          "applied": 0.25,
+          "reason": "Clamped to the safe range 0.25..4."
+        },
+        {
+          "field": "outerEdgeRadiusMm",
+          "requested": 0.2,
+          "applied": 0.25,
+          "reason": "Clamped to the safe range 0.25..4."
+        }
+      ],
+      "dimensionalAuthority": "supplier metadata and profile assets"
+    },
+    "material": {
+      "requested": {
+        "finishClass": "matte textured grain finish (fine directional wood-grain relief on a dark substrate)",
+        "directional": true,
+        "gloss": "matte",
+        "targetColourDescription": "dark charcoal / near-black with a faint warm undertone and fine horizontal directional grain; no bright specular highlights",
+        "settings": {
+          "colour_strength": 0.55,
+          "contrast": 1.0,
+          "roughness_mid": 200,
+          "roughness_detail": 0.8,
+          "bump_detail": 2.5
+        }
+      },
+      "applied": {
+        "finishClass": "matte textured grain finish (fine directional wood-grain relief on a dark substrate)",
+        "directional": true,
+        "gloss": "matte",
+        "settings": {
+          "seed": 0,
+          "colour_strength": 0.55,
+          "contrast": 1.0,
+          "patch_width": 448,
+          "overlap": 160,
+          "roughness_mid": 200.0,
+          "roughness_detail": 0.8,
+          "bump_detail": 2.5
+        },
+        "colourAuthority": "measured exact-SKU material atlas"
+      },
+      "constrained": []
+    }
+  },
+  "bestMetrics": {
+    "colourDeltaE": 3.2994,
+    "colourSpreadError": 0.0867,
+    "seamError": 0.0326,
+    "maximumAutocorrelation": 0.2526,
+    "detailError": 0.1138,
+    "clippedPixels": 0.0
+  },
+  "bestFailedGates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "settings": {
+        "seed": 0,
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "patch_width": 448,
+        "overlap": 160,
+        "roughness_mid": 200.0,
+        "roughness_detail": 0.8,
+        "bump_detail": 2.5
+      },
+      "metrics": {
+        "colourDeltaE": 3.2994,
+        "colourSpreadError": 0.0867,
+        "seamError": 0.0326,
+        "maximumAutocorrelation": 0.2526,
+        "detailError": 0.1138,
+        "clippedPixels": 0.0
+      },
+      "deterministicScore": 93.5,
+      "failedGates": [],
+      "agentReview": {
+        "score": 80,
+        "colourMatch": 88,
+        "textureMatch": 82,
+        "repetition": 10,
+        "seam": 8,
+        "finishMatch": 85,
+        "blockers": [
+          "PROFILE REVIEW: cross-section must be rebuilt strictly from the profile-source trace (overall 26, lip 17, width 30, rebate 6/6) and the chevron bevel; do not invent beads, hollows or steps not visible in the supplier crops.",
+          "Confirm the sight edge and rebate depth (6) against the macro crop before sign-off; the light core edge in the macro must remain a backing, not a finished face.",
+          "Family 'Alberta' white frame is presentation context only and must not bleed into the exact-SKU black colour or geometry."
+        ],
+        "observations": [
+          "Exact-SKU colour is a matte charcoal/black; atlas and fixed-light preview both read as the same dark neutral, so colour is well matched to the supplier product-section.",
+          "Directional grain/brushing in the supplier product-section (horizontal dash-like ridges) is reproduced in the atlas and preview as a consistent fine directional grain; this is intentional brushing, not a tiled repeat.",
+          "No distinctive macro feature recurs at a regular interval across the atlas; no obvious tile boundary or seam line is visible, so repetition and seam are low.",
+          "Relief scale in the preview is slightly finer/more uniform than the coarser dash ridges in the supplier product-section; a small bump_detail increase would better match the visible surface relief.",
+          "Chevron crop confirms a single mitered bevel at the corner; the reconstruction should keep one bevel and not add a second highlight edge."
+        ],
+        "suggestedSettings": {
+          "colour_strength": 0.9,
+          "contrast": 1.02,
+          "patch_width": 480,
+          "overlap": 160,
+          "roughness_mid": 185,
+          "roughness_detail": 0.65,
+          "bump_detail": 2.8
+        }
+      }
+    }
+  ],
+  "agents": {
+    "enabled": true,
+    "model": "qwen3.8:27b",
+    "connectionError": null,
+    "analyst": {
+      "finishClass": "matte textured grain finish (fine directional wood-grain relief on a dark substrate)",
+      "directional": true,
+      "gloss": "matte",
+      "targetColourDescription": "dark charcoal / near-black with a faint warm undertone and fine horizontal directional grain; no bright specular highlights",
+      "preserve": [
+        "fine directional grain / brushing running along the long axis",
+        "matte sheen with soft, diffuse edge highlights only",
+        "subtle surface relief and natural tonal variation",
+        "stepped rebate cross-section: flat sight edge, horizontal step, vertical rebate (per 26/30/6/6/17 trace)",
+        "mitered chevron corner continuity"
+      ],
+      "risks": [
+        "PROFILE: adding beads, ridges or bevels not present in the exact-SKU trace (profile is a plain stepped rebate, not a beaded moulding)",
+        "misreading the 17-unit vertical rebate as a separate decorative step",
+        "tiling or repeating the grain pattern into a visible seam",
+        "over-smoothing that erases the fine grain relief",
+        "colour drift toward pure black or toward brown",
+        "overstating gloss from bright light caught on the mitered edge"
+      ],
+      "suggestedSettings": {
+        "colour_strength": 0.55,
+        "contrast": 1.0,
+        "roughness_mid": 200,
+        "roughness_detail": 0.8,
+        "bump_detail": 2.5
+      }
+    },
+    "reviewer": {
+      "decision": "review",
+      "confidence": 0.62,
+      "reasons": [
+        "Candidate retains the dark charcoal base tone and the same horizontal, directional dash-like grain as the exact-SKU supplier product-section and macro images.",
+        "Texture scale and surface relief are broadly comparable to the supplier evidence, with no large-scale mismatch in relief depth.",
+        "No obvious tiled repeat is visible: maximumAutocorrelation is low (0.2526) and seamError is small (0.0328), and the grain reads as irregular rather than a periodic tile.",
+        "Family context image (white frame / abstract art) was treated as presentation only and did not drive the material decision."
+      ],
+      "concerns": [
+        "Colour DeltaE of 3.2994 exceeds a tight 'exact SKU colour' match tolerance, indicating a perceptible hue/lightness shift versus the supplier photographs.",
+        "detailError of 0.1138 suggests the candidate's grain detail/contrast is not an exact match to the supplier's dash pattern, appearing slightly finer/more uniform.",
+        "The supplied candidate is a flat fixed-light material preview; the physical cross-section (ridges, beads, bevels, rebate, sight edge) from the profile-source diagram cannot be visually confirmed from these strips, leaving the reported PROFILE REVIEW fault unverified.",
+        "Supplier images include lighting/perspective variation, so the colour and relief comparison carries residual uncertainty."
+      ]
+    }
+  },
+  "material": {
+    "basecolor": "basecolor.jpg",
+    "roughness": "roughness.jpg",
+    "bump": "bump.jpg",
+    "sha256": {
+      "basecolor.jpg": "57442a9150c5ca054f5aaad27eda41bbbff58d5889aa8db83ab3078ea4006518",
+      "roughness.jpg": "69046b4fcd2859273b27d294170f39d9c2b91d6ac23f830eefe3ac896af32eea",
+      "bump.jpg": "1fb1422c558232991fd69d23263d22beac1dd83f12e54724e9fd7d64638dd5ee"
+    }
+  },
+  "activation": "Candidate only. Approve in the live visualiser before adding to a runtime index."
+}

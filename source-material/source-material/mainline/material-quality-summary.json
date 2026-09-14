@@ -2,17 +2,19 @@
   "count": 1,
   "ollama": {
     "enabled": true,
-    "model": "qwen3.8:27b",
+    "model": "qwen3-vl:30b",
     "error": null
   },
   "results": [
     {
-      "sku": "POL-4875",
+      "sku": "CR0225OR",
       "status": "human-review-required",
-      "attempts": 3,
-      "score": 83.2,
-      "failedGates": [],
-      "output": "public/assets/mouldings/POL-4875/variants/review-20260912083453-df763bbb"
+      "attempts": 4,
+      "score": 77.1,
+      "failedGates": [
+        "clippedPixels"
+      ],
+      "output": "public/assets/mouldings/CR0225OR/variants/review-20260912182709-8780e868"
     }
   ]
 }

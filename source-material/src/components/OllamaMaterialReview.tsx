@@ -1,8 +1,26 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import FramedArtwork from "../renderer/FramedArtwork";
 import { mouldings } from "../mouldings/catalog";
+import OllamaBenchmark from "./OllamaBenchmark";
+import { MiniFramePreview } from "./MaterialReviewPreview";
 
-type ReviewResult = {
+type CorrectionConstraint = { field?: string; requested?: unknown; applied?: unknown; reason?: string };
+type CorrectionPlan = {
+  schemaVersion?: number;
+  model?: string;
+  profile?: {
+    requested?: Record<string, unknown>;
+    applied?: Record<string, unknown>;
+    constrained?: CorrectionConstraint[];
+    dimensionalAuthority?: string;
+  } | null;
+  material?: {
+    requested?: { finishClass?: unknown; directional?: unknown; gloss?: unknown; targetColourDescription?: unknown; settings?: Record<string, unknown> };
+    applied?: { finishClass?: unknown; directional?: unknown; gloss?: unknown; settings?: Record<string, unknown>; colourAuthority?: string };
+    constrained?: CorrectionConstraint[];
+  } | null;
+};
+
+export type ReviewResult = {
   sku?: string;
   status: string;
   requestedFault?: string;
@@ -10,6 +28,8 @@ type ReviewResult = {
   outputVariant: string;
   bestMetrics?: Record<string, number>;
   bestFailedGates?: string[];
+  bestSettings?: Record<string, number>;
+  correctionPlan?: CorrectionPlan | null;
   attempts?: Array<{
     attempt: number;
     deterministicScore?: number;
@@ -59,8 +79,9 @@ type Availability = {
   history?: ReviewResult[];
   assetStatus?: string;
   acceptedVersion?: string | null;
+  routingPolicy?: { primaryModel: string; fallbackModel: string; reason?: string; benchmarkId?: string } | null;
 };
-type BatchItem = {
+export type BatchItem = {
   sku: string;
   supplier: string;
   name: string;
@@ -90,9 +111,9 @@ type BatchJob = {
 };
 
 const profilePrompt = `PROFILE REVIEW
-Study the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Rebuild the physical moulding cross-section, including the face, inner sight edge, outer edge, rebate and stated dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Compare the rendered candidate with the supplier evidence and reject unsupported geometry.`;
+Study the supplier cross-section and rotation photographs. Treat any extracted red outline or catalogue trace as an unverified guide, then confirm every ridge, bead, bevel, hollow and step independently in the supplier photographs. Photographs of the physical section, chevron and oblique rotations take priority when a trace conflicts with visible evidence. Produce a constrained reconstruction specification for the physical moulding cross-section, including the face, inner sight edge, outer edge and rebate while preserving supplier dimensions. A visibly flat moulding must remain one planar face with only genuinely visible edge treatment; omit profile features supported only by the extracted trace. Apply the supported parameters, compare the rendered candidate with the supplier evidence and reject unsupported geometry.`;
 const materialPrompt = `TEXTURE AND COLOUR REVIEW
-Study all supplier photographs and match the finish, colour, directional grain or brushing, texture scale, gloss and surface relief. Remove obvious tiling and seams while retaining natural variation. Compare the candidate under neutral fixed lighting with the supplier evidence.`;
+Study all supplier photographs and produce a constrained material reconstruction specification for finish, directional grain or brushing, texture scale, gloss, roughness and surface relief. Exact-SKU image measurements remain authoritative for colour. Apply the supported parameters, remove obvious tiling and seams while retaining natural variation, then compare the candidate under neutral fixed lighting with the supplier evidence.`;
 
 function removePromptBlock(value: string, block: string) {
   return value.replace(block, "").replace(/\n{3,}/g, "\n\n").trim();
@@ -107,33 +128,29 @@ function queuedPrompt(value: string, scopes: string[]) {
   ].filter(Boolean).join("\n\n");
 }
 
+function CorrectionPlanPanel({ plan }: { plan?: CorrectionPlan | null }) {
+  if (!plan) return null;
+  const constrained = [...(plan.profile?.constrained || []), ...(plan.material?.constrained || [])];
+  return <details className="correction-plan" open>
+    <summary>Local reconstruction plan</summary>
+    <p className="review-note">The vision model proposed these changes. The pipeline bounded every numeric value and kept supplier dimensions and measured exact-SKU colour authoritative.</p>
+    <div className="correction-plan-grid">
+      {plan.profile?.applied && <section><strong>Applied profile</strong><dl>
+        {Object.entries(plan.profile.applied).map(([key, value]) => <div key={key}><dt>{key}</dt><dd>{String(value)}</dd></div>)}
+      </dl></section>}
+      {plan.material?.applied && <section><strong>Applied material</strong><dl>
+        {Object.entries(plan.material.applied).filter(([key]) => key !== "settings").map(([key, value]) => <div key={key}><dt>{key}</dt><dd>{String(value)}</dd></div>)}
+        {Object.entries(plan.material.applied.settings || {}).map(([key, value]) => <div key={key}><dt>{key}</dt><dd>{String(value)}</dd></div>)}
+      </dl></section>}
+    </div>
+    {!!constrained.length && <div className="correction-constraints"><strong>Safety constraints applied</strong><ul>
+      {constrained.map((item, index) => <li key={`${item.field}-${index}`}><b>{item.field || "value"}</b>: {item.reason || "Adjusted to a safe supported value."}</li>)}
+    </ul></div>}
+  </details>;
+}
+
 const savedJobKey = "frame-visualiser:material-review-job";
 const savedBatchKey = "frame-visualiser:material-review-batch";
-
-function MiniFramePreview({ sku, result, mode }: {
-  sku: string;
-  result?: ReviewResult | null;
-  mode: "before" | "after";
-}) {
-  const moulding = mouldings.find(item => item.sku === sku);
-  if (!moulding) return <div className="batch-preview-empty">Moulding data unavailable</div>;
-  const variant = mode === "after" && result
-    ? result.outputVariant
-    : result?.inputVariant || "supplier-derived-v2";
-  return <FramedArtwork
-    moulding={moulding} artWidth={700} artHeight={500} mount={50}
-    mountColor="#e9e2d3" innerMount={0} innerMountColor="#1e201f"
-    glass="None" lighting="Studio Soft" lightStrength={1} ambientFill={1}
-    exposure={1} wallColour="#a7aaa8" view="Slight Angle" debug={false}
-    artwork="/assets/artwork/img1.jpg" artworkColourMode="Source colours"
-    geometryMode="Profile" materialMode="Texture" displayMode="Inspect"
-    wallPreset="Studio" wallPositionX={0} wallPositionY={0} wallScale={1}
-    wallShadow={1} roomMatchStrength={0} materialVariant={variant}
-    materialRevision={result?.revision || 0}
-    reviewProfile={mode === "after" ? result?.profile?.points : undefined}
-    profileVariant="Current"
-  />;
-}
 
 export default function OllamaMaterialReview({
   sku,
@@ -211,7 +228,8 @@ export default function OllamaMaterialReview({
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || "Could not contact the material reviewer.");
       setAvailability(data);
-      setModelChoice(current => current && data.models?.some((item: any) => item.name === current)
+      setModelChoice(current => current && (data.models?.some((item: any) => item.name === current) ||
+        (current === "__tiered__" && data.routingPolicy))
         ? current : data.model || data.models?.[0]?.name || "");
       setError("");
     } catch (reason: any) {
@@ -341,7 +359,8 @@ export default function OllamaMaterialReview({
       const response = await fetch("/api/material-review", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sku, fault, model: modelChoice, scopes }),
+        body: JSON.stringify({ sku, fault,
+          model: modelChoice === "__tiered__" ? availability?.routingPolicy?.primaryModel : modelChoice, scopes }),
       });
       const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(data.error || "Could not start the material review.");
@@ -478,6 +497,9 @@ export default function OllamaMaterialReview({
       <label htmlFor="moulding-review-model">Vision model</label>
       <select id="moulding-review-model" value={modelChoice}
         onChange={(event) => setModelChoice(event.target.value)} disabled={busy}>
+        {availability?.routingPolicy && <option value="__tiered__">
+          Tiered automatic · {availability.routingPolicy.primaryModel} → {availability.routingPolicy.fallbackModel}
+        </option>}
         {(availability?.models || []).map(item => <option key={item.name} value={item.name}>
           {item.name}{item.parameterSize ? ` · ${item.parameterSize}` : ""}
         </option>)}
@@ -525,6 +547,7 @@ export default function OllamaMaterialReview({
           <div><dt>Finish</dt><dd>{result.analyst?.finishClass || "Unclassified"}{result.analyst?.gloss ? ` · ${result.analyst.gloss}` : ""}</dd></div>
           <div><dt>Final review</dt><dd>{reviewer?.decision || result.status}{typeof reviewer?.confidence === "number" ? ` · ${Math.round(reviewer.confidence * 100)}%` : ""}</dd></div>
         </dl>
+        <CorrectionPlanPanel plan={result.correctionPlan} />
         {!!result.attempts?.length && <div className="ollama-attempts">
           {result.attempts.map(attempt => <div key={attempt.attempt}>
             <strong>Attempt {attempt.attempt}</strong>
@@ -634,6 +657,12 @@ export default function OllamaMaterialReview({
           </article>)}
         </div>}
       </div>
+      <OllamaBenchmark models={availability?.models || []} items={batchItems} busy={busy}
+        routingPolicy={availability?.routingPolicy}
+        onPolicyChanged={(policy) => {
+          setAvailability(current => current ? { ...current, routingPolicy: policy } : current);
+          setModelChoice("__tiered__");
+        }} />
       {batchWorkspace && <div className="batch-workspace" role="dialog" aria-modal="true" aria-label="Batch processing workspace">
         <header>
           <div><span>Ollama batch admin</span><h2>{batch ? batch.status === "complete" ? "Batch complete" : "Saved processing queue" : "Review next queue"}</h2>
@@ -688,6 +717,7 @@ export default function OllamaMaterialReview({
                     <div><dt>Attempts</dt><dd>{batchInspectorResult.attempts?.length || 0}</dd></div>
                     <div><dt>Decision</dt><dd>{batchInspectorResult.reviewer?.decision || batchInspectorResult.status}</dd></div>
                   </dl>
+                  <CorrectionPlanPanel plan={batchInspectorResult.correctionPlan} />
                   {!!batchInspectorResult.bestFailedGates?.length && <p className="batch-inspector-warning"><strong>Checks needing attention</strong>{batchInspectorResult.bestFailedGates.join(", ")}</p>}
                   {!!batchInspectorResult.reviewer?.reasons?.length && <p className="ollama-summary"><strong>What the model found</strong>{batchInspectorResult.reviewer.reasons.join(" ")}</p>}
                   {!!batchInspectorResult.reviewer?.concerns?.length && <p className="ollama-summary"><strong>Remaining concerns</strong>{batchInspectorResult.reviewer.concerns.join(" ")}</p>}
