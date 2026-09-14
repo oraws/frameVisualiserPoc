@@ -4,6 +4,17 @@
 **Date:** 31 August 2026  
 **Scope:** The next realism stage for selling art and framed art online, using ArtPlacer as the principal benchmark. This assessment covers curated room mockups, customer-room photos, realistic frame integration, lighting, shadows, perspective, occlusion and high-resolution exports. It does not propose replacing the existing frame-detail visualiser.
 
+> **Implementation update — 14 September 2026:** This document began as a
+> roadmap and some “current gap” statements below describe the August baseline.
+> The app now includes fixed-camera generated room bundles, environment and
+> projection data, prepared lighting, depth-aware rebate placement,
+> material-preserving room colour response, mounted and floor-leaning shadows,
+> local Blender high-resolution output, and optional AI-assisted empty-room
+> preparation. See `docs/PROJECT_STATUS.md` and `docs/APP_ARCHITECTURE.md` for the
+> current implementation. The central recommendation still applies: keep the
+> exact deterministic artwork/frame assembly as the product source and use
+> models to prepare or evaluate supporting assets.
+
 ## Executive answer
 
 Yes—ArtPlacer-level room mockups are achievable, and the current product is unusually well positioned to exceed the framing fidelity of a typical mockup tool.
@@ -41,9 +52,10 @@ The competitive moat is therefore a combination of:
 - fast, repeatable exports;
 - and, in this product's case, accurate representations of real supplier mouldings.
 
-## The current realism gap
+## The August 2026 realism gap (historical baseline)
 
-The existing implementation in `src/renderer/FramedArtwork.tsx` is a good concept demonstrator, but Wall mode currently:
+At the time of the original assessment, `src/renderer/FramedArtwork.tsx` was a
+good concept demonstrator, but Wall mode:
 
 - displays the room photograph on a flat `MeshBasicMaterial` plane;
 - positions and scales the frame using only one fixed position and scale per room;
@@ -229,4 +241,3 @@ If that succeeds, the product gains a compelling combination that the mockup too
 - Vendor features and model availability were checked on 31 August 2026 and can change.
 - Development ranges assume the existing Astro/React/Three.js codebase and current moulding catalogue remain the base.
 - Single-image depth and lighting are estimates, not measurements. Manual confirmation remains necessary for sale-critical scale and placement.
-

@@ -10,27 +10,46 @@ import { softenWindowShadow, windowShadowRadius } from './softWindowShadow';
  * shadows with a directional shadow map; it never paints a screen-space gobo.
  * The local EXR provides actual room reflections and diffuse fill.
  */
-export default function GeneratedRoomLighting({ sceneId, strength, fill, shadow, depthMm }: {sceneId:string;strength:number;fill:number;shadow:number;depthMm:number}) {
+export default function GeneratedRoomLighting({
+  sceneId,
+  strength,
+  fill,
+  shadow,
+  depthMm,
+  placement,
+  topY: _topY,
+  floorY: _floorY,
+}: {
+  sceneId: string;
+  strength: number;
+  fill: number;
+  shadow: number;
+  depthMm: number;
+  placement?: (typeof generatedScenes)[string]['placement'];
+  topY?: number;
+  floorY?: number;
+}) {
   const scene = generatedScenes[sceneId];
-  // Cycles watts and Three's area-light luminance are different units. This
-  // preview calibration is shared by both prepared rooms; area normalisation
-  // keeps a larger window from silently adding energy at the same wattage.
-  // Three's rect-area intensity is not expressed in the same units as the
-  // Cycles wattage used to bake the room. Calibrate the interactive foreground
-  // against the neutral Frame detail view instead of applying the raw quotient,
-  // which lifts dark matte mouldings into mid-grey.
+  const effectivePlacement = placement ?? scene.placement;
+  const isFloorLean = effectivePlacement?.type === 'floor-lean';
+
   const windowLuminance = scene.keyLight.powerWatts / (3 * Math.PI * scene.keyLight.width * scene.keyLight.height) * .01;
   const invalidate = useThree(state => state.invalidate);
   const area = useRef<THREE.RectAreaLight>(null);
   const lightDistance = new THREE.Vector3(...scene.keyLight.position).distanceTo(new THREE.Vector3(...scene.keyLight.target));
   const shadowRadius = windowShadowRadius(depthMm, lightDistance, scene.keyLight.width) * .6;
+
   const target = useMemo(() => {
     RectAreaLightUniformsLib.init();
     const object = new THREE.Object3D();
     object.position.fromArray(scene.keyLight.target);
     return object;
   }, [sceneId]);
+
   useEffect(() => { area.current?.lookAt(target.position); invalidate(); }, [target, invalidate]);
+
+
+
   return <>
     <primitive object={target} />
     <ambientLight intensity={scene.fill * fill} color="#e6efff" />
@@ -38,12 +57,12 @@ export default function GeneratedRoomLighting({ sceneId, strength, fill, shadow,
     <rectAreaLight ref={area} position={scene.keyLight.position as [number,number,number]} color={scene.keyLight.color}
       intensity={windowLuminance * strength} width={scene.keyLight.width} height={scene.keyLight.height} />
     <directionalLight position={scene.keyLight.position as [number,number,number]} target={target}
-      color={scene.keyLight.color} intensity={scene.keyLight.intensity * strength * .22}
-      shadow-mapSize={[2048,2048]} shadow-camera-left={-3.5} shadow-camera-right={3.5}
-      shadow-camera-top={3.5} shadow-camera-bottom={-3.5} shadow-camera-near={.1} shadow-camera-far={18}
-      shadow-bias={-.00004} shadow-normalBias={.001} shadow-radius={shadowRadius}
-      castShadow={scene.placement?.type !== 'floor-lean'} />
-    {scene.placement?.type !== 'floor-lean' && <mesh position={[0, .65, scene.wallZ]} receiveShadow>
+      color={scene.keyLight.color} intensity={scene.keyLight.intensity * strength * (isFloorLean ? 0.38 : 0.22)}
+      shadow-mapSize={[2048,2048]} shadow-camera-left={-3.8} shadow-camera-right={3.8}
+      shadow-camera-top={3.8} shadow-camera-bottom={-3.8} shadow-camera-near={.1} shadow-camera-far={18}
+      shadow-bias={-.00004} shadow-normalBias={.001} shadow-radius={isFloorLean ? Math.max(15, shadowRadius * 1.6) : shadowRadius}
+      castShadow />
+    {!isFloorLean && <mesh position={[0, .65, scene.wallZ]} receiveShadow>
       <planeGeometry args={[11,8]} />
       <shadowMaterial key="gaussian-window-wall" transparent color="#685132" opacity={Math.min(.65, .32 * shadow)} depthWrite={false}
         onBeforeCompile={softenWindowShadow} customProgramCacheKey={() => 'gaussian-window-wall-v2'} />

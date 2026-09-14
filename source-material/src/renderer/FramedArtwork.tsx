@@ -1820,11 +1820,40 @@ function Scene(p: Props) {
     shadowOpacity = calibratedLighting?.shadowOpacity ?? room.shadow.opacity,
     shadowRadius = calibratedLighting?.shadowSoftness ?? room.shadow.radius,
     shadowGap = (calibratedLighting?.shadowGapMm ?? 4) * mm;
+  const floorPlacement = wall && room.placement?.type === "floor-lean" ? room.placement : null;
+  const leaningScale = room.frameScale * p.wallScale;
+  const leaningTilt = floorPlacement
+    ? floorPlacement.bottomStandOffMm
+      ? Math.asin(THREE.MathUtils.clamp(
+          ((floorPlacement.bottomStandOffMm - floorPlacement.rearClearanceMm) * mm) / Math.max(oh * leaningScale, .001),
+          0,
+          .42,
+        ))
+      : THREE.MathUtils.degToRad(floorPlacement.tiltDegrees)
+    : 0;
+  const leaningTopY = floorPlacement
+    ? floorPlacement.floorY + oh * leaningScale * Math.cos(leaningTilt) + p.wallPositionY * 0.8
+    : undefined;
+  const leaningFloorY = floorPlacement
+    ? floorPlacement.floorY + p.wallPositionY * 0.8
+    : undefined;
+
   return (
     <>
       <Exposure value={p.exposure * (wall && !generatedRoom ? 1.22 : 1)} />
       {!p.overlayOnly && <color attach="background" args={[p.wallColour]} />}
-      {generatedRoom ? <GeneratedRoomLighting sceneId={room.sceneId!} strength={p.lightStrength} fill={p.ambientFill} shadow={p.wallShadow} depthMm={m.depthMm} /> : <>
+      {generatedRoom ? (
+        <GeneratedRoomLighting
+          sceneId={room.sceneId!}
+          strength={p.lightStrength}
+          fill={p.ambientFill}
+          shadow={p.wallShadow}
+          depthMm={m.depthMm}
+          placement={room.placement}
+          topY={leaningTopY}
+          floorY={leaningFloorY}
+        />
+      ) : <>
       <ambientLight
         intensity={
           (wall ? Math.max(0.72, room.ambient * ambientStrength) : 0.32) *
@@ -1884,6 +1913,7 @@ function Scene(p: Props) {
         matrix={frameMatrix}
         width={ow}
         height={oh}
+        depthMm={m.depthMm}
         wallZ={room.placement.wallZ}
         floorY={room.placement.floorY}
         strength={p.wallShadow}

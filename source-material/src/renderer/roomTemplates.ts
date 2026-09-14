@@ -35,7 +35,7 @@ export const roomPresets:Record<string,RoomTemplate>={
    tintOpacity:0,angleLabel:'AI-refined floor set · soft daylight from right',calibrationStatus:'approved-local',
    placement:{
      ...(leaningFloorGallery.placement as NonNullable<RoomTemplate['placement']>),
-     floorY:-1.9,
+     floorY:-1.916,
      tiltDegrees:6,
      rearClearanceMm:2,
      yawDegrees:0,
